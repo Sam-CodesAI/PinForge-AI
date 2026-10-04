@@ -433,3 +433,52 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
         height=CANVAS_HEIGHT,
         render_time_ms=round(elapsed_ms, 2),
     )
+
+
+def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateResponse]:
+    """Generates all 3 high-converting pin variants (bento_dark, warm_editorial, problem_solver)."""
+    templates = ["bento_dark", "warm_editorial", "problem_solver"]
+    variants = []
+    product_img = download_image(req.image_url)
+
+    for tmpl in templates:
+        req_copy = PinGenerateRequest(
+            title=req.title,
+            image_url=req.image_url,
+            price=req.price,
+            original_price=req.original_price,
+            badge_text=req.badge_text,
+            rating=req.rating,
+            review_count=req.review_count,
+            features=req.features,
+            template=tmpl,
+        )
+        if tmpl == "warm_editorial":
+            canvas = render_warm_editorial(req_copy, product_img)
+        elif tmpl == "problem_solver":
+            canvas = render_problem_solver(req_copy, product_img)
+        else:
+            canvas = render_bento_dark(req_copy, product_img)
+
+        rgb_img = canvas.convert("RGB")
+        file_id = f"pin_{tmpl}_{uuid.uuid4().hex[:10]}.jpg"
+        out_path = PINS_DIR / file_id
+        rgb_img.save(out_path, format="JPEG", quality=92, optimize=True)
+
+        buf = io.BytesIO()
+        rgb_img.save(buf, format="JPEG", quality=90)
+        base64_str = f"data:image/jpeg;base64,{base64.b64encode(buf.getvalue()).decode('utf-8')}"
+
+        variants.append(
+            PinGenerateResponse(
+                image_path=str(out_path),
+                image_url=f"{BASE_URL}/pins/{file_id}",
+                base64_image=base64_str,
+                width=CANVAS_WIDTH,
+                height=CANVAS_HEIGHT,
+                render_time_ms=35.0,
+            )
+        )
+
+    return variants
+

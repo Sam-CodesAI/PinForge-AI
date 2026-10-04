@@ -265,6 +265,35 @@ def autofill_canva_template(template_id: str, data: dict):
     return result
 
 
+@app.post("/api/ai/hunt-and-publish")
+def ai_hunt_and_publish(publish_live: bool = True):
+    """Autonomously hunt a viral space-saving Amazon product, curate with vision, and publish live."""
+    try:
+        from python_engine.autonomous_autopilot import AutonomousAutopilot
+    except ImportError:
+        from autonomous_autopilot import AutonomousAutopilot
+
+    autopilot = AutonomousAutopilot()
+    try:
+        return autopilot.run_autopilot_cycle(publish_live=publish_live)
+    except Exception as e:
+        logger.error(f"AI hunt and publish failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/ai/autopilot/history")
+def get_autopilot_history():
+    """Retrieve execution log of autonomous AI runs."""
+    from python_engine.config import DATA_DIR
+    history_file = DATA_DIR / "autopilot_history.json"
+    if history_file.exists():
+        try:
+            return json.loads(history_file.read_text())
+        except Exception:
+            return []
+    return []
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("python_engine.main:app", host=HOST, port=PORT, reload=True)

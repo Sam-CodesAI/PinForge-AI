@@ -1,0 +1,104 @@
+[
+  {
+    "timestamp": "2026-10-04T10:58:32.509376+00:00",
+    "status": "success",
+    "execution_time_seconds": 9.69,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Curated Amazon Selection (B087F5K713)",
+      "price": "$29.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "amazon-find-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Curated Amazon Selection (B087F5K713) - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "The Viral Amazon Find Everyone Is Obsessed With (Under $30!)",
+      "description": "Discover the viral Amazon product everyone is talking about! Rated 4+ stars with thousands of glowing reviews, this budget-friendly find under $30 delivers unbeatable value, quality, and everyday convenience. Elevate your routine with fast Prime 2-day shipping and hassle-free returns. Tap the link to check current pricing and customer reviews! #AmazonAssociate",
+      "board": "Viral Amazon Finds",
+      "hashtags": [
+        "#AmazonFinds",
+        "#ViralProducts",
+        "#TrendingFinds",
+        "#AmazonMustHaves",
+        "#BestAmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ecfafcdec5.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1b76c2b3d8.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_64d17c85a4.jpg"
+      }
+    ],
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-04T10:59:11.020728+00:00",
+    "status": "success",
+    "execution_time_seconds": 22.59,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Motivekit\u2122 Portable Camping Shower | 5.3 Gallons Foldable",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "motivekit-portable-camping-shower-53-gallons-foldable-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Must-Have Camping Hack",
+      "visual_hook": "Hot Showers Anywhere Off-Grid",
+      "secondary_hook": "5.3 Gallon Foldable Pressurized Spray",
+      "target_audience": "Campers & Van Lifers",
+      "alt_text": "Motivekit 5.3 gallon portable foldable camping shower for outdoor van life and off-grid trips."
+    },
+    "seo_copy": {
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Outdoor Find",
+      "description": "Upgrade your outdoor adventures with the viral Motivekit Portable Camping Shower. Featuring a 5.3-gallon foldable design, this top-rated Amazon choice delivers reliable water pressure anywhere you camp, hike, or road trip. Enjoy hassle-free setup, durable high-quality materials, and fast Prime delivery. Don't rough it completely on your next trip! Tap to check today's price. #AmazonAssociate",
+      "board": "Outdoor Adventure Gear",
+      "hashtags": [
+        "#CampingGear",
+        "#OutdoorLife",
+        "#AmazonFinds",
+        "#TravelEssentials",
+        "#GlampingLife",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_2342ca5290.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6fb10b1b3b.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f988198704.jpg"
+      }
+    ],
+    "live_pinterest": null
+  }
+]

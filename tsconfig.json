@@ -37,6 +37,7 @@
   ],
   "exclude": [
     "node_modules",
-    "python_engine"
+    "python_engine",
+    "canva_app"
   ]
 }

@@ -63,8 +63,8 @@ Return ONLY a valid JSON object matching this exact schema:
   }}
 }}"""
 
-        # Try gemini-flash-lite-latest, then gemini-3.8-flash
-        models = ["gemini-flash-lite-latest", "gemini-3.8-flash"]
+        # Real production Gemini 2026 models
+        models = ["gemini-3.8-flash", "gemini-3.5-flash-lite"]
         for model_name in models:
             try:
                 resp = client.models.generate_content(
@@ -140,7 +140,7 @@ Return ONLY valid JSON matching this schema:
 }}"""
 
         chat = client.chat.completions.create(
-            model="openai/gpt-oss-120b",
+            model="llama-3.3-70b-versatile",
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"}
         )
