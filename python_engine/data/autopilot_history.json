@@ -251,102 +251,54 @@
     }
   },
   {
-    "timestamp": "2026-10-04T12:28:53.946273+00:00",
+    "timestamp": "2026-10-04T12:27:43.799463+00:00",
     "status": "success",
-    "execution_time_seconds": 12.96,
+    "execution_time_seconds": 65.21,
     "product": {
-      "asin": "B0F7PYC8NB",
-      "title": "Curated Amazon Selection (B0F7PYC8NB)",
+      "asin": "B087F5K713",
+      "title": "Curated Amazon Selection (B087F5K713)",
       "price": "$29.99",
       "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0F7PYC8NB?tag=smartspace07-21",
-      "bridge_slug": "amazon-find-b0f7pyc8nb"
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "amazon-find-b087f5k713"
     },
     "ai_vision": {
       "dominant_theme": "bento_dark",
-      "primary_hex": "#0F172A",
+      "primary_hex": "#0B0F19",
       "accent_hex": "#06B6D4",
-      "badge_text": "Viral Amazon Find",
-      "visual_hook": "The Sleek Upgrade You Need",
-      "secondary_hook": "Premium Minimalist Everyday Essential",
-      "target_audience": "Minimalists & Tech Enthusiasts",
-      "alt_text": "Curated modern Amazon lifestyle find with 25 percent off discount"
+      "badge_text": "Curated Amazon Selection",
+      "visual_hook": "The Ultimate Amazon Curated Pick",
+      "secondary_hook": "Elevate your everyday routine instantly",
+      "target_audience": "Smart Shoppers",
+      "alt_text": "Curated Amazon Selection product featured in dark modern aesthetic for $29.99 with 25% discount"
     },
     "seo_copy": {
-      "title": "The Viral Amazon Find Everyone Is Obsessed With! Must-Have Trending Gadget",
-      "description": "Stop scrolling! This viral Amazon find is trending everywhere for a reason. With a 4+ star rating from thousands of happy buyers, it delivers serious value for just $29.99. Enjoy fast Prime shipping and hassle-free returns while it's still in stock. Upgrade your daily routine today! #AmazonAssociate",
+      "title": "Viral Amazon Finds You Actually Need: Must-Have Trending Pick!",
+      "description": "Discover why this viral Amazon find has taken over your feed! With thousands of 4+ star reviews, this budget-friendly must-have completely lives up to the social media hype. Enjoy fast Prime 2-day shipping, hassle-free returns, and an effortless upgrade to your daily routine for under $30. Tap the pin to see the latest deals and read real buyer reviews before it sells out again! #AmazonFinds #TrendingProducts #AmazonAssociate",
       "board": "Small Apartment Hacks",
       "hashtags": [
         "#AmazonFinds",
+        "#TrendingProducts",
         "#ViralProducts",
-        "#TrendingGadgets",
-        "#MustHaveFinds",
-        "#AmazonFavorites",
+        "#AmazonMustHaves",
+        "#FavoriteFinds",
         "#AmazonAssociate"
       ]
     },
     "creative_variants": [
       {
         "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_1044ee30af.jpg"
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_928f084129.jpg"
       },
       {
         "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a9b1ae0ffa.jpg"
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5db02ff0eb.jpg"
       },
       {
         "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_748297a272.jpg"
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_2c5d525933.jpg"
       }
     ],
-    "live_pinterest": {
-      "created_at": "2026-10-04T12:28:53",
-      "link": "https://www.amazon.com/dp/B0F7PYC8NB?tag=smartspace07-21",
-      "is_removable": false,
-      "parent_pin_id": null,
-      "creative_type": "REGULAR",
-      "alt_text": "Curated modern Amazon lifestyle find with 25 percent off discount",
-      "dominant_color": null,
-      "title": "The Viral Amazon Find Everyone Is Obsessed With! Must-Have Trending Gadget",
-      "is_product": false,
-      "product_tags": [],
-      "board_id": "1132444337492930442",
-      "is_standard": true,
-      "pin_metrics": null,
-      "is_owner": true,
-      "description": "Stop scrolling! This viral Amazon find is trending everywhere for a reason. With a 4+ star rating from thousands of happy buyers, it delivers serious value for just $29.99. Enjoy fast Prime shipping and hassle-free returns while it's still in stock. Upgrade your daily routine today! #AmazonAssociate",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/91/cf/41/91cf41d78217cc108e1a0b98efeaf47e.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/91/cf/41/91cf41d78217cc108e1a0b98efeaf47e.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/91/cf/41/91cf41d78217cc108e1a0b98efeaf47e.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/91/cf/41/91cf41d78217cc108e1a0b98efeaf47e.jpg"
-          }
-        }
-      },
-      "id": "1132444268835773045",
-      "has_been_promoted": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "board_section_id": null,
-      "pin_id": "1132444268835773045"
-    }
+    "live_pinterest": null
   }
 ]

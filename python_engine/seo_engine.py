@@ -153,33 +153,54 @@ Return ONLY valid JSON matching this schema:
   }}
 }}"""
 
-        chat = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"}
-        )
-        content = chat.choices[0].message.content
-        data = json.loads(content)
+        valid_boards = [
+            'Small Apartment Hacks',
+            'Space Saving Kitchens',
+            'Closet & Wardrobe Organization',
+            'Studio Living Ideas',
+            'Room Organization'
+        ]
+        models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
 
-        pin_title = data.get("pin_title", req.product_title)[:100]
-        pin_desc = data.get("pin_description", "")[:500]
-        if "#AmazonAssociate" not in pin_desc:
-            pin_desc = (pin_desc[:480] + " #AmazonAssociate")[:500]
+        for model_name in models:
+            try:
+                chat = client.chat.completions.create(
+                    model=model_name,
+                    messages=[{"role": "user", "content": prompt}],
+                    response_format={"type": "json_object"}
+                )
+                content = chat.choices[0].message.content or ""
+                clean_json = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip(), flags=re.MULTILINE).strip()
+                data = json.loads(clean_json)
 
-        return PinCopyResponse(
-            pin_title=pin_title,
-            pin_description=pin_desc,
-            hashtags=data.get("hashtags", ["#AmazonFinds", "#MustHaves", "#AmazonAssociate"]),
-            board_recommendation=data.get("board_recommendation", req.category),
-            call_to_action=data.get("call_to_action", "Tap here to check today's price & details!"),
-            hook=data.get("hook", "The Amazon Find You Need"),
-            bridge_review=BridgeReview(
-                verdict=data.get("bridge_review", {}).get("verdict", "An exceptional product with thousands of glowing reviews."),
-                pros=data.get("bridge_review", {}).get("pros", ["Verified customer favorite", "Exceptional ergonomics", "Fast Prime delivery"]),
-                cons=data.get("bridge_review", {}).get("cons", ["Stock sells out quickly during peak promotional events"]),
-                who_is_it_for=data.get("bridge_review", {}).get("who_is_it_for", "Ideal for anyone who values reliability and premium functionality."),
-            )
-        )
+                pin_title = data.get("pin_title", req.product_title)[:100]
+                pin_desc = data.get("pin_description", "")[:500]
+                if "#AmazonAssociate" not in pin_desc:
+                    pin_desc = (pin_desc[:480] + " #AmazonAssociate")[:500]
+
+                board_rec = data.get("board_recommendation", "Room Organization")
+                if board_rec not in valid_boards:
+                    board_rec = "Room Organization"
+
+                logger.info(f"Groq copy generation successful with model: {model_name}")
+                return PinCopyResponse(
+                    pin_title=pin_title,
+                    pin_description=pin_desc,
+                    hashtags=data.get("hashtags", ["#AmazonFinds", "#MustHaves", "#AmazonAssociate"]),
+                    board_recommendation=board_rec,
+                    call_to_action=data.get("call_to_action", "Tap here to check today's price & details!"),
+                    hook=data.get("hook", "The Amazon Find You Need"),
+                    bridge_review=BridgeReview(
+                        verdict=data.get("bridge_review", {}).get("verdict", "An exceptional product with thousands of glowing reviews."),
+                        pros=data.get("bridge_review", {}).get("pros", ["Verified customer favorite", "Exceptional ergonomics", "Fast Prime delivery"]),
+                        cons=data.get("bridge_review", {}).get("cons", ["Stock sells out quickly during peak promotional events"]),
+                        who_is_it_for=data.get("bridge_review", {}).get("who_is_it_for", "Ideal for anyone who values reliability and premium functionality."),
+                    )
+                )
+            except Exception as m_err:
+                logger.warning(f"Groq model {model_name} failed: {m_err}")
+                continue
+
     except Exception as err:
         logger.warning(f"Groq copy generation failed: {err}")
         return None
