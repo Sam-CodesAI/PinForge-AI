@@ -1,0 +1,30 @@
+{
+  "name": "pinforge-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autonomous Pinterest & Amazon Affiliate AI Automation Workflow System",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "engine": "./scripts/start-engine.sh"
+  },
+  "dependencies": {
+    "lucide-react": "^1.41.0",
+    "motion": "^13.2.0",
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.4.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  }
+}

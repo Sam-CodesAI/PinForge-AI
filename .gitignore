@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+python_engine/static/pins/*.jpg
+python_engine/static/pins/*.png
+!python_engine/static/pins/.gitkeep
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE & OS
+.DS_Store
+*.pem
+*.tsbuildinfo

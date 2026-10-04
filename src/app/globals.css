@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #070a12;
+    --foreground: #f8fafc;
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    background-color: #070a12;
+    color: #f8fafc;
+  }
+
+  body {
+    background-color: #070a12;
+    color: #f8fafc;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
