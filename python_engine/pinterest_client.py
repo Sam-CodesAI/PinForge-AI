@@ -51,6 +51,11 @@ class PinterestClient:
         self.base_url = os.getenv("PINTEREST_API_BASE", "https://api.pinterest.com/v5")
         self._board_cache: Dict[str, str] = {}  # name -> id
 
+    @property
+    def is_configured(self) -> bool:
+        """Returns True if a valid access token is configured."""
+        return bool(self.access_token and len(self.access_token) > 10)
+
     def _headers(self) -> Dict[str, str]:
         return {
             "Authorization": f"Bearer {self.access_token}",
