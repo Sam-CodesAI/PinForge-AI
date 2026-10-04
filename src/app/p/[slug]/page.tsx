@@ -56,10 +56,11 @@ export default async function BridgeProductPage({ params, searchParams }: Props)
     notFound();
   }
 
-  const affiliateTag = tag || process.env.AMAZON_AFFILIATE_TAG || "samarth0b-20";
+  const affiliateTag = tag || process.env.AMAZON_AFFILIATE_TAG || "smartspace07-21";
   const amazonUrl = `https://www.amazon.com/dp/${product.asin}?tag=${affiliateTag}`;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://pinforge.vercel.app";
   const pinterestShareUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(
-    `https://sam-codes.vercel.app/p/${slug}`
+    `${siteUrl}/p/${slug}`
   )}&media=${encodeURIComponent(product.imageUrl)}&description=${encodeURIComponent(
     `${product.title} - Full Review & Best Price: ${product.verdict} #AmazonAssociate`
   )}`;

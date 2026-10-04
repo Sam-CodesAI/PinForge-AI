@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing url_or_asin" }, { status: 400 });
     }
 
-    const tag = affiliate_tag || process.env.AMAZON_AFFILIATE_TAG || "samarth0b-20";
+    const tag = affiliate_tag || process.env.AMAZON_AFFILIATE_TAG || "smartspace07-21";
 
     // 1. Try Python Engine if reachable
     try {
