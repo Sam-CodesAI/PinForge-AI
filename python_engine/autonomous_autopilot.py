@@ -16,7 +16,7 @@ import logging
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 
 try:
     from python_engine.ai_trend_hunter import AITrendHunter
