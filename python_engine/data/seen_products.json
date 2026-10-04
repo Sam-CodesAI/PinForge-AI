@@ -9,10 +9,16 @@
       "asin": "B0F7PYC8NB",
       "title": "Curated Amazon Selection (B0F7PYC8NB)",
       "pin_id": "1132444268835773045"
+    },
+    {
+      "asin": "B09P1NQJNC",
+      "title": "Curated Amazon Selection (B09P1NQJNC)",
+      "pin_id": "1132444268835775000"
     }
   ],
   "published_asins": [
-    "B087F5K713",
-    "B0F7PYC8NB"
+    "B0F7PYC8NB",
+    "B09P1NQJNC",
+    "B087F5K713"
   ]
 }

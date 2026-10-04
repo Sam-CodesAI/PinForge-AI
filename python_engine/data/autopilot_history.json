@@ -300,5 +300,104 @@
       }
     ],
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-04T12:54:19.232164+00:00",
+    "status": "success",
+    "execution_time_seconds": 14.51,
+    "product": {
+      "asin": "B09P1NQJNC",
+      "title": "Curated Amazon Selection (B09P1NQJNC)",
+      "price": "$29.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
+      "bridge_slug": "amazon-find-b09p1nqjnc"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Viral Amazon Find",
+      "visual_hook": "Upgrade Your Daily Setup",
+      "secondary_hook": "Sleek Design Meets Everyday Function",
+      "target_audience": "Minimalists & Desk Setup Enthusiasts",
+      "alt_text": "Curated Amazon find modern daily essential now 25% off"
+    },
+    "seo_copy": {
+      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
+      "description": "Stop scrolling past this viral sensation! Backed by thousands of verified 4+ star reviews, this trending Amazon find under $30 delivers top-tier value and everyday convenience. Enjoy fast Prime shipping and hassle-free returns on the most talked-about product of the season. Tap to check availability before it sells out again! #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#AmazonFinds",
+        "#AmazonMustHaves",
+        "#ViralProducts",
+        "#TrendingNow",
+        "#AmazonFavorites",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_2f94e363be.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_4664e4aace.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_33a09920ad.jpg"
+      }
+    ],
+    "live_pinterest": {
+      "creative_type": "REGULAR",
+      "product_tags": [],
+      "parent_pin_id": null,
+      "alt_text": "Curated Amazon find modern daily essential now 25% off",
+      "board_id": "1132444337492930442",
+      "created_at": "2026-10-04T12:54:18",
+      "id": "1132444268835775000",
+      "board_section_id": null,
+      "is_owner": true,
+      "description": "Stop scrolling past this viral sensation! Backed by thousands of verified 4+ star reviews, this trending Amazon find under $30 delivers top-tier value and everyday convenience. Enjoy fast Prime shipping and hassle-free returns on the most talked-about product of the season. Tap to check availability before it sells out again! #AmazonAssociate",
+      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/a7/aa/5f/a7aa5f714dff448090743b70724474e4.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/a7/aa/5f/a7aa5f714dff448090743b70724474e4.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/a7/aa/5f/a7aa5f714dff448090743b70724474e4.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/a7/aa/5f/a7aa5f714dff448090743b70724474e4.jpg"
+          }
+        }
+      },
+      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
+      "has_been_promoted": false,
+      "is_removable": false,
+      "is_standard": true,
+      "pin_metrics": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_product": false,
+      "dominant_color": null,
+      "pin_id": "1132444268835775000"
+    }
   }
 ]
