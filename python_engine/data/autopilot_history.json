@@ -100,5 +100,56 @@
       }
     ],
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-04T11:34:13.466381+00:00",
+    "status": "success",
+    "execution_time_seconds": 13.63,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Homepage",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "homepage-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Limited Time 20% Off",
+      "visual_hook": "Upgrade Your Digital Setup",
+      "secondary_hook": "Sleek, modern, and built for performance",
+      "target_audience": "Minimalists & Tech Enthusiasts",
+      "alt_text": "Minimalist sleek design showcase on dark background with special discount pricing."
+    },
+    "seo_copy": {
+      "title": "Upgrade Your Space: The Ultimate Smart Home Must-Have Under $40",
+      "description": "Transform your daily routine with this top-rated Amazon Choice smart home essential. Engineered for everyday reliability with premium materials, thousands of verified buyers rave about its seamless performance. Enjoy fast Prime delivery and hassle-free returns on this budget-friendly tech upgrade that instantly modernizes any room. Click through to read the full review and check today's live pricing! #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmartHomeTech",
+        "#AmazonFinds",
+        "#TechGadgets",
+        "#HomeUpgrades",
+        "#AffordableTech",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5fb06fdf16.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_da3f47179b.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_787b1bb1fe.jpg"
+      }
+    ],
+    "live_pinterest": null
   }
 ]

@@ -54,6 +54,8 @@ class AutonomousAutopilot:
     def run_autopilot_cycle(
         self,
         target_asin_or_url: Optional[str] = None,
+        target_board: Optional[str] = None,
+        custom_queries: Optional[List[str]] = None,
         publish_live: bool = True,
     ) -> Dict[str, Any]:
         """Runs 1 complete autonomous cycle."""
@@ -65,7 +67,7 @@ class AutonomousAutopilot:
             query_used = "manual_input"
             candidate = {"asin": target_asin_or_url, "product_url": target_asin_or_url, "viral_score": 95.0}
         else:
-            candidate = self.hunter.hunt_top_trending_product()
+            candidate = self.hunter.hunt_top_trending_product(custom_queries=custom_queries)
             query_used = candidate.get("query_source", "ai_hunt")
 
         asin = candidate.get("asin", "")
@@ -122,18 +124,19 @@ class AutonomousAutopilot:
 
         # 6. Live Publishing to Pinterest API v5 (if enabled)
         live_pin_data = None
+        effective_board = target_board or copy_res.board_recommendation
         if publish_live and self.pinterest.is_configured:
             chosen_variant = variants[0]  # default to bento_dark
             try:
                 live_pin_data = self.pinterest.publish_pin(
                     title=copy_res.pin_title,
                     description=copy_res.pin_description,
-                    board_name=copy_res.board_recommendation,
+                    board_name=effective_board,
                     image_path_or_url=chosen_variant.image_path,
                     link=product.affiliate_url,
                     alt_text=vision_meta.get("alt_text"),
                 )
-                logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')}")
+                logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
                 self.hunter.mark_asin_seen(
                     asin=product.asin,
                     title=product.title,
@@ -161,7 +164,7 @@ class AutonomousAutopilot:
             "seo_copy": {
                 "title": copy_res.pin_title,
                 "description": copy_res.pin_description,
-                "board": copy_res.board_recommendation,
+                "board": effective_board,
                 "hashtags": copy_res.hashtags,
             },
             "creative_variants": [

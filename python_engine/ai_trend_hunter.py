@@ -181,9 +181,10 @@ class AITrendHunter:
         score = (rating_score * 0.45) + (review_score * 0.35) + (price_score * 0.20)
         return round(score, 1)
 
-    def hunt_top_trending_product(self) -> Optional[Dict[str, Any]]:
-        """Picks a random niche query and selects the highest-scoring unseen product."""
-        sampled_queries = random.sample(self.queries, k=min(3, len(self.queries)))
+    def hunt_top_trending_product(self, custom_queries: Optional[List[str]] = None) -> Optional[Dict[str, Any]]:
+        """Picks niche queries (or custom board queries) and selects the highest-scoring unseen product."""
+        query_pool = custom_queries if custom_queries else self.queries
+        sampled_queries = random.sample(query_pool, k=min(3, len(query_pool)))
         all_candidates = []
 
         for q in sampled_queries:
