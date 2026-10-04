@@ -239,6 +239,36 @@ class PinterestClient:
         self._record_published_pin(result)
         return result
 
+    def publish_pin(
+        self,
+        title: str,
+        description: str,
+        board_name: str,
+        image_path_or_url: str,
+        link: str,
+        alt_text: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Convenience method: resolves board by name and publishes image directly."""
+        board_id = self.get_or_create_board(board_name)
+        if image_path_or_url.startswith("http://") or image_path_or_url.startswith("https://"):
+            return self.create_pin(
+                board_id=board_id,
+                title=title,
+                description=description,
+                link=link,
+                image_url=image_path_or_url,
+                alt_text=alt_text,
+            )
+        else:
+            return self.create_pin(
+                board_id=board_id,
+                title=title,
+                description=description,
+                link=link,
+                image_path=image_path_or_url,
+                alt_text=alt_text,
+            )
+
     def get_account_analytics(
         self, days: int = 30, metrics: Optional[List[str]] = None
     ) -> Dict[str, Any]:
