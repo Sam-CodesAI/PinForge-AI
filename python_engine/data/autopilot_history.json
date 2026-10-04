@@ -399,5 +399,105 @@
       "dominant_color": null,
       "pin_id": "1132444268835775000"
     }
+  },
+  {
+    "timestamp": "2026-10-04T17:46:14.038049+00:00",
+    "status": "success",
+    "execution_time_seconds": 46.22,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Curated Amazon Selection (B087F5K713)",
+      "price": "$29.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "amazon-find-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#0B0F19",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Viral Amazon Find",
+      "visual_hook": "Curated Top Amazon Selection",
+      "secondary_hook": "Save time and elevate your everyday routine",
+      "target_audience": "Minimalists",
+      "alt_text": "Curated Amazon Selection product featured on a dark minimalist background with high conversion design."
+    },
+    "seo_copy": {
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "description": "Discover the viral Amazon find taking social media by storm! Rated 4+ stars by thousands of happy shoppers, this trending must-have delivers unbeatable everyday value for just $29.99. Enjoy fast Prime 2-day shipping and hassle-free returns. Tap the link to grab yours before it sells out! #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#AmazonFinds",
+        "#TrendingNow",
+        "#ViralProducts",
+        "#MustHaves",
+        "#BestAmazonFinds",
+        "#AmazonMustHaves",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e249660d33.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_45fe1b5ef0.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_42726dd18c.jpg"
+      }
+    ],
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "alt_text": "Curated Amazon Selection product featured on a dark minimalist background with high conversion design.",
+      "created_at": "2026-10-04T17:46:13",
+      "dominant_color": null,
+      "description": "Discover the viral Amazon find taking social media by storm! Rated 4+ stars by thousands of happy shoppers, this trending must-have delivers unbeatable everyday value for just $29.99. Enjoy fast Prime 2-day shipping and hassle-free returns. Tap the link to grab yours before it sells out! #AmazonAssociate",
+      "parent_pin_id": null,
+      "product_tags": [],
+      "id": "1132444268835796753",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "creative_type": "REGULAR",
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "board_section_id": null,
+      "board_id": "1132444337492930442",
+      "has_been_promoted": false,
+      "is_removable": false,
+      "is_product": false,
+      "is_owner": true,
+      "pin_metrics": null,
+      "pin_id": "1132444268835796753"
+    }
   }
 ]
