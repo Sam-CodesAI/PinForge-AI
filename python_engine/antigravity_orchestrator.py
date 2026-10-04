@@ -114,15 +114,15 @@ class AntigravityOrchestrator:
         title: str,
         description: str,
         link: str,
-        image_url: str,
+        image_url: Optional[str] = None,
+        image_path: Optional[str] = None,
+        base64_image: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Tool: Posts programmatically to the matching @Smart_Spaces Pinterest board."""
         logger.info(f"🖐️ [Tool Executing] tool_publish_pin to board query: '{board_name_or_keyword}'")
         
-        # 1. Resolve board ID
-        board_id = self.pinterest.find_board_id(board_name_or_keyword)
-        if not board_id:
-            raise ValueError(f"Could not resolve a valid Pinterest board for '{board_name_or_keyword}'")
+        # 1. Resolve or create board
+        board_id = self.pinterest.get_or_create_board(board_name_or_keyword)
 
         # 2. Call Pinterest API v5
         result = self.pinterest.create_pin(
@@ -131,6 +131,8 @@ class AntigravityOrchestrator:
             description=description,
             link=link,
             image_url=image_url,
+            image_path=image_path,
+            base64_image=base64_image,
         )
         logger.info(f"✓ Successfully published Pin ID: {result.get('id')} to Board ID: {board_id}")
         return result
@@ -192,6 +194,8 @@ class AntigravityOrchestrator:
                     description=copy.get("pin_description", ""),
                     link=bridge_url,
                     image_url=image_url,
+                    image_path=graphic.get("image_path"),
+                    base64_image=graphic.get("base64_image"),
                 )
                 result["published_to_pinterest"] = True
                 result["pinterest_pin_id"] = pin_pub.get("id")

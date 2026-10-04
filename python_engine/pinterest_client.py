@@ -40,7 +40,7 @@ PINTEREST_API_BASE = "https://api.pinterest.com/v5"
 
 
 class PinterestClient:
-    """Production client for Pinterest API v5 with self-healing token checks."""
+    """Production client for Pinterest API v5 with self-healing token checks and sandbox auto-detection."""
 
     def __init__(self, access_token: Optional[str] = None):
         self.access_token = (access_token or PINTEREST_ACCESS_TOKEN).strip()
@@ -48,6 +48,7 @@ class PinterestClient:
         self.app_secret = PINTEREST_APP_SECRET
         self.refresh_token = PINTEREST_REFRESH_TOKEN
         self.target_username = PINTEREST_TARGET_USERNAME
+        self.base_url = os.getenv("PINTEREST_API_BASE", "https://api.pinterest.com/v5")
         self._board_cache: Dict[str, str] = {}  # name -> id
 
     def _headers(self) -> Dict[str, str]:
@@ -60,8 +61,8 @@ class PinterestClient:
     def _request(
         self, endpoint: str, method: str = "GET", data: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
-        """Execute HTTP request against Pinterest API v5."""
-        url = f"{PINTEREST_API_BASE}/{endpoint.lstrip('/')}"
+        """Execute HTTP request against Pinterest API v5 with automatic sandbox fallback."""
+        url = f"{self.base_url}/{endpoint.lstrip('/')}"
         encoded_data = json.dumps(data).encode("utf-8") if data else None
 
         req = urllib.request.Request(
@@ -78,6 +79,20 @@ class PinterestClient:
                 err_json = json.loads(err_body)
             except Exception:
                 err_json = {"raw": err_body}
+
+            # Auto-detect Sandbox token if production rejected authentication
+            if e.code == 401 and "Authentication failed" in err_body and "api-sandbox" not in self.base_url:
+                try:
+                    sandbox_url = f"https://api-sandbox.pinterest.com/v5/{endpoint.lstrip('/')}"
+                    sandbox_req = urllib.request.Request(
+                        sandbox_url, data=encoded_data, headers=self._headers(), method=method
+                    )
+                    with urllib.request.urlopen(sandbox_req, timeout=15) as s_resp:
+                        self.base_url = "https://api-sandbox.pinterest.com/v5"
+                        s_body = s_resp.read().decode("utf-8")
+                        return json.loads(s_body) if s_body else {}
+                except Exception:
+                    pass
             
             # Specialized scope detection
             if e.code == 401 and "Missing:" in err_body:
@@ -125,13 +140,29 @@ class PinterestClient:
 
         return None
 
+    def get_or_create_board(self, board_name: str) -> str:
+        """Find existing board by name or create it automatically."""
+        found_id = self.find_board_id(board_name)
+        if found_id:
+            return found_id
+
+        # Board not found, create it dynamically
+        res = self._request("boards", method="POST", data={"name": board_name, "privacy": "PUBLIC"})
+        new_id = res.get("id")
+        if not new_id:
+            raise RuntimeError(f"Failed to create board '{board_name}': {res}")
+        self._board_cache[board_name.lower().strip()] = new_id
+        return new_id
+
     def create_pin(
         self,
         board_id: str,
         title: str,
         description: str,
         link: str,
-        image_url: str,
+        image_url: Optional[str] = None,
+        image_path: Optional[str] = None,
+        base64_image: Optional[str] = None,
         alt_text: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Create a new Pin on Pinterest API v5.
@@ -140,6 +171,7 @@ class PinterestClient:
         - title: max 100 characters
         - description: max 500 characters
         - mandatory disclosure: #AmazonAssociate
+        - Supports direct base64 upload, local image file paths, or remote public URLs.
         """
         # Truncate and sanitize title
         safe_title = title.strip()[:100]
@@ -152,16 +184,48 @@ class PinterestClient:
             safe_desc = description.strip()
         safe_desc = safe_desc[:500]
 
+        # Determine media source (base64 vs URL)
+        media_source = {}
+        if base64_image:
+            # Strip data:image/...;base64, prefix if present
+            clean_b64 = base64_image.split(",")[-1] if "," in base64_image else base64_image
+            media_source = {
+                "source_type": "image_base64",
+                "content_type": "image/jpeg",
+                "data": clean_b64,
+            }
+        elif image_path and Path(image_path).exists():
+            raw_bytes = Path(image_path).read_bytes()
+            media_source = {
+                "source_type": "image_base64",
+                "content_type": "image/jpeg" if str(image_path).endswith((".jpg", ".jpeg")) else "image/png",
+                "data": base64.b64encode(raw_bytes).decode("utf-8"),
+            }
+        elif image_url and ("localhost" in image_url or "pinforge.vercel.app" in image_url):
+            # If pointing to local static pins dir, load binary file directly
+            filename = Path(image_url).name
+            local_pin_path = Path(__file__).resolve().parent / "static" / "pins" / filename
+            if local_pin_path.exists():
+                raw_bytes = local_pin_path.read_bytes()
+                media_source = {
+                    "source_type": "image_base64",
+                    "content_type": "image/jpeg",
+                    "data": base64.b64encode(raw_bytes).decode("utf-8"),
+                }
+            else:
+                media_source = {"source_type": "image_url", "url": image_url}
+        elif image_url:
+            media_source = {"source_type": "image_url", "url": image_url}
+        else:
+            raise ValueError("Must provide either image_url, image_path, or base64_image")
+
         payload = {
             "board_id": board_id,
             "title": safe_title,
             "description": safe_desc,
             "link": link,
             "alt_text": alt_text or safe_title,
-            "media_source": {
-                "source_type": "image_url",
-                "url": image_url,
-            },
+            "media_source": media_source,
         }
 
         result = self._request("pins", method="POST", data=payload)

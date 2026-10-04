@@ -10,5 +10,31 @@
     "status": "ready",
     "published_to_pinterest": false,
     "timestamp": "2026-10-04T08:04:46.859098"
+  },
+  {
+    "asin": "B087F5K713",
+    "title": "Upgrade Your Space: The Ultimate Smart Home Tech Must-Have",
+    "description": "Transform your daily routine with the internet's favorite smart home essential. Engineered for everyday reliability and backed by thousands of verified five-star reviews, this top-rated Amazon Choice find delivers premium quality without the luxury price tag. Enjoy fast Prime shipping and hassle-free returns today! #AmazonAssociate",
+    "board_recommendation": "Smart Home Tech",
+    "image_url": "https://pinforge.vercel.app/pins/pin_cf63dd8b36d2.jpg",
+    "bridge_url": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+    "render_time_ms": 1499.13,
+    "status": "failed",
+    "published_to_pinterest": false,
+    "publish_error": "Pinterest API Error (400) on POST pins: {'code': 1, 'message': 'Sorry we could not fetch the image.'}",
+    "timestamp": "2026-10-04T09:40:01.914538"
+  },
+  {
+    "asin": "B087F5K713",
+    "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+    "description": "Upgrade your outdoor adventures with the viral Motivekit Portable Camping Shower! Featuring a massive 5.3-gallon foldable design, this Amazon's Choice favorite brings reliable luxury to off-grid camping, beach trips, and van life. Engineered for durability, quick setup, and effortless packing. Enjoy fast Prime delivery and hassle-free returns today! #AmazonAssociate",
+    "board_recommendation": "Outdoor Tech Gear",
+    "image_url": "https://pinforge.vercel.app/pins/pin_c927a919f45f.jpg",
+    "bridge_url": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+    "render_time_ms": 380.79,
+    "status": "published",
+    "published_to_pinterest": true,
+    "pinterest_pin_id": "1132444268835762602",
+    "timestamp": "2026-10-04T09:41:46.911631"
   }
 ]
