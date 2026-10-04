@@ -64,44 +64,58 @@ Return ONLY a valid JSON object matching this exact schema:
 }}"""
 
         # Real production Gemini 2026 models
+        import time
+        import random
+        
         models = ["gemini-3.8-flash", "gemini-3.5-flash-lite"]
+        valid_boards = ['Small Apartment Hacks', 'Space Saving Kitchens', 'Closet & Wardrobe Organization', 'Studio Living Ideas', 'Room Organization']
         for model_name in models:
-            try:
-                resp = client.models.generate_content(
-                    model=model_name,
-                    contents=prompt
-                )
-                text = resp.text.strip()
-                # Remove code blocks if present
-                clean_json = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
-                data = json.loads(clean_json)
-
-                # Ensure strict character boundaries
-                pin_title = data.get("pin_title", req.product_title)[:100]
-                pin_desc = data.get("pin_description", "")[:500]
-                if "#AmazonAssociate" not in pin_desc:
-                    if len(pin_desc) + 18 <= 500:
-                        pin_desc += " #AmazonAssociate"
-                    else:
-                        pin_desc = pin_desc[:480] + "... #AmazonAssociate"
-
-                return PinCopyResponse(
-                    pin_title=pin_title,
-                    pin_description=pin_desc,
-                    hashtags=data.get("hashtags", ["#AmazonFinds", "#Trending", "#AmazonAssociate"]),
-                    board_recommendation=data.get("board_recommendation", req.category),
-                    call_to_action=data.get("call_to_action", "Tap here to check today's price & details!"),
-                    hook=data.get("hook", "The Amazon Find You Need"),
-                    bridge_review=BridgeReview(
-                        verdict=data.get("bridge_review", {}).get("verdict", "An exceptional blend of performance and value."),
-                        pros=data.get("bridge_review", {}).get("pros", ["Premium design", "High reliability", "Prime delivery"]),
-                        cons=data.get("bridge_review", {}).get("cons", ["High demand frequently leads to backorders"]),
-                        who_is_it_for=data.get("bridge_review", {}).get("who_is_it_for", "Anyone looking to upgrade their daily setup with a verified top-tier product."),
+            for attempt in range(1, 4):
+                try:
+                    resp = client.models.generate_content(
+                        model=model_name,
+                        contents=prompt
                     )
-                )
-            except Exception as e:
-                logger.warning(f"Gemini {model_name} failed: {e}")
-                continue
+                    text = resp.text.strip()
+                    # Remove code blocks if present
+                    clean_json = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
+                    data = json.loads(clean_json)
+    
+                    # Ensure strict character boundaries
+                    pin_title = data.get("pin_title", req.product_title)[:100]
+                    pin_desc = data.get("pin_description", "")[:500]
+                    if "#AmazonAssociate" not in pin_desc:
+                        if len(pin_desc) + 18 <= 500:
+                            pin_desc += " #AmazonAssociate"
+                        else:
+                            pin_desc = pin_desc[:480] + "... #AmazonAssociate"
+    
+                    board_rec = data.get("board_recommendation", "Room Organization")
+                    if board_rec not in valid_boards:
+                        board_rec = "Room Organization"
+    
+                    return PinCopyResponse(
+                        pin_title=pin_title,
+                        pin_description=pin_desc,
+                        hashtags=data.get("hashtags", ["#AmazonFinds", "#Trending", "#AmazonAssociate"]),
+                        board_recommendation=board_rec,
+                        call_to_action=data.get("call_to_action", "Tap here to check today's price & details!"),
+                        hook=data.get("hook", "The Amazon Find You Need"),
+                        bridge_review=BridgeReview(
+                            verdict=data.get("bridge_review", {}).get("verdict", "An exceptional blend of performance and value."),
+                            pros=data.get("bridge_review", {}).get("pros", ["Premium design", "High reliability", "Prime delivery"]),
+                            cons=data.get("bridge_review", {}).get("cons", ["High demand frequently leads to backorders"]),
+                            who_is_it_for=data.get("bridge_review", {}).get("who_is_it_for", "Anyone looking to upgrade their daily setup with a verified top-tier product."),
+                        )
+                    )
+                except Exception as e:
+                    if "503" in str(e) and attempt < 3:
+                        delay = (2 ** attempt) + random.uniform(0, 1)
+                        logger.warning(f"Gemini {model_name} 503 error, retrying in {delay:.2f}s...")
+                        time.sleep(delay)
+                        continue
+                    logger.warning(f"Gemini {model_name} failed: {e}")
+                    break
     except Exception as err:
         logger.warning(f"Gemini client initialization failed: {err}")
 

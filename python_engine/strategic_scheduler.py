@@ -141,6 +141,9 @@ class StrategicScheduler:
         if not slot:
             raise ValueError(f"Invalid slot ID: {slot_id}. Must be between 1 and 5.")
 
+        if not self.autopilot.pinterest._board_cache:
+            self.autopilot.pinterest.bootstrap_smart_spaces_boards()
+
         board_name = slot["board_name"]
         queries = slot["niche_queries"]
         logger.info(f"⏰ Executing Slot {slot_id}: Board='{board_name}' | Peak: {slot['peak_time_est']}")
@@ -169,6 +172,7 @@ class StrategicScheduler:
     ) -> List[Dict[str, Any]]:
         """Executes all 5 boards in sequence (useful for testing or initial warmup)."""
         logger.info("⚡ Executing Full 5-Board Circuit (1 pin for each pillar)...")
+        self.autopilot.pinterest.bootstrap_smart_spaces_boards()
         results = []
         for slot_id in sorted(SCHEDULE_PILLARS.keys()):
             res = self.execute_slot(slot_id, apply_jitter=False, dry_run=dry_run)
@@ -188,11 +192,16 @@ def main():
     parser.add_argument("--all", action="store_true", help="Execute all 5 boards in sequence")
     parser.add_argument("--no-jitter", action="store_true", help="Bypass anti-detection jitter sleep")
     parser.add_argument("--dry-run", action="store_true", help="Run without posting live to Pinterest")
+    parser.add_argument("--bootstrap", action="store_true", help="Only bootstrap boards, do not publish")
 
     args = parser.parse_args()
     scheduler = StrategicScheduler()
 
-    if args.all:
+    if args.bootstrap:
+        logger.info("Bootstrapping boards...")
+        scheduler.autopilot.pinterest.bootstrap_smart_spaces_boards()
+        logger.info("Boards bootstrapped successfully.")
+    elif args.all:
         scheduler.execute_full_circuit(dry_run=args.dry_run)
     elif args.slot:
         scheduler.execute_slot(args.slot, apply_jitter=not args.no_jitter, dry_run=args.dry_run)
@@ -209,6 +218,7 @@ def main():
         print("  python -m python_engine.strategic_scheduler --auto")
         print("  python -m python_engine.strategic_scheduler --slot 1")
         print("  python -m python_engine.strategic_scheduler --all --dry-run")
+        print("  python -m python_engine.strategic_scheduler --bootstrap")
 
 
 if __name__ == "__main__":

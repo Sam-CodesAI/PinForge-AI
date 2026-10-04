@@ -72,26 +72,39 @@ Return ONLY a valid JSON object with these exact keys:
 Do NOT include markdown formatting, backticks, or preamble. Return raw JSON only.
 """
 
-        try:
-            response = self.client.models.generate_content(
-                model="gemini-3.8-flash",
-                contents=[
-                    types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg"),
-                    prompt,
-                ],
-            )
-
-            text = response.text.strip()
-            # Clean possible markdown wrapping
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-
-            data = json.loads(text)
-            logger.info(f"AI Vision curation successful: {data.get('visual_hook')}")
-            return data
-        except Exception as e:
-            logger.warning(f"Gemini Vision curation failed ({e}), falling back to heuristics.")
-            return self._procedural_heuristics(product_title, price_str, discount_pct)
+        import time
+        import random
+        
+        models = ["gemini-3.8-flash", "gemini-3.5-flash-lite"]
+        for model_name in models:
+            for attempt in range(1, 4):
+                try:
+                    response = self.client.models.generate_content(
+                        model=model_name,
+                        contents=[
+                            types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg"),
+                            prompt,
+                        ],
+                    )
+        
+                    text = response.text.strip()
+                    # Clean possible markdown wrapping
+                    text = re.sub(r"^```(?:json)?\s*", "", text)
+                    text = re.sub(r"\s*```$", "", text)
+        
+                    data = json.loads(text)
+                    logger.info(f"AI Vision curation successful: {data.get('visual_hook')}")
+                    return data
+                except Exception as e:
+                    if "503" in str(e) and attempt < 3:
+                        delay = (2 ** attempt) + random.uniform(0, 1)
+                        logger.warning(f"Gemini {model_name} 503 error, retrying in {delay:.2f}s...")
+                        time.sleep(delay)
+                        continue
+                    logger.warning(f"Gemini Vision curation failed with {model_name} ({e})")
+                    break
+        
+        return self._procedural_heuristics(product_title, price_str, discount_pct)
 
     def _procedural_heuristics(
         self,

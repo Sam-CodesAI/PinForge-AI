@@ -183,13 +183,28 @@ class AITrendHunter:
 
     def hunt_top_trending_product(self, custom_queries: Optional[List[str]] = None) -> Optional[Dict[str, Any]]:
         """Picks niche queries (or custom board queries) and selects the highest-scoring unseen product."""
+        import time
         query_pool = custom_queries if custom_queries else self.queries
-        sampled_queries = random.sample(query_pool, k=min(3, len(query_pool)))
+        # Shuffle to try different queries
+        query_pool = random.sample(query_pool, k=len(query_pool))
         all_candidates = []
-
-        for q in sampled_queries:
+        
+        attempt = 0
+        for q in query_pool:
             candidates = self.search_category(q, limit=6)
-            all_candidates.extend(candidates)
+            if candidates:
+                all_candidates.extend(candidates)
+                # If we have enough candidates, break early to save API calls
+                if len(all_candidates) >= 6:
+                    break
+            else:
+                attempt += 1
+                delay = 2 ** attempt
+                logger.warning(f"Query '{q}' returned no candidates (possible 503). Retrying next query in {delay}s...")
+                time.sleep(delay)
+                # Try up to 4 queries before falling back
+                if attempt >= 4:
+                    break
 
         if not all_candidates:
             # Fallback curated high-performing Smart Spaces product

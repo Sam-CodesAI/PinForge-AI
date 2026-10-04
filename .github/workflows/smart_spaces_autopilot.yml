@@ -2,6 +2,8 @@ name: Smart Spaces 24/7 AI Autopilot
 
 on:
   schedule:
+    # Bootstrap run every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
     # 5 Strategic Daily Peak Windows (UTC converted from EST)
     # Slot 1: 08:30 AM EST (13:30 UTC) - Small Apartment Hacks
     - cron: '30 13 * * *'
@@ -29,6 +31,7 @@ on:
           - '4'
           - '5'
           - 'all'
+          - 'bootstrap'
       dry_run:
         description: 'Dry Run (Test without posting live to Pinterest)'
         required: false
@@ -39,28 +42,54 @@ permissions:
   contents: write
 
 jobs:
-  autopilot:
-    runs-on: ubuntu-latest
+  bootstrap:
+    if: github.event.schedule == '0 9 * * 1' || github.event.inputs.slot == 'bootstrap'
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
-
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r python_engine/requirements.txt
+      - name: Execute Bootstrap Board Warmup
+        continue-on-error: false
+        timeout-minutes: 10
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          AMAZON_AFFILIATE_TAG: 'smartspace07-21'
+        run: |
+          python -m python_engine.strategic_scheduler --all --no-jitter --dry-run
 
+  autopilot:
+    if: github.event.schedule != '0 9 * * 1' && github.event.inputs.slot != 'bootstrap'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r python_engine/requirements.txt
       - name: Execute Strategic AI Autopilot Cycle
+        continue-on-error: false
+        timeout-minutes: 10
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}

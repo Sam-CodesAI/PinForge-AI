@@ -39,6 +39,8 @@ except ImportError:
 PINTEREST_API_BASE = "https://api.pinterest.com/v5"
 
 
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+
 class PinterestClient:
     """Production client for Pinterest API v5 with self-healing token checks and sandbox auto-detection."""
 
@@ -63,6 +65,7 @@ class PinterestClient:
             "User-Agent": "PinForge-AI/1.0 (@Smart_Spaces)",
         }
 
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10), retry=retry_if_exception_type((urllib.error.URLError, TimeoutError, ConnectionError)))
     def _request(
         self, endpoint: str, method: str = "GET", data: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
@@ -159,6 +162,21 @@ class PinterestClient:
         self._board_cache[board_name.lower().strip()] = new_id
         return new_id
 
+    def bootstrap_smart_spaces_boards(self) -> None:
+        """Ensure all 5 official Smart Spaces pillar boards exist."""
+        boards = [
+            'Small Apartment Hacks',
+            'Space Saving Kitchens',
+            'Closet & Wardrobe Organization',
+            'Studio Living Ideas',
+            'Room Organization'
+        ]
+        for b in boards:
+            try:
+                self.get_or_create_board(b)
+            except Exception as e:
+                print(f"[Warning] Failed to bootstrap board '{b}': {e}")
+
     def create_pin(
         self,
         board_id: str,
@@ -251,7 +269,7 @@ class PinterestClient:
         """Convenience method: resolves board by name and publishes image directly."""
         board_id = self.get_or_create_board(board_name)
         if image_path_or_url.startswith("http://") or image_path_or_url.startswith("https://"):
-            return self.create_pin(
+            result = self.create_pin(
                 board_id=board_id,
                 title=title,
                 description=description,
@@ -260,7 +278,7 @@ class PinterestClient:
                 alt_text=alt_text,
             )
         else:
-            return self.create_pin(
+            result = self.create_pin(
                 board_id=board_id,
                 title=title,
                 description=description,
@@ -268,6 +286,7 @@ class PinterestClient:
                 image_path=image_path_or_url,
                 alt_text=alt_text,
             )
+        return {**result, "pin_id": result.get("id", "")}
 
     def get_account_analytics(
         self, days: int = 30, metrics: Optional[List[str]] = None
