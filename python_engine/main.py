@@ -125,6 +125,120 @@ def rss_feed_endpoint():
         raise HTTPException(status_code=500, detail="Failed to render RSS feed")
 
 
+from pydantic import BaseModel
+
+class PinterestPublishRequest(BaseModel):
+    board_name_or_id: str
+    title: str
+    description: str
+    link: str
+    image_url: str
+
+class AutonomousCycleRequest(BaseModel):
+    url_or_asin: str
+    template_style: str = "bento_dark"
+    publish_live: bool = False
+
+
+@app.get("/api/pinterest/account")
+def get_pinterest_account():
+    """Fetch authenticated @Smart_Spaces profile from Pinterest API v5."""
+    try:
+        from python_engine.pinterest_client import PinterestClient
+    except ImportError:
+        from pinterest_client import PinterestClient
+
+    try:
+        client = PinterestClient()
+        return client.get_user_account()
+    except Exception as e:
+        logger.error(f"Failed to fetch Pinterest account: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/pinterest/boards")
+def get_pinterest_boards():
+    """Fetch active boards for @Smart_Spaces from Pinterest API v5."""
+    try:
+        from python_engine.pinterest_client import PinterestClient
+    except ImportError:
+        from pinterest_client import PinterestClient
+
+    try:
+        client = PinterestClient()
+        return client.get_boards(force_refresh=True)
+    except Exception as e:
+        logger.error(f"Failed to fetch Pinterest boards: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/pinterest/publish")
+def publish_pinterest_pin(req: PinterestPublishRequest):
+    """Programmatic Pin Creation via Pinterest API v5."""
+    try:
+        from python_engine.pinterest_client import PinterestClient
+    except ImportError:
+        from pinterest_client import PinterestClient
+
+    try:
+        client = PinterestClient()
+        board_id = client.find_board_id(req.board_name_or_id)
+        if not board_id:
+            raise HTTPException(status_code=404, detail=f"Board '{req.board_name_or_id}' not found.")
+
+        result = client.create_pin(
+            board_id=board_id,
+            title=req.title,
+            description=req.description,
+            link=req.link,
+            image_url=req.image_url,
+        )
+        return result
+    except PermissionError as perm_err:
+        raise HTTPException(status_code=403, detail=str(perm_err))
+    except Exception as e:
+        logger.error(f"Failed to publish pin: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/pinterest/analytics")
+def get_pinterest_analytics(days: int = 30):
+    """Fetch pin performance metrics for @Smart_Spaces."""
+    try:
+        from python_engine.pinterest_client import PinterestClient
+    except ImportError:
+        from pinterest_client import PinterestClient
+
+    try:
+        client = PinterestClient()
+        return client.get_account_analytics(days=days)
+    except Exception as e:
+        logger.error(f"Failed to fetch analytics: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/autonomous/run")
+def run_autonomous_cycle(req: AutonomousCycleRequest):
+    """Run full Antigravity agentic cycle: Scrape -> Copy -> 2:3 Graphic -> Bridge -> Pinterest."""
+    try:
+        from python_engine.antigravity_orchestrator import AntigravityOrchestrator
+    except ImportError:
+        from antigravity_orchestrator import AntigravityOrchestrator
+
+    try:
+        orchestrator = AntigravityOrchestrator()
+        result = orchestrator.execute_autonomous_cycle(
+            url_or_asin=req.url_or_asin,
+            template_style=req.template_style,
+            publish_live=req.publish_live,
+        )
+        return result
+    except Exception as e:
+        logger.error(f"Autonomous cycle failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("python_engine.main:app", host=HOST, port=PORT, reload=True)
+
