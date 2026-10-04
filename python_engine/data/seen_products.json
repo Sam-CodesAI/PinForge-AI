@@ -4,9 +4,15 @@
       "asin": "B087F5K713",
       "title": "Homepage",
       "pin_id": ""
+    },
+    {
+      "asin": "B0F7PYC8NB",
+      "title": "Curated Amazon Selection (B0F7PYC8NB)",
+      "pin_id": "1132444268835773045"
     }
   ],
   "published_asins": [
-    "B087F5K713"
+    "B087F5K713",
+    "B0F7PYC8NB"
   ]
 }
