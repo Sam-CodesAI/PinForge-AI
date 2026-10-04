@@ -151,5 +151,103 @@
       }
     ],
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-04T11:52:55.759618+00:00",
+    "status": "success",
+    "execution_time_seconds": 16.03,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Homepage",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "homepage-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Homepage - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "The $40 Smart Home Upgrade Everyone Is Obsessed With",
+      "description": "Ready to simplify your daily routine? This top-rated smart home essential delivers premium build quality, engineered reliability, and seamless performance without breaking the bank. Backed by thousands of verified reviews and fast Prime shipping, it's an effortless upgrade for any modern space. Tap through to see today's pricing and real customer reviews! #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmartHomeTech",
+        "#AmazonFinds",
+        "#TechGadgets",
+        "#HomeAutomation",
+        "#ViralAmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_593f4bfdfd.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7651d30cf5.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f29152cd4a.jpg"
+      }
+    ],
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "created_at": "2026-10-04T11:52:55",
+      "product_tags": [],
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
+          }
+        }
+      },
+      "id": "1132444268835770261",
+      "has_been_promoted": false,
+      "is_product": false,
+      "is_standard": true,
+      "title": "The $40 Smart Home Upgrade Everyone Is Obsessed With",
+      "description": "Ready to simplify your daily routine? This top-rated smart home essential delivers premium build quality, engineered reliability, and seamless performance without breaking the bank. Backed by thousands of verified reviews and fast Prime shipping, it's an effortless upgrade for any modern space. Tap through to see today's pricing and real customer reviews! #AmazonAssociate",
+      "board_section_id": null,
+      "parent_pin_id": null,
+      "board_id": "1132444337492930442",
+      "dominant_color": null,
+      "creative_type": "REGULAR",
+      "is_removable": false,
+      "alt_text": "Homepage - Smart Spaces Amazon find",
+      "pin_metrics": null,
+      "is_owner": true
+    }
   }
 ]
