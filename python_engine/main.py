@@ -238,6 +238,33 @@ def run_autonomous_cycle(req: AutonomousCycleRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.get("/api/canva/app")
+def get_canva_app_status():
+    """Fetch linked Canva App metadata and preview URLs."""
+    try:
+        from python_engine.canva_client import CanvaClient
+    except ImportError:
+        from canva_client import CanvaClient
+
+    client = CanvaClient()
+    return client.get_app_info()
+
+
+@app.post("/api/canva/autofill")
+def autofill_canva_template(template_id: str, data: dict):
+    """Trigger Canva Brand Template autofill with Amazon product data."""
+    try:
+        from python_engine.canva_client import CanvaClient
+    except ImportError:
+        from canva_client import CanvaClient
+
+    client = CanvaClient()
+    result = client.create_autofill_job(template_id=template_id, data=data)
+    if not result.get("success"):
+        raise HTTPException(status_code=400, detail=result.get("error", "Canva autofill failed"))
+    return result
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("python_engine.main:app", host=HOST, port=PORT, reload=True)

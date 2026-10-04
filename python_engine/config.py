@@ -28,10 +28,12 @@ PINTEREST_ACCESS_TOKEN = os.getenv("PINTEREST_ACCESS_TOKEN", "")
 PINTEREST_REFRESH_TOKEN = os.getenv("PINTEREST_REFRESH_TOKEN", "")
 PINTEREST_TARGET_USERNAME = os.getenv("PINTEREST_TARGET_USERNAME", "Smart_Spaces")
 
-# Canva Connect API Settings
+# Canva Connect API & Apps SDK Settings
 CANVA_CLIENT_ID = os.getenv("CANVA_CLIENT_ID", "")
 CANVA_CLIENT_SECRET = os.getenv("CANVA_CLIENT_SECRET", "")
 CANVA_BRAND_TEMPLATE_ID = os.getenv("CANVA_BRAND_TEMPLATE_ID", "")
+CANVA_APP_ID = os.getenv("CANVA_APP_ID", "AAHOGH31K5Q")
+CANVA_APP_ORIGIN = os.getenv("CANVA_APP_ORIGIN", "https://app-aahogh31k5q.canva-apps.com")
 
 # Server & Paths
 PORT = int(os.getenv("PINFORGE_PORT", "8000"))
