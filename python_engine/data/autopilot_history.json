@@ -499,5 +499,105 @@
       "pin_metrics": null,
       "pin_id": "1132444268835796753"
     }
+  },
+  {
+    "timestamp": "2026-10-04T20:30:36.888957+00:00",
+    "status": "success",
+    "execution_time_seconds": 10.28,
+    "product": {
+      "asin": "B0DHGM5XT4",
+      "title": "Criusia Drawer Organizer Clothes",
+      "price": "$18.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "bridge_slug": "criusia-drawer-organizer-clothes-b0dhgm5xt4"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#2C2623",
+      "accent_hex": "#D97706",
+      "badge_text": "10-Pack Drawer System",
+      "visual_hook": "End Drawer Chaos Forever",
+      "secondary_hook": "Instant neat folds and stress-free mornings",
+      "target_audience": "Home Organizers",
+      "alt_text": "10 pack beige fabric drawer organizers neatly sorting folded clothes and nursery items."
+    },
+    "seo_copy": {
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "description": "Transform messy drawers into a Pinterest-worthy closet with the Criusia Drawer Organizer set. Featuring 10 sturdy, odorless bins in 3 versatile sizes reinforced with heavy plastic boards, they keep baby clothes, socks, and accessories neatly separated and wrinkle-free. Maximize your storage space today! #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ClosetOrganization",
+        "#DrawerOrganizers",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#AestheticHome",
+        "#DeclutterYourLife",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_8080ed6eea.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5bd27c9c24.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_1b14810907.jpg"
+      }
+    ],
+    "live_pinterest": {
+      "alt_text": "10 pack beige fabric drawer organizers neatly sorting folded clothes and nursery items.",
+      "created_at": "2026-10-04T20:30:36",
+      "pin_metrics": null,
+      "is_standard": true,
+      "is_owner": true,
+      "board_id": "1132444337492930442",
+      "id": "1132444268835809911",
+      "board_section_id": null,
+      "product_tags": [],
+      "is_product": false,
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "has_been_promoted": false,
+      "description": "Transform messy drawers into a Pinterest-worthy closet with the Criusia Drawer Organizer set. Featuring 10 sturdy, odorless bins in 3 versatile sizes reinforced with heavy plastic boards, they keep baby clothes, socks, and accessories neatly separated and wrinkle-free. Maximize your storage space today! #AmazonAssociate",
+      "dominant_color": null,
+      "creative_type": "REGULAR",
+      "parent_pin_id": null,
+      "is_removable": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
+          }
+        }
+      },
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_id": "1132444268835809911"
+    }
   }
 ]
