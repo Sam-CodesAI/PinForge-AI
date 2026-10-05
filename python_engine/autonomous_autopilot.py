@@ -61,6 +61,7 @@ class AutonomousAutopilot:
         target_board: Optional[str] = None,
         custom_queries: Optional[List[str]] = None,
         publish_live: bool = True,
+        publish_as_carousel: bool = False,
     ) -> Dict[str, Any]:
         """Runs 1 complete autonomous cycle."""
         cycle_start = time.perf_counter()
@@ -167,31 +168,70 @@ class AutonomousAutopilot:
         # 6. Live Publishing to Pinterest API v5 (if enabled)
         live_pin_data = None
         if publish_live and self.pinterest.is_configured:
-            # Dynamic template routing based on AI vision theme and board intent
-            v_theme = vision_meta.get("theme", "bento_dark")
-            chosen_variant = variants[0]
-            for v in variants:
-                if v_theme in v.image_path:
-                    chosen_variant = v
-                    break
-            else:
-                # If specific theme not found, rotate lifestyle for apartment/studio boards
-                if any(k in effective_board.lower() for k in ["apartment", "studio"]):
+            try:
+                if publish_as_carousel and carousel_suite.get("slide_paths"):
+                    # Native Base64 Carousel Publishing with per-slide deep affiliate links
+                    carousel_slides = [
+                        {
+                            "image_path": carousel_suite["slide_paths"][0],
+                            "title": f"{copy_res.pin_title} (Slide 1/4)",
+                            "description": copy_res.pin_description,
+                            "link": product.affiliate_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][1],
+                            "title": f"Dimensions & Build Specs: {product.title[:60]}",
+                            "description": f"Full space-saving specifications, renter-friendly build details, and tested load capacity. Check today's price! #AmazonAssociate",
+                            "link": product.affiliate_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][2],
+                            "title": f"Color & Angle Variants: {product.title[:60]}",
+                            "description": f"Multi-angle inspection and compact finish options for every apartment aesthetic. Tap to view on Amazon! #AmazonAssociate",
+                            "link": product.affiliate_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][3],
+                            "title": f"Transform Your Space: {product.title[:60]}",
+                            "description": f"How to reclaim wasted gap space and organize your home in minutes. Tap for today's deal! #AmazonAssociate",
+                            "link": product.affiliate_url,
+                        },
+                    ]
+                    live_pin_data = self.pinterest.publish_pin(
+                        title=copy_res.pin_title,
+                        description=copy_res.pin_description,
+                        board_name=effective_board,
+                        slides=carousel_slides,
+                        link=product.affiliate_url,
+                        alt_text=vision_meta.get("alt_text"),
+                    )
+                    logger.info(f"✅ Published live Carousel Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
+                else:
+                    # Dynamic single-pin template routing based on AI vision theme and board intent
+                    v_theme = vision_meta.get("theme", "bento_dark")
+                    chosen_variant = variants[0]
                     for v in variants:
-                        if "pollinations_lifestyle" in v.image_path:
+                        if v_theme in v.image_path:
                             chosen_variant = v
                             break
+                    else:
+                        # If specific theme not found, rotate lifestyle for apartment/studio boards
+                        if any(k in effective_board.lower() for k in ["apartment", "studio"]):
+                            for v in variants:
+                                if "pollinations_lifestyle" in v.image_path:
+                                    chosen_variant = v
+                                    break
 
-            try:
-                live_pin_data = self.pinterest.publish_pin(
-                    title=copy_res.pin_title,
-                    description=copy_res.pin_description,
-                    board_name=effective_board,
-                    image_path_or_url=chosen_variant.image_path,
-                    link=product.affiliate_url,
-                    alt_text=vision_meta.get("alt_text"),
-                )
-                logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
+                    live_pin_data = self.pinterest.publish_pin(
+                        title=copy_res.pin_title,
+                        description=copy_res.pin_description,
+                        board_name=effective_board,
+                        image_path_or_url=chosen_variant.image_path,
+                        link=product.affiliate_url,
+                        alt_text=vision_meta.get("alt_text"),
+                    )
+                    logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
+
                 self.hunter.mark_asin_seen(
                     asin=product.asin,
                     title=product.title,

@@ -109,8 +109,9 @@ class PinterestPublishRequest(BaseModel):
     board_name_or_id: str = Field(..., description="Target Pinterest Board Name or Board ID")
     title: str = Field(..., description="Pin title")
     description: str = Field(..., description="Pin description")
-    link: str = Field(..., description="Affiliate or bridge link")
-    image_url: str = Field(..., description="Direct image URL or public URL")
+    link: Optional[str] = Field(default="", description="Affiliate or bridge link")
+    image_url: Optional[str] = Field(default=None, description="Direct image URL or public URL")
+    slides: Optional[List[Dict[str, Any]]] = Field(default=None, description="Optional carousel slide items for multiple_image_base64")
 
 
 class AutonomousCycleRequest(BaseModel):
@@ -126,3 +127,4 @@ class AutonomousCycleRequest(BaseModel):
         "cyber_bento",
     ] = Field(default="bento_dark", description="Visual graphic layout style")
     publish_live: bool = Field(default=False, description="Whether to publish live to Pinterest immediately")
+    publish_as_carousel: bool = Field(default=False, description="Whether to publish as a 4-slide carousel pin")

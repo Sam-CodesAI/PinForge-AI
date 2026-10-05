@@ -39,11 +39,11 @@ def select_official_board(category: str, title: str, candidate_board: Optional[s
     if candidate_board:
         clean = candidate_board.strip()
         for b in OFFICIAL_BOARDS:
-            if clean.lower() == b.lower():
+            if clean.lower() == b.lower() or clean.lower() == b.lower().rstrip("s"):
                 return b
 
-    # Map intelligently based on category and title keywords
-    combined = f"{category} {title}".lower()
+    # Map intelligently based on candidate_board, category, and title keywords
+    combined = f"{candidate_board or ''} {category} {title}".lower()
     if any(k in combined for k in ["kitchen", "spice", "sink", "cooking", "fridge", "refrigerator", "pantry", "dish"]):
         return "Space Saving Kitchens"
     elif any(k in combined for k in ["closet", "wardrobe", "hanger", "clothes", "shoe", "drawer", "apparel"]):
@@ -57,12 +57,18 @@ def select_official_board(category: str, title: str, candidate_board: Optional[s
 
 
 def format_pin_description_with_hook(raw_desc: str, title: str, category: str) -> str:
-    """Injects Gen-Z conversational comment hooks and guarantees FTC compliance within 500 chars."""
+    """Injects Gen-Z conversational comment hooks and guarantees FTC compliance within 500 chars ending with #AmazonAssociate."""
     disclosure = "#AmazonAssociate"
     clean_desc = raw_desc.strip()
 
+    # Strip any existing #AmazonAssociate (case-insensitive) to prevent duplication or placement in the middle
+    clean_desc = re.sub(r"#AmazonAssociate\b", "", clean_desc, flags=re.IGNORECASE).strip()
+
     # Check if a conversational comment hook / CTA is already present
-    has_hook = any(q in clean_desc.lower() for q in ["vote below", "drop a comment", "tell me below", "drop your vote", "tell us below", "comments below", "in the comments", "👇"])
+    has_hook = any(q in clean_desc.lower() for q in [
+        "vote below", "drop a comment", "tell me below", "drop your vote",
+        "tell us below", "comments below", "in the comments", "drop your thoughts", "👇", "💬"
+    ])
 
     if not has_hook:
         c_low = f"{category} {title}".lower()
@@ -74,19 +80,21 @@ def format_pin_description_with_hook(raw_desc: str, title: str, category: str) -
             hook = "Which room needs this most? Drop your vote below! ✨"
         else:
             hook = "Renter friendly or permanent upgrade? What do you think? 👇"
+    else:
+        hook = ""
 
-        clean_desc = f"{clean_desc} {hook}".strip()
+    # Total max: 500 chars. Disclosure = 16 chars + 1 space = 17 chars.
+    if hook:
+        max_body = 483 - len(hook) - 1
+        if len(clean_desc) > max_body:
+            clean_desc = f"{clean_desc[:max_body - 3].rstrip()}..."
+        final_desc = f"{clean_desc} {hook} {disclosure}".strip()
+    else:
+        if len(clean_desc) > 483:
+            clean_desc = f"{clean_desc[:480].rstrip()}..."
+        final_desc = f"{clean_desc} {disclosure}".strip()
 
-    # Ensure disclosure is present
-    if disclosure.lower() not in clean_desc.lower():
-        clean_desc = f"{clean_desc} {disclosure}".strip()
-
-    # Strict 500-char boundary safety
-    if len(clean_desc) > 500:
-        max_body = 500 - len(disclosure) - 4
-        clean_desc = f"{clean_desc[:max_body].rstrip()}... {disclosure}"
-
-    return clean_desc[:500]
+    return final_desc[:500]
 
 
 def generate_with_gemini(req: CopyGenerationRequest) -> Optional[PinCopyResponse]:

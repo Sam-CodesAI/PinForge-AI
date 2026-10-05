@@ -434,11 +434,18 @@ def render_slide4_uses(
     draw.text((70, 120), "How verified buyers maximize every square inch", fill=(148, 163, 184, 255), font=sub_font)
 
     # 3 High-Impact Practical Use Cards
-    use_cases = [
-        ("1. SMALL APARTMENTS & STUDIOS • NO DRILL", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without wall damage."),
-        ("2. BATHROOM & LAUNDRY ESSENTIAL", "Moisture-resistant materials keep damp towels and toiletries organized, off counters, and perfectly ventilated."),
-        ("3. TOOL-FREE 60S ASSEMBLY & FOLD", "Reclaims floor space and keeps daily essentials accessible while folding completely flat in seconds when moving."),
-    ]
+    if friction_highlights and len(friction_highlights) >= 3:
+        use_cases = [
+            (f"1. {friction_highlights[0]}", "Unlocks immediate vertical storage without permanent wall damage or landlord friction."),
+            (f"2. {friction_highlights[1]}", "Instant setup straight out of the box so you reclaim living space immediately."),
+            (f"3. {friction_highlights[2]}", "Engineered to fit tight compact floor plans while maximizing storage utility."),
+        ]
+    else:
+        use_cases = [
+            ("1. SMALL APARTMENTS & STUDIOS • NO DRILL", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without wall damage."),
+            ("2. BATHROOM & LAUNDRY ESSENTIAL", "Moisture-resistant materials keep damp towels and toiletries organized, off counters, and perfectly ventilated."),
+            ("3. TOOL-FREE 60S ASSEMBLY & FOLD", "Reclaims floor space and keeps daily essentials accessible while folding completely flat in seconds when moving."),
+        ]
 
     card_y = 185
     for heading, desc in use_cases:
@@ -454,11 +461,21 @@ def render_slide4_uses(
 
         card_y += 180
 
+    # Stamped Gen-Z Neon Friction Badge on Slide 4
+    f_badge = f"✦ {(friction_badge or '100% RENTER FRIENDLY • NO DRILL').upper()}"
+    fb_font = get_font(BOLD_FONT_PATH, 22)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, CANVAS_WIDTH - 140)
+    fb_x = (CANVAS_WIDTH - fb_w) // 2
+    fb_y = card_y + 20
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 46], radius=23, fill=(15, 23, 42, 245), outline=(52, 211, 153, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 11), f_badge, fill=(52, 211, 153, 255), font=fb_font)
+
     # Trust Guarantees
-    t_y = card_y + 20
+    t_y = fb_y + 65
     t_font = get_font(BOLD_FONT_PATH, 22)
-    draw.text((70, t_y), "✓ 100% Renter Safe • No Drill", fill=(52, 211, 153, 255), font=t_font)
-    draw.text((450, t_y), "✓ Fast Prime 2-Day Delivery", fill=(52, 211, 153, 255), font=t_font)
+    draw.text((70, t_y), "✓ 100% Renter Safe • No Drill", fill=(56, 189, 248, 255), font=t_font)
+    draw.text((450, t_y), "✓ Fast Prime 2-Day Delivery", fill=(56, 189, 248, 255), font=t_font)
 
     # Final Conversion CTA Button
     btn_y0 = CANVAS_HEIGHT - 210

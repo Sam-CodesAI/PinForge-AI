@@ -385,13 +385,17 @@ def mine_friction_highlights(
     else:
         setup_highlight = "TOOL-FREE 60S SETUP"
 
-    # 3. Exact Dimensions / Footprint
+    # 3. Exact Dimensions / Footprint (Supports 1D, 2D, and 3D dimensions)
     gap_match = re.search(r'(\d+(?:\.\d+)?)\s*(?:\"|inch|inches)\s*(?:wide|width|depth|slim|gap)', full_text)
-    dim_match = re.search(r'(\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?\s*[xX*×]\s*\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?)', full_text)
+    dim_match = re.search(
+        r'(\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?\s*[xX*×]\s*\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?(?:\s*[xX*×]\s*\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?)?)',
+        full_text
+    )
     if gap_match:
         dim_highlight = f"SLIM {gap_match.group(1)}\" GAP FIT"
-    elif dim_match and len(dim_match.group(1)) > 3:
-        dim_highlight = f"EXACT FIT: {dim_match.group(1).upper()}"
+    elif dim_match and len(dim_match.group(1).strip()) > 3:
+        clean_dim = dim_match.group(1).strip().upper()
+        dim_highlight = f"EXACT FIT: {clean_dim}"
     elif any(k in full_text for k in ["ultra-slim", "slim profile", "narrow"]):
         dim_highlight = "ULTRA-SLIM NARROW FOOTPRINT"
     else:
@@ -410,12 +414,16 @@ def mine_friction_highlights(
 
     highlights = [renter_highlight, setup_highlight, dim_highlight, wt_highlight]
 
-    # Primary prominent badge selection
-    if any(k in full_text for k in ["no drill", "renter", "adhesive", "suction"]):
-        badge = renter_highlight
-    elif any(k in full_text for k in ["tool-free", "pop-up", "folds flat"]):
+    # Primary prominent badge selection based on primary product intent
+    if gap_match or (any(k in full_text for k in ["gap", "narrow space", "slim cart", "narrow gap", "tight space"]) and dim_match):
+        badge = dim_highlight
+    elif any(k in full_text for k in ["foldable", "collapsible", "folds flat", "tool-free", "tool free", "pop up", "pop-up", "pre-assembled", "preassembled"]):
         badge = setup_highlight
-    elif gap_match or dim_match:
+    elif any(k in full_text for k in ["over the door", "over-the-door", "no drill", "no-drill", "renter", "damage-free", "adhesive", "suction", "tension mount"]):
+        badge = renter_highlight
+    elif any(k in full_text for k in ["heavy duty", "heavy-duty", "tested load", "lbs load"]):
+        badge = wt_highlight
+    elif dim_match:
         badge = dim_highlight
     else:
         badge = renter_highlight

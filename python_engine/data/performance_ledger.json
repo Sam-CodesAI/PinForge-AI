@@ -1,228 +1,228 @@
 {
-  "last_updated": "2026-10-05T04:19:42.535105+00:00",
+  "last_updated": "2026-10-05T04:37:38.189280+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
   "total_pins_evaluated": 7,
   "top_performing_pins": [
     {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
-      "board": "1132444337492930442",
+      "pin_id": "1132444268835762446",
+      "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 916,
+        "saves": 52,
+        "outbound_clicks": 38,
+        "pin_clicks": 85,
+        "comments": 6
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:38.944865+00:00"
-    },
-    {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "1132444337492930442",
-      "link": "https://pinforge.vercel.app/",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:39.503604+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:39.952462+00:00"
-    },
-    {
-      "pin_id": "1132444268835809911",
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:40.443252+00:00"
-    },
-    {
-      "pin_id": "1132444268835775000",
-      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:40.896373+00:00"
+      "aes_score": 53.0,
+      "evaluated_at": "2026-10-05T04:37:38.189243+00:00"
     },
     {
       "pin_id": "1132444268835762503",
       "title": "Local Graphic Base64 Pin Test 2026",
-      "board": "1132444337492930442",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 871,
+        "saves": 45,
+        "outbound_clicks": 37,
+        "pin_clicks": 61,
+        "comments": 9
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:41.334496+00:00"
+      "aes_score": 49.31,
+      "evaluated_at": "2026-10-05T04:37:38.189231+00:00"
     },
     {
-      "pin_id": "1132444268835762446",
-      "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-      "board": "1132444337492930442",
+      "pin_id": "1132444268835809911",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1353,
+        "saves": 67,
+        "outbound_clicks": 53,
+        "pin_clicks": 127,
+        "comments": 3
+      },
+      "aes_score": 48.97,
+      "evaluated_at": "2026-10-05T04:37:38.189207+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 953,
+        "saves": 51,
+        "outbound_clicks": 31,
+        "pin_clicks": 84,
+        "comments": 3
+      },
+      "aes_score": 46.17,
+      "evaluated_at": "2026-10-05T04:37:38.189194+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 1061,
+        "saves": 43,
+        "outbound_clicks": 37,
+        "pin_clicks": 95,
+        "comments": 7
+      },
+      "aes_score": 44.34,
+      "evaluated_at": "2026-10-05T04:37:38.189176+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 1165,
+        "saves": 51,
+        "outbound_clicks": 39,
+        "pin_clicks": 101,
+        "comments": 7
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:42.535077+00:00"
+      "aes_score": 44.08,
+      "evaluated_at": "2026-10-05T04:37:38.189135+00:00"
+    },
+    {
+      "pin_id": "1132444268835775000",
+      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2632,
+        "saves": 117,
+        "outbound_clicks": 80,
+        "pin_clicks": 201,
+        "comments": 2
+      },
+      "aes_score": 40.14,
+      "evaluated_at": "2026-10-05T04:37:38.189219+00:00"
     }
   ],
   "board_performance_summary": {
-    "1132444337492930442": {
+    "Small Apartment Hacks": {
       "pin_count": 7,
-      "avg_aes": 0.0,
-      "total_outbound_clicks": 0,
-      "total_saves": 0,
-      "total_impressions": 0
+      "avg_aes": 46.57,
+      "total_outbound_clicks": 315,
+      "total_saves": 426,
+      "total_impressions": 8951
     }
   },
   "all_ranked_pins": [
     {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
-      "board": "1132444337492930442",
+      "pin_id": "1132444268835762446",
+      "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 916,
+        "saves": 52,
+        "outbound_clicks": 38,
+        "pin_clicks": 85,
+        "comments": 6
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:38.944865+00:00"
-    },
-    {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "1132444337492930442",
-      "link": "https://pinforge.vercel.app/",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:39.503604+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:39.952462+00:00"
-    },
-    {
-      "pin_id": "1132444268835809911",
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:40.443252+00:00"
-    },
-    {
-      "pin_id": "1132444268835775000",
-      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
-      "board": "1132444337492930442",
-      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:40.896373+00:00"
+      "aes_score": 53.0,
+      "evaluated_at": "2026-10-05T04:37:38.189243+00:00"
     },
     {
       "pin_id": "1132444268835762503",
       "title": "Local Graphic Base64 Pin Test 2026",
-      "board": "1132444337492930442",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 871,
+        "saves": 45,
+        "outbound_clicks": 37,
+        "pin_clicks": 61,
+        "comments": 9
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:41.334496+00:00"
+      "aes_score": 49.31,
+      "evaluated_at": "2026-10-05T04:37:38.189231+00:00"
     },
     {
-      "pin_id": "1132444268835762446",
-      "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-      "board": "1132444337492930442",
+      "pin_id": "1132444268835809911",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1353,
+        "saves": 67,
+        "outbound_clicks": 53,
+        "pin_clicks": 127,
+        "comments": 3
+      },
+      "aes_score": 48.97,
+      "evaluated_at": "2026-10-05T04:37:38.189207+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 953,
+        "saves": 51,
+        "outbound_clicks": 31,
+        "pin_clicks": 84,
+        "comments": 3
+      },
+      "aes_score": 46.17,
+      "evaluated_at": "2026-10-05T04:37:38.189194+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 1061,
+        "saves": 43,
+        "outbound_clicks": 37,
+        "pin_clicks": 95,
+        "comments": 7
+      },
+      "aes_score": 44.34,
+      "evaluated_at": "2026-10-05T04:37:38.189176+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
+        "impressions": 1165,
+        "saves": 51,
+        "outbound_clicks": 39,
+        "pin_clicks": 101,
+        "comments": 7
       },
-      "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T04:19:42.535077+00:00"
+      "aes_score": 44.08,
+      "evaluated_at": "2026-10-05T04:37:38.189135+00:00"
+    },
+    {
+      "pin_id": "1132444268835775000",
+      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2632,
+        "saves": 117,
+        "outbound_clicks": 80,
+        "pin_clicks": 201,
+        "comments": 2
+      },
+      "aes_score": 40.14,
+      "evaluated_at": "2026-10-05T04:37:38.189219+00:00"
     }
   ]
 }

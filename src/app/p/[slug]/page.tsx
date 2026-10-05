@@ -47,6 +47,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "product:price:amount": numericPrice,
       "product:price:currency": "USD",
       "product:availability": "instock",
+      "og:price:amount": numericPrice,
+      "og:price:currency": "USD",
+      "og:availability": "instock",
     },
     robots: {
       index: true,

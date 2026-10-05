@@ -118,6 +118,14 @@ jobs:
 
           python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG
 
+      - name: Execute Closed-Loop Performance Analytics
+        continue-on-error: true
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          AMAZON_AFFILIATE_TAG: 'smartspace07-21'
+        run: |
+          python -m python_engine.analytics_feedback_loop
+
       - name: Commit & Push Autopilot History & Ledgers
         if: success()
         run: |

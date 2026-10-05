@@ -196,7 +196,7 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         f_badge = f"⚡ {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
-    fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
+    fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 60
     draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(56, 189, 248, 255), width=2)
@@ -336,7 +336,7 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
         f_badge = f"✦ {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 20)
     fb_bbox = fb_font.getbbox(f_badge)
-    fb_w = (fb_bbox[2] - fb_bbox[0]) + 36
+    fb_w = min((fb_bbox[2] - fb_bbox[0]) + 36, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 55
     draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(28, 25, 23, 240), outline=(217, 119, 6, 255), width=2)
@@ -437,7 +437,7 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
         f_badge = f"⚡ {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
-    fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
+    fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 60
     draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(245, 158, 11, 255), width=2)
@@ -576,7 +576,7 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
         f_badge = f"⚡ {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 20)
     fb_bbox = fb_font.getbbox(f_badge)
-    fb_w = (fb_bbox[2] - fb_bbox[0]) + 36
+    fb_w = min((fb_bbox[2] - fb_bbox[0]) + 36, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 55
     draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(15, 23, 42, 245), outline=(56, 189, 248, 255), width=2)

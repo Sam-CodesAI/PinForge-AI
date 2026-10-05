@@ -118,17 +118,24 @@ class AnalyticsFeedbackLoop:
             )
 
             if isinstance(raw_metrics, dict):
-                # Check for nested lifetime metrics if present
                 sub = raw_metrics.get("lifetime_metrics") or raw_metrics
-                metrics["impressions"] = int(sub.get("impression") or sub.get("IMPRESSION") or 0)
-                metrics["saves"] = int(sub.get("save") or sub.get("SAVE") or 0)
+                metrics["impressions"] = int(
+                    sub.get("impression") or sub.get("impressions") or sub.get("IMPRESSION") or 0
+                )
+                metrics["saves"] = int(
+                    sub.get("save") or sub.get("saves") or sub.get("SAVE") or sub.get("SAVED") or 0
+                )
                 metrics["outbound_clicks"] = int(
-                    sub.get("outbound_click") or sub.get("OUTBOUND_CLICK") or sub.get("clickthrough") or 0
+                    sub.get("outbound_click") or sub.get("outbound_clicks") or sub.get("OUTBOUND_CLICK") or sub.get("clickthrough") or 0
                 )
                 metrics["pin_clicks"] = int(
-                    sub.get("pin_click") or sub.get("PIN_CLICK") or sub.get("closeup") or 0
+                    sub.get("pin_click") or sub.get("pin_clicks") or sub.get("PIN_CLICK") or sub.get("closeup") or 0
                 )
-                metrics["comments"] = int(sub.get("comment") or sub.get("COMMENT") or 0)
+                metrics["comments"] = int(
+                    sub.get("comment") or sub.get("comments") or sub.get("COMMENT") or data.get("comment_count") or data.get("comments") or 0
+                )
+            else:
+                metrics["comments"] = int(data.get("comment_count") or data.get("comments") or 0)
 
         except Exception as e:
             logger.warning(f"Could not fetch metrics for pin {pin_id}: {e}")
@@ -145,12 +152,12 @@ class AnalyticsFeedbackLoop:
         board_metrics: Dict[str, Dict[str, Any]] = {}
 
         if not pins and dry_run:
-            # Generate deterministic sample records for dry-run verification
+            # Generate sample records if no local ledger exists yet
             pins = [
                 {
                     "id": "dry_run_pin_001",
                     "title": "Magnetic Foldable Spice Rack Organizer",
-                    "board_id": "Space Saving Kitchens",
+                    "board_name": "Space Saving Kitchens",
                     "link": "https://www.amazon.com/dp/B0BYP6DZ53?tag=smartspace07-21",
                     "created_at": datetime.now(timezone.utc).isoformat(),
                     "simulated_metrics": {
@@ -164,7 +171,7 @@ class AnalyticsFeedbackLoop:
                 {
                     "id": "dry_run_pin_002",
                     "title": "Ultra-Slim 5.1\" Rolling Cart Narrow Gap Organizer",
-                    "board_id": "Small Apartment Hacks",
+                    "board_name": "Small Apartment Hacks",
                     "link": "https://www.amazon.com/dp/B08C1W5N87?tag=smartspace07-21",
                     "created_at": datetime.now(timezone.utc).isoformat(),
                     "simulated_metrics": {
@@ -178,7 +185,7 @@ class AnalyticsFeedbackLoop:
                 {
                     "id": "dry_run_pin_003",
                     "title": "Cascade Clothes Hanger Space Saving Organizer",
-                    "board_id": "Closet & Wardrobe Organization",
+                    "board_name": "Closet & Wardrobe Organization",
                     "link": "https://www.amazon.com/dp/B09XS7JWHH?tag=smartspace07-21",
                     "created_at": datetime.now(timezone.utc).isoformat(),
                     "simulated_metrics": {
@@ -191,15 +198,53 @@ class AnalyticsFeedbackLoop:
                 },
             ]
 
+        import hashlib
         for p in pins[:limit]:
             p_id = str(p.get("id") or "").strip()
             p_title = p.get("title") or "Smart Spaces Pin"
-            b_name = p.get("board_id") or p.get("board_name") or "Room Organization"
             p_link = p.get("link") or ""
 
-            if dry_run and "simulated_metrics" in p:
-                m = p["simulated_metrics"]
-            elif self.client.is_configured and p_id and not p_id.startswith("dry_run"):
+            # Resolve clean board name
+            b_name = p.get("board_name")
+            if not b_name:
+                raw_b = str(p.get("board_id") or "")
+                for ob in [
+                    "Small Apartment Hacks",
+                    "Space Saving Kitchens",
+                    "Closet & Wardrobe Organization",
+                    "Studio Living Ideas",
+                    "Room Organization",
+                ]:
+                    if raw_b.lower() == ob.lower():
+                        b_name = ob
+                        break
+                if not b_name and self.client._board_cache:
+                    for name, bid in self.client._board_cache.items():
+                        if str(bid) == raw_b:
+                            b_name = name.title()
+                            break
+            if not b_name:
+                b_name = "Small Apartment Hacks" if "1132444337492930442" in str(p.get("board_id")) else "Room Organization"
+
+            if dry_run:
+                if "simulated_metrics" in p:
+                    m = p["simulated_metrics"]
+                else:
+                    # Deterministic, non-zero metrics simulation for offline testing
+                    seed_int = int(hashlib.md5((p_id or p_title).encode("utf-8")).hexdigest()[:8], 16)
+                    impr = 800 + (seed_int % 2400)
+                    saves = max(12, int(impr * 0.04) + (seed_int % 20))
+                    outbound = max(8, int(impr * 0.03) + (seed_int % 15))
+                    pin_clicks = max(20, int(impr * 0.07) + (seed_int % 35))
+                    comments = 2 + (seed_int % 8)
+                    m = {
+                        "impressions": impr,
+                        "saves": saves,
+                        "outbound_clicks": outbound,
+                        "pin_clicks": pin_clicks,
+                        "comments": comments,
+                    }
+            elif self.client.is_configured and p_id and not p_id.startswith("dry_run") and not p_id.startswith("test_"):
                 m = self.fetch_pin_metrics(p_id)
             else:
                 m = {

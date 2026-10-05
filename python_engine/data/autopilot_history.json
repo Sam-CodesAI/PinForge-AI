@@ -1209,5 +1209,200 @@
       "style": "anime"
     },
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T04:28:16.185519+00:00",
+    "status": "success",
+    "execution_time_seconds": 22.48,
+    "product": {
+      "asin": "B0CT7M946D",
+      "title": "Slim Rolling Storage Cart with Wheels  Metal 6 Tier Spice Rack Mobile Shelving Unit Organizer Kitchen Utility Cart for Office Bathroom Kitchen Laundry Room Narrow Places",
+      "price": "$81.75",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0CT7M946D?tag=smartspace07-21",
+      "bridge_slug": "slim-rolling-storage-cart-with-wheels-metal-6-tier-spice-rack-mobile-shelvi-b0ct7m946d"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A1D20",
+      "accent_hex": "#F59E0B",
+      "badge_text": "Narrow Space Hack",
+      "visual_hook": "Maximize Every Wasted Gap",
+      "secondary_hook": "6-Tier Ultra Slim Rolling Storage",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Slim 6-tier rolling metal pantry cart organizing spices and food jars in a narrow kitchen space."
+    },
+    "seo_copy": {
+      "title": "Genius 6-Tier Slim Rolling Cart for Tiny Spaces! \ud83d\uded2\u2728",
+      "description": "Transform awkward gaps into massive storage with this 6-tier metal rolling utility cart! Perfect for narrow kitchens, tight bathrooms, or between the washer and dryer to hold heavy detergent without sagging. Smooth wheels make it a breeze to glide anywhere you need organization most. Small space challenge: Where would you put this in your home? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#OrganizationHacks",
+        "#AmazonFinds",
+        "#KitchenOrganization",
+        "#LaundryRoomGoals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_1de6e19f37.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_957cedb586.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_95e8631e14.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_46ba501354.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_cc903a15.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_cc903a15.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_cc903a15.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_cc903a15.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_cc903a15.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T04:36:46.126592+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.59,
+    "product": {
+      "asin": "B0C89STMFK",
+      "title": "JARLINK Over the Door Organizer for Bedroom  Pantry",
+      "price": "$43.58",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "bridge_slug": "jarlink-over-the-door-organizer-for-bedroom-pantry-b0c89stmfk"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Your Tiny Space Instantly",
+      "secondary_hook": "Maximize vertical storage on any door",
+      "target_audience": "Apartment Renters",
+      "alt_text": "JARLINK over the door organizer hanging on a wooden door, filled with books, snacks, and toiletries to save space."
+    },
+    "seo_copy": {
+      "title": "Double Your Space: The Ultimate Swing-Proof Over Door Organizer \ud83e\uddf8\u2728",
+      "description": "Maximize every inch with the JARLINK Over the Door Organizer! Featuring 5 roomy pockets and 5 mesh side pockets, this 44lb heavy-duty storage hero stops sway and declutters bedrooms, pantries, or nurseries instantly. Say goodbye to messy rooms and hello to effortless home organization. Small space challenge: Could you fit all your clutter in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#OrganizationHacks",
+        "#AmazonFinds",
+        "#DoorOrganizer",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_18564cc181.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1cafebe4d1.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_d61e237e8c.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_53ca4ff8b6.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_9668467c.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_9668467c.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_9668467c.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_9668467c.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_9668467c.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T04:37:07.037965+00:00",
+    "status": "success",
+    "execution_time_seconds": 11.93,
+    "product": {
+      "asin": "B0C89STMFK",
+      "title": "JARLINK Over the Door Organizer for Bedroom  Pantry",
+      "price": "$43.58",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "bridge_slug": "jarlink-over-the-door-organizer-for-bedroom-pantry-b0c89stmfk"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#2C3E50",
+      "accent_hex": "#3498DB",
+      "badge_text": "Instant Vertical Storage",
+      "visual_hook": "Transform Any Door Into Storage",
+      "secondary_hook": "Maximize every inch of wasted space",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Gray over-the-door hanging organizer filled with books, snacks, toiletries, and toys on a wooden door."
+    },
+    "seo_copy": {
+      "title": "Double Your Space Instantly: The Ultimate Swing-Proof Door Organizer!",
+      "description": "Say goodbye to clutter with this 44lb-capacity over the door organizer. Featuring 5 roomy pockets and 5 mesh side pockets, it's the ultimate space maximizer for bedrooms, pantries, and nurseries. Built with reinforced cardboard to prevent sagging and swaying. Would you use this in your bedroom or pantry? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#OrganizationHacks",
+        "#AmazonFinds",
+        "#DoorOrganizer",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ea7713b7b9.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ed431d0bf9.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3cd0ab16d6.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_4aa541e7f6.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_ab82168e.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_ab82168e.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_ab82168e.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_ab82168e.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_ab82168e.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
   }
 ]

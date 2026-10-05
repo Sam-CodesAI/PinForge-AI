@@ -12,7 +12,7 @@ import json
 import base64
 import urllib.request
 import urllib.error
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Union
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -249,8 +249,8 @@ class PinterestClient:
 
         result = self._request("pins", method="POST", data=payload)
         
-        # Log to local history ledger
-        self._record_published_pin(result)
+        # Log to local history ledger with full request payload fallback
+        self._record_published_pin(result, payload=payload)
         return result
 
     def create_carousel_pin_base64(
@@ -258,9 +258,10 @@ class PinterestClient:
         board_id: str,
         title: str,
         description: str,
-        slides: List[Dict[str, Any]],
+        slides: List[Union[Dict[str, Any], str, Path]],
         link: Optional[str] = None,
         alt_text: Optional[str] = None,
+        board_name: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Create a multi-slide Carousel Pin on Pinterest API v5 using multiple_image_base64.
 
@@ -268,6 +269,7 @@ class PinterestClient:
         - media_source: {"source_type": "multiple_image_base64", "items": [...]}
         - Each item: content_type: "image/jpeg", data: <clean_base64>, title, description, link
         - Allows individual per-slide deep affiliate links without external CDN hosting.
+        - Robustly accepts either dictionaries or file path strings.
         """
         if not slides or len(slides) < 2:
             raise ValueError("Carousel pin requires at least 2 slides")
@@ -281,40 +283,57 @@ class PinterestClient:
         safe_desc = safe_desc[:500]
 
         carousel_items = []
-        for idx, slide in enumerate(slides, start=1):
+        for idx, raw_slide in enumerate(slides, start=1):
+            if isinstance(raw_slide, (str, Path)):
+                slide: Dict[str, Any] = {"image_path": str(raw_slide)}
+            elif isinstance(raw_slide, dict):
+                slide = dict(raw_slide)
+            else:
+                raise ValueError(f"Slide {idx} must be a dict or file path string, got {type(raw_slide)}")
+
             slide_data = ""
-            content_type = slide.get("content_type", "image/jpeg")
+            content_type = slide.get("content_type")
 
             if "data" in slide and slide["data"]:
-                raw_b64 = slide["data"]
+                raw_b64 = str(slide["data"])
                 slide_data = raw_b64.split(",")[-1] if "," in raw_b64 else raw_b64
-            elif "base64_image" in slide and slide["base64_image"]:
-                raw_b64 = slide["base64_image"]
-                slide_data = raw_b64.split(",")[-1] if "," in raw_b64 else raw_b64
-            elif "image_path" in slide and Path(slide["image_path"]).exists():
-                raw_bytes = Path(slide["image_path"]).read_bytes()
-                slide_data = base64.b64encode(raw_bytes).decode("utf-8")
-                if str(slide["image_path"]).lower().endswith((".png",)):
-                    content_type = "image/png"
-                else:
+                if not content_type:
                     content_type = "image/jpeg"
+            elif "base64_image" in slide and slide["base64_image"]:
+                raw_b64 = str(slide["base64_image"])
+                slide_data = raw_b64.split(",")[-1] if "," in raw_b64 else raw_b64
+                if not content_type:
+                    content_type = "image/jpeg"
+            elif "image_path" in slide and Path(slide["image_path"]).exists():
+                p = Path(slide["image_path"])
+                raw_bytes = p.read_bytes()
+                slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+                if not content_type:
+                    content_type = "image/png" if p.suffix.lower() == ".png" else "image/jpeg"
             elif "image_url" in slide and slide["image_url"]:
-                url = slide["image_url"]
+                url = str(slide["image_url"])
                 filename = Path(url).name
                 local_pin_path = Path(__file__).resolve().parent / "static" / "pins" / filename
                 if local_pin_path.exists():
                     raw_bytes = local_pin_path.read_bytes()
                     slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+                    if not content_type:
+                        content_type = "image/png" if local_pin_path.suffix.lower() == ".png" else "image/jpeg"
                 else:
                     req = urllib.request.Request(url, headers={"User-Agent": "PinForge-AI/1.0"})
                     with urllib.request.urlopen(req, timeout=12) as resp:
                         raw_bytes = resp.read()
                         slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+                    if not content_type:
+                        content_type = "image/jpeg"
             else:
-                raise ValueError(f"Slide {idx} missing image source (image_path, data, base64_image, or image_url)")
+                raise ValueError(f"Slide {idx} missing valid image source (image_path, data, base64_image, or image_url)")
+
+            if not content_type:
+                content_type = "image/jpeg"
 
             # Per-slide title, description, link
-            slide_title = (slide.get("title") or f"{safe_title} - Part {idx}").strip()[:100]
+            slide_title = (slide.get("title") or f"{safe_title} (Slide {idx})").strip()[:100]
             s_desc = (slide.get("description") or safe_desc).strip()
             if disclosure.lower() not in s_desc.lower():
                 s_desc = f"{s_desc} {disclosure}"
@@ -343,7 +362,7 @@ class PinterestClient:
         }
 
         result = self._request("pins", method="POST", data=payload)
-        self._record_published_pin(result, is_carousel=True)
+        self._record_published_pin(result, payload=payload, board_name=board_name, is_carousel=True)
         return result
 
     def publish_carousel_pin(
@@ -351,7 +370,7 @@ class PinterestClient:
         title: str,
         description: str,
         board_name: str,
-        slides: List[Dict[str, Any]],
+        slides: List[Union[Dict[str, Any], str, Path]],
         link: Optional[str] = None,
         alt_text: Optional[str] = None,
     ) -> Dict[str, Any]:
@@ -364,6 +383,7 @@ class PinterestClient:
             slides=slides,
             link=link,
             alt_text=alt_text,
+            board_name=board_name,
         )
         return {**result, "pin_id": result.get("id", "")}
 
@@ -375,7 +395,7 @@ class PinterestClient:
         image_path_or_url: Optional[str] = None,
         link: Optional[str] = None,
         alt_text: Optional[str] = None,
-        slides: Optional[List[Dict[str, Any]]] = None,
+        slides: Optional[List[Union[Dict[str, Any], str, Path]]] = None,
     ) -> Dict[str, Any]:
         """Convenience method: resolves board by name and publishes image or carousel directly."""
         if slides and len(slides) >= 2:
@@ -429,23 +449,54 @@ class PinterestClient:
         )
         return self._request(endpoint)
 
-    def _record_published_pin(self, pin_data: Dict[str, Any], is_carousel: bool = False) -> None:
+    def _record_published_pin(
+        self,
+        pin_data: Dict[str, Any],
+        payload: Optional[Dict[str, Any]] = None,
+        board_name: Optional[str] = None,
+        is_carousel: bool = False,
+    ) -> None:
         """Persist pin metadata locally for self-learning analytics tracking."""
         try:
             DATA_DIR.mkdir(parents=True, exist_ok=True)
             ledger_path = DATA_DIR / "published_pins.json"
             pins = []
             if ledger_path.exists():
-                pins = json.loads(ledger_path.read_text())
+                try:
+                    pins = json.loads(ledger_path.read_text())
+                except Exception:
+                    pins = []
 
-            pins.append({
-                "id": pin_data.get("id"),
-                "title": pin_data.get("title"),
-                "link": pin_data.get("link"),
-                "board_id": pin_data.get("board_id"),
+            # Merge payload and pin_data to avoid null values when API doesn't echo request fields
+            merged = {**(payload or {}), **pin_data}
+            b_id = str(merged.get("board_id") or "")
+            b_name = board_name or merged.get("board_name")
+            if not b_name and b_id:
+                for name, bid in self._board_cache.items():
+                    if str(bid) == b_id:
+                        b_name = name.title()
+                        break
+
+            pin_record = {
+                "id": str(merged.get("id") or merged.get("pin_id") or ""),
+                "title": merged.get("title") or "Smart Spaces Pin",
+                "link": merged.get("link") or "",
+                "board_id": b_id,
+                "board_name": b_name or "Room Organization",
                 "is_carousel": is_carousel,
-                "created_at": pin_data.get("created_at", datetime.now().isoformat()),
-            })
+                "created_at": merged.get("created_at") or datetime.now().isoformat(),
+            }
+
+            # Deduplicate by pin id if already present
+            existing_idx = next(
+                (i for i, p in enumerate(pins) if p.get("id") == pin_record["id"] and pin_record["id"]),
+                None
+            )
+            if existing_idx is not None:
+                pins[existing_idx] = pin_record
+            else:
+                pins.append(pin_record)
+
             ledger_path.write_text(json.dumps(pins, indent=2))
         except Exception as e:
             print(f"[Warning] Failed to record published pin: {e}")

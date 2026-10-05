@@ -186,15 +186,21 @@ def publish_pinterest_pin(req: PinterestPublishRequest):
 
     try:
         client = PinterestClient()
-        board_id = client.find_board_id(req.board_name_or_id)
-        if not board_id:
-            raise HTTPException(status_code=404, detail=f"Board '{req.board_name_or_id}' not found.")
+        if req.slides and len(req.slides) >= 2:
+            return client.publish_carousel_pin(
+                title=req.title,
+                description=req.description,
+                board_name=req.board_name_or_id,
+                slides=req.slides,
+                link=req.link,
+            )
 
+        board_id = client.get_or_create_board(req.board_name_or_id)
         result = client.create_pin(
             board_id=board_id,
             title=req.title,
             description=req.description,
-            link=req.link,
+            link=req.link or "",
             image_url=req.image_url,
         )
         return result

@@ -24,8 +24,10 @@ from typing import Dict, Any, List, Optional
 
 try:
     from python_engine.autonomous_autopilot import AutonomousAutopilot
+    from python_engine.analytics_feedback_loop import AnalyticsFeedbackLoop
 except ImportError:
     from autonomous_autopilot import AutonomousAutopilot
+    from analytics_feedback_loop import AnalyticsFeedbackLoop
 
 logging.basicConfig(
     level=logging.INFO,
@@ -137,6 +139,7 @@ class StrategicScheduler:
         slot_id: int,
         apply_jitter: bool = True,
         dry_run: bool = False,
+        publish_as_carousel: bool = False,
     ) -> Dict[str, Any]:
         """Executes a single slot targeting its dedicated board and niche queries."""
         slot = SCHEDULE_PILLARS.get(slot_id)
@@ -159,25 +162,41 @@ class StrategicScheduler:
             target_board=board_name,
             custom_queries=queries,
             publish_live=not dry_run,
+            publish_as_carousel=publish_as_carousel,
         )
 
         logger.info(
             f"✅ Slot {slot_id} completed: Published '{result['seo_copy']['title']}' to '{board_name}' "
             f"(ASIN: {result['product']['asin']})"
         )
+
+        # Automatically update closed-loop performance ledger
+        try:
+            loop = AnalyticsFeedbackLoop(client=self.autopilot.pinterest)
+            loop.run_analytics_loop(dry_run=dry_run)
+            logger.info("📊 Performance ledger refreshed with closed-loop metrics.")
+        except Exception as e:
+            logger.warning(f"Could not refresh performance ledger: {e}")
+
         return result
 
     def execute_full_circuit(
         self,
         delay_between_boards_sec: int = 15,
         dry_run: bool = False,
+        publish_as_carousel: bool = False,
     ) -> List[Dict[str, Any]]:
         """Executes all 5 boards in sequence (useful for testing or initial warmup)."""
         logger.info("⚡ Executing Full 5-Board Circuit (1 pin for each pillar)...")
         self.autopilot.pinterest.bootstrap_smart_spaces_boards()
         results = []
         for slot_id in sorted(SCHEDULE_PILLARS.keys()):
-            res = self.execute_slot(slot_id, apply_jitter=False, dry_run=dry_run)
+            res = self.execute_slot(
+                slot_id,
+                apply_jitter=False,
+                dry_run=dry_run,
+                publish_as_carousel=publish_as_carousel,
+            )
             results.append(res)
             if slot_id < 5 and delay_between_boards_sec > 0:
                 logger.info(f"Sleeping {delay_between_boards_sec}s before next board...")
@@ -194,6 +213,7 @@ def main():
     parser.add_argument("--all", action="store_true", help="Execute all 5 boards in sequence")
     parser.add_argument("--no-jitter", action="store_true", help="Bypass anti-detection jitter sleep")
     parser.add_argument("--dry-run", action="store_true", help="Run without posting live to Pinterest")
+    parser.add_argument("--carousel", action="store_true", help="Publish 4-slide native base64 carousel pin")
     parser.add_argument("--bootstrap", action="store_true", help="Only bootstrap boards, do not publish")
 
     args = parser.parse_args()
@@ -204,13 +224,23 @@ def main():
         scheduler.autopilot.pinterest.bootstrap_smart_spaces_boards()
         logger.info("Boards bootstrapped successfully.")
     elif args.all:
-        scheduler.execute_full_circuit(dry_run=args.dry_run)
+        scheduler.execute_full_circuit(dry_run=args.dry_run, publish_as_carousel=args.carousel)
     elif args.slot:
-        scheduler.execute_slot(args.slot, apply_jitter=not args.no_jitter, dry_run=args.dry_run)
+        scheduler.execute_slot(
+            args.slot,
+            apply_jitter=not args.no_jitter,
+            dry_run=args.dry_run,
+            publish_as_carousel=args.carousel,
+        )
     elif args.auto:
         matched_slot = scheduler.get_slot_for_current_time()
         logger.info(f"Auto-selected Slot {matched_slot['slot_id']} ('{matched_slot['board_name']}')")
-        scheduler.execute_slot(matched_slot["slot_id"], apply_jitter=not args.no_jitter, dry_run=args.dry_run)
+        scheduler.execute_slot(
+            matched_slot["slot_id"],
+            apply_jitter=not args.no_jitter,
+            dry_run=args.dry_run,
+            publish_as_carousel=args.carousel,
+        )
     else:
         print("Smart Spaces 5-Pillar Schedule Matrix:")
         for sid, slot in SCHEDULE_PILLARS.items():
@@ -219,6 +249,7 @@ def main():
         print("\nUsage:")
         print("  python -m python_engine.strategic_scheduler --auto")
         print("  python -m python_engine.strategic_scheduler --slot 1")
+        print("  python -m python_engine.strategic_scheduler --slot 1 --carousel")
         print("  python -m python_engine.strategic_scheduler --all --dry-run")
         print("  python -m python_engine.strategic_scheduler --bootstrap")
 
