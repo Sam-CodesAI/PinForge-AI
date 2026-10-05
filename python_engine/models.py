@@ -89,6 +89,16 @@ class PinGenerateRequest(BaseModel):
     board_name: Optional[str] = Field(default="Smart Spaces")
     features: List[str] = Field(default_factory=list)
     cta_text: str = Field(default="TAP TO VIEW ON AMAZON ->")
+    primary_hex: Optional[str] = Field(None, description="Dominant primary background/card hex color")
+    accent_hex: Optional[str] = Field(None, description="Vibrant accent hex color for glows and badges")
+
+
+class CurateVisionRequest(BaseModel):
+    image_url: Optional[str] = Field(None, description="Product image URL")
+    image_base64: Optional[str] = Field(None, description="Optional raw base64 image data")
+    product_title: str = Field(default="Space Saving Organizer", description="Cleaned product title")
+    price: str = Field(default="$29.99", description="Formatted price")
+    discount_percent: int = Field(default=0, description="Discount percentage")
 
 
 class PinGenerateResponse(BaseModel):

@@ -236,7 +236,7 @@ class AutonomousAutopilot:
                             variants[0],
                         )
                     else:
-                        v_theme = vision_meta.get("theme", "bento_dark")
+                        v_theme = vision_meta.get("dominant_theme") or vision_meta.get("theme", "bento_dark")
                         chosen_variant = variants[0]
                         for v in variants:
                             if v_theme in v.image_path:

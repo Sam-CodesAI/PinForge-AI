@@ -10,7 +10,7 @@ import logging
 import re
 from typing import Dict, List, Optional
 
-from python_engine.config import GEMINI_API_KEY, GROQ_API_KEY
+from python_engine.config import GEMINI_API_KEY, GROQ_API_KEY, DATA_DIR
 from python_engine.models import BridgeReview, CopyGenerationRequest, PinCopyResponse
 
 logger = logging.getLogger("pinforge.seo")
@@ -23,6 +23,42 @@ OFFICIAL_BOARDS = [
     'Studio Living Ideas',
     'Room Organization',
 ]
+
+
+def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
+    """Ingests high-AES winning titles from performance_ledger.json as few-shot exemplars."""
+    ledger_path = DATA_DIR / "performance_ledger.json"
+    if not ledger_path.exists():
+        return [
+            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
+            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
+            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+        ]
+    try:
+        data = json.loads(ledger_path.read_text(encoding="utf-8"))
+        top_pins = data.get("top_performing_pins", [])
+        titles = []
+        for pin in top_pins:
+            t = (pin.get("title") or "").strip()
+            if t and not any(k in t.lower() for k in ["test", "base64", "untitled"]) and len(t) > 15:
+                titles.append(t)
+            if len(titles) >= limit:
+                break
+        return titles or [
+            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
+            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
+            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+        ]
+    except Exception as e:
+        logger.debug(f"Could not load winning titles from performance ledger: {e}")
+        return [
+            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
+            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
+            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+        ]
 
 GENZ_COMMENT_HOOKS = [
     "Would you use this in your kitchen or bathroom? Drop your vote below! 👇",
@@ -152,7 +188,7 @@ Return ONLY a valid JSON object matching this exact schema:
         import time
         import random
 
-        models = ["gemini-3.8-flash", "gemini-3.5-flash-lite"]
+        models = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
         for model_name in models:
             for attempt in range(1, 4):
                 try:
@@ -212,16 +248,35 @@ def generate_with_groq(req: CopyGenerationRequest) -> Optional[PinCopyResponse]:
         from groq import Groq
         client = Groq(api_key=GROQ_API_KEY)
 
-        prompt = f"""You are an elite Pinterest marketing strategist for the @Smart_Spaces brand.
+        winning_titles = load_high_aes_winning_titles(limit=4)
+        exemplars_str = "\n".join(f"- {t}" for t in winning_titles)
+
+        prompt = f"""You are an elite Pinterest marketing strategist and viral copywriter for the official @Smart_Spaces brand.
 Create high-converting Pinterest copy and a bridge review for this product.
 Product: {req.product_title}
 Price: {req.price}
 Category: {req.category}
 
+High-AES Winning Exemplars from @Smart_Spaces Performance Ledger (model your title after these proven winners):
+{exemplars_str}
+
 REQUIREMENTS:
-1. pin_title: Max 95 chars catchy title
-2. pin_description: Max 480 chars description with an engaging Gen-Z conversational comment hook (e.g. 'Would you use this in your kitchen or bathroom? Drop your vote below! 👇' or 'Small space challenge: Could you fit everything in this setup? 🏠') and ending with #AmazonAssociate
-3. board_recommendation: MUST BE EXACTLY ONE OF: 'Small Apartment Hacks', 'Space Saving Kitchens', 'Closet & Wardrobe Organization', 'Studio Living Ideas', 'Room Organization'
+1. pin_title: Max 95 chars catchy title with high-intent keywords and viral emotional appeal.
+2. pin_description: Max 480 chars description explaining why this solves small-space clutter, containing an engaging Gen-Z conversational comment hook (e.g. 'Would you use this in your kitchen or bathroom? Drop your vote below! 👇' or 'Small space challenge: Could you fit everything in this setup? 🏠'), and ending with the mandatory FTC disclosure: #AmazonAssociate
+3. board_recommendation: MUST BE EXACTLY ONE OF THESE 5 OFFICIAL @Smart_Spaces BOARDS:
+   - 'Small Apartment Hacks'
+   - 'Space Saving Kitchens'
+   - 'Closet & Wardrobe Organization'
+   - 'Studio Living Ideas'
+   - 'Room Organization'
+4. hashtags: 5-7 popular Pinterest search tags ending with #AmazonAssociate
+5. call_to_action: Short high-converting CTA (e.g. 'Tap here to check today's deal on Amazon')
+6. hook: 4-7 word punchy visual hook
+7. bridge_review: An objective, trustworthy review:
+   - verdict: 1 punchy sentence summarizing why this product stands out
+   - pros: exactly 3 specific bullet highlights
+   - cons: 1 honest, minor consideration
+   - who_is_it_for: 1 sentence targeting the exact persona
 
 Return ONLY valid JSON matching this schema:
 {{
@@ -239,7 +294,7 @@ Return ONLY valid JSON matching this schema:
   }}
 }}"""
 
-        models = ["qwen/qwen3.8-27b", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.3-70b-versatile"]
+        models = ["qwen/qwen3.8-27b", "openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
         for model_name in models:
             try:

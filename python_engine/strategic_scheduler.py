@@ -139,7 +139,7 @@ class StrategicScheduler:
         slot_id: int,
         apply_jitter: bool = True,
         dry_run: bool = False,
-        publish_as_carousel: bool = False,
+        publish_as_carousel: Optional[bool] = None,
         track_a: bool = False,
     ) -> Dict[str, Any]:
         """Executes a single slot targeting its dedicated board and niche queries."""
@@ -147,12 +147,19 @@ class StrategicScheduler:
         if not slot:
             raise ValueError(f"Invalid slot ID: {slot_id}. Must be between 1 and 5.")
 
+        # Automated format alternator: carousels on prime visual slots (1 & 4), single pins on other slots (2, 3, 5)
+        if publish_as_carousel is None:
+            publish_as_carousel = slot_id in (1, 4)
+
         if not self.autopilot.pinterest._board_cache:
             self.autopilot.pinterest.bootstrap_smart_spaces_boards()
 
         board_name = slot["board_name"]
         queries = slot["niche_queries"]
-        logger.info(f"⏰ Executing Slot {slot_id}: Board='{board_name}' | Peak: {slot['peak_time_est']} (Track A={track_a})")
+        logger.info(
+            f"⏰ Executing Slot {slot_id}: Board='{board_name}' | Peak: {slot['peak_time_est']} "
+            f"(Carousel={publish_as_carousel}, Track A={track_a})"
+        )
 
         if apply_jitter:
             jitter_sec = random.randint(15, 120)
@@ -186,7 +193,7 @@ class StrategicScheduler:
         self,
         delay_between_boards_sec: int = 15,
         dry_run: bool = False,
-        publish_as_carousel: bool = False,
+        publish_as_carousel: Optional[bool] = None,
         track_a: bool = False,
     ) -> List[Dict[str, Any]]:
         """Executes all 5 boards in sequence (useful for testing or initial warmup)."""
@@ -194,11 +201,12 @@ class StrategicScheduler:
         self.autopilot.pinterest.bootstrap_smart_spaces_boards()
         results = []
         for slot_id in sorted(SCHEDULE_PILLARS.keys()):
+            slot_carousel = publish_as_carousel if publish_as_carousel is not None else (slot_id in (1, 4))
             res = self.execute_slot(
                 slot_id,
                 apply_jitter=False,
                 dry_run=dry_run,
-                publish_as_carousel=publish_as_carousel,
+                publish_as_carousel=slot_carousel,
                 track_a=track_a,
             )
             results.append(res)
@@ -217,7 +225,8 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument("--all", action="store_true", help="Execute all 5 boards in sequence")
     parser.add_argument("--no-jitter", action="store_true", help="Bypass anti-detection jitter sleep")
     parser.add_argument("--dry-run", action="store_true", help="Run without posting live to Pinterest")
-    parser.add_argument("--carousel", action="store_true", help="Publish 4-slide native base64 carousel pin")
+    parser.add_argument("--carousel", dest="carousel", action="store_true", default=None, help="Force publish 4-slide native base64 carousel pin")
+    parser.add_argument("--single", dest="single", action="store_true", help="Force publish single image pin")
     parser.add_argument("--track-a", action="store_true", help="Publish Track A Aspirational Lifestyle Pin (zero promo boxes, zero buttons, zero prices)")
     parser.add_argument("--bootstrap", action="store_true", help="Only bootstrap boards, do not publish")
     return parser
@@ -232,6 +241,12 @@ def main():
     args = parser.parse_args()
     scheduler = StrategicScheduler()
 
+    carousel_mode: Optional[bool] = None
+    if getattr(args, "single", False):
+        carousel_mode = False
+    elif getattr(args, "carousel", None) is True:
+        carousel_mode = True
+
     if args.bootstrap:
         logger.info("Bootstrapping boards...")
         scheduler.autopilot.pinterest.bootstrap_smart_spaces_boards()
@@ -239,7 +254,7 @@ def main():
     elif args.all:
         scheduler.execute_full_circuit(
             dry_run=args.dry_run,
-            publish_as_carousel=args.carousel,
+            publish_as_carousel=carousel_mode,
             track_a=args.track_a,
         )
     elif args.slot:
@@ -247,7 +262,7 @@ def main():
             args.slot,
             apply_jitter=not args.no_jitter,
             dry_run=args.dry_run,
-            publish_as_carousel=args.carousel,
+            publish_as_carousel=carousel_mode,
             track_a=args.track_a,
         )
     elif args.auto:
@@ -257,7 +272,7 @@ def main():
             matched_slot["slot_id"],
             apply_jitter=not args.no_jitter,
             dry_run=args.dry_run,
-            publish_as_carousel=args.carousel,
+            publish_as_carousel=carousel_mode,
             track_a=args.track_a,
         )
     else:

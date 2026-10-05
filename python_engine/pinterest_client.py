@@ -12,6 +12,7 @@ import json
 import base64
 import urllib.request
 import urllib.error
+import urllib.parse
 from typing import Dict, List, Optional, Any, Union
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -516,19 +517,113 @@ class PinterestClient:
         except Exception as e:
             print(f"[Warning] Failed to record published pin: {e}")
 
+    def refresh_access_token(
+        self,
+        app_id: Optional[str] = None,
+        app_secret: Optional[str] = None,
+        refresh_token: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Refreshes Pinterest API v5 access token using OAuth refresh token.
+
+        Target endpoint: POST https://api.pinterest.com/v5/oauth/token
+        Requires Basic auth header base64(app_id:app_secret) and grant_type=refresh_token.
+        """
+        effective_app_id = (app_id or self.app_id or os.getenv("PINTEREST_APP_ID") or "").strip()
+        effective_app_secret = (app_secret or self.app_secret or os.getenv("PINTEREST_APP_SECRET") or "").strip()
+        effective_refresh = (refresh_token or self.refresh_token or os.getenv("PINTEREST_REFRESH_TOKEN") or "").strip()
+
+        if not effective_app_id or not effective_app_secret:
+            raise ValueError("PINTEREST_APP_ID and PINTEREST_APP_SECRET are required to refresh access token.")
+        if not effective_refresh:
+            raise ValueError("PINTEREST_REFRESH_TOKEN is required to refresh access token.")
+
+        auth_header = base64.b64encode(f"{effective_app_id}:{effective_app_secret}".encode("utf-8")).decode("utf-8")
+        url = "https://api.pinterest.com/v5/oauth/token"
+        headers = {
+            "Authorization": f"Basic {auth_header}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+        body_data = urllib.parse.urlencode({
+            "grant_type": "refresh_token",
+            "refresh_token": effective_refresh,
+        }).encode("utf-8")
+
+        req = urllib.request.Request(url, data=body_data, headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                resp_body = resp.read().decode("utf-8")
+                token_data = json.loads(resp_body) if resp_body else {}
+                new_token = token_data.get("access_token")
+                if new_token:
+                    self.access_token = new_token
+                    print(f"✓ Pinterest access token successfully refreshed. Expires in: {token_data.get('expires_in')}s")
+                return token_data
+        except urllib.error.HTTPError as e:
+            err_msg = e.read().decode("utf-8")
+            print(f"[Error] Failed to refresh Pinterest access token: HTTP {e.code} - {err_msg}")
+            raise RuntimeError(f"Pinterest token refresh failed ({e.code}): {err_msg}")
+
+
+def generate_oauth_init_url(app_id: str, redirect_uri: str = "https://localhost", state: str = "pinforge_oauth") -> str:
+    """Generates Pinterest OAuth 2.0 Authorization URL for initial connection."""
+    scopes = "boards:read,boards:write,pins:read,pins:write,user_accounts:read"
+    params = urllib.parse.urlencode({
+        "client_id": app_id,
+        "redirect_uri": redirect_uri,
+        "response_type": "code",
+        "scope": scopes,
+        "state": state,
+    })
+    return f"https://www.pinterest.com/oauth/?{params}"
+
 
 if __name__ == "__main__":
-    client = PinterestClient()
-    print("--- Pinterest Client Verification ---")
-    try:
-        user = client.get_user_account()
-        print(f"Authenticated Account: {user.get('business_name')} (@{user.get('username')})")
-        print(f"Boards Found: {user.get('board_count')}")
+    import argparse
 
-        boards = client.get_boards(force_refresh=True)
-        print("\nActive Boards:")
-        for b in boards:
-            print(f"  - [{b.get('id')}] {b.get('name')}")
-        print("\nConnection Status: HEALTHY (Read Scopes Active)")
-    except Exception as e:
-        print(f"Connection Error: {e}")
+    parser = argparse.ArgumentParser(description="PinForge Pinterest Client & OAuth Helper")
+    parser.add_argument("--oauth-init", action="store_true", help="Generate OAuth 2.0 URL to obtain initial tokens")
+    parser.add_argument("--refresh-token", action="store_true", help="Refresh OAuth 2.0 access token via refresh token")
+    parser.add_argument("--app-id", type=str, help="Pinterest App ID for OAuth")
+    parser.add_argument("--app-secret", type=str, help="Pinterest App Secret for OAuth")
+    parser.add_argument("--redirect-uri", type=str, default="https://localhost", help="OAuth Redirect URI")
+    args = parser.parse_args()
+
+    client = PinterestClient()
+
+    if args.oauth_init:
+        app_id = (args.app_id or client.app_id or os.getenv("PINTEREST_APP_ID") or "").strip()
+        if not app_id:
+            print("Error: PINTEREST_APP_ID is required to generate OAuth authorization URL.")
+            print("Pass via --app-id <ID> or set PINTEREST_APP_ID in your environment.")
+        else:
+            oauth_url = generate_oauth_init_url(app_id, redirect_uri=args.redirect_uri)
+            print("\n" + "=" * 70)
+            print("📌 PinForge AI — Pinterest OAuth 2.0 Initialization")
+            print("=" * 70)
+            print("1. Open the following URL in your browser:")
+            print(f"\n   {oauth_url}\n")
+            print("2. Authorize access for @Smart_Spaces.")
+            print("3. Pinterest will redirect to your redirect URI with a ?code= parameter.")
+            print("4. Exchange that code for your initial access_token and refresh_token.")
+            print("=" * 70 + "\n")
+    elif args.refresh_token:
+        print("Refreshing Pinterest access token...")
+        try:
+            res = client.refresh_access_token(app_id=args.app_id, app_secret=args.app_secret)
+            print("Token refresh successful:", res)
+        except Exception as e:
+            print(f"Token refresh failed: {e}")
+    else:
+        print("--- Pinterest Client Verification ---")
+        try:
+            user = client.get_user_account()
+            print(f"Authenticated Account: {user.get('business_name')} (@{user.get('username')})")
+            print(f"Boards Found: {user.get('board_count')}")
+
+            boards = client.get_boards(force_refresh=True)
+            print("\nActive Boards:")
+            for b in boards:
+                print(f"  - [{b.get('id')}] {b.get('name')}")
+            print("\nConnection Status: HEALTHY (Read Scopes Active)")
+        except Exception as e:
+            print(f"Connection Error: {e}")

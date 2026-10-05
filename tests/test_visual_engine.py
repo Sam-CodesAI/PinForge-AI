@@ -326,25 +326,20 @@ class TestProviderContractHardening(unittest.TestCase):
 
     @patch("python_engine.visual_engine.IDEOGRAM_API_KEY", "mock_key")
     @patch("httpx.Client.post")
-    def test_ideogram_dual_endpoint_fallback(self, mock_post):
-        """If v2 endpoint returns 404, Ideogram engine falls back to legacy /generate."""
+    def test_ideogram_endpoint(self, mock_post):
+        """Ideogram engine directly targets official /generate endpoint."""
         from python_engine.visual_engine import generate_ideogram_image
-
-        resp_404 = MagicMock()
-        resp_404.status_code = 404
 
         resp_200 = MagicMock()
         resp_200.status_code = 200
         resp_200.json.return_value = {"data": []}
-
-        mock_post.side_effect = [resp_404, resp_200]
+        mock_post.return_value = resp_200
 
         generate_ideogram_image("Typography sign", api_key="mock_key")
 
-        self.assertEqual(mock_post.call_count, 2)
-        urls_called = [call_args[0][0] for call_args in mock_post.call_args_list]
-        self.assertIn("https://api.ideogram.ai/v2/image/generate", urls_called[0])
-        self.assertIn("https://api.ideogram.ai/generate", urls_called[1])
+        self.assertEqual(mock_post.call_count, 1)
+        url_called = mock_post.call_args[0][0]
+        self.assertEqual("https://api.ideogram.ai/generate", url_called)
 
     @patch("python_engine.carousel_engine.download_image", return_value=None)
     @patch("python_engine.visual_engine.generate_visual_with_waterfall")

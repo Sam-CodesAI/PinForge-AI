@@ -34,9 +34,14 @@ from python_engine.pin_generator import (
     download_image,
     draw_star,
     get_font,
+    render_frosted_glass_card,
     wrap_text,
 )
-from python_engine.visual_engine import sanitize_canvas_text
+from python_engine.visual_engine import (
+    composite_product_with_contact_shadow,
+    extract_amazon_product_cutout,
+    sanitize_canvas_text,
+)
 
 logger = logging.getLogger("pinforge.carousel")
 
@@ -146,25 +151,31 @@ def render_slide1_showcase(
     card_w, card_h = 840, 680
     card_x1, card_y1 = card_x0 + card_w, card_y0 + card_h
 
-    # Card shadow
-    shadow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
-    s_draw = ImageDraw.Draw(shadow)
-    s_draw.rounded_rectangle([card_x0 - 5, card_y0 + 10, card_x1 + 5, card_y1 + 25], radius=32, fill=(0, 0, 0, 110))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(25))
-    img = Image.alpha_composite(img, shadow)
-
+    # Frosted glass card
+    is_light = style in ("luxury_editorial", "anime")
+    fill_rgba = (255, 255, 255, 235) if is_light else (18, 24, 38, 215)
+    border_color = (226, 232, 240, 220) if is_light else (56, 189, 248, 120)
+    img = render_frosted_glass_card(img, (card_x0, card_y0, card_x1, card_y1), radius=28, fill_rgba=fill_rgba, border_color=border_color)
     draw = ImageDraw.Draw(img)
-    draw.rounded_rectangle([card_x0, card_y0, card_x1, card_y1], radius=28, fill=(255, 255, 255, 255), outline=(226, 232, 240, 255), width=2)
 
-    # Product image composite
+    # Product image composite with contact shadow
     if product_img:
         max_pw, max_ph = card_w - 90, card_h - 90
         p_ratio = min(max_pw / product_img.width, max_ph / product_img.height)
         new_pw, new_ph = int(product_img.width * p_ratio), int(product_img.height * p_ratio)
-        resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
         px = card_x0 + (card_w - new_pw) // 2
         py = card_y0 + (card_h - new_ph) // 2
-        img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+        try:
+            cutout = extract_amazon_product_cutout(product_img)
+            img = composite_product_with_contact_shadow(
+                img, cutout, (px, py), target_size=(new_pw, new_ph), warm_tint=is_light
+            )
+            draw = ImageDraw.Draw(img)
+        except Exception as err:
+            logger.debug(f"Slide 1 cutout fallback: {err}")
+            resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
+            img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+            draw = ImageDraw.Draw(img)
 
     # Prominent Gen-Z Neon Friction Badge on Card
     f_badge = sanitize_canvas_text(friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
@@ -269,16 +280,28 @@ def render_slide2_specs(
     right_x = 520
     right_w = 410
     right_h = 565
-    draw.rounded_rectangle([right_x, panel_y0, right_x + right_w, panel_y0 + right_h], radius=24, fill=(255, 255, 255, 255), outline=(226, 232, 240, 255), width=2)
+    is_light = style in ("luxury_editorial", "anime")
+    fill_rgba_r = (255, 255, 255, 235) if is_light else (18, 24, 38, 215)
+    border_color_r = (226, 232, 240, 220) if is_light else (56, 189, 248, 120)
+    img = render_frosted_glass_card(img, (right_x, panel_y0, right_x + right_w, panel_y0 + right_h), radius=24, fill_rgba=fill_rgba_r, border_color=border_color_r)
+    draw = ImageDraw.Draw(img)
 
     if product_img:
-        max_pw, max_ph = right_w - 50, right_h - 50
+        max_pw, max_ph = right_w - 50, right_h - 70
         p_ratio = min(max_pw / product_img.width, max_ph / product_img.height)
         new_pw, new_ph = int(product_img.width * p_ratio), int(product_img.height * p_ratio)
-        resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
         px = right_x + (right_w - new_pw) // 2
         py = panel_y0 + (right_h - new_ph) // 2
-        img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+        try:
+            cutout = extract_amazon_product_cutout(product_img)
+            img = composite_product_with_contact_shadow(
+                img, cutout, (px, py), target_size=(new_pw, new_ph), warm_tint=is_light
+            )
+            draw = ImageDraw.Draw(img)
+        except Exception:
+            resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
+            img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+            draw = ImageDraw.Draw(img)
 
     # Stamped Gen-Z Neon Friction Badge on right panel
     rz_badge = f"* {sanitize_canvas_text(friction_badge or 'TOOL-FREE 60S SETUP').upper()}"
@@ -307,6 +330,20 @@ def render_slide2_specs(
     return img
 
 
+def get_variant_labels_for_product(title: str) -> List[str]:
+    """Dynamically maps variant labels based on product mounting and keywords."""
+    t_lower = (title or "").lower()
+    if any(w in t_lower for w in ["fold", "collaps"]):
+        return ["ANGLE 1 (FULL)", "DETAIL (FOLDED)", "EXPANDED CAPACITY"]
+    elif any(w in t_lower for w in ["roll", "wheel", "cart", "caster"]):
+        return ["ANGLE 1 (FULL)", "WHEELS & BASE", "SIDE PROFILE"]
+    elif any(w in t_lower for w in ["wall", "adhesiv", "hang", "mount", "hook"]):
+        return ["ANGLE 1 (FULL)", "MOUNT & ADHESIVE", "TEXTURE & FINISH"]
+    elif any(w in t_lower for w in ["desk", "drawer", "organizer", "tray", "box", "bin"]):
+        return ["ANGLE 1 (FULL)", "DRAWER COMPARTMENTS", "TOP PROFILE & DETAIL"]
+    return ["ANGLE 1 (FULL)", "DETAIL CLOSE-UP", "SIDE & REAR PROFILE"]
+
+
 # ============================================================================
 # SLIDE 3: Product Variant Images Side List (Right Up / Down)
 # ============================================================================
@@ -331,16 +368,28 @@ def render_slide3_variants(
     # Main Left Perspective Card (Width: 540px)
     main_x, main_y0 = 70, 175
     main_w, main_h = 540, 580
-    draw.rounded_rectangle([main_x, main_y0, main_x + main_w, main_y0 + main_h], radius=26, fill=(255, 255, 255, 255), outline=(226, 232, 240, 255), width=2)
+    is_light = style in ("luxury_editorial", "anime")
+    fill_rgba_m = (255, 255, 255, 235) if is_light else (18, 24, 38, 215)
+    border_color_m = (226, 232, 240, 220) if is_light else (56, 189, 248, 120)
+    img = render_frosted_glass_card(img, (main_x, main_y0, main_x + main_w, main_y0 + main_h), radius=26, fill_rgba=fill_rgba_m, border_color=border_color_m)
+    draw = ImageDraw.Draw(img)
 
     if product_img:
-        max_pw, max_ph = main_w - 60, main_h - 60
+        max_pw, max_ph = main_w - 60, main_h - 70
         p_ratio = min(max_pw / product_img.width, max_ph / product_img.height)
         new_pw, new_ph = int(product_img.width * p_ratio), int(product_img.height * p_ratio)
-        resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
         px = main_x + (main_w - new_pw) // 2
         py = main_y0 + (main_h - new_ph) // 2
-        img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+        try:
+            cutout = extract_amazon_product_cutout(product_img)
+            img = composite_product_with_contact_shadow(
+                img, cutout, (px, py), target_size=(new_pw, new_ph), warm_tint=is_light
+            )
+            draw = ImageDraw.Draw(img)
+        except Exception:
+            resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
+            img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+            draw = ImageDraw.Draw(img)
 
     # Right-Side Vertical Thumbnail Stack (Top, Middle, Down - 3 cards)
     right_x = 640
@@ -362,7 +411,7 @@ def render_slide3_variants(
         thumbs.append(product_img.crop((int(w * 0.1), int(h * 0.25), int(w * 0.9), int(h * 0.75))))
         thumbs.append(product_img.crop((0, int(h * 0.55), w, h)))
 
-    labels = ["ANGLE 1 (FULL)", "DETAIL (FOLDED)", "BASE & WHEELS"]
+    labels = get_variant_labels_for_product(title)
     for i in range(3):
         cur_ty = thumb_y + (i * 200)
         border_color = (245, 158, 11, 255) if i == 0 else (51, 65, 85, 255)
@@ -449,10 +498,23 @@ def render_slide4_uses(
             use_cases[idx] = (f"{idx+1}. {sanitize_canvas_text(h)}", default_descs[idx])
 
     card_y = 185
+    is_light = style in ("luxury_editorial", "anime")
     for heading, desc in use_cases:
-        draw.rounded_rectangle([70, card_y, CANVAS_WIDTH - 70, card_y + 160], radius=20, fill=(24, 32, 47, 240), outline=(245, 158, 11, 160), width=2)
+        fill_rgba_u = (255, 255, 255, 220) if is_light else (24, 32, 47, 220)
+        border_rgba_u = (217, 119, 6, 140) if is_light else (245, 158, 11, 160)
+        img = render_frosted_glass_card(
+            img,
+            (70, card_y, CANVAS_WIDTH - 70, card_y + 160),
+            radius=20,
+            fill_rgba=fill_rgba_u,
+            border_color=border_rgba_u,
+            border_width=2,
+            blur_radius=10,
+        )
+        draw = ImageDraw.Draw(img)
         head_font = get_font(BOLD_FONT_PATH, 24)
-        draw.text((95, card_y + 18), heading, fill=(251, 191, 36, 255), font=head_font)
+        head_color = (180, 83, 9, 255) if is_light else (251, 191, 36, 255)
+        draw.text((95, card_y + 18), heading, fill=head_color, font=head_font)
         body_font = get_font(REGULAR_FONT_PATH, 21)
         b_lines = wrap_text(desc, body_font, max_width=CANVAS_WIDTH - 190)[:3]
         by = card_y + 55

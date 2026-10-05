@@ -36,13 +36,21 @@ def calculate_aes(
     outbound_clicks: int,
     pin_clicks: int,
     comments: int,
+    bayesian: bool = False,
 ) -> float:
     """Computes the Algorithmic Engagement Score (AES).
 
-    Formula:
+    Standard formula (bayesian=False):
     (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100
+
+    Bayesian-smoothed formula (bayesian=True):
+    (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / (impressions + 100) * 100
     """
-    denominator = max(impressions, 10)
+    if bayesian:
+        denominator = float(impressions + 100)
+    else:
+        denominator = float(max(impressions, 10))
+
     raw_score = (
         (5.0 * outbound_clicks)
         + (3.0 * saves)
@@ -51,6 +59,23 @@ def calculate_aes(
     ) / denominator * 100.0
 
     return round(raw_score, 2)
+
+
+def calculate_bayesian_aes(
+    impressions: int,
+    saves: int,
+    outbound_clicks: int,
+    pin_clicks: int,
+    comments: int,
+) -> float:
+    """Computes the Bayesian-smoothed Algorithmic Engagement Score (AES).
+
+    Formula:
+    (5 * outbound_clicks + 3 * saves + 1.5 * pin_clicks + 2 * comments) / (impressions + 100) * 100
+    """
+    return calculate_aes(
+        impressions, saves, outbound_clicks, pin_clicks, comments, bayesian=True
+    )
 
 
 class AnalyticsFeedbackLoop:
@@ -261,6 +286,15 @@ class AnalyticsFeedbackLoop:
                 outbound_clicks=m["outbound_clicks"],
                 pin_clicks=m["pin_clicks"],
                 comments=m["comments"],
+                bayesian=True,
+            )
+            raw_score = calculate_aes(
+                impressions=m["impressions"],
+                saves=m["saves"],
+                outbound_clicks=m["outbound_clicks"],
+                pin_clicks=m["pin_clicks"],
+                comments=m["comments"],
+                bayesian=False,
             )
 
             record = {
@@ -270,6 +304,7 @@ class AnalyticsFeedbackLoop:
                 "link": p_link,
                 "metrics": m,
                 "aes_score": score,
+                "raw_aes_score": raw_score,
                 "evaluated_at": datetime.now(timezone.utc).isoformat(),
             }
             evaluated_pins.append(record)

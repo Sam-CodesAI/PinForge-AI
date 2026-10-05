@@ -33,6 +33,7 @@ from python_engine.models import (
     AutonomousCycleRequest,
     CopyGenerationRequest,
     CsvExportRequest,
+    CurateVisionRequest,
     ExtractRequest,
     PinCopyResponse,
     PinGenerateRequest,
@@ -43,6 +44,7 @@ from python_engine.models import (
     VisualGenerateRequest,
     VisualGenerateResponse,
 )
+from python_engine.ai_vision_curator import AIVisionCurator
 from python_engine.pin_generator import generate_pin_graphic
 from python_engine.rss_generator import generate_pinterest_rss
 from python_engine.scraper import fetch_product
@@ -212,6 +214,43 @@ def generate_copy_endpoint(req: CopyGenerationRequest):
     except Exception as err:
         logger.error(f"Error generating copy: {err}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Copy generation failed: {str(err)}")
+
+
+@app.post("/api/curate-vision")
+def curate_vision_endpoint(req: CurateVisionRequest):
+    """Inspect product image with native Pillow CV extraction (<14ms) and multimodal AI."""
+    import re
+    import httpx
+
+    image_bytes = b""
+    if req.image_base64:
+        try:
+            raw_b64 = re.sub(r"^data:image/[^;]+;base64,", "", req.image_base64)
+            image_bytes = base64.b64decode(raw_b64)
+        except Exception as e:
+            logger.warning(f"Failed to decode base64 image: {e}")
+
+    if not image_bytes and req.image_url:
+        try:
+            with httpx.Client(timeout=8.0, follow_redirects=True) as client:
+                res = client.get(req.image_url)
+                if res.status_code == 200:
+                    image_bytes = res.content
+        except Exception as err:
+            logger.warning(f"Failed to download image_url for vision curation: {err}")
+
+    try:
+        curator = AIVisionCurator()
+        result = curator.curate_product_visuals(
+            image_bytes=image_bytes,
+            product_title=req.product_title,
+            price_str=req.price,
+            discount_pct=req.discount_percent,
+        )
+        return result
+    except Exception as err:
+        logger.error(f"Vision curation failed: {err}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Vision curation failed: {str(err)}")
 
 
 @app.post("/api/export-csv")

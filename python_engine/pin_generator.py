@@ -141,14 +141,96 @@ def draw_star(draw: ImageDraw.ImageDraw, cx: float, cy: float, r_outer: float, r
     draw.polygon(points, fill=fill)
 
 
-def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
-    """Render Template 1: Bento Dark Glow (Deep Slate, Cyan Radial Backlight, Frosted Card)."""
-    img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (11, 15, 25, 255))
+def hex_to_rgb(hex_str: Optional[str], default: Tuple[int, int, int]) -> Tuple[int, int, int]:
+    """Parse hex color string '#RRGGBB' safely to (r, g, b) tuple with fallback."""
+    if not hex_str:
+        return default
+    clean = hex_str.strip().lstrip("#")
+    if len(clean) == 6:
+        try:
+            return (int(clean[0:2], 16), int(clean[2:4], 16), int(clean[4:6], 16))
+        except ValueError:
+            pass
+    return default
 
-    # 1. Background Cyan Radial Glow
+
+def render_frosted_glass_card(
+    base_canvas: Image.Image,
+    card_box: Tuple[int, int, int, int],
+    radius: int = 32,
+    border_color: Tuple[int, int, int, int] = (255, 255, 255, 140),
+    fill_rgba: Tuple[int, int, int, int] = (255, 255, 255, 215),
+    border_width: int = 2,
+    blur_radius: int = 15,
+) -> Image.Image:
+    """Renders a 2026 frosted glassmorphic card with backdrop blur and sleek borders."""
+    x0, y0, x1, y1 = card_box
+    w = max(10, x1 - x0)
+    h = max(10, y1 - y0)
+
+    # 1. Soft Card Drop Shadow
+    shadow = Image.new("RGBA", base_canvas.size, (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow)
+    s_draw.rounded_rectangle([x0 - 4, y0 + 10, x1 + 4, y1 + 24], radius=radius + 4, fill=(0, 0, 0, 75))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(24))
+    canvas = Image.alpha_composite(base_canvas, shadow)
+
+    # 2. Region crop & blur
+    cropped = canvas.crop((x0, y0, x1, y1)).filter(ImageFilter.GaussianBlur(blur_radius))
+
+    # Mask for rounded card
+    mask = Image.new("L", (w, h), 0)
+    m_draw = ImageDraw.Draw(mask)
+    m_draw.rounded_rectangle([0, 0, w, h], radius=radius, fill=255)
+
+    # Frosted glass tint
+    tint = Image.new("RGBA", (w, h), fill_rgba)
+    card_surface = Image.alpha_composite(cropped, tint)
+
+    # Paste frosted card onto canvas
+    canvas.paste(card_surface, (x0, y0), mask)
+
+    # Sleek outline border
+    draw = ImageDraw.Draw(canvas)
+    draw.rounded_rectangle([x0, y0, x1, y1], radius=radius, outline=border_color, width=border_width)
+
+    return canvas
+
+
+def draw_editorial_diffused_text(
+    base_canvas: Image.Image,
+    xy: Tuple[int, int],
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    fill: Tuple[int, int, int, int] = (248, 250, 252, 255),
+    shadow_color: Tuple[int, int, int, int] = (0, 0, 0, 110),
+    shadow_offset: Tuple[int, int] = (0, 4),
+    shadow_blur: int = 6,
+) -> Image.Image:
+    """Draws typography with a soft diffused editorial drop shadow."""
+    x, y = xy
+    shadow_layer = Image.new("RGBA", base_canvas.size, (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow_layer)
+    s_draw.text((x + shadow_offset[0], y + shadow_offset[1]), text, fill=shadow_color, font=font)
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(shadow_blur))
+
+    canvas = Image.alpha_composite(base_canvas, shadow_layer)
+    draw = ImageDraw.Draw(canvas)
+    draw.text((x, y), text, fill=fill, font=font)
+    return canvas
+
+
+def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
+    """Render Template 1: Bento Dark Glow (Deep Slate, Dynamic Radial Backlight, Frosted Card)."""
+    primary_rgb = hex_to_rgb(req.primary_hex, (11, 15, 25))
+    accent_rgb = hex_to_rgb(req.accent_hex, (56, 189, 248))
+
+    img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (*primary_rgb, 255))
+
+    # 1. Background Radial Glow dynamically tinted with accent_hex
     glow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
     glow_draw = ImageDraw.Draw(glow)
-    glow_draw.ellipse([150, 200, 850, 900], fill=(56, 189, 248, 45))
+    glow_draw.ellipse([150, 200, 850, 900], fill=(*accent_rgb, 45))
     glow = glow.filter(ImageFilter.GaussianBlur(90))
     img = Image.alpha_composite(img, glow)
 
@@ -161,10 +243,10 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     badge_w = (bbox[2] - bbox[0]) + 40
     badge_x = (CANVAS_WIDTH - badge_w) // 2
     badge_y = 60
-    draw.rounded_rectangle([badge_x, badge_y, badge_x + badge_w, badge_y + 44], radius=22, fill=(15, 23, 42, 230), outline=(56, 189, 248, 180), width=2)
-    draw.text((badge_x + 20, badge_y + 10), badge_text, fill=(56, 189, 248, 255), font=badge_font)
+    draw.rounded_rectangle([badge_x, badge_y, badge_x + badge_w, badge_y + 44], radius=22, fill=(15, 23, 42, 230), outline=(*accent_rgb, 180), width=2)
+    draw.text((badge_x + 20, badge_y + 10), badge_text, fill=(*accent_rgb, 255), font=badge_font)
 
-    # 3. Main Hook / Title
+    # 3. Main Hook / Title with diffused text shadow
     title_font_size = 46 if len(req.title) < 55 else 38
     title_font = get_font(BOLD_FONT_PATH, title_font_size)
     clean_title = sanitize_canvas_text(req.title)
@@ -174,24 +256,23 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         line_bbox = title_font.getbbox(line)
         line_w = line_bbox[2] - line_bbox[0]
         line_x = (CANVAS_WIDTH - line_w) // 2
-        draw.text((line_x, cur_y), line, fill=(248, 250, 252, 255), font=title_font)
+        img = draw_editorial_diffused_text(img, (line_x, cur_y), line, font=title_font, fill=(248, 250, 252, 255), shadow_color=(0, 0, 0, 140))
         cur_y += title_font_size + 12
 
-    # 4. Center Product Card
+    # 4. Center Product Card rendered with Frosted Glassmorphism
     card_x0, card_y0 = 80, max(cur_y + 25, 290)
     card_w, card_h = 840, 680
     card_x1, card_y1 = card_x0 + card_w, card_y0 + card_h
 
-    # Soft Card Drop Shadow
-    shadow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
-    shadow_draw = ImageDraw.Draw(shadow)
-    shadow_draw.rounded_rectangle([card_x0 - 5, card_y0 + 10, card_x1 + 5, card_y1 + 25], radius=36, fill=(0, 0, 0, 120))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(25))
-    img = Image.alpha_composite(img, shadow)
+    img = render_frosted_glass_card(
+        img,
+        (card_x0, card_y0, card_x1, card_y1),
+        radius=32,
+        border_color=(*accent_rgb, 120),
+        fill_rgba=(255, 255, 255, 215),
+    )
 
     draw = ImageDraw.Draw(img)
-    # White high-contrast card background
-    draw.rounded_rectangle([card_x0, card_y0, card_x1, card_y1], radius=32, fill=(255, 255, 255, 255), outline=(226, 232, 240, 255), width=2)
 
     # Composite Product Image inside Card
     if product_img:
@@ -234,8 +315,8 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 60
-    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(56, 189, 248, 255), width=2)
-    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(56, 189, 248, 255), font=fb_font)
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(*accent_rgb, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(*accent_rgb, 255), font=fb_font)
 
     # 5. Rating & Social Proof Bar
     bar_y = card_y1 + 45
@@ -318,7 +399,8 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     b_w = b_bbox[2] - b_bbox[0]
     draw.text(((CANVAS_WIDTH - b_w) // 2, 75), brand_text, fill=(120, 113, 108, 255), font=brand_font)
 
-    # 2. Main Title (Serif Aesthetic)
+    # 2. Main Title (Serif Aesthetic) with diffused text shadow
+    accent_rgb = hex_to_rgb(req.accent_hex, (217, 119, 6))
     title_font_size = 46 if len(req.title) < 55 else 38
     title_font = get_font(SERIF_FONT_PATH, title_font_size)
     clean_title = sanitize_canvas_text(req.title)
@@ -327,23 +409,24 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     for line in lines:
         line_bbox = title_font.getbbox(line)
         line_w = line_bbox[2] - line_bbox[0]
-        draw.text(((CANVAS_WIDTH - line_w) // 2, cur_y), line, fill=(28, 25, 23, 255), font=title_font)
+        line_x = (CANVAS_WIDTH - line_w) // 2
+        img = draw_editorial_diffused_text(img, (line_x, cur_y), line, font=title_font, fill=(28, 25, 23, 255), shadow_color=(0, 0, 0, 30))
         cur_y += title_font_size + 14
 
-    # 3. Product Center Piece with Soft Shadow
+    # 3. Product Center Piece with Frosted Glass Card
     card_x0, card_y0 = 90, max(cur_y + 35, 290)
     card_w, card_h = 820, 680
     card_x1, card_y1 = card_x0 + card_w, card_y0 + card_h
 
-    # Subtle Natural Shadow
-    shadow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
-    s_draw = ImageDraw.Draw(shadow)
-    s_draw.rounded_rectangle([card_x0 + 10, card_y0 + 20, card_x1 - 10, card_y1 + 30], radius=24, fill=(0, 0, 0, 40))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(30))
-    img = Image.alpha_composite(img, shadow)
+    img = render_frosted_glass_card(
+        img,
+        (card_x0, card_y0, card_x1, card_y1),
+        radius=20,
+        border_color=(231, 229, 228, 255),
+        fill_rgba=(255, 255, 255, 220),
+    )
 
     draw = ImageDraw.Draw(img)
-    draw.rounded_rectangle([card_x0, card_y0, card_x1, card_y1], radius=20, fill=(255, 255, 255, 255), outline=(231, 229, 228, 255), width=2)
 
     # Composite Image
     if product_img:
@@ -377,7 +460,7 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 36, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 55
-    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(28, 25, 23, 240), outline=(217, 119, 6, 255), width=2)
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(28, 25, 23, 240), outline=(*accent_rgb, 255), width=2)
     draw.text((fb_x + 18, fb_y + 10), f_badge, fill=(251, 191, 36, 255), font=fb_font)
 
     # 4. Minimal Price & Rating Row
@@ -417,13 +500,16 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
 
 
 def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
-    """Render Template 3: Viral Problem-Solver (High Contrast, Top Hook Banner, Value Highlights)."""
-    img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (15, 23, 42, 255))
+    """Render Template 3: Viral Problem-Solver (High Contrast, Top Hook Banner, Frosted Card)."""
+    primary_rgb = hex_to_rgb(req.primary_hex, (15, 23, 42))
+    accent_rgb = hex_to_rgb(req.accent_hex, (245, 158, 11))
+
+    img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (*primary_rgb, 255))
     draw = ImageDraw.Draw(img)
 
     # 1. Bold Top Hook Banner
     banner_h = 130
-    draw.rectangle([0, 0, CANVAS_WIDTH, banner_h], fill=(245, 158, 11, 255))
+    draw.rectangle([0, 0, CANVAS_WIDTH, banner_h], fill=(*accent_rgb, 255))
 
     hook_font = get_font(BOLD_FONT_PATH, 38)
     hook_text = sanitize_canvas_text("THE AMAZON FIND YOU DIDN'T KNOW YOU NEEDED")
@@ -432,22 +518,31 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     h_bbox = hook_font.getbbox(hook_text)
     draw.text(((CANVAS_WIDTH - (h_bbox[2] - h_bbox[0])) // 2, 45), hook_text, fill=(15, 23, 42, 255), font=hook_font)
 
-    # 2. Sub-title
+    # 2. Sub-title with diffused text shadow
     sub_font = get_font(BOLD_FONT_PATH, 36)
     clean_title = sanitize_canvas_text(req.title)
     lines = wrap_text(clean_title, sub_font, max_width=860)[:2]
     cur_y = banner_h + 30
     for line in lines:
         l_bbox = sub_font.getbbox(line)
-        draw.text(((CANVAS_WIDTH - (l_bbox[2] - l_bbox[0])) // 2, cur_y), line, fill=(241, 245, 249, 255), font=sub_font)
+        line_x = (CANVAS_WIDTH - (l_bbox[2] - l_bbox[0])) // 2
+        img = draw_editorial_diffused_text(img, (line_x, cur_y), line, font=sub_font, fill=(241, 245, 249, 255), shadow_color=(0, 0, 0, 100))
         cur_y += 46
 
-    # 3. Product Card
+    # 3. Product Card rendered with Frosted Glassmorphism
     card_x0, card_y0 = 80, cur_y + 20
     card_w, card_h = 840, 640
     card_x1, card_y1 = card_x0 + card_w, card_y0 + card_h
 
-    draw.rounded_rectangle([card_x0, card_y0, card_x1, card_y1], radius=28, fill=(255, 255, 255, 255), outline=(245, 158, 11, 255), width=3)
+    img = render_frosted_glass_card(
+        img,
+        (card_x0, card_y0, card_x1, card_y1),
+        radius=28,
+        border_color=(*accent_rgb, 200),
+        fill_rgba=(255, 255, 255, 225),
+    )
+
+    draw = ImageDraw.Draw(img)
 
     if product_img:
         max_pw, max_ph = card_w - 80, card_h - 80
@@ -463,7 +558,7 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
         callout_text = "* SPACE SAVING GAME CHANGER *"
         c_bbox = accent_font.getbbox(callout_text)
         c_w = c_bbox[2] - c_bbox[0]
-        draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 250), callout_text, fill=(245, 158, 11, 255), font=accent_font)
+        draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 250), callout_text, fill=(*accent_rgb, 255), font=accent_font)
 
         sub_font = get_font(REGULAR_FONT_PATH, 24)
         sub_text = sanitize_canvas_text("Over 10,000+ Verified 5-Star Amazon Reviews")
@@ -480,8 +575,8 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
     fb_x = card_x0 + (card_w - fb_w) // 2
     fb_y = card_y1 - 60
-    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(245, 158, 11, 255), width=2)
-    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(251, 191, 36, 255), font=fb_font)
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(*accent_rgb, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(*accent_rgb, 255), font=fb_font)
 
     # 4. Feature Callout Rows (Gen-Z Bento friction highlights)
     feat_y = card_y1 + 35
