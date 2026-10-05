@@ -259,15 +259,19 @@ class AutonomousAutopilot:
                         alt_text=vision_meta.get("alt_text"),
                     )
                     logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
-
-                self.hunter.mark_asin_seen(
-                    asin=product.asin,
-                    title=product.title,
-                    pin_id=live_pin_data.get("pin_id", ""),
-                )
             except Exception as e:
                 logger.error(f"Live Pinterest publishing failed: {e}")
                 live_pin_data = {"error": str(e)}
+
+        # Always record executed ASIN to ensure deduplication across all cycles
+        pin_id_str = ""
+        if isinstance(live_pin_data, dict):
+            pin_id_str = str(live_pin_data.get("pin_id", ""))
+        self.hunter.mark_asin_seen(
+            asin=product.asin,
+            title=product.title,
+            pin_id=pin_id_str,
+        )
 
         total_elapsed = round(time.perf_counter() - cycle_start, 2)
 

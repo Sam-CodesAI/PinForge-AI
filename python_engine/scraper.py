@@ -19,6 +19,14 @@ from curl_cffi import requests as cffi_requests
 from python_engine.config import DEFAULT_AFFILIATE_TAG
 from python_engine.models import ProductData
 
+try:
+    from python_engine.pin_generator import download_image
+except ImportError:
+    try:
+        from pin_generator import download_image
+    except ImportError:
+        download_image = None
+
 logger = logging.getLogger("pinforge.scraper")
 
 # ASIN regex matching all Amazon URL variants
@@ -187,15 +195,44 @@ def clean_amazon_title(raw_title: str) -> str:
     return cleaned.strip()
 
 
+def resolve_master_image_url(img_url: Optional[str]) -> str:
+    """Strip Amazon dynamic image sizing tags to fetch the uncompressed master image from the CDN.
+
+    E.g. transforms https://m.media-amazon.com/images/I/71xyz._AC_SL1500_.jpg -> https://m.media-amazon.com/images/I/71xyz.jpg
+    """
+    if not img_url:
+        return ""
+    return re.sub(r"\._[A-Za-z0-9_,]+_\.", ".", img_url.strip())
+
+
+def calculate_discount_percent(current_price: Any, original_price: Any) -> Optional[int]:
+    """Calculate true discount percentage between current and original/list prices."""
+    if not current_price or not original_price:
+        return None
+    try:
+        c_nums = re.findall(r"\d+(?:\.\d+)?", str(current_price).replace(",", ""))
+        o_nums = re.findall(r"\d+(?:\.\d+)?", str(original_price).replace(",", ""))
+        if c_nums and o_nums:
+            c_val = float(c_nums[0])
+            o_val = float(o_nums[0])
+            if o_val > c_val > 0:
+                pct = int(round((1.0 - (c_val / o_val)) * 100))
+                if 1 <= pct <= 99:
+                    return pct
+    except Exception:
+        pass
+    return None
+
+
 def format_usd_price(raw_val: Any) -> str:
-    """Format and normalize price string into clean USD format ($XX.XX) bounded for viral home decor/storage items."""
+    """Format and normalize price string into clean USD format ($XX.XX) supporting pricing up to $999.00."""
     if not raw_val:
         return "$24.99"
     s = str(raw_val).strip()
     if re.match(r"^\$\d{1,3}(\.\d{2})?$", s):
         try:
             val = float(s.replace("$", ""))
-            if 6.0 <= val <= 199.0:
+            if 1.0 <= val <= 999.0:
                 return f"${val:.2f}"
         except Exception:
             pass
@@ -204,9 +241,9 @@ def format_usd_price(raw_val: Any) -> str:
     if nums:
         try:
             val = float(nums[0])
-            while val > 199.0:
-                val = round(val / 84.0, 2)
-            if val < 6.0:
+            if val > 999.0:
+                val = 999.00
+            elif val < 1.0:
                 val = 24.99
             return f"${val:.2f}"
         except Exception:
@@ -214,9 +251,83 @@ def format_usd_price(raw_val: Any) -> str:
     return "$24.99"
 
 
+def classify_mounting_and_safety(
+    specs: Any = None,
+    bullets: Optional[List[str]] = None,
+) -> Tuple[str, bool, str]:
+    """Deterministically classify mounting type and renter safety.
+
+    Categories:
+    - Countertop / Freestanding (is_renter_safe: True, badge: '100% RENTER FRIENDLY • NO DRILL')
+    - In-Drawer (is_renter_safe: True, badge: 'IN-DRAWER FIT • ZERO DRILL')
+    - Over-the-Door (is_renter_safe: True, badge: 'OVER-THE-DOOR • ZERO WALL HOLES')
+    - Tension/Adhesive (is_renter_safe: True, badge: '100% RENTER FRIENDLY • NO DRILL')
+    - Screw / Wall-Mount (is_renter_safe: False, badge: 'HEAVY-DUTY STUD MOUNT • ZERO SAG')
+
+    Returns:
+        (mounting_type: str, is_renter_safe: bool, friction_badge: str)
+    """
+    spec_mounting = ""
+    specs_text = ""
+    if isinstance(specs, dict):
+        for k, v in specs.items():
+            k_low = str(k).lower()
+            if any(term in k_low for term in ["mount", "installation", "placement", "type"]):
+                spec_mounting += f" {v}"
+            specs_text += f" {k} {v}"
+    elif isinstance(specs, list):
+        specs_text = " ".join(str(x) for x in specs)
+    elif specs:
+        specs_text = str(specs)
+
+    b_text = " ".join(bullets or [])
+    combined = f"{spec_mounting} {specs_text} {b_text}".lower()
+    spec_mount_lower = spec_mounting.lower()
+
+    # 1. Over-the-Door
+    if any(k in spec_mount_lower for k in ["over the door", "over-the-door", "door mount", "door hanging"]) or \
+       any(k in combined for k in ["over the door", "over-the-door", "over door hook", "door hanging", "hangs over the door"]):
+        return "Over-the-Door", True, "OVER-THE-DOOR • ZERO WALL HOLES"
+
+    # 2. In-Drawer
+    if any(k in spec_mount_lower for k in ["in-drawer", "in drawer", "inside drawer", "drawer mount", "drawer insert"]) or \
+       any(k in combined for k in ["in-drawer", "in drawer", "inside drawer", "drawer organizer", "drawer divider", "drawer insert", "expandable drawer"]):
+        return "In-Drawer", True, "IN-DRAWER FIT • ZERO DRILL"
+
+    # 3. Tension / Adhesive (Renter safe wall/corner options)
+    has_tension_adhesive = (
+        any(k in spec_mount_lower for k in ["adhesive", "self-adhesive", "tension", "suction"]) or
+        any(k in combined for k in [
+            "adhesive", "self-adhesive", "sticky strips", "command strip", "tension mount",
+            "tension rod", "suction cup", "no drill adhesive", "drill-free adhesive", "damage-free hanging"
+        ])
+    )
+
+    # 4. Screw / Wall-Mount
+    has_screw_drill = any(k in combined for k in [
+        "screw", "screws", "drilling required", "requires drilling", "drill holes",
+        "wall anchors", "expansion screws", "stud mount", "wall studs", "studs",
+        "drywall anchors", "hardware included (screws", "mount with screws",
+    ])
+    spec_has_wall_mount = any(k in spec_mount_lower for k in ["wall mount", "wall-mount", "screw mount", "ceiling mount"])
+
+    # Explicit screws/drilling or Wall Mount without adhesive override
+    if (spec_has_wall_mount and not has_tension_adhesive) or (has_screw_drill and not has_tension_adhesive and "no drill" not in combined and "no-drill" not in combined):
+        return "Screw / Wall-Mount", False, "HEAVY-DUTY STUD MOUNT • ZERO SAG"
+
+    if has_tension_adhesive:
+        return "Tension/Adhesive", True, "100% RENTER FRIENDLY • NO DRILL"
+
+    # 5. Countertop / Freestanding (Default for standing, tabletop, under sink, cart)
+    return "Countertop / Freestanding", True, "100% RENTER FRIENDLY • NO DRILL"
+
+
 def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict]:
-    """Attempt direct stealth scrape using curl_cffi with Chrome 124 TLS impersonation."""
-    url = f"https://www.{domain}/dp/{asin}"
+    """Attempt direct stealth scrape using curl_cffi with Chrome 124 TLS impersonation.
+
+    Reroutes to mobile endpoint https://www.amazon.com/gp/aw/d/{asin} for bot bypass.
+    """
+    url = f"https://www.{domain}/gp/aw/d/{asin}"
     headers = {
         "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
         "accept-language": "en-US,en;q=0.9",
@@ -230,6 +341,10 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
         "sec-fetch-site": "none",
         "sec-fetch-user": "?1",
         "upgrade-insecure-requests": "1",
+        "user-agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
     }
 
     try:
@@ -238,7 +353,12 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
             return None
 
         soup = BeautifulSoup(r.text, "html.parser")
-        title_el = soup.select_one("#productTitle")
+        title_el = (
+            soup.select_one("#productTitle") or
+            soup.select_one("#title") or
+            soup.select_one(".product-title-word-break") or
+            soup.select_one("h1")
+        )
         if not title_el:
             return None
 
@@ -246,27 +366,81 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
 
         # Brand
         brand = None
-        brand_el = soup.select_one("#bylineInfo")
+        brand_el = soup.select_one("#bylineInfo") or soup.select_one(".po-brand .po-break-word")
         if brand_el:
             brand = brand_el.get_text(strip=True).replace("Brand: ", "").replace("Visit the ", "").replace(" Store", "")
 
         # Price
         price = "$29.99"
         orig_price = None
-        price_el = soup.select_one(".a-price .a-offscreen") or soup.select_one("#corePriceDisplay_desktop_feature_div .a-price-whole")
+        price_el = (
+            soup.select_one("#apex-pricetopay-accessibility-label") or
+            soup.select_one(".a-price .a-offscreen") or
+            soup.select_one("#corePriceDisplay_desktop_feature_div .a-price-whole") or
+            soup.select_one("#corePrice_desktop .a-offscreen") or
+            soup.select_one(".priceToPay .a-offscreen")
+        )
         if price_el:
-            price = price_el.get_text(strip=True)
-            if not price.startswith("$") and not price.startswith("₹") and not price.startswith("£"):
-                price = f"${price}"
+            raw_p = price_el.get_text(strip=True)
+            price = format_usd_price(raw_p)
 
-        list_price_el = soup.select_one(".basisPrice .a-offscreen") or soup.select_one("span.a-text-price .a-offscreen")
+        list_price_el = (
+            soup.select_one(".basisPrice .a-offscreen") or
+            soup.select_one("span.a-text-price .a-offscreen") or
+            soup.select_one("#corePriceDisplay_desktop_feature_div .a-text-price .a-offscreen")
+        )
         if list_price_el:
-            orig_price = list_price_el.get_text(strip=True)
+            orig_price = format_usd_price(list_price_el.get_text(strip=True))
+
+        discount_percent = calculate_discount_percent(price, orig_price)
+
+        # Real-time conversion signals: digital coupon, monthly sales proof, deal badges
+        coupon_text = None
+        coupon_el = soup.select_one("span.couponBadge, label[for*='coupon'], .couponBadge, span[id*='coupon']")
+        if coupon_el:
+            coupon_text = coupon_el.get_text(strip=True)
+
+        bought_past_month = None
+        bought_el = soup.select_one("#social-proofing-faceout-title-tk_bought, .social-proofing-faceout-title-tk_bought")
+        if bought_el:
+            bought_past_month = bought_el.get_text(strip=True)
+
+        deal_badge = None
+        deal_el = soup.select_one("span.dealBadge, .dealBadge, #dealBadgeSupportingText, .badge-deal")
+        if deal_el:
+            deal_badge = deal_el.get_text(strip=True)
+
+        # Technical specs / product overview table (#productOverview_feature_div tr / .po-row)
+        specs_dict: Dict[str, str] = {}
+        for row in soup.select("#productOverview_feature_div tr, #productDetails_techSpec_section_1 tr"):
+            tds = row.select("td, th")
+            if len(tds) >= 2:
+                k = tds[0].get_text(strip=True)
+                v = tds[1].get_text(strip=True)
+                if k and v:
+                    specs_dict[k] = v
+
+        for row in soup.select("#productOverview_feature_div .po-row"):
+            k_el = row.select_one(".po-col-left, .po-expander-label")
+            v_el = row.select_one(".po-col-right, .po-break-word")
+            if k_el and v_el:
+                k = k_el.get_text(strip=True)
+                v = v_el.get_text(strip=True)
+                if k and v:
+                    specs_dict[k] = v
+
+        for li in soup.select("#detailBullets_feature_div li"):
+            spans = li.select("span.a-list-item > span")
+            if len(spans) >= 2:
+                k = spans[0].get_text(strip=True).rstrip(":\u200e ")
+                v = spans[1].get_text(strip=True)
+                if k and v:
+                    specs_dict[k] = v
 
         # Images
         image_url = ""
         add_images = []
-        img_el = soup.select_one("#landingImage") or soup.select_one("#imgBlkFront")
+        img_el = soup.select_one("#landingImage") or soup.select_one("#imgBlkFront") or soup.select_one("#main-image")
         if img_el:
             dyn_data = img_el.get("data-a-dynamic-image")
             if dyn_data:
@@ -275,12 +449,12 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
                     # Pick the image with the largest resolution
                     sorted_imgs = sorted(dyn_dict.items(), key=lambda x: x[1][0] * x[1][1], reverse=True)
                     if sorted_imgs:
-                        image_url = sorted_imgs[0][0]
-                        add_images = [img[0] for img in sorted_imgs[1:5]]
+                        image_url = resolve_master_image_url(sorted_imgs[0][0])
+                        add_images = [resolve_master_image_url(img[0]) for img in sorted_imgs[1:5]]
                 except Exception:
                     pass
             if not image_url:
-                image_url = img_el.get("src", "")
+                image_url = resolve_master_image_url(img_el.get("src", ""))
 
         # Rating & reviews
         rating = 4.7
@@ -291,7 +465,7 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
                 rating = float(match.group(1))
 
         review_count = "1,000+ reviews"
-        rev_el = soup.select_one("#acrCustomerReviewText")
+        rev_el = soup.select_one("#acrCustomerReviewText") or soup.select_one('[data-hook="total-review-count"]')
         if rev_el:
             review_count = rev_el.get_text(strip=True)
 
@@ -302,11 +476,7 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
             if r_txt:
                 review_snippets.append(r_txt[:150])
 
-        # Technical specs / dimensions text
-        specs_text = ""
-        specs_el = soup.select_one("#productDetails_techSpec_section_1") or soup.select_one("#detailBullets_feature_div")
-        if specs_el:
-            specs_text = specs_el.get_text(separator=" ", strip=True)
+        specs_text = " ".join(f"{k}: {v}" for k, v in specs_dict.items())
 
         # Features
         features = []
@@ -315,11 +485,17 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
             if text and not text.startswith("Make sure this fits"):
                 features.append(text)
 
+        mounting_type, is_renter_safe, mount_badge = classify_mounting_and_safety(
+            specs=specs_dict,
+            bullets=features,
+        )
+
         friction_highlights, friction_badge = mine_friction_highlights(
             title=title,
             bullets=features,
             raw_text=specs_text,
             reviews=review_snippets,
+            specs=specs_dict,
         )
 
         return {
@@ -327,11 +503,18 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
             "brand": brand,
             "price": price,
             "original_price": orig_price,
+            "discount_percent": discount_percent,
             "rating": rating,
             "review_count": review_count,
             "image_url": image_url,
             "additional_images": add_images,
             "features": features[:4],
+            "specs": specs_dict,
+            "mounting_type": mounting_type,
+            "is_renter_safe": is_renter_safe,
+            "deal_badge": deal_badge,
+            "coupon_text": coupon_text,
+            "bought_past_month": bought_past_month,
             "friction_highlights": friction_highlights,
             "friction_badge": friction_badge,
         }
@@ -345,11 +528,12 @@ def mine_friction_highlights(
     bullets: Optional[List[str]] = None,
     raw_text: str = "",
     reviews: Optional[List[str]] = None,
+    specs: Optional[Dict[str, str]] = None,
 ) -> Tuple[List[str], str]:
     """Extract Amazon review/bullet highlights addressing common buyer frictions.
 
     Extracts:
-    1. Renter friendliness / Damage-free / No drill
+    1. Renter friendliness / Damage-free / No drill OR Heavy-duty stud mount
     2. Tool-free assembly / Instant pop-up setup
     3. Exact dimensions / Narrow space footprint
     4. Weight load / Heavy-duty capacity
@@ -361,13 +545,21 @@ def mine_friction_highlights(
     r_list = reviews or []
     full_text = " ".join([title] + b_list + r_list + [raw_text]).lower()
 
+    # Deterministic mounting & safety classification
+    mounting_type, is_renter_safe, mount_badge = classify_mounting_and_safety(
+        specs=specs or raw_text,
+        bullets=b_list,
+    )
+
     # 1. Renter Friendliness / Wall Protection
-    if any(k in full_text for k in ["no drill", "no-drill", "drill-free", "without drilling"]):
-        renter_highlight = "100% RENTER FRIENDLY • NO DRILL"
+    if not is_renter_safe:
+        renter_highlight = "HEAVY-DUTY STUD MOUNT • ZERO SAG"
+    elif mounting_type == "Over-the-Door":
+        renter_highlight = "OVER-THE-DOOR • ZERO WALL HOLES"
+    elif mounting_type == "In-Drawer":
+        renter_highlight = "IN-DRAWER FIT • ZERO DRILL"
     elif any(k in full_text for k in ["damage free", "damage-free", "removable adhesive", "wall-safe"]):
         renter_highlight = "RENTER FRIENDLY • DAMAGE-FREE"
-    elif any(k in full_text for k in ["over the door", "over-the-door", "door hanging"]):
-        renter_highlight = "OVER-THE-DOOR • ZERO WALL HOLES"
     elif any(k in full_text for k in ["tension", "suction"]):
         renter_highlight = "DAMAGE-FREE TENSION MOUNT"
     else:
@@ -415,7 +607,9 @@ def mine_friction_highlights(
     highlights = [renter_highlight, setup_highlight, dim_highlight, wt_highlight]
 
     # Primary prominent badge selection based on primary product intent
-    if gap_match or (any(k in full_text for k in ["gap", "narrow space", "slim cart", "narrow gap", "tight space"]) and dim_match):
+    if not is_renter_safe:
+        badge = "HEAVY-DUTY STUD MOUNT • ZERO SAG"
+    elif gap_match or (any(k in full_text for k in ["gap", "narrow space", "slim cart", "narrow gap", "tight space"]) and dim_match):
         badge = dim_highlight
     elif any(k in full_text for k in ["foldable", "collapsible", "folds flat", "tool-free", "tool free", "pop up", "pop-up", "pre-assembled", "preassembled"]):
         badge = setup_highlight
@@ -473,13 +667,9 @@ def fetch_product(
     affiliate_url = build_affiliate_url(asin, affiliate_tag)
     tag = affiliate_tag or DEFAULT_AFFILIATE_TAG
 
-    # Helper to upgrade thumbnail URLs to full 1500px resolution
+    # Helper to upgrade thumbnail URLs to master CDN uncompressed resolution
     def _to_high_res(img_url: Optional[str]) -> str:
-        if not img_url:
-            return ""
-        if "._AC_" in img_url:
-            return re.sub(r"\._AC_[A-Za-z0-9_,]+_\.", "._AC_SL1500_.", img_url)
-        return img_url
+        return resolve_master_image_url(img_url)
 
     clean_known_image = _to_high_res(known_image_url)
 
@@ -488,25 +678,34 @@ def fetch_product(
         cat_data = VERIFIED_CATALOG[asin]
         clean_title = clean_amazon_title(cat_data["title"])
         slug = f"{slugify(clean_title)}-{asin.lower()}"
+        m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=cat_data.get("features", []))
         f_highlights, f_badge = mine_friction_highlights(
             title=cat_data["title"],
             bullets=cat_data.get("features", []),
         )
+        cat_price = format_usd_price(cat_data.get("price", "$29.99"))
+        cat_orig = cat_data.get("original_price")
+        cat_discount = cat_data.get("discount_percent") or calculate_discount_percent(cat_price, cat_orig)
         return ProductData(
             asin=asin,
             title=clean_title,
             brand=cat_data.get("brand"),
             category=cat_data.get("category", "Trending Finds"),
-            price=cat_data.get("price", "$29.99"),
-            original_price=cat_data.get("original_price"),
-            discount_percent=cat_data.get("discount_percent"),
+            price=cat_price,
+            original_price=cat_orig,
+            discount_percent=cat_discount,
             rating=cat_data.get("rating", 4.7),
             review_count=cat_data.get("review_count", "1,500+ ratings"),
             image_url=_to_high_res(cat_data["image_url"]),
-            additional_images=cat_data.get("additional_images", []),
+            additional_images=[_to_high_res(img) for img in cat_data.get("additional_images", [])],
             features=cat_data.get("features", []),
             friction_highlights=f_highlights,
             friction_badge=f_badge,
+            mounting_type=m_type,
+            is_renter_safe=r_safe,
+            deal_badge=None,
+            coupon_text=None,
+            bought_past_month=None,
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="verified_catalog",
@@ -518,21 +717,29 @@ def fetch_product(
         clean_title = clean_amazon_title(scraped["title"])
         slug = f"{slugify(clean_title)}-{asin.lower()}"
         resolved_img = _to_high_res(scraped["image_url"]) or clean_known_image
+        price_str = format_usd_price(scraped.get("price") or known_price)
+        orig_price_str = scraped.get("original_price")
+        discount_pct = scraped.get("discount_percent") or calculate_discount_percent(price_str, orig_price_str)
         return ProductData(
             asin=asin,
             title=clean_title,
             brand=scraped.get("brand"),
             category="Amazon Bestsellers",
-            price=format_usd_price(scraped.get("price") or known_price),
-            original_price=scraped.get("original_price"),
-            discount_percent=None,
+            price=price_str,
+            original_price=orig_price_str,
+            discount_percent=discount_pct,
             rating=scraped.get("rating", 4.7),
             review_count=scraped.get("review_count", "1,200+ ratings"),
             image_url=resolved_img,
-            additional_images=scraped.get("additional_images", []),
+            additional_images=[_to_high_res(img) for img in scraped.get("additional_images", [])],
             features=scraped.get("features", []),
             friction_highlights=scraped.get("friction_highlights", []),
             friction_badge=scraped.get("friction_badge"),
+            mounting_type=scraped.get("mounting_type"),
+            is_renter_safe=scraped.get("is_renter_safe", True),
+            deal_badge=scraped.get("deal_badge"),
+            coupon_text=scraped.get("coupon_text"),
+            bought_past_month=scraped.get("bought_past_month"),
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="stealth_scraper",
@@ -548,28 +755,36 @@ def fetch_product(
     if ddg_title:
         clean_title = clean_amazon_title(ddg_title)
         slug = f"{slugify(clean_title)}-{asin.lower()}"
-        fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_SX900_.jpg"
+        fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01.jpg"
         ddg_features = [
             "Top-rated Amazon customer favorite with verified reviews",
             "High quality build and materials engineered for everyday reliability",
             "Eligible for fast Prime delivery and hassle-free 30-day returns",
         ]
+        m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=ddg_features)
         f_highlights, f_badge = mine_friction_highlights(title=clean_title, bullets=ddg_features)
+        price_str = format_usd_price(known_price or "$39.99")
+        orig_price_str = "$49.99"
         return ProductData(
             asin=asin,
             title=clean_title,
             brand="Amazon Choice",
             category="Smart Home & Tech",
-            price=format_usd_price(known_price or "$39.99"),
-            original_price="$49.99",
-            discount_percent=20,
+            price=price_str,
+            original_price=orig_price_str,
+            discount_percent=calculate_discount_percent(price_str, orig_price_str) or 20,
             rating=4.7,
             review_count="2,400+ ratings",
-            image_url=fallback_image,
+            image_url=_to_high_res(fallback_image),
             additional_images=[],
             features=ddg_features,
             friction_highlights=f_highlights,
             friction_badge=f_badge,
+            mounting_type=m_type,
+            is_renter_safe=r_safe,
+            deal_badge=None,
+            coupon_text=None,
+            bought_past_month=None,
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="ddg_search_fallback",
@@ -577,30 +792,38 @@ def fetch_product(
 
     # Tier 4: Fallback for any standard ASIN with verified image
     fallback_title = known_title or f"Curated Amazon Selection ({asin})"
-    fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_SX900_.jpg"
+    fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01.jpg"
     slug = f"amazon-find-{asin.lower()}"
     cdn_features = [
         "High-demand viral product trending across social channels",
         "Rated 4+ stars with thousands of positive customer reviews",
         "Prime 2-day shipping and standard Amazon return protection",
     ]
+    m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=cdn_features)
     f_highlights, f_badge = mine_friction_highlights(title=fallback_title, bullets=cdn_features)
+    price_str = format_usd_price(known_price or "$29.99")
+    orig_price_str = "$39.99"
 
     return ProductData(
         asin=asin,
         title=clean_amazon_title(fallback_title),
         brand="Amazon Find",
         category="Trending Finds",
-        price=format_usd_price(known_price or "$29.99"),
-        original_price="$39.99",
-        discount_percent=25,
+        price=price_str,
+        original_price=orig_price_str,
+        discount_percent=calculate_discount_percent(price_str, orig_price_str) or 25,
         rating=4.8,
         review_count="1,500+ ratings",
-        image_url=fallback_image,
+        image_url=_to_high_res(fallback_image),
         additional_images=[],
         features=cdn_features,
         friction_highlights=f_highlights,
         friction_badge=f_badge,
+        mounting_type=m_type,
+        is_renter_safe=r_safe,
+        deal_badge=None,
+        coupon_text=None,
+        bought_past_month=None,
         affiliate_url=affiliate_url,
         bridge_slug=slug,
         raw_source="cdn_fallback",

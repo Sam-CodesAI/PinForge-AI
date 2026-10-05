@@ -640,10 +640,9 @@ def generate_visual_with_waterfall(
         style=style,
     )
 
-    import os
-    effective_ideogram_key = (IDEOGRAM_API_KEY or os.getenv("IDEOGRAM_API_KEY") or "").strip()
-    effective_fal_key = (FAL_KEY or os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "").strip()
-    effective_pollinations_key = (POLLINATIONS_API_KEY or os.getenv("POLLINATIONS_API_KEY") or "").strip()
+    effective_ideogram_key = (IDEOGRAM_API_KEY if IDEOGRAM_API_KEY is not None else (os.getenv("IDEOGRAM_API_KEY") or "")).strip()
+    effective_fal_key = (FAL_KEY if FAL_KEY is not None else (os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "")).strip()
+    effective_pollinations_key = (POLLINATIONS_API_KEY if POLLINATIONS_API_KEY is not None else (os.getenv("POLLINATIONS_API_KEY") or "")).strip()
 
     # ----------------------------------------------------
     # TIER 1: IDEOGRAM 2.0 / 3.0 API

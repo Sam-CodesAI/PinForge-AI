@@ -56,7 +56,10 @@ def get_font(path: Path, size: int) -> ImageFont.FreeTypeFont:
 
 
 def download_image(url: str) -> Optional[Image.Image]:
-    """Download image from HTTP URL with timeout, size validation, and convert to RGBA."""
+    """Download image from HTTP URL with timeout, size validation, and convert to RGBA.
+
+    Rejects images under 1000 bytes or of type image/gif (such as 43-byte transparent tracking pixels).
+    """
     if not url:
         return None
     try:
@@ -69,13 +72,32 @@ def download_image(url: str) -> Optional[Image.Image]:
         }
         with httpx.Client(timeout=12.0, follow_redirects=True, headers=headers) as client:
             resp = client.get(url)
-            if resp.status_code == 200 and len(resp.content) > 100:
-                img = Image.open(io.BytesIO(resp.content)).convert("RGBA")
-                # Reject 1x1 tracking GIFs or micro-images
-                if img.width < 80 or img.height < 80:
-                    logger.warning(f"Downloaded image is too small ({img.size}), rejecting.")
-                    return None
-                return img
+            if resp.status_code != 200:
+                logger.warning(f"Image download failed HTTP {resp.status_code} for {url}")
+                return None
+
+            content_len = len(resp.content)
+            # Reject images under 1000 bytes (e.g. 43-byte transparent tracking 1x1 GIFs)
+            if content_len < 1000:
+                logger.warning(f"Downloaded image is too small ({content_len} bytes < 1000 bytes), rejecting tracking pixel / stub.")
+                return None
+
+            content_type = resp.headers.get("content-type", "").lower()
+            if "image/gif" in content_type:
+                logger.warning(f"Rejecting GIF image from {url} (content-type: {content_type})")
+                return None
+
+            raw_img = Image.open(io.BytesIO(resp.content))
+            if raw_img.format == "GIF":
+                logger.warning(f"Rejecting GIF format image from {url}")
+                return None
+
+            img = raw_img.convert("RGBA")
+            # Reject micro-images
+            if img.width < 80 or img.height < 80:
+                logger.warning(f"Downloaded image is too small ({img.size}), rejecting.")
+                return None
+            return img
     except Exception as err:
         logger.warning(f"Failed to download image from {url}: {err}")
     return None

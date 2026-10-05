@@ -38,7 +38,122 @@ DEFAULT_SEARCH_QUERIES = [
     "vacuum storage bags space saver",
 ]
 
+BLACKLISTED_ASINS = {"B087F5K713"}
+
 SEEN_PRODUCTS_FILE = DATA_DIR / "seen_products.json"
+
+VERIFIED_SMART_SPACES_POOL: List[Dict[str, Any]] = [
+    {
+        "asin": "B093GKKQ65",
+        "title": "Under Sink Organizer and Storage, 2-Tier Multi-Purpose Sliding Drawer Rack",
+        "price": 23.99,
+        "rating": 4.6,
+        "review_count": 5800,
+        "image_url": "https://m.media-amazon.com/images/I/71Y8+gS7JTL.jpg",
+        "product_url": "https://www.amazon.com/dp/B093GKKQ65",
+        "query_source": "curated_fallback",
+        "viral_score": 93.5,
+    },
+    {
+        "asin": "B08332N66L",
+        "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
+        "price": 39.99,
+        "rating": 4.8,
+        "review_count": 4200,
+        "image_url": "https://m.media-amazon.com/images/I/81xU21vGZSL.jpg",
+        "product_url": "https://www.amazon.com/dp/B08332N66L",
+        "query_source": "curated_fallback",
+        "viral_score": 94.2,
+    },
+    {
+        "asin": "B0915B37G6",
+        "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+        "price": 11.99,
+        "rating": 4.7,
+        "review_count": 32000,
+        "image_url": "https://m.media-amazon.com/images/I/81QW2q2B2UL.jpg",
+        "product_url": "https://www.amazon.com/dp/B0915B37G6",
+        "query_source": "curated_fallback",
+        "viral_score": 96.0,
+    },
+    {
+        "asin": "B08GLQ4M19",
+        "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+        "price": 17.99,
+        "rating": 4.7,
+        "review_count": 8900,
+        "image_url": "https://m.media-amazon.com/images/I/71P4q+4oWNL.jpg",
+        "product_url": "https://www.amazon.com/dp/B08GLQ4M19",
+        "query_source": "curated_fallback",
+        "viral_score": 91.8,
+    },
+    {
+        "asin": "B07T7N28LN",
+        "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+        "price": 19.99,
+        "rating": 4.6,
+        "review_count": 6700,
+        "image_url": "https://m.media-amazon.com/images/I/71wM6pE+MvL.jpg",
+        "product_url": "https://www.amazon.com/dp/B07T7N28LN",
+        "query_source": "curated_fallback",
+        "viral_score": 90.4,
+    },
+    {
+        "asin": "B07D38J38F",
+        "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+        "price": 27.99,
+        "rating": 4.7,
+        "review_count": 14500,
+        "image_url": "https://m.media-amazon.com/images/I/81z6Vq4U-hL.jpg",
+        "product_url": "https://www.amazon.com/dp/B07D38J38F",
+        "query_source": "curated_fallback",
+        "viral_score": 95.1,
+    },
+    {
+        "asin": "B08N5NV448",
+        "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+        "price": 24.99,
+        "rating": 4.5,
+        "review_count": 28000,
+        "image_url": "https://m.media-amazon.com/images/I/71yL2yPzZ8L.jpg",
+        "product_url": "https://www.amazon.com/dp/B08N5NV448",
+        "query_source": "curated_fallback",
+        "viral_score": 92.5,
+    },
+    {
+        "asin": "B08151T931",
+        "title": "VASAGLE Slim Rolling Storage Cart 4-Tier Slide Out Storage Cart with Wheels",
+        "price": 34.99,
+        "rating": 4.6,
+        "review_count": 9100,
+        "image_url": "https://m.media-amazon.com/images/I/71s8L5pCsmL.jpg",
+        "product_url": "https://www.amazon.com/dp/B08151T931",
+        "query_source": "curated_fallback",
+        "viral_score": 93.0,
+    },
+    {
+        "asin": "B0964GLS2J",
+        "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+        "price": 21.99,
+        "rating": 4.7,
+        "review_count": 11200,
+        "image_url": "https://m.media-amazon.com/images/I/71Nn7wG1bGL.jpg",
+        "product_url": "https://www.amazon.com/dp/B0964GLS2J",
+        "query_source": "curated_fallback",
+        "viral_score": 94.8,
+    },
+    {
+        "asin": "B01MR1Y5K8",
+        "title": "Simple Trending 2-Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
+        "price": 22.99,
+        "rating": 4.6,
+        "review_count": 16400,
+        "image_url": "https://m.media-amazon.com/images/I/71s8N2eGq+L.jpg",
+        "product_url": "https://www.amazon.com/dp/B01MR1Y5K8",
+        "query_source": "curated_fallback",
+        "viral_score": 93.7,
+    },
+]
 
 
 class AITrendHunter:
@@ -59,13 +174,14 @@ class AITrendHunter:
 
     def _load_seen_asins(self) -> set:
         """Loads previously published ASINs to prevent duplicates."""
+        seen = set(BLACKLISTED_ASINS)
         if SEEN_PRODUCTS_FILE.exists():
             try:
                 data = json.loads(SEEN_PRODUCTS_FILE.read_text())
-                return set(data.get("published_asins", []))
+                seen.update(data.get("published_asins", []))
             except Exception:
-                return set()
-        return set()
+                pass
+        return seen
 
     def mark_asin_seen(self, asin: str, title: str = "", pin_id: str = ""):
         """Records an ASIN as seen/published."""
@@ -99,7 +215,7 @@ class AITrendHunter:
 
             for item in soup.find_all("div", {"data-component-type": "s-search-result"}):
                 asin = item.get("data-asin", "").strip()
-                if not asin or asin in self.seen_asins:
+                if not asin or asin in self.seen_asins or asin in BLACKLISTED_ASINS:
                     continue
 
                 title_el = item.find("h2")
@@ -207,19 +323,19 @@ class AITrendHunter:
                     break
 
         if not all_candidates:
-            # Fallback curated high-performing Smart Spaces product
-            logger.info("No candidates returned from live search, using curated high-yield fallbacks.")
-            return {
-                "asin": "B087F5K713",
-                "title": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand",
-                "price": 28.99,
-                "rating": 4.7,
-                "review_count": 3420,
-                "image_url": "https://m.media-amazon.com/images/I/71+8M4pS+SL._AC_SL1500_.jpg",
-                "product_url": "https://www.amazon.com/dp/B087F5K713",
-                "query_source": "curated_fallback",
-                "viral_score": 92.4,
-            }
+            # Fallback curated high-performing Smart Spaces product pool filtered strictly against seen_asins
+            logger.info("No candidates returned from live search, picking from rotating curated Smart Spaces pool.")
+            unseen_pool = [
+                p for p in VERIFIED_SMART_SPACES_POOL
+                if p["asin"] not in self.seen_asins and p["asin"] not in BLACKLISTED_ASINS
+            ]
+            if not unseen_pool:
+                # If all pool items have been seen, rotate through non-blacklisted pool items
+                unseen_pool = [p for p in VERIFIED_SMART_SPACES_POOL if p["asin"] not in BLACKLISTED_ASINS]
+
+            winner = random.choice(unseen_pool)
+            logger.info(f"🏆 Curated Smart Spaces Winner: {winner['title'][:50]} (ASIN: {winner['asin']}, Score: {winner['viral_score']})")
+            return winner
 
         all_candidates.sort(key=lambda x: x["viral_score"], reverse=True)
         winner = all_candidates[0]

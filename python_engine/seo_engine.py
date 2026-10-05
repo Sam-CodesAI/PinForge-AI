@@ -239,7 +239,7 @@ Return ONLY valid JSON matching this schema:
   }}
 }}"""
 
-        models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
+        models = ["qwen/qwen3.8-27b", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.3-70b-versatile"]
 
         for model_name in models:
             try:
@@ -318,14 +318,14 @@ def generate_fallback_rules(req: CopyGenerationRequest) -> PinCopyResponse:
 
 
 def generate_pin_copy(req: CopyGenerationRequest) -> PinCopyResponse:
-    """Multi-tiered copy generation pipeline with guaranteed success."""
-    # 1. Google Gemini
-    res = generate_with_gemini(req)
+    """Multi-tiered copy generation pipeline with guaranteed success: Groq -> Gemini -> Fallback Rules."""
+    # 1. Groq (sub-second latency, high rate limit, prioritized)
+    res = generate_with_groq(req)
     if res:
         return res
 
-    # 2. Groq
-    res = generate_with_groq(req)
+    # 2. Google Gemini (fallback if Groq is unconfigured or rate limited)
+    res = generate_with_gemini(req)
     if res:
         return res
 
