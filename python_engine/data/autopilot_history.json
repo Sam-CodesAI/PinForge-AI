@@ -1078,5 +1078,71 @@
       "style": "luxury_editorial"
     },
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T03:01:50.063647+00:00",
+    "status": "success",
+    "execution_time_seconds": 25.85,
+    "product": {
+      "asin": "B0GTLW9VTC",
+      "title": "JSWHYBD Gold Shoe Rack Tower, Narrow Metal Organizer for Small Spaces",
+      "price": "$98.99",
+      "rating": 5.0,
+      "affiliate_url": "https://www.amazon.com/dp/B0GTLW9VTC?tag=smartspace07-21",
+      "bridge_slug": "jswhybd-gold-shoe-rack-tower-narrow-metal-organizer-for-small-spaces-b0gtlw9vtc"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#2B2520",
+      "accent_hex": "#D4A359",
+      "badge_text": "Small Space Essential",
+      "visual_hook": "Transform Your Tiny Entryway Corner",
+      "secondary_hook": "Vertical Tiered Storage Holds 14+ Pairs",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Gold narrow vertical shoe rack tower organizer placed in a compact modern apartment entryway."
+    },
+    "seo_copy": {
+      "title": "Aesthetic Gold Shoe Rack for Small Entryways \u2728 Narrow Space Saver",
+      "description": "Transform your cramped entryway with this stunning gold narrow shoe rack tower. Designed for small spaces and apartments, its double-row vertical layout holds everything from sneakers to high boots while adding a touch of chic glam to your decor. Maximize your storage effortlessly today! #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#EntrywayOrganization",
+        "#GoldDecor",
+        "#AmazonFinds",
+        "#ShoeStorage",
+        "#ApartmentHacks",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3df9a892c4.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c036363e05.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_728981b5f9.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_996670a32c.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_f28eaa6b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_f28eaa6b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_f28eaa6b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_f28eaa6b.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_f28eaa6b.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
   }
 ]
