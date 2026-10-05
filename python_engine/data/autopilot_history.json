@@ -1834,5 +1834,123 @@
       "style": "anime"
     },
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T10:52:16.319258+00:00",
+    "status": "success",
+    "execution_time_seconds": 45.35,
+    "product": {
+      "asin": "B087F5K713",
+      "title": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand",
+      "price": "$28.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "bridge_slug": "aesthetic-minimalist-desk-organizer-space-saving-monitor-stand-b087f5k713"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#0B0F19",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Workspace Upgrade",
+      "visual_hook": "Clean Minimalist Desk Setup",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "description": "Transform your cluttered workspace into a clean, aesthetic oasis with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desktop surface while keeping essentials neat. Small space challenge: Could you fit all your daily tech into this sleek setup? \ud83d\udcbb Drop your rating 1-10 below! \ud83d\udc47 Tap to shop Prime shipping! #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#OrganizationHacks",
+        "#AmazonFinds",
+        "#DeskSetup",
+        "#MinimalistHome",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_06e3ae6f79.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1443cb9ced.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_fcd6b9cca3.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_2237ed730f.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb6427a591.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb6427a591.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_3a808c3c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_3a808c3c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_3a808c3c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_3a808c3c.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_3a808c3c.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933749",
+      "pin_metrics": null,
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "description": "Transform your cluttered workspace into a clean, aesthetic oasis with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desktop surface while keeping essentials neat. Small space challenge: Could you fit all your daily tech into this sleek setup? \ud83d\udcbb Drop your rating 1-10 below! \ud83d\udc47 Tap to shop Prime shipping! #AmazonAssociate",
+      "created_at": "2026-10-05T10:52:15",
+      "product_tags": [],
+      "creative_type": "REGULAR",
+      "is_standard": true,
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "is_product": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": null,
+      "parent_pin_id": null,
+      "id": "1132444268835851879",
+      "has_been_promoted": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
+          }
+        }
+      },
+      "board_section_id": null,
+      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find",
+      "is_removable": false,
+      "is_owner": true,
+      "pin_id": "1132444268835851879"
+    }
   }
 ]

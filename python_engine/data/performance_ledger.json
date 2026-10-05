@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-05T09:08:20.365132+00:00",
+  "last_updated": "2026-10-05T10:52:22.625300+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 9,
+  "total_pins_evaluated": 10,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835762602",
@@ -16,7 +16,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:16.790615+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.340481+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -31,7 +31,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:17.223675+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.694785+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -46,7 +46,22 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:17.648258+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.930270+00:00"
+    },
+    {
+      "pin_id": "1132444268835851879",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "evaluated_at": "2026-10-05T10:52:21.179544+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -61,7 +76,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:18.097180+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.416786+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -76,7 +91,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:18.621823+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.639856+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -91,7 +106,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.078621+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.958479+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -106,7 +121,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.516820+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.207339+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -121,7 +136,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.924424+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.418584+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -136,12 +151,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:20.365104+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.625271+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
-      "pin_count": 8,
+      "pin_count": 9,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -169,7 +184,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:16.790615+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.340481+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -184,7 +199,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:17.223675+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.694785+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -199,7 +214,22 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:17.648258+00:00"
+      "evaluated_at": "2026-10-05T10:52:20.930270+00:00"
+    },
+    {
+      "pin_id": "1132444268835851879",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "evaluated_at": "2026-10-05T10:52:21.179544+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -214,7 +244,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:18.097180+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.416786+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -229,7 +259,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:18.621823+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.639856+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -244,7 +274,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.078621+00:00"
+      "evaluated_at": "2026-10-05T10:52:21.958479+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -259,7 +289,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.516820+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.207339+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -274,7 +304,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:19.924424+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.418584+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -289,7 +319,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T09:08:20.365104+00:00"
+      "evaluated_at": "2026-10-05T10:52:22.625271+00:00"
     }
   ]
 }
