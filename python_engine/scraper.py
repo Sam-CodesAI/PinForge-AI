@@ -4,11 +4,13 @@ Extracts ASIN, follows shortlinks, bypasses TLS fingerprints with curl_cffi,
 and provides multi-tier fallbacks (DuckDuckGo + Gemini/Groq + Verified Catalog).
 """
 
+from __future__ import annotations
+
 import json
 import logging
 import re
 import urllib.parse
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import httpx
 from bs4 import BeautifulSoup
@@ -176,8 +178,12 @@ def clean_amazon_title(raw_title: str) -> str:
     # Split on commas, dashes, or pipes if title is excessively long (> 70 chars)
     if len(cleaned) > 70:
         parts = re.split(r"[,|\-–—]", cleaned)
-        if len(parts[0].strip()) >= 15:
+        if len(parts) > 1 and len(parts[0].strip()) >= 15:
             cleaned = (parts[0] + " " + parts[1]).strip()
+        elif parts and len(parts[0].strip()) >= 15:
+            cleaned = parts[0].strip()
+        else:
+            cleaned = cleaned[:70].rsplit(" ", 1)[0]
     return cleaned.strip()
 
 

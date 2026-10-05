@@ -11,6 +11,8 @@ and live Pinterest publishing for the Smart Spaces brand:
 7. Stores execution history in data/autopilot_history.json.
 """
 
+from __future__ import annotations
+
 import json
 import logging
 import time
@@ -134,8 +136,17 @@ class AutonomousAutopilot:
         )
         variants = generate_all_pin_variants(pin_req)
 
-        # 5b. Generate 4-Slide E-Commerce Shopping App Carousel Suite
-        carousel_style = "anime" if any(k in effective_board.lower() for k in ["apartment", "studio"]) else ("luxury_editorial" if "kitchen" in effective_board.lower() else "cyber_bento")
+        # 5b. Generate 4-Slide E-Commerce Shopping App Carousel Suite with Artistic Theme
+        b_low = effective_board.lower()
+        if "kitchen" in b_low:
+            carousel_style = "luxury_editorial"
+        elif "closet" in b_low or "wardrobe" in b_low:
+            carousel_style = "story"
+        elif "apartment" in b_low or "studio" in b_low:
+            carousel_style = "anime"
+        else:
+            carousel_style = "cyber_bento"
+
         carousel_suite = generate_carousel_pin_suite(
             title=vision_meta.get("visual_hook", copy_res.pin_title),
             price=product.price,

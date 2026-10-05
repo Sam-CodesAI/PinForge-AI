@@ -7,6 +7,8 @@ Chromium/headless browser bloat. Supports 3 modern high-CTR aesthetic templates:
 3. 'problem_solver' (High-Energy Viral Contrast Hook)
 """
 
+from __future__ import annotations
+
 import base64
 import io
 import logging
@@ -442,8 +444,8 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
     lifestyle_img = None
     try:
         from python_engine.pollinations_engine import build_lifestyle_prompt, generate_pollinations_image
-        p_prompt = build_lifestyle_prompt(req.title, req.category, req.badge_text)
-        lifestyle_img = generate_pollinations_image(p_prompt, timeout=12.0)
+        p_prompt = build_lifestyle_prompt(req.title, category=req.category, board_name=req.board_name)
+        lifestyle_img = generate_pollinations_image(p_prompt, timeout=15.0)
     except Exception as e:
         logger.warning(f"Pollinations lifestyle generation skipped: {e}")
 

@@ -13,6 +13,8 @@ Architected specifically for the @Smart_Spaces Pinterest account:
    - Strict 1-pin-per-board daily cadence (5 total pins/day), completely safe from Pinterest rate limits.
 """
 
+from __future__ import annotations
+
 import argparse
 import logging
 import random

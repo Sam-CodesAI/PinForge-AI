@@ -3,6 +3,8 @@
 Strict validation for products, graphic configs, and SEO requests.
 """
 
+from __future__ import annotations
+
 from typing import List, Optional, Literal
 from pydantic import BaseModel, Field
 
@@ -97,3 +99,26 @@ class CsvExportRequest(BaseModel):
     items: List[ScheduleItem]
     interval_hours: int = 4
     start_date: Optional[str] = None
+
+
+class PinterestPublishRequest(BaseModel):
+    board_name_or_id: str = Field(..., description="Target Pinterest Board Name or Board ID")
+    title: str = Field(..., description="Pin title")
+    description: str = Field(..., description="Pin description")
+    link: str = Field(..., description="Affiliate or bridge link")
+    image_url: str = Field(..., description="Direct image URL or public URL")
+
+
+class AutonomousCycleRequest(BaseModel):
+    url_or_asin: str = Field(..., description="Amazon product URL or ASIN")
+    template_style: Literal[
+        "bento_dark",
+        "warm_editorial",
+        "problem_solver",
+        "pollinations_lifestyle",
+        "anime",
+        "story",
+        "luxury_editorial",
+        "cyber_bento",
+    ] = Field(default="bento_dark", description="Visual graphic layout style")
+    publish_live: bool = Field(default=False, description="Whether to publish live to Pinterest immediately")

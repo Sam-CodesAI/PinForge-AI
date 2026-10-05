@@ -4,6 +4,8 @@ High-velocity REST API serving product scraping, Pillow 2:3 pin graphics,
 multi-model AI SEO copy generation, and Pinterest bulk export channels.
 """
 
+from __future__ import annotations
+
 import logging
 from typing import List
 
@@ -14,12 +16,14 @@ from fastapi.staticfiles import StaticFiles
 from python_engine.config import HOST, PORT, STATIC_DIR
 from python_engine.csv_exporter import generate_pinterest_bulk_csv
 from python_engine.models import (
+    AutonomousCycleRequest,
     CopyGenerationRequest,
     CsvExportRequest,
     ExtractRequest,
     PinCopyResponse,
     PinGenerateRequest,
     PinGenerateResponse,
+    PinterestPublishRequest,
     ProductData,
     ScheduleItem,
 )

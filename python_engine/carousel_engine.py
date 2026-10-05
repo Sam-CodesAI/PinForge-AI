@@ -14,12 +14,14 @@ Supports creative aesthetic styles:
 - 'cyber_bento': Modern 2026 dark bento grid with glowing accents
 """
 
+from __future__ import annotations
+
 import io
 import logging
 import math
 import uuid
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import httpx
 from PIL import Image, ImageDraw, ImageFilter, ImageFont

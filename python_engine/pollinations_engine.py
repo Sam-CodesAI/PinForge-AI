@@ -12,6 +12,8 @@ Generates photorealistic, high-CTR lifestyle hero imagery using Pollinations.ai 
 - Resilient fallback handling ensuring zero downtime.
 """
 
+from __future__ import annotations
+
 import io
 import logging
 import random
@@ -32,16 +34,34 @@ BOARD_AESTHETICS = {
     "room organization": "aesthetic organized home interior, modern minimal vanity and sleek floating shelves, clean decluttered space, soft warm lighting, high-end interior design",
 }
 
+STYLE_PROMPTS = {
+    "anime": "Studio Ghibli aesthetic, Makoto Shinkai artistic anime style, warm golden-hour lighting, painted watercolor background, cozy organized Japanese studio apartment, high-res anime key visual, clean lineart, vibrant anime interior design, trending on Pixiv",
+    "story": "Cinematic 35mm film photography, Kodak Portra 400 aesthetic, candid lifestyle story shot, warm cozy ambient room, soft depth of field, natural morning light, storytelling lifestyle scene, subtle film grain, Kinfolk magazine editorial",
+    "luxury_editorial": "Architectural Digest luxury editorial photography, minimalist Japandi luxury penthouse, travertine stone and bleached oak, pristine high-end home styling, soft diffused sunlight, elegant high-fashion home editorial, 8k",
+    "cyber_bento": "Modern 2026 tech aesthetic, dark moody cyberpunk minimalist interior, subtle cyan and amber neon ambient glow, matte black accents, sleek futuristic smart apartment interior, 8k octane render",
+}
+
 
 def build_lifestyle_prompt(
     product_title: str,
     category: Optional[str] = None,
     board_name: Optional[str] = None,
+    style: Optional[str] = None,
 ) -> str:
-    """Synthesizes a high-CTR visual prompt for Pollinations Flux engine."""
+    """Synthesizes a high-CTR visual prompt for Pollinations Flux engine matching desired style."""
     clean_title = re.sub(r"\[.*?\]|\(.*?\)", "", product_title).strip()
     words = clean_title.split()[:8]
     focal_subject = " ".join(words)
+
+    # Style modifier takes priority if specified
+    if style and style in STYLE_PROMPTS:
+        style_desc = STYLE_PROMPTS[style]
+        prompt = (
+            f"{style_desc}, featuring {focal_subject}, "
+            f"ultra-high resolution, beautifully composed, clean vertical 2:3 Pinterest composition, "
+            f"no text, no watermark"
+        )
+        return prompt
 
     # Match board theme
     b_key = (board_name or "").lower().strip()
