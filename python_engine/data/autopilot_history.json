@@ -699,5 +699,254 @@
       "creative_type": "REGULAR",
       "pin_id": "1132444268835821570"
     }
+  },
+  {
+    "timestamp": "2026-10-05T02:46:34.348723+00:00",
+    "status": "success",
+    "execution_time_seconds": 20.17,
+    "product": {
+      "asin": "B0CDQLLP8Z",
+      "title": "Collapsible Laundry Baskets",
+      "price": "$INR96062",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0CDQLLP8Z?tag=smartspace07-21",
+      "bridge_slug": "collapsible-laundry-baskets-b0cdqllp8z"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1E293B",
+      "accent_hex": "#38BDF8",
+      "badge_text": "Space Saving Essential",
+      "visual_hook": "Tame Your Laundry Chaos Instantly",
+      "secondary_hook": "Collapsible design stores away easily anywhere",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Person holding large collapsible grey mesh laundry basket displaying high capacity and foldable design."
+    },
+    "seo_copy": {
+      "title": "Tired of Clutter? The Viral Space-Saving Laundry Basket You Need!",
+      "description": "Transform your laundry routine with the BATTOO Collapsible Laundry Basket. Featuring a durable upgrade design, sturdy shoulder-length handles, and a space-saving foldable build, it's the ultimate organization hack for small apartments, dorms, and busy homes. Say goodbye to flimsy hampers and hello to effortless laundry days. Grab yours on Amazon today! #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#SmallSpaceLiving",
+        "#LaundryRoomGoals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_88ee44bc16.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_057913dcd7.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_9215456d15.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_e5f413ddbb.jpg"
+      }
+    ],
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T02:49:16.767036+00:00",
+    "status": "success",
+    "execution_time_seconds": 15.48,
+    "product": {
+      "asin": "B0C864LNLV",
+      "title": "Magnetic Spice Rack for Refrigerator Magnetic Paper Towel Holder for Fridge Magnetic Shelf Magnetic Shelves 2 Hooks Fridge Magnet Organizer Spice Rack Seasoning Organizer Kitchen Storage",
+      "price": "$INR1,92220",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0C864LNLV?tag=smartspace07-21",
+      "bridge_slug": "magnetic-spice-rack-for-refrigerator-magnetic-paper-towel-holder-for-fridge-b0c864lnlv"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1F2937",
+      "accent_hex": "#10B981",
+      "badge_text": "Instant Fridge Storage",
+      "visual_hook": "Clear Clutter In Seconds",
+      "secondary_hook": "Holds spices, paper towels, and tools effortlessly",
+      "target_audience": "Home Cooks",
+      "alt_text": "Black magnetic spice rack and paper towel holder attached to a refrigerator holding various condiment bottles."
+    },
+    "seo_copy": {
+      "title": "Declutter Your Kitchen Instantly: The Ultimate Magnetic Spice Rack! \ud83d\ude0d",
+      "description": "Transform your cluttered kitchen counters with the Dr.BeTree Magnetic Spice Rack and Paper Towel Holder. Featuring a heavy-duty magnetic hold that supports up to 8 lbs without drilling, this 2-in-1 space saver keeps your spices and essentials within arm's reach. Perfect for small apartments and modern kitchens looking for effortless organization! #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallKitchenIdeas",
+        "#AmazonFinds",
+        "#FridgeOrganization",
+        "#KitchenGadgets",
+        "#SpaceSavingHacks"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e32ca5d031.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5785da4ff2.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_27ec46ea19.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_752c8255da.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_1731f9ba.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_1731f9ba.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_1731f9ba.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_1731f9ba.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_1731f9ba.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T02:50:52.762797+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.16,
+    "product": {
+      "asin": "B09TK1MTCV",
+      "title": "Sandstone Resin Thinker Statue Style Abstract Sculpture  Sandstone",
+      "price": "$1143.60",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B09TK1MTCV?tag=smartspace07-21",
+      "bridge_slug": "sandstone-resin-thinker-statue-style-abstract-sculpture-sandstone-b09tk1mtcv"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#2C221E",
+      "accent_hex": "#D4A373",
+      "badge_text": "Mindful Home Decor",
+      "visual_hook": "Elevate Your Space With Modern Art",
+      "secondary_hook": "Handcrafted sandstone sculpture for serene living spaces",
+      "target_audience": "Minimalists",
+      "alt_text": "Abstract sandstone resin thinker statue sculpture on a white background for home decor"
+    },
+    "seo_copy": {
+      "title": "Elevate Your Home Decor With This Stunning Abstract Thinker Statue \u2728",
+      "description": "Transform your shelf or desk with the Ozzptuu Sandstone Thinker Statue. Crafted from natural sandstone and resin, this exquisite abstract sculpture adds instant modern luxury and sophistication to any room. It makes a thoughtful, elegant gift for art lovers and home decor enthusiasts alike. Discover why this statement piece is a must-have accent for your space today! #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#HomeDecor",
+        "#AestheticHome",
+        "#ShelfStyling",
+        "#AmazonFinds",
+        "#GiftIdeas",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_c7d37f5b22.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_493316f190.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_55985a7eb8.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_255727e3b7.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_7f33ec42.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_7f33ec42.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_7f33ec42.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_7f33ec42.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_7f33ec42.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T02:51:37.836625+00:00",
+    "status": "success",
+    "execution_time_seconds": 14.55,
+    "product": {
+      "asin": "B0CT7M946D",
+      "title": "Slim Rolling Storage Cart with Wheels  Metal 6 Tier Spice Rack Mobile Shelving Unit Organizer Kitchen Utility Cart for Office Bathroom Kitchen Laundry Room Narrow Places",
+      "price": "$81.75",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0CT7M946D?tag=smartspace07-21",
+      "bridge_slug": "slim-rolling-storage-cart-with-wheels-metal-6-tier-spice-rack-mobile-shelvi-b0ct7m946d"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1E293B",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Maximize Tiny Spaces",
+      "visual_hook": "The Ultimate Narrow Space Organizer",
+      "secondary_hook": "6 tiers of heavy-duty mobile storage",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Slim 6-tier rolling storage cart filled with kitchen pantry items and spices in a narrow kitchen space."
+    },
+    "seo_copy": {
+      "title": "Genius Small Space Hack: 6-Tier Slim Rolling Cart \ud83d\uded2",
+      "description": "Transform chaotic narrow gaps into ultimate storage! This heavy-duty metal 6-tier rolling cart fits seamlessly between your washer, fridge, or tight bathroom spaces. Sturdy, mobile, and holds heavy detergent or spices with zero wobble. Stop wasting awkward gaps in your home. #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceOrganization",
+        "#KitchenGadgets",
+        "#LaundryRoomGoals",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_35a15f98c3.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_eb98d005ca.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3874d97721.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_30308320fa.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_3f25f4d0.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_3f25f4d0.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_3f25f4d0.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_3f25f4d0.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_3f25f4d0.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
   }
 ]

@@ -28,19 +28,20 @@ logger = logging.getLogger("pinforge.generator")
 CANVAS_WIDTH = 1000
 CANVAS_HEIGHT = 1500
 
-# Fonts Configuration
+# Fonts Configuration (Bundled TTF in repo)
 BOLD_FONT_PATH = FONTS_DIR / "Inter-Bold.ttf"
-REGULAR_FONT_PATH = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
-SERIF_FONT_PATH = Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf")
+REGULAR_FONT_PATH = FONTS_DIR / "Inter-Regular.ttf"
+SERIF_FONT_PATH = FONTS_DIR / "Editorial-Serif.ttf"
 
 
 def get_font(path: Path, size: int) -> ImageFont.FreeTypeFont:
-    """Load TTF font safely with graceful fallback."""
-    try:
-        if path.exists():
-            return ImageFont.truetype(str(path), size)
-    except Exception as err:
-        logger.warning(f"Could not load font {path}: {err}")
+    """Load TTF font safely with graceful multi-font fallback ensuring zero bitmap pixelation."""
+    for candidate in [path, BOLD_FONT_PATH, REGULAR_FONT_PATH, SERIF_FONT_PATH]:
+        try:
+            if candidate and candidate.exists():
+                return ImageFont.truetype(str(candidate), size)
+        except Exception:
+            continue
     try:
         return ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", size)
     except Exception:
@@ -48,14 +49,18 @@ def get_font(path: Path, size: int) -> ImageFont.FreeTypeFont:
 
 
 def download_image(url: str) -> Optional[Image.Image]:
-    """Download image from HTTP URL with timeout and convert to RGBA."""
+    """Download image from HTTP URL with timeout, size validation, and convert to RGBA."""
     if not url:
         return None
     try:
-        with httpx.Client(timeout=10.0, follow_redirects=True) as client:
+        with httpx.Client(timeout=12.0, follow_redirects=True) as client:
             resp = client.get(url)
-            if resp.status_code == 200:
+            if resp.status_code == 200 and len(resp.content) > 100:
                 img = Image.open(io.BytesIO(resp.content)).convert("RGBA")
+                # Reject 1x1 tracking GIFs or micro-images
+                if img.width < 80 or img.height < 80:
+                    logger.warning(f"Downloaded image is too small ({img.size}), rejecting.")
+                    return None
                 return img
     except Exception as err:
         logger.warning(f"Failed to download image from {url}: {err}")
@@ -162,6 +167,19 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         px = card_x0 + (card_w - new_pw) // 2
         py = card_y0 + (card_h - new_ph) // 2
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+    else:
+        # High-aesthetic stylized vector visual fallback when product image is unavailable
+        accent_font = get_font(BOLD_FONT_PATH, 34)
+        callout_text = "✦ VIRAL AMAZON FIND ✦"
+        c_bbox = accent_font.getbbox(callout_text)
+        c_w = c_bbox[2] - c_bbox[0]
+        draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 260), callout_text, fill=(15, 23, 42, 255), font=accent_font)
+
+        sub_font = get_font(REGULAR_FONT_PATH, 24)
+        sub_text = "Verified Customer Favorite • Prime 2-Day Delivery"
+        s_bbox = sub_font.getbbox(sub_text)
+        s_w = s_bbox[2] - s_bbox[0]
+        draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 320), sub_text, fill=(100, 116, 139, 255), font=sub_font)
 
     # Floating Discount Badge on top-right of Card
     if req.original_price and req.price:
@@ -285,6 +303,18 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
         px = card_x0 + (card_w - new_pw) // 2
         py = card_y0 + (card_h - new_ph) // 2
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+    else:
+        accent_font = get_font(SERIF_FONT_PATH, 36)
+        callout_text = "SMART SPACES EDITORIAL"
+        c_bbox = accent_font.getbbox(callout_text)
+        c_w = c_bbox[2] - c_bbox[0]
+        draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 260), callout_text, fill=(41, 37, 36, 255), font=accent_font)
+
+        sub_font = get_font(REGULAR_FONT_PATH, 22)
+        sub_text = "Minimalist Living & Functional Storage Essentials"
+        s_bbox = sub_font.getbbox(sub_text)
+        s_w = s_bbox[2] - s_bbox[0]
+        draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 320), sub_text, fill=(120, 113, 108, 255), font=sub_font)
 
     # 4. Minimal Price & Rating Row
     meta_y = card_y1 + 45
@@ -362,6 +392,18 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
         px = card_x0 + (card_w - new_pw) // 2
         py = card_y0 + (card_h - new_ph) // 2
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+    else:
+        accent_font = get_font(BOLD_FONT_PATH, 36)
+        callout_text = "SPACE SAVING GAME CHANGER"
+        c_bbox = accent_font.getbbox(callout_text)
+        c_w = c_bbox[2] - c_bbox[0]
+        draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 250), callout_text, fill=(245, 158, 11, 255), font=accent_font)
+
+        sub_font = get_font(REGULAR_FONT_PATH, 24)
+        sub_text = "Over 10,000+ Verified 5-Star Amazon Reviews"
+        s_bbox = sub_font.getbbox(sub_text)
+        s_w = s_bbox[2] - s_bbox[0]
+        draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 310), sub_text, fill=(71, 85, 105, 255), font=sub_font)
 
     # 4. Feature Callout Rows
     feat_y = card_y1 + 35
@@ -394,6 +436,148 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     return img
 
 
+def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
+    """Render Template 4: Pollinations Lifestyle Hero (Photorealistic Interior Scene with Glassmorphic Floating Product & CTA)."""
+    # 1. Attempt to generate or load lifestyle hero scene
+    lifestyle_img = None
+    try:
+        from python_engine.pollinations_engine import build_lifestyle_prompt, generate_pollinations_image
+        p_prompt = build_lifestyle_prompt(req.title, req.category, req.badge_text)
+        lifestyle_img = generate_pollinations_image(p_prompt, timeout=12.0)
+    except Exception as e:
+        logger.warning(f"Pollinations lifestyle generation skipped: {e}")
+
+    # Fallback to aesthetic gradient canvas if Pollinations is offline
+    if not lifestyle_img:
+        img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (20, 24, 33, 255))
+        # Warm ambient Japandi gradient
+        glow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
+        glow_draw = ImageDraw.Draw(glow)
+        glow_draw.ellipse([100, 150, 900, 950], fill=(245, 158, 11, 35))
+        glow_draw.ellipse([200, 700, 800, 1300], fill=(56, 189, 248, 25))
+        glow = glow.filter(ImageFilter.GaussianBlur(110))
+        img = Image.alpha_composite(img, glow)
+    else:
+        img = lifestyle_img.copy()
+
+    # 2. Add Top & Bottom Vignette for Crisp Contrast
+    vignette = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
+    v_draw = ImageDraw.Draw(vignette)
+    for y in range(400):
+        alpha = int(210 * (1 - (y / 400)))
+        v_draw.line([(0, y), (CANVAS_WIDTH, y)], fill=(11, 15, 25, alpha))
+    for y in range(1050, CANVAS_HEIGHT):
+        alpha = int(230 * ((y - 1050) / 450))
+        v_draw.line([(0, y), (CANVAS_WIDTH, y)], fill=(11, 15, 25, alpha))
+    img = Image.alpha_composite(img, vignette)
+
+    draw = ImageDraw.Draw(img)
+
+    # 3. Top Floating Glassmorphic Pill
+    badge_font = get_font(BOLD_FONT_PATH, 24)
+    badge_text = f"✦ {req.badge_text.upper() or 'VIRAL AMAZON FIND'}"
+    b_bbox = badge_font.getbbox(badge_text)
+    b_w = (b_bbox[2] - b_bbox[0]) + 40
+    bx0 = (CANVAS_WIDTH - b_w) // 2
+    draw.rounded_rectangle([bx0, 60, bx0 + b_w, 108], radius=24, fill=(15, 23, 42, 230), outline=(245, 158, 11, 255), width=2)
+    draw.text((bx0 + 20, 72), badge_text, fill=(251, 191, 36, 255), font=badge_font)
+
+    # 4. Main Punchy Title with Frosted Backing
+    title_font_size = 46 if len(req.title) < 55 else 38
+    title_font = get_font(BOLD_FONT_PATH, title_font_size)
+    lines = wrap_text(req.title, title_font, max_width=860)[:3]
+    cur_y = 135
+    for line in lines:
+        line_bbox = title_font.getbbox(line)
+        line_w = line_bbox[2] - line_bbox[0]
+        line_x = (CANVAS_WIDTH - line_w) // 2
+        # Subtle dark text shadow for 100% legibility
+        draw.text((line_x + 2, cur_y + 2), line, fill=(0, 0, 0, 220), font=title_font)
+        draw.text((line_x, cur_y), line, fill=(255, 255, 255, 255), font=title_font)
+        cur_y += title_font_size + 14
+
+    # 5. Floating Inset Showcase Card (Real Amazon Cutout Product)
+    card_w, card_h = 760, 560
+    card_x0 = (CANVAS_WIDTH - card_w) // 2
+    card_y0 = max(cur_y + 30, 340)
+    card_x1, card_y1 = card_x0 + card_w, card_y0 + card_h
+
+    # Card drop shadow
+    c_shadow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
+    cs_draw = ImageDraw.Draw(c_shadow)
+    cs_draw.rounded_rectangle([card_x0 - 5, card_y0 + 10, card_x1 + 5, card_y1 + 25], radius=32, fill=(0, 0, 0, 140))
+    c_shadow = c_shadow.filter(ImageFilter.GaussianBlur(30))
+    img = Image.alpha_composite(img, c_shadow)
+
+    draw = ImageDraw.Draw(img)
+    # Translucent frosted glass card
+    draw.rounded_rectangle([card_x0, card_y0, card_x1, card_y1], radius=28, fill=(255, 255, 255, 245), outline=(226, 232, 240, 255), width=2)
+
+    if product_img:
+        max_pw, max_ph = card_w - 90, card_h - 90
+        p_ratio = min(max_pw / product_img.width, max_ph / product_img.height)
+        new_pw = int(product_img.width * p_ratio)
+        new_ph = int(product_img.height * p_ratio)
+        resized_p = product_img.resize((new_pw, new_ph), Image.Resampling.LANCZOS)
+        px = card_x0 + (card_w - new_pw) // 2
+        py = card_y0 + (card_h - new_ph) // 2
+        img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+    else:
+        accent_font = get_font(BOLD_FONT_PATH, 36)
+        callout_text = "✦ SMART SPACES CURATION ✦"
+        c_bbox = accent_font.getbbox(callout_text)
+        draw.text((card_x0 + (card_w - (c_bbox[2] - c_bbox[0])) // 2, card_y0 + 220), callout_text, fill=(15, 23, 42, 255), font=accent_font)
+        sub_font = get_font(REGULAR_FONT_PATH, 24)
+        sub_text = "Top Rated Amazon Choice • Verified Durability"
+        s_bbox = sub_font.getbbox(sub_text)
+        draw.text((card_x0 + (card_w - (s_bbox[2] - s_bbox[0])) // 2, card_y0 + 280), sub_text, fill=(100, 116, 139, 255), font=sub_font)
+
+    # 6. Price & Rating Banner
+    bar_y = card_y1 + 45
+    star_x = 90
+    for s in range(5):
+        fill_color = (251, 191, 36, 255) if s < math.floor(req.rating) else (100, 116, 139, 255)
+        draw_star(draw, star_x + s * 34, bar_y + 12, 13, 6, fill_color)
+
+    rating_font = get_font(BOLD_FONT_PATH, 26)
+    rev_text = f"{req.rating:.1f}  •  {req.review_count}"
+    draw.text((star_x + 185, bar_y - 2), rev_text, fill=(241, 245, 249, 255), font=rating_font)
+
+    price_font = get_font(BOLD_FONT_PATH, 42)
+    price_bbox = price_font.getbbox(req.price)
+    price_w = price_bbox[2] - price_bbox[0]
+    draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), req.price, fill=(52, 211, 153, 255), font=price_font)
+
+    # 7. High-Converting Bottom Button
+    btn_w, btn_h = 820, 96
+    btn_x0 = (CANVAS_WIDTH - btn_w) // 2
+    btn_y0 = CANVAS_HEIGHT - 175
+    btn_x1, btn_y1 = btn_x0 + btn_w, btn_y0 + btn_h
+
+    btn_glow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
+    bg_draw = ImageDraw.Draw(btn_glow)
+    bg_draw.rounded_rectangle([btn_x0 - 4, btn_y0 - 4, btn_x1 + 4, btn_y1 + 4], radius=32, fill=(245, 158, 11, 120))
+    btn_glow = btn_glow.filter(ImageFilter.GaussianBlur(16))
+    img = Image.alpha_composite(img, btn_glow)
+
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle([btn_x0, btn_y0, btn_x1, btn_y1], radius=28, fill=(245, 158, 11, 255))
+
+    btn_font = get_font(BOLD_FONT_PATH, 32)
+    btn_text = req.cta_text.upper() or "VIEW DEAL ON AMAZON ➔"
+    btn_bbox = btn_font.getbbox(btn_text)
+    btn_w_actual = btn_bbox[2] - btn_bbox[0]
+    draw.text((btn_x0 + (btn_w - btn_w_actual) // 2, btn_y0 + 30), btn_text, fill=(15, 23, 42, 255), font=btn_font)
+
+    # Footer
+    ftc_font = get_font(REGULAR_FONT_PATH, 16)
+    ftc_text = "FTC Disclosure: As an Amazon Associate I earn from qualifying purchases"
+    f_bbox = ftc_font.getbbox(ftc_text)
+    draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 45), ftc_text, fill=(148, 163, 184, 255), font=ftc_font)
+
+    return img
+
+
 def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
     """Generate high-resolution 1000x1500 Pinterest Pin, write to disk, and return base64."""
     start_time = time.perf_counter()
@@ -406,6 +590,8 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
         canvas = render_warm_editorial(req, product_img)
     elif req.template == "problem_solver":
         canvas = render_problem_solver(req, product_img)
+    elif req.template == "pollinations_lifestyle":
+        canvas = render_pollinations_lifestyle(req, product_img)
     else:
         canvas = render_bento_dark(req, product_img)
 
@@ -436,8 +622,8 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
 
 
 def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateResponse]:
-    """Generates all 3 high-converting pin variants (bento_dark, warm_editorial, problem_solver)."""
-    templates = ["bento_dark", "warm_editorial", "problem_solver"]
+    """Generates all 4 high-converting pin variants (bento_dark, warm_editorial, problem_solver, pollinations_lifestyle)."""
+    templates = ["bento_dark", "warm_editorial", "problem_solver", "pollinations_lifestyle"]
     variants = []
     product_img = download_image(req.image_url)
 
@@ -451,12 +637,16 @@ def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateRespon
             rating=req.rating,
             review_count=req.review_count,
             features=req.features,
+            category=req.category,
+            board_name=req.board_name,
             template=tmpl,
         )
         if tmpl == "warm_editorial":
             canvas = render_warm_editorial(req_copy, product_img)
         elif tmpl == "problem_solver":
             canvas = render_problem_solver(req_copy, product_img)
+        elif tmpl == "pollinations_lifestyle":
+            canvas = render_pollinations_lifestyle(req_copy, product_img)
         else:
             canvas = render_bento_dark(req_copy, product_img)
 

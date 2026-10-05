@@ -21,18 +21,20 @@ from typing import Dict, Any, Optional, List
 try:
     from python_engine.ai_trend_hunter import AITrendHunter
     from python_engine.ai_vision_curator import AIVisionCurator
-    from python_engine.scraper import fetch_product
+    from python_engine.scraper import fetch_product, format_usd_price
     from python_engine.seo_engine import generate_pin_copy
     from python_engine.pin_generator import generate_all_pin_variants
+    from python_engine.carousel_engine import generate_carousel_pin_suite
     from python_engine.pinterest_client import PinterestClient
     from python_engine.config import DATA_DIR, DEFAULT_AFFILIATE_TAG
     from python_engine.models import CopyGenerationRequest, PinGenerateRequest
 except ImportError:
     from ai_trend_hunter import AITrendHunter
     from ai_vision_curator import AIVisionCurator
-    from scraper import fetch_product
+    from scraper import fetch_product, format_usd_price
     from seo_engine import generate_pin_copy
     from pin_generator import generate_all_pin_variants
+    from carousel_engine import generate_carousel_pin_suite
     from pinterest_client import PinterestClient
     from config import DATA_DIR, DEFAULT_AFFILIATE_TAG
     from models import CopyGenerationRequest, PinGenerateRequest
@@ -75,7 +77,14 @@ class AutonomousAutopilot:
         logger.info(f"Targeting Amazon Product: ASIN={asin} (Viral Score: {candidate.get('viral_score')})")
 
         # 2. Stealth Scraping
-        product = fetch_product(product_url, affiliate_tag=self.affiliate_tag)
+        candidate_price_str = format_usd_price(candidate.get("price"))
+        product = fetch_product(
+            product_url,
+            affiliate_tag=self.affiliate_tag,
+            known_image_url=candidate.get("image_url"),
+            known_title=candidate.get("title"),
+            known_price=candidate_price_str,
+        )
 
         # 3. AI Vision Curation
         image_bytes = b""
@@ -108,7 +117,8 @@ class AutonomousAutopilot:
         )
         copy_res = generate_pin_copy(copy_req)
 
-        # 5. Parallel 2:3 Pin Variant Generation (3 Aesthetic Styles)
+        # 5. Parallel 2:3 Pin Variant Generation (4 Aesthetic Styles)
+        effective_board = target_board or copy_res.board_recommendation
         pin_req = PinGenerateRequest(
             title=vision_meta.get("visual_hook", copy_res.pin_title),
             image_url=product.image_url,
@@ -118,15 +128,44 @@ class AutonomousAutopilot:
             review_count=product.review_count,
             badge_text=vision_meta.get("badge_text", "TOP RATED 2026"),
             features=product.features,
+            category=product.category,
+            board_name=effective_board,
             template="bento_dark",
         )
         variants = generate_all_pin_variants(pin_req)
 
+        # 5b. Generate 4-Slide E-Commerce Shopping App Carousel Suite
+        carousel_style = "anime" if any(k in effective_board.lower() for k in ["apartment", "studio"]) else ("luxury_editorial" if "kitchen" in effective_board.lower() else "cyber_bento")
+        carousel_suite = generate_carousel_pin_suite(
+            title=vision_meta.get("visual_hook", copy_res.pin_title),
+            price=product.price,
+            rating=product.rating,
+            review_count=product.review_count,
+            image_url=product.image_url,
+            features=product.features,
+            additional_images=product.additional_images,
+            badge_text=vision_meta.get("badge_text", "TOP RATED 2026"),
+            style=carousel_style,
+        )
+
         # 6. Live Publishing to Pinterest API v5 (if enabled)
         live_pin_data = None
-        effective_board = target_board or copy_res.board_recommendation
         if publish_live and self.pinterest.is_configured:
-            chosen_variant = variants[0]  # default to bento_dark
+            # Dynamic template routing based on AI vision theme and board intent
+            v_theme = vision_meta.get("theme", "bento_dark")
+            chosen_variant = variants[0]
+            for v in variants:
+                if v_theme in v.image_path:
+                    chosen_variant = v
+                    break
+            else:
+                # If specific theme not found, rotate lifestyle for apartment/studio boards
+                if any(k in effective_board.lower() for k in ["apartment", "studio"]):
+                    for v in variants:
+                        if "pollinations_lifestyle" in v.image_path:
+                            chosen_variant = v
+                            break
+
             try:
                 live_pin_data = self.pinterest.publish_pin(
                     title=copy_res.pin_title,
@@ -171,6 +210,11 @@ class AutonomousAutopilot:
                 {"template": v.image_path.split("_")[-2] if "_" in v.image_path else "pin", "url": v.image_url}
                 for v in variants
             ],
+            "carousel": {
+                "slides": carousel_suite["slide_paths"],
+                "composite": carousel_suite["composite_path"],
+                "style": carousel_suite["style"],
+            },
             "live_pinterest": live_pin_data,
         }
 

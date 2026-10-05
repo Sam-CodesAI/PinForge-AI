@@ -20,6 +20,7 @@ DEFAULT_AFFILIATE_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "smartspace07-21")
 # AI API Keys
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY", "")
 
 # Pinterest API v5 Settings
 PINTEREST_APP_ID = os.getenv("PINTEREST_APP_ID", "")

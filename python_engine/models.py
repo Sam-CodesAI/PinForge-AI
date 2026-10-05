@@ -65,10 +65,12 @@ class PinGenerateRequest(BaseModel):
     rating: float = Field(default=4.8)
     review_count: str = Field(default="4,500+")
     badge_text: str = Field(default="TOP RATED 2026")
-    template: Literal["bento_dark", "warm_editorial", "problem_solver"] = Field(
+    template: Literal["bento_dark", "warm_editorial", "problem_solver", "pollinations_lifestyle"] = Field(
         default="bento_dark", description="Visual graphic layout"
     )
     brand: Optional[str] = None
+    category: Optional[str] = Field(default="Smart Home & Space Saving")
+    board_name: Optional[str] = Field(default="Smart Spaces")
     features: List[str] = Field(default_factory=list)
     cta_text: str = Field(default="TAP TO VIEW ON AMAZON ➔")
 
