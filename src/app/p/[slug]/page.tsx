@@ -32,6 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const numericPrice = product.price.replace(/[^0-9.]/g, "") || "29.99";
+
   return {
     title: `${product.shortTitle} — Full Review & Today's Deal | PinForge`,
     description: `${product.verdict} Rated ${product.rating} stars with ${product.reviewCount}. Check live Amazon price and availability.`,
@@ -39,6 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${product.shortTitle} Review & Price Alert`,
       description: product.verdict,
       images: [{ url: product.imageUrl, width: 1000, height: 1500, alt: product.title }],
+    },
+    other: {
+      "og:type": "product",
+      "product:price:amount": numericPrice,
+      "product:price:currency": "USD",
+      "product:availability": "instock",
     },
     robots: {
       index: true,

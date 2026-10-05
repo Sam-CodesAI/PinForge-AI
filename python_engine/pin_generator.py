@@ -190,6 +190,18 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         draw.rounded_rectangle([card_x1 - 120, card_y0 + 25, card_x1 - 25, card_y0 + 70], radius=12, fill=(225, 29, 72, 255))
         draw.text((card_x1 - 100, card_y0 + 35), deal_text, fill=(255, 255, 255, 255), font=deal_font)
 
+    # Prominent Gen-Z Neon Friction Badge on Card
+    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
+        f_badge = f"⚡ {f_badge}"
+    fb_font = get_font(BOLD_FONT_PATH, 22)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
+    fb_x = card_x0 + (card_w - fb_w) // 2
+    fb_y = card_y1 - 60
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(56, 189, 248, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(56, 189, 248, 255), font=fb_font)
+
     # 5. Rating & Social Proof Bar
     bar_y = card_y1 + 45
     star_x = 90
@@ -207,17 +219,17 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     price_w = price_bbox[2] - price_bbox[0]
     draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), req.price, fill=(52, 211, 153, 255), font=price_font)
 
-    # 6. Feature Chips
+    # 6. Feature Chips (Gen-Z Bento friction highlights)
     chip_y = bar_y + 70
     chip_font = get_font(REGULAR_FONT_PATH, 22)
-    features = req.features[:3] if req.features else ["Verified Quality", "Fast Prime Delivery", "Free 30-Day Returns"]
+    features = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly", "Tool-Free Setup", "Fast Prime Delivery"])
     cur_chip_x = 90
     for f in features:
         short_f = f[:28] + "..." if len(f) > 28 else f
         f_bbox = chip_font.getbbox(short_f)
         f_w = (f_bbox[2] - f_bbox[0]) + 30
         if cur_chip_x + f_w < CANVAS_WIDTH - 90:
-            draw.rounded_rectangle([cur_chip_x, chip_y, cur_chip_x + f_w, chip_y + 40], radius=20, fill=(30, 41, 59, 220), outline=(51, 65, 85, 255))
+            draw.rounded_rectangle([cur_chip_x, chip_y, cur_chip_x + f_w, chip_y + 40], radius=20, fill=(30, 41, 59, 220), outline=(56, 189, 248, 160))
             draw.text((cur_chip_x + 15, chip_y + 8), f"✓ {short_f}", fill=(226, 232, 240, 255), font=chip_font)
             cur_chip_x += f_w + 14
 
@@ -318,6 +330,18 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
         s_w = s_bbox[2] - s_bbox[0]
         draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 320), sub_text, fill=(120, 113, 108, 255), font=sub_font)
 
+    # Prominent Gen-Z Friction Pill on Card
+    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
+        f_badge = f"✦ {f_badge}"
+    fb_font = get_font(BOLD_FONT_PATH, 20)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = (fb_bbox[2] - fb_bbox[0]) + 36
+    fb_x = card_x0 + (card_w - fb_w) // 2
+    fb_y = card_y1 - 55
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(28, 25, 23, 240), outline=(217, 119, 6, 255), width=2)
+    draw.text((fb_x + 18, fb_y + 10), f_badge, fill=(251, 191, 36, 255), font=fb_font)
+
     # 4. Minimal Price & Rating Row
     meta_y = card_y1 + 45
     price_font = get_font(BOLD_FONT_PATH, 48)
@@ -407,10 +431,22 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
         s_w = s_bbox[2] - s_bbox[0]
         draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 310), sub_text, fill=(71, 85, 105, 255), font=sub_font)
 
-    # 4. Feature Callout Rows
+    # Prominent Gen-Z Neon Friction Badge on Card
+    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
+        f_badge = f"⚡ {f_badge}"
+    fb_font = get_font(BOLD_FONT_PATH, 22)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
+    fb_x = card_x0 + (card_w - fb_w) // 2
+    fb_y = card_y1 - 60
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(245, 158, 11, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(251, 191, 36, 255), font=fb_font)
+
+    # 4. Feature Callout Rows (Gen-Z Bento friction highlights)
     feat_y = card_y1 + 35
     f_font = get_font(BOLD_FONT_PATH, 24)
-    features = req.features[:3] if req.features else ["Saves hours of daily effort", "Over 20,000+ 5-star reviews", "Prime same-day delivery available"]
+    features = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly • Zero Wall Holes", "Tool-Free Pop-Up Ready In 60 Seconds", "Heavy-Duty Reinforced Storage Capacity"])
 
     for idx, feat in enumerate(features):
         row_y = feat_y + (idx * 50)
@@ -533,6 +569,18 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
         sub_text = "Top Rated Amazon Choice • Verified Durability"
         s_bbox = sub_font.getbbox(sub_text)
         draw.text((card_x0 + (card_w - (s_bbox[2] - s_bbox[0])) // 2, card_y0 + 280), sub_text, fill=(100, 116, 139, 255), font=sub_font)
+
+    # Prominent Gen-Z Neon Friction Badge on Card
+    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
+        f_badge = f"⚡ {f_badge}"
+    fb_font = get_font(BOLD_FONT_PATH, 20)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = (fb_bbox[2] - fb_bbox[0]) + 36
+    fb_x = card_x0 + (card_w - fb_w) // 2
+    fb_y = card_y1 - 55
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 42], radius=21, fill=(15, 23, 42, 245), outline=(56, 189, 248, 255), width=2)
+    draw.text((fb_x + 18, fb_y + 10), f_badge, fill=(56, 189, 248, 255), font=fb_font)
 
     # 6. Price & Rating Banner
     bar_y = card_y1 + 45

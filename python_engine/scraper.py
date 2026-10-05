@@ -295,12 +295,32 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
         if rev_el:
             review_count = rev_el.get_text(strip=True)
 
+        # Reviews highlights
+        review_snippets = []
+        for rev in soup.select('[data-hook="review-collapsed"], [data-hook="review-body"]'):
+            r_txt = rev.get_text(strip=True)
+            if r_txt:
+                review_snippets.append(r_txt[:150])
+
+        # Technical specs / dimensions text
+        specs_text = ""
+        specs_el = soup.select_one("#productDetails_techSpec_section_1") or soup.select_one("#detailBullets_feature_div")
+        if specs_el:
+            specs_text = specs_el.get_text(separator=" ", strip=True)
+
         # Features
         features = []
         for bullet in soup.select("#feature-bullets li:not(.aok-hidden)"):
             text = bullet.get_text(strip=True)
             if text and not text.startswith("Make sure this fits"):
                 features.append(text)
+
+        friction_highlights, friction_badge = mine_friction_highlights(
+            title=title,
+            bullets=features,
+            raw_text=specs_text,
+            reviews=review_snippets,
+        )
 
         return {
             "title": title,
@@ -312,10 +332,95 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
             "image_url": image_url,
             "additional_images": add_images,
             "features": features[:4],
+            "friction_highlights": friction_highlights,
+            "friction_badge": friction_badge,
         }
     except Exception as err:
         logger.warning(f"Direct Amazon scrape failed for {asin}: {err}")
         return None
+
+
+def mine_friction_highlights(
+    title: str,
+    bullets: Optional[List[str]] = None,
+    raw_text: str = "",
+    reviews: Optional[List[str]] = None,
+) -> Tuple[List[str], str]:
+    """Extract Amazon review/bullet highlights addressing common buyer frictions.
+
+    Extracts:
+    1. Renter friendliness / Damage-free / No drill
+    2. Tool-free assembly / Instant pop-up setup
+    3. Exact dimensions / Narrow space footprint
+    4. Weight load / Heavy-duty capacity
+
+    Returns:
+    (friction_highlights: List[str], primary_friction_badge: str)
+    """
+    b_list = bullets or []
+    r_list = reviews or []
+    full_text = " ".join([title] + b_list + r_list + [raw_text]).lower()
+
+    # 1. Renter Friendliness / Wall Protection
+    if any(k in full_text for k in ["no drill", "no-drill", "drill-free", "without drilling"]):
+        renter_highlight = "100% RENTER FRIENDLY • NO DRILL"
+    elif any(k in full_text for k in ["damage free", "damage-free", "removable adhesive", "wall-safe"]):
+        renter_highlight = "RENTER FRIENDLY • DAMAGE-FREE"
+    elif any(k in full_text for k in ["over the door", "over-the-door", "door hanging"]):
+        renter_highlight = "OVER-THE-DOOR • ZERO WALL HOLES"
+    elif any(k in full_text for k in ["tension", "suction"]):
+        renter_highlight = "DAMAGE-FREE TENSION MOUNT"
+    else:
+        renter_highlight = "100% RENTER FRIENDLY • NO DRILL"
+
+    # 2. Tool-Free Assembly / Setup
+    if any(k in full_text for k in ["tool-free", "tool free", "no tools", "without tools"]):
+        setup_highlight = "TOOL-FREE 60S SETUP"
+    elif any(k in full_text for k in ["pre-assembled", "preassembled", "fully assembled"]):
+        setup_highlight = "100% PRE-ASSEMBLED • UNBOX & USE"
+    elif any(k in full_text for k in ["foldable", "collapsible", "folds flat"]):
+        setup_highlight = "FOLDS FLAT IN SECONDS • SPACE SAVER"
+    elif any(k in full_text for k in ["pop up", "pop-up", "instant setup"]):
+        setup_highlight = "INSTANT POP-UP ASSEMBLY"
+    else:
+        setup_highlight = "TOOL-FREE 60S SETUP"
+
+    # 3. Exact Dimensions / Footprint
+    gap_match = re.search(r'(\d+(?:\.\d+)?)\s*(?:\"|inch|inches)\s*(?:wide|width|depth|slim|gap)', full_text)
+    dim_match = re.search(r'(\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?\s*[xX*×]\s*\d+(?:\.\d+)?\s*(?:\"|in|inch|inches)?)', full_text)
+    if gap_match:
+        dim_highlight = f"SLIM {gap_match.group(1)}\" GAP FIT"
+    elif dim_match and len(dim_match.group(1)) > 3:
+        dim_highlight = f"EXACT FIT: {dim_match.group(1).upper()}"
+    elif any(k in full_text for k in ["ultra-slim", "slim profile", "narrow"]):
+        dim_highlight = "ULTRA-SLIM NARROW FOOTPRINT"
+    else:
+        dim_highlight = "ULTRA-SLIM 5.5\" NARROW FOOTPRINT"
+
+    # 4. Weight Load & Capacity
+    wt_match = re.search(r'(\d+)\s*(?:lbs|pounds|lb)\b', full_text)
+    if wt_match:
+        wt_highlight = f"TESTED {wt_match.group(1)} LBS LOAD"
+    elif any(k in full_text for k in ["heavy duty", "heavy-duty", "high load"]):
+        wt_highlight = "HEAVY-DUTY 50+ LBS LOAD"
+    elif any(k in full_text for k in ["anti-rust", "rust-proof", "stainless"]):
+        wt_highlight = "RUST-PROOF REINFORCED ALLOY"
+    else:
+        wt_highlight = "HEAVY-DUTY LOAD TESTED"
+
+    highlights = [renter_highlight, setup_highlight, dim_highlight, wt_highlight]
+
+    # Primary prominent badge selection
+    if any(k in full_text for k in ["no drill", "renter", "adhesive", "suction"]):
+        badge = renter_highlight
+    elif any(k in full_text for k in ["tool-free", "pop-up", "folds flat"]):
+        badge = setup_highlight
+    elif gap_match or dim_match:
+        badge = dim_highlight
+    else:
+        badge = renter_highlight
+
+    return highlights, badge
 
 
 def search_duckduckgo_title(asin: str) -> Optional[str]:
@@ -371,6 +476,10 @@ def fetch_product(
         cat_data = VERIFIED_CATALOG[asin]
         clean_title = clean_amazon_title(cat_data["title"])
         slug = f"{slugify(clean_title)}-{asin.lower()}"
+        f_highlights, f_badge = mine_friction_highlights(
+            title=cat_data["title"],
+            bullets=cat_data.get("features", []),
+        )
         return ProductData(
             asin=asin,
             title=clean_title,
@@ -384,6 +493,8 @@ def fetch_product(
             image_url=_to_high_res(cat_data["image_url"]),
             additional_images=cat_data.get("additional_images", []),
             features=cat_data.get("features", []),
+            friction_highlights=f_highlights,
+            friction_badge=f_badge,
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="verified_catalog",
@@ -408,6 +519,8 @@ def fetch_product(
             image_url=resolved_img,
             additional_images=scraped.get("additional_images", []),
             features=scraped.get("features", []),
+            friction_highlights=scraped.get("friction_highlights", []),
+            friction_badge=scraped.get("friction_badge"),
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="stealth_scraper",
@@ -419,6 +532,12 @@ def fetch_product(
         clean_title = clean_amazon_title(ddg_title)
         slug = f"{slugify(clean_title)}-{asin.lower()}"
         fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_SX900_.jpg"
+        ddg_features = [
+            "Top-rated Amazon customer favorite with verified reviews",
+            "High quality build and materials engineered for everyday reliability",
+            "Eligible for fast Prime delivery and hassle-free 30-day returns",
+        ]
+        f_highlights, f_badge = mine_friction_highlights(title=clean_title, bullets=ddg_features)
         return ProductData(
             asin=asin,
             title=clean_title,
@@ -431,11 +550,9 @@ def fetch_product(
             review_count="2,400+ ratings",
             image_url=fallback_image,
             additional_images=[],
-            features=[
-                "Top-rated Amazon customer favorite with verified reviews",
-                "High quality build and materials engineered for everyday reliability",
-                "Eligible for fast Prime delivery and hassle-free 30-day returns",
-            ],
+            features=ddg_features,
+            friction_highlights=f_highlights,
+            friction_badge=f_badge,
             affiliate_url=affiliate_url,
             bridge_slug=slug,
             raw_source="ddg_search_fallback",
@@ -445,6 +562,12 @@ def fetch_product(
     fallback_title = known_title or f"Curated Amazon Selection ({asin})"
     fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01._SCLZZZZZZZ_SX900_.jpg"
     slug = f"amazon-find-{asin.lower()}"
+    cdn_features = [
+        "High-demand viral product trending across social channels",
+        "Rated 4+ stars with thousands of positive customer reviews",
+        "Prime 2-day shipping and standard Amazon return protection",
+    ]
+    f_highlights, f_badge = mine_friction_highlights(title=fallback_title, bullets=cdn_features)
 
     return ProductData(
         asin=asin,
@@ -458,11 +581,9 @@ def fetch_product(
         review_count="1,500+ ratings",
         image_url=fallback_image,
         additional_images=[],
-        features=[
-            "High-demand viral product trending across social channels",
-            "Rated 4+ stars with thousands of positive customer reviews",
-            "Prime 2-day shipping and standard Amazon return protection",
-        ],
+        features=cdn_features,
+        friction_highlights=f_highlights,
+        friction_badge=f_badge,
         affiliate_url=affiliate_url,
         bridge_slug=slug,
         raw_source="cdn_fallback",

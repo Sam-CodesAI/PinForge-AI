@@ -127,39 +127,35 @@ class PinterestClient:
         return items
 
     def find_board_id(self, board_name_or_keyword: str) -> Optional[str]:
-        """Find matching board ID by exact name or substring matching."""
+        """Find matching board ID by exact name in board cache (case-insensitive).
+        
+        Strict matching prevents fuzzy token false-positives and enforces exact pillar alignment.
+        """
         if not self._board_cache:
             self.get_boards()
 
         clean_query = board_name_or_keyword.lower().strip()
-
-        # 1. Exact match
         if clean_query in self._board_cache:
             return self._board_cache[clean_query]
-
-        # 2. Substring or keyword match
-        for name, b_id in self._board_cache.items():
-            if clean_query in name or any(w in name for w in clean_query.split()):
-                return b_id
-
-        # Fallback to the first available board
-        if self._board_cache:
-            return next(iter(self._board_cache.values()))
 
         return None
 
     def get_or_create_board(self, board_name: str) -> str:
-        """Find existing board by name or create it automatically."""
-        found_id = self.find_board_id(board_name)
+        """Find existing board by exact name or create it automatically via Pinterest API.
+        
+        Eliminates fuzzy matching and removes any default fallback to 'Room Organization'.
+        """
+        clean_name = board_name.strip()
+        found_id = self.find_board_id(clean_name)
         if found_id:
             return found_id
 
-        # Board not found, create it dynamically
-        res = self._request("boards", method="POST", data={"name": board_name, "privacy": "PUBLIC"})
+        # Board not found, create it dynamically with exact name requested
+        res = self._request("boards", method="POST", data={"name": clean_name, "privacy": "PUBLIC"})
         new_id = res.get("id")
         if not new_id:
-            raise RuntimeError(f"Failed to create board '{board_name}': {res}")
-        self._board_cache[board_name.lower().strip()] = new_id
+            raise RuntimeError(f"Failed to create board '{clean_name}': {res}")
+        self._board_cache[clean_name.lower()] = new_id
         return new_id
 
     def bootstrap_smart_spaces_boards(self) -> None:
@@ -257,23 +253,151 @@ class PinterestClient:
         self._record_published_pin(result)
         return result
 
+    def create_carousel_pin_base64(
+        self,
+        board_id: str,
+        title: str,
+        description: str,
+        slides: List[Dict[str, Any]],
+        link: Optional[str] = None,
+        alt_text: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Create a multi-slide Carousel Pin on Pinterest API v5 using multiple_image_base64.
+
+        Enforces Pinterest API v5 constraints:
+        - media_source: {"source_type": "multiple_image_base64", "items": [...]}
+        - Each item: content_type: "image/jpeg", data: <clean_base64>, title, description, link
+        - Allows individual per-slide deep affiliate links without external CDN hosting.
+        """
+        if not slides or len(slides) < 2:
+            raise ValueError("Carousel pin requires at least 2 slides")
+
+        safe_title = title.strip()[:100]
+        disclosure = "#AmazonAssociate"
+        if disclosure.lower() not in description.lower():
+            safe_desc = f"{description.strip()} {disclosure}"
+        else:
+            safe_desc = description.strip()
+        safe_desc = safe_desc[:500]
+
+        carousel_items = []
+        for idx, slide in enumerate(slides, start=1):
+            slide_data = ""
+            content_type = slide.get("content_type", "image/jpeg")
+
+            if "data" in slide and slide["data"]:
+                raw_b64 = slide["data"]
+                slide_data = raw_b64.split(",")[-1] if "," in raw_b64 else raw_b64
+            elif "base64_image" in slide and slide["base64_image"]:
+                raw_b64 = slide["base64_image"]
+                slide_data = raw_b64.split(",")[-1] if "," in raw_b64 else raw_b64
+            elif "image_path" in slide and Path(slide["image_path"]).exists():
+                raw_bytes = Path(slide["image_path"]).read_bytes()
+                slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+                if str(slide["image_path"]).lower().endswith((".png",)):
+                    content_type = "image/png"
+                else:
+                    content_type = "image/jpeg"
+            elif "image_url" in slide and slide["image_url"]:
+                url = slide["image_url"]
+                filename = Path(url).name
+                local_pin_path = Path(__file__).resolve().parent / "static" / "pins" / filename
+                if local_pin_path.exists():
+                    raw_bytes = local_pin_path.read_bytes()
+                    slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+                else:
+                    req = urllib.request.Request(url, headers={"User-Agent": "PinForge-AI/1.0"})
+                    with urllib.request.urlopen(req, timeout=12) as resp:
+                        raw_bytes = resp.read()
+                        slide_data = base64.b64encode(raw_bytes).decode("utf-8")
+            else:
+                raise ValueError(f"Slide {idx} missing image source (image_path, data, base64_image, or image_url)")
+
+            # Per-slide title, description, link
+            slide_title = (slide.get("title") or f"{safe_title} - Part {idx}").strip()[:100]
+            s_desc = (slide.get("description") or safe_desc).strip()
+            if disclosure.lower() not in s_desc.lower():
+                s_desc = f"{s_desc} {disclosure}"
+            slide_description = s_desc[:500]
+            slide_link = slide.get("link") or link or ""
+
+            carousel_items.append({
+                "content_type": content_type,
+                "data": slide_data,
+                "title": slide_title,
+                "description": slide_description,
+                "link": slide_link,
+            })
+
+        default_link = link or (carousel_items[0]["link"] if carousel_items else "")
+        payload = {
+            "board_id": board_id,
+            "title": safe_title,
+            "description": safe_desc,
+            "link": default_link,
+            "alt_text": alt_text or safe_title,
+            "media_source": {
+                "source_type": "multiple_image_base64",
+                "items": carousel_items,
+            },
+        }
+
+        result = self._request("pins", method="POST", data=payload)
+        self._record_published_pin(result, is_carousel=True)
+        return result
+
+    def publish_carousel_pin(
+        self,
+        title: str,
+        description: str,
+        board_name: str,
+        slides: List[Dict[str, Any]],
+        link: Optional[str] = None,
+        alt_text: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Convenience method: resolves board by exact name and publishes a multi-slide carousel pin."""
+        board_id = self.get_or_create_board(board_name)
+        result = self.create_carousel_pin_base64(
+            board_id=board_id,
+            title=title,
+            description=description,
+            slides=slides,
+            link=link,
+            alt_text=alt_text,
+        )
+        return {**result, "pin_id": result.get("id", "")}
+
     def publish_pin(
         self,
         title: str,
         description: str,
         board_name: str,
-        image_path_or_url: str,
-        link: str,
+        image_path_or_url: Optional[str] = None,
+        link: Optional[str] = None,
         alt_text: Optional[str] = None,
+        slides: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
-        """Convenience method: resolves board by name and publishes image directly."""
+        """Convenience method: resolves board by name and publishes image or carousel directly."""
+        if slides and len(slides) >= 2:
+            return self.publish_carousel_pin(
+                title=title,
+                description=description,
+                board_name=board_name,
+                slides=slides,
+                link=link,
+                alt_text=alt_text,
+            )
+
+        if not image_path_or_url:
+            raise ValueError("Must provide either image_path_or_url or slides for publish_pin")
+
         board_id = self.get_or_create_board(board_name)
         if image_path_or_url.startswith("http://") or image_path_or_url.startswith("https://"):
             result = self.create_pin(
                 board_id=board_id,
                 title=title,
                 description=description,
-                link=link,
+                link=link or "",
                 image_url=image_path_or_url,
                 alt_text=alt_text,
             )
@@ -282,7 +406,7 @@ class PinterestClient:
                 board_id=board_id,
                 title=title,
                 description=description,
-                link=link,
+                link=link or "",
                 image_path=image_path_or_url,
                 alt_text=alt_text,
             )
@@ -305,9 +429,10 @@ class PinterestClient:
         )
         return self._request(endpoint)
 
-    def _record_published_pin(self, pin_data: Dict[str, Any]) -> None:
+    def _record_published_pin(self, pin_data: Dict[str, Any], is_carousel: bool = False) -> None:
         """Persist pin metadata locally for self-learning analytics tracking."""
         try:
+            DATA_DIR.mkdir(parents=True, exist_ok=True)
             ledger_path = DATA_DIR / "published_pins.json"
             pins = []
             if ledger_path.exists():
@@ -318,6 +443,7 @@ class PinterestClient:
                 "title": pin_data.get("title"),
                 "link": pin_data.get("link"),
                 "board_id": pin_data.get("board_id"),
+                "is_carousel": is_carousel,
                 "created_at": pin_data.get("created_at", datetime.now().isoformat()),
             })
             ledger_path.write_text(json.dumps(pins, indent=2))

@@ -118,15 +118,18 @@ jobs:
 
           python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG
 
-      - name: Commit & Push Autopilot History
+      - name: Commit & Push Autopilot History & Ledgers
         if: success()
         run: |
           git config --local user.email "bot@smartspaces.internal"
           git config --local user.name "Smart Spaces Autopilot"
-          git add python_engine/data/seen_products.json python_engine/data/autopilot_history.json || true
+          git add python_engine/data/seen_products.json \
+                  python_engine/data/autopilot_history.json \
+                  python_engine/data/published_pins.json \
+                  python_engine/data/performance_ledger.json || true
           if git diff --staged --quiet; then
             echo "No new history changes to commit."
           else
-            git commit -m "chore(autopilot): update deduplication and execution logs [skip ci]"
+            git commit -m "chore(autopilot): update deduplication, performance ledger, and execution logs [skip ci]"
             git push origin main
           fi

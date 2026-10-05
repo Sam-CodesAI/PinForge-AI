@@ -5,5 +5,13 @@
     "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
     "board_id": "1132444337492930442",
     "created_at": "2026-10-04T09:41:46"
+  },
+  {
+    "id": "test_pin_999",
+    "title": null,
+    "link": null,
+    "board_id": "board_123",
+    "is_carousel": true,
+    "created_at": "2026-10-05T04:21:56.165232"
   }
 ]

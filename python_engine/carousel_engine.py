@@ -110,9 +110,10 @@ def render_slide1_showcase(
     review_count: str,
     product_img: Optional[Image.Image],
     badge_text: str = "VIRAL AMAZON FIND",
+    friction_badge: str = "100% RENTER FRIENDLY • NO DRILL",
     style: str = "cyber_bento",
 ) -> Image.Image:
-    """Slide 1: First Product Showcase with bold hero visual, rating, and price pill."""
+    """Slide 1: First Product Showcase with bold hero visual, rating, price pill, and Gen-Z friction badge."""
     img = _draw_style_background(style)
     draw = ImageDraw.Draw(img)
 
@@ -163,6 +164,18 @@ def render_slide1_showcase(
         py = card_y0 + (card_h - new_ph) // 2
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
 
+    # Prominent Gen-Z Neon Friction Badge on Card
+    f_badge = (friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
+        f_badge = f"⚡ {f_badge}"
+    fb_font = get_font(BOLD_FONT_PATH, 22)
+    fb_bbox = fb_font.getbbox(f_badge)
+    fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
+    fb_x = card_x0 + (card_w - fb_w) // 2
+    fb_y = card_y1 - 60
+    draw.rounded_rectangle([fb_x, fb_y, fb_x + fb_w, fb_y + 44], radius=22, fill=(15, 23, 42, 245), outline=(16, 185, 129, 255), width=2)
+    draw.text((fb_x + 20, fb_y + 10), f_badge, fill=(52, 211, 153, 255), font=fb_font)
+
     # 4. Rating Bar
     bar_y = card_y1 + 45
     for s in range(5):
@@ -198,6 +211,8 @@ def render_slide2_specs(
     price: str,
     features: List[str],
     product_img: Optional[Image.Image],
+    friction_highlights: Optional[List[str]] = None,
+    friction_badge: str = "TOOL-FREE 60S SETUP",
     style: str = "cyber_bento",
 ) -> Image.Image:
     """Slide 2: Shopping app spec breakdown with details on left side and zoomed product on right."""
@@ -217,13 +232,19 @@ def render_slide2_specs(
     panel_y0 = 175
 
     spec_items = [
-        ("📐 FOOTPRINT", "Ultra-slim profile designed to slide into narrow gaps."),
-        ("🛡️ MATERIAL", "Reinforced high-grade alloy with anti-rust coating."),
-        ("⚡ ASSEMBLY", "100% tool-free pop-up structure ready in under 60s."),
-        ("⚖️ CAPACITY", "Heavy-duty load tested with smooth 360° caster wheels."),
+        ("📐 EXACT FIT", "Ultra-slim compact profile engineered to slide into narrow gaps."),
+        ("🛡️ RENTER-SAFE", "100% damage-free structure with zero drilling or wall holes required."),
+        ("⚡ POP-UP SETUP", "Tool-free fast assembly ready straight out of the box in under 60s."),
+        ("⚖️ LOAD TESTED", "Heavy-duty reinforced alloy framework with smooth mobility."),
     ]
-    # If features available from scraper, customize
-    if features:
+    if friction_highlights and len(friction_highlights) >= 4:
+        spec_items = [
+            ("🛡️ RENTER-SAFE", f"{friction_highlights[0]} — Zero permanent wall damage."),
+            ("⚡ QUICK SETUP", f"{friction_highlights[1]} — Ready in seconds without tools."),
+            ("📐 DIMENSIONS", f"{friction_highlights[2]} — Maximizes narrow compact floor space."),
+            ("⚖️ CAPACITY", f"{friction_highlights[3]} — Heavy-duty load tested stability."),
+        ]
+    elif features:
         for i, f in enumerate(features[:4]):
             spec_items[i] = (f"✓ FEATURE {i+1}", f[:70] + "..." if len(f) > 70 else f)
 
@@ -257,6 +278,15 @@ def render_slide2_specs(
         px = right_x + (right_w - new_pw) // 2
         py = panel_y0 + (right_h - new_ph) // 2
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
+
+    # Stamped Gen-Z Neon Friction Badge on right panel
+    rz_badge = f"✦ {(friction_badge or 'TOOL-FREE 60S SETUP').upper()}"
+    rz_font = get_font(BOLD_FONT_PATH, 16)
+    rz_bbox = rz_font.getbbox(rz_badge)
+    rz_w = (rz_bbox[2] - rz_bbox[0]) + 28
+    rz_x = right_x + (right_w - rz_w) // 2
+    draw.rounded_rectangle([rz_x, panel_y0 + 16, rz_x + rz_w, panel_y0 + 48], radius=16, fill=(15, 23, 42, 230), outline=(56, 189, 248, 255), width=2)
+    draw.text((rz_x + 14, panel_y0 + 23), rz_badge, fill=(56, 189, 248, 255), font=rz_font)
 
     # Right Side Price Callout
     draw.rounded_rectangle([right_x + 20, panel_y0 + right_h - 75, right_x + right_w - 20, panel_y0 + right_h - 18], radius=14, fill=(15, 23, 42, 240))
@@ -327,17 +357,13 @@ def render_slide3_variants(
     # If no alternate images, create cropped focus angles from main
     if len(thumbs) < 3 and product_img:
         w, h = product_img.size
-        # Top-third crop (Header/Hook detail)
         thumbs.append(product_img.crop((0, 0, w, int(h * 0.45))))
-        # Center crop (Mechanism detail)
         thumbs.append(product_img.crop((int(w * 0.1), int(h * 0.25), int(w * 0.9), int(h * 0.75))))
-        # Bottom crop (Base/Caster detail)
         thumbs.append(product_img.crop((0, int(h * 0.55), w, h)))
 
     labels = ["ANGLE 1 (FULL)", "DETAIL (FOLDED)", "BASE & WHEELS"]
     for i in range(3):
         cur_ty = thumb_y + (i * 200)
-        # Highlight top thumbnail as active
         border_color = (245, 158, 11, 255) if i == 0 else (51, 65, 85, 255)
         border_width = 3 if i == 0 else 1
         draw.rounded_rectangle([right_x, cur_ty, right_x + thumb_w, cur_ty + thumb_h], radius=18, fill=(255, 255, 255, 255), outline=border_color, width=border_width)
@@ -392,6 +418,8 @@ def render_slide4_uses(
     title: str,
     price: str,
     product_img: Optional[Image.Image],
+    friction_highlights: Optional[List[str]] = None,
+    friction_badge: str = "100% RENTER FRIENDLY • NO DRILL",
     style: str = "cyber_bento",
 ) -> Image.Image:
     """Slide 4: Real-world practical uses in everyday life, before/after transformation, and purchase CTA."""
@@ -407,18 +435,16 @@ def render_slide4_uses(
 
     # 3 High-Impact Practical Use Cards
     use_cases = [
-        ("1. SMALL APARTMENTS & STUDIOS", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without clutter."),
+        ("1. SMALL APARTMENTS & STUDIOS • NO DRILL", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without wall damage."),
         ("2. BATHROOM & LAUNDRY ESSENTIAL", "Moisture-resistant materials keep damp towels and toiletries organized, off counters, and perfectly ventilated."),
-        ("3. BEDROOM & CLOSET EXPANSION", "Reclaims floor space and keeps daily essentials accessible while folding completely flat when not needed."),
+        ("3. TOOL-FREE 60S ASSEMBLY & FOLD", "Reclaims floor space and keeps daily essentials accessible while folding completely flat in seconds when moving."),
     ]
 
     card_y = 185
     for heading, desc in use_cases:
         draw.rounded_rectangle([70, card_y, CANVAS_WIDTH - 70, card_y + 160], radius=20, fill=(24, 32, 47, 240), outline=(245, 158, 11, 160), width=2)
-        # Heading
         head_font = get_font(BOLD_FONT_PATH, 24)
         draw.text((95, card_y + 18), heading, fill=(251, 191, 36, 255), font=head_font)
-        # Description
         body_font = get_font(REGULAR_FONT_PATH, 21)
         b_lines = wrap_text(desc, body_font, max_width=CANVAS_WIDTH - 190)[:3]
         by = card_y + 55
@@ -431,8 +457,8 @@ def render_slide4_uses(
     # Trust Guarantees
     t_y = card_y + 20
     t_font = get_font(BOLD_FONT_PATH, 22)
-    draw.text((70, t_y), "✓ Fast Prime 2-Day Delivery", fill=(52, 211, 153, 255), font=t_font)
-    draw.text((450, t_y), "✓ 30-Day Money Back Guarantee", fill=(52, 211, 153, 255), font=t_font)
+    draw.text((70, t_y), "✓ 100% Renter Safe • No Drill", fill=(52, 211, 153, 255), font=t_font)
+    draw.text((450, t_y), "✓ Fast Prime 2-Day Delivery", fill=(52, 211, 153, 255), font=t_font)
 
     # Final Conversion CTA Button
     btn_y0 = CANVAS_HEIGHT - 210
@@ -457,7 +483,7 @@ def render_slide4_uses(
 # ============================================================================
 # COMPOSITE 4-IN-1 GRID PIN (For Single-Pin High-CTR Feeds)
 # ============================================================================
-def render_composite_carousel_preview(slides: List[Image.Image]) -> Image.Image:
+def render_composite_carousel_preview(slides: List[Image.Image], friction_badge: str = "100% RENTER FRIENDLY • NO DRILL") -> Image.Image:
     """Combines all 4 carousel slides into a high-converting 2x2 grid overview pin."""
     comp = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (11, 15, 25, 255))
     draw = ImageDraw.Draw(comp)
@@ -481,17 +507,16 @@ def render_composite_carousel_preview(slides: List[Image.Image]) -> Image.Image:
         if idx < len(slides):
             thumb = slides[idx].resize((cell_w, cell_h), Image.Resampling.LANCZOS)
             comp.paste(thumb, pos)
-            # Outline
             draw.rounded_rectangle([pos[0], pos[1], pos[0] + cell_w, pos[1] + cell_h], radius=14, outline=(245, 158, 11, 180), width=2)
 
-    # Center Badge Callout
-    center_pill = "TAP TO READ FULL SPECIFICATIONS ➔"
-    cp_font = get_font(BOLD_FONT_PATH, 24)
+    # Center Gen-Z Friction Badge Callout
+    center_pill = f"✦ {friction_badge.upper()} ➔"
+    cp_font = get_font(BOLD_FONT_PATH, 22)
     cp_bbox = cp_font.getbbox(center_pill)
-    cp_w = (cp_bbox[2] - cp_bbox[0]) + 40
+    cp_w = (cp_bbox[2] - cp_bbox[0]) + 44
     cpx = (CANVAS_WIDTH - cp_w) // 2
-    draw.rounded_rectangle([cpx, 725, cpx + cp_w, 775], radius=24, fill=(15, 23, 42, 245), outline=(245, 158, 11, 255), width=2)
-    draw.text((cpx + 20, 738), center_pill, fill=(255, 255, 255, 255), font=cp_font)
+    draw.rounded_rectangle([cpx, 725, cpx + cp_w, 775], radius=24, fill=(15, 23, 42, 245), outline=(16, 185, 129, 255), width=2)
+    draw.text((cpx + 22, 739), center_pill, fill=(52, 211, 153, 255), font=cp_font)
 
     # Bottom CTA Button
     btn_y0 = CANVAS_HEIGHT - 85
@@ -516,16 +541,18 @@ def generate_carousel_pin_suite(
     features: List[str],
     additional_images: Optional[List[str]] = None,
     badge_text: str = "VIRAL AMAZON FIND",
+    friction_badge: str = "100% RENTER FRIENDLY • NO DRILL",
+    friction_highlights: Optional[List[str]] = None,
     style: str = "cyber_bento",
 ) -> Dict[str, Any]:
     """Generates the full 4-slide shopping app carousel + 1 composite overview graphic."""
     product_img = download_image(image_url)
 
     # Generate 4 slides
-    s1 = render_slide1_showcase(title, price, rating, review_count, product_img, badge_text, style)
-    s2 = render_slide2_specs(title, price, features, product_img, style)
+    s1 = render_slide1_showcase(title, price, rating, review_count, product_img, badge_text, friction_badge, style)
+    s2 = render_slide2_specs(title, price, features, product_img, friction_highlights, friction_badge, style)
     s3 = render_slide3_variants(title, price, product_img, additional_images, style)
-    s4 = render_slide4_uses(title, price, product_img, style)
+    s4 = render_slide4_uses(title, price, product_img, friction_highlights, friction_badge, style)
 
     slides = [s1, s2, s3, s4]
     slide_paths = []
@@ -539,7 +566,7 @@ def generate_carousel_pin_suite(
         slide_paths.append(str(f_path))
 
     # Generate composite 4-in-1 overview
-    composite = render_composite_carousel_preview(slides)
+    composite = render_composite_carousel_preview(slides, friction_badge=friction_badge)
     rgb_c = composite.convert("RGB")
     comp_file_name = f"carousel_composite_{uid}.jpg"
     comp_path = PINS_DIR / comp_file_name
@@ -550,4 +577,5 @@ def generate_carousel_pin_suite(
         "composite_path": str(comp_path),
         "total_slides": len(slide_paths),
         "style": style,
+        "friction_badge": friction_badge,
     }

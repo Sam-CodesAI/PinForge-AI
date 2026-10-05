@@ -22,6 +22,8 @@ class ProductData(BaseModel):
     image_url: str = Field(..., description="High-resolution primary product image URL")
     additional_images: List[str] = Field(default_factory=list, description="Additional image URLs")
     features: List[str] = Field(default_factory=list, description="Top key feature bullets")
+    friction_highlights: List[str] = Field(default_factory=list, description="Mined buyer friction highlights (renter friendly, dimensions, tool-free)")
+    friction_badge: Optional[str] = Field(None, description="High-converting prominent badge for pin graphics")
     affiliate_url: str = Field(..., description="Destination affiliate link with tag")
     bridge_slug: str = Field(..., description="Unique slug for the Next.js bridge page")
     raw_source: str = Field(default="stealth_scraper", description="Source of extraction")
@@ -67,6 +69,8 @@ class PinGenerateRequest(BaseModel):
     rating: float = Field(default=4.8)
     review_count: str = Field(default="4,500+")
     badge_text: str = Field(default="TOP RATED 2026")
+    friction_badge: Optional[str] = Field(default="100% RENTER FRIENDLY • NO DRILL", description="Prominent friction badge stamped on graphic")
+    friction_highlights: List[str] = Field(default_factory=list, description="Buyer friction highlights")
     template: Literal["bento_dark", "warm_editorial", "problem_solver", "pollinations_lifestyle"] = Field(
         default="bento_dark", description="Visual graphic layout"
     )

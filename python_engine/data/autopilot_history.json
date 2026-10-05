@@ -1144,5 +1144,70 @@
       "style": "anime"
     },
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T04:21:39.718813+00:00",
+    "status": "success",
+    "execution_time_seconds": 14.48,
+    "product": {
+      "asin": "B0C89STMFK",
+      "title": "JARLINK Over the Door Organizer for Bedroom  Pantry",
+      "price": "$43.58",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "bridge_slug": "jarlink-over-the-door-organizer-for-bedroom-pantry-b0c89stmfk"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Your Cluttered Doorway",
+      "secondary_hook": "Maximize vertical storage in any room",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Grey over-the-door hanging organizer with mesh windows holding various household items and toiletries."
+    },
+    "seo_copy": {
+      "title": "Genius Over-The-Door Organizer! Double Your Small Space Storage Instantly",
+      "description": "Tired of clutter? This swing-proof over-the-door organizer holds up to 44 lbs without sagging, featuring 5 roomy pockets and 5 mesh side pockets to instantly maximize your space. Perfect for bedrooms, pantries, or nurseries! Would you use this in your pantry or bedroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#OrganizationHacks",
+        "#AmazonFinds",
+        "#DoorOrganizer",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e404e652ed.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5e3062b157.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3137ed310d.jpg"
+      },
+      {
+        "template": "lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_222aedd577.jpg"
+      }
+    ],
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_594d2cb4.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_594d2cb4.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_594d2cb4.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_594d2cb4.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_594d2cb4.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
   }
 ]

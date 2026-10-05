@@ -121,6 +121,7 @@ class AutonomousAutopilot:
 
         # 5. Parallel 2:3 Pin Variant Generation (4 Aesthetic Styles)
         effective_board = target_board or copy_res.board_recommendation
+        f_badge = product.friction_badge or "100% RENTER FRIENDLY • NO DRILL"
         pin_req = PinGenerateRequest(
             title=vision_meta.get("visual_hook", copy_res.pin_title),
             image_url=product.image_url,
@@ -129,6 +130,8 @@ class AutonomousAutopilot:
             rating=product.rating,
             review_count=product.review_count,
             badge_text=vision_meta.get("badge_text", "TOP RATED 2026"),
+            friction_badge=f_badge,
+            friction_highlights=product.friction_highlights,
             features=product.features,
             category=product.category,
             board_name=effective_board,
@@ -156,6 +159,8 @@ class AutonomousAutopilot:
             features=product.features,
             additional_images=product.additional_images,
             badge_text=vision_meta.get("badge_text", "TOP RATED 2026"),
+            friction_badge=f_badge,
+            friction_highlights=product.friction_highlights,
             style=carousel_style,
         )
 
