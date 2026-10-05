@@ -74,6 +74,9 @@ GLYPH_REPLACEMENTS: Dict[str, str] = {
     "✷": "*",
     "✵": "*",
     "❇": "*",
+    "⭐": "*",
+    "🌟": "*",
+    "💫": "*",
     # Lightning / Fire / Urgent Badges
     "⚡️": "[!]",
     "⚡": "[!]",
@@ -82,13 +85,36 @@ GLYPH_REPLACEMENTS: Dict[str, str] = {
     "⚠️": "[!]",
     "❗": "!",
     "‼️": "!!",
+    "🚨": "[!]",
     # Security / Badges / Shields
     "🛡️": "[SAFE]",
     "🛡": "[SAFE]",
     "🔒": "[SAFE]",
+    "🔐": "[SAFE]",
     # Checks & Markers
     "✔": "✓",
     "☑": "✓",
+    "✅": "✓",
+    "❌": "x",
+    "✖": "x",
+    # Lifehack / Concept / Metrics
+    "💡": "*",
+    "🏷️": "[DEAL]",
+    "🏷": "[DEAL]",
+    "🏠": "[HOME]",
+    "🏡": "[HOME]",
+    "🌿": "*",
+    "🌱": "*",
+    "📍": "*",
+    "🔗": "[LINK]",
+    "🛒": "[CART]",
+    "🛍️": "[SHOP]",
+    "🛍": "[SHOP]",
+    "💎": "*",
+    "🎯": "*",
+    "💯": "100%",
+    "❤️": "<3",
+    "❤": "<3",
     # Rulers & Tools
     "📐": "[SPECS]",
     "📏": "[SPECS]",
@@ -96,6 +122,7 @@ GLYPH_REPLACEMENTS: Dict[str, str] = {
     "⚖": "[CAPACITY]",
     "🔧": "[SETUP]",
     "🛠️": "[SETUP]",
+    "🛠": "[SETUP]",
     "📦": "[BOX]",
 }
 
@@ -105,7 +132,7 @@ def sanitize_canvas_text(text: Optional[str]) -> str:
 
     Replaces non-standard unicode characters, emojis, and arrows that do not have
     native glyphs in Inter or Editorial-Serif with safe ASCII equivalents
-    (e.g., '➔' -> '->', '✦' -> '*', '⚡' -> '[!]').
+    (e.g., '➔' -> '->', '✦' -> '*', '⚡' -> '[!]', '⭐' -> '*').
     Strips variation selectors (\\ufe0f) and dangling unsupported symbols to prevent
     Pillow FreeType .notdef tofu box artifacts.
     """
@@ -119,7 +146,7 @@ def sanitize_canvas_text(text: Optional[str]) -> str:
         if symbol in sanitized:
             sanitized = sanitized.replace(symbol, replacement)
 
-    # 2. Strip Unicode variation selectors (e.g. \ufe0f, \ufe0e)
+    # 2. Strip Unicode variation selectors (e.g. \ufe00-\ufe0f)
     sanitized = re.sub(r"[\ufe00-\ufe0f]", "", sanitized)
 
     # 3. Clean any remaining unsupported high-range unicode emojis while preserving basic punctuation & accents
@@ -129,17 +156,19 @@ def sanitize_canvas_text(text: Optional[str]) -> str:
         code = ord(ch)
         if code < 128:
             cleaned_chars.append(ch)
+        elif code == 8230 or ch == "…":  # Ellipsis …
+            cleaned_chars.append("...")
         elif code in (8226, 183):  # Bullet points • and ·
             cleaned_chars.append("•")
         elif ch == "✓":
             cleaned_chars.append("✓")
         elif 160 <= code <= 255:  # Latin-1 accented characters
             cleaned_chars.append(ch)
-        elif code in (8216, 8217):  # Curved single quotes
+        elif code in (8216, 8217, 8218, 8219):  # Curved single quotes
             cleaned_chars.append("'")
-        elif code in (8220, 8221):  # Curved double quotes
+        elif code in (8220, 8221, 8222, 8223):  # Curved double quotes
             cleaned_chars.append('"')
-        elif code in (8211, 8212):  # En/Em dash
+        elif code in (8211, 8212, 8213):  # En/Em/Horizontal dash
             cleaned_chars.append("-")
         else:
             # Fallback for unrecognized glyphs to safe space or discard
@@ -315,44 +344,62 @@ def generate_ideogram_image(
 
     Ideogram excels at in-image typography, chalkboard jar labels, and clean graphic design.
     Requires IDEOGRAM_API_KEY. Gracefully falls back to None upon failure or missing key.
+    Supports both Ideogram modern v2 endpoint and legacy /generate contracts.
     """
-    effective_key = (api_key or IDEOGRAM_API_KEY or "").strip()
+    import os
+    effective_key = (api_key or IDEOGRAM_API_KEY or os.getenv("IDEOGRAM_API_KEY") or "").strip()
     if not effective_key:
         logger.debug("Tier 1 (Ideogram): No IDEOGRAM_API_KEY configured, skipping to Tier 2.")
         return None
 
-    url = "https://api.ideogram.ai/generate"
+    endpoints = [
+        ("https://api.ideogram.ai/v2/image/generate", {
+            "prompt": prompt,
+            "aspect_ratio": "2:3",
+            "model": "ideogram-v2",
+        }),
+        ("https://api.ideogram.ai/generate", {
+            "image_request": {
+                "prompt": prompt,
+                "aspect_ratio": "ASPECT_2_3",
+                "model": "V_2",
+                "magic_prompt_option": "AUTO",
+            }
+        }),
+    ]
+
     headers = {
         "Api-Key": effective_key,
         "Content-Type": "application/json",
-    }
-    payload = {
-        "image_request": {
-            "prompt": prompt,
-            "aspect_ratio": "ASPECT_2_3",
-            "model": "V_2",
-            "magic_prompt_option": "AUTO",
-        }
     }
 
     logger.info("🎨 [Tier 1] Invoking Ideogram 2.0/3.0 API...")
     try:
         with httpx.Client(timeout=timeout, follow_redirects=True) as client:
-            resp = client.post(url, headers=headers, json=payload)
-            if resp.status_code == 200:
-                data = resp.json()
-                images = data.get("data", [])
-                if images and "url" in images[0]:
-                    image_url = images[0]["url"]
-                    img_resp = client.get(image_url)
-                    if img_resp.status_code == 200 and len(img_resp.content) > 1000:
-                        img = Image.open(io.BytesIO(img_resp.content)).convert("RGBA")
-                        resized = img.resize((CANVAS_WIDTH, CANVAS_HEIGHT), Image.Resampling.LANCZOS)
-                        logger.info("✓ [Tier 1] Ideogram visual generated successfully (1000x1500).")
-                        return resized
-                logger.warning(f"Tier 1 (Ideogram): Unexpected response structure: {data}")
-            else:
-                logger.warning(f"Tier 1 (Ideogram): HTTP {resp.status_code} - {resp.text[:200]}")
+            for url, payload in endpoints:
+                try:
+                    resp = client.post(url, headers=headers, json=payload)
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        images = data.get("data", [])
+                        if images and "url" in images[0]:
+                            image_url = images[0]["url"]
+                            img_resp = client.get(image_url)
+                            if img_resp.status_code == 200 and len(img_resp.content) > 1000:
+                                img = Image.open(io.BytesIO(img_resp.content)).convert("RGBA")
+                                resized = img.resize((CANVAS_WIDTH, CANVAS_HEIGHT), Image.Resampling.LANCZOS)
+                                logger.info("✓ [Tier 1] Ideogram visual generated successfully (1000x1500).")
+                                return resized
+                        logger.warning(f"Tier 1 (Ideogram): Unexpected response structure: {data}")
+                    elif resp.status_code in (404, 400):
+                        logger.debug(f"Tier 1 (Ideogram): Endpoint {url} returned HTTP {resp.status_code}, trying alternate...")
+                        continue
+                    else:
+                        logger.warning(f"Tier 1 (Ideogram): HTTP {resp.status_code} - {resp.text[:200]}")
+                        break
+                except httpx.RequestError as req_err:
+                    logger.debug(f"Tier 1 (Ideogram): Request error on {url}: {req_err}")
+                    continue
     except Exception as err:
         logger.warning(f"Tier 1 (Ideogram): Request failed ({err}), falling back to Tier 2...")
 
@@ -373,11 +420,18 @@ def generate_fal_flux_image(
 
     Industry leader in photorealistic 2700K warm interior lighting and Japandi textures.
     Requires FAL_KEY. Gracefully falls back to None upon failure or missing key.
+    Enforces native FLUX dimensions (896x1344, exact multiples of 16 for 2:3 vertical ratio)
+    to prevent HTTP 422 Unprocessable Entity schema errors from fal.ai.
     """
-    effective_key = (api_key or FAL_KEY or "").strip()
+    import os
+    effective_key = (api_key or FAL_KEY or os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "").strip()
     if not effective_key:
         logger.debug("Tier 2 (Fal.ai FLUX): No FAL_KEY configured, skipping to Tier 3.")
         return None
+
+    # FLUX.1 models strictly require dimensions to be multiples of 16
+    flux_w, flux_h = 896, 1344
+    assert flux_w % 16 == 0 and flux_h % 16 == 0, "FLUX dimensions must be multiples of 16"
 
     url = f"https://fal.run/{model}"
     headers = {
@@ -387,14 +441,14 @@ def generate_fal_flux_image(
     payload = {
         "prompt": prompt,
         "image_size": {
-            "width": CANVAS_WIDTH,
-            "height": CANVAS_HEIGHT,
+            "width": flux_w,
+            "height": flux_h,
         },
         "num_inference_steps": 4 if "schnell" in model else 28,
         "enable_safety_checker": True,
     }
 
-    logger.info(f"🎨 [Tier 2] Invoking Fal.ai FLUX ({model})...")
+    logger.info(f"🎨 [Tier 2] Invoking Fal.ai FLUX ({model}) [{flux_w}x{flux_h}]...")
     try:
         with httpx.Client(timeout=timeout, follow_redirects=True) as client:
             resp = client.post(url, headers=headers, json=payload)
@@ -586,10 +640,15 @@ def generate_visual_with_waterfall(
         style=style,
     )
 
+    import os
+    effective_ideogram_key = (IDEOGRAM_API_KEY or os.getenv("IDEOGRAM_API_KEY") or "").strip()
+    effective_fal_key = (FAL_KEY or os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "").strip()
+    effective_pollinations_key = (POLLINATIONS_API_KEY or os.getenv("POLLINATIONS_API_KEY") or "").strip()
+
     # ----------------------------------------------------
     # TIER 1: IDEOGRAM 2.0 / 3.0 API
     # ----------------------------------------------------
-    if preferred_tier in (None, 1) and IDEOGRAM_API_KEY:
+    if preferred_tier in (None, 1) and effective_ideogram_key:
         try:
             tier1_prompt = build_visual_prompt(
                 product_title=product_title,
@@ -598,7 +657,7 @@ def generate_visual_with_waterfall(
                 style=style,
                 tier=1,
             )
-            img = generate_ideogram_image(tier1_prompt, timeout=25.0)
+            img = generate_ideogram_image(tier1_prompt, api_key=effective_ideogram_key, timeout=25.0)
             if img:
                 elapsed = (time.perf_counter() - start_time) * 1000.0
                 return VisualGenerationResult(
@@ -615,13 +674,13 @@ def generate_visual_with_waterfall(
         except Exception as e:
             error_trail.append(f"Tier 1 (Ideogram): Exception {e}")
     else:
-        if not IDEOGRAM_API_KEY:
+        if not effective_ideogram_key:
             error_trail.append("Tier 1 (Ideogram): Skipped (IDEOGRAM_API_KEY unset)")
 
     # ----------------------------------------------------
     # TIER 2: FAL.AI FLUX.1 [dev / schnell]
     # ----------------------------------------------------
-    if preferred_tier in (None, 1, 2) and FAL_KEY:
+    if preferred_tier in (None, 1, 2) and effective_fal_key:
         try:
             tier2_prompt = build_visual_prompt(
                 product_title=product_title,
@@ -630,7 +689,7 @@ def generate_visual_with_waterfall(
                 style=style,
                 tier=2,
             )
-            img = generate_fal_flux_image(tier2_prompt, timeout=25.0)
+            img = generate_fal_flux_image(tier2_prompt, api_key=effective_fal_key, timeout=25.0)
             if img:
                 elapsed = (time.perf_counter() - start_time) * 1000.0
                 return VisualGenerationResult(
@@ -647,7 +706,7 @@ def generate_visual_with_waterfall(
         except Exception as e:
             error_trail.append(f"Tier 2 (Fal.ai FLUX): Exception {e}")
     else:
-        if not FAL_KEY:
+        if not effective_fal_key:
             error_trail.append("Tier 2 (Fal.ai FLUX): Skipped (FAL_KEY unset)")
 
     # ----------------------------------------------------
@@ -662,7 +721,7 @@ def generate_visual_with_waterfall(
                 style=style,
                 tier=3,
             )
-            img = generate_pollinations_image(tier3_prompt, seed=seed, timeout=20.0)
+            img = generate_pollinations_image(tier3_prompt, seed=seed, api_key=effective_pollinations_key, timeout=20.0)
             if img:
                 elapsed = (time.perf_counter() - start_time) * 1000.0
                 return VisualGenerationResult(
@@ -712,6 +771,8 @@ def render_track_a_lifestyle_pin(
     product_img: Optional[Image.Image] = None,
     subtle_editorial_overlay: bool = True,
     brand_tag: str = "SMART SPACES",
+    preferred_tier: Optional[int] = None,
+    base_image: Optional[Image.Image] = None,
 ) -> Image.Image:
     """Generates Track A (Aspirational Lifestyle Pins).
 
@@ -724,15 +785,22 @@ def render_track_a_lifestyle_pin(
     """
     logger.info("🌿 Rendering Track A (Aspirational Lifestyle Pin) — Full Bleed, Zero Promo Boxes...")
 
-    # 1. Generate full-bleed visual via waterfall fallback
-    result = generate_visual_with_waterfall(
-        product_title=title,
-        board_name=board_name,
-        category=category,
-        style=style,
-        product_img=product_img,
-    )
-    canvas = result.image.copy()
+    if base_image is not None:
+        canvas = base_image.copy()
+    else:
+        # 1. Generate full-bleed visual via waterfall fallback
+        result = generate_visual_with_waterfall(
+            product_title=title,
+            board_name=board_name,
+            category=category,
+            style=style,
+            product_img=product_img,
+            preferred_tier=preferred_tier,
+        )
+        canvas = result.image.copy()
+
+    if canvas.mode != "RGBA":
+        canvas = canvas.convert("RGBA")
 
     # If pure lifestyle with no text overlay is requested, return the pristine full bleed canvas
     if not subtle_editorial_overlay:

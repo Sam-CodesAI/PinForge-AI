@@ -73,6 +73,7 @@ app.add_middleware(
 
 # Mount static directory for rendered pins and assets
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+app.mount("/pins", StaticFiles(directory=PINS_DIR), name="pins")
 
 # In-memory queue of recent forged items for RSS & CSV exports
 FORGED_QUEUE: List[ScheduleItem] = []
@@ -131,33 +132,7 @@ def generate_visual_endpoint(req: VisualGenerateRequest):
     """Generate high-aesthetic Pinterest visual via 4-tier waterfall fallback or render Track A Pin."""
     start_time = time.perf_counter()
     try:
-        if req.track_a:
-            pin_img = render_track_a_lifestyle_pin(
-                title=req.product_title,
-                board_name=req.board_name,
-                category=req.category,
-                style=req.style or "aspirational_lifestyle",
-            )
-            filename = f"track_a_{uuid.uuid4().hex[:10]}.png"
-            output_path = PINS_DIR / filename
-            pin_img.save(output_path, format="PNG", quality=95)
-
-            buffered = io.BytesIO()
-            pin_img.save(buffered, format="PNG")
-            b64_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
-
-            elapsed_ms = round((time.perf_counter() - start_time) * 1000.0, 2)
-            return VisualGenerateResponse(
-                provider="track_a_lifestyle",
-                tier=1,
-                prompt_used=req.product_title,
-                image_url=f"{BASE_URL}/static/pins/{filename}",
-                base64_image=b64_str,
-                render_time_ms=elapsed_ms,
-                is_ai_generated=True,
-                error_trail=[],
-            )
-
+        # 1. Execute multi-tier waterfall visual generation
         result = generate_visual_with_waterfall(
             product_title=req.product_title,
             board_name=req.board_name,
@@ -166,22 +141,37 @@ def generate_visual_endpoint(req: VisualGenerateRequest):
             preferred_tier=req.preferred_tier,
         )
 
-        filename = f"visual_{uuid.uuid4().hex[:10]}.png"
+        # 2. If Track A requested, apply full-bleed editorial overlay atop the generated visual
+        if req.track_a:
+            pin_img = render_track_a_lifestyle_pin(
+                title=req.product_title,
+                board_name=req.board_name,
+                category=req.category,
+                style=req.style or "aspirational_lifestyle",
+                base_image=result.image,
+            )
+            provider_label = f"track_a_{result.provider}"
+        else:
+            pin_img = result.image
+            provider_label = result.provider
+
+        filename = f"{'track_a_' if req.track_a else 'visual_'}{uuid.uuid4().hex[:10]}.png"
         output_path = PINS_DIR / filename
-        result.image.save(output_path, format="PNG", quality=95)
+        pin_img.save(output_path, format="PNG")
 
         buffered = io.BytesIO()
-        result.image.save(buffered, format="PNG")
+        pin_img.save(buffered, format="PNG")
         b64_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
 
+        elapsed_ms = round((time.perf_counter() - start_time) * 1000.0, 2)
         return VisualGenerateResponse(
-            provider=result.provider,
+            provider=provider_label,
             tier=result.tier,
             prompt_used=result.prompt_used,
-            image_url=f"{BASE_URL}/static/pins/{filename}",
+            image_url=f"{BASE_URL}/pins/{filename}",
             base64_image=b64_str,
-            render_time_ms=result.elapsed_ms,
-            is_ai_generated=(result.tier < 4),
+            render_time_ms=elapsed_ms,
+            is_ai_generated=result.is_ai_generated,
             error_trail=result.error_trail,
         )
     except Exception as err:
