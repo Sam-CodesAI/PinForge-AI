@@ -440,11 +440,11 @@ def search_duckduckgo_title(asin: str) -> Optional[str]:
         if r.status_code == 200:
             soup = BeautifulSoup(r.text, "html.parser")
             results = soup.select(".result__title")
-            for res in results[:5]:
+            for res in results[:8]:
                 text = res.get_text(strip=True)
-                if "Amazon.com:" in text or "Amazon:" in text:
-                    cleaned = text.replace("Amazon.com:", "").replace("Amazon:", "").strip()
-                    # Remove trailing ellipsis or site brand
+                if re.search(r"\bAmazon(?:\.[a-z]+)?\b", text, flags=re.IGNORECASE):
+                    cleaned = re.sub(r"^Amazon(?:\.[a-z]+)?\s*:\s*", "", text, flags=re.IGNORECASE).strip()
+                    cleaned = re.sub(r"\s*[-|:]\s*Amazon(?:\.[a-z]+)?.*$", "", cleaned, flags=re.IGNORECASE).strip()
                     cleaned = re.sub(r"\.\.\.$", "", cleaned).strip()
                     if (
                         cleaned.lower() not in ["homepage", "amazon", "amazon.com", "online shopping", "sign in", "cart", ""]

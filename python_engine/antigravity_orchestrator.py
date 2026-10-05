@@ -147,6 +147,35 @@ class AntigravityOrchestrator:
         return analytics_data
 
     # ==========================================
+    # ==========================================
+    # TOOL 3B: CAROUSEL SUITE GENERATOR
+    # ==========================================
+    def tool_render_carousel_suite(
+        self,
+        product_dict: Dict[str, Any],
+        copy_dict: Dict[str, Any],
+        style: str = "cyber_bento",
+    ) -> Dict[str, Any]:
+        """Tool: Renders a 4-slide shopping app carousel suite."""
+        logger.info(f"🖐️ [Tool Executing] tool_render_carousel_suite (Style: {style})")
+        from carousel_engine import generate_carousel_pin_suite
+        f_badge = product_dict.get("friction_badge") or "100% RENTER FRIENDLY • NO DRILL"
+        suite = generate_carousel_pin_suite(
+            title=copy_dict.get("pin_title") or product_dict.get("title", ""),
+            price=product_dict.get("price", "$29.99"),
+            rating=product_dict.get("rating", 4.8),
+            review_count=product_dict.get("review_count", "1,200+"),
+            image_url=product_dict.get("image_url", ""),
+            features=product_dict.get("features", []),
+            additional_images=product_dict.get("additional_images", []),
+            friction_badge=f_badge,
+            friction_highlights=product_dict.get("friction_highlights", []),
+            style=style,
+        )
+        logger.info(f"✓ Rendered 4-slide carousel suite with {suite.get('total_slides', 4)} slides")
+        return suite
+
+    # ==========================================
     # COMPLETE END-TO-END AUTONOMOUS PIPELINE
     # ==========================================
     def execute_autonomous_cycle(
@@ -154,9 +183,10 @@ class AntigravityOrchestrator:
         url_or_asin: str,
         template_style: str = "bento_dark",
         publish_live: bool = False,
+        publish_as_carousel: bool = False,
     ) -> Dict[str, Any]:
         """Executes the full automated workflow from sourcing to FTC bridge routing and Pinterest posting."""
-        logger.info(f"🚀 Starting Autonomous PinForge Cycle for: {url_or_asin}")
+        logger.info(f"🚀 Starting Autonomous PinForge Cycle for: {url_or_asin} (Carousel={publish_as_carousel})")
         start_time = datetime.now()
 
         # Step 1: Source
@@ -165,8 +195,12 @@ class AntigravityOrchestrator:
         # Step 2: Copywriting
         copy = self.tool_generate_copy(product)
 
-        # Step 3: Render Graphic
+        # Step 3: Render Creative
         graphic = self.tool_render_pin(product, copy, template_style=template_style)
+        carousel_suite = None
+        if publish_as_carousel:
+            c_style = template_style if template_style in ["cyber_bento", "luxury_editorial", "story", "anime"] else "cyber_bento"
+            carousel_suite = self.tool_render_carousel_suite(product, copy, style=c_style)
 
         # Step 4: Construct Bridge Destination URL
         slug = product.get("asin", "").lower()
@@ -181,22 +215,78 @@ class AntigravityOrchestrator:
             "image_url": image_url,
             "bridge_url": bridge_url,
             "render_time_ms": graphic.get("render_time_ms"),
+            "is_carousel": publish_as_carousel,
             "status": "ready",
             "published_to_pinterest": False,
         }
+        if carousel_suite:
+            result["carousel_suite"] = carousel_suite
 
         # Step 5: Publish if live mode requested
         if publish_live:
             try:
-                pin_pub = self.tool_publish_pin(
-                    board_name_or_keyword=copy.get("board_recommendation", "Organization"),
-                    title=copy.get("pin_title", ""),
-                    description=copy.get("pin_description", ""),
-                    link=bridge_url,
-                    image_url=image_url,
-                    image_path=graphic.get("image_path"),
-                    base64_image=graphic.get("base64_image"),
-                )
+                board_target = copy.get("board_recommendation", "Room Organization")
+                if publish_as_carousel and carousel_suite and carousel_suite.get("slide_paths"):
+                    prod_title = product.get("title", "")
+                    highlights = product.get("friction_highlights", [])
+                    spec_txt = highlights[1] if len(highlights) > 1 else "Tested load capacity and tool-free setup"
+                    rent_txt = product.get("friction_badge") or "100% RENTER FRIENDLY • NO DRILL"
+
+                    def _slide_t(prefix: str, base_t: str) -> str:
+                        clean_p = prefix.strip()
+                        clean_b = base_t.strip()
+                        max_len = 100 - len(clean_p) - 2
+                        if len(clean_b) <= max_len:
+                            return f"{clean_p}: {clean_b}"
+                        tr = clean_b[:max_len]
+                        if " " in tr:
+                            tr = tr.rsplit(" ", 1)[0]
+                        return f"{clean_p}: {tr.strip(' ,.-–—')}"
+
+                    c_slides = [
+                        {
+                            "image_path": carousel_suite["slide_paths"][0],
+                            "title": f"{copy.get('pin_title', '')[:88]} (Slide 1/4)",
+                            "description": copy.get("pin_description", ""),
+                            "link": bridge_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][1],
+                            "title": _slide_t("Dimensions & Build Specs", prod_title),
+                            "description": f"Full space-saving specifications, dimensions, and {spec_txt.lower()}. Check today's price! #AmazonAssociate",
+                            "link": bridge_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][2],
+                            "title": _slide_t("Color & Angle Variants", prod_title),
+                            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+                            "link": bridge_url,
+                        },
+                        {
+                            "image_path": carousel_suite["slide_paths"][3],
+                            "title": _slide_t("Transform Your Space", prod_title),
+                            "description": f"Real-world space-saving transformation. {rent_txt}. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+                            "link": bridge_url,
+                        },
+                    ]
+                    pin_pub = self.pinterest.publish_carousel_pin(
+                        title=copy.get("pin_title", ""),
+                        description=copy.get("pin_description", ""),
+                        board_name=board_target,
+                        slides=c_slides,
+                        link=bridge_url,
+                    )
+                else:
+                    pin_pub = self.tool_publish_pin(
+                        board_name_or_keyword=board_target,
+                        title=copy.get("pin_title", ""),
+                        description=copy.get("pin_description", ""),
+                        link=bridge_url,
+                        image_url=image_url,
+                        image_path=graphic.get("image_path"),
+                        base64_image=graphic.get("base64_image"),
+                    )
+
                 result["published_to_pinterest"] = True
                 result["pinterest_pin_id"] = pin_pub.get("id")
                 result["status"] = "published"

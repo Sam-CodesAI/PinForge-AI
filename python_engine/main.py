@@ -129,21 +129,6 @@ def rss_feed_endpoint():
         raise HTTPException(status_code=500, detail="Failed to render RSS feed")
 
 
-from pydantic import BaseModel
-
-class PinterestPublishRequest(BaseModel):
-    board_name_or_id: str
-    title: str
-    description: str
-    link: str
-    image_url: str
-
-class AutonomousCycleRequest(BaseModel):
-    url_or_asin: str
-    template_style: str = "bento_dark"
-    publish_live: bool = False
-
-
 @app.get("/api/pinterest/account")
 def get_pinterest_account():
     """Fetch authenticated @Smart_Spaces profile from Pinterest API v5."""
@@ -178,7 +163,7 @@ def get_pinterest_boards():
 
 @app.post("/api/pinterest/publish")
 def publish_pinterest_pin(req: PinterestPublishRequest):
-    """Programmatic Pin Creation via Pinterest API v5."""
+    """Programmatic Pin Creation via Pinterest API v5 (supports single pins and multi-slide carousels)."""
     try:
         from python_engine.pinterest_client import PinterestClient
     except ImportError:
@@ -195,6 +180,12 @@ def publish_pinterest_pin(req: PinterestPublishRequest):
                 link=req.link,
             )
 
+        if not req.image_url:
+            raise HTTPException(
+                status_code=400,
+                detail="Must provide either 'image_url' for single pins or 'slides' (>= 2) for carousels.",
+            )
+
         board_id = client.get_or_create_board(req.board_name_or_id)
         result = client.create_pin(
             board_id=board_id,
@@ -206,6 +197,8 @@ def publish_pinterest_pin(req: PinterestPublishRequest):
         return result
     except PermissionError as perm_err:
         raise HTTPException(status_code=403, detail=str(perm_err))
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Failed to publish pin: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -241,6 +234,7 @@ def run_autonomous_cycle(req: AutonomousCycleRequest):
             url_or_asin=req.url_or_asin,
             template_style=req.template_style,
             publish_live=req.publish_live,
+            publish_as_carousel=req.publish_as_carousel,
         )
         return result
     except Exception as e:

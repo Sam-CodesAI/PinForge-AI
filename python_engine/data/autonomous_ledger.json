@@ -36,5 +36,30 @@
     "published_to_pinterest": true,
     "pinterest_pin_id": "1132444268835762602",
     "timestamp": "2026-10-04T09:41:46.911631"
+  },
+  {
+    "asin": "B087F5K713",
+    "title": "Genius Smart Home Gadget Under $40 That Transforms Tiny Spaces!",
+    "description": "Living in a small apartment doesn't mean sacrificing smart living! This top-rated $39 Amazon Choice tech essential streamlines daily routines while maximizing compact room efficiency. Engineered for durability, it seamlessly elevates any small space aesthetic without adding clutter. Small space debate: Would you set this up in your bedroom or living area? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+    "board_recommendation": "Small Apartment Hacks",
+    "image_url": "https://pinforge.vercel.app/pins/pin_f6a2112938f1.jpg",
+    "bridge_url": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+    "render_time_ms": 1306.55,
+    "is_carousel": true,
+    "status": "ready",
+    "published_to_pinterest": false,
+    "carousel_suite": {
+      "slide_paths": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_81c9f1ec.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_81c9f1ec.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_81c9f1ec.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_81c9f1ec.jpg"
+      ],
+      "composite_path": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_81c9f1ec.jpg",
+      "total_slides": 4,
+      "style": "cyber_bento",
+      "friction_badge": "100% RENTER FRIENDLY \u2022 NO DRILL"
+    },
+    "timestamp": "2026-10-05T09:07:21.079179"
   }
 ]

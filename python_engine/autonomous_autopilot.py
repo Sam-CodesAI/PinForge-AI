@@ -46,6 +46,19 @@ logger = logging.getLogger("PinForge.Autopilot")
 AUTOPILOT_HISTORY_FILE = DATA_DIR / "autopilot_history.json"
 
 
+def _build_slide_title(prefix: str, base_title: str, max_len: int = 100) -> str:
+    """Builds a slide title with prefix, ensuring word-boundary truncation within max_len."""
+    clean_prefix = prefix.strip()
+    clean_title = base_title.strip()
+    allowed_len = max_len - len(clean_prefix) - 2  # for ': '
+    if len(clean_title) <= allowed_len:
+        return f"{clean_prefix}: {clean_title}"
+    truncated = clean_title[:allowed_len]
+    if " " in truncated:
+        truncated = truncated.rsplit(" ", 1)[0]
+    return f"{clean_prefix}: {truncated.strip(' ,.-–—')}"
+
+
 class AutonomousAutopilot:
     """End-to-end autonomous AI loop for Smart Spaces."""
 
@@ -171,29 +184,36 @@ class AutonomousAutopilot:
             try:
                 if publish_as_carousel and carousel_suite.get("slide_paths"):
                     # Native Base64 Carousel Publishing with per-slide deep affiliate links
+                    spec_callout = (
+                        product.friction_highlights[1]
+                        if len(product.friction_highlights) > 1
+                        else (product.features[0] if product.features else "Tested load capacity and tool-free setup")
+                    )
+                    rental_callout = product.friction_badge or "100% RENTER FRIENDLY • NO DRILL"
+
                     carousel_slides = [
                         {
                             "image_path": carousel_suite["slide_paths"][0],
-                            "title": f"{copy_res.pin_title} (Slide 1/4)",
+                            "title": f"{copy_res.pin_title[:88]} (Slide 1/4)",
                             "description": copy_res.pin_description,
                             "link": product.affiliate_url,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][1],
-                            "title": f"Dimensions & Build Specs: {product.title[:60]}",
-                            "description": f"Full space-saving specifications, renter-friendly build details, and tested load capacity. Check today's price! #AmazonAssociate",
+                            "title": _build_slide_title("Dimensions & Build Specs", product.title),
+                            "description": f"Full space-saving specifications, dimensions, and {spec_callout.lower()}. Check today's price! #AmazonAssociate",
                             "link": product.affiliate_url,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][2],
-                            "title": f"Color & Angle Variants: {product.title[:60]}",
-                            "description": f"Multi-angle inspection and compact finish options for every apartment aesthetic. Tap to view on Amazon! #AmazonAssociate",
+                            "title": _build_slide_title("Color & Angle Variants", product.title),
+                            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
                             "link": product.affiliate_url,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][3],
-                            "title": f"Transform Your Space: {product.title[:60]}",
-                            "description": f"How to reclaim wasted gap space and organize your home in minutes. Tap for today's deal! #AmazonAssociate",
+                            "title": _build_slide_title("Transform Your Space", product.title),
+                            "description": f"Real-world space-saving transformation. {rental_callout}. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
                             "link": product.affiliate_url,
                         },
                     ]

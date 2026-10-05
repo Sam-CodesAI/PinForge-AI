@@ -116,6 +116,14 @@ class PinterestClient:
         """Fetch authenticated user profile details."""
         return self._request("user_account")
 
+    def get_pin(self, pin_id: str, pin_metrics: bool = False) -> Dict[str, Any]:
+        """Fetch details for a specific pin by ID from Pinterest API v5."""
+        clean_id = str(pin_id).strip()
+        endpoint = f"pins/{clean_id}"
+        if pin_metrics:
+            endpoint += "?pin_metrics=true"
+        return self._request(endpoint)
+
     def get_boards(self, force_refresh: bool = False) -> List[Dict[str, Any]]:
         """Fetch all boards on the authenticated account and cache name->id mappings."""
         if self._board_cache and not force_refresh:
@@ -338,28 +346,31 @@ class PinterestClient:
             if disclosure.lower() not in s_desc.lower():
                 s_desc = f"{s_desc} {disclosure}"
             slide_description = s_desc[:500]
-            slide_link = slide.get("link") or link or ""
+            slide_link = (slide.get("link") or link or "").strip()
 
-            carousel_items.append({
+            item: Dict[str, Any] = {
                 "content_type": content_type,
                 "data": slide_data,
                 "title": slide_title,
                 "description": slide_description,
-                "link": slide_link,
-            })
+            }
+            if slide_link:
+                item["link"] = slide_link
+            carousel_items.append(item)
 
-        default_link = link or (carousel_items[0]["link"] if carousel_items else "")
-        payload = {
+        default_link = (link or (carousel_items[0].get("link") if carousel_items else "") or "").strip()
+        payload: Dict[str, Any] = {
             "board_id": board_id,
             "title": safe_title,
             "description": safe_desc,
-            "link": default_link,
             "alt_text": (alt_text or safe_title)[:500],
             "media_source": {
                 "source_type": "multiple_image_base64",
                 "items": carousel_items,
             },
         }
+        if default_link:
+            payload["link"] = default_link
 
         result = self._request("pins", method="POST", data=payload)
         self._record_published_pin(result, payload=payload, board_name=board_name, is_carousel=True)
@@ -477,8 +488,12 @@ class PinterestClient:
                         b_name = name.title()
                         break
 
+            pin_id = str(merged.get("id") or merged.get("pin_id") or "").strip()
+            if not pin_id:
+                return
+
             pin_record = {
-                "id": str(merged.get("id") or merged.get("pin_id") or ""),
+                "id": pin_id,
                 "title": merged.get("title") or "Smart Spaces Pin",
                 "link": merged.get("link") or "",
                 "board_id": b_id,

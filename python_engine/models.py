@@ -5,7 +5,7 @@ Strict validation for products, graphic configs, and SEO requests.
 
 from __future__ import annotations
 
-from typing import List, Optional, Literal
+from typing import List, Optional, Literal, Dict, Any
 from pydantic import BaseModel, Field
 
 

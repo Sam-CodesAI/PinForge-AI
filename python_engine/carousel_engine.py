@@ -237,13 +237,10 @@ def render_slide2_specs(
         ("⚡ POP-UP SETUP", "Tool-free fast assembly ready straight out of the box in under 60s."),
         ("⚖️ LOAD TESTED", "Heavy-duty reinforced alloy framework with smooth mobility."),
     ]
-    if friction_highlights and len(friction_highlights) >= 4:
-        spec_items = [
-            ("🛡️ RENTER-SAFE", f"{friction_highlights[0]} — Zero permanent wall damage."),
-            ("⚡ QUICK SETUP", f"{friction_highlights[1]} — Ready in seconds without tools."),
-            ("📐 DIMENSIONS", f"{friction_highlights[2]} — Maximizes narrow compact floor space."),
-            ("⚖️ CAPACITY", f"{friction_highlights[3]} — Heavy-duty load tested stability."),
-        ]
+    if friction_highlights:
+        default_headers = ["🛡️ RENTER-SAFE", "⚡ QUICK SETUP", "📐 DIMENSIONS", "⚖️ CAPACITY"]
+        for i, h in enumerate(friction_highlights[:4]):
+            spec_items[i] = (default_headers[i], f"{h} — Engineered for compact living.")
     elif features:
         for i, f in enumerate(features[:4]):
             spec_items[i] = (f"✓ FEATURE {i+1}", f[:70] + "..." if len(f) > 70 else f)
@@ -433,19 +430,19 @@ def render_slide4_uses(
     sub_font = get_font(REGULAR_FONT_PATH, 24)
     draw.text((70, 120), "How verified buyers maximize every square inch", fill=(148, 163, 184, 255), font=sub_font)
 
-    # 3 High-Impact Practical Use Cards
-    if friction_highlights and len(friction_highlights) >= 3:
-        use_cases = [
-            (f"1. {friction_highlights[0]}", "Unlocks immediate vertical storage without permanent wall damage or landlord friction."),
-            (f"2. {friction_highlights[1]}", "Instant setup straight out of the box so you reclaim living space immediately."),
-            (f"3. {friction_highlights[2]}", "Engineered to fit tight compact floor plans while maximizing storage utility."),
+    use_cases = [
+        ("1. SMALL APARTMENTS & STUDIOS • NO DRILL", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without wall damage."),
+        ("2. BATHROOM & LAUNDRY ESSENTIAL", "Moisture-resistant materials keep damp towels and toiletries organized, off counters, and perfectly ventilated."),
+        ("3. TOOL-FREE 60S ASSEMBLY & FOLD", "Reclaims floor space and keeps daily essentials accessible while folding completely flat in seconds when moving."),
+    ]
+    if friction_highlights:
+        default_descs = [
+            "Unlocks immediate vertical storage without permanent wall damage or landlord friction.",
+            "Instant setup straight out of the box so you reclaim living space immediately.",
+            "Engineered to fit tight compact floor plans while maximizing storage utility.",
         ]
-    else:
-        use_cases = [
-            ("1. SMALL APARTMENTS & STUDIOS • NO DRILL", "Slips into narrow unutilized gaps between appliances or furniture, unlocking immediate vertical storage without wall damage."),
-            ("2. BATHROOM & LAUNDRY ESSENTIAL", "Moisture-resistant materials keep damp towels and toiletries organized, off counters, and perfectly ventilated."),
-            ("3. TOOL-FREE 60S ASSEMBLY & FOLD", "Reclaims floor space and keeps daily essentials accessible while folding completely flat in seconds when moving."),
-        ]
+        for idx, h in enumerate(friction_highlights[:3]):
+            use_cases[idx] = (f"{idx+1}. {h}", default_descs[idx])
 
     card_y = 185
     for heading, desc in use_cases:
