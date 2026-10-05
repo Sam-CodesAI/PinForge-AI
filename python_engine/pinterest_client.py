@@ -243,7 +243,7 @@ class PinterestClient:
             "title": safe_title,
             "description": safe_desc,
             "link": link,
-            "alt_text": alt_text or safe_title,
+            "alt_text": (alt_text or safe_title)[:500],
             "media_source": media_source,
         }
 
@@ -354,7 +354,7 @@ class PinterestClient:
             "title": safe_title,
             "description": safe_desc,
             "link": default_link,
-            "alt_text": alt_text or safe_title,
+            "alt_text": (alt_text or safe_title)[:500],
             "media_source": {
                 "source_type": "multiple_image_base64",
                 "items": carousel_items,

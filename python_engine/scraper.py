@@ -440,13 +440,17 @@ def search_duckduckgo_title(asin: str) -> Optional[str]:
         if r.status_code == 200:
             soup = BeautifulSoup(r.text, "html.parser")
             results = soup.select(".result__title")
-            for res in results[:3]:
+            for res in results[:5]:
                 text = res.get_text(strip=True)
                 if "Amazon.com:" in text or "Amazon:" in text:
                     cleaned = text.replace("Amazon.com:", "").replace("Amazon:", "").strip()
                     # Remove trailing ellipsis or site brand
                     cleaned = re.sub(r"\.\.\.$", "", cleaned).strip()
-                    return cleaned
+                    if (
+                        cleaned.lower() not in ["homepage", "amazon", "amazon.com", "online shopping", "sign in", "cart", ""]
+                        and len(cleaned) >= 8
+                    ):
+                        return cleaned
     except Exception as err:
         logger.warning(f"DuckDuckGo fallback search failed for {asin}: {err}")
     return None
@@ -534,8 +538,13 @@ def fetch_product(
             raw_source="stealth_scraper",
         )
 
-    # Tier 3: Search DuckDuckGo snippet fallback
-    ddg_title = search_duckduckgo_title(asin) or known_title
+    # Tier 3: Search DuckDuckGo snippet fallback or prioritize valid known_title
+    valid_known_title = (
+        known_title
+        if (known_title and known_title.strip().lower() not in ["homepage", "amazon", "amazon.com", ""] and len(known_title.strip()) >= 5)
+        else None
+    )
+    ddg_title = valid_known_title or search_duckduckgo_title(asin) or known_title
     if ddg_title:
         clean_title = clean_amazon_title(ddg_title)
         slug = f"{slugify(clean_title)}-{asin.lower()}"

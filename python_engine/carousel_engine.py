@@ -564,6 +564,18 @@ def generate_carousel_pin_suite(
 ) -> Dict[str, Any]:
     """Generates the full 4-slide shopping app carousel + 1 composite overview graphic."""
     product_img = download_image(image_url)
+    if not product_img:
+        try:
+            from python_engine.pollinations_engine import (
+                build_lifestyle_prompt,
+                generate_pollinations_image,
+            )
+            l_prompt = build_lifestyle_prompt(title, style=style)
+            product_img = generate_pollinations_image(l_prompt, timeout=15.0)
+            if product_img:
+                logger.info(f"✓ Generated high-res Pollinations visual fallback for carousel: '{title[:40]}'")
+        except Exception as e:
+            logger.warning(f"Could not generate pollinations fallback for carousel: {e}")
 
     # Generate 4 slides
     s1 = render_slide1_showcase(title, price, rating, review_count, product_img, badge_text, friction_badge, style)

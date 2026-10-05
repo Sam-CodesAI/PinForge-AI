@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-05T07:04:05.143406+00:00",
+  "last_updated": "2026-10-05T08:55:35.581475+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 8,
+  "total_pins_evaluated": 9,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835762602",
@@ -16,7 +16,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.472724+00:00"
+      "evaluated_at": "2026-10-05T08:55:31.149818+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -31,12 +31,27 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.697081+00:00"
+      "evaluated_at": "2026-10-05T08:55:31.576596+00:00"
+    },
+    {
+      "pin_id": "1132444268835846222",
+      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "evaluated_at": "2026-10-05T08:55:32.012549+00:00"
     },
     {
       "pin_id": "1132444268835831954",
       "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/",
       "metrics": {
         "impressions": 0,
@@ -46,12 +61,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.946779+00:00"
+      "evaluated_at": "2026-10-05T08:55:32.450132+00:00"
     },
     {
       "pin_id": "1132444268835821570",
       "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -61,12 +76,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.212188+00:00"
+      "evaluated_at": "2026-10-05T08:55:33.685276+00:00"
     },
     {
       "pin_id": "1132444268835809911",
       "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -76,12 +91,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.462761+00:00"
+      "evaluated_at": "2026-10-05T08:55:34.179527+00:00"
     },
     {
       "pin_id": "1132444268835775000",
       "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -91,12 +106,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.728477+00:00"
+      "evaluated_at": "2026-10-05T08:55:34.632454+00:00"
     },
     {
       "pin_id": "1132444268835762503",
       "title": "Local Graphic Base64 Pin Test 2026",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -106,12 +121,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.934897+00:00"
+      "evaluated_at": "2026-10-05T08:55:35.111638+00:00"
     },
     {
       "pin_id": "1132444268835762446",
       "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -121,19 +136,19 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:05.143372+00:00"
+      "evaluated_at": "2026-10-05T08:55:35.581441+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
-      "pin_count": 7,
+      "pin_count": 2,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
       "total_impressions": 0
     },
     "Room Organization": {
-      "pin_count": 1,
+      "pin_count": 7,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -154,7 +169,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.472724+00:00"
+      "evaluated_at": "2026-10-05T08:55:31.149818+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -169,12 +184,27 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.697081+00:00"
+      "evaluated_at": "2026-10-05T08:55:31.576596+00:00"
+    },
+    {
+      "pin_id": "1132444268835846222",
+      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "evaluated_at": "2026-10-05T08:55:32.012549+00:00"
     },
     {
       "pin_id": "1132444268835831954",
       "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/",
       "metrics": {
         "impressions": 0,
@@ -184,12 +214,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:03.946779+00:00"
+      "evaluated_at": "2026-10-05T08:55:32.450132+00:00"
     },
     {
       "pin_id": "1132444268835821570",
       "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -199,12 +229,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.212188+00:00"
+      "evaluated_at": "2026-10-05T08:55:33.685276+00:00"
     },
     {
       "pin_id": "1132444268835809911",
       "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -214,12 +244,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.462761+00:00"
+      "evaluated_at": "2026-10-05T08:55:34.179527+00:00"
     },
     {
       "pin_id": "1132444268835775000",
       "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -229,12 +259,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.728477+00:00"
+      "evaluated_at": "2026-10-05T08:55:34.632454+00:00"
     },
     {
       "pin_id": "1132444268835762503",
       "title": "Local Graphic Base64 Pin Test 2026",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -244,12 +274,12 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:04.934897+00:00"
+      "evaluated_at": "2026-10-05T08:55:35.111638+00:00"
     },
     {
       "pin_id": "1132444268835762446",
       "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-      "board": "Small Apartment Hacks",
+      "board": "Room Organization",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
@@ -259,7 +289,7 @@
         "comments": 0
       },
       "aes_score": 0.0,
-      "evaluated_at": "2026-10-05T07:04:05.143372+00:00"
+      "evaluated_at": "2026-10-05T08:55:35.581441+00:00"
     }
   ]
 }
