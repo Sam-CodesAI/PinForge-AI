@@ -599,5 +599,105 @@
       },
       "pin_id": "1132444268835809911"
     }
+  },
+  {
+    "timestamp": "2026-10-05T00:04:31.901308+00:00",
+    "status": "success",
+    "execution_time_seconds": 34.09,
+    "product": {
+      "asin": "B0HBX9BHQD",
+      "title": "Room Divider with Shelves and Shoe Storage Cabinet",
+      "price": "$169.99",
+      "rating": 5.0,
+      "affiliate_url": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "bridge_slug": "room-divider-with-shelves-and-shoe-storage-cabinet-b0hbx9bhqd"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#2C2A29",
+      "accent_hex": "#D97706",
+      "badge_text": "3-in-1 Space Saver",
+      "visual_hook": "Divide Rooms & Hide Clutter",
+      "secondary_hook": "Shoe storage, coat rack, and divider",
+      "target_audience": "Apartment Renters",
+      "alt_text": "White 3-in-1 room divider with coat rack, display shelves, and hidden pull-down shoe storage cabinet."
+    },
+    "seo_copy": {
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "description": "Transform your open-concept apartment instantly! This genius room divider with shelves and a hidden shoe cabinet creates instant privacy, sleek entryway organization, and gorgeous vertical slat style without blocking natural light. Stop living in clutter and define your space beautifully today. #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#ApartmentTherapy",
+        "#EntrywayOrganization",
+        "#AmazonHome",
+        "#RoomDivider",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_474c533212.jpg"
+      },
+      {
+        "template": "editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ea1abc3dff.jpg"
+      },
+      {
+        "template": "solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_0a56f0cb9e.jpg"
+      }
+    ],
+    "live_pinterest": {
+      "is_standard": true,
+      "is_owner": true,
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "id": "1132444268835821570",
+      "is_product": false,
+      "dominant_color": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/2a/a8/9c/2aa89c04097e1ef880cd9e945fd63140.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/2a/a8/9c/2aa89c04097e1ef880cd9e945fd63140.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/2a/a8/9c/2aa89c04097e1ef880cd9e945fd63140.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/2a/a8/9c/2aa89c04097e1ef880cd9e945fd63140.jpg"
+          }
+        }
+      },
+      "has_been_promoted": false,
+      "created_at": "2026-10-05T00:04:31",
+      "product_tags": [],
+      "board_section_id": null,
+      "pin_metrics": null,
+      "board_id": "1132444337492930442",
+      "description": "Transform your open-concept apartment instantly! This genius room divider with shelves and a hidden shoe cabinet creates instant privacy, sleek entryway organization, and gorgeous vertical slat style without blocking natural light. Stop living in clutter and define your space beautifully today. #AmazonAssociate",
+      "parent_pin_id": null,
+      "is_removable": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "alt_text": "White 3-in-1 room divider with coat rack, display shelves, and hidden pull-down shoe storage cabinet.",
+      "creative_type": "REGULAR",
+      "pin_id": "1132444268835821570"
+    }
   }
 ]
