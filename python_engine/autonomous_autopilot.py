@@ -75,10 +75,12 @@ class AutonomousAutopilot:
         custom_queries: Optional[List[str]] = None,
         publish_live: bool = True,
         publish_as_carousel: bool = False,
+        track_a: bool = False,
+        template_style: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Runs 1 complete autonomous cycle."""
         cycle_start = time.perf_counter()
-        logger.info("🚀 Starting PinForge AI Autonomous Autopilot cycle...")
+        logger.info(f"🚀 Starting PinForge AI Autonomous Autopilot cycle (Track A={track_a})...")
 
         # 1. Product Discovery
         if target_asin_or_url:
@@ -227,20 +229,26 @@ class AutonomousAutopilot:
                     )
                     logger.info(f"✅ Published live Carousel Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
                 else:
-                    # Dynamic single-pin template routing based on AI vision theme and board intent
-                    v_theme = vision_meta.get("theme", "bento_dark")
-                    chosen_variant = variants[0]
-                    for v in variants:
-                        if v_theme in v.image_path:
-                            chosen_variant = v
-                            break
+                    # Dynamic single-pin template routing based on Track A, AI vision theme, and board intent
+                    if track_a or template_style in ("aspirational_lifestyle", "track_a_lifestyle"):
+                        chosen_variant = next(
+                            (v for v in variants if "aspirational_lifestyle" in v.image_path),
+                            variants[0],
+                        )
                     else:
-                        # If specific theme not found, rotate lifestyle for apartment/studio boards
-                        if any(k in effective_board.lower() for k in ["apartment", "studio"]):
-                            for v in variants:
-                                if "pollinations_lifestyle" in v.image_path:
-                                    chosen_variant = v
-                                    break
+                        v_theme = vision_meta.get("theme", "bento_dark")
+                        chosen_variant = variants[0]
+                        for v in variants:
+                            if v_theme in v.image_path:
+                                chosen_variant = v
+                                break
+                        else:
+                            # If specific theme not found, rotate lifestyle for apartment/studio boards
+                            if any(k in effective_board.lower() for k in ["apartment", "studio"]):
+                                for v in variants:
+                                    if "aspirational_lifestyle" in v.image_path or "pollinations_lifestyle" in v.image_path:
+                                        chosen_variant = v
+                                        break
 
                     live_pin_data = self.pinterest.publish_pin(
                         title=copy_res.pin_title,
@@ -283,9 +291,10 @@ class AutonomousAutopilot:
                 "hashtags": copy_res.hashtags,
             },
             "creative_variants": [
-                {"template": v.image_path.split("_")[-2] if "_" in v.image_path else "pin", "url": v.image_url}
+                {"template": v.template or (v.image_path.split("_")[-2] if "_" in v.image_path else "pin"), "url": v.image_url}
                 for v in variants
             ],
+            "track_a_lifestyle": next((v.image_url for v in variants if "aspirational_lifestyle" in v.image_path), None),
             "carousel": {
                 "slides": carousel_suite["slide_paths"],
                 "composite": carousel_suite["composite_path"],

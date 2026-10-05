@@ -36,6 +36,7 @@ from python_engine.pin_generator import (
     get_font,
     wrap_text,
 )
+from python_engine.visual_engine import sanitize_canvas_text
 
 logger = logging.getLogger("pinforge.carousel")
 
@@ -119,7 +120,7 @@ def render_slide1_showcase(
 
     # 1. Top Category Pill
     badge_font = get_font(BOLD_FONT_PATH, 24)
-    b_text = f"✦ {badge_text.upper()}"
+    b_text = f"* {sanitize_canvas_text(badge_text).upper()}"
     bbox = badge_font.getbbox(b_text)
     bw = (bbox[2] - bbox[0]) + 40
     bx0 = (CANVAS_WIDTH - bw) // 2
@@ -129,7 +130,8 @@ def render_slide1_showcase(
     # 2. Hero Headline
     title_font_size = 46 if len(title) < 55 else 38
     title_font = get_font(BOLD_FONT_PATH, title_font_size)
-    lines = wrap_text(title, title_font, max_width=860)[:3]
+    clean_title = sanitize_canvas_text(title)
+    lines = wrap_text(clean_title, title_font, max_width=860)[:3]
     cur_y = 135
     for line in lines:
         line_bbox = title_font.getbbox(line)
@@ -165,9 +167,9 @@ def render_slide1_showcase(
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
 
     # Prominent Gen-Z Neon Friction Badge on Card
-    f_badge = (friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
-    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
-        f_badge = f"⚡ {f_badge}"
+    f_badge = sanitize_canvas_text(friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["[!] ", "* ", "! "]):
+        f_badge = f"[!] {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = (fb_bbox[2] - fb_bbox[0]) + 40
@@ -183,19 +185,20 @@ def render_slide1_showcase(
         draw_star(draw, 90 + s * 34, bar_y + 12, 13, 6, f_color)
 
     r_font = get_font(BOLD_FONT_PATH, 26)
-    draw.text((275, bar_y - 2), f"{rating:.1f} • {review_count}", fill=(203, 213, 225, 255) if style == "cyber_bento" or style == "story" else (41, 37, 36, 255), font=r_font)
+    draw.text((275, bar_y - 2), f"{rating:.1f} • {sanitize_canvas_text(review_count)}", fill=(203, 213, 225, 255) if style == "cyber_bento" or style == "story" else (41, 37, 36, 255), font=r_font)
 
     # Price pill
     p_font = get_font(BOLD_FONT_PATH, 44)
-    p_bbox = p_font.getbbox(price)
+    price_clean = sanitize_canvas_text(price)
+    p_bbox = p_font.getbbox(price_clean)
     pw = p_bbox[2] - p_bbox[0]
-    draw.text((CANVAS_WIDTH - 90 - pw, bar_y - 12), price, fill=(52, 211, 153, 255), font=p_font)
+    draw.text((CANVAS_WIDTH - 90 - pw, bar_y - 12), price_clean, fill=(52, 211, 153, 255), font=p_font)
 
     # 5. Swipe Prompt Pill
     btn_y0 = CANVAS_HEIGHT - 185
     draw.rounded_rectangle([80, btn_y0, CANVAS_WIDTH - 80, btn_y0 + 85], radius=24, fill=(14, 165, 233, 255))
     cta_font = get_font(BOLD_FONT_PATH, 30)
-    cta_text = "SWIPE FOR PRODUCT SPECS ➔"
+    cta_text = "SWIPE FOR PRODUCT SPECS ->"
     c_bbox = cta_font.getbbox(cta_text)
     draw.text(((CANVAS_WIDTH - (c_bbox[2] - c_bbox[0])) // 2, btn_y0 + 26), cta_text, fill=(255, 255, 255, 255), font=cta_font)
 
@@ -232,18 +235,19 @@ def render_slide2_specs(
     panel_y0 = 175
 
     spec_items = [
-        ("📐 EXACT FIT", "Ultra-slim compact profile engineered to slide into narrow gaps."),
-        ("🛡️ RENTER-SAFE", "100% damage-free structure with zero drilling or wall holes required."),
-        ("⚡ POP-UP SETUP", "Tool-free fast assembly ready straight out of the box in under 60s."),
-        ("⚖️ LOAD TESTED", "Heavy-duty reinforced alloy framework with smooth mobility."),
+        ("[SPECS] EXACT FIT", "Ultra-slim compact profile engineered to slide into narrow gaps."),
+        ("[SAFE] RENTER-SAFE", "100% damage-free structure with zero drilling or wall holes required."),
+        ("[!] POP-UP SETUP", "Tool-free fast assembly ready straight out of the box in under 60s."),
+        ("[CAPACITY] LOAD TESTED", "Heavy-duty reinforced alloy framework with smooth mobility."),
     ]
     if friction_highlights:
-        default_headers = ["🛡️ RENTER-SAFE", "⚡ QUICK SETUP", "📐 DIMENSIONS", "⚖️ CAPACITY"]
+        default_headers = ["[SAFE] RENTER-SAFE", "[!] QUICK SETUP", "[SPECS] DIMENSIONS", "[CAPACITY] CAPACITY"]
         for i, h in enumerate(friction_highlights[:4]):
-            spec_items[i] = (default_headers[i], f"{h} — Engineered for compact living.")
+            spec_items[i] = (default_headers[i], f"{sanitize_canvas_text(h)} — Engineered for compact living.")
     elif features:
         for i, f in enumerate(features[:4]):
-            spec_items[i] = (f"✓ FEATURE {i+1}", f[:70] + "..." if len(f) > 70 else f)
+            f_clean = sanitize_canvas_text(f)
+            spec_items[i] = (f"✓ FEATURE {i+1}", f_clean[:70] + "..." if len(f_clean) > 70 else f_clean)
 
     card_y = panel_y0
     for title_txt, desc_txt in spec_items:
@@ -277,7 +281,7 @@ def render_slide2_specs(
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
 
     # Stamped Gen-Z Neon Friction Badge on right panel
-    rz_badge = f"✦ {(friction_badge or 'TOOL-FREE 60S SETUP').upper()}"
+    rz_badge = f"* {sanitize_canvas_text(friction_badge or 'TOOL-FREE 60S SETUP').upper()}"
     rz_font = get_font(BOLD_FONT_PATH, 16)
     rz_bbox = rz_font.getbbox(rz_badge)
     rz_w = (rz_bbox[2] - rz_bbox[0]) + 28
@@ -288,14 +292,14 @@ def render_slide2_specs(
     # Right Side Price Callout
     draw.rounded_rectangle([right_x + 20, panel_y0 + right_h - 75, right_x + right_w - 20, panel_y0 + right_h - 18], radius=14, fill=(15, 23, 42, 240))
     rp_font = get_font(BOLD_FONT_PATH, 26)
-    rp_text = f"PRICE: {price}"
+    rp_text = f"PRICE: {sanitize_canvas_text(price)}"
     draw.text((right_x + 35, panel_y0 + right_h - 65), rp_text, fill=(52, 211, 153, 255), font=rp_font)
 
     # Bottom Swipe Prompt
     btn_y0 = CANVAS_HEIGHT - 185
     draw.rounded_rectangle([70, btn_y0, CANVAS_WIDTH - 70, btn_y0 + 85], radius=24, fill=(56, 189, 248, 255))
     cta_font = get_font(BOLD_FONT_PATH, 30)
-    cta_text = "SWIPE FOR PRODUCT VARIANTS ➔"
+    cta_text = "SWIPE FOR PRODUCT VARIANTS ->"
     c_bbox = cta_font.getbbox(cta_text)
     draw.text(((CANVAS_WIDTH - (c_bbox[2] - c_bbox[0])) // 2, btn_y0 + 26), cta_text, fill=(15, 23, 42, 255), font=cta_font)
 
@@ -400,7 +404,7 @@ def render_slide3_variants(
     btn_y0 = CANVAS_HEIGHT - 185
     draw.rounded_rectangle([70, btn_y0, CANVAS_WIDTH - 70, btn_y0 + 85], radius=24, fill=(16, 185, 129, 255))
     cta_font = get_font(BOLD_FONT_PATH, 30)
-    cta_text = "SWIPE FOR LIFESTYLE USES ➔"
+    cta_text = "SWIPE FOR LIFESTYLE USES ->"
     c_bbox = cta_font.getbbox(cta_text)
     draw.text(((CANVAS_WIDTH - (c_bbox[2] - c_bbox[0])) // 2, btn_y0 + 26), cta_text, fill=(255, 255, 255, 255), font=cta_font)
 
@@ -442,7 +446,7 @@ def render_slide4_uses(
             "Engineered to fit tight compact floor plans while maximizing storage utility.",
         ]
         for idx, h in enumerate(friction_highlights[:3]):
-            use_cases[idx] = (f"{idx+1}. {h}", default_descs[idx])
+            use_cases[idx] = (f"{idx+1}. {sanitize_canvas_text(h)}", default_descs[idx])
 
     card_y = 185
     for heading, desc in use_cases:
@@ -459,7 +463,7 @@ def render_slide4_uses(
         card_y += 180
 
     # Stamped Gen-Z Neon Friction Badge on Slide 4
-    f_badge = f"✦ {(friction_badge or '100% RENTER FRIENDLY • NO DRILL').upper()}"
+    f_badge = f"* {sanitize_canvas_text(friction_badge or '100% RENTER FRIENDLY • NO DRILL').upper()}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, CANVAS_WIDTH - 140)
@@ -480,13 +484,13 @@ def render_slide4_uses(
     draw.rounded_rectangle([70, btn_y0, CANVAS_WIDTH - 70, btn_y0 + btn_h], radius=28, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 34)
-    btn_text = f"CHECK TODAY'S DEAL ({price}) ➔"
+    btn_text = f"CHECK TODAY'S DEAL ({sanitize_canvas_text(price)}) ->"
     b_bbox = btn_font.getbbox(btn_text)
     draw.text(((CANVAS_WIDTH - (b_bbox[2] - b_bbox[0])) // 2, btn_y0 + 30), btn_text, fill=(15, 23, 42, 255), font=btn_font)
 
     # FTC Disclosure
     ftc_font = get_font(REGULAR_FONT_PATH, 16)
-    ftc_text = "FTC Disclosure: As an Amazon Associate I earn from qualifying purchases"
+    ftc_text = sanitize_canvas_text("FTC Disclosure: As an Amazon Associate I earn from qualifying purchases")
     f_bbox = ftc_font.getbbox(ftc_text)
     draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 65), ftc_text, fill=(148, 163, 184, 255), font=ftc_font)
 
@@ -504,7 +508,7 @@ def render_composite_carousel_preview(slides: List[Image.Image], friction_badge:
 
     # Top Banner
     b_font = get_font(BOLD_FONT_PATH, 30)
-    b_text = "✦ COMPLETE PRODUCT BREAKDOWN & REVIEW ✦"
+    b_text = "* COMPLETE PRODUCT BREAKDOWN & REVIEW *"
     b_bbox = b_font.getbbox(b_text)
     draw.text(((CANVAS_WIDTH - (b_bbox[2] - b_bbox[0])) // 2, 45), b_text, fill=(251, 191, 36, 255), font=b_font)
 
@@ -524,7 +528,7 @@ def render_composite_carousel_preview(slides: List[Image.Image], friction_badge:
             draw.rounded_rectangle([pos[0], pos[1], pos[0] + cell_w, pos[1] + cell_h], radius=14, outline=(245, 158, 11, 180), width=2)
 
     # Center Gen-Z Friction Badge Callout
-    center_pill = f"✦ {friction_badge.upper()} ➔"
+    center_pill = f"* {sanitize_canvas_text(friction_badge).upper()} ->"
     cp_font = get_font(BOLD_FONT_PATH, 22)
     cp_bbox = cp_font.getbbox(center_pill)
     cp_w = (cp_bbox[2] - cp_bbox[0]) + 44
@@ -536,7 +540,7 @@ def render_composite_carousel_preview(slides: List[Image.Image], friction_badge:
     btn_y0 = CANVAS_HEIGHT - 85
     draw.rounded_rectangle([65, btn_y0, CANVAS_WIDTH - 65, btn_y0 + 65], radius=18, fill=(245, 158, 11, 255))
     cta_f = get_font(BOLD_FONT_PATH, 26)
-    c_txt = "EXPLORE FULL AMAZON DEAL ➔"
+    c_txt = "EXPLORE FULL AMAZON DEAL ->"
     cb = cta_f.getbbox(c_txt)
     draw.text(((CANVAS_WIDTH - (cb[2] - cb[0])) // 2, btn_y0 + 18), c_txt, fill=(15, 23, 42, 255), font=cta_f)
 

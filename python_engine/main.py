@@ -6,14 +6,28 @@ multi-model AI SEO copy generation, and Pinterest bulk export channels.
 
 from __future__ import annotations
 
+import base64
+import io
+import json
 import logging
+import time
 from typing import List
+import uuid
 
 from fastapi import FastAPI, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from python_engine.config import HOST, PORT, STATIC_DIR
+from python_engine.config import (
+    HOST,
+    PORT,
+    STATIC_DIR,
+    PINS_DIR,
+    BASE_URL,
+    IDEOGRAM_API_KEY,
+    FAL_KEY,
+    POLLINATIONS_API_KEY,
+)
 from python_engine.csv_exporter import generate_pinterest_bulk_csv
 from python_engine.models import (
     AutonomousCycleRequest,
@@ -26,11 +40,18 @@ from python_engine.models import (
     PinterestPublishRequest,
     ProductData,
     ScheduleItem,
+    VisualGenerateRequest,
+    VisualGenerateResponse,
 )
 from python_engine.pin_generator import generate_pin_graphic
 from python_engine.rss_generator import generate_pinterest_rss
 from python_engine.scraper import fetch_product
 from python_engine.seo_engine import generate_pin_copy
+from python_engine.visual_engine import (
+    generate_visual_with_waterfall,
+    render_track_a_lifestyle_pin,
+    sanitize_canvas_text,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger("pinforge.main")
@@ -65,7 +86,107 @@ def health_check():
         "service": "PinForge AI Engine",
         "version": "1.0.0",
         "queue_count": len(FORGED_QUEUE),
+        "visual_engine": {
+            "ideogram_configured": bool(IDEOGRAM_API_KEY),
+            "fal_configured": bool(FAL_KEY),
+            "pollinations_configured": True,
+            "tier4_fallback": "local_aesthetic_gradient",
+        },
     }
+
+
+@app.get("/api/visual/providers")
+def get_visual_providers():
+    """Return available multi-provider visual generation tiers and active credentials."""
+    return {
+        "tier1": {
+            "provider": "ideogram",
+            "model": "ideogram-v2",
+            "specialty": "in-image typography, chalkboard jar labels, typography signage",
+            "configured": bool(IDEOGRAM_API_KEY),
+        },
+        "tier2": {
+            "provider": "fal",
+            "model": "fal-ai/flux/dev",
+            "specialty": "photorealistic 2700K Japandi architecture, warm interior textures",
+            "configured": bool(FAL_KEY),
+        },
+        "tier3": {
+            "provider": "pollinations",
+            "model": "flux",
+            "specialty": "free/open web generation with auto-fallback on 402/429",
+            "configured": bool(POLLINATIONS_API_KEY),
+        },
+        "tier4": {
+            "provider": "local_aesthetic",
+            "model": "procedural_pillow_gradient",
+            "specialty": "100% zero-crash 2700K ambient gradient & framing canvas",
+            "configured": True,
+        },
+    }
+
+
+@app.post("/api/visual/generate", response_model=VisualGenerateResponse)
+def generate_visual_endpoint(req: VisualGenerateRequest):
+    """Generate high-aesthetic Pinterest visual via 4-tier waterfall fallback or render Track A Pin."""
+    start_time = time.perf_counter()
+    try:
+        if req.track_a:
+            pin_img = render_track_a_lifestyle_pin(
+                title=req.product_title,
+                board_name=req.board_name,
+                category=req.category,
+                style=req.style or "aspirational_lifestyle",
+            )
+            filename = f"track_a_{uuid.uuid4().hex[:10]}.png"
+            output_path = PINS_DIR / filename
+            pin_img.save(output_path, format="PNG", quality=95)
+
+            buffered = io.BytesIO()
+            pin_img.save(buffered, format="PNG")
+            b64_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
+
+            elapsed_ms = round((time.perf_counter() - start_time) * 1000.0, 2)
+            return VisualGenerateResponse(
+                provider="track_a_lifestyle",
+                tier=1,
+                prompt_used=req.product_title,
+                image_url=f"{BASE_URL}/static/pins/{filename}",
+                base64_image=b64_str,
+                render_time_ms=elapsed_ms,
+                is_ai_generated=True,
+                error_trail=[],
+            )
+
+        result = generate_visual_with_waterfall(
+            product_title=req.product_title,
+            board_name=req.board_name,
+            category=req.category,
+            style=req.style,
+            preferred_tier=req.preferred_tier,
+        )
+
+        filename = f"visual_{uuid.uuid4().hex[:10]}.png"
+        output_path = PINS_DIR / filename
+        result.image.save(output_path, format="PNG", quality=95)
+
+        buffered = io.BytesIO()
+        result.image.save(buffered, format="PNG")
+        b64_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
+
+        return VisualGenerateResponse(
+            provider=result.provider,
+            tier=result.tier,
+            prompt_used=result.prompt_used,
+            image_url=f"{BASE_URL}/static/pins/{filename}",
+            base64_image=b64_str,
+            render_time_ms=result.elapsed_ms,
+            is_ai_generated=(result.tier < 4),
+            error_trail=result.error_trail,
+        )
+    except Exception as err:
+        logger.error(f"Visual generation failed: {err}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Visual generation failed: {str(err)}")
 
 
 @app.post("/api/extract", response_model=ProductData)
@@ -235,6 +356,7 @@ def run_autonomous_cycle(req: AutonomousCycleRequest):
             template_style=req.template_style,
             publish_live=req.publish_live,
             publish_as_carousel=req.publish_as_carousel,
+            track_a=req.track_a,
         )
         return result
     except Exception as e:
@@ -270,7 +392,7 @@ def autofill_canva_template(template_id: str, data: dict):
 
 
 @app.post("/api/ai/hunt-and-publish")
-def ai_hunt_and_publish(publish_live: bool = True):
+def ai_hunt_and_publish(publish_live: bool = True, track_a: bool = False):
     """Autonomously hunt a viral space-saving Amazon product, curate with vision, and publish live."""
     try:
         from python_engine.autonomous_autopilot import AutonomousAutopilot
@@ -279,7 +401,7 @@ def ai_hunt_and_publish(publish_live: bool = True):
 
     autopilot = AutonomousAutopilot()
     try:
-        return autopilot.run_autopilot_cycle(publish_live=publish_live)
+        return autopilot.run_autopilot_cycle(publish_live=publish_live, track_a=track_a)
     except Exception as e:
         logger.error(f"AI hunt and publish failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))

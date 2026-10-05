@@ -96,10 +96,17 @@ class AntigravityOrchestrator:
             original_price=product_dict.get("original_price"),
             rating=product_dict.get("rating", 4.8),
             review_count=product_dict.get("review_count", "1,200+"),
-            template=template_style if template_style in ["bento_dark", "warm_editorial", "problem_solver"] else "bento_dark",  # type: ignore
+            template=template_style if template_style in [
+                "bento_dark",
+                "warm_editorial",
+                "problem_solver",
+                "pollinations_lifestyle",
+                "aspirational_lifestyle",
+                "track_a_lifestyle",
+            ] else "bento_dark",  # type: ignore
             brand=product_dict.get("brand"),
             features=product_dict.get("features", []),
-            cta_text="CHECK PRICE ON AMAZON ➔",
+            cta_text="CHECK PRICE ON AMAZON ->",
         )
         pin_res = generate_pin_graphic(req)
         logger.info(f"✓ Rendered Pin: {pin_res.image_url} in {pin_res.render_time_ms:.1f}ms")
@@ -184,9 +191,10 @@ class AntigravityOrchestrator:
         template_style: str = "bento_dark",
         publish_live: bool = False,
         publish_as_carousel: bool = False,
+        track_a: bool = False,
     ) -> Dict[str, Any]:
         """Executes the full automated workflow from sourcing to FTC bridge routing and Pinterest posting."""
-        logger.info(f"🚀 Starting Autonomous PinForge Cycle for: {url_or_asin} (Carousel={publish_as_carousel})")
+        logger.info(f"🚀 Starting Autonomous PinForge Cycle for: {url_or_asin} (Carousel={publish_as_carousel}, Track A={track_a})")
         start_time = datetime.now()
 
         # Step 1: Source
@@ -196,7 +204,8 @@ class AntigravityOrchestrator:
         copy = self.tool_generate_copy(product)
 
         # Step 3: Render Creative
-        graphic = self.tool_render_pin(product, copy, template_style=template_style)
+        effective_style = "aspirational_lifestyle" if track_a else template_style
+        graphic = self.tool_render_pin(product, copy, template_style=effective_style)
         carousel_suite = None
         if publish_as_carousel:
             c_style = template_style if template_style in ["cyber_bento", "luxury_editorial", "story", "anime"] else "cyber_bento"

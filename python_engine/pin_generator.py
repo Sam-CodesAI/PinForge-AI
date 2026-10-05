@@ -23,6 +23,11 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from python_engine.config import BASE_URL, FONTS_DIR, PINS_DIR
 from python_engine.models import PinGenerateRequest, PinGenerateResponse
+from python_engine.visual_engine import (
+    sanitize_canvas_text,
+    generate_visual_with_waterfall,
+    render_track_a_lifestyle_pin,
+)
 
 logger = logging.getLogger("pinforge.generator")
 
@@ -129,7 +134,7 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
 
     # 2. Top Category / Badge Pill
     badge_font = get_font(BOLD_FONT_PATH, 24)
-    badge_text = f"✦ {req.badge_text.upper()}"
+    badge_text = f"* {sanitize_canvas_text(req.badge_text).upper()}"
     bbox = badge_font.getbbox(badge_text)
     badge_w = (bbox[2] - bbox[0]) + 40
     badge_x = (CANVAS_WIDTH - badge_w) // 2
@@ -140,7 +145,8 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     # 3. Main Hook / Title
     title_font_size = 46 if len(req.title) < 55 else 38
     title_font = get_font(BOLD_FONT_PATH, title_font_size)
-    lines = wrap_text(req.title, title_font, max_width=860)[:3]
+    clean_title = sanitize_canvas_text(req.title)
+    lines = wrap_text(clean_title, title_font, max_width=860)[:3]
     cur_y = 135
     for line in lines:
         line_bbox = title_font.getbbox(line)
@@ -179,13 +185,13 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     else:
         # High-aesthetic stylized vector visual fallback when product image is unavailable
         accent_font = get_font(BOLD_FONT_PATH, 34)
-        callout_text = "✦ VIRAL AMAZON FIND ✦"
+        callout_text = "* VIRAL AMAZON FIND *"
         c_bbox = accent_font.getbbox(callout_text)
         c_w = c_bbox[2] - c_bbox[0]
         draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 260), callout_text, fill=(15, 23, 42, 255), font=accent_font)
 
         sub_font = get_font(REGULAR_FONT_PATH, 24)
-        sub_text = "Verified Customer Favorite • Prime 2-Day Delivery"
+        sub_text = sanitize_canvas_text("Verified Customer Favorite • Prime 2-Day Delivery")
         s_bbox = sub_font.getbbox(sub_text)
         s_w = s_bbox[2] - s_bbox[0]
         draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 320), sub_text, fill=(100, 116, 139, 255), font=sub_font)
@@ -198,9 +204,9 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         draw.text((card_x1 - 100, card_y0 + 35), deal_text, fill=(255, 255, 255, 255), font=deal_font)
 
     # Prominent Gen-Z Neon Friction Badge on Card
-    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
-    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
-        f_badge = f"⚡ {f_badge}"
+    f_badge = sanitize_canvas_text(req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["[!] ", "* ", "! "]):
+        f_badge = f"[!] {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
@@ -217,19 +223,21 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
         draw_star(draw, star_x + s * 34, bar_y + 12, 13, 6, fill_color)
 
     rating_font = get_font(BOLD_FONT_PATH, 26)
-    rev_text = f"{req.rating:.1f}  •  {req.review_count}"
+    rev_text = f"{req.rating:.1f}  •  {sanitize_canvas_text(req.review_count)}"
     draw.text((star_x + 185, bar_y - 2), rev_text, fill=(203, 213, 225, 255), font=rating_font)
 
     # Price Tag (Right-aligned in social bar)
     price_font = get_font(BOLD_FONT_PATH, 42)
-    price_bbox = price_font.getbbox(req.price)
+    price_clean = sanitize_canvas_text(req.price)
+    price_bbox = price_font.getbbox(price_clean)
     price_w = price_bbox[2] - price_bbox[0]
-    draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), req.price, fill=(52, 211, 153, 255), font=price_font)
+    draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), price_clean, fill=(52, 211, 153, 255), font=price_font)
 
     # 6. Feature Chips (Gen-Z Bento friction highlights)
     chip_y = bar_y + 70
     chip_font = get_font(REGULAR_FONT_PATH, 22)
-    features = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly", "Tool-Free Setup", "Fast Prime Delivery"])
+    raw_feats = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly", "Tool-Free Setup", "Fast Prime Delivery"])
+    features = [sanitize_canvas_text(f) for f in raw_feats]
     cur_chip_x = 90
     for f in features:
         short_f = f[:28] + "..." if len(f) > 28 else f
@@ -258,14 +266,14 @@ def render_bento_dark(req: PinGenerateRequest, product_img: Optional[Image.Image
     draw.rounded_rectangle([btn_x0, btn_y0, btn_x1, btn_y1], radius=28, fill=(14, 165, 233, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 32)
-    btn_text = req.cta_text.upper()
+    btn_text = sanitize_canvas_text(req.cta_text).upper()
     btn_bbox = btn_font.getbbox(btn_text)
     btn_text_w = btn_bbox[2] - btn_bbox[0]
     draw.text((btn_x0 + (btn_w - btn_text_w) // 2, btn_y0 + 28), btn_text, fill=(255, 255, 255, 255), font=btn_font)
 
     # Footer Watermark / FTC Notice
     ftc_font = get_font(REGULAR_FONT_PATH, 16)
-    ftc_text = "FTC Disclosure: As an Amazon Associate I earn from qualifying purchases"
+    ftc_text = sanitize_canvas_text("FTC Disclosure: As an Amazon Associate I earn from qualifying purchases")
     f_bbox = ftc_font.getbbox(ftc_text)
     draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 45), ftc_text, fill=(100, 116, 139, 255), font=ftc_font)
 
@@ -282,7 +290,7 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rectangle([35, 35, CANVAS_WIDTH - 35, CANVAS_HEIGHT - 35], outline=(214, 208, 196, 255), width=2)
 
     # 1. Editorial Header
-    brand_text = (req.brand or "CURATED SELECTION").upper()
+    brand_text = sanitize_canvas_text(req.brand or "CURATED SELECTION").upper()
     brand_font = get_font(BOLD_FONT_PATH, 20)
     b_bbox = brand_font.getbbox(brand_text)
     b_w = b_bbox[2] - b_bbox[0]
@@ -291,7 +299,8 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     # 2. Main Title (Serif Aesthetic)
     title_font_size = 46 if len(req.title) < 55 else 38
     title_font = get_font(SERIF_FONT_PATH, title_font_size)
-    lines = wrap_text(req.title, title_font, max_width=820)[:3]
+    clean_title = sanitize_canvas_text(req.title)
+    lines = wrap_text(clean_title, title_font, max_width=820)[:3]
     cur_y = 125
     for line in lines:
         line_bbox = title_font.getbbox(line)
@@ -326,21 +335,21 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
     else:
         accent_font = get_font(SERIF_FONT_PATH, 36)
-        callout_text = "SMART SPACES EDITORIAL"
+        callout_text = "* SMART SPACES EDITORIAL *"
         c_bbox = accent_font.getbbox(callout_text)
         c_w = c_bbox[2] - c_bbox[0]
         draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 260), callout_text, fill=(41, 37, 36, 255), font=accent_font)
 
         sub_font = get_font(REGULAR_FONT_PATH, 22)
-        sub_text = "Minimalist Living & Functional Storage Essentials"
+        sub_text = sanitize_canvas_text("Minimalist Living & Functional Storage Essentials")
         s_bbox = sub_font.getbbox(sub_text)
         s_w = s_bbox[2] - s_bbox[0]
         draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 320), sub_text, fill=(120, 113, 108, 255), font=sub_font)
 
     # Prominent Gen-Z Friction Pill on Card
-    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
-    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
-        f_badge = f"✦ {f_badge}"
+    f_badge = sanitize_canvas_text(req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["[!] ", "* ", "! "]):
+        f_badge = f"* {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 20)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 36, card_w - 40)
@@ -352,7 +361,8 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     # 4. Minimal Price & Rating Row
     meta_y = card_y1 + 45
     price_font = get_font(BOLD_FONT_PATH, 48)
-    draw.text((100, meta_y - 8), req.price, fill=(28, 25, 23, 255), font=price_font)
+    price_clean = sanitize_canvas_text(req.price)
+    draw.text((100, meta_y - 8), price_clean, fill=(28, 25, 23, 255), font=price_font)
 
     # Stars on the right
     star_x = CANVAS_WIDTH - 280
@@ -370,14 +380,14 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rounded_rectangle([btn_x0, btn_y0, btn_x0 + btn_w, btn_y0 + btn_h], radius=16, fill=(28, 25, 23, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 28)
-    btn_text = "READ REVIEW & SHOP ON AMAZON ➔"
+    btn_text = sanitize_canvas_text(req.cta_text or "READ REVIEW & SHOP ON AMAZON ->").upper()
     btn_bbox = btn_font.getbbox(btn_text)
     btn_w_actual = btn_bbox[2] - btn_bbox[0]
     draw.text((btn_x0 + (btn_w - btn_w_actual) // 2, btn_y0 + 28), btn_text, fill=(255, 255, 255, 255), font=btn_font)
 
     # Footer
     ftc_font = get_font(REGULAR_FONT_PATH, 16)
-    ftc_text = "As an Amazon Associate I earn from qualifying purchases"
+    ftc_text = sanitize_canvas_text("As an Amazon Associate I earn from qualifying purchases")
     f_bbox = ftc_font.getbbox(ftc_text)
     draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 55), ftc_text, fill=(168, 162, 158, 255), font=ftc_font)
 
@@ -394,7 +404,7 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rectangle([0, 0, CANVAS_WIDTH, banner_h], fill=(245, 158, 11, 255))
 
     hook_font = get_font(BOLD_FONT_PATH, 38)
-    hook_text = "THE AMAZON FIND YOU DIDN'T KNOW YOU NEEDED"
+    hook_text = sanitize_canvas_text("THE AMAZON FIND YOU DIDN'T KNOW YOU NEEDED")
     if len(hook_text) > 42:
         hook_font = get_font(BOLD_FONT_PATH, 32)
     h_bbox = hook_font.getbbox(hook_text)
@@ -402,7 +412,8 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
 
     # 2. Sub-title
     sub_font = get_font(BOLD_FONT_PATH, 36)
-    lines = wrap_text(req.title, sub_font, max_width=860)[:2]
+    clean_title = sanitize_canvas_text(req.title)
+    lines = wrap_text(clean_title, sub_font, max_width=860)[:2]
     cur_y = banner_h + 30
     for line in lines:
         l_bbox = sub_font.getbbox(line)
@@ -427,21 +438,21 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
     else:
         accent_font = get_font(BOLD_FONT_PATH, 36)
-        callout_text = "SPACE SAVING GAME CHANGER"
+        callout_text = "* SPACE SAVING GAME CHANGER *"
         c_bbox = accent_font.getbbox(callout_text)
         c_w = c_bbox[2] - c_bbox[0]
         draw.text((card_x0 + (card_w - c_w) // 2, card_y0 + 250), callout_text, fill=(245, 158, 11, 255), font=accent_font)
 
         sub_font = get_font(REGULAR_FONT_PATH, 24)
-        sub_text = "Over 10,000+ Verified 5-Star Amazon Reviews"
+        sub_text = sanitize_canvas_text("Over 10,000+ Verified 5-Star Amazon Reviews")
         s_bbox = sub_font.getbbox(sub_text)
         s_w = s_bbox[2] - s_bbox[0]
         draw.text((card_x0 + (card_w - s_w) // 2, card_y0 + 310), sub_text, fill=(71, 85, 105, 255), font=sub_font)
 
     # Prominent Gen-Z Neon Friction Badge on Card
-    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
-    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
-        f_badge = f"⚡ {f_badge}"
+    f_badge = sanitize_canvas_text(req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["[!] ", "* ", "! "]):
+        f_badge = f"[!] {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 22)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 40, card_w - 40)
@@ -453,7 +464,8 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     # 4. Feature Callout Rows (Gen-Z Bento friction highlights)
     feat_y = card_y1 + 35
     f_font = get_font(BOLD_FONT_PATH, 24)
-    features = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly • Zero Wall Holes", "Tool-Free Pop-Up Ready In 60 Seconds", "Heavy-Duty Reinforced Storage Capacity"])
+    raw_feats = (req.friction_highlights[:3] if req.friction_highlights else None) or (req.features[:3] if req.features else ["100% Renter Friendly • Zero Wall Holes", "Tool-Free Pop-Up Ready In 60 Seconds", "Heavy-Duty Reinforced Storage Capacity"])
+    features = [sanitize_canvas_text(f) for f in raw_feats]
 
     for idx, feat in enumerate(features):
         row_y = feat_y + (idx * 50)
@@ -468,13 +480,13 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rounded_rectangle([80, btn_y0, CANVAS_WIDTH - 80, btn_y0 + 95], radius=24, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 34)
-    action_text = f"CHECK TODAY'S DEAL ({req.price}) ➔"
+    action_text = sanitize_canvas_text(req.cta_text or f"CHECK TODAY'S DEAL ({req.price}) ->").upper()
     a_bbox = btn_font.getbbox(action_text)
     draw.text(((CANVAS_WIDTH - (a_bbox[2] - a_bbox[0])) // 2, btn_y0 + 26), action_text, fill=(15, 23, 42, 255), font=btn_font)
 
     # Footer
     ftc_font = get_font(REGULAR_FONT_PATH, 16)
-    ftc_text = "FTC Compliant: As an Amazon Associate I earn from qualifying purchases"
+    ftc_text = sanitize_canvas_text("FTC Compliant: As an Amazon Associate I earn from qualifying purchases")
     f_bbox = ftc_font.getbbox(ftc_text)
     draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 45), ftc_text, fill=(148, 163, 184, 255), font=ftc_font)
 
@@ -482,28 +494,15 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
 
 
 def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
-    """Render Template 4: Pollinations Lifestyle Hero (Photorealistic Interior Scene with Glassmorphic Floating Product & CTA)."""
-    # 1. Attempt to generate or load lifestyle hero scene
-    lifestyle_img = None
-    try:
-        from python_engine.pollinations_engine import build_lifestyle_prompt, generate_pollinations_image
-        p_prompt = build_lifestyle_prompt(req.title, category=req.category, board_name=req.board_name)
-        lifestyle_img = generate_pollinations_image(p_prompt, timeout=15.0)
-    except Exception as e:
-        logger.warning(f"Pollinations lifestyle generation skipped: {e}")
-
-    # Fallback to aesthetic gradient canvas if Pollinations is offline
-    if not lifestyle_img:
-        img = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (20, 24, 33, 255))
-        # Warm ambient Japandi gradient
-        glow = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
-        glow_draw = ImageDraw.Draw(glow)
-        glow_draw.ellipse([100, 150, 900, 950], fill=(245, 158, 11, 35))
-        glow_draw.ellipse([200, 700, 800, 1300], fill=(56, 189, 248, 25))
-        glow = glow.filter(ImageFilter.GaussianBlur(110))
-        img = Image.alpha_composite(img, glow)
-    else:
-        img = lifestyle_img.copy()
+    """Render Template 4: Lifestyle Hero (Photorealistic Interior Scene via Waterfall with Glassmorphic Floating Product & CTA)."""
+    # 1. Generate or load lifestyle hero scene via 3-tier waterfall fallback
+    result = generate_visual_with_waterfall(
+        product_title=req.title,
+        board_name=req.board_name,
+        category=req.category,
+        product_img=product_img,
+    )
+    img = result.image.copy()
 
     # 2. Add Top & Bottom Vignette for Crisp Contrast
     vignette = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
@@ -520,7 +519,7 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
 
     # 3. Top Floating Glassmorphic Pill
     badge_font = get_font(BOLD_FONT_PATH, 24)
-    badge_text = f"✦ {req.badge_text.upper() or 'VIRAL AMAZON FIND'}"
+    badge_text = f"* {sanitize_canvas_text(req.badge_text).upper() or 'VIRAL AMAZON FIND'}"
     b_bbox = badge_font.getbbox(badge_text)
     b_w = (b_bbox[2] - b_bbox[0]) + 40
     bx0 = (CANVAS_WIDTH - b_w) // 2
@@ -530,7 +529,8 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
     # 4. Main Punchy Title with Frosted Backing
     title_font_size = 46 if len(req.title) < 55 else 38
     title_font = get_font(BOLD_FONT_PATH, title_font_size)
-    lines = wrap_text(req.title, title_font, max_width=860)[:3]
+    clean_title = sanitize_canvas_text(req.title)
+    lines = wrap_text(clean_title, title_font, max_width=860)[:3]
     cur_y = 135
     for line in lines:
         line_bbox = title_font.getbbox(line)
@@ -569,18 +569,18 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
         img.paste(resized_p, (px, py), resized_p if resized_p.mode == "RGBA" else None)
     else:
         accent_font = get_font(BOLD_FONT_PATH, 36)
-        callout_text = "✦ SMART SPACES CURATION ✦"
+        callout_text = "* SMART SPACES CURATION *"
         c_bbox = accent_font.getbbox(callout_text)
         draw.text((card_x0 + (card_w - (c_bbox[2] - c_bbox[0])) // 2, card_y0 + 220), callout_text, fill=(15, 23, 42, 255), font=accent_font)
         sub_font = get_font(REGULAR_FONT_PATH, 24)
-        sub_text = "Top Rated Amazon Choice • Verified Durability"
+        sub_text = sanitize_canvas_text("Top Rated Amazon Choice • Verified Durability")
         s_bbox = sub_font.getbbox(sub_text)
         draw.text((card_x0 + (card_w - (s_bbox[2] - s_bbox[0])) // 2, card_y0 + 280), sub_text, fill=(100, 116, 139, 255), font=sub_font)
 
     # Prominent Gen-Z Neon Friction Badge on Card
-    f_badge = (req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
-    if not any(f_badge.startswith(p) for p in ["⚡", "🔥", "✦"]):
-        f_badge = f"⚡ {f_badge}"
+    f_badge = sanitize_canvas_text(req.friction_badge or "100% RENTER FRIENDLY • NO DRILL").upper()
+    if not any(f_badge.startswith(p) for p in ["[!] ", "* ", "! "]):
+        f_badge = f"[!] {f_badge}"
     fb_font = get_font(BOLD_FONT_PATH, 20)
     fb_bbox = fb_font.getbbox(f_badge)
     fb_w = min((fb_bbox[2] - fb_bbox[0]) + 36, card_w - 40)
@@ -597,13 +597,14 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
         draw_star(draw, star_x + s * 34, bar_y + 12, 13, 6, fill_color)
 
     rating_font = get_font(BOLD_FONT_PATH, 26)
-    rev_text = f"{req.rating:.1f}  •  {req.review_count}"
+    rev_text = f"{req.rating:.1f}  •  {sanitize_canvas_text(req.review_count)}"
     draw.text((star_x + 185, bar_y - 2), rev_text, fill=(241, 245, 249, 255), font=rating_font)
 
     price_font = get_font(BOLD_FONT_PATH, 42)
-    price_bbox = price_font.getbbox(req.price)
+    price_clean = sanitize_canvas_text(req.price)
+    price_bbox = price_font.getbbox(price_clean)
     price_w = price_bbox[2] - price_bbox[0]
-    draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), req.price, fill=(52, 211, 153, 255), font=price_font)
+    draw.text((CANVAS_WIDTH - 90 - price_w, bar_y - 12), price_clean, fill=(52, 211, 153, 255), font=price_font)
 
     # 7. High-Converting Bottom Button
     btn_w, btn_h = 820, 96
@@ -621,18 +622,38 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
     draw.rounded_rectangle([btn_x0, btn_y0, btn_x1, btn_y1], radius=28, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 32)
-    btn_text = req.cta_text.upper() or "VIEW DEAL ON AMAZON ➔"
+    btn_text = sanitize_canvas_text(req.cta_text).upper() or "VIEW DEAL ON AMAZON ->"
     btn_bbox = btn_font.getbbox(btn_text)
     btn_w_actual = btn_bbox[2] - btn_bbox[0]
     draw.text((btn_x0 + (btn_w - btn_w_actual) // 2, btn_y0 + 30), btn_text, fill=(15, 23, 42, 255), font=btn_font)
 
     # Footer
     ftc_font = get_font(REGULAR_FONT_PATH, 16)
-    ftc_text = "FTC Disclosure: As an Amazon Associate I earn from qualifying purchases"
+    ftc_text = sanitize_canvas_text("FTC Disclosure: As an Amazon Associate I earn from qualifying purchases")
     f_bbox = ftc_font.getbbox(ftc_text)
     draw.text(((CANVAS_WIDTH - (f_bbox[2] - f_bbox[0])) // 2, CANVAS_HEIGHT - 45), ftc_text, fill=(148, 163, 184, 255), font=ftc_font)
 
     return img
+
+
+def render_aspirational_lifestyle(req: PinGenerateRequest, product_img: Optional[Image.Image]) -> Image.Image:
+    """Render Template 5: Track A Aspirational Lifestyle Pin.
+
+    Generates 100% full-bleed, high-aesthetic interior design imagery with
+    ZERO promotional boxes, ZERO giant buttons, and ZERO prices (matching Pins 1 & 2).
+    Operates through the 3-tier waterfall visual engine (Ideogram -> Fal.ai FLUX -> Pollinations -> Local).
+    """
+    clean_title = sanitize_canvas_text(req.title)
+    brand = sanitize_canvas_text(req.brand or "SMART SPACES")
+    return render_track_a_lifestyle_pin(
+        title=clean_title,
+        board_name=req.board_name,
+        category=req.category,
+        style="aspirational_lifestyle",
+        product_img=product_img,
+        subtle_editorial_overlay=True,
+        brand_tag=brand,
+    )
 
 
 def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
@@ -643,7 +664,9 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
     product_img = download_image(req.image_url)
 
     # Dispatch to chosen template
-    if req.template == "warm_editorial":
+    if req.template in ("aspirational_lifestyle", "track_a_lifestyle"):
+        canvas = render_aspirational_lifestyle(req, product_img)
+    elif req.template == "warm_editorial":
         canvas = render_warm_editorial(req, product_img)
     elif req.template == "problem_solver":
         canvas = render_problem_solver(req, product_img)
@@ -654,7 +677,7 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
 
     # Convert to RGB and write to file
     rgb_img = canvas.convert("RGB")
-    file_id = f"pin_{uuid.uuid4().hex[:12]}.jpg"
+    file_id = f"pin_{req.template}_{uuid.uuid4().hex[:10]}.jpg"
     out_path = PINS_DIR / file_id
     rgb_img.save(out_path, format="JPEG", quality=92, optimize=True)
 
@@ -675,12 +698,19 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
         width=CANVAS_WIDTH,
         height=CANVAS_HEIGHT,
         render_time_ms=round(elapsed_ms, 2),
+        template=req.template,
     )
 
 
 def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateResponse]:
-    """Generates all 4 high-converting pin variants (bento_dark, warm_editorial, problem_solver, pollinations_lifestyle)."""
-    templates = ["bento_dark", "warm_editorial", "problem_solver", "pollinations_lifestyle"]
+    """Generates all 5 high-converting pin variants (bento_dark, warm_editorial, problem_solver, pollinations_lifestyle, aspirational_lifestyle)."""
+    templates = [
+        "bento_dark",
+        "warm_editorial",
+        "problem_solver",
+        "pollinations_lifestyle",
+        "aspirational_lifestyle",
+    ]
     variants = []
     product_img = download_image(req.image_url)
 
@@ -698,7 +728,9 @@ def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateRespon
             board_name=req.board_name,
             template=tmpl,
         )
-        if tmpl == "warm_editorial":
+        if tmpl in ("aspirational_lifestyle", "track_a_lifestyle"):
+            canvas = render_aspirational_lifestyle(req_copy, product_img)
+        elif tmpl == "warm_editorial":
             canvas = render_warm_editorial(req_copy, product_img)
         elif tmpl == "problem_solver":
             canvas = render_problem_solver(req_copy, product_img)
@@ -724,6 +756,7 @@ def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateRespon
                 width=CANVAS_WIDTH,
                 height=CANVAS_HEIGHT,
                 render_time_ms=35.0,
+                template=tmpl,
             )
         )
 

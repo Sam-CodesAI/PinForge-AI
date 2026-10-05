@@ -71,14 +71,19 @@ class PinGenerateRequest(BaseModel):
     badge_text: str = Field(default="TOP RATED 2026")
     friction_badge: Optional[str] = Field(default="100% RENTER FRIENDLY • NO DRILL", description="Prominent friction badge stamped on graphic")
     friction_highlights: List[str] = Field(default_factory=list, description="Buyer friction highlights")
-    template: Literal["bento_dark", "warm_editorial", "problem_solver", "pollinations_lifestyle"] = Field(
-        default="bento_dark", description="Visual graphic layout"
-    )
+    template: Literal[
+        "bento_dark",
+        "warm_editorial",
+        "problem_solver",
+        "pollinations_lifestyle",
+        "aspirational_lifestyle",
+        "track_a_lifestyle",
+    ] = Field(default="bento_dark", description="Visual graphic layout")
     brand: Optional[str] = None
     category: Optional[str] = Field(default="Smart Home & Space Saving")
     board_name: Optional[str] = Field(default="Smart Spaces")
     features: List[str] = Field(default_factory=list)
-    cta_text: str = Field(default="TAP TO VIEW ON AMAZON ➔")
+    cta_text: str = Field(default="TAP TO VIEW ON AMAZON ->")
 
 
 class PinGenerateResponse(BaseModel):
@@ -88,6 +93,7 @@ class PinGenerateResponse(BaseModel):
     width: int = 1000
     height: int = 1500
     render_time_ms: float
+    template: Optional[str] = None
 
 
 class ScheduleItem(BaseModel):
@@ -121,6 +127,8 @@ class AutonomousCycleRequest(BaseModel):
         "warm_editorial",
         "problem_solver",
         "pollinations_lifestyle",
+        "aspirational_lifestyle",
+        "track_a_lifestyle",
         "anime",
         "story",
         "luxury_editorial",
@@ -128,3 +136,24 @@ class AutonomousCycleRequest(BaseModel):
     ] = Field(default="bento_dark", description="Visual graphic layout style")
     publish_live: bool = Field(default=False, description="Whether to publish live to Pinterest immediately")
     publish_as_carousel: bool = Field(default=False, description="Whether to publish as a 4-slide carousel pin")
+    track_a: bool = Field(default=False, description="Generate Track A Aspirational Lifestyle Pin (zero promo boxes, zero buttons, zero prices)")
+
+
+class VisualGenerateRequest(BaseModel):
+    product_title: str = Field(default="Modern Space Saving Organizer", description="Subject for visual generation")
+    board_name: Optional[str] = Field(default="Small Apartment Hacks", description="Target Pinterest board for aesthetic tuning")
+    category: Optional[str] = Field(default="Home Organization", description="Category context")
+    style: Optional[str] = Field(default="aspirational_lifestyle", description="Aesthetic style preset")
+    preferred_tier: Optional[int] = Field(default=None, ge=1, le=4, description="Target waterfall tier (1: Ideogram, 2: Fal, 3: Pollinations, 4: Local)")
+    track_a: bool = Field(default=False, description="Whether to render as Track A Aspirational Lifestyle Pin")
+
+
+class VisualGenerateResponse(BaseModel):
+    provider: str
+    tier: int
+    prompt_used: str
+    image_url: str
+    base64_image: str
+    render_time_ms: float
+    is_ai_generated: bool
+    error_trail: List[str] = Field(default_factory=list)

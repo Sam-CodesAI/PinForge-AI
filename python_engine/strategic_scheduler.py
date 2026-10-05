@@ -140,6 +140,7 @@ class StrategicScheduler:
         apply_jitter: bool = True,
         dry_run: bool = False,
         publish_as_carousel: bool = False,
+        track_a: bool = False,
     ) -> Dict[str, Any]:
         """Executes a single slot targeting its dedicated board and niche queries."""
         slot = SCHEDULE_PILLARS.get(slot_id)
@@ -151,7 +152,7 @@ class StrategicScheduler:
 
         board_name = slot["board_name"]
         queries = slot["niche_queries"]
-        logger.info(f"⏰ Executing Slot {slot_id}: Board='{board_name}' | Peak: {slot['peak_time_est']}")
+        logger.info(f"⏰ Executing Slot {slot_id}: Board='{board_name}' | Peak: {slot['peak_time_est']} (Track A={track_a})")
 
         if apply_jitter:
             jitter_sec = random.randint(15, 120)
@@ -163,6 +164,7 @@ class StrategicScheduler:
             custom_queries=queries,
             publish_live=not dry_run,
             publish_as_carousel=publish_as_carousel,
+            track_a=track_a,
         )
 
         logger.info(
@@ -185,6 +187,7 @@ class StrategicScheduler:
         delay_between_boards_sec: int = 15,
         dry_run: bool = False,
         publish_as_carousel: bool = False,
+        track_a: bool = False,
     ) -> List[Dict[str, Any]]:
         """Executes all 5 boards in sequence (useful for testing or initial warmup)."""
         logger.info("⚡ Executing Full 5-Board Circuit (1 pin for each pillar)...")
@@ -196,6 +199,7 @@ class StrategicScheduler:
                 apply_jitter=False,
                 dry_run=dry_run,
                 publish_as_carousel=publish_as_carousel,
+                track_a=track_a,
             )
             results.append(res)
             if slot_id < 5 and delay_between_boards_sec > 0:
@@ -206,7 +210,7 @@ class StrategicScheduler:
         return results
 
 
-def main():
+def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="PinForge AI Strategic Publishing Scheduler")
     parser.add_argument("--auto", action="store_true", help="Detect current peak time slot and execute")
     parser.add_argument("--slot", type=int, choices=[1, 2, 3, 4, 5], help="Execute a specific slot (1-5)")
@@ -214,8 +218,17 @@ def main():
     parser.add_argument("--no-jitter", action="store_true", help="Bypass anti-detection jitter sleep")
     parser.add_argument("--dry-run", action="store_true", help="Run without posting live to Pinterest")
     parser.add_argument("--carousel", action="store_true", help="Publish 4-slide native base64 carousel pin")
+    parser.add_argument("--track-a", action="store_true", help="Publish Track A Aspirational Lifestyle Pin (zero promo boxes, zero buttons, zero prices)")
     parser.add_argument("--bootstrap", action="store_true", help="Only bootstrap boards, do not publish")
+    return parser
 
+
+def parse_args(argv=None):
+    return create_parser().parse_args(argv)
+
+
+def main():
+    parser = create_parser()
     args = parser.parse_args()
     scheduler = StrategicScheduler()
 
@@ -224,13 +237,18 @@ def main():
         scheduler.autopilot.pinterest.bootstrap_smart_spaces_boards()
         logger.info("Boards bootstrapped successfully.")
     elif args.all:
-        scheduler.execute_full_circuit(dry_run=args.dry_run, publish_as_carousel=args.carousel)
+        scheduler.execute_full_circuit(
+            dry_run=args.dry_run,
+            publish_as_carousel=args.carousel,
+            track_a=args.track_a,
+        )
     elif args.slot:
         scheduler.execute_slot(
             args.slot,
             apply_jitter=not args.no_jitter,
             dry_run=args.dry_run,
             publish_as_carousel=args.carousel,
+            track_a=args.track_a,
         )
     elif args.auto:
         matched_slot = scheduler.get_slot_for_current_time()
@@ -240,6 +258,7 @@ def main():
             apply_jitter=not args.no_jitter,
             dry_run=args.dry_run,
             publish_as_carousel=args.carousel,
+            track_a=args.track_a,
         )
     else:
         print("Smart Spaces 5-Pillar Schedule Matrix:")
@@ -250,6 +269,7 @@ def main():
         print("  python -m python_engine.strategic_scheduler --auto")
         print("  python -m python_engine.strategic_scheduler --slot 1")
         print("  python -m python_engine.strategic_scheduler --slot 1 --carousel")
+        print("  python -m python_engine.strategic_scheduler --slot 1 --track-a")
         print("  python -m python_engine.strategic_scheduler --all --dry-run")
         print("  python -m python_engine.strategic_scheduler --bootstrap")
 
