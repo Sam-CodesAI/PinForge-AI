@@ -1952,5 +1952,229 @@
       "is_owner": true,
       "pin_id": "1132444268835851879"
     }
+  },
+  {
+    "timestamp": "2026-10-05T17:06:32.534427+00:00",
+    "status": "success",
+    "execution_time_seconds": 1.98,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Sliding Under Sink Organizer",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
+      "bridge_slug": "sliding-under-sink-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "Finally Fixed My Cluttered Sink! This $24 Slide-Out Gizm Is a Life Saver \ud83e\uddf4\u2728",
+      "description": "POV: Your under-sink area actually looks clean and organized for once. \ud83d\udcaf This sliding organizer pulls out smoothly so you can grab that specific cleaner without digging through chaos. Perfect for apartments where every inch counts! Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "http://localhost/pin.png"
+      }
+    ],
+    "track_a_lifestyle": null,
+    "carousel": {
+      "slides": [
+        "/tmp/s1.png",
+        "/tmp/s2.png",
+        "/tmp/s3.png",
+        "/tmp/s4.png"
+      ],
+      "composite": "/tmp/comp.png",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T17:40:26.800319+00:00",
+    "status": "success",
+    "execution_time_seconds": 2.05,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Sliding Under Sink Organizer",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
+      "bridge_slug": "sliding-under-sink-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "Stop Losing Items Under The Sink! Maximize Every Inch With This Sliding Organizer",
+      "description": "Your under-sink area shouldn't be a black hole for lost supplies. \ud83d\udeab This $24.99 sliding cabinet turns chaos into clean, accessible storage. Pull it out to find exactly what you need without the messy digging. Perfect for kitchen or bathrooms!\n\nPOV: You finally found the extra cleaner you thought disappeared. \ud83d\udc40 Would you try this hack in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "http://localhost/pin.png"
+      }
+    ],
+    "track_a_lifestyle": null,
+    "carousel": {
+      "slides": [
+        "/tmp/s1.png",
+        "/tmp/s2.png",
+        "/tmp/s3.png",
+        "/tmp/s4.png"
+      ],
+      "composite": "/tmp/comp.png",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T17:41:39.435082+00:00",
+    "status": "success",
+    "execution_time_seconds": 46.92,
+    "product": {
+      "asin": "B0915B37G6",
+      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+      "price": "$11.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "Shoe clutter solved? 24-pocket over-the-door organizer for $12 \ud83e\udd77",
+      "description": "Your entryway is finally speaking the language of 'clean girl aesthetic.' This clear 24-pocket genius keeps Nikes, boots, and slime-free sandals perfectly visible but totally out of the way. No more tripping over shoe disasters at 8 AM. It fits ANY doorway, so even your tiniest studio wins the layout game. Hauling this to my closet refresh this weekend! Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_14aabe11c9.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_256d82f5c1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a39336d7dc.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b3aebadd29.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9521db0333.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9521db0333.jpg",
+    "carousel": {
+      "slides": [
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_2108bd04.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_2108bd04.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_2108bd04.jpg",
+        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_2108bd04.jpg"
+      ],
+      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_2108bd04.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-10-05T17:42:00.870442+00:00",
+    "status": "success",
+    "execution_time_seconds": 1.77,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Sliding Under Sink Organizer",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
+      "bridge_slug": "sliding-under-sink-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#10B981",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
+    },
+    "seo_copy": {
+      "title": "Stop the Under-Sink Chaos: This $25 Slide-Out Fix is a Game Changer \ud83c\udfe0\u2728",
+      "description": "Your under-sink area shouldn't be a clutter zone. This beautiful slide-out organizer fits perfectly and makes cleaning a breeze. No more digging through bottles to find the trash bag! \ud83e\uddfc Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "http://localhost/pin.png"
+      }
+    ],
+    "track_a_lifestyle": null,
+    "carousel": {
+      "slides": [
+        "/tmp/s1.png",
+        "/tmp/s2.png",
+        "/tmp/s3.png",
+        "/tmp/s4.png"
+      ],
+      "composite": "/tmp/comp.png",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
   }
 ]

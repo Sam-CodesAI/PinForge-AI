@@ -224,25 +224,40 @@ def calculate_discount_percent(current_price: Any, original_price: Any) -> Optio
     return None
 
 
-def format_usd_price(raw_val: Any) -> str:
+def is_valid_image_url(url: Optional[str]) -> bool:
+    """Validate that image URL is non-empty, not a data URI, not a tracking pixel, and not a GIF."""
+    if not url:
+        return False
+    u = url.strip().lower()
+    if u.startswith("data:"):
+        return False
+    if u.endswith(".gif") or ".gif?" in u:
+        return False
+    if "transparent-pixel" in u or "pixel.gif" in u or "/g/01/" in u:
+        return False
+    return True
+
+
+def format_usd_price(raw_val: Any, max_val: float = 999.0) -> str:
     """Format and normalize price string into clean USD format ($XX.XX) supporting pricing up to $999.00."""
     if not raw_val:
         return "$24.99"
     s = str(raw_val).strip()
-    if re.match(r"^\$\d{1,3}(\.\d{2})?$", s):
+    clean_s = s.replace(",", "")
+    if re.match(r"^\$\d{1,4}(\.\d{2})?$", clean_s):
         try:
-            val = float(s.replace("$", ""))
-            if 1.0 <= val <= 999.0:
+            val = float(clean_s.replace("$", ""))
+            if 1.0 <= val <= max_val:
                 return f"${val:.2f}"
         except Exception:
             pass
 
-    nums = re.findall(r"\d+(?:\.\d+)?", s.replace(",", ""))
+    nums = re.findall(r"\d+(?:\.\d+)?", clean_s)
     if nums:
         try:
             val = float(nums[0])
-            if val > 999.0:
-                val = 999.00
+            if val > max_val:
+                val = max_val
             elif val < 1.0:
                 val = 24.99
             return f"${val:.2f}"
@@ -267,58 +282,85 @@ def classify_mounting_and_safety(
     Returns:
         (mounting_type: str, is_renter_safe: bool, friction_badge: str)
     """
-    spec_mounting = ""
+    spec_mounting_vals: List[str] = []
     specs_text = ""
     if isinstance(specs, dict):
         for k, v in specs.items():
-            k_low = str(k).lower()
-            if any(term in k_low for term in ["mount", "installation", "placement", "type"]):
-                spec_mounting += f" {v}"
+            k_low = str(k).lower().strip()
+            v_str = str(v).strip()
+            if any(term in k_low for term in ["mounting", "mount type", "installation type", "placement", "fixture type"]):
+                spec_mounting_vals.append(v_str.lower())
             specs_text += f" {k} {v}"
     elif isinstance(specs, list):
         specs_text = " ".join(str(x) for x in specs)
     elif specs:
         specs_text = str(specs)
 
+    spec_mount_combined = " ".join(spec_mounting_vals)
     b_text = " ".join(bullets or [])
-    combined = f"{spec_mounting} {specs_text} {b_text}".lower()
-    spec_mount_lower = spec_mounting.lower()
+    all_text = f"{spec_mount_combined} {specs_text} {b_text}".lower()
 
     # 1. Over-the-Door
-    if any(k in spec_mount_lower for k in ["over the door", "over-the-door", "door mount", "door hanging"]) or \
-       any(k in combined for k in ["over the door", "over-the-door", "over door hook", "door hanging", "hangs over the door"]):
+    is_over_door = (
+        any(k in spec_mount_combined for k in ["over the door", "over-the-door", "door mount", "door hanging"]) or
+        any(k in all_text for k in ["over the door", "over-the-door", "over door hook", "door hanging", "hangs over the door", "hooks over doors"])
+    )
+    if is_over_door:
         return "Over-the-Door", True, "OVER-THE-DOOR • ZERO WALL HOLES"
 
     # 2. In-Drawer
-    if any(k in spec_mount_lower for k in ["in-drawer", "in drawer", "inside drawer", "drawer mount", "drawer insert"]) or \
-       any(k in combined for k in ["in-drawer", "in drawer", "inside drawer", "drawer organizer", "drawer divider", "drawer insert", "expandable drawer"]):
+    is_in_drawer = (
+        any(k in spec_mount_combined for k in ["in-drawer", "in drawer", "inside drawer", "drawer mount", "drawer insert"]) or
+        any(k in all_text for k in ["in-drawer", "in drawer", "inside drawer", "drawer organizer", "drawer divider", "drawer insert", "expandable drawer", "fits inside drawers"])
+    )
+    if is_in_drawer:
         return "In-Drawer", True, "IN-DRAWER FIT • ZERO DRILL"
 
-    # 3. Tension / Adhesive (Renter safe wall/corner options)
+    # Tension / Adhesive indicators
     has_tension_adhesive = (
-        any(k in spec_mount_lower for k in ["adhesive", "self-adhesive", "tension", "suction"]) or
-        any(k in combined for k in [
-            "adhesive", "self-adhesive", "sticky strips", "command strip", "tension mount",
-            "tension rod", "suction cup", "no drill adhesive", "drill-free adhesive", "damage-free hanging"
+        any(k in spec_mount_combined for k in ["adhesive", "self-adhesive", "tension", "suction"]) or
+        any(k in all_text for k in [
+            "damage-free", "damage free", "adhesive strips", "command strip", "tension rod",
+            "tension mount", "suction cup", "no drill adhesive", "drill-free adhesive",
+            "damage-free hanging", "self-adhesive", "adhesive hooks", "adhesive pads"
         ])
     )
-
-    # 4. Screw / Wall-Mount
-    has_screw_drill = any(k in combined for k in [
-        "screw", "screws", "drilling required", "requires drilling", "drill holes",
-        "wall anchors", "expansion screws", "stud mount", "wall studs", "studs",
-        "drywall anchors", "hardware included (screws", "mount with screws",
+    explicit_no_drill = any(k in all_text for k in [
+        "no drill", "no-drill", "no drilling", "drill-free", "drill free", "zero drill", "without drilling"
     ])
-    spec_has_wall_mount = any(k in spec_mount_lower for k in ["wall mount", "wall-mount", "screw mount", "ceiling mount"])
 
-    # Explicit screws/drilling or Wall Mount without adhesive override
-    if (spec_has_wall_mount and not has_tension_adhesive) or (has_screw_drill and not has_tension_adhesive and "no drill" not in combined and "no-drill" not in combined):
+    # Wall/Ceiling mount indicators
+    spec_has_wall_mount = any(k in spec_mount_combined for k in ["wall mount", "wall-mount", "wall mounted", "wall-mounted", "ceiling mount"])
+    text_has_wall_mount = any(k in all_text for k in [
+        "wall mount", "wall-mount", "wall mounted", "wall-mounted", "mount to wall",
+        "mount on wall", "mounted to the wall", "mounted on the wall", "floating shelf", "floating shelves"
+    ])
+    is_wall_mount = spec_has_wall_mount or text_has_wall_mount
+
+    # Explicit wall drilling / wall stud screws indicators
+    has_wall_screws_or_drilling = any(k in all_text for k in [
+        "stud mount", "wall stud", "wall studs", "wall anchor", "wall anchors",
+        "drywall anchor", "drywall anchors", "expansion screw", "expansion screws",
+        "drilling required", "requires drilling", "drill holes into wall", "drill pilot holes",
+        "screw into wall", "screws into wall", "mount with screws and wall", "hardware included (screws and anchors",
+        "mounting screws and drywall", "lag screws", "lag bolts", "anchored directly into wall studs"
+    ])
+
+    # If it is a wall mount OR has explicit wall screws/drilling
+    if is_wall_mount or has_wall_screws_or_drilling:
+        # If it explicitly requires screws/drilling or wall anchors/studs
+        if has_wall_screws_or_drilling or (is_wall_mount and not has_tension_adhesive and not explicit_no_drill):
+            return "Screw / Wall-Mount", False, "HEAVY-DUTY STUD MOUNT • ZERO SAG"
+        if has_tension_adhesive or explicit_no_drill:
+            return "Tension/Adhesive", True, "100% RENTER FRIENDLY • NO DRILL"
+        # Standard wall mount fallback if no tension/adhesive mentioned
         return "Screw / Wall-Mount", False, "HEAVY-DUTY STUD MOUNT • ZERO SAG"
 
+    # Tension / Adhesive without wall mount
     if has_tension_adhesive:
         return "Tension/Adhesive", True, "100% RENTER FRIENDLY • NO DRILL"
 
-    # 5. Countertop / Freestanding (Default for standing, tabletop, under sink, cart)
+    # Default: Countertop / Freestanding (includes floor standing, rolling carts, under sink with assembly screws)
     return "Countertop / Freestanding", True, "100% RENTER FRIENDLY • NO DRILL"
 
 
