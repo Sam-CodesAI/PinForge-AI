@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-05T23:24:05.136799+00:00",
+  "last_updated": "2026-10-06T01:51:36.074129+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 12,
+  "total_pins_evaluated": 13,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835762602",
@@ -17,7 +17,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.365095+00:00"
+      "evaluated_at": "2026-10-06T01:51:33.841219+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -33,7 +33,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.519215+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.015904+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -49,7 +49,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.727825+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.243125+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -65,7 +65,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.883025+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.435443+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -81,7 +81,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.047446+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.616144+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -97,7 +97,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.198716+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.803650+00:00"
+    },
+    {
+      "pin_id": "1132444268835907887",
+      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-06T01:51:34.994816+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -113,7 +129,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.355652+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.201637+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -129,7 +145,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.518333+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.348491+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -145,7 +161,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.665259+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.541596+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -161,7 +177,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.823893+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.731137+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -177,7 +193,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.990932+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.906466+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -193,7 +209,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:05.136763+00:00"
+      "evaluated_at": "2026-10-06T01:51:36.074090+00:00"
     }
   ],
   "board_performance_summary": {
@@ -217,6 +233,13 @@
       "total_outbound_clicks": 0,
       "total_saves": 0,
       "total_impressions": 0
+    },
+    "Studio Living Ideas": {
+      "pin_count": 1,
+      "avg_aes": 0.0,
+      "total_outbound_clicks": 0,
+      "total_saves": 0,
+      "total_impressions": 0
     }
   },
   "all_ranked_pins": [
@@ -234,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.365095+00:00"
+      "evaluated_at": "2026-10-06T01:51:33.841219+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -250,7 +273,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.519215+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.015904+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -266,7 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.727825+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.243125+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -282,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:03.883025+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.435443+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -298,7 +321,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.047446+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.616144+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -314,7 +337,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.198716+00:00"
+      "evaluated_at": "2026-10-06T01:51:34.803650+00:00"
+    },
+    {
+      "pin_id": "1132444268835907887",
+      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-06T01:51:34.994816+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -330,7 +369,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.355652+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.201637+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -346,7 +385,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.518333+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.348491+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -362,7 +401,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.665259+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.541596+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -378,7 +417,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.823893+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.731137+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -394,7 +433,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:04.990932+00:00"
+      "evaluated_at": "2026-10-06T01:51:35.906466+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -410,7 +449,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-05T23:24:05.136763+00:00"
+      "evaluated_at": "2026-10-06T01:51:36.074090+00:00"
     }
   ]
 }
