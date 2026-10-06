@@ -3773,5 +3773,151 @@
       "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
       "pin_id": "1132444268835962931"
     }
+  },
+  {
+    "timestamp": "2026-10-06T21:56:36.535070+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.28,
+    "product": {
+      "asin": "B0973DGD8P",
+      "title": "Vacuum Storage Bags with Hand Pump  Vacuum Seal Space Saver Bags",
+      "price": "$15.98",
+      "rating": 4.3,
+      "affiliate_url": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
+      "bridge_slug": "vacuum-storage-bags-with-hand-pump-vacuum-seal-space-saver-bags-b0973dgd8p"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "20% Off Limited Time",
+      "visual_hook": "Create 80% More Closet Space",
+      "secondary_hook": "Includes handy pump for travel and home",
+      "target_audience": "Apartment Renters",
+      "alt_text": "20-pack vacuum storage bags with hand pump for space saving and organization.",
+      "cv_features": {
+        "rb_ratio": 0.829,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 11.4,
+        "edge_clutter": 78.3,
+        "dominant_hex": "#879ba3",
+        "accent_hex": "#0078ad",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.829,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 11.4,
+      "edge_clutter": 78.3,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
+      "description": "Stop letting your closet choke you. \ud83d\udeab\ud83d\udc57 These vacuum bags shrink bulky clothes to pocket size, instantly reviving your floor space. Perfect for duvets, out-of-season gear, or just... surviving a small apartment. \n\nQuestion of the day: Would you use this for your winter coats or your air mattress? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#VacuumBags",
+        "#ClosetMakeover",
+        "#AmazonFinds",
+        "#OrganizationHack",
+        "#MaximizingSpace",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e5303beef6.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_77ddfc1318.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a5cd2a3de7.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_c2a157f699.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_af23e8f71e.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_af23e8f71e.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_e46ea629.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_e46ea629.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_e46ea629.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_e46ea629.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_e46ea629.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
+      "is_removable": false,
+      "is_standard": true,
+      "pin_metrics": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "has_been_promoted": false,
+      "parent_pin_id": null,
+      "creative_type": "REGULAR",
+      "dominant_color": null,
+      "board_id": "1132444337492933751",
+      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
+      "created_at": "2026-10-06T21:56:36",
+      "board_section_id": null,
+      "alt_text": "20-pack vacuum storage bags with hand pump for space saving and organization.",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/23/00/5a/23005a25551d0b9c67296256423bf6ae.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/23/00/5a/23005a25551d0b9c67296256423bf6ae.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/23/00/5a/23005a25551d0b9c67296256423bf6ae.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/23/00/5a/23005a25551d0b9c67296256423bf6ae.jpg"
+          }
+        }
+      },
+      "product_tags": [],
+      "is_product": false,
+      "description": "Stop letting your closet choke you. \ud83d\udeab\ud83d\udc57 These vacuum bags shrink bulky clothes to pocket size, instantly reviving your floor space. Perfect for duvets, out-of-season gear, or just... surviving a small apartment. \n\nQuestion of the day: Would you use this for your winter coats or your air mattress? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_owner": true,
+      "id": "1132444268835974824",
+      "pin_id": "1132444268835974824"
+    }
   }
 ]
