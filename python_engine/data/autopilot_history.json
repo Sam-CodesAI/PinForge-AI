@@ -3474,5 +3474,158 @@
       "is_standard": true,
       "pin_id": "1132444268835922973"
     }
+  },
+  {
+    "timestamp": "2026-10-06T10:47:04.593271+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.3,
+    "product": {
+      "asin": "B0GQ43DT9V",
+      "title": "SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+      "price": "$29.99",
+      "rating": 4.4,
+      "affiliate_url": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "bridge_slug": "sunally-slim-storage-cart-with-wheels-narrow-kitchen-rolling-cart-b0gq43dt9v"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#F4EFE6",
+      "accent_hex": "#E11D48",
+      "badge_text": "Top Rated 2026",
+      "visual_hook": "The Ultimate Small Kitchen Hack",
+      "secondary_hook": "Maximize tight spaces instantly",
+      "target_audience": "Apartment Renters",
+      "alt_text": "SUNALLY Slim Storage Cart with Wheels Narrow Kitchen Rolling Cart neatly organized between kitchen counter and refrigerator.",
+      "cv_features": {
+        "rb_ratio": 1.207,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 3.3,
+        "edge_clutter": 45.4,
+        "dominant_hex": "#cebdab",
+        "accent_hex": "#f6a40f",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.207,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 3.3,
+      "edge_clutter": 45.4,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#RollingCart",
+        "#HomeStorage",
+        "#ApartmentLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_164cca75fb.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c4fdbc367c.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_89cb26a12f.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ae87fcf18a.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6a6d977e04.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6a6d977e04.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_03cfdab8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_03cfdab8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_03cfdab8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_03cfdab8.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_03cfdab8.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "is_owner": true,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89 (Slide 1/4)",
+            "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "id": "1132444268835930137",
+      "is_removable": false,
+      "parent_pin_id": null,
+      "is_product": false,
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "dominant_color": null,
+      "product_tags": [],
+      "pin_metrics": null,
+      "created_at": "2026-10-06T10:47:03",
+      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "board_id": "1132444337492933749",
+      "has_been_promoted": false,
+      "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "creative_type": "CAROUSEL",
+      "board_section_id": null,
+      "is_standard": true,
+      "alt_text": "SUNALLY Slim Storage Cart with Wheels Narrow Kitchen Rolling Cart neatly organized between kitchen counter and refrigerator.",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_id": "1132444268835930137"
+    }
   }
 ]
