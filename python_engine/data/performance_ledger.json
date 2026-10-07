@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-07T10:36:44.378182+00:00",
+  "last_updated": "2026-10-07T19:27:50.061860+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 20,
+  "total_pins_evaluated": 21,
   "top_performing_pins": [
     {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "pin_id": "1132444268835809911",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
       "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 6,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 2,
+        "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:39.446564+00:00"
+      "aes_score": 12.26,
+      "raw_aes_score": 130.0,
+      "evaluated_at": "2026-10-07T19:27:49.306859+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -25,15 +25,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 3,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:39.707932+00:00"
+      "aes_score": 6.31,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-07T19:27:44.765681+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -41,7 +41,55 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:45.062918+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 3,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.46,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:48.746784+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 6,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.42,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:49.017426+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 5,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -49,7 +97,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.020057+00:00"
+      "evaluated_at": "2026-10-07T19:27:44.508651+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -57,7 +105,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -65,7 +113,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.322241+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.358612+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -81,7 +129,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.583652+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.642707+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -97,7 +145,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.834889+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.901030+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -113,7 +161,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.127299+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.198149+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -129,7 +177,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.396003+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.485059+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -145,7 +193,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.656172+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.758608+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -161,7 +209,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.910543+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.013300+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -177,7 +225,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.168572+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.323147+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -193,7 +241,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.447765+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.628510+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -209,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.685655+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.903286+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -225,13 +273,13 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.937178+00:00"
+      "evaluated_at": "2026-10-07T19:27:48.235084+00:00"
     },
     {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/",
+      "pin_id": "1132444268836048964",
+      "title": "Sticky Corner Shower Caddy: 2\u2011Pack Stainless Steel Tension Baskets for Tiny Bathrooms! \ud83d\udebf\u2728",
+      "board": "Space Saving Kitchens",
+      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
         "saves": 0,
@@ -241,39 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.162933+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.419972+00:00"
-    },
-    {
-      "pin_id": "1132444268835809911",
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.673751+00:00"
+      "evaluated_at": "2026-10-07T19:27:48.491711+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -281,7 +297,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -289,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.935126+00:00"
+      "evaluated_at": "2026-10-07T19:27:49.564419+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -297,7 +313,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 4,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -305,39 +321,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:44.160929+00:00"
-    },
-    {
-      "pin_id": "1132444268835762446",
-      "title": "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:44.378150+00:00"
+      "evaluated_at": "2026-10-07T19:27:49.821238+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
       "pin_count": 11,
-      "avg_aes": 0.0,
-      "total_outbound_clicks": 0,
+      "avg_aes": 1.51,
+      "total_outbound_clicks": 2,
       "total_saves": 0,
-      "total_impressions": 0
+      "total_impressions": 36
     },
     "Room Organization": {
       "pin_count": 3,
-      "avg_aes": 0.0,
-      "total_outbound_clicks": 0,
+      "avg_aes": 2.1,
+      "total_outbound_clicks": 1,
       "total_saves": 0,
-      "total_impressions": 0
+      "total_impressions": 3
     },
     "Closet & Wardrobe Organization": {
       "pin_count": 3,
@@ -354,7 +354,7 @@
       "total_impressions": 0
     },
     "Space Saving Kitchens": {
-      "pin_count": 1,
+      "pin_count": 2,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -363,20 +363,20 @@
   },
   "all_ranked_pins": [
     {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "pin_id": "1132444268835809911",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
       "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 6,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 2,
+        "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:39.446564+00:00"
+      "aes_score": 12.26,
+      "raw_aes_score": 130.0,
+      "evaluated_at": "2026-10-07T19:27:49.306859+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -384,15 +384,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 3,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:39.707932+00:00"
+      "aes_score": 6.31,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-07T19:27:44.765681+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -400,7 +400,55 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:45.062918+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 3,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.46,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:48.746784+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 6,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.42,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-07T19:27:49.017426+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 5,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -408,7 +456,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.020057+00:00"
+      "evaluated_at": "2026-10-07T19:27:44.508651+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -416,7 +464,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -424,7 +472,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.322241+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.358612+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -440,7 +488,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.583652+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.642707+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -456,7 +504,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:40.834889+00:00"
+      "evaluated_at": "2026-10-07T19:27:45.901030+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -472,7 +520,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.127299+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.198149+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -488,7 +536,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.396003+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.485059+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -504,7 +552,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.656172+00:00"
+      "evaluated_at": "2026-10-07T19:27:46.758608+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -520,7 +568,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:41.910543+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.013300+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -536,7 +584,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.168572+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.323147+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -552,7 +600,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.447765+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.628510+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -568,7 +616,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.685655+00:00"
+      "evaluated_at": "2026-10-07T19:27:47.903286+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -584,13 +632,13 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:42.937178+00:00"
+      "evaluated_at": "2026-10-07T19:27:48.235084+00:00"
     },
     {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/",
+      "pin_id": "1132444268836048964",
+      "title": "Sticky Corner Shower Caddy: 2\u2011Pack Stainless Steel Tension Baskets for Tiny Bathrooms! \ud83d\udebf\u2728",
+      "board": "Space Saving Kitchens",
+      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
       "metrics": {
         "impressions": 0,
         "saves": 0,
@@ -600,39 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.162933+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.419972+00:00"
-    },
-    {
-      "pin_id": "1132444268835809911",
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.673751+00:00"
+      "evaluated_at": "2026-10-07T19:27:48.491711+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -640,7 +656,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -648,7 +664,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:43.935126+00:00"
+      "evaluated_at": "2026-10-07T19:27:49.564419+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -656,7 +672,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 4,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -664,7 +680,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:44.160929+00:00"
+      "evaluated_at": "2026-10-07T19:27:49.821238+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -672,7 +688,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 4,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -680,7 +696,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T10:36:44.378150+00:00"
+      "evaluated_at": "2026-10-07T19:27:50.061817+00:00"
     }
   ]
 }
