@@ -4541,5 +4541,150 @@
       "dominant_color": "#2b2d2a",
       "pin_id": "1132444268836048964"
     }
+  },
+  {
+    "timestamp": "2026-10-07T22:19:01.777631+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.74,
+    "product": {
+      "asin": "B08N5NV448",
+      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vacuum Storage Bags: Collapse Clutter, Gain Space Instantly!",
+      "description": "Tired of overflowing closets and bulky bedding? These Space Saver Vacuum Storage Bags compress up to 80% of volume, letting you stash seasonal clothes, blankets, and pillows in neat, airtight pouches\u2014all with the included hand pump. Perfect for tiny apartments or dorm rooms. Small space challenge: Could you fit a winter coat in one bag? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SpaceSaving",
+        "#VacuumStorage",
+        "#ClosetGoals",
+        "#HomeHacks",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_982277853c.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_05bcd2e1b5.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_efdb486421.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_25d613efd1.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_c98dc6cb76.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_c98dc6cb76.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_9967d501.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_9967d501.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_9967d501.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_9967d501.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_9967d501.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "product_tags": [],
+      "board_section_id": null,
+      "has_been_promoted": false,
+      "pin_metrics": null,
+      "created_at": "2026-10-07T22:19:01",
+      "id": "1132444268836058909",
+      "description": "Tired of overflowing closets and bulky bedding? These Space Saver Vacuum Storage Bags compress up to 80% of volume, letting you stash seasonal clothes, blankets, and pillows in neat, airtight pouches\u2014all with the included hand pump. Perfect for tiny apartments or dorm rooms. Small space challenge: Could you fit a winter coat in one bag? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "title": "Vacuum Storage Bags: Collapse Clutter, Gain Space Instantly!",
+      "board_id": "1132444337492933751",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_owner": true,
+      "is_product": false,
+      "is_standard": true,
+      "parent_pin_id": null,
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "dominant_color": "#2b2d2a",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "pin_id": "1132444268836058909"
+    }
   }
 ]
