@@ -4072,5 +4072,150 @@
       "has_been_promoted": false,
       "pin_id": "1132444268835984000"
     }
+  },
+  {
+    "timestamp": "2026-10-07T07:15:32.126423+00:00",
+    "status": "success",
+    "execution_time_seconds": 14.21,
+    "product": {
+      "asin": "B0C42YJVCD",
+      "title": "Asayuee 360 Rotating Makeup Organizer for Vanity 2 Tier Large Capacity Skincare Organizers",
+      "price": "$15.98",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
+      "bridge_slug": "asayuee-360-rotating-makeup-organizer-for-vanity-2-tier-large-capacity-skin-b0c42yjvcd"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1B3022",
+      "accent_hex": "#D4AF37",
+      "badge_text": "41% Off Limited Deal",
+      "visual_hook": "De-clutter Your Vanity Instantly",
+      "secondary_hook": "360-degree rotation for effortless daily access",
+      "target_audience": "Beauty Enthusiasts",
+      "alt_text": "Green two-tier rotating makeup organizer filled with skincare bottles and jars on white background",
+      "cv_features": {
+        "rb_ratio": 1.152,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 62.2,
+        "edge_clutter": 52.0,
+        "dominant_hex": "#898976",
+        "accent_hex": "#d2a822",
+        "bounding_box": [
+          0.037,
+          0.237,
+          0.963,
+          0.787
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.152,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 62.2,
+      "edge_clutter": 52.0,
+      "bounding_box": [
+        0.037,
+        0.237,
+        0.963,
+        0.787
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "description": "Finally! A vanity hack that actually works. This 2-tier rotating organizer fits all your skincare & makeup in a tiny footprint. No more digging through drawers! Would you spin this in your bathroom or bedroom? Drop a \ud83d\udc9a if you need it! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#VanityHacks",
+        "#MakeupOrganization",
+        "#SmallSpaceLiving",
+        "#AmazonMustHaves",
+        "#BeautyFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_6f5160a66c.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_09701f8a19.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_5b83164571.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_234fd3a4e4.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be439a0582.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be439a0582.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_c5aff602.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_c5aff602.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_c5aff602.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_c5aff602.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c5aff602.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492930442",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
+          }
+        }
+      },
+      "board_section_id": null,
+      "pin_metrics": null,
+      "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
+      "is_removable": false,
+      "creative_type": "REGULAR",
+      "is_product": false,
+      "created_at": "2026-10-07T07:15:31",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "parent_pin_id": null,
+      "dominant_color": null,
+      "id": "1132444268836000895",
+      "alt_text": "Green two-tier rotating makeup organizer filled with skincare bottles and jars on white background",
+      "product_tags": [],
+      "has_been_promoted": false,
+      "is_owner": true,
+      "description": "Finally! A vanity hack that actually works. This 2-tier rotating organizer fits all your skincare & makeup in a tiny footprint. No more digging through drawers! Would you spin this in your bathroom or bedroom? Drop a \ud83d\udc9a if you need it! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "pin_id": "1132444268836000895"
+    }
   }
 ]

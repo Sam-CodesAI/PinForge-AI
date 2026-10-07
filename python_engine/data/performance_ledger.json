@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-07T00:55:57.515450+00:00",
+  "last_updated": "2026-10-07T07:15:41.487284+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 18,
+  "total_pins_evaluated": 19,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835762602",
@@ -17,7 +17,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.192631+00:00"
+      "evaluated_at": "2026-10-07T07:15:37.598319+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -33,7 +33,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.538563+00:00"
+      "evaluated_at": "2026-10-07T07:15:37.802232+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -49,7 +49,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.877285+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.036041+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -65,7 +65,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.250845+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.214163+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -81,7 +81,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.561820+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.411689+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -97,7 +97,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.843743+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.584478+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -113,7 +113,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.204722+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.767542+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -129,7 +129,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.515681+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.066422+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -145,7 +145,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.828656+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.300379+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -161,7 +161,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.157146+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.488228+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -177,7 +177,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.515700+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.698409+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -193,7 +193,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.800502+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.990156+00:00"
+    },
+    {
+      "pin_id": "1132444268836000895",
+      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-07T07:15:40.212065+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -209,7 +225,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.105567+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.395705+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -225,7 +241,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.400307+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.708682+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -241,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.659317+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.953025+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -257,7 +273,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.950126+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.116516+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -273,7 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:57.226932+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.273100+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -289,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:57.515421+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.487253+00:00"
     }
   ],
   "board_performance_summary": {
@@ -301,7 +317,7 @@
       "total_impressions": 0
     },
     "Room Organization": {
-      "pin_count": 2,
+      "pin_count": 3,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -344,7 +360,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.192631+00:00"
+      "evaluated_at": "2026-10-07T07:15:37.598319+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -360,7 +376,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.538563+00:00"
+      "evaluated_at": "2026-10-07T07:15:37.802232+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -376,7 +392,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:52.877285+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.036041+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -392,7 +408,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.250845+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.214163+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -408,7 +424,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.561820+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.411689+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -424,7 +440,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:53.843743+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.584478+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -440,7 +456,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.204722+00:00"
+      "evaluated_at": "2026-10-07T07:15:38.767542+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -456,7 +472,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.515681+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.066422+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -472,7 +488,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:54.828656+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.300379+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -488,7 +504,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.157146+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.488228+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -504,7 +520,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.515700+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.698409+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -520,7 +536,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:55.800502+00:00"
+      "evaluated_at": "2026-10-07T07:15:39.990156+00:00"
+    },
+    {
+      "pin_id": "1132444268836000895",
+      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-07T07:15:40.212065+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -536,7 +568,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.105567+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.395705+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -552,7 +584,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.400307+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.708682+00:00"
     },
     {
       "pin_id": "1132444268835809911",
@@ -568,7 +600,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.659317+00:00"
+      "evaluated_at": "2026-10-07T07:15:40.953025+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -584,7 +616,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:56.950126+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.116516+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -600,7 +632,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:57.226932+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.273100+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -616,7 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T00:55:57.515421+00:00"
+      "evaluated_at": "2026-10-07T07:15:41.487253+00:00"
     }
   ]
 }
