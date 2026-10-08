@@ -5164,5 +5164,151 @@
       "pin_metrics": null,
       "pin_id": "1132444268836096573"
     }
+  },
+  {
+    "timestamp": "2026-10-08T19:23:46.339151+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.9,
+    "product": {
+      "asin": "B08332N66L",
+      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "20% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Killer Kitchen Hack: 24-Bottle Spice Rack That Ends Counter Chaos!",
+      "description": "Stop letting spices clutter your precious square footage! \ud83c\udf3f This SpaceAid rack turns chaotic cabinets into an aesthetic showstopper. 24 matching glass jars with labels = instant zen. Minimalist, functional, and totally Pinterest-worthy. Would you install this in your upper cabinets or keep it on the counter? Drop your preference below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#AestheticKitchen",
+        "#AmazonFinds",
+        "#SpaceSaving",
+        "#HomeDecor",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ee75a862e2.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_16a269d9b2.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_736659ce9e.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_478dafaace.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_13f795ee94.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_13f795ee94.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_1210c56c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_1210c56c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_1210c56c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_1210c56c.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_1210c56c.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "title": "Killer Kitchen Hack: 24-Bottle Spice Rack That Ends Counter Chaos!",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_metrics": null,
+      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "is_product": false,
+      "dominant_color": null,
+      "created_at": "2026-10-08T19:23:45",
+      "is_standard": true,
+      "description": "Stop letting spices clutter your precious square footage! \ud83c\udf3f This SpaceAid rack turns chaotic cabinets into an aesthetic showstopper. 24 matching glass jars with labels = instant zen. Minimalist, functional, and totally Pinterest-worthy. Would you install this in your upper cabinets or keep it on the counter? Drop your preference below! \ud83d\udc47 #AmazonAssociate",
+      "board_section_id": null,
+      "id": "1132444268836134919",
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "product_tags": [],
+      "parent_pin_id": null,
+      "is_owner": true,
+      "is_removable": false,
+      "creative_type": "REGULAR",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          }
+        }
+      },
+      "board_id": "1132444337492933750",
+      "has_been_promoted": false,
+      "pin_id": "1132444268836134919"
+    }
   }
 ]
