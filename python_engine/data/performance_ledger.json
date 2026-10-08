@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-07T22:19:17.956958+00:00",
+  "last_updated": "2026-10-08T01:11:53.213557+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 22,
+  "total_pins_evaluated": 23,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835809911",
@@ -17,7 +17,7 @@
       },
       "aes_score": 12.26,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-07T22:19:17.139802+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.539388+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -33,7 +33,7 @@
       },
       "aes_score": 6.31,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-07T22:19:11.273739+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.076110+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -49,7 +49,7 @@
       },
       "aes_score": 1.49,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:11.550727+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.342098+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -65,7 +65,7 @@
       },
       "aes_score": 1.46,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:16.410732+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.060944+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -81,7 +81,7 @@
       },
       "aes_score": 1.42,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:16.856306+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.295461+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -97,7 +97,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:10.982169+00:00"
+      "evaluated_at": "2026-10-08T01:11:47.823307+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -113,7 +113,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:11.804368+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.589949+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -129,7 +129,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.065197+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.818670+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -145,7 +145,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.441691+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.076404+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -161,7 +161,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.783496+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.370146+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -177,7 +177,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.085730+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.629149+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -193,7 +193,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.486530+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.886987+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -209,7 +209,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.990291+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.116905+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -225,7 +225,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.352905+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.351941+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -241,7 +241,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.688365+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.607106+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -257,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.966940+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.834446+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -273,7 +273,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:15.323785+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.094338+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -289,7 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:15.650426+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.314285+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -305,15 +305,15 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:16.113962+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.554068+00:00"
     },
     {
-      "pin_id": "1132444268835775000",
-      "title": "This Viral $30 Amazon Find Is Totally Worth the Hype!",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
+      "pin_id": "1132444268836067497",
+      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 0,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -321,7 +321,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:17.383804+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.802639+00:00"
     }
   ],
   "board_performance_summary": {
@@ -347,7 +347,7 @@
       "total_impressions": 0
     },
     "Studio Living Ideas": {
-      "pin_count": 2,
+      "pin_count": 3,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -376,7 +376,7 @@
       },
       "aes_score": 12.26,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-07T22:19:17.139802+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.539388+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -392,7 +392,7 @@
       },
       "aes_score": 6.31,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-07T22:19:11.273739+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.076110+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -408,7 +408,7 @@
       },
       "aes_score": 1.49,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:11.550727+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.342098+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -424,7 +424,7 @@
       },
       "aes_score": 1.46,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:16.410732+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.060944+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -440,7 +440,7 @@
       },
       "aes_score": 1.42,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-07T22:19:16.856306+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.295461+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -456,7 +456,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:10.982169+00:00"
+      "evaluated_at": "2026-10-08T01:11:47.823307+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -472,7 +472,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:11.804368+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.589949+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -488,7 +488,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.065197+00:00"
+      "evaluated_at": "2026-10-08T01:11:48.818670+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -504,7 +504,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.441691+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.076404+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -520,7 +520,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:12.783496+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.370146+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -536,7 +536,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.085730+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.629149+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -552,7 +552,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.486530+00:00"
+      "evaluated_at": "2026-10-08T01:11:49.886987+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -568,7 +568,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:13.990291+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.116905+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -584,7 +584,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.352905+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.351941+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -600,7 +600,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.688365+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.607106+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -616,7 +616,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:14.966940+00:00"
+      "evaluated_at": "2026-10-08T01:11:50.834446+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -632,7 +632,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:15.323785+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.094338+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -648,7 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:15.650426+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.314285+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -664,7 +664,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:16.113962+00:00"
+      "evaluated_at": "2026-10-08T01:11:51.554068+00:00"
+    },
+    {
+      "pin_id": "1132444268836067497",
+      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-08T01:11:51.802639+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -680,7 +696,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:17.383804+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.775158+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -696,7 +712,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:17.675689+00:00"
+      "evaluated_at": "2026-10-08T01:11:52.990443+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -712,7 +728,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-07T22:19:17.956929+00:00"
+      "evaluated_at": "2026-10-08T01:11:53.213514+00:00"
     }
   ]
 }

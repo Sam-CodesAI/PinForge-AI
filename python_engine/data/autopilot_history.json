@@ -4686,5 +4686,159 @@
       "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
       "pin_id": "1132444268836058909"
     }
+  },
+  {
+    "timestamp": "2026-10-08T01:11:39.627166+00:00",
+    "status": "success",
+    "execution_time_seconds": 59.3,
+    "product": {
+      "asin": "B0H5394LS5",
+      "title": "Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
+      "price": "$166.89",
+      "rating": 5.0,
+      "affiliate_url": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+      "bridge_slug": "wall-mounted-drop-leaf-table-wall-mounted-folding-table-b0h5394ls5"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#F4ECE1",
+      "accent_hex": "#E11D48",
+      "badge_text": "Space Saving Essential",
+      "visual_hook": "Transform Your Tiny Kitchen Space",
+      "secondary_hook": "Folds flat against the wall instantly",
+      "target_audience": "Apartment Renters",
+      "alt_text": "White wall mounted drop leaf folding table in a modern small kitchen setup with wooden cutting board and peppers.",
+      "cv_features": {
+        "rb_ratio": 1.154,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.0,
+        "edge_clutter": 30.0,
+        "dominant_hex": "#a2978c",
+        "accent_hex": "#b98c16",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.154,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.0,
+      "edge_clutter": 30.0,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
+      "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallApartment",
+        "#DropLeafTable",
+        "#StudioLiving",
+        "#HomeOffice",
+        "#SpaceSaving",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0fd11feb82.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c7b067eda0.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_fed59954b7.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_fbeafb5124.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_82a1786814.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_82a1786814.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_d103e753.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_d103e753.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_d103e753.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_d103e753.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_d103e753.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "id": "1132444268836067497",
+      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
+      "is_standard": true,
+      "has_been_promoted": false,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728 (Slide 1/4)",
+            "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
+            "description": "Real-world space-saving transformation. HEAVY-DUTY STUD MOUNT \u2022 ZERO SAG. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_metrics": null,
+      "creative_type": "CAROUSEL",
+      "alt_text": "White wall mounted drop leaf folding table in a modern small kitchen setup with wooden cutting board and peppers.",
+      "parent_pin_id": null,
+      "board_section_id": null,
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
+      "dominant_color": null,
+      "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "created_at": "2026-10-08T01:11:39",
+      "is_owner": true,
+      "is_product": false,
+      "board_id": "1132444337492933752",
+      "product_tags": [],
+      "pin_id": "1132444268836067497"
+    }
   }
 ]
