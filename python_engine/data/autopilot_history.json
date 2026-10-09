@@ -6158,5 +6158,151 @@
       "is_removable": false,
       "pin_id": "1132444268836217222"
     }
+  },
+  {
+    "timestamp": "2026-10-09T21:55:48.050163+00:00",
+    "status": "success",
+    "execution_time_seconds": 37.42,
+    "product": {
+      "asin": "B01ICEEHUO",
+      "title": "Spacesaver Vacuum Storage Bags with Hand Pump, Jumbo, 10 Pack",
+      "price": "$34.99",
+      "rating": 4.4,
+      "affiliate_url": "https://www.amazon.com/dp/B01ICEEHUO?tag=smartspace07-21",
+      "bridge_slug": "spacesaver-vacuum-storage-bags-with-hand-pump-jumbo-10-pack-b01iceehuo"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "80% Space Saved",
+      "visual_hook": "Reclaim 80% of Your Closet Space",
+      "secondary_hook": "Includes hand pump for travel and home",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Spacesaver vacuum storage bags 10 pack with hand pump showing compressed bedding and space saving results.",
+      "cv_features": {
+        "rb_ratio": 1.054,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 30.2,
+        "edge_clutter": 56.5,
+        "dominant_hex": "#afa2a6",
+        "accent_hex": "#0971ea",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.054,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 30.2,
+      "edge_clutter": 56.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Save 80% Space: Jumbo Vacuum Bags w/ Hand Pump! \u2705 Smart Spaces",
+      "description": "Turn your overflowing closet into chic, organized heaven. \ud83c\udfe1 These jumbo bags compress bulky bedding & winter coats, reclaiming\u5b9d\u8d35 vertical space. Say goodbye to cluttered bins! Would you use this for seasonal clothes or blankets? Drop your pick below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ClosetMakeover",
+        "#SmallSpaceLiving",
+        "#VacuumBags",
+        "#AmazonFinds",
+        "#HomeHacks",
+        "#Organization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_dde14e6279.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6ee8b541e3.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_ef367ab7ae.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_38df4fb790.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cf534c38e9.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cf534c38e9.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_73944265.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_73944265.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_73944265.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_73944265.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_73944265.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/5f/74/a4/5f74a4b9c7fe7baa9c4ab328720cd979.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/5f/74/a4/5f74a4b9c7fe7baa9c4ab328720cd979.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/5f/74/a4/5f74a4b9c7fe7baa9c4ab328720cd979.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/5f/74/a4/5f74a4b9c7fe7baa9c4ab328720cd979.jpg"
+          }
+        }
+      },
+      "board_id": "1132444337492933751",
+      "product_tags": [],
+      "is_owner": true,
+      "pin_metrics": null,
+      "created_at": "2026-10-09T21:55:47",
+      "parent_pin_id": null,
+      "has_been_promoted": false,
+      "id": "1132444268836229620",
+      "link": "https://www.amazon.com/dp/B01ICEEHUO?tag=smartspace07-21",
+      "description": "Turn your overflowing closet into chic, organized heaven. \ud83c\udfe1 These jumbo bags compress bulky bedding & winter coats, reclaiming\u5b9d\u8d35 vertical space. Say goodbye to cluttered bins! Would you use this for seasonal clothes or blankets? Drop your pick below! \ud83d\udc47 #AmazonAssociate",
+      "title": "Save 80% Space: Jumbo Vacuum Bags w/ Hand Pump! \u2705 Smart Spaces",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_removable": false,
+      "is_product": false,
+      "is_standard": true,
+      "board_section_id": null,
+      "dominant_color": null,
+      "alt_text": "Spacesaver vacuum storage bags 10 pack with hand pump showing compressed bedding and space saving results.",
+      "pin_id": "1132444268836229620"
+    }
   }
 ]
