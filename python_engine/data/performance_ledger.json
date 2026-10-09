@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-09T07:25:31.171896+00:00",
+  "last_updated": "2026-10-09T10:56:25.851809+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 29,
+  "total_pins_evaluated": 30,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835809911",
@@ -9,223 +9,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 2,
         "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 12.26,
+      "aes_score": 12.15,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-09T07:25:30.442827+00:00"
-    },
-    {
-      "pin_id": "1132444268835842341",
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
-      "board": "Room Organization",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 3,
-        "saves": 0,
-        "outbound_clicks": 1,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 6.31,
-      "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-09T07:25:24.132024+00:00"
-    },
-    {
-      "pin_id": "1132444268835846222",
-      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.49,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:24.376664+00:00"
-    },
-    {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/",
-      "metrics": {
-        "impressions": 3,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.46,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:29.921067+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 6,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.42,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:30.190866+00:00"
-    },
-    {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 5,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:23.863416+00:00"
-    },
-    {
-      "pin_id": "1132444268835851879",
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:24.621553+00:00"
-    },
-    {
-      "pin_id": "1132444268835894684",
-      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:24.894536+00:00"
-    },
-    {
-      "pin_id": "1132444268835901046",
-      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.158699+00:00"
-    },
-    {
-      "pin_id": "1132444268835907887",
-      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
-      "board": "Studio Living Ideas",
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.437120+00:00"
-    },
-    {
-      "pin_id": "1132444268835922973",
-      "title": "Stop Kitchen Chaos: Game-Changing Under Sink Storage! \ud83e\uddfc\u2728 Best Amazon Find",
-      "board": "Room Organization",
-      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.662325+00:00"
-    },
-    {
-      "pin_id": "1132444268835930137",
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.038182+00:00"
-    },
-    {
-      "pin_id": "1132444268835962931",
-      "title": "Stop Drawer Chaos: Lifewit 6-Pack Dividers for Flawless Tiny Homes \u2728\ud83d\udce6",
-      "board": "Space Saving Kitchens",
-      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.304058+00:00"
-    },
-    {
-      "pin_id": "1132444268835974824",
-      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.570011+00:00"
+      "evaluated_at": "2026-10-09T10:56:25.253481+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -233,15 +25,15 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.824892+00:00"
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.084342+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -249,15 +41,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.108556+00:00"
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.296677+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -265,7 +57,87 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.547544+00:00"
+    },
+    {
+      "pin_id": "1132444268835842341",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 4,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 6.25,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:18.639308+00:00"
+    },
+    {
+      "pin_id": "1132444268835846222",
+      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.47,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:18.925521+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 4,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.44,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:24.785334+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 7,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.4,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:24.978641+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -273,7 +145,135 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.402688+00:00"
+      "evaluated_at": "2026-10-09T10:56:18.434486+00:00"
+    },
+    {
+      "pin_id": "1132444268835851879",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.111901+00:00"
+    },
+    {
+      "pin_id": "1132444268835894684",
+      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.382970+00:00"
+    },
+    {
+      "pin_id": "1132444268835901046",
+      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.596618+00:00"
+    },
+    {
+      "pin_id": "1132444268835907887",
+      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.842365+00:00"
+    },
+    {
+      "pin_id": "1132444268835922973",
+      "title": "Stop Kitchen Chaos: Game-Changing Under Sink Storage! \ud83e\uddfc\u2728 Best Amazon Find",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.086954+00:00"
+    },
+    {
+      "pin_id": "1132444268835930137",
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.396133+00:00"
+    },
+    {
+      "pin_id": "1132444268835962931",
+      "title": "Stop Drawer Chaos: Lifewit 6-Pack Dividers for Flawless Tiny Homes \u2728\ud83d\udce6",
+      "board": "Space Saving Kitchens",
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.598728+00:00"
+    },
+    {
+      "pin_id": "1132444268835974824",
+      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.815646+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -289,7 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.659663+00:00"
+      "evaluated_at": "2026-10-09T10:56:21.780145+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -305,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.921768+00:00"
+      "evaluated_at": "2026-10-09T10:56:22.074039+00:00"
     },
     {
       "pin_id": "1132444268836067497",
@@ -321,44 +321,44 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:28.175385+00:00"
+      "evaluated_at": "2026-10-09T10:56:22.702759+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
-      "pin_count": 12,
-      "avg_aes": 1.39,
-      "total_outbound_clicks": 2,
+      "pin_count": 13,
+      "avg_aes": 1.76,
+      "total_outbound_clicks": 3,
       "total_saves": 0,
-      "total_impressions": 36
+      "total_impressions": 47
     },
     "Room Organization": {
       "pin_count": 5,
-      "avg_aes": 1.26,
-      "total_outbound_clicks": 1,
+      "avg_aes": 2.54,
+      "total_outbound_clicks": 2,
       "total_saves": 0,
-      "total_impressions": 3
+      "total_impressions": 6
     },
     "Closet & Wardrobe Organization": {
       "pin_count": 5,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
-      "total_impressions": 0
+      "total_impressions": 3
     },
     "Studio Living Ideas": {
       "pin_count": 4,
-      "avg_aes": 0.0,
-      "total_outbound_clicks": 0,
+      "avg_aes": 1.61,
+      "total_outbound_clicks": 1,
       "total_saves": 0,
-      "total_impressions": 0
+      "total_impressions": 2
     },
     "Space Saving Kitchens": {
       "pin_count": 3,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
-      "total_impressions": 0
+      "total_impressions": 1
     }
   },
   "all_ranked_pins": [
@@ -368,223 +368,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 2,
         "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 12.26,
+      "aes_score": 12.15,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-09T07:25:30.442827+00:00"
-    },
-    {
-      "pin_id": "1132444268835842341",
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
-      "board": "Room Organization",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 3,
-        "saves": 0,
-        "outbound_clicks": 1,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 6.31,
-      "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-09T07:25:24.132024+00:00"
-    },
-    {
-      "pin_id": "1132444268835846222",
-      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.49,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:24.376664+00:00"
-    },
-    {
-      "pin_id": "1132444268835831954",
-      "title": "Test 2-Slide Native Carousel Base64",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/",
-      "metrics": {
-        "impressions": 3,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.46,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:29.921067+00:00"
-    },
-    {
-      "pin_id": "1132444268835821570",
-      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 6,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.42,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-09T07:25:30.190866+00:00"
-    },
-    {
-      "pin_id": "1132444268835762602",
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
-      "board": "Small Apartment Hacks",
-      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 5,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:23.863416+00:00"
-    },
-    {
-      "pin_id": "1132444268835851879",
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:24.621553+00:00"
-    },
-    {
-      "pin_id": "1132444268835894684",
-      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:24.894536+00:00"
-    },
-    {
-      "pin_id": "1132444268835901046",
-      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.158699+00:00"
-    },
-    {
-      "pin_id": "1132444268835907887",
-      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
-      "board": "Studio Living Ideas",
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.437120+00:00"
-    },
-    {
-      "pin_id": "1132444268835922973",
-      "title": "Stop Kitchen Chaos: Game-Changing Under Sink Storage! \ud83e\uddfc\u2728 Best Amazon Find",
-      "board": "Room Organization",
-      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:25.662325+00:00"
-    },
-    {
-      "pin_id": "1132444268835930137",
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.038182+00:00"
-    },
-    {
-      "pin_id": "1132444268835962931",
-      "title": "Stop Drawer Chaos: Lifewit 6-Pack Dividers for Flawless Tiny Homes \u2728\ud83d\udce6",
-      "board": "Space Saving Kitchens",
-      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.304058+00:00"
-    },
-    {
-      "pin_id": "1132444268835974824",
-      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.570011+00:00"
+      "evaluated_at": "2026-10-09T10:56:25.253481+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -592,15 +384,15 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:26.824892+00:00"
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.084342+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -608,15 +400,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.108556+00:00"
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.296677+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -624,7 +416,87 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 6.44,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:21.547544+00:00"
+    },
+    {
+      "pin_id": "1132444268835842341",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 4,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 6.25,
+      "raw_aes_score": 65.0,
+      "evaluated_at": "2026-10-09T10:56:18.639308+00:00"
+    },
+    {
+      "pin_id": "1132444268835846222",
+      "title": "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart!",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.47,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:18.925521+00:00"
+    },
+    {
+      "pin_id": "1132444268835831954",
+      "title": "Test 2-Slide Native Carousel Base64",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/",
+      "metrics": {
+        "impressions": 4,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.44,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:24.785334+00:00"
+    },
+    {
+      "pin_id": "1132444268835821570",
+      "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 7,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.4,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-09T10:56:24.978641+00:00"
+    },
+    {
+      "pin_id": "1132444268835762602",
+      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Tech Find",
+      "board": "Small Apartment Hacks",
+      "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -632,7 +504,135 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.402688+00:00"
+      "evaluated_at": "2026-10-09T10:56:18.434486+00:00"
+    },
+    {
+      "pin_id": "1132444268835851879",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.111901+00:00"
+    },
+    {
+      "pin_id": "1132444268835894684",
+      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.382970+00:00"
+    },
+    {
+      "pin_id": "1132444268835901046",
+      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.596618+00:00"
+    },
+    {
+      "pin_id": "1132444268835907887",
+      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:19.842365+00:00"
+    },
+    {
+      "pin_id": "1132444268835922973",
+      "title": "Stop Kitchen Chaos: Game-Changing Under Sink Storage! \ud83e\uddfc\u2728 Best Amazon Find",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.086954+00:00"
+    },
+    {
+      "pin_id": "1132444268835930137",
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.396133+00:00"
+    },
+    {
+      "pin_id": "1132444268835962931",
+      "title": "Stop Drawer Chaos: Lifewit 6-Pack Dividers for Flawless Tiny Homes \u2728\ud83d\udce6",
+      "board": "Space Saving Kitchens",
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.598728+00:00"
+    },
+    {
+      "pin_id": "1132444268835974824",
+      "title": "Cut Clutter by 80%: Vacuum Storage Bags w/ Pump! \u2728",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:20.815646+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -648,7 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.659663+00:00"
+      "evaluated_at": "2026-10-09T10:56:21.780145+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -664,7 +664,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:27.921768+00:00"
+      "evaluated_at": "2026-10-09T10:56:22.074039+00:00"
     },
     {
       "pin_id": "1132444268836067497",
@@ -680,7 +680,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:28.175385+00:00"
+      "evaluated_at": "2026-10-09T10:56:22.702759+00:00"
     },
     {
       "pin_id": "1132444268836085542",
@@ -696,7 +696,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:28.439947+00:00"
+      "evaluated_at": "2026-10-09T10:56:23.037638+00:00"
     },
     {
       "pin_id": "1132444268836096573",
@@ -712,7 +712,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:28.691450+00:00"
+      "evaluated_at": "2026-10-09T10:56:23.283842+00:00"
     },
     {
       "pin_id": "1132444268836134919",
@@ -728,7 +728,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:28.959301+00:00"
+      "evaluated_at": "2026-10-09T10:56:23.544242+00:00"
     },
     {
       "pin_id": "1132444268836146521",
@@ -744,7 +744,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:29.197488+00:00"
+      "evaluated_at": "2026-10-09T10:56:23.785463+00:00"
     },
     {
       "pin_id": "1132444268836155433",
@@ -760,7 +760,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:29.444345+00:00"
+      "evaluated_at": "2026-10-09T10:56:24.056328+00:00"
     },
     {
       "pin_id": "1132444268836172774",
@@ -776,7 +776,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:29.675721+00:00"
+      "evaluated_at": "2026-10-09T10:56:24.275781+00:00"
+    },
+    {
+      "pin_id": "1132444268836182366",
+      "title": "Turn Door Backs Into Genius Storage: JARLINK Over the Door Organizer",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-09T10:56:24.546894+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -784,7 +800,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -792,7 +808,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:30.698188+00:00"
+      "evaluated_at": "2026-10-09T10:56:25.447897+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -800,7 +816,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 4,
+        "impressions": 5,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -808,7 +824,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:30.925093+00:00"
+      "evaluated_at": "2026-10-09T10:56:25.644467+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -816,7 +832,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 4,
+        "impressions": 5,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -824,7 +840,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-09T07:25:31.171857+00:00"
+      "evaluated_at": "2026-10-09T10:56:25.851768+00:00"
     }
   ]
 }

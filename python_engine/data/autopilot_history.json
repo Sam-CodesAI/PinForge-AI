@@ -5858,5 +5858,159 @@
       "description": "Stop letting random items take over your counters! This VASAGLE slim cart slides into cracks and stacks vertically, turning dead space into organized storage. Perfect for pantry spices, bathroom toiletries, or WFH supplies. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
       "pin_id": "1132444268836172774"
     }
+  },
+  {
+    "timestamp": "2026-10-09T10:56:08.803364+00:00",
+    "status": "success",
+    "execution_time_seconds": 16.08,
+    "product": {
+      "asin": "B0C89STMFK",
+      "title": "JARLINK Over the Door Organizer for Bedroom  Pantry",
+      "price": "$20.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "bridge_slug": "jarlink-over-the-door-organizer-for-bedroom-pantry-b0c89stmfk"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#2B2D42",
+      "accent_hex": "#3A86FF",
+      "badge_text": "22% Off Limited Time",
+      "visual_hook": "Double Your Storage Instantly",
+      "secondary_hook": "Over the door organizer saves massive space",
+      "target_audience": "Apartment Renters",
+      "alt_text": "JARLINK over-the-door organizer hanging on a wooden door showcasing multiple storage compartments filled with home items",
+      "cv_features": {
+        "rb_ratio": 1.072,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 36.8,
+        "edge_clutter": 54.4,
+        "dominant_hex": "#a79f9c",
+        "accent_hex": "#1ab1d2",
+        "bounding_box": [
+          0.0,
+          0.125,
+          0.988,
+          0.85
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.072,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 36.8,
+      "edge_clutter": 54.4,
+      "bounding_box": [
+        0.0,
+        0.125,
+        0.988,
+        0.85
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Turn Door Backs Into Genius Storage: JARLINK Over the Door Organizer",
+      "description": "Stop letting your door space go to waste! The JARLINK Over the Door Organizer is the ultimate small-space hack for bedrooms and pantries. It holds jars, spices, or skincare without drilling a single hole. Perfect for keeping essentials accessible yet out of sight. \ud83d\udeaa\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#PantryGoals",
+        "#DoorStorage",
+        "#ApartmentLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_6b3f376199.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_3320677fbf.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_aa77b91fb1.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_468e2173da.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d95ff1291c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d95ff1291c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a0a8214b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a0a8214b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a0a8214b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a0a8214b.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a0a8214b.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "id": "1132444268836182366",
+      "is_standard": true,
+      "description": "Stop letting your door space go to waste! The JARLINK Over the Door Organizer is the ultimate small-space hack for bedrooms and pantries. It holds jars, spices, or skincare without drilling a single hole. Perfect for keeping essentials accessible yet out of sight. \ud83d\udeaa\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "parent_pin_id": null,
+      "pin_metrics": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Turn Door Backs Into Genius Storage: JARLINK Over the Door Organizer (Slide 1/4)",
+            "description": "Stop letting your door space go to waste! The JARLINK Over the Door Organizer is the ultimate small-space hack for bedrooms and pantries. It holds jars, spices, or skincare without drilling a single hole. Perfect for keeping essentials accessible yet out of sight. \ud83d\udeaa\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: JARLINK Over the Door Organizer for Bedroom  Pantry",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: JARLINK Over the Door Organizer for Bedroom  Pantry",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: JARLINK Over the Door Organizer for Bedroom  Pantry",
+            "description": "Real-world space-saving transformation. SLIM 4.3\" GAP FIT. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "is_removable": false,
+      "is_owner": true,
+      "title": "Turn Door Backs Into Genius Storage: JARLINK Over the Door Organizer",
+      "product_tags": [],
+      "creative_type": "CAROUSEL",
+      "is_product": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": null,
+      "alt_text": "JARLINK over-the-door organizer hanging on a wooden door showcasing multiple storage compartments filled with home items",
+      "has_been_promoted": false,
+      "board_id": "1132444337492933749",
+      "board_section_id": null,
+      "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
+      "created_at": "2026-10-09T10:56:08",
+      "pin_id": "1132444268836182366"
+    }
   }
 ]
