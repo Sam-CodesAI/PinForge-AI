@@ -5456,5 +5456,262 @@
       "is_standard": true,
       "pin_id": "1132444268836146521"
     }
+  },
+  {
+    "timestamp": "2026-10-09T01:21:43.476078+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.41,
+    "product": {
+      "asin": "B07D38J38F",
+      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+      "price": "$27.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "bridge_slug": "stori-audrey-stackable-clear-plastic-storage-drawers-for-vanity-and-pantry-b07d38j38f"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "44% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vanlife to Dreamy Vanity: Clear Stackable Drawers That Fit Anywhere \u2728",
+      "description": "Stop hiding makeup in random boxes! These clear stackable drawers are the ultimate small space hack, keeping your vanity and pantry chaos-free. Stack them high or keep them low\u2014total aesthetic win. \ud83c\udfe0 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Vote below: bathroom or kitchen? \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#VanityOrganization",
+        "#ClearStorage",
+        "#InteriorDesignTips",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_68647c8fcf.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_b948dccf34.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f6a1c3b03c.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_081093cd34.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d48871f46e.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d48871f46e.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_b479662f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_b479662f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_b479662f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_b479662f.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_b479662f.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "product_tags": [],
+      "has_been_promoted": false,
+      "board_id": "1132444337492933752",
+      "dominant_color": "#fae9c6",
+      "description": "Stop hiding makeup in random boxes! These clear stackable drawers are the ultimate small space hack, keeping your vanity and pantry chaos-free. Stack them high or keep them low\u2014total aesthetic win. \ud83c\udfe0 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Vote below: bathroom or kitchen? \ud83d\udc47 #AmazonAssociate",
+      "creative_type": "CAROUSEL",
+      "pin_metrics": null,
+      "title": "Vanlife to Dreamy Vanity: Clear Stackable Drawers That Fit Anywhere \u2728",
+      "created_at": "2026-10-09T01:21:42",
+      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_product": false,
+      "parent_pin_id": null,
+      "is_standard": true,
+      "board_section_id": null,
+      "is_removable": false,
+      "id": "1132444268836155433",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/17/ec/8a/17ec8a3edecc0c635a8f1e976e73420d.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/17/ec/8a/17ec8a3edecc0c635a8f1e976e73420d.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/17/ec/8a/17ec8a3edecc0c635a8f1e976e73420d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/17/ec/8a/17ec8a3edecc0c635a8f1e976e73420d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/17/ec/8a/17ec8a3edecc0c635a8f1e976e73420d.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Vanlife to Dreamy Vanity: Clear Stackable Drawers That Fit Anywhere \u2728 (Slide 1/4)",
+            "description": "Stop hiding makeup in random boxes! These clear stackable drawers are the ultimate small space hack, keeping your vanity and pantry chaos-free. Stack them high or keep them low\u2014total aesthetic win. \ud83c\udfe0 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Vote below: bathroom or kitchen? \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/75/9e/75/759e7573e4fccb4d77fcb1e845d24ffb.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/75/9e/75/759e7573e4fccb4d77fcb1e845d24ffb.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/75/9e/75/759e7573e4fccb4d77fcb1e845d24ffb.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/75/9e/75/759e7573e4fccb4d77fcb1e845d24ffb.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/75/9e/75/759e7573e4fccb4d77fcb1e845d24ffb.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/ed/85/2d/ed852deadd3cc5e0bf9ed29b6494b967.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/ed/85/2d/ed852deadd3cc5e0bf9ed29b6494b967.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/ed/85/2d/ed852deadd3cc5e0bf9ed29b6494b967.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/ed/85/2d/ed852deadd3cc5e0bf9ed29b6494b967.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/ed/85/2d/ed852deadd3cc5e0bf9ed29b6494b967.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "is_owner": true,
+      "pin_id": "1132444268836155433"
+    }
   }
 ]
