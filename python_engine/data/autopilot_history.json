@@ -6012,5 +6012,151 @@
       "created_at": "2026-10-09T10:56:08",
       "pin_id": "1132444268836182366"
     }
+  },
+  {
+    "timestamp": "2026-10-09T18:55:42.218873+00:00",
+    "status": "success",
+    "execution_time_seconds": 11.65,
+    "product": {
+      "asin": "B0C3H9MJQV",
+      "title": "HuggieGems Metal Magnetic Spice Rack for Refrigerator Black, 4 Pack",
+      "price": "$16.98",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0C3H9MJQV?tag=smartspace07-21",
+      "bridge_slug": "huggiegems-metal-magnetic-spice-rack-for-refrigerator-black-4-pack-b0c3h9mjqv"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1E222A",
+      "accent_hex": "#10B981",
+      "badge_text": "15% Off Today",
+      "visual_hook": "Transform Your Fridge Into Storage",
+      "secondary_hook": "4 pack magnetic spice racks for instant organization",
+      "target_audience": "Home Cooks",
+      "alt_text": "HuggieGems black metal magnetic spice rack 4 pack attached to a refrigerator holding spices and jars.",
+      "cv_features": {
+        "rb_ratio": 1.102,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 18.2,
+        "edge_clutter": 56.2,
+        "dominant_hex": "#9a968c",
+        "accent_hex": "#c32a27",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.102,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 18.2,
+      "edge_clutter": 56.2,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Kitchen Counter Chaos? Fixed: Magnetic Spice Rack Hacks! \ud83d\udd25\u2728",
+      "description": "Say goodbye to counter clutter! The HuggieGems Magnetic Spice Rack (4-pack) turns your fridge side into a sleek, visible spice zone. Perfect for small apartments and studio living! Tiny tidying win. \u2705 Would you put this on your fridge or cabinet door? Drop your best idea below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#SpiceRack",
+        "#ApartmentLiving",
+        "#AmazonAssociates",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_fe05f2ce56.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5896b349e1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_6ae3aca9a0.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_0188c5dc87.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ca8bf38878.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ca8bf38878.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_561192ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_561192ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_561192ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_561192ab.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_561192ab.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "alt_text": "HuggieGems black metal magnetic spice rack 4 pack attached to a refrigerator holding spices and jars.",
+      "id": "1132444268836217222",
+      "is_owner": true,
+      "board_section_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": null,
+      "parent_pin_id": null,
+      "board_id": "1132444337492933750",
+      "is_standard": true,
+      "pin_metrics": null,
+      "description": "Say goodbye to counter clutter! The HuggieGems Magnetic Spice Rack (4-pack) turns your fridge side into a sleek, visible spice zone. Perfect for small apartments and studio living! Tiny tidying win. \u2705 Would you put this on your fridge or cabinet door? Drop your best idea below! \ud83d\udc47 #AmazonAssociate",
+      "has_been_promoted": false,
+      "created_at": "2026-10-09T18:55:41",
+      "link": "https://www.amazon.com/dp/B0C3H9MJQV?tag=smartspace07-21",
+      "product_tags": [],
+      "creative_type": "REGULAR",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
+          }
+        }
+      },
+      "is_product": false,
+      "title": "Kitchen Counter Chaos? Fixed: Magnetic Spice Rack Hacks! \ud83d\udd25\u2728",
+      "is_removable": false,
+      "pin_id": "1132444268836217222"
+    }
   }
 ]
