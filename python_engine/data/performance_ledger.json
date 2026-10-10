@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-10T17:57:35.723285+00:00",
+  "last_updated": "2026-10-10T20:45:23.078907+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 36,
+  "total_pins_evaluated": 40,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835809911",
@@ -17,7 +17,7 @@
       },
       "aes_score": 12.15,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-10T17:57:35.043165+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.618218+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -33,7 +33,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.360912+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.277153+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -49,7 +49,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.625132+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.507703+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -65,7 +65,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.886895+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.786919+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -81,7 +81,7 @@
       },
       "aes_score": 6.25,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:24.760803+00:00"
+      "evaluated_at": "2026-10-10T20:45:13.883234+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -97,7 +97,7 @@
       },
       "aes_score": 1.47,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:25.065362+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.148079+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -113,7 +113,7 @@
       },
       "aes_score": 1.44,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:34.576186+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.187627+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -129,7 +129,23 @@
       },
       "aes_score": 1.4,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:34.818959+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.393946+00:00"
+    },
+    {
+      "pin_id": "1132444268835796753",
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 8,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.39,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-10T20:45:21.828323+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -145,7 +161,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:24.498876+00:00"
+      "evaluated_at": "2026-10-10T20:45:13.666825+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -161,7 +177,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.320419+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.378954+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -177,7 +193,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.565567+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.629970+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -193,7 +209,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.825960+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.879695+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -209,7 +225,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.067522+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.110873+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -225,7 +241,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.313528+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.333040+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -241,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.605563+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.589830+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -257,7 +273,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.864367+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.802477+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -273,7 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:27.094145+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.040856+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -289,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.366450+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.001473+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -305,32 +321,16 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.632359+00:00"
-    },
-    {
-      "pin_id": "1132444268836067497",
-      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
-      "board": "Studio Living Ideas",
-      "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.881211+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.219141+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
-      "pin_count": 14,
-      "avg_aes": 1.64,
+      "pin_count": 17,
+      "avg_aes": 1.43,
       "total_outbound_clicks": 3,
       "total_saves": 0,
-      "total_impressions": 47
+      "total_impressions": 65
     },
     "Room Organization": {
       "pin_count": 6,
@@ -340,7 +340,7 @@
       "total_impressions": 6
     },
     "Closet & Wardrobe Organization": {
-      "pin_count": 6,
+      "pin_count": 7,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
@@ -376,7 +376,7 @@
       },
       "aes_score": 12.15,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-10T17:57:35.043165+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.618218+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -392,7 +392,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.360912+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.277153+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -408,7 +408,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.625132+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.507703+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -424,7 +424,7 @@
       },
       "aes_score": 6.44,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:27.886895+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.786919+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -440,7 +440,7 @@
       },
       "aes_score": 6.25,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-10T17:57:24.760803+00:00"
+      "evaluated_at": "2026-10-10T20:45:13.883234+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -456,7 +456,7 @@
       },
       "aes_score": 1.47,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:25.065362+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.148079+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -472,7 +472,7 @@
       },
       "aes_score": 1.44,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:34.576186+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.187627+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -488,7 +488,23 @@
       },
       "aes_score": 1.4,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-10T17:57:34.818959+00:00"
+      "evaluated_at": "2026-10-10T20:45:21.393946+00:00"
+    },
+    {
+      "pin_id": "1132444268835796753",
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 8,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.39,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-10T20:45:21.828323+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -504,7 +520,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:24.498876+00:00"
+      "evaluated_at": "2026-10-10T20:45:13.666825+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -520,7 +536,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.320419+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.378954+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -536,7 +552,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.565567+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.629970+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -552,7 +568,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:25.825960+00:00"
+      "evaluated_at": "2026-10-10T20:45:14.879695+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -568,7 +584,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.067522+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.110873+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -584,7 +600,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.313528+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.333040+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -600,7 +616,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.605563+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.589830+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -616,7 +632,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:26.864367+00:00"
+      "evaluated_at": "2026-10-10T20:45:15.802477+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -632,7 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:27.094145+00:00"
+      "evaluated_at": "2026-10-10T20:45:16.040856+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -648,7 +664,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.366450+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.001473+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -664,7 +680,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.632359+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.219141+00:00"
     },
     {
       "pin_id": "1132444268836067497",
@@ -680,7 +696,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:30.881211+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.465091+00:00"
     },
     {
       "pin_id": "1132444268836085542",
@@ -696,7 +712,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:31.122395+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.701346+00:00"
     },
     {
       "pin_id": "1132444268836096573",
@@ -712,7 +728,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:31.368435+00:00"
+      "evaluated_at": "2026-10-10T20:45:17.956161+00:00"
     },
     {
       "pin_id": "1132444268836134919",
@@ -728,7 +744,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:31.637239+00:00"
+      "evaluated_at": "2026-10-10T20:45:18.367728+00:00"
     },
     {
       "pin_id": "1132444268836146521",
@@ -744,7 +760,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:31.912426+00:00"
+      "evaluated_at": "2026-10-10T20:45:18.610178+00:00"
     },
     {
       "pin_id": "1132444268836155433",
@@ -760,7 +776,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:32.206148+00:00"
+      "evaluated_at": "2026-10-10T20:45:18.839876+00:00"
     },
     {
       "pin_id": "1132444268836172774",
@@ -776,7 +792,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:32.448094+00:00"
+      "evaluated_at": "2026-10-10T20:45:19.037984+00:00"
     },
     {
       "pin_id": "1132444268836182366",
@@ -792,7 +808,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:32.740869+00:00"
+      "evaluated_at": "2026-10-10T20:45:19.250753+00:00"
     },
     {
       "pin_id": "1132444268836217222",
@@ -808,7 +824,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:33.016717+00:00"
+      "evaluated_at": "2026-10-10T20:45:19.496448+00:00"
     },
     {
       "pin_id": "1132444268836229620",
@@ -824,7 +840,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:33.286055+00:00"
+      "evaluated_at": "2026-10-10T20:45:19.732723+00:00"
     },
     {
       "pin_id": "1132444268836239264",
@@ -840,7 +856,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:33.570825+00:00"
+      "evaluated_at": "2026-10-10T20:45:20.009751+00:00"
     },
     {
       "pin_id": "1132444268836257117",
@@ -856,7 +872,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:33.792128+00:00"
+      "evaluated_at": "2026-10-10T20:45:20.268063+00:00"
     },
     {
       "pin_id": "1132444268836267066",
@@ -872,7 +888,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:34.072105+00:00"
+      "evaluated_at": "2026-10-10T20:45:20.467800+00:00"
     },
     {
       "pin_id": "1132444268836300504",
@@ -888,7 +904,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:34.325558+00:00"
+      "evaluated_at": "2026-10-10T20:45:20.710311+00:00"
+    },
+    {
+      "pin_id": "1132444268836311925",
+      "title": "Closet Chaos? Fixed: 12-Pack Vacuum Bags for Massive Space Savings! \u2728",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-10T20:45:20.958169+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -904,7 +936,39 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:35.301953+00:00"
+      "evaluated_at": "2026-10-10T20:45:22.075165+00:00"
+    },
+    {
+      "pin_id": "1132444268835773045",
+      "title": "The Viral Amazon Find Everyone Is Obsessed With! Must-Have Trending Gadget",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0F7PYC8NB?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 5,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-10T20:45:22.323240+00:00"
+    },
+    {
+      "pin_id": "1132444268835770261",
+      "title": "The $40 Smart Home Upgrade Everyone Is Obsessed With",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 5,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-10T20:45:22.624639+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -920,7 +984,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:35.521735+00:00"
+      "evaluated_at": "2026-10-10T20:45:22.828666+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -936,7 +1000,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-10T17:57:35.723241+00:00"
+      "evaluated_at": "2026-10-10T20:45:23.078859+00:00"
     }
   ]
 }
