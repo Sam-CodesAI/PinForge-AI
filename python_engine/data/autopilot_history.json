@@ -6304,5 +6304,184 @@
       "alt_text": "Spacesaver vacuum storage bags 10 pack with hand pump showing compressed bedding and space saving results.",
       "pin_id": "1132444268836229620"
     }
+  },
+  {
+    "timestamp": "2026-10-10T01:07:28.733710+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.47,
+    "product": {
+      "asin": "B0964GLS2J",
+      "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+      "price": "$21.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "bridge_slug": "adhesive-corner-shower-caddy-tension-basket-2-pack-stainless-steel-b0964gls2j"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f",
+      "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#HomeOrganization",
+        "#BathroomDecor",
+        "#NoDrillHomeImprovement",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_fb45ac9628.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_45ea85ca8d.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_404ac12468.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_26df2a6ba6.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_91a93ff47b.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_91a93ff47b.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_81be50a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_81be50a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_81be50a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_81be50a0.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_81be50a0.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "parent_pin_id": null,
+      "product_tags": [],
+      "is_owner": true,
+      "is_standard": true,
+      "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board_id": "1132444337492933752",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f (Slide 1/4)",
+            "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Real-world space-saving transformation. DAMAGE-FREE TENSION MOUNT. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "has_been_promoted": false,
+      "pin_metrics": null,
+      "is_removable": false,
+      "is_product": false,
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "created_at": "2026-10-10T01:07:28",
+      "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f",
+      "id": "1132444268836239264",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": null,
+      "creative_type": "CAROUSEL",
+      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "board_section_id": null,
+      "pin_id": "1132444268836239264"
+    }
   }
 ]
