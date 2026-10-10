@@ -6629,5 +6629,159 @@
       "pin_metrics": null,
       "pin_id": "1132444268836257117"
     }
+  },
+  {
+    "timestamp": "2026-10-10T10:07:52.368840+00:00",
+    "status": "success",
+    "execution_time_seconds": 14.4,
+    "product": {
+      "asin": "B0882ZPRF7",
+      "title": "SAMMART 42L  Collapsible Plastic Laundry Basket   Foldable Pop Up Storage Container/Organizer",
+      "price": "$35.70",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+      "bridge_slug": "sammart-42l-collapsible-plastic-laundry-basket-foldable-pop-up-storage-cont-b0882zprf7"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Save 70% Space",
+      "visual_hook": "The Ultimate Small Space Laundry Hack",
+      "secondary_hook": "Folds flat in seconds when empty",
+      "target_audience": "Apartment Renters",
+      "alt_text": "SAMMART 42L collapsible plastic laundry basket in gray and white for small space organization.",
+      "cv_features": {
+        "rb_ratio": 0.959,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 43.3,
+        "edge_clutter": 31.6,
+        "dominant_hex": "#b5b7bd",
+        "accent_hex": "#717787",
+        "bounding_box": [
+          0.05,
+          0.025,
+          0.85,
+          0.912
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.959,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 43.3,
+      "edge_clutter": 31.6,
+      "bounding_box": [
+        0.05,
+        0.025,
+        0.85,
+        0.912
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Laundry Overload? 42L Pop-Up Basket That Folds Flat! \ud83e\uddfa\u2728 Smart Spaces",
+      "description": "Stop letting dirty clothes take over your floor! \ud83d\ude29 This 42L collapsible basket expands in 2 seconds and folds tiny for storage under the bed or in closets. Perfect for small apartments needing max utility without the bulk. It\u2019s the upgrade your laundry routine needs. \ud83d\udc47 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#LaundryOrganization",
+        "#AmazonFinds",
+        "#ApartmentLiving",
+        "#HomeOrganization",
+        "#StorageSolutions",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3383232e74.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5da3708b92.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_2b8d90fa13.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_caabd158d6.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_33e6895d5f.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_33e6895d5f.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_6ec8457a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_6ec8457a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_6ec8457a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_6ec8457a.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_6ec8457a.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "description": "Stop letting dirty clothes take over your floor! \ud83d\ude29 This 42L collapsible basket expands in 2 seconds and folds tiny for storage under the bed or in closets. Perfect for small apartments needing max utility without the bulk. It\u2019s the upgrade your laundry routine needs. \ud83d\udc47 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 #AmazonAssociate",
+      "product_tags": [],
+      "alt_text": "SAMMART 42L collapsible plastic laundry basket in gray and white for small space organization.",
+      "is_product": false,
+      "creative_type": "CAROUSEL",
+      "board_id": "1132444337492933749",
+      "parent_pin_id": null,
+      "is_removable": false,
+      "is_standard": true,
+      "pin_metrics": null,
+      "dominant_color": null,
+      "title": "Laundry Overload? 42L Pop-Up Basket That Folds Flat! \ud83e\uddfa\u2728 Smart Spaces",
+      "id": "1132444268836267066",
+      "created_at": "2026-10-10T10:07:51",
+      "has_been_promoted": false,
+      "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Laundry Overload? 42L Pop-Up Basket That Folds Flat! \ud83e\uddfa\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Stop letting dirty clothes take over your floor! \ud83d\ude29 This 42L collapsible basket expands in 2 seconds and folds tiny for storage under the bed or in closets. Perfect for small apartments needing max utility without the bulk. It\u2019s the upgrade your laundry routine needs. \ud83d\udc47 Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: SAMMART 42L  Collapsible Plastic Laundry Basket   Foldable Pop Up Storage",
+            "description": "Full space-saving specifications, dimensions, and folds flat in seconds \u2022 space saver. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: SAMMART 42L  Collapsible Plastic Laundry Basket   Foldable Pop Up Storage",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: SAMMART 42L  Collapsible Plastic Laundry Basket   Foldable Pop Up Storage",
+            "description": "Real-world space-saving transformation. FOLDS FLAT IN SECONDS \u2022 SPACE SAVER. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "is_owner": true,
+      "board_section_id": null,
+      "pin_id": "1132444268836267066"
+    }
   }
 ]
