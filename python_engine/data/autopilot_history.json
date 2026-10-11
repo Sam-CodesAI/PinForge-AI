@@ -7073,5 +7073,211 @@
       "is_standard": true,
       "pin_id": "1132444268836311925"
     }
+  },
+  {
+    "timestamp": "2026-10-11T00:22:03.475939+00:00",
+    "status": "success",
+    "execution_time_seconds": 13.56,
+    "product": {
+      "asin": "B0GGQX4DKX",
+      "title": "Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+      "price": "$189.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+      "bridge_slug": "tribesigns-room-divider-with-shelves-71-freestanding-storage-room-divider-b0ggqx4dkx"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#8C5830",
+      "accent_hex": "#D97706",
+      "badge_text": "Top Rated 2026",
+      "visual_hook": "Zone Your Open Space Beautifully",
+      "secondary_hook": "Combines stylish metal design with practical shelves",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Tribesigns freestanding 71-inch room divider with wooden shelves and black metal accents dividing a living room space.",
+      "cv_features": {
+        "rb_ratio": 1.296,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.0,
+        "edge_clutter": 66.0,
+        "dominant_hex": "#a5917f",
+        "accent_hex": "#ae7546",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.296,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.0,
+      "edge_clutter": 66.0,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Studio Chaos? Fixed: Tribesigns 71\" Room Divider with Shelves! \ud83d\udd25\u2728 Smart Spaces",
+      "description": "Turn your studio into a cozy suite! This 71\" freestanding divider adds instant privacy AND massive storage for your small space. No drilling, just pure vibes. Would you use this to separate a 'work zone' from your bed, or as a living room accent? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#DeskIdeas",
+        "#AmazonFinds",
+        "#ApartmentTherapy",
+        "#RoomDivider",
+        "#InteriorDesign",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_59581ec7ac.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5b7ca340e3.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a51d6bedb8.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_bc94b69877.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4a3c3ead9c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4a3c3ead9c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_9d5cc63a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_9d5cc63a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_9d5cc63a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_9d5cc63a.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_9d5cc63a.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "board_section_id": null,
+      "dominant_color": null,
+      "created_at": "2026-10-11T00:22:02",
+      "is_owner": true,
+      "alt_text": "Tribesigns freestanding 71-inch room divider with wooden shelves and black metal accents dividing a living room space.",
+      "product_tags": [],
+      "link": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+      "pin_metrics": null,
+      "title": "Studio Chaos? Fixed: Tribesigns 71\" Room Divider with Shelves! \ud83d\udd25\u2728 Smart Spaces",
+      "is_product": false,
+      "id": "1132444268836324115",
+      "description": "Turn your studio into a cozy suite! This 71\" freestanding divider adds instant privacy AND massive storage for your small space. No drilling, just pure vibes. Would you use this to separate a 'work zone' from your bed, or as a living room accent? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board_id": "1132444337492933752",
+      "is_standard": true,
+      "has_been_promoted": false,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/bd/9b/85/bd9b85d27d52cae2e634545ff1c13494.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/bd/9b/85/bd9b85d27d52cae2e634545ff1c13494.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/bd/9b/85/bd9b85d27d52cae2e634545ff1c13494.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/bd/9b/85/bd9b85d27d52cae2e634545ff1c13494.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/bd/9b/85/bd9b85d27d52cae2e634545ff1c13494.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Studio Chaos? Fixed: Tribesigns 71\" Room Divider with Shelves! \ud83d\udd25\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Turn your studio into a cozy suite! This 71\" freestanding divider adds instant privacy AND massive storage for your small space. No drilling, just pure vibes. Would you use this to separate a 'work zone' from your bed, or as a living room accent? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/2e/f5/e8/2ef5e8f945a4ac56dd56ee4e3e7cc440.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/2e/f5/e8/2ef5e8f945a4ac56dd56ee4e3e7cc440.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/2e/f5/e8/2ef5e8f945a4ac56dd56ee4e3e7cc440.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/2e/f5/e8/2ef5e8f945a4ac56dd56ee4e3e7cc440.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/2e/f5/e8/2ef5e8f945a4ac56dd56ee4e3e7cc440.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GGQX4DKX?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "creative_type": "CAROUSEL",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "parent_pin_id": null,
+      "is_removable": false,
+      "pin_id": "1132444268836324115"
+    }
   }
 ]
