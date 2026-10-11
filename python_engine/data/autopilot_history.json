@@ -7720,5 +7720,150 @@
       "created_at": "2026-10-11T18:18:38",
       "pin_id": "1132444268836390896"
     }
+  },
+  {
+    "timestamp": "2026-10-11T21:05:44.671238+00:00",
+    "status": "success",
+    "execution_time_seconds": 11.66,
+    "product": {
+      "asin": "B0G6Y6X1G4",
+      "title": "Stainless Steel Cascading Closet Organizer \u2013 17-Piece System",
+      "price": "$27.99",
+      "rating": 4.4,
+      "affiliate_url": "https://www.amazon.com/dp/B0G6Y6X1G4?tag=smartspace07-21",
+      "bridge_slug": "stainless-steel-cascading-closet-organizer-17-piece-system-b0g6y6x1g4"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "80% Space Saved",
+      "visual_hook": "Transform Your Overstuffed Closet Instantly",
+      "secondary_hook": "Holds up to 6 outfits vertically",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Stainless steel cascading clothes hanger organizer holding multiple shirts and pants to save closet space.",
+      "cv_features": {
+        "rb_ratio": 0.996,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 55.8,
+        "edge_clutter": 42.0,
+        "dominant_hex": "#959696",
+        "accent_hex": "#d2c8ad",
+        "bounding_box": [
+          0.013,
+          0.125,
+          0.988,
+          0.838
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.996,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 55.8,
+      "edge_clutter": 42.0,
+      "bounding_box": [
+        0.013,
+        0.125,
+        0.988,
+        0.838
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Ultimate Closet Max: 17-Piece Stainless Steel Cascading Organizer! \ud83d\udea8\u2728",
+      "description": "Stop letting clutter take over! This 17-piece stainless steel system turns your messy closet into an aesthetic storage masterpiece instantly. Perfect for maximizing vertical space without buying a new wardrobe. Would you use this for clothes or accessory storage? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ClosetOrganization",
+        "#SmallSpaceHacks",
+        "#HomeDecor",
+        "#AmazonFinds",
+        "#OrganizationGoals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_42f75a720a.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_2fe2fd22a8.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_61e6d2ca70.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_28abcd2f49.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_09c5d6d41c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_09c5d6d41c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_7c12d680.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_7c12d680.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_7c12d680.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_7c12d680.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_7c12d680.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-11T21:05:44",
+      "link": "https://www.amazon.com/dp/B0G6Y6X1G4?tag=smartspace07-21",
+      "is_product": false,
+      "has_been_promoted": false,
+      "title": "Ultimate Closet Max: 17-Piece Stainless Steel Cascading Organizer! \ud83d\udea8\u2728",
+      "is_owner": true,
+      "creative_type": "REGULAR",
+      "is_removable": false,
+      "id": "1132444268836404193",
+      "pin_metrics": null,
+      "product_tags": [],
+      "description": "Stop letting clutter take over! This 17-piece stainless steel system turns your messy closet into an aesthetic storage masterpiece instantly. Perfect for maximizing vertical space without buying a new wardrobe. Would you use this for clothes or accessory storage? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/3c/0f/9c/3c0f9c8f8f61fbaeffa14f54f594f0b5.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/3c/0f/9c/3c0f9c8f8f61fbaeffa14f54f594f0b5.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/3c/0f/9c/3c0f9c8f8f61fbaeffa14f54f594f0b5.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/3c/0f/9c/3c0f9c8f8f61fbaeffa14f54f594f0b5.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "parent_pin_id": null,
+      "alt_text": "Stainless steel cascading clothes hanger organizer holding multiple shirts and pants to save closet space.",
+      "board_id": "1132444337492933751",
+      "board_section_id": null,
+      "dominant_color": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_id": "1132444268836404193"
+    }
   }
 ]
