@@ -8018,5 +8018,150 @@
       "title": "Ditch Furniture: Aesthetic Room Divider w/ Storage! \u2705\u2728 Smart Spaces",
       "pin_id": "1132444268836416223"
     }
+  },
+  {
+    "timestamp": "2026-10-12T07:21:21.081980+00:00",
+    "status": "success",
+    "execution_time_seconds": 12.66,
+    "product": {
+      "asin": "B0G7HH41FK",
+      "title": "Univivi Under Desk Cable Management Tray  Cable Management",
+      "price": "$38.68",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0G7HH41FK?tag=smartspace07-21",
+      "bridge_slug": "univivi-under-desk-cable-management-tray-cable-management-b0g7hh41fk"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Clean Desk Secret",
+      "visual_hook": "Hide Ugly Desk Cords Instantly",
+      "secondary_hook": "No-drill clamp design fits any desk",
+      "target_audience": "Remote Workers",
+      "alt_text": "Black metal under desk cable management tray with power strips and cords neatly hidden beneath a wooden desk.",
+      "cv_features": {
+        "rb_ratio": 1.075,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 38.6,
+        "edge_clutter": 52.4,
+        "dominant_hex": "#78746f",
+        "accent_hex": "#c3975f",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.963,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.075,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 38.6,
+      "edge_clutter": 52.4,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.963,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Desk Chaos? Fixed: Univivi Under-Desk Cable Tray! \ud83e\uddf5\u2728 Maximize Workspace",
+      "description": "Say goodbye to the giant black spaghetti mess under your desk! The Univivi tray keeps cords tucked away so you can finally enjoy that clean, aesthetic workspace. It\u2019s the ultimate small-space lifesaver for WFH setup. Would you use this for your gaming station or home office? Drop your workspace type below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#CableManagement",
+        "#DeskSetup",
+        "#WFHSetup",
+        "#SmallSpaceLiving",
+        "#AmazonMustHaves",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_049e4fce82.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_64a0c2c384.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_081992186d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_daadce9bad.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b8ec56d9fd.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b8ec56d9fd.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_436d210e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_436d210e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_436d210e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_436d210e.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_436d210e.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "alt_text": "Black metal under desk cable management tray with power strips and cords neatly hidden beneath a wooden desk.",
+      "has_been_promoted": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "board_id": "1132444337492930442",
+      "parent_pin_id": null,
+      "is_standard": true,
+      "is_product": false,
+      "board_section_id": null,
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B0G7HH41FK?tag=smartspace07-21",
+      "creative_type": "REGULAR",
+      "product_tags": [],
+      "pin_metrics": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/8b/31/2e/8b312e6523b35de30e370ab94e1fea49.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/8b/31/2e/8b312e6523b35de30e370ab94e1fea49.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/8b/31/2e/8b312e6523b35de30e370ab94e1fea49.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/8b/31/2e/8b312e6523b35de30e370ab94e1fea49.jpg"
+          }
+        }
+      },
+      "is_owner": true,
+      "id": "1132444268836436638",
+      "created_at": "2026-10-12T07:21:20",
+      "description": "Say goodbye to the giant black spaghetti mess under your desk! The Univivi tray keeps cords tucked away so you can finally enjoy that clean, aesthetic workspace. It\u2019s the ultimate small-space lifesaver for WFH setup. Would you use this for your gaming station or home office? Drop your workspace type below! \ud83d\udc47 #AmazonAssociate",
+      "dominant_color": null,
+      "title": "Desk Chaos? Fixed: Univivi Under-Desk Cable Tray! \ud83e\uddf5\u2728 Maximize Workspace",
+      "pin_id": "1132444268836436638"
+    }
   }
 ]
