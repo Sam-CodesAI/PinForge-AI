@@ -7865,5 +7865,158 @@
       },
       "pin_id": "1132444268836404193"
     }
+  },
+  {
+    "timestamp": "2026-10-12T00:42:07.474182+00:00",
+    "status": "success",
+    "execution_time_seconds": 15.2,
+    "product": {
+      "asin": "B0H4Q6K877",
+      "title": "Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+      "price": "$189.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+      "bridge_slug": "tribesigns-room-divider-with-shelves-71-freestanding-storage-room-divider-b0h4q6k877"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#8C7B6B",
+      "accent_hex": "#C29B61",
+      "badge_text": "Top Rated 2026",
+      "visual_hook": "Define Your Open Space Instantly",
+      "secondary_hook": "Stunning freestanding divider with built-in shelves",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Tribesigns 71 inch freestanding room divider with geometric metal panels and wooden storage shelves in a modern living room.",
+      "cv_features": {
+        "rb_ratio": 1.198,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 1.6,
+        "edge_clutter": 65.5,
+        "dominant_hex": "#a89a8c",
+        "accent_hex": "#99752f",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.198,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 1.6,
+      "edge_clutter": 65.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Ditch Furniture: Aesthetic Room Divider w/ Storage! \u2705\u2728 Smart Spaces",
+      "description": "Instantly transform your studio or living room without building walls. This 71\" freestanding unit holds your books and plants while defining your space. Gen-Z challenge: Could you fit your entire reading nook setup on these shelves? Drop your rating below! \ud83d\udca1\ud83d\udcd0 Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#StudioAesthetic",
+        "#SmallSpaceHacks",
+        "#RoomDivider",
+        "#AmazonFinds",
+        "#InteriorDesignTips",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a8746ad712.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_289422d702.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a705aa4ce6.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_a5a10650e3.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ab99326c34.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ab99326c34.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_28549299.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_28549299.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_28549299.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_28549299.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_28549299.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "alt_text": "Tribesigns 71 inch freestanding room divider with geometric metal panels and wooden storage shelves in a modern living room.",
+      "has_been_promoted": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "board_id": "1132444337492933752",
+      "parent_pin_id": null,
+      "is_standard": true,
+      "is_product": false,
+      "board_section_id": null,
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+      "creative_type": "CAROUSEL",
+      "product_tags": [],
+      "pin_metrics": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Ditch Furniture: Aesthetic Room Divider w/ Storage! \u2705\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Instantly transform your studio or living room without building walls. This 71\" freestanding unit holds your books and plants while defining your space. Gen-Z challenge: Could you fit your entire reading nook setup on these shelves? Drop your rating below! \ud83d\udca1\ud83d\udcd0 Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Tribesigns Room Divider with Shelves  71\" Freestanding Storage Room Divider",
+            "description": "Real-world space-saving transformation. HEAVY-DUTY 50+ LBS LOAD. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H4Q6K877?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "is_owner": true,
+      "id": "1132444268836416223",
+      "created_at": "2026-10-12T00:42:06",
+      "description": "Instantly transform your studio or living room without building walls. This 71\" freestanding unit holds your books and plants while defining your space. Gen-Z challenge: Could you fit your entire reading nook setup on these shelves? Drop your rating below! \ud83d\udca1\ud83d\udcd0 Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "dominant_color": null,
+      "title": "Ditch Furniture: Aesthetic Room Divider w/ Storage! \u2705\u2728 Smart Spaces",
+      "pin_id": "1132444268836416223"
+    }
   }
 ]
