@@ -8487,5 +8487,263 @@
       "is_removable": false,
       "pin_id": "1132444268836493166"
     }
+  },
+  {
+    "timestamp": "2026-10-12T23:48:14.503000+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.71,
+    "product": {
+      "asin": "B01MR1Y5K8",
+      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
+      "price": "$22.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Cabinet Organizer! \ud83d\udd25\u2728 Smart Spaces",
+      "description": "Finally maximize your sink cabinet! \ud83d\udebd\u2728 This 2-tier stackable design with a smooth sliding drawer tucks away bulk soap, sponges, and cleaners without digging. Perfect for tiny apartments or messy bathrooms. Small space challenge: Could you fit your entire cleaning routine in this setup? \ud83e\uddfc\ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#UnderSinkOrganization",
+        "#SmallBathroomHacks",
+        "#HomeOrganization",
+        "#AmazonDeals",
+        "#InteriorDesign",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_46f64c6d00.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_772b1ed4a0.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_028f939982.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_3ca994b9ea.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f948c65c16.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f948c65c16.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_dc8c68df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_dc8c68df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_dc8c68df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_dc8c68df.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_dc8c68df.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "has_been_promoted": false,
+      "board_section_id": null,
+      "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Cabinet Organizer! \ud83d\udd25\u2728 Smart Spaces",
+      "board_id": "1132444337492933752",
+      "is_standard": true,
+      "is_owner": true,
+      "parent_pin_id": null,
+      "is_product": false,
+      "creative_type": "CAROUSEL",
+      "created_at": "2026-10-12T23:48:13",
+      "description": "Finally maximize your sink cabinet! \ud83d\udebd\u2728 This 2-tier stackable design with a smooth sliding drawer tucks away bulk soap, sponges, and cleaners without digging. Perfect for tiny apartments or messy bathrooms. Small space challenge: Could you fit your entire cleaning routine in this setup? \ud83e\uddfc\ud83d\udc47 #AmazonAssociate",
+      "dominant_color": "#fae9c6",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Cabinet Organizer! \ud83d\udd25\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Finally maximize your sink cabinet! \ud83d\udebd\u2728 This 2-tier stackable design with a smooth sliding drawer tucks away bulk soap, sponges, and cleaners without digging. Perfect for tiny apartments or messy bathrooms. Small space challenge: Could you fit your entire cleaning routine in this setup? \ud83e\uddfc\ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "pin_metrics": null,
+      "product_tags": [],
+      "is_removable": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "id": "1132444268836499130",
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "pin_id": "1132444268836499130"
+    }
   }
 ]
