@@ -8745,5 +8745,151 @@
       "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
       "pin_id": "1132444268836499130"
     }
+  },
+  {
+    "timestamp": "2026-10-13T02:41:48.153311+00:00",
+    "status": "success",
+    "execution_time_seconds": 44.06,
+    "product": {
+      "asin": "B01MR1Y5K8",
+      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
+      "price": "$22.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
+      "description": "Tired of a chaotic under\u2011sink mess? This 2\u2011tier stackable organizer slides out smoothly, giving you instant access to sponges, cleaners, and even small appliances while keeping water damage at bay. Small\u2011space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#UnderSink",
+        "#HomeStorage",
+        "#SmartSpaces",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_cd17542670.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_bfba833a96.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f234a6e8e1.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b1aba26d8e.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_572a13ab60.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_572a13ab60.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_0bae55ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_0bae55ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_0bae55ab.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_0bae55ab.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_0bae55ab.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-13T02:41:47",
+      "creative_type": "REGULAR",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "description": "Tired of a chaotic under\u2011sink mess? This 2\u2011tier stackable organizer slides out smoothly, giving you instant access to sponges, cleaners, and even small appliances while keeping water damage at bay. Small\u2011space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_owner": true,
+      "board_section_id": null,
+      "parent_pin_id": null,
+      "board_id": "1132444337492930442",
+      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
+      "is_product": false,
+      "is_standard": true,
+      "pin_metrics": null,
+      "product_tags": [],
+      "id": "1132444268836510649",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "is_removable": false,
+      "dominant_color": "#2b2d2a",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "has_been_promoted": false,
+      "pin_id": "1132444268836510649"
+    }
   }
 ]
