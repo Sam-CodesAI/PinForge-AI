@@ -8891,5 +8891,150 @@
       "has_been_promoted": false,
       "pin_id": "1132444268836510649"
     }
+  },
+  {
+    "timestamp": "2026-10-13T07:44:43.755573+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.05,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Stop Bottle Chaos: UpSpace Height Adjustable Cabinet Organizer! \ud83d\udeb0\u2728 Smart Spaces",
+      "description": "Turn chaotic cabinets into aesthetic storage. The YouCopia UpSpace adjusts to fit your exact height, reclaiming wasted vertical space for bottles, jars, and condiments. No more digging! \ud83d\udc47 Would you use this in your pantry or bathroom? Drop your vote below! \ud83c\udfe0 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#CabinetHacks",
+        "#SmallSpaceLiving",
+        "#AmazonMustHaves",
+        "#YouCopia",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_37676b3353.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_daeef4d3b0.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_ec5af2c17b.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_03e01a861f.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6bf00653b9.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6bf00653b9.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_82225d44.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_82225d44.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_82225d44.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_82225d44.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_82225d44.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "is_removable": false,
+      "created_at": "2026-10-13T07:44:43",
+      "id": "1132444268836526763",
+      "board_id": "1132444337492930442",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "description": "Turn chaotic cabinets into aesthetic storage. The YouCopia UpSpace adjusts to fit your exact height, reclaiming wasted vertical space for bottles, jars, and condiments. No more digging! \ud83d\udc47 Would you use this in your pantry or bathroom? Drop your vote below! \ud83c\udfe0 #AmazonAssociate",
+      "board_section_id": null,
+      "dominant_color": "#2b2d2a",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "title": "Stop Bottle Chaos: UpSpace Height Adjustable Cabinet Organizer! \ud83d\udeb0\u2728 Smart Spaces",
+      "is_product": false,
+      "creative_type": "REGULAR",
+      "pin_metrics": null,
+      "parent_pin_id": null,
+      "has_been_promoted": false,
+      "product_tags": [],
+      "is_standard": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_owner": true,
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "pin_id": "1132444268836526763"
+    }
   }
 ]
