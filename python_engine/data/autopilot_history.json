@@ -9036,5 +9036,159 @@
       "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
       "pin_id": "1132444268836526763"
     }
+  },
+  {
+    "timestamp": "2026-10-13T11:06:48.888429+00:00",
+    "status": "success",
+    "execution_time_seconds": 31.99,
+    "product": {
+      "asin": "B0H3NCGRSY",
+      "title": "4-Tier Slim Utility Rolling Cart with Wheels, Wood Top, Metal",
+      "price": "$29.99",
+      "rating": 4.4,
+      "affiliate_url": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+      "bridge_slug": "4-tier-slim-utility-rolling-cart-with-wheels-wood-top-metal-b0h3ncgrsy"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "40% Off Limited Time",
+      "visual_hook": "Transform Wasted Laundry Room Gaps",
+      "secondary_hook": "Slim rolling cart fits tight spaces easily",
+      "target_audience": "Laundry Room Organizers",
+      "alt_text": "4-tier slim utility rolling cart with wheels and wood top between washing machine and dryer, fully stocked with laundry detergent.",
+      "cv_features": {
+        "rb_ratio": 1.169,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.9,
+        "edge_clutter": 67.5,
+        "dominant_hex": "#8d8578",
+        "accent_hex": "#fdf703",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.169,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.9,
+      "edge_clutter": 67.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Tiny Kitchen Savior: 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Smart Spaces",
+      "description": "Stop letting your counter space slide! This $30 4-Tier Slim Utility Cart is the ultimate hack for small apartments. With its slim profile and locking wheels, it fits under counters and slides anywhere. The wood top adds a ton of aesthetic value without breaking the bank. Would you use this for kitchen snacks or bathroom towels? Drop your top use below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#KitchenOrganization",
+        "#ApartmentDecor",
+        "#BudgetHome",
+        "#CartOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e7e54186ba.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f9f8420bf2.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_da6145df82.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_6cc9177206.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2fd2e1b3a2.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2fd2e1b3a2.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_cc0cdcfa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_cc0cdcfa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_cc0cdcfa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_cc0cdcfa.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_cc0cdcfa.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "pin_metrics": null,
+      "creative_type": "CAROUSEL",
+      "description": "Stop letting your counter space slide! This $30 4-Tier Slim Utility Cart is the ultimate hack for small apartments. With its slim profile and locking wheels, it fits under counters and slides anywhere. The wood top adds a ton of aesthetic value without breaking the bank. Would you use this for kitchen snacks or bathroom towels? Drop your top use below! \ud83d\udc47 #AmazonAssociate",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "product_tags": [],
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+      "parent_pin_id": null,
+      "alt_text": "4-tier slim utility rolling cart with wheels and wood top between washing machine and dryer, fully stocked with laundry detergent.",
+      "board_section_id": null,
+      "is_owner": true,
+      "is_product": false,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Tiny Kitchen Savior: 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Stop letting your counter space slide! This $30 4-Tier Slim Utility Cart is the ultimate hack for small apartments. With its slim profile and locking wheels, it fits under counters and slides anywhere. The wood top adds a ton of aesthetic value without breaking the bank. Would you use this for kitchen snacks or bathroom towels? Drop your top use below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: 4-Tier Slim Utility Rolling Cart with Wheels, Wood Top, Metal",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: 4-Tier Slim Utility Rolling Cart with Wheels, Wood Top, Metal",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: 4-Tier Slim Utility Rolling Cart with Wheels, Wood Top, Metal",
+            "description": "Real-world space-saving transformation. SLIM 7.1\" GAP FIT. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "dominant_color": null,
+      "id": "1132444268836537181",
+      "board_id": "1132444337492933749",
+      "is_standard": true,
+      "created_at": "2026-10-13T11:06:48",
+      "title": "Tiny Kitchen Savior: 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Smart Spaces",
+      "has_been_promoted": false,
+      "pin_id": "1132444268836537181"
+    }
   }
 ]
