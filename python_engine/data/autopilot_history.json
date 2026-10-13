@@ -9336,5 +9336,151 @@
       "parent_pin_id": null,
       "pin_id": "1132444268836572779"
     }
+  },
+  {
+    "timestamp": "2026-10-13T22:00:08.383536+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.37,
+    "product": {
+      "asin": "B07D38J38F",
+      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+      "price": "$27.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "bridge_slug": "stori-audrey-stackable-clear-plastic-storage-drawers-for-vanity-and-pantry-b07d38j38f"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "44% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "description": "Stop digging through crowded cabinets! These Stori Audrey drawers stack perfectly to maximize vertical space in your bathroom or pantry. The clear design finds your skincare or snacks instantly. Perfect for small nooks. \ud83c\udfa7\ud83c\udfe0 small space struggle: which room needs decluttering most? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#BathroomOrganization",
+        "#PantryOrganization",
+        "#AmazonFinds",
+        "#MaximizeSpace",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_361d0b285e.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f65a935d03.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_06db62f8f6.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_f2dc7039e6.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2687dba7a8.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2687dba7a8.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_abc23456.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_abc23456.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_abc23456.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_abc23456.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_abc23456.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "creative_type": "REGULAR",
+      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "parent_pin_id": null,
+      "created_at": "2026-10-13T22:00:08",
+      "is_removable": false,
+      "board_id": "1132444337492933751",
+      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "product_tags": [],
+      "board_section_id": null,
+      "is_owner": true,
+      "id": "1132444268836581194",
+      "description": "Stop digging through crowded cabinets! These Stori Audrey drawers stack perfectly to maximize vertical space in your bathroom or pantry. The clear design finds your skincare or snacks instantly. Perfect for small nooks. \ud83c\udfa7\ud83c\udfe0 small space struggle: which room needs decluttering most? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_standard": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          }
+        }
+      },
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#f5f5ef",
+      "pin_metrics": null,
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "is_product": false,
+      "has_been_promoted": false,
+      "pin_id": "1132444268836581194"
+    }
   }
 ]
