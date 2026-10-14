@@ -9885,5 +9885,184 @@
       "is_owner": true,
       "pin_id": "1132444268836604080"
     }
+  },
+  {
+    "timestamp": "2026-10-14T09:01:21.293771+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.69,
+    "product": {
+      "asin": "B0GQ3SQ9TJ",
+      "title": "SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+      "price": "$29.99",
+      "rating": 4.4,
+      "affiliate_url": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+      "bridge_slug": "sunally-slim-storage-cart-with-wheels-narrow-kitchen-rolling-cart-b0gq3sq9tj"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1F2421",
+      "accent_hex": "#F59E0B",
+      "badge_text": "Tight Space Saver",
+      "visual_hook": "Transform Your Tiny Kitchen Space",
+      "secondary_hook": "Rolls smoothly into narrow gaps",
+      "target_audience": "Apartment Renters",
+      "alt_text": "SUNALLY slim rolling kitchen cart with 4 tiers and wooden top in a narrow kitchen space.",
+      "cv_features": {
+        "rb_ratio": 1.218,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 16.5,
+        "edge_clutter": 49.8,
+        "dominant_hex": "#bbac9a",
+        "accent_hex": "#fcb30f",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.218,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 16.5,
+      "edge_clutter": 49.8,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Tiny Kitchen? Fixed: Slim Rolling Storage Cart That Fits Anywhere! \u2705\u2728",
+      "description": "Struggling with zero counter space? This slim 29.99 cart slides into the tightest gaps to hold condiments, spices, or trash. No more digging through cabinets! Would you use this for pantry overflow or bathroom essentials? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#AmazonFinds",
+        "#ApartmentDecor",
+        "#RollingCart",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a2d05232db.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_437eb9f872.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_c0da91ab8a.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_811c47a7f6.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_10e95d9336.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_10e95d9336.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_4ef4b033.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_4ef4b033.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_4ef4b033.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_4ef4b033.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_4ef4b033.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "alt_text": "SUNALLY slim rolling kitchen cart with 4 tiers and wooden top in a narrow kitchen space.",
+      "title": "Tiny Kitchen? Fixed: Slim Rolling Storage Cart That Fits Anywhere! \u2705\u2728",
+      "parent_pin_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_owner": true,
+      "has_been_promoted": false,
+      "product_tags": [],
+      "id": "1132444268836610175",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Tiny Kitchen? Fixed: Slim Rolling Storage Cart That Fits Anywhere! \u2705\u2728 (Slide 1/4)",
+            "description": "Struggling with zero counter space? This slim 29.99 cart slides into the tightest gaps to hold condiments, spices, or trash. No more digging through cabinets! Would you use this for pantry overflow or bathroom essentials? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/dd/a7/f5/dda7f5a01d044c3167f8cbd468addbd5.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/dd/a7/f5/dda7f5a01d044c3167f8cbd468addbd5.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/dd/a7/f5/dda7f5a01d044c3167f8cbd468addbd5.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/dd/a7/f5/dda7f5a01d044c3167f8cbd468addbd5.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/dd/a7/f5/dda7f5a01d044c3167f8cbd468addbd5.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "board_id": "1132444337492933749",
+      "board_section_id": null,
+      "is_removable": false,
+      "is_standard": true,
+      "creative_type": "CAROUSEL",
+      "created_at": "2026-10-14T09:01:20",
+      "pin_metrics": null,
+      "description": "Struggling with zero counter space? This slim 29.99 cart slides into the tightest gaps to hold condiments, spices, or trash. No more digging through cabinets! Would you use this for pantry overflow or bathroom essentials? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "dominant_color": null,
+      "is_product": false,
+      "link": "https://www.amazon.com/dp/B0GQ3SQ9TJ?tag=smartspace07-21",
+      "pin_id": "1132444268836610175"
+    }
   }
 ]
