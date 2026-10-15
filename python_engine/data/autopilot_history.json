@@ -10613,5 +10613,150 @@
       "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
       "pin_id": "1132444268836666910"
     }
+  },
+  {
+    "timestamp": "2026-10-15T05:55:24.414543+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.48,
+    "product": {
+      "asin": "B0BRZ9VVJ3",
+      "title": "shuang qing Rotating Makeup Organizer for Vanity  Large Capacity Skincare Perfume Storage",
+      "price": "$29.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0BRZ9VVJ3?tag=smartspace07-21",
+      "bridge_slug": "shuang-qing-rotating-makeup-organizer-for-vanity-large-capacity-skincare-pe-b0brz9vvj3"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#F4F1EA",
+      "accent_hex": "#D4AF37",
+      "badge_text": "Viral Vanity Find",
+      "visual_hook": "Organize Your Vanity In Seconds",
+      "secondary_hook": "360-degree rotation for effortless daily beauty routines",
+      "target_audience": "Beauty Enthusiasts",
+      "alt_text": "shuang qing Rotating Makeup Organizer for Vanity Large Capacity Skincare Perfume Storage displayed on a clean marble surface",
+      "cv_features": {
+        "rb_ratio": 1.151,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.1,
+        "edge_clutter": 46.5,
+        "dominant_hex": "#bfb2a6",
+        "accent_hex": "#c78c35",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.151,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.1,
+      "edge_clutter": 46.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Stop Vanity Clutter: 360\u00b0 Rotating Makeup Organizer! \ud83d\udc84\u2728 Small Space Hack",
+      "description": "Say goodbye to digging through chaos! \ud83d\ude97\u274c This 360\u00b0 rotating organizer fits massive amounts of skincare, perfumes, and makeup in one sleek spot. Perfect for small bathrooms or studio apartments where every inch counts. It spins smoothly so your faves are always front and center. \ud83c\udf00\u2728 Would you use this in your bathroom or bedroom workspace? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#VanityEngine",
+        "#SmallSpaceLiving",
+        "#OrganizedHome",
+        "#AmazonMustHaves",
+        "#MakeupStorage",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f2f5d860ee.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ab1a72765f.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_fc56358b6d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_a7dc3e3733.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cacaf56373.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cacaf56373.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_2b1d506a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_2b1d506a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_2b1d506a.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_2b1d506a.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_2b1d506a.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B0BRZ9VVJ3?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "description": "Say goodbye to digging through chaos! \ud83d\ude97\u274c This 360\u00b0 rotating organizer fits massive amounts of skincare, perfumes, and makeup in one sleek spot. Perfect for small bathrooms or studio apartments where every inch counts. It spins smoothly so your faves are always front and center. \ud83c\udf00\u2728 Would you use this in your bathroom or bedroom workspace? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board_section_id": null,
+      "creative_type": "REGULAR",
+      "is_owner": true,
+      "product_tags": [],
+      "dominant_color": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/bf/a5/47/bfa547f306ac7afcc6f5a54fa5b614ab.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/bf/a5/47/bfa547f306ac7afcc6f5a54fa5b614ab.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/bf/a5/47/bfa547f306ac7afcc6f5a54fa5b614ab.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/bf/a5/47/bfa547f306ac7afcc6f5a54fa5b614ab.jpg"
+          }
+        }
+      },
+      "alt_text": "shuang qing Rotating Makeup Organizer for Vanity Large Capacity Skincare Perfume Storage displayed on a clean marble surface",
+      "title": "Stop Vanity Clutter: 360\u00b0 Rotating Makeup Organizer! \ud83d\udc84\u2728 Small Space Hack",
+      "board_id": "1132444337492930442",
+      "parent_pin_id": null,
+      "is_removable": false,
+      "id": "1132444268836683461",
+      "is_product": false,
+      "created_at": "2026-10-15T05:55:24",
+      "has_been_promoted": false,
+      "pin_metrics": null,
+      "is_standard": true,
+      "pin_id": "1132444268836683461"
+    }
   }
 ]
