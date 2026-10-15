@@ -11050,5 +11050,151 @@
       },
       "pin_id": "1132444268836729072"
     }
+  },
+  {
+    "timestamp": "2026-10-15T20:34:27.789906+00:00",
+    "status": "success",
+    "execution_time_seconds": 15.63,
+    "product": {
+      "asin": "B0BTNPP6T6",
+      "title": "12 Pack Space Saving Hangers for Clothes: Collapsible Metal Hanger",
+      "price": "$24.98",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B0BTNPP6T6?tag=smartspace07-21",
+      "bridge_slug": "12-pack-space-saving-hangers-for-clothes-collapsible-metal-hanger-b0btnpp6t6"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Save 80% Closet Space",
+      "visual_hook": "Transform Your Cramped Closet",
+      "secondary_hook": "Organize 12 garments vertically or horizontally",
+      "target_audience": "Apartment Renters",
+      "alt_text": "12 pack space saving metal clothing hangers shown with vertical and horizontal hanging options.",
+      "cv_features": {
+        "rb_ratio": 1.061,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 31.6,
+        "edge_clutter": 65.8,
+        "dominant_hex": "#d1c9c5",
+        "accent_hex": "#d0a05e",
+        "bounding_box": [
+          0.013,
+          0.0,
+          0.975,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.061,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 31.6,
+      "edge_clutter": 65.8,
+      "bounding_box": [
+        0.013,
+        0.0,
+        0.975,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Half Your Closet Space: 12-Pack Collapsible Metal Hangers! \u2705\u2728",
+      "description": "Stop fighting for closet real estate! These 12 slim collapsible metal hangers fit twice the clothes in half the space. Perfect for small apartments or maximizing wardrobe depth. Would you swap your bulky plastic ones for these? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ClosetHacks",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#OrganizationTips",
+        "#SpaceSaving",
+        "#AmazonMustHaves",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_65e163fe58.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6a79aeecab.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_1321068fb4.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_340042c026.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_0e49325b7d.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_0e49325b7d.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a8cce570.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a8cce570.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a8cce570.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a8cce570.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a8cce570.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "dominant_color": null,
+      "has_been_promoted": false,
+      "parent_pin_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_metrics": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/16/5d/2e/165d2ea5b6ad8040307558d91f56aacf.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/16/5d/2e/165d2ea5b6ad8040307558d91f56aacf.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/16/5d/2e/165d2ea5b6ad8040307558d91f56aacf.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/16/5d/2e/165d2ea5b6ad8040307558d91f56aacf.jpg"
+          }
+        }
+      },
+      "board_id": "1132444337492933751",
+      "alt_text": "12 pack space saving metal clothing hangers shown with vertical and horizontal hanging options.",
+      "link": "https://www.amazon.com/dp/B0BTNPP6T6?tag=smartspace07-21",
+      "is_owner": true,
+      "creative_type": "REGULAR",
+      "id": "1132444268836741737",
+      "product_tags": [],
+      "created_at": "2026-10-15T20:34:27",
+      "title": "Half Your Closet Space: 12-Pack Collapsible Metal Hangers! \u2705\u2728",
+      "is_standard": true,
+      "description": "Stop fighting for closet real estate! These 12 slim collapsible metal hangers fit twice the clothes in half the space. Perfect for small apartments or maximizing wardrobe depth. Would you swap your bulky plastic ones for these? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_removable": false,
+      "board_section_id": null,
+      "is_product": false,
+      "pin_id": "1132444268836741737"
+    }
   }
 ]
