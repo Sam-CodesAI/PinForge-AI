@@ -10355,5 +10355,263 @@
       "board_id": "1132444337492933751",
       "pin_id": "1132444268836656913"
     }
+  },
+  {
+    "timestamp": "2026-10-15T00:02:37.961917+00:00",
+    "status": "success",
+    "execution_time_seconds": 43.22,
+    "product": {
+      "asin": "B0964GLS2J",
+      "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+      "price": "$21.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "bridge_slug": "adhesive-corner-shower-caddy-tension-basket-2-pack-stainless-steel-b0964gls2j"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Shower Clutter Gone! Adhesive Corner Caddy 2-Pack \u2705\u2728 Smart Spaces",
+      "description": "Stop wrestling with suction cups that fall off! \ud83d\udebf This no-drill stainless steel caddy sticks to tile and holds all your shampoo + body wash without a single hole in the wall. Perfect for renters or anyone tired of messy bathroom corners. \u2728 Small space challenge: How many bottles can you fit in this corner? \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#BathroomOrganization",
+        "#RentersOfInsta",
+        "#NoDrillSolutions",
+        "#AmazonFinds",
+        "#ShowerOrganizer",
+        "#SpaceSavers",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_9dd9e8616f.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ed044b13f9.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8b753e968e.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ca6be8892c.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d7b87896d2.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d7b87896d2.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_36021592.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_36021592.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_36021592.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_36021592.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_36021592.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "is_removable": false,
+      "creative_type": "CAROUSEL",
+      "title": "Shower Clutter Gone! Adhesive Corner Caddy 2-Pack \u2705\u2728 Smart Spaces",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/09/8b/fe/098bfebca6f4366fad481ce35440aed8.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/09/8b/fe/098bfebca6f4366fad481ce35440aed8.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/09/8b/fe/098bfebca6f4366fad481ce35440aed8.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/09/8b/fe/098bfebca6f4366fad481ce35440aed8.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/09/8b/fe/098bfebca6f4366fad481ce35440aed8.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Shower Clutter Gone! Adhesive Corner Caddy 2-Pack \u2705\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Stop wrestling with suction cups that fall off! \ud83d\udebf This no-drill stainless steel caddy sticks to tile and holds all your shampoo + body wash without a single hole in the wall. Perfect for renters or anyone tired of messy bathroom corners. \u2728 Small space challenge: How many bottles can you fit in this corner? \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/67/95/35/679535f717063272897b82a189a298bc.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/67/95/35/679535f717063272897b82a189a298bc.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/67/95/35/679535f717063272897b82a189a298bc.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/67/95/35/679535f717063272897b82a189a298bc.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/67/95/35/679535f717063272897b82a189a298bc.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/1f/33/3d/1f333dbc720a1a45235bddbe973a0b43.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/1f/33/3d/1f333dbc720a1a45235bddbe973a0b43.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/1f/33/3d/1f333dbc720a1a45235bddbe973a0b43.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/1f/33/3d/1f333dbc720a1a45235bddbe973a0b43.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/1f/33/3d/1f333dbc720a1a45235bddbe973a0b43.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+            "description": "Real-world space-saving transformation. DAMAGE-FREE TENSION MOUNT. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "created_at": "2026-10-15T00:02:37",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "description": "Stop wrestling with suction cups that fall off! \ud83d\udebf This no-drill stainless steel caddy sticks to tile and holds all your shampoo + body wash without a single hole in the wall. Perfect for renters or anyone tired of messy bathroom corners. \u2728 Small space challenge: How many bottles can you fit in this corner? \ud83d\udc47 #AmazonAssociate",
+      "id": "1132444268836666910",
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "has_been_promoted": false,
+      "is_standard": true,
+      "board_id": "1132444337492933752",
+      "is_owner": true,
+      "is_product": false,
+      "board_section_id": null,
+      "pin_metrics": null,
+      "parent_pin_id": null,
+      "dominant_color": "#fae9c6",
+      "product_tags": [],
+      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "pin_id": "1132444268836666910"
+    }
   }
 ]
