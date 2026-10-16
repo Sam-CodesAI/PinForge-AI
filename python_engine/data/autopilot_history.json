@@ -11743,5 +11743,151 @@
       },
       "pin_id": "1132444268836779331"
     }
+  },
+  {
+    "timestamp": "2026-10-16T17:37:31.731310+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.91,
+    "product": {
+      "asin": "B07D38J38F",
+      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+      "price": "$27.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "bridge_slug": "stori-audrey-stackable-clear-plastic-storage-drawers-for-vanity-and-pantry-b07d38j38f"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "44% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vanity Clutter? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "description": "Turn your chaotic vanity or pantry into an aesthetic dream board. These clear Stori drawers stack perfectly to maximize vertical space without the visual noise. Perfect for SKILLERS who love a tidy desk or a organized kitchen corner. Small space challenge: Could you fit all your essentials in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#VanityOrganization",
+        "#ClearStorage",
+        "#ApartmentTherapy",
+        "#AmazonHomeFinds",
+        "#PantryGoals",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a7582e65d1.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_3e9a160e5b.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a0a24b3b22.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_91fecd9a3a.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_48ccaf686f.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_48ccaf686f.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8af151f3.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8af151f3.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8af151f3.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8af151f3.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8af151f3.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "pin_metrics": null,
+      "parent_pin_id": null,
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "is_owner": true,
+      "dominant_color": "#f5f5ef",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "product_tags": [],
+      "is_standard": true,
+      "description": "Turn your chaotic vanity or pantry into an aesthetic dream board. These clear Stori drawers stack perfectly to maximize vertical space without the visual noise. Perfect for SKILLERS who love a tidy desk or a organized kitchen corner. Small space challenge: Could you fit all your essentials in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "id": "1132444268836815434",
+      "has_been_promoted": false,
+      "creative_type": "REGULAR",
+      "created_at": "2026-10-16T17:37:31",
+      "board_section_id": null,
+      "is_product": false,
+      "board_id": "1132444337492933750",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/12/b9/46/12b946e3a63510a7fee5c9038a01e830.jpg"
+          }
+        }
+      },
+      "is_removable": false,
+      "title": "Vanity Clutter? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "pin_id": "1132444268836815434"
+    }
   }
 ]
