@@ -11889,5 +11889,150 @@
       "title": "Vanity Clutter? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
       "pin_id": "1132444268836815434"
     }
+  },
+  {
+    "timestamp": "2026-10-16T20:07:16.399199+00:00",
+    "status": "success",
+    "execution_time_seconds": 34.79,
+    "product": {
+      "asin": "B0F321BQFT",
+      "title": "Vtopmart 18 Pack Baby Clothes Organizer, Foldable Fabric Drawer Bins",
+      "price": "$23.79",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0F321BQFT?tag=smartspace07-21",
+      "bridge_slug": "vtopmart-18-pack-baby-clothes-organizer-foldable-fabric-drawer-bins-b0f321bqft"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#F4F5F7",
+      "accent_hex": "#3B82F6",
+      "badge_text": "15% Off Today",
+      "visual_hook": "Transform Your Nursery Drawer Chaos",
+      "secondary_hook": "18-pack foldable fabric storage bins for baby clothes",
+      "target_audience": "New Parents",
+      "alt_text": "Vtopmart 18 pack baby clothes organizer grey fabric foldable drawer bins filled with baby clothes and accessories.",
+      "cv_features": {
+        "rb_ratio": 1.028,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 34.8,
+        "edge_clutter": 43.5,
+        "dominant_hex": "#c3c1be",
+        "accent_hex": "#eec65e",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.028,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 34.8,
+      "edge_clutter": 43.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Tiny Closet Chaos? Fixed: 18-Pack Foldable Baby Bin Organizer! \u2705\u2728",
+      "description": "Stop drowning in laundry! \ud83d\udeab This 18-pack of foldable bins is the ultimate small-space hero. Keep tiny clothes tucked away and your closet aesthetic on point. Perfect for studios or maxing out wardrobe space. Would you use these for nursery swaddles or kitchen pantry snacks? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#NurseryOrganization",
+        "#SmallSpaceLiving",
+        "#ClosetHacks",
+        "#AmazonFinds",
+        "#FabricBins",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_8cbf434fc4.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_8cf66194de.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f07571a651.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_06ff1d0635.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9196b891c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9196b891c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_47288a79.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_47288a79.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_47288a79.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_47288a79.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_47288a79.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "dominant_color": null,
+      "title": "Tiny Closet Chaos? Fixed: 18-Pack Foldable Baby Bin Organizer! \u2705\u2728",
+      "description": "Stop drowning in laundry! \ud83d\udeab This 18-pack of foldable bins is the ultimate small-space hero. Keep tiny clothes tucked away and your closet aesthetic on point. Perfect for studios or maxing out wardrobe space. Would you use these for nursery swaddles or kitchen pantry snacks? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board_section_id": null,
+      "board_id": "1132444337492933751",
+      "is_removable": false,
+      "parent_pin_id": null,
+      "has_been_promoted": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/11/dd/f1/11ddf174ec972f8b8ebeee80a2ee6efe.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/11/dd/f1/11ddf174ec972f8b8ebeee80a2ee6efe.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/11/dd/f1/11ddf174ec972f8b8ebeee80a2ee6efe.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/11/dd/f1/11ddf174ec972f8b8ebeee80a2ee6efe.jpg"
+          }
+        }
+      },
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_owner": true,
+      "id": "1132444268836826567",
+      "link": "https://www.amazon.com/dp/B0F321BQFT?tag=smartspace07-21",
+      "created_at": "2026-10-16T20:07:16",
+      "is_product": false,
+      "alt_text": "Vtopmart 18 pack baby clothes organizer grey fabric foldable drawer bins filled with baby clothes and accessories.",
+      "is_standard": true,
+      "creative_type": "REGULAR",
+      "product_tags": [],
+      "pin_metrics": null,
+      "pin_id": "1132444268836826567"
+    }
   }
 ]
