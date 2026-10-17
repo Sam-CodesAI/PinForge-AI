@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-16T23:47:24.486685+00:00",
+  "last_updated": "2026-10-17T05:38:26.662851+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 71,
+  "total_pins_evaluated": 72,
   "top_performing_pins": [
     {
       "pin_id": "1132444268835809911",
@@ -9,15 +9,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 8,
+        "impressions": 9,
         "saves": 0,
         "outbound_clicks": 2,
         "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 12.04,
+      "aes_score": 11.93,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-16T23:47:23.029147+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.648242+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -25,15 +25,15 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:09.611847+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.138291+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -41,15 +41,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:09.870659+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.343820+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -57,15 +57,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:10.130614+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.597258+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -73,15 +73,47 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 5,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.19,
+      "aes_score": 6.13,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:07.089246+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.337840+00:00"
+    },
+    {
+      "pin_id": "1132444268836581194",
+      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:21.660833+00:00"
+    },
+    {
+      "pin_id": "1132444268836588638",
+      "title": "Cabinet Chaos? Fixed: UpSpace Height Adjustable Bottle Organizer! \ud83d\udd25\u2728 Small Spaces",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:21.846842+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -89,15 +121,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
       "metrics": {
-        "impressions": 3,
+        "impressions": 4,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 1.46,
+      "aes_score": 1.44,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:07.326726+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.594841+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -105,37 +137,21 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/",
       "metrics": {
-        "impressions": 5,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 1.43,
+      "aes_score": 1.42,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:22.546553+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.240197+00:00"
     },
     {
       "pin_id": "1132444268835821570",
       "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 8,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.39,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:22.795282+00:00"
-    },
-    {
-      "pin_id": "1132444268835796753",
-      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
         "impressions": 9,
         "saves": 0,
@@ -145,7 +161,23 @@
       },
       "aes_score": 1.38,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:23.292511+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.488409+00:00"
+    },
+    {
+      "pin_id": "1132444268835796753",
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 10,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.36,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:25.819827+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -153,7 +185,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 7,
+        "impressions": 8,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -161,7 +193,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:06.824760+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.161784+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -169,7 +201,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -177,7 +209,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:07.571545+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.752893+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -185,7 +217,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -193,7 +225,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:07.852816+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.898615+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -201,7 +233,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -209,7 +241,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.078684+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.079293+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -217,7 +249,7 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -225,7 +257,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.361727+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.247726+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -233,6 +265,22 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "metrics": {
+        "impressions": 3,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-17T05:38:14.432901+00:00"
+    },
+    {
+      "pin_id": "1132444268835930137",
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "metrics": {
         "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
@@ -241,23 +289,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.600827+00:00"
-    },
-    {
-      "pin_id": "1132444268835930137",
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.867363+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.604803+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -265,7 +297,7 @@
       "board": "Space Saving Kitchens",
       "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -273,7 +305,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:09.099182+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.800803+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -281,7 +313,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -289,76 +321,44 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:09.355487+00:00"
-    },
-    {
-      "pin_id": "1132444268836048964",
-      "title": "Sticky Corner Shower Caddy: 2\u2011Pack Stainless Steel Tension Baskets for Tiny Bathrooms! \ud83d\udebf\u2728",
-      "board": "Space Saving Kitchens",
-      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:10.383470+00:00"
-    },
-    {
-      "pin_id": "1132444268836058909",
-      "title": "Vacuum Storage Bags: Collapse Clutter, Gain Space Instantly!",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:10.658346+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.964927+00:00"
     }
   ],
   "board_performance_summary": {
     "Small Apartment Hacks": {
       "pin_count": 21,
-      "avg_aes": 1.15,
+      "avg_aes": 1.14,
       "total_outbound_clicks": 3,
       "total_saves": 0,
-      "total_impressions": 81
+      "total_impressions": 100
     },
     "Room Organization": {
-      "pin_count": 15,
-      "avg_aes": 0.84,
+      "pin_count": 16,
+      "avg_aes": 0.78,
       "total_outbound_clicks": 2,
       "total_saves": 0,
-      "total_impressions": 13
+      "total_impressions": 21
     },
     "Closet & Wardrobe Organization": {
       "pin_count": 14,
-      "avg_aes": 0.0,
+      "avg_aes": 0.11,
       "total_outbound_clicks": 0,
       "total_saves": 0,
-      "total_impressions": 10
+      "total_impressions": 18
     },
     "Studio Living Ideas": {
       "pin_count": 12,
-      "avg_aes": 0.54,
+      "avg_aes": 0.66,
       "total_outbound_clicks": 1,
       "total_saves": 0,
-      "total_impressions": 8
+      "total_impressions": 14
     },
     "Space Saving Kitchens": {
       "pin_count": 9,
       "avg_aes": 0.0,
       "total_outbound_clicks": 0,
       "total_saves": 0,
-      "total_impressions": 5
+      "total_impressions": 8
     }
   },
   "all_ranked_pins": [
@@ -368,15 +368,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
       "metrics": {
-        "impressions": 8,
+        "impressions": 9,
         "saves": 0,
         "outbound_clicks": 2,
         "pin_clicks": 2,
         "comments": 0
       },
-      "aes_score": 12.04,
+      "aes_score": 11.93,
       "raw_aes_score": 130.0,
-      "evaluated_at": "2026-10-16T23:47:23.029147+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.648242+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -384,15 +384,15 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:09.611847+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.138291+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -400,15 +400,15 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:09.870659+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.343820+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -416,15 +416,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.44,
+      "aes_score": 6.37,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:10.130614+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.597258+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -432,15 +432,47 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 5,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 1,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 6.19,
+      "aes_score": 6.13,
       "raw_aes_score": 65.0,
-      "evaluated_at": "2026-10-16T23:47:07.089246+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.337840+00:00"
+    },
+    {
+      "pin_id": "1132444268836581194",
+      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
+      "board": "Closet & Wardrobe Organization",
+      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:21.660833+00:00"
+    },
+    {
+      "pin_id": "1132444268836588638",
+      "title": "Cabinet Chaos? Fixed: UpSpace Height Adjustable Bottle Organizer! \ud83d\udd25\u2728 Small Spaces",
+      "board": "Studio Living Ideas",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 1,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.49,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:21.846842+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -448,15 +480,15 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HJGVV6P5?tag=smartspace07-21",
       "metrics": {
-        "impressions": 3,
+        "impressions": 4,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 1.46,
+      "aes_score": 1.44,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:07.326726+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.594841+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -464,37 +496,21 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/",
       "metrics": {
-        "impressions": 5,
+        "impressions": 6,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 1,
         "comments": 0
       },
-      "aes_score": 1.43,
+      "aes_score": 1.42,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:22.546553+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.240197+00:00"
     },
     {
       "pin_id": "1132444268835821570",
       "title": "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0HBX9BHQD?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 8,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 1,
-        "comments": 0
-      },
-      "aes_score": 1.39,
-      "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:22.795282+00:00"
-    },
-    {
-      "pin_id": "1132444268835796753",
-      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
         "impressions": 9,
         "saves": 0,
@@ -504,7 +520,23 @@
       },
       "aes_score": 1.38,
       "raw_aes_score": 15.0,
-      "evaluated_at": "2026-10-16T23:47:23.292511+00:00"
+      "evaluated_at": "2026-10-17T05:38:25.488409+00:00"
+    },
+    {
+      "pin_id": "1132444268835796753",
+      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 10,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "aes_score": 1.36,
+      "raw_aes_score": 15.0,
+      "evaluated_at": "2026-10-17T05:38:25.819827+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -512,7 +544,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 7,
+        "impressions": 8,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -520,7 +552,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:06.824760+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.161784+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -528,7 +560,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -536,7 +568,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:07.571545+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.752893+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -544,7 +576,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -552,7 +584,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:07.852816+00:00"
+      "evaluated_at": "2026-10-17T05:38:13.898615+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -560,7 +592,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -568,7 +600,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.078684+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.079293+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -576,7 +608,7 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
       "metrics": {
-        "impressions": 2,
+        "impressions": 3,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -584,7 +616,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.361727+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.247726+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -592,6 +624,22 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "metrics": {
+        "impressions": 3,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-17T05:38:14.432901+00:00"
+    },
+    {
+      "pin_id": "1132444268835930137",
+      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
+      "metrics": {
         "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
@@ -600,23 +648,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.600827+00:00"
-    },
-    {
-      "pin_id": "1132444268835930137",
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "board": "Small Apartment Hacks",
-      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 1,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:08.867363+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.604803+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -624,7 +656,7 @@
       "board": "Space Saving Kitchens",
       "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -632,7 +664,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:09.099182+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.800803+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -640,7 +672,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B0973DGD8P?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -648,7 +680,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:09.355487+00:00"
+      "evaluated_at": "2026-10-17T05:38:14.964927+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -664,7 +696,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:10.383470+00:00"
+      "evaluated_at": "2026-10-17T05:38:15.755832+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -680,7 +712,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:10.658346+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.003742+00:00"
     },
     {
       "pin_id": "1132444268836067497",
@@ -696,7 +728,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:10.938871+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.200472+00:00"
     },
     {
       "pin_id": "1132444268836085542",
@@ -704,7 +736,7 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -712,7 +744,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:11.189225+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.377440+00:00"
     },
     {
       "pin_id": "1132444268836096573",
@@ -720,7 +752,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -728,7 +760,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:11.466132+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.592909+00:00"
     },
     {
       "pin_id": "1132444268836134919",
@@ -736,7 +768,7 @@
       "board": "Space Saving Kitchens",
       "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -744,7 +776,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:11.696390+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.748994+00:00"
     },
     {
       "pin_id": "1132444268836146521",
@@ -752,7 +784,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -760,7 +792,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:11.923448+00:00"
+      "evaluated_at": "2026-10-17T05:38:16.908802+00:00"
     },
     {
       "pin_id": "1132444268836155433",
@@ -768,7 +800,7 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -776,7 +808,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:12.168523+00:00"
+      "evaluated_at": "2026-10-17T05:38:17.120300+00:00"
     },
     {
       "pin_id": "1132444268836172774",
@@ -784,7 +816,7 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -792,7 +824,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:12.403693+00:00"
+      "evaluated_at": "2026-10-17T05:38:17.309217+00:00"
     },
     {
       "pin_id": "1132444268836182366",
@@ -800,7 +832,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0C89STMFK?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -808,7 +840,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:12.694524+00:00"
+      "evaluated_at": "2026-10-17T05:38:17.522051+00:00"
     },
     {
       "pin_id": "1132444268836217222",
@@ -816,7 +848,7 @@
       "board": "Space Saving Kitchens",
       "link": "https://www.amazon.com/dp/B0C3H9MJQV?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -824,7 +856,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:12.965083+00:00"
+      "evaluated_at": "2026-10-17T05:38:17.719961+00:00"
     },
     {
       "pin_id": "1132444268836229620",
@@ -832,7 +864,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B01ICEEHUO?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -840,7 +872,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:13.197067+00:00"
+      "evaluated_at": "2026-10-17T05:38:17.928549+00:00"
     },
     {
       "pin_id": "1132444268836239264",
@@ -848,7 +880,7 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -856,7 +888,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:13.488226+00:00"
+      "evaluated_at": "2026-10-17T05:38:18.085018+00:00"
     },
     {
       "pin_id": "1132444268836257117",
@@ -864,7 +896,7 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B0GVD8R88M?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -872,7 +904,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:13.713806+00:00"
+      "evaluated_at": "2026-10-17T05:38:18.283995+00:00"
     },
     {
       "pin_id": "1132444268836267066",
@@ -880,7 +912,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0882ZPRF7?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -888,7 +920,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:13.962928+00:00"
+      "evaluated_at": "2026-10-17T05:38:18.457478+00:00"
     },
     {
       "pin_id": "1132444268836300504",
@@ -904,7 +936,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:14.178971+00:00"
+      "evaluated_at": "2026-10-17T05:38:18.648696+00:00"
     },
     {
       "pin_id": "1132444268836311925",
@@ -920,7 +952,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:14.393647+00:00"
+      "evaluated_at": "2026-10-17T05:38:18.838726+00:00"
     },
     {
       "pin_id": "1132444268836324115",
@@ -936,7 +968,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:14.649720+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.032292+00:00"
     },
     {
       "pin_id": "1132444268836347738",
@@ -952,7 +984,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:14.912811+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.194797+00:00"
     },
     {
       "pin_id": "1132444268836357342",
@@ -968,7 +1000,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:15.164718+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.341425+00:00"
     },
     {
       "pin_id": "1132444268836390896",
@@ -984,7 +1016,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:15.438492+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.509450+00:00"
     },
     {
       "pin_id": "1132444268836404193",
@@ -1000,7 +1032,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:15.696573+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.730840+00:00"
     },
     {
       "pin_id": "1132444268836416223",
@@ -1016,7 +1048,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:15.969664+00:00"
+      "evaluated_at": "2026-10-17T05:38:19.910847+00:00"
     },
     {
       "pin_id": "1132444268836436638",
@@ -1032,7 +1064,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:16.189111+00:00"
+      "evaluated_at": "2026-10-17T05:38:20.037587+00:00"
     },
     {
       "pin_id": "1132444268836447584",
@@ -1040,7 +1072,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1048,7 +1080,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:16.457138+00:00"
+      "evaluated_at": "2026-10-17T05:38:20.243369+00:00"
     },
     {
       "pin_id": "1132444268836493166",
@@ -1056,7 +1088,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
       "metrics": {
-        "impressions": 1,
+        "impressions": 2,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1064,7 +1096,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:16.728160+00:00"
+      "evaluated_at": "2026-10-17T05:38:20.421224+00:00"
     },
     {
       "pin_id": "1132444268836499130",
@@ -1072,6 +1104,22 @@
       "board": "Studio Living Ideas",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-17T05:38:20.628280+00:00"
+    },
+    {
+      "pin_id": "1132444268836510649",
+      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "metrics": {
         "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
@@ -1080,23 +1128,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:16.977607+00:00"
-    },
-    {
-      "pin_id": "1132444268836510649",
-      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
-      "board": "Room Organization",
-      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:17.209857+00:00"
+      "evaluated_at": "2026-10-17T05:38:20.869890+00:00"
     },
     {
       "pin_id": "1132444268836526763",
@@ -1104,7 +1136,7 @@
       "board": "Room Organization",
       "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1112,7 +1144,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:17.457977+00:00"
+      "evaluated_at": "2026-10-17T05:38:21.026439+00:00"
     },
     {
       "pin_id": "1132444268836537181",
@@ -1120,7 +1152,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1128,7 +1160,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:17.722384+00:00"
+      "evaluated_at": "2026-10-17T05:38:21.210380+00:00"
     },
     {
       "pin_id": "1132444268836572779",
@@ -1136,7 +1168,7 @@
       "board": "Closet & Wardrobe Organization",
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "metrics": {
-        "impressions": 0,
+        "impressions": 1,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1144,39 +1176,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:17.976090+00:00"
-    },
-    {
-      "pin_id": "1132444268836581194",
-      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 Smart Spaces",
-      "board": "Closet & Wardrobe Organization",
-      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:18.239683+00:00"
-    },
-    {
-      "pin_id": "1132444268836588638",
-      "title": "Cabinet Chaos? Fixed: UpSpace Height Adjustable Bottle Organizer! \ud83d\udd25\u2728 Small Spaces",
-      "board": "Studio Living Ideas",
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "metrics": {
-        "impressions": 0,
-        "saves": 0,
-        "outbound_clicks": 0,
-        "pin_clicks": 0,
-        "comments": 0
-      },
-      "aes_score": 0.0,
-      "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:18.520727+00:00"
+      "evaluated_at": "2026-10-17T05:38:21.420229+00:00"
     },
     {
       "pin_id": "1132444268836604080",
@@ -1192,7 +1192,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:18.779575+00:00"
+      "evaluated_at": "2026-10-17T05:38:21.990378+00:00"
     },
     {
       "pin_id": "1132444268836610175",
@@ -1208,7 +1208,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:18.999211+00:00"
+      "evaluated_at": "2026-10-17T05:38:22.153395+00:00"
     },
     {
       "pin_id": "1132444268836644629",
@@ -1224,7 +1224,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:19.259926+00:00"
+      "evaluated_at": "2026-10-17T05:38:22.380889+00:00"
     },
     {
       "pin_id": "1132444268836656913",
@@ -1240,7 +1240,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:19.537776+00:00"
+      "evaluated_at": "2026-10-17T05:38:22.535169+00:00"
     },
     {
       "pin_id": "1132444268836666910",
@@ -1256,7 +1256,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:19.779700+00:00"
+      "evaluated_at": "2026-10-17T05:38:22.735367+00:00"
     },
     {
       "pin_id": "1132444268836683461",
@@ -1272,7 +1272,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:20.009316+00:00"
+      "evaluated_at": "2026-10-17T05:38:22.913361+00:00"
     },
     {
       "pin_id": "1132444268836691176",
@@ -1288,7 +1288,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:20.236830+00:00"
+      "evaluated_at": "2026-10-17T05:38:23.250934+00:00"
     },
     {
       "pin_id": "1132444268836729072",
@@ -1304,7 +1304,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:20.493732+00:00"
+      "evaluated_at": "2026-10-17T05:38:23.409553+00:00"
     },
     {
       "pin_id": "1132444268836741737",
@@ -1320,7 +1320,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:20.765619+00:00"
+      "evaluated_at": "2026-10-17T05:38:23.598303+00:00"
     },
     {
       "pin_id": "1132444268836754394",
@@ -1336,7 +1336,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:21.052073+00:00"
+      "evaluated_at": "2026-10-17T05:38:23.776312+00:00"
     },
     {
       "pin_id": "1132444268836772798",
@@ -1352,7 +1352,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:21.278391+00:00"
+      "evaluated_at": "2026-10-17T05:38:23.941336+00:00"
     },
     {
       "pin_id": "1132444268836779331",
@@ -1368,7 +1368,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:21.534599+00:00"
+      "evaluated_at": "2026-10-17T05:38:24.188804+00:00"
     },
     {
       "pin_id": "1132444268836815434",
@@ -1384,7 +1384,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:21.785149+00:00"
+      "evaluated_at": "2026-10-17T05:38:24.391768+00:00"
     },
     {
       "pin_id": "1132444268836826567",
@@ -1400,7 +1400,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:22.002761+00:00"
+      "evaluated_at": "2026-10-17T05:38:24.557090+00:00"
     },
     {
       "pin_id": "1132444268836839792",
@@ -1416,7 +1416,23 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:22.302796+00:00"
+      "evaluated_at": "2026-10-17T05:38:24.797280+00:00"
+    },
+    {
+      "pin_id": "1132444268836859505",
+      "title": "Cable Chaos? Solved: 9-Pack Magnetic Cord Clips! \ud83d\udd0c\u2728 Smart Spaces",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B0CBRK59J7?tag=smartspace07-21",
+      "metrics": {
+        "impressions": 0,
+        "saves": 0,
+        "outbound_clicks": 0,
+        "pin_clicks": 0,
+        "comments": 0
+      },
+      "aes_score": 0.0,
+      "raw_aes_score": 0.0,
+      "evaluated_at": "2026-10-17T05:38:24.988772+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -1424,7 +1440,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B09P1NQJNC?tag=smartspace07-21",
       "metrics": {
-        "impressions": 8,
+        "impressions": 9,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1432,7 +1448,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:23.541261+00:00"
+      "evaluated_at": "2026-10-17T05:38:26.012372+00:00"
     },
     {
       "pin_id": "1132444268835773045",
@@ -1440,7 +1456,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B0F7PYC8NB?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1448,7 +1464,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:23.765257+00:00"
+      "evaluated_at": "2026-10-17T05:38:26.180142+00:00"
     },
     {
       "pin_id": "1132444268835770261",
@@ -1456,7 +1472,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1464,7 +1480,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:24.020691+00:00"
+      "evaluated_at": "2026-10-17T05:38:26.332674+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -1472,7 +1488,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1480,7 +1496,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:24.265115+00:00"
+      "evaluated_at": "2026-10-17T05:38:26.498455+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -1488,7 +1504,7 @@
       "board": "Small Apartment Hacks",
       "link": "https://pinforge.vercel.app/p/b087f5k713?tag=smartspace07-21",
       "metrics": {
-        "impressions": 6,
+        "impressions": 7,
         "saves": 0,
         "outbound_clicks": 0,
         "pin_clicks": 0,
@@ -1496,7 +1512,7 @@
       },
       "aes_score": 0.0,
       "raw_aes_score": 0.0,
-      "evaluated_at": "2026-10-16T23:47:24.486635+00:00"
+      "evaluated_at": "2026-10-17T05:38:26.662799+00:00"
     }
   ]
 }
