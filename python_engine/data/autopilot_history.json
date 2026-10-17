@@ -1,56 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T10:59:11.020728+00:00",
-    "status": "success",
-    "execution_time_seconds": 22.59,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Motivekit\u2122 Portable Camping Shower | 5.3 Gallons Foldable",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "motivekit-portable-camping-shower-53-gallons-foldable-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Must-Have Camping Hack",
-      "visual_hook": "Hot Showers Anywhere Off-Grid",
-      "secondary_hook": "5.3 Gallon Foldable Pressurized Spray",
-      "target_audience": "Campers & Van Lifers",
-      "alt_text": "Motivekit 5.3 gallon portable foldable camping shower for outdoor van life and off-grid trips."
-    },
-    "seo_copy": {
-      "title": "Game-Changing Portable Camping Shower! \ud83c\udfd5\ufe0f Best Amazon Outdoor Find",
-      "description": "Upgrade your outdoor adventures with the viral Motivekit Portable Camping Shower. Featuring a 5.3-gallon foldable design, this top-rated Amazon choice delivers reliable water pressure anywhere you camp, hike, or road trip. Enjoy hassle-free setup, durable high-quality materials, and fast Prime delivery. Don't rough it completely on your next trip! Tap to check today's price. #AmazonAssociate",
-      "board": "Outdoor Adventure Gear",
-      "hashtags": [
-        "#CampingGear",
-        "#OutdoorLife",
-        "#AmazonFinds",
-        "#TravelEssentials",
-        "#GlampingLife",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_2342ca5290.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6fb10b1b3b.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f988198704.jpg"
-      }
-    ],
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-04T11:34:13.466381+00:00",
     "status": "success",
     "execution_time_seconds": 13.63,
@@ -12741,6 +12690,150 @@
       "parent_pin_id": null,
       "dominant_color": "#2b2d2a",
       "pin_id": "1132444268836919076"
+    }
+  },
+  {
+    "timestamp": "2026-10-17T23:19:27.596539+00:00",
+    "status": "success",
+    "execution_time_seconds": 43.14,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Adjustable Bottle Organizer That Saves Cabinet Space \u2013 No More Mess!",
+      "description": "Say goodbye to bottle chaos in your cabinets! The YouCopia UpSpace height\u2011adjustable organizer slides up, down, and side\u2011to\u2011side, letting you stack tall jars, water bottles, and spices without a mess. Perfect for tiny kitchens or bathroom cabinets. Small space challenge: could you fit all your daily drinks in this setup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#CabinetStorage",
+        "#HomeMakeover",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5d51c36489.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_59aef8fb04.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_cd2344037b.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_4189fa9753.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_766eb95e0c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_766eb95e0c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_d50220b1.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_d50220b1.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_d50220b1.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_d50220b1.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_d50220b1.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933751",
+      "title": "Adjustable Bottle Organizer That Saves Cabinet Space \u2013 No More Mess!",
+      "board_section_id": null,
+      "product_tags": [],
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_removable": false,
+      "is_standard": true,
+      "description": "Say goodbye to bottle chaos in your cabinets! The YouCopia UpSpace height\u2011adjustable organizer slides up, down, and side\u2011to\u2011side, letting you stack tall jars, water bottles, and spices without a mess. Perfect for tiny kitchens or bathroom cabinets. Small space challenge: could you fit all your daily drinks in this setup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "pin_metrics": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_product": false,
+      "created_at": "2026-10-17T23:19:27",
+      "id": "1132444268836933311",
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "dominant_color": "#2b2d2a",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "parent_pin_id": null,
+      "is_owner": true,
+      "has_been_promoted": false,
+      "creative_type": "REGULAR",
+      "pin_id": "1132444268836933311"
     }
   }
 ]
