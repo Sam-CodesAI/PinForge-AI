@@ -1,56 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T10:58:32.509376+00:00",
-    "status": "success",
-    "execution_time_seconds": 9.69,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Curated Amazon Selection (B087F5K713)",
-      "price": "$29.99",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "amazon-find-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Curated Amazon Selection (B087F5K713) - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "The Viral Amazon Find Everyone Is Obsessed With (Under $30!)",
-      "description": "Discover the viral Amazon product everyone is talking about! Rated 4+ stars with thousands of glowing reviews, this budget-friendly find under $30 delivers unbeatable value, quality, and everyday convenience. Elevate your routine with fast Prime 2-day shipping and hassle-free returns. Tap the link to check current pricing and customer reviews! #AmazonAssociate",
-      "board": "Viral Amazon Finds",
-      "hashtags": [
-        "#AmazonFinds",
-        "#ViralProducts",
-        "#TrendingFinds",
-        "#AmazonMustHaves",
-        "#BestAmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ecfafcdec5.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1b76c2b3d8.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_64d17c85a4.jpg"
-      }
-    ],
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-04T10:59:11.020728+00:00",
     "status": "success",
     "execution_time_seconds": 22.59,
@@ -12647,6 +12596,151 @@
       "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
       "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
       "pin_id": "1132444268836903495"
+    }
+  },
+  {
+    "timestamp": "2026-10-17T19:44:51.390262+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.86,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Drawer Chaos? Fixed: Lifewit 6-Pack Dividers! \ud83d\udd25\u2728 Smart Spaces",
+      "description": "Stop letting deep drawers become endless pits of mystery trash! \ud83d\ude31 This 6-pack is the ultimate small-space hero, turning cluttered chaos into aesthetic, categorized zones. Perfect for cutlery, office supplies, or bathroom essentials. Which room needs this rescue most: Kitchen or Vanity? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#DrawerOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonHomeFinds",
+        "#DeskSetup",
+        "#OrganizationTips",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_9d410f0e11.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_8dae6dfaa0.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_d2d38de24e.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_3460cb58cd.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_3b3c46e131.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_3b3c46e131.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_1d1e5bb2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_1d1e5bb2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_1d1e5bb2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_1d1e5bb2.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_1d1e5bb2.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "id": "1132444268836919076",
+      "title": "Drawer Chaos? Fixed: Lifewit 6-Pack Dividers! \ud83d\udd25\u2728 Smart Spaces",
+      "created_at": "2026-10-17T19:44:51",
+      "creative_type": "REGULAR",
+      "board_section_id": null,
+      "board_id": "1132444337492933751",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_product": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "has_been_promoted": false,
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "is_owner": true,
+      "pin_metrics": null,
+      "description": "Stop letting deep drawers become endless pits of mystery trash! \ud83d\ude31 This 6-pack is the ultimate small-space hero, turning cluttered chaos into aesthetic, categorized zones. Perfect for cutlery, office supplies, or bathroom essentials. Which room needs this rescue most: Kitchen or Vanity? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_removable": false,
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "product_tags": [],
+      "parent_pin_id": null,
+      "dominant_color": "#2b2d2a",
+      "pin_id": "1132444268836919076"
     }
   }
 ]
