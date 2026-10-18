@@ -1,105 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T17:46:14.038049+00:00",
-    "status": "success",
-    "execution_time_seconds": 46.22,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Curated Amazon Selection (B087F5K713)",
-      "price": "$29.99",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "amazon-find-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "bento_dark",
-      "primary_hex": "#0B0F19",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Viral Amazon Find",
-      "visual_hook": "Curated Top Amazon Selection",
-      "secondary_hook": "Save time and elevate your everyday routine",
-      "target_audience": "Minimalists",
-      "alt_text": "Curated Amazon Selection product featured on a dark minimalist background with high conversion design."
-    },
-    "seo_copy": {
-      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
-      "description": "Discover the viral Amazon find taking social media by storm! Rated 4+ stars by thousands of happy shoppers, this trending must-have delivers unbeatable everyday value for just $29.99. Enjoy fast Prime 2-day shipping and hassle-free returns. Tap the link to grab yours before it sells out! #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#AmazonFinds",
-        "#TrendingNow",
-        "#ViralProducts",
-        "#MustHaves",
-        "#BestAmazonFinds",
-        "#AmazonMustHaves",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e249660d33.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_45fe1b5ef0.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_42726dd18c.jpg"
-      }
-    ],
-    "live_pinterest": {
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "alt_text": "Curated Amazon Selection product featured on a dark minimalist background with high conversion design.",
-      "created_at": "2026-10-04T17:46:13",
-      "dominant_color": null,
-      "description": "Discover the viral Amazon find taking social media by storm! Rated 4+ stars by thousands of happy shoppers, this trending must-have delivers unbeatable everyday value for just $29.99. Enjoy fast Prime 2-day shipping and hassle-free returns. Tap the link to grab yours before it sells out! #AmazonAssociate",
-      "parent_pin_id": null,
-      "product_tags": [],
-      "id": "1132444268835796753",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/16/98/4a/16984afb49e11ec0bb69d3bfd6036f39.jpg"
-          }
-        }
-      },
-      "is_standard": true,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "creative_type": "REGULAR",
-      "title": "Viral Amazon Find Everyone Is Obsessed With Under $30",
-      "board_section_id": null,
-      "board_id": "1132444337492930442",
-      "has_been_promoted": false,
-      "is_removable": false,
-      "is_product": false,
-      "is_owner": true,
-      "pin_metrics": null,
-      "pin_id": "1132444268835796753"
-    }
-  },
-  {
     "timestamp": "2026-10-04T20:30:36.888957+00:00",
     "status": "success",
     "execution_time_seconds": 10.28,
@@ -13118,6 +13018,264 @@
       "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
       "parent_pin_id": null,
       "pin_id": "1132444268837014137"
+    }
+  },
+  {
+    "timestamp": "2026-10-18T23:29:54.863961+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.08,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Under-Sink Chaos? Fixed! 2-Tier Sliding Organizer for Small Spaces \u2705\u2728",
+      "description": "Stop losing bottles in the dark! \u2728 This 2-tier sliding organizer turns your cabinet into a sleek, functional zone. Pull out everything in seconds\u2014perfect for maxzing small spaces without the clutter. Small space challenge: Could you fit all your cleaning supplies here? \ud83e\uddf4\ud83d\udc47 Drop your vote below! #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#AmazonFinds",
+        "#UnderSinkOrganizer",
+        "#HomeDecor",
+        "#SpaceSaver",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_58b1d5ee21.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f5057a80a6.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3c864f193e.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_f7bda0090d.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8d3d847dbc.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8d3d847dbc.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8f1c71fa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8f1c71fa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8f1c71fa.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8f1c71fa.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8f1c71fa.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "board_id": "1132444337492933752",
+      "is_removable": false,
+      "is_owner": true,
+      "product_tags": [],
+      "id": "1132444268837028646",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Under-Sink Chaos? Fixed! 2-Tier Sliding Organizer for Small Spaces \u2705\u2728 (Slide 1/4)",
+            "description": "Stop losing bottles in the dark! \u2728 This 2-tier sliding organizer turns your cabinet into a sleek, functional zone. Pull out everything in seconds\u2014perfect for maxzing small spaces without the clutter. Small space challenge: Could you fit all your cleaning supplies here? \ud83e\uddf4\ud83d\udc47 Drop your vote below! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Under Sink Organizer and Storage  2",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Under Sink Organizer and Storage  2",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Under Sink Organizer and Storage  2",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "parent_pin_id": null,
+      "description": "Stop losing bottles in the dark! \u2728 This 2-tier sliding organizer turns your cabinet into a sleek, functional zone. Pull out everything in seconds\u2014perfect for maxzing small spaces without the clutter. Small space challenge: Could you fit all your cleaning supplies here? \ud83e\uddf4\ud83d\udc47 Drop your vote below! #AmazonAssociate",
+      "title": "Under-Sink Chaos? Fixed! 2-Tier Sliding Organizer for Small Spaces \u2705\u2728",
+      "is_product": false,
+      "is_standard": true,
+      "dominant_color": "#fae9c6",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "creative_type": "CAROUSEL",
+      "board_section_id": null,
+      "has_been_promoted": false,
+      "created_at": "2026-10-18T23:29:54",
+      "pin_metrics": null,
+      "pin_id": "1132444268837028646"
     }
   }
 ]
