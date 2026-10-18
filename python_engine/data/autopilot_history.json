@@ -1,56 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T11:34:13.466381+00:00",
-    "status": "success",
-    "execution_time_seconds": 13.63,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Homepage",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "homepage-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "bento_dark",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Limited Time 20% Off",
-      "visual_hook": "Upgrade Your Digital Setup",
-      "secondary_hook": "Sleek, modern, and built for performance",
-      "target_audience": "Minimalists & Tech Enthusiasts",
-      "alt_text": "Minimalist sleek design showcase on dark background with special discount pricing."
-    },
-    "seo_copy": {
-      "title": "Upgrade Your Space: The Ultimate Smart Home Must-Have Under $40",
-      "description": "Transform your daily routine with this top-rated Amazon Choice smart home essential. Engineered for everyday reliability with premium materials, thousands of verified buyers rave about its seamless performance. Enjoy fast Prime delivery and hassle-free returns on this budget-friendly tech upgrade that instantly modernizes any room. Click through to read the full review and check today's live pricing! #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmartHomeTech",
-        "#AmazonFinds",
-        "#TechGadgets",
-        "#HomeUpgrades",
-        "#AffordableTech",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5fb06fdf16.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_da3f47179b.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_787b1bb1fe.jpg"
-      }
-    ],
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-04T11:52:55.759618+00:00",
     "status": "success",
     "execution_time_seconds": 16.03,
@@ -12834,6 +12783,152 @@
       "has_been_promoted": false,
       "creative_type": "REGULAR",
       "pin_id": "1132444268836933311"
+    }
+  },
+  {
+    "timestamp": "2026-10-18T05:55:40.375238+00:00",
+    "status": "success",
+    "execution_time_seconds": 43.15,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Cabinet Chaos? Fixed: UpSpace Adjustable Bottle Organizer! \ud83c\udf7e\u2728 Smart Spaces",
+      "description": "Stop wrestling with heavy pantry items buried at the back! The YouCopia UpSpace height adjustable organizer slides out effortlessly, making every bottle visible and grabbable. Perfect for maximizing vertical space in tight kitchens. Would you use this in your pantry or bathroom shelf? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#PantryHack",
+        "#SmartSpaces",
+        "#UnderCabinet",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ed4583f77d.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_af78e43574.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_30ce254745.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_8162533437.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be69ca64d4.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be69ca64d4.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_577bc3dd.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_577bc3dd.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_577bc3dd.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_577bc3dd.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_577bc3dd.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-18T05:55:40",
+      "description": "Stop wrestling with heavy pantry items buried at the back! The YouCopia UpSpace height adjustable organizer slides out effortlessly, making every bottle visible and grabbable. Perfect for maximizing vertical space in tight kitchens. Would you use this in your pantry or bathroom shelf? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "title": "Cabinet Chaos? Fixed: UpSpace Adjustable Bottle Organizer! \ud83c\udf7e\u2728 Smart Spaces",
+      "creative_type": "REGULAR",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "has_been_promoted": false,
+      "parent_pin_id": null,
+      "pin_metrics": null,
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "is_removable": false,
+      "board_id": "1132444337492930442",
+      "dominant_color": "#2b2d2a",
+      "is_owner": true,
+      "board_section_id": null,
+      "product_tags": [],
+      "is_product": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "id": "1132444268836954267",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "pin_id": "1132444268836954267"
     }
   }
 ]
