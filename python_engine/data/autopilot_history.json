@@ -1,103 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T11:52:55.759618+00:00",
-    "status": "success",
-    "execution_time_seconds": 16.03,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Homepage",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "homepage-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Homepage - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "The $40 Smart Home Upgrade Everyone Is Obsessed With",
-      "description": "Ready to simplify your daily routine? This top-rated smart home essential delivers premium build quality, engineered reliability, and seamless performance without breaking the bank. Backed by thousands of verified reviews and fast Prime shipping, it's an effortless upgrade for any modern space. Tap through to see today's pricing and real customer reviews! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmartHomeTech",
-        "#AmazonFinds",
-        "#TechGadgets",
-        "#HomeAutomation",
-        "#ViralAmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_593f4bfdfd.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7651d30cf5.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f29152cd4a.jpg"
-      }
-    ],
-    "live_pinterest": {
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "created_at": "2026-10-04T11:52:55",
-      "product_tags": [],
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/b9/c0/74/b9c074c606f28e3e296dabeec1a55152.jpg"
-          }
-        }
-      },
-      "id": "1132444268835770261",
-      "has_been_promoted": false,
-      "is_product": false,
-      "is_standard": true,
-      "title": "The $40 Smart Home Upgrade Everyone Is Obsessed With",
-      "description": "Ready to simplify your daily routine? This top-rated smart home essential delivers premium build quality, engineered reliability, and seamless performance without breaking the bank. Backed by thousands of verified reviews and fast Prime shipping, it's an effortless upgrade for any modern space. Tap through to see today's pricing and real customer reviews! #AmazonAssociate",
-      "board_section_id": null,
-      "parent_pin_id": null,
-      "board_id": "1132444337492930442",
-      "dominant_color": null,
-      "creative_type": "REGULAR",
-      "is_removable": false,
-      "alt_text": "Homepage - Smart Spaces Amazon find",
-      "pin_metrics": null,
-      "is_owner": true
-    }
-  },
-  {
     "timestamp": "2026-10-04T12:27:43.799463+00:00",
     "status": "success",
     "execution_time_seconds": 65.21,
@@ -12929,6 +12831,152 @@
       },
       "is_standard": true,
       "pin_id": "1132444268836954267"
+    }
+  },
+  {
+    "timestamp": "2026-10-18T08:21:48.867263+00:00",
+    "status": "success",
+    "execution_time_seconds": 28.2,
+    "product": {
+      "asin": "B0CGRQYCPT",
+      "title": "JOYROOM 9 Pack Magnetic Cable Clips Cord Organizer Adhesive Wire Management",
+      "price": "$9.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0CGRQYCPT?tag=smartspace07-21",
+      "bridge_slug": "joyroom-9-pack-magnetic-cable-clips-cord-organizer-adhesive-wire-management-b0cgrqycpt"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#111827",
+      "accent_hex": "#06B6D4",
+      "badge_text": "9 Pack Organizer",
+      "visual_hook": "Tame Your Cable Chaos",
+      "secondary_hook": "Magnetic design keeps cords instantly accessible",
+      "target_audience": "Minimalists",
+      "alt_text": "JOYROOM 9 Pack Magnetic Cable Clips Cord Organizer Adhesive Wire Management on white background",
+      "cv_features": {
+        "rb_ratio": 0.989,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 14.5,
+        "edge_clutter": 61.3,
+        "dominant_hex": "#919293",
+        "accent_hex": "#61f1f4",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.989,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 14.5,
+      "edge_clutter": 61.3,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Tackle Desk Chaos: Magnetic Cable Clips for Aesthetic Minimalism \u2728",
+      "description": "Stop ignoring that cable soup! \ud83c\udf5c These 9-pack magnetic clips keep your workspace sleek and stress-free. Perfect for WFH setups where aesthetics meet function. Would you use these on your desk or behind the TV? Let us know your clutter hot spot! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#DeskSetup",
+        "#CableManagement",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#WFHSetup",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_59dad083e6.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ca583014c9.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_2b9dc31a17.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_14a77c4a92.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_fbc5b69fda.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_fbc5b69fda.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_500307c4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_500307c4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_500307c4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_500307c4.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_500307c4.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "is_product": false,
+      "is_standard": true,
+      "description": "Stop ignoring that cable soup! \ud83c\udf5c These 9-pack magnetic clips keep your workspace sleek and stress-free. Perfect for WFH setups where aesthetics meet function. Would you use these on your desk or behind the TV? Let us know your clutter hot spot! \ud83d\udc47 #AmazonAssociate",
+      "board_section_id": null,
+      "board_id": "1132444337492930442",
+      "is_owner": true,
+      "product_tags": [],
+      "parent_pin_id": null,
+      "link": "https://www.amazon.com/dp/B0CGRQYCPT?tag=smartspace07-21",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "id": "1132444268836961754",
+      "created_at": "2026-10-18T08:21:48",
+      "pin_metrics": null,
+      "has_been_promoted": false,
+      "title": "Tackle Desk Chaos: Magnetic Cable Clips for Aesthetic Minimalism \u2728",
+      "dominant_color": null,
+      "alt_text": "JOYROOM 9 Pack Magnetic Cable Clips Cord Organizer Adhesive Wire Management on white background",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/94/71/0a/94710ab4efa236afd15479c34b824d47.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/94/71/0a/94710ab4efa236afd15479c34b824d47.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/94/71/0a/94710ab4efa236afd15479c34b824d47.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/94/71/0a/94710ab4efa236afd15479c34b824d47.jpg"
+          }
+        }
+      },
+      "is_removable": false,
+      "pin_id": "1132444268836961754"
     }
   }
 ]
