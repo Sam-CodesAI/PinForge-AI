@@ -1,105 +1,5 @@
 [
   {
-    "timestamp": "2026-10-04T20:30:36.888957+00:00",
-    "status": "success",
-    "execution_time_seconds": 10.28,
-    "product": {
-      "asin": "B0DHGM5XT4",
-      "title": "Criusia Drawer Organizer Clothes",
-      "price": "$18.99",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "bridge_slug": "criusia-drawer-organizer-clothes-b0dhgm5xt4"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#2C2623",
-      "accent_hex": "#D97706",
-      "badge_text": "10-Pack Drawer System",
-      "visual_hook": "End Drawer Chaos Forever",
-      "secondary_hook": "Instant neat folds and stress-free mornings",
-      "target_audience": "Home Organizers",
-      "alt_text": "10 pack beige fabric drawer organizers neatly sorting folded clothes and nursery items."
-    },
-    "seo_copy": {
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "description": "Transform messy drawers into a Pinterest-worthy closet with the Criusia Drawer Organizer set. Featuring 10 sturdy, odorless bins in 3 versatile sizes reinforced with heavy plastic boards, they keep baby clothes, socks, and accessories neatly separated and wrinkle-free. Maximize your storage space today! #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#ClosetOrganization",
-        "#DrawerOrganizers",
-        "#HomeOrganization",
-        "#AmazonFinds",
-        "#AestheticHome",
-        "#DeclutterYourLife",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_8080ed6eea.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5bd27c9c24.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_1b14810907.jpg"
-      }
-    ],
-    "live_pinterest": {
-      "alt_text": "10 pack beige fabric drawer organizers neatly sorting folded clothes and nursery items.",
-      "created_at": "2026-10-04T20:30:36",
-      "pin_metrics": null,
-      "is_standard": true,
-      "is_owner": true,
-      "board_id": "1132444337492930442",
-      "id": "1132444268835809911",
-      "board_section_id": null,
-      "product_tags": [],
-      "is_product": false,
-      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
-      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-      "has_been_promoted": false,
-      "description": "Transform messy drawers into a Pinterest-worthy closet with the Criusia Drawer Organizer set. Featuring 10 sturdy, odorless bins in 3 versatile sizes reinforced with heavy plastic boards, they keep baby clothes, socks, and accessories neatly separated and wrinkle-free. Maximize your storage space today! #AmazonAssociate",
-      "dominant_color": null,
-      "creative_type": "REGULAR",
-      "parent_pin_id": null,
-      "is_removable": false,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/3d/d2/a5/3dd2a56b2ac0da9b38b2e3ff2784af82.jpg"
-          }
-        }
-      },
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_id": "1132444268835809911"
-    }
-  },
-  {
     "timestamp": "2026-10-05T00:04:31.901308+00:00",
     "status": "success",
     "execution_time_seconds": 34.09,
@@ -13276,6 +13176,152 @@
       "created_at": "2026-10-18T23:29:54",
       "pin_metrics": null,
       "pin_id": "1132444268837028646"
+    }
+  },
+  {
+    "timestamp": "2026-10-19T06:13:58.173646+00:00",
+    "status": "success",
+    "execution_time_seconds": 29.68,
+    "product": {
+      "asin": "B07WTCXHWR",
+      "title": "Adhesive Corner Shelf Bathroom Shower Caddy Organizer for Kitchen Toilet No Drilling 2 Tier Bathroom Corner Shelves Shower Caddies",
+      "price": "$25.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B07WTCXHWR?tag=smartspace07-21",
+      "bridge_slug": "adhesive-corner-shelf-bathroom-shower-caddy-organizer-for-kitchen-toilet-no-b07wtcxhwr"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#1F2329",
+      "accent_hex": "#38BDF8",
+      "badge_text": "Zero Drill Storage",
+      "visual_hook": "Organize Every Shower Corner Instantly",
+      "secondary_hook": "Max out awkward wall space without tools",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Black adhesive corner shower caddy organizer mounted on grey tile wall with soap dispensers.",
+      "cv_features": {
+        "rb_ratio": 1.003,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.0,
+        "edge_clutter": 27.5,
+        "dominant_hex": "#5e605e",
+        "accent_hex": "#c0a682",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.003,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.0,
+      "edge_clutter": 27.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "No Drills? This Shower Caddy Organizes Everything! \ud83d\udebf\u2728 Smart Spaces",
+      "description": "Stop fighting for counter space! \ud83d\ude24 This 2-tier corner caddy is the only way to keep your bathroom shelf-free and spa-ready. It sticks on in seconds (no holes, no damage) and holds all your essentials. Okay Gen-Zs, be honest: is this going in your shower for tech-free zones or your kitchen for spices? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#BathroomOrganization",
+        "#ShowerCaddy",
+        "#AmazonFinds",
+        "#NoDrillOrganization",
+        "#RentersOfPinterest",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a7633ceb64.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_e2f68c5289.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_d64b0a2131.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_749351f970.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d84086f1e5.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d84086f1e5.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_6be9c65b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_6be9c65b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_6be9c65b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_6be9c65b.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_6be9c65b.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "description": "Stop fighting for counter space! \ud83d\ude24 This 2-tier corner caddy is the only way to keep your bathroom shelf-free and spa-ready. It sticks on in seconds (no holes, no damage) and holds all your essentials. Okay Gen-Zs, be honest: is this going in your shower for tech-free zones or your kitchen for spices? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "dominant_color": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "alt_text": "Black adhesive corner shower caddy organizer mounted on grey tile wall with soap dispensers.",
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B07WTCXHWR?tag=smartspace07-21",
+      "is_product": false,
+      "id": "1132444268837049325",
+      "is_owner": true,
+      "board_section_id": null,
+      "creative_type": "REGULAR",
+      "product_tags": [],
+      "parent_pin_id": null,
+      "title": "No Drills? This Shower Caddy Organizes Everything! \ud83d\udebf\u2728 Smart Spaces",
+      "board_id": "1132444337492930442",
+      "has_been_promoted": false,
+      "created_at": "2026-10-19T06:13:57",
+      "pin_metrics": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/1f/01/db/1f01dbbbd4ee6ffaf8f89f699b68fd25.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/1f/01/db/1f01dbbbd4ee6ffaf8f89f699b68fd25.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/1f/01/db/1f01dbbbd4ee6ffaf8f89f699b68fd25.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/1f/01/db/1f01dbbbd4ee6ffaf8f89f699b68fd25.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "pin_id": "1132444268837049325"
     }
   }
 ]
