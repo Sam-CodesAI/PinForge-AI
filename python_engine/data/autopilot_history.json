@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T02:46:34.348723+00:00",
-    "status": "success",
-    "execution_time_seconds": 20.17,
-    "product": {
-      "asin": "B0CDQLLP8Z",
-      "title": "Collapsible Laundry Baskets",
-      "price": "$INR96062",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0CDQLLP8Z?tag=smartspace07-21",
-      "bridge_slug": "collapsible-laundry-baskets-b0cdqllp8z"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E293B",
-      "accent_hex": "#38BDF8",
-      "badge_text": "Space Saving Essential",
-      "visual_hook": "Tame Your Laundry Chaos Instantly",
-      "secondary_hook": "Collapsible design stores away easily anywhere",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Person holding large collapsible grey mesh laundry basket displaying high capacity and foldable design."
-    },
-    "seo_copy": {
-      "title": "Tired of Clutter? The Viral Space-Saving Laundry Basket You Need!",
-      "description": "Transform your laundry routine with the BATTOO Collapsible Laundry Basket. Featuring a durable upgrade design, sturdy shoulder-length handles, and a space-saving foldable build, it's the ultimate organization hack for small apartments, dorms, and busy homes. Say goodbye to flimsy hampers and hello to effortless laundry days. Grab yours on Amazon today! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#SmallSpaceLiving",
-        "#LaundryRoomGoals",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_88ee44bc16.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_057913dcd7.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_9215456d15.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_e5f413ddbb.jpg"
-      }
-    ],
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T02:49:16.767036+00:00",
     "status": "success",
     "execution_time_seconds": 15.48,
@@ -13375,6 +13321,151 @@
       },
       "parent_pin_id": null,
       "pin_id": "1132444268837058298"
+    }
+  },
+  {
+    "timestamp": "2026-10-19T19:28:00.373430+00:00",
+    "status": "success",
+    "execution_time_seconds": 54.68,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Tame Cabinet Chaos: UpSpace Adjustable Bottle Organizer! \ud83d\udccf\u2728 Smart Spaces",
+      "description": "Stop losing time hunting for hidden bottles! The YouCopia UpSpace stretches to fit any cabinet size, creating instant vertical storage for water, soda, or hygiene supplies. It\u2019s the ultimate hack for thin cabinets and awkward gaps. Small space challenge: Could you find space for this in your kitchen or bathroom? \ud83c\udfe0 Drop a \ud83e\udd64 for kitchen or \ud83e\uddfc for bath below! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#BathroomHacks",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#SmallSpaceLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_4231ad037d.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6580b793be.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_9d3d16bfef.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_c1b64d749c.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2c2991e8e0.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2c2991e8e0.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_75e26877.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_75e26877.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_75e26877.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_75e26877.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_75e26877.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "pin_metrics": null,
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "description": "Stop losing time hunting for hidden bottles! The YouCopia UpSpace stretches to fit any cabinet size, creating instant vertical storage for water, soda, or hygiene supplies. It\u2019s the ultimate hack for thin cabinets and awkward gaps. Small space challenge: Could you find space for this in your kitchen or bathroom? \ud83c\udfe0 Drop a \ud83e\udd64 for kitchen or \ud83e\uddfc for bath below! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "is_owner": true,
+      "created_at": "2026-10-19T19:27:59",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "board_id": "1132444337492933750",
+      "has_been_promoted": false,
+      "parent_pin_id": null,
+      "id": "1132444268837099898",
+      "dominant_color": "#2b2d2a",
+      "is_removable": false,
+      "creative_type": "REGULAR",
+      "title": "Tame Cabinet Chaos: UpSpace Adjustable Bottle Organizer! \ud83d\udccf\u2728 Smart Spaces",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "board_section_id": null,
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "product_tags": [],
+      "is_product": false,
+      "pin_id": "1132444268837099898"
     }
   }
 ]
