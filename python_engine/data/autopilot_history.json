@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T02:58:50.441700+00:00",
-    "status": "success",
-    "execution_time_seconds": 14.69,
-    "product": {
-      "asin": "B0CWRHMNLJ",
-      "title": "Expandable Under Sink Organizer, 2 Tier Under Sink Shelf",
-      "price": "$42.71",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0CWRHMNLJ?tag=smartspace07-21",
-      "bridge_slug": "expandable-under-sink-organizer-2-tier-under-sink-shelf-b0cwrhmnlj"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1A2332",
-      "accent_hex": "#10B981",
-      "badge_text": "Instant Under-Sink Storage",
-      "visual_hook": "Transform Your Messy Under-Sink Space",
-      "secondary_hook": "Expandable 2-tier shelving fits around plumbing",
-      "target_audience": "Home Cooks",
-      "alt_text": "Expandable 2 tier under sink organizer shelf holding pots, rice cooker, and kitchen supplies in a clean cabinet setup."
-    },
-    "seo_copy": {
-      "title": "Transform Messy Spaces: The Ultimate Expandable Under Sink Organizer",
-      "description": "Stop wasting precious cabinet space! The KOSIWU 2-tier expandable under sink organizer features adjustable heights and removable boards to instantly clear kitchen and bathroom clutter. Built with premium durability to hold heavy cleaning supplies with ease. Click to upgrade your home organization today! #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#KitchenHacks",
-        "#CleaningMotivation",
-        "#SmallSpaceLiving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_4041b0858c.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a35b15e8bc.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_ddd7bce73a.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_09bfee455d.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_5cb34f79.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_5cb34f79.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_5cb34f79.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_5cb34f79.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_5cb34f79.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T03:01:50.063647+00:00",
     "status": "success",
     "execution_time_seconds": 25.85,
@@ -13854,6 +13789,152 @@
         ]
       },
       "pin_id": "1132444268837144902"
+    }
+  },
+  {
+    "timestamp": "2026-10-20T18:05:30.670897+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.85,
+    "product": {
+      "asin": "B0964GLS2J",
+      "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
+      "price": "$21.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "bridge_slug": "adhesive-corner-shower-caddy-tension-basket-2-pack-stainless-steel-b0964gls2j"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "No-Drill Shower Organization: 2-Pk Stainless Steel Tension Caddy! \ud83d\udebf\u2728 Smart Spaces",
+      "description": "Turn your cramped shower into a luxury spa zone! This no-drill tension caddy fits perfectly in tight corners, holding up to 50 lbs without damaging walls. Perfect for renting or small bathrooms. \ud83c\udfe0\n\nQuick poll: Do you hate popping up bottles in your shower? Yes or No? \ud83d\udc47\n\n#SmallApartmentHacks #ShowerOrganization #AmazonFinds #BathroomHacks #NoDrill #SmartHome #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallApartmentHacks",
+        "#ShowerOrganization",
+        "#AmazonFinds",
+        "#BathroomHacks",
+        "#NoDrill",
+        "#SmartHome",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0ded4d9f3c.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_02f8c0385a.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_e5e50e4f55.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_1b8c1ea033.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e076bcae25.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e076bcae25.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_b9546c97.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_b9546c97.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_b9546c97.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_b9546c97.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_b9546c97.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "is_owner": true,
+      "pin_metrics": null,
+      "board_section_id": null,
+      "is_removable": false,
+      "description": "Turn your cramped shower into a luxury spa zone! This no-drill tension caddy fits perfectly in tight corners, holding up to 50 lbs without damaging walls. Perfect for renting or small bathrooms. \ud83c\udfe0\n\nQuick poll: Do you hate popping up bottles in your shower? Yes or No? \ud83d\udc47\n\n#SmallApartmentHacks #ShowerOrganization #AmazonFinds #BathroomHacks #NoDrill #SmartHome #AmazonAssociate",
+      "created_at": "2026-10-20T18:05:30",
+      "product_tags": [],
+      "is_standard": true,
+      "id": "1132444268837180108",
+      "has_been_promoted": false,
+      "title": "No-Drill Shower Organization: 2-Pk Stainless Steel Tension Caddy! \ud83d\udebf\u2728 Smart Spaces",
+      "is_product": false,
+      "board_id": "1132444337492933750",
+      "parent_pin_id": null,
+      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#2b2d2a",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
+      "pin_id": "1132444268837180108"
     }
   }
 ]
