@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T02:56:08.434005+00:00",
-    "status": "success",
-    "execution_time_seconds": 13.59,
-    "product": {
-      "asin": "B0CT7M946D",
-      "title": "Slim Rolling Storage Cart with Wheels  Metal 6 Tier Spice Rack Mobile Shelving Unit Organizer Kitchen Utility Cart for Office Bathroom Kitchen Laundry Room Narrow Places",
-      "price": "$81.75",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0CT7M946D?tag=smartspace07-21",
-      "bridge_slug": "slim-rolling-storage-cart-with-wheels-metal-6-tier-spice-rack-mobile-shelvi-b0ct7m946d"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E222A",
-      "accent_hex": "#10B981",
-      "badge_text": "Maximize Tiny Spaces",
-      "visual_hook": "Transform Narrow Gaps Into Storage",
-      "secondary_hook": "6 tiers of mobile organization for any room",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Slim rolling 6-tier metal storage cart loaded with kitchen groceries, snacks, and jars in a narrow kitchen space."
-    },
-    "seo_copy": {
-      "title": "Genius Tiny Space Hack: 6-Tier Slim Rolling Cart \ud83d\uded2\u2728",
-      "description": "Transform awkward, narrow gaps in your kitchen, bathroom, or laundry room into ultimate storage with this sturdy 6-tier metal rolling cart. Easy to glide on wheels and built heavy-duty to hold all your detergents and spices without sagging. Maximize every inch of your small space today! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#KitchenOrganization",
-        "#LaundryRoomGoals",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0ebec78b28.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_dbfc6e24b2.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8af9db762c.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_d9439e36a9.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_87333534.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_87333534.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_87333534.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_87333534.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_87333534.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T02:58:50.441700+00:00",
     "status": "success",
     "execution_time_seconds": 14.69,
@@ -13740,6 +13675,185 @@
       "is_removable": false,
       "board_id": "1132444337492930442",
       "pin_id": "1132444268837137343"
+    }
+  },
+  {
+    "timestamp": "2026-10-20T08:52:51.979325+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.71,
+    "product": {
+      "asin": "B0DNTQ2YNT",
+      "title": "2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
+      "price": "$19.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+      "bridge_slug": "2-packs-under-sink-pull-out-storage-organizers-128-inches-black-b0dntq2ynt"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A222D",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Amazon Best Seller",
+      "visual_hook": "Never Lose Your Under-Sink Items Again",
+      "secondary_hook": "Smooth sliding trays maximize every inch",
+      "target_audience": "Home Organizers",
+      "alt_text": "Two black sliding under-sink organizers packed with cleaning supplies inside a wooden cabinet.",
+      "cv_features": {
+        "rb_ratio": 1.313,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 0.0,
+        "edge_clutter": 51.5,
+        "dominant_hex": "#7f6f60",
+        "accent_hex": "#d6028b",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.313,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 0.0,
+      "edge_clutter": 51.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728",
+      "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#BathroomStorage",
+        "#UnderSink",
+        "#HomeImprovement",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e4f222c987.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_64f741a123.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_96123e5317.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_2eb9e04bf7.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b57d04a615.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b57d04a615.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_098d9268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_098d9268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_098d9268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_098d9268.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_098d9268.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933749",
+      "is_product": false,
+      "creative_type": "CAROUSEL",
+      "board_section_id": null,
+      "dominant_color": null,
+      "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_standard": true,
+      "id": "1132444268837144902",
+      "created_at": "2026-10-20T08:52:51",
+      "product_tags": [],
+      "is_removable": false,
+      "alt_text": "Two black sliding under-sink organizers packed with cleaning supplies inside a wooden cabinet.",
+      "is_owner": true,
+      "pin_metrics": null,
+      "has_been_promoted": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+      "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728",
+      "parent_pin_id": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728 (Slide 1/4)",
+            "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "pin_id": "1132444268837144902"
     }
   }
 ]
