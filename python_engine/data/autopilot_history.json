@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T02:51:37.836625+00:00",
-    "status": "success",
-    "execution_time_seconds": 14.55,
-    "product": {
-      "asin": "B0CT7M946D",
-      "title": "Slim Rolling Storage Cart with Wheels  Metal 6 Tier Spice Rack Mobile Shelving Unit Organizer Kitchen Utility Cart for Office Bathroom Kitchen Laundry Room Narrow Places",
-      "price": "$81.75",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0CT7M946D?tag=smartspace07-21",
-      "bridge_slug": "slim-rolling-storage-cart-with-wheels-metal-6-tier-spice-rack-mobile-shelvi-b0ct7m946d"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E293B",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Maximize Tiny Spaces",
-      "visual_hook": "The Ultimate Narrow Space Organizer",
-      "secondary_hook": "6 tiers of heavy-duty mobile storage",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Slim 6-tier rolling storage cart filled with kitchen pantry items and spices in a narrow kitchen space."
-    },
-    "seo_copy": {
-      "title": "Genius Small Space Hack: 6-Tier Slim Rolling Cart \ud83d\uded2",
-      "description": "Transform chaotic narrow gaps into ultimate storage! This heavy-duty metal 6-tier rolling cart fits seamlessly between your washer, fridge, or tight bathroom spaces. Sturdy, mobile, and holds heavy detergent or spices with zero wobble. Stop wasting awkward gaps in your home. #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceOrganization",
-        "#KitchenGadgets",
-        "#LaundryRoomGoals",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_35a15f98c3.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_eb98d005ca.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3874d97721.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_30308320fa.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_3f25f4d0.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_3f25f4d0.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_3f25f4d0.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_3f25f4d0.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_3f25f4d0.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T02:56:08.434005+00:00",
     "status": "success",
     "execution_time_seconds": 13.59,
@@ -13661,6 +13596,150 @@
         "username": "Smart_Spaces"
       },
       "pin_id": "1132444268837119334"
+    }
+  },
+  {
+    "timestamp": "2026-10-20T06:02:06.147979+00:00",
+    "status": "success",
+    "execution_time_seconds": 45.61,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Transform Tiny Drawers with Lifewit 6\u2011Pack Organizer \u2013 Aesthetic, Affordable & Slip\u2011Proof!",
+      "description": "Say goodbye to chaotic drawers! These Lifewit dividers snap together, keep socks, gadgets, and makeup neat, and fit any drawer size for that clean aesthetic vibe. Perfect for tiny apartments or dorms. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#DrawerDividers",
+        "#HomeOrganization",
+        "#ApartmentLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5b89c6fcc8.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_51965fb31a.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_312493a1bd.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_25ff81316d.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_48bf4c8456.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_48bf4c8456.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_83990d93.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_83990d93.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_83990d93.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_83990d93.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_83990d93.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "description": "Say goodbye to chaotic drawers! These Lifewit dividers snap together, keep socks, gadgets, and makeup neat, and fit any drawer size for that clean aesthetic vibe. Perfect for tiny apartments or dorms. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "created_at": "2026-10-20T06:02:05",
+      "product_tags": [],
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "title": "Transform Tiny Drawers with Lifewit 6\u2011Pack Organizer \u2013 Aesthetic, Affordable & Slip\u2011Proof!",
+      "creative_type": "REGULAR",
+      "board_section_id": null,
+      "dominant_color": "#2b2d2a",
+      "is_product": false,
+      "pin_metrics": null,
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "id": "1132444268837137343",
+      "is_standard": true,
+      "has_been_promoted": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_owner": true,
+      "parent_pin_id": null,
+      "is_removable": false,
+      "board_id": "1132444337492930442",
+      "pin_id": "1132444268837137343"
     }
   }
 ]
