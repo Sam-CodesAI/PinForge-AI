@@ -1,71 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T03:01:50.063647+00:00",
-    "status": "success",
-    "execution_time_seconds": 25.85,
-    "product": {
-      "asin": "B0GTLW9VTC",
-      "title": "JSWHYBD Gold Shoe Rack Tower, Narrow Metal Organizer for Small Spaces",
-      "price": "$98.99",
-      "rating": 5.0,
-      "affiliate_url": "https://www.amazon.com/dp/B0GTLW9VTC?tag=smartspace07-21",
-      "bridge_slug": "jswhybd-gold-shoe-rack-tower-narrow-metal-organizer-for-small-spaces-b0gtlw9vtc"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#2B2520",
-      "accent_hex": "#D4A359",
-      "badge_text": "Small Space Essential",
-      "visual_hook": "Transform Your Tiny Entryway Corner",
-      "secondary_hook": "Vertical Tiered Storage Holds 14+ Pairs",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Gold narrow vertical shoe rack tower organizer placed in a compact modern apartment entryway."
-    },
-    "seo_copy": {
-      "title": "Aesthetic Gold Shoe Rack for Small Entryways \u2728 Narrow Space Saver",
-      "description": "Transform your cramped entryway with this stunning gold narrow shoe rack tower. Designed for small spaces and apartments, its double-row vertical layout holds everything from sneakers to high boots while adding a touch of chic glam to your decor. Maximize your storage effortlessly today! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#EntrywayOrganization",
-        "#GoldDecor",
-        "#AmazonFinds",
-        "#ShoeStorage",
-        "#ApartmentHacks",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3df9a892c4.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c036363e05.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_728981b5f9.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_996670a32c.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_f28eaa6b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_f28eaa6b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_f28eaa6b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_f28eaa6b.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_f28eaa6b.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T04:21:39.718813+00:00",
     "status": "success",
     "execution_time_seconds": 14.48,
@@ -13935,6 +13869,152 @@
       },
       "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
       "pin_id": "1132444268837180108"
+    }
+  },
+  {
+    "timestamp": "2026-10-20T20:56:17.472046+00:00",
+    "status": "success",
+    "execution_time_seconds": 44.59,
+    "product": {
+      "asin": "B08N5NV448",
+      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vacuum Storage Bags Save Space Instantly \u2013 12 Pack with Hand Pump! \u2728",
+      "description": "Say goodbye to overflowing drawers and bulky bedding! These vacuum storage bags compress clothes up to 80% smaller, perfect for tiny apartments or dorm rooms. The included hand pump makes sealing a breeze\u2014no noisy electric pump needed. Would you stash your winter coats or summer linens? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SpaceSaving",
+        "#HomeOrganization",
+        "#SmallSpaceLiving",
+        "#VacuumBags",
+        "#SmartSpaces",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a718e2cf0a.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1b4f9af5fb.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_556fdfeb5d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_bc3b060122.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b26cd26d68.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b26cd26d68.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_236bf57e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_236bf57e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_236bf57e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_236bf57e.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_236bf57e.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "is_owner": true,
+      "pin_metrics": null,
+      "board_section_id": null,
+      "is_removable": false,
+      "description": "Say goodbye to overflowing drawers and bulky bedding! These vacuum storage bags compress clothes up to 80% smaller, perfect for tiny apartments or dorm rooms. The included hand pump makes sealing a breeze\u2014no noisy electric pump needed. Would you stash your winter coats or summer linens? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "created_at": "2026-10-20T20:56:17",
+      "product_tags": [],
+      "is_standard": true,
+      "id": "1132444268837193890",
+      "has_been_promoted": false,
+      "title": "Vacuum Storage Bags Save Space Instantly \u2013 12 Pack with Hand Pump! \u2728",
+      "is_product": false,
+      "board_id": "1132444337492933751",
+      "parent_pin_id": null,
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#2b2d2a",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "pin_id": "1132444268837193890"
     }
   }
 ]
