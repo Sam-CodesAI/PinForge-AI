@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T04:28:16.185519+00:00",
-    "status": "success",
-    "execution_time_seconds": 22.48,
-    "product": {
-      "asin": "B0CT7M946D",
-      "title": "Slim Rolling Storage Cart with Wheels  Metal 6 Tier Spice Rack Mobile Shelving Unit Organizer Kitchen Utility Cart for Office Bathroom Kitchen Laundry Room Narrow Places",
-      "price": "$81.75",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0CT7M946D?tag=smartspace07-21",
-      "bridge_slug": "slim-rolling-storage-cart-with-wheels-metal-6-tier-spice-rack-mobile-shelvi-b0ct7m946d"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1A1D20",
-      "accent_hex": "#F59E0B",
-      "badge_text": "Narrow Space Hack",
-      "visual_hook": "Maximize Every Wasted Gap",
-      "secondary_hook": "6-Tier Ultra Slim Rolling Storage",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Slim 6-tier rolling metal pantry cart organizing spices and food jars in a narrow kitchen space."
-    },
-    "seo_copy": {
-      "title": "Genius 6-Tier Slim Rolling Cart for Tiny Spaces! \ud83d\uded2\u2728",
-      "description": "Transform awkward gaps into massive storage with this 6-tier metal rolling utility cart! Perfect for narrow kitchens, tight bathrooms, or between the washer and dryer to hold heavy detergent without sagging. Smooth wheels make it a breeze to glide anywhere you need organization most. Small space challenge: Where would you put this in your home? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#OrganizationHacks",
-        "#AmazonFinds",
-        "#KitchenOrganization",
-        "#LaundryRoomGoals",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_1de6e19f37.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_957cedb586.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_95e8631e14.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_46ba501354.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_cc903a15.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_cc903a15.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_cc903a15.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_cc903a15.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_cc903a15.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T04:36:46.126592+00:00",
     "status": "success",
     "execution_time_seconds": 18.59,
@@ -14207,6 +14142,152 @@
       "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
       "product_tags": [],
       "pin_id": "1132444268837205179"
+    }
+  },
+  {
+    "timestamp": "2026-10-21T06:03:08.463649+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.52,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Goodbye Drawer Chaos! \ud83d\uddc2\ufe0f\u2728 6-Pack Dividers for Perfectly Tidy Homes #AmazonAssociate",
+      "description": "Stop letting your junk drawer rule your life. \ud83d\uded1 This 6-pack set turns chaos into a calm, aesthetic haven. Perfect for forks, office supplies, or bathroom essentials. It\u2019s the small-space upgrade you didn\u2019t know you needed. Would you use these for cutlery or makeup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#DrawerOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#TidyUp",
+        "#RoomOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ebc75d1ada.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_d2dfc55638.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_4a4a1ac5ad.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b7c83aa00f.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_944de7b6f3.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_944de7b6f3.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_6412ba14.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_6412ba14.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_6412ba14.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_6412ba14.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_6412ba14.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "is_owner": true,
+      "pin_metrics": null,
+      "board_section_id": null,
+      "is_removable": false,
+      "description": "Stop letting your junk drawer rule your life. \ud83d\uded1 This 6-pack set turns chaos into a calm, aesthetic haven. Perfect for forks, office supplies, or bathroom essentials. It\u2019s the small-space upgrade you didn\u2019t know you needed. Would you use these for cutlery or makeup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "created_at": "2026-10-21T06:03:08",
+      "product_tags": [],
+      "is_standard": true,
+      "id": "1132444268837225104",
+      "has_been_promoted": false,
+      "title": "Goodbye Drawer Chaos! \ud83d\uddc2\ufe0f\u2728 6-Pack Dividers for Perfectly Tidy Homes #AmazonAssociate",
+      "is_product": false,
+      "board_id": "1132444337492930442",
+      "parent_pin_id": null,
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#2b2d2a",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "pin_id": "1132444268837225104"
     }
   }
 ]
