@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T04:44:28.056902+00:00",
-    "status": "success",
-    "execution_time_seconds": 37.98,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand",
-      "price": "$28.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "aesthetic-minimalist-desk-organizer-space-saving-monitor-stand-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "bento_dark",
-      "primary_hex": "#0B0F19",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Workspace Upgrade",
-      "visual_hook": "Clean Minimalist Desk Setup",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
-      "description": "Transform your chaotic workspace into a clean, aesthetic dream with this top-rated Amazon minimalist desk organizer and monitor stand! Built with high-quality materials, it instantly maximizes your desk surface while keeping essentials neatly in place. Prime delivery makes upgrading your setup easier than ever. Small space challenge: Could you survive working with a setup this clean? \ud83c\udfe0 Drop your thoughts below! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#OrganizationHacks",
-        "#AmazonFinds",
-        "#DeskSetup",
-        "#MinimalistHome",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_cc9a66a7e2.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7ced77a74a.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_e9690a9c08.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_5e98a3e67a.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8aa0a2f9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8aa0a2f9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8aa0a2f9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8aa0a2f9.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8aa0a2f9.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T07:04:00.080207+00:00",
     "status": "success",
     "execution_time_seconds": 51.18,
@@ -14561,6 +14496,151 @@
       "created_at": "2026-10-21T18:12:31",
       "has_been_promoted": false,
       "pin_id": "1132444268837269590"
+    }
+  },
+  {
+    "timestamp": "2026-10-21T20:56:55.343260+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.68,
+    "product": {
+      "asin": "B08332N66L",
+      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "20% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Kitchen Clutter? Fixed: Aesthetic 24-Step Glass Spice Drawer! \u2705\u2728 Smart Spaces",
+      "description": "Say goodbye to scattered spices! This SpaceAid Rack holds 24 labeled glass jars, keeping your small kitchen shelf-ready and Insta-worthy. The compact 2-cup design fits perfectly in drawers or under cabinets. Small space challenge: Could you fit your whole spice collection here? Drop a \ud83c\udf36\ufe0f if yes! Don't forget to tap the link for the best price. Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceKitchen",
+        "#SpiceOrganization",
+        "#KitchenAesthetic",
+        "#AmazonFinds",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_9c49aabaea.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_0e707e8194.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_e7d07b5e98.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ce7115614e.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1d1edf5044.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1d1edf5044.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_93eac8a8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_93eac8a8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_93eac8a8.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_93eac8a8.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_93eac8a8.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "has_been_promoted": false,
+      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "id": "1132444268837282588",
+      "dominant_color": "#f5f5ef",
+      "board_id": "1132444337492933751",
+      "pin_metrics": null,
+      "description": "Say goodbye to scattered spices! This SpaceAid Rack holds 24 labeled glass jars, keeping your small kitchen shelf-ready and Insta-worthy. The compact 2-cup design fits perfectly in drawers or under cabinets. Small space challenge: Could you fit your whole spice collection here? Drop a \ud83c\udf36\ufe0f if yes! Don't forget to tap the link for the best price. Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "parent_pin_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_owner": true,
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "creative_type": "REGULAR",
+      "board_section_id": null,
+      "product_tags": [],
+      "is_removable": false,
+      "is_product": false,
+      "created_at": "2026-10-21T20:56:55",
+      "title": "Kitchen Clutter? Fixed: Aesthetic 24-Step Glass Spice Drawer! \u2705\u2728 Smart Spaces",
+      "pin_id": "1132444268837282588"
     }
   }
 ]
