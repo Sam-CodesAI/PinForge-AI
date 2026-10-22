@@ -1,123 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T10:52:16.319258+00:00",
-    "status": "success",
-    "execution_time_seconds": 45.35,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand",
-      "price": "$28.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "aesthetic-minimalist-desk-organizer-space-saving-monitor-stand-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "bento_dark",
-      "primary_hex": "#0B0F19",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Workspace Upgrade",
-      "visual_hook": "Clean Minimalist Desk Setup",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
-      "description": "Transform your cluttered workspace into a clean, aesthetic oasis with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desktop surface while keeping essentials neat. Small space challenge: Could you fit all your daily tech into this sleek setup? \ud83d\udcbb Drop your rating 1-10 below! \ud83d\udc47 Tap to shop Prime shipping! #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#OrganizationHacks",
-        "#AmazonFinds",
-        "#DeskSetup",
-        "#MinimalistHome",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_06e3ae6f79.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_1443cb9ced.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_fcd6b9cca3.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_2237ed730f.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb6427a591.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb6427a591.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_3a808c3c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_3a808c3c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_3a808c3c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_3a808c3c.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_3a808c3c.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "board_id": "1132444337492933749",
-      "pin_metrics": null,
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "description": "Transform your cluttered workspace into a clean, aesthetic oasis with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desktop surface while keeping essentials neat. Small space challenge: Could you fit all your daily tech into this sleek setup? \ud83d\udcbb Drop your rating 1-10 below! \ud83d\udc47 Tap to shop Prime shipping! #AmazonAssociate",
-      "created_at": "2026-10-05T10:52:15",
-      "product_tags": [],
-      "creative_type": "REGULAR",
-      "is_standard": true,
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83e\udd0d\u2728",
-      "is_product": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": null,
-      "parent_pin_id": null,
-      "id": "1132444268835851879",
-      "has_been_promoted": false,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/40/2b/80/402b8071cef56b2a5f63bba0457fd55c.jpg"
-          }
-        }
-      },
-      "board_section_id": null,
-      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find",
-      "is_removable": false,
-      "is_owner": true,
-      "pin_id": "1132444268835851879"
-    }
-  },
-  {
     "timestamp": "2026-10-05T17:06:32.534427+00:00",
     "status": "success",
     "execution_time_seconds": 1.98,
@@ -15004,6 +14886,151 @@
       "board_section_id": null,
       "is_owner": true,
       "pin_id": "1132444268837360598"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T20:51:37.995609+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.53,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Sink Chaos? Fixed: Ultimate 2-Tier Under-Cabinet Organizer! \ud83d\udd25\u2728 #AmazonAssociate",
+      "description": "Stop paying rent for wasted space! \ud83d\ude31 This 2-tier sliding organizer turns that black hole under your sink into a TIDY heaven. \ud83c\udf3f Perfect for cleaning supplies, groceries, and pantry staples. No more digging through bottles at 2 AM. Small space challenge: Can you fit your whole pantry in one drawer? \ud83c\udfe0 Drop a \ud83c\udf4b if your under-sink is a mess! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#UnderSinkStorage",
+        "#KitchenOrganization",
+        "#SpaceSaving",
+        "#AmazonHomeFinds",
+        "#SmallKitchenHacks",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_98d9a6e673.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_80e5d32c33.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_7e3e1725d5.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_eca9d537e5.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_31b5e7c395.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_31b5e7c395.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_bd8ba730.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_bd8ba730.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_bd8ba730.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_bd8ba730.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_bd8ba730.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "is_owner": true,
+      "dominant_color": "#2b2d2a",
+      "is_product": false,
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "has_been_promoted": false,
+      "title": "Sink Chaos? Fixed: Ultimate 2-Tier Under-Cabinet Organizer! \ud83d\udd25\u2728 #AmazonAssociate",
+      "pin_metrics": null,
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "id": "1132444268837374308",
+      "product_tags": [],
+      "description": "Stop paying rent for wasted space! \ud83d\ude31 This 2-tier sliding organizer turns that black hole under your sink into a TIDY heaven. \ud83c\udf3f Perfect for cleaning supplies, groceries, and pantry staples. No more digging through bottles at 2 AM. Small space challenge: Can you fit your whole pantry in one drawer? \ud83c\udfe0 Drop a \ud83c\udf4b if your under-sink is a mess! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_standard": true,
+      "board_section_id": null,
+      "creative_type": "REGULAR",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "board_id": "1132444337492933751",
+      "is_removable": false,
+      "created_at": "2026-10-22T20:51:37",
+      "parent_pin_id": null,
+      "pin_id": "1132444268837374308"
     }
   }
 ]
