@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T07:04:00.080207+00:00",
-    "status": "success",
-    "execution_time_seconds": 51.18,
-    "product": {
-      "asin": "B087F5K713",
-      "title": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand",
-      "price": "$28.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "bridge_slug": "aesthetic-minimalist-desk-organizer-space-saving-monitor-stand-b087f5k713"
-    },
-    "ai_vision": {
-      "dominant_theme": "bento_dark",
-      "primary_hex": "#0B0F19",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Workspace Upgrade",
-      "visual_hook": "Clean Minimalist Desk Setup",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
-      "description": "Transform your cluttered workspace into a clean, aesthetic dream with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desk space while boosting your productivity in style. Prime delivery and hassle-free returns make upgrading your WFH setup risk-free! Small space challenge: Could you fit your entire setup on this? \ud83c\udfe0 Drop your thoughts below! #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#OrganizationHacks",
-        "#AmazonFinds",
-        "#DeskSetup",
-        "#MinimalistHome",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_746627d9f4.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_48203b2c0f.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_0cd44f45ef.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_358558d184.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_bdca3418.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_bdca3418.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_bdca3418.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_bdca3418.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_bdca3418.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
-      "is_removable": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "id": "1132444268835842341",
-      "board_id": "1132444337492930442",
-      "alt_text": "Aesthetic Minimalist Desk Organizer & Space Saving Monitor Stand - Smart Spaces Amazon find",
-      "created_at": "2026-10-05T07:03:59",
-      "parent_pin_id": null,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/f8/cf/be/f8cfbe1941d79517f5bb80e5efde37f7.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/f8/cf/be/f8cfbe1941d79517f5bb80e5efde37f7.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/f8/cf/be/f8cfbe1941d79517f5bb80e5efde37f7.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/f8/cf/be/f8cfbe1941d79517f5bb80e5efde37f7.jpg"
-          }
-        }
-      },
-      "is_owner": true,
-      "dominant_color": null,
-      "is_product": false,
-      "description": "Transform your cluttered workspace into a clean, aesthetic dream with this top-rated Amazon minimalist desk organizer and monitor stand. Built for everyday reliability, it instantly maximizes your desk space while boosting your productivity in style. Prime delivery and hassle-free returns make upgrading your WFH setup risk-free! Small space challenge: Could you fit your entire setup on this? \ud83c\udfe0 Drop your thoughts below! #AmazonAssociate",
-      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
-      "has_been_promoted": false,
-      "is_standard": true,
-      "board_section_id": null,
-      "product_tags": [],
-      "pin_metrics": null,
-      "creative_type": "REGULAR",
-      "pin_id": "1132444268835842341"
-    }
-  },
-  {
     "timestamp": "2026-10-05T08:54:34.556780+00:00",
     "status": "success",
     "execution_time_seconds": 53.48,
@@ -14641,6 +14528,185 @@
       "created_at": "2026-10-21T20:56:55",
       "title": "Kitchen Clutter? Fixed: Aesthetic 24-Step Glass Spice Drawer! \u2705\u2728 Smart Spaces",
       "pin_id": "1132444268837282588"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T00:07:02.021981+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.3,
+    "product": {
+      "asin": "B0915B37G6",
+      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+      "price": "$11.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces",
+      "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#ShoeOrganizer",
+        "#SmallApartmentLiving",
+        "#AmazonMustHaves",
+        "#OverDoorStorage",
+        "#RoomRefresh",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ddd9bb9281.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_2ba4ad5080.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_eb830431de.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_1f1558560f.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_558fbe2f09.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_558fbe2f09.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_59f48bc4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_59f48bc4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_59f48bc4.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_59f48bc4.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_59f48bc4.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-22T00:07:01",
+      "is_removable": false,
+      "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces",
+      "has_been_promoted": false,
+      "board_id": "1132444337492933752",
+      "creative_type": "CAROUSEL",
+      "pin_metrics": null,
+      "board_section_id": null,
+      "is_product": false,
+      "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "dominant_color": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "product_tags": [],
+      "parent_pin_id": null,
+      "is_owner": true,
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
+      "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "is_standard": true,
+      "id": "1132444268837293850",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "pin_id": "1132444268837293850"
     }
   }
 ]
