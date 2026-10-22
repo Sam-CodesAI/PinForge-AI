@@ -1,71 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T08:54:34.556780+00:00",
-    "status": "success",
-    "execution_time_seconds": 53.48,
-    "product": {
-      "asin": "B0H3NCGRSY",
-      "title": "4-Tier Slim Utility Rolling Cart with Wheels, Wood Top, Metal",
-      "price": "$29.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B0H3NCGRSY?tag=smartspace07-21",
-      "bridge_slug": "4-tier-slim-utility-rolling-cart-with-wheels-wood-top-metal-b0h3ncgrsy"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E242B",
-      "accent_hex": "#F59E0B",
-      "badge_text": "Fits Any Tight Gap",
-      "visual_hook": "Double Your Narrow Storage Space",
-      "secondary_hook": "Slim Rolling Cart for Tight Spaces",
-      "target_audience": "Small Space Dwellers & Renters",
-      "alt_text": "4-tier slim black rolling utility cart with rustic wood top fitting tightly between laundry washer and dryer."
-    },
-    "seo_copy": {
-      "title": "Genius Small Space Hack: Slim Rolling Utility Cart \ud83d\uded2\u2728",
-      "description": "Transform your cramped corners with this Amazon top-rated 4-tier slim rolling utility cart featuring a gorgeous wood top! Engineered for daily reliability, it's the ultimate small-space hack for organizing kitchens, bathrooms, or laundry rooms effortlessly. Grab yours fast with Prime delivery! Would you put this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#OrganizationHacks",
-        "#AmazonFinds",
-        "#SmallApartmentHacks",
-        "#KitchenOrganization",
-        "#SmartHome",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_da062157d6.jpg"
-      },
-      {
-        "template": "editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_79f8361f44.jpg"
-      },
-      {
-        "template": "solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_b0d9307ffe.jpg"
-      },
-      {
-        "template": "lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_fba90d7f69.jpg"
-      }
-    ],
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_75b743df.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_75b743df.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_75b743df.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_75b743df.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_75b743df.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T08:55:30.100119+00:00",
     "status": "success",
     "execution_time_seconds": 33.75,
@@ -14707,6 +14641,151 @@
         "username": "Smart_Spaces"
       },
       "pin_id": "1132444268837293850"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T06:09:10.235052+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.0,
+    "product": {
+      "asin": "B0HC5XV851",
+      "title": "Wall Mail Organizer  Rustic Key and Mail File Holder for Wall Mount\uff0cbrown",
+      "price": "$35.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0HC5XV851?tag=smartspace07-21",
+      "bridge_slug": "wall-mail-organizer-rustic-key-and-mail-file-holder-for-wall-mountbrown-b0hc5xv851"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#3D2314",
+      "accent_hex": "#C28E5D",
+      "badge_text": "Declutter Your Entryway",
+      "visual_hook": "Never Lose Your Keys Again",
+      "secondary_hook": "Rustic wall mail organizer with key hooks",
+      "target_audience": "Busy Homeowners",
+      "alt_text": "Rustic brown wooden wall mail organizer and key holder mounted on a white wall with letters and keys.",
+      "cv_features": {
+        "rb_ratio": 1.307,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 37.2,
+        "edge_clutter": 59.1,
+        "dominant_hex": "#66564e",
+        "accent_hex": "#b55d4b",
+        "bounding_box": [
+          0.0,
+          0.138,
+          0.988,
+          0.85
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.307,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 37.2,
+      "edge_clutter": 59.1,
+      "bounding_box": [
+        0.0,
+        0.138,
+        0.988,
+        0.85
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "End Mail Chaos: Rustic Wall Organizer for Aesthetic Entryways \ud83e\udeb5\u2728",
+      "description": "Stop tripping over mail! This rustic wall organizer keeps keys, letters, and bills off your counter and adds cozy charm to any entryway. Gen-Z challenge: What\u2019s the one item you\u2019d never remove from your entry table? \ud83d\udcec\ud83d\udd11 Drop your answer below! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#EntrywayDecor",
+        "#RusticHome",
+        "#MailOrganizer",
+        "#SmallSpaceLiving",
+        "#HomeFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_6789a6a363.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_907e57e1e9.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_59d94eaf0c.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_51b492cd94.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b2569a11c3.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b2569a11c3.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_7cdb1b1d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_7cdb1b1d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_7cdb1b1d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_7cdb1b1d.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_7cdb1b1d.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "creative_type": "REGULAR",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/60/ec/ec/60ecec80e2da4cc01067819f4076bfcd.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/60/ec/ec/60ecec80e2da4cc01067819f4076bfcd.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/60/ec/ec/60ecec80e2da4cc01067819f4076bfcd.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/60/ec/ec/60ecec80e2da4cc01067819f4076bfcd.jpg"
+          }
+        }
+      },
+      "pin_metrics": null,
+      "is_product": false,
+      "alt_text": "Rustic brown wooden wall mail organizer and key holder mounted on a white wall with letters and keys.",
+      "parent_pin_id": null,
+      "id": "1132444268837312033",
+      "is_standard": true,
+      "is_owner": true,
+      "description": "Stop tripping over mail! This rustic wall organizer keeps keys, letters, and bills off your counter and adds cozy charm to any entryway. Gen-Z challenge: What\u2019s the one item you\u2019d never remove from your entry table? \ud83d\udcec\ud83d\udd11 Drop your answer below! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "link": "https://www.amazon.com/dp/B0HC5XV851?tag=smartspace07-21",
+      "board_section_id": null,
+      "is_removable": false,
+      "title": "End Mail Chaos: Rustic Wall Organizer for Aesthetic Entryways \ud83e\udeb5\u2728",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "product_tags": [],
+      "created_at": "2026-10-22T06:09:09",
+      "board_id": "1132444337492930442",
+      "has_been_promoted": false,
+      "dominant_color": null,
+      "pin_id": "1132444268837312033"
     }
   }
 ]
