@@ -1,73 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T17:41:39.435082+00:00",
-    "status": "success",
-    "execution_time_seconds": 46.92,
-    "product": {
-      "asin": "B0915B37G6",
-      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
-      "price": "$11.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Shoe clutter solved? 24-pocket over-the-door organizer for $12 \ud83e\udd77",
-      "description": "Your entryway is finally speaking the language of 'clean girl aesthetic.' This clear 24-pocket genius keeps Nikes, boots, and slime-free sandals perfectly visible but totally out of the way. No more tripping over shoe disasters at 8 AM. It fits ANY doorway, so even your tiniest studio wins the layout game. Hauling this to my closet refresh this weekend! Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_14aabe11c9.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_256d82f5c1.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a39336d7dc.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b3aebadd29.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9521db0333.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9521db0333.jpg",
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_2108bd04.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_2108bd04.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_2108bd04.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_2108bd04.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_2108bd04.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T17:42:00.870442+00:00",
     "status": "success",
     "execution_time_seconds": 1.77,
@@ -15227,6 +15159,264 @@
       "is_removable": false,
       "description": "Say goodbye to drawer chaos! \u26d4 This Lifewit 6-Pack Set turns cluttered junk drawers into aesthetic, organized zones instantly. Perfect for keeping cutlery, stationery, or bathroom essentials tidy in tiny apartments or studios. It\u2019s the small hack that makes your home look rented by an interior designer. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 \ud83c\udfe0 #AmazonAssociate",
       "pin_id": "1132444268837408384"
+    }
+  },
+  {
+    "timestamp": "2026-10-23T08:52:18.105834+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.82,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Sink Chaos Gone: 2-Tier Under Sink Storage that Slides! \ud83d\udebf\u2728 Small Space Genius",
+      "description": "Maximize the dead space under your sink with this 2-tier sliding organizer. No more cramped shampoo bottles or wobbly trash cans. It fits perfectly in tight cabinets, making cleaning 10x easier. \ud83d\udc96 Would you use this in your kitchen prep area or bathroom storage? Drop a \ud83c\udf4b for kitchen or \ud83d\udec1 for bath! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceSolutions",
+        "#UnderSinkStorage",
+        "#KitchenOrganization",
+        "#SmartSpaces",
+        "#AmazonFinds",
+        "#HomeHacks",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f3766b3a9d.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_82941431e1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_664e62065d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_00eb28d04f.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_087e50dd4b.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_087e50dd4b.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a3c2f268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a3c2f268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a3c2f268.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a3c2f268.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a3c2f268.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "parent_pin_id": null,
+      "is_removable": false,
+      "title": "Sink Chaos Gone: 2-Tier Under Sink Storage that Slides! \ud83d\udebf\u2728 Small Space Genius",
+      "dominant_color": "#fae9c6",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "id": "1132444268837417840",
+      "board_section_id": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Sink Chaos Gone: 2-Tier Under Sink Storage that Slides! \ud83d\udebf\u2728 Small Space Genius (Slide 1/4)",
+            "description": "Maximize the dead space under your sink with this 2-tier sliding organizer. No more cramped shampoo bottles or wobbly trash cans. It fits perfectly in tight cabinets, making cleaning 10x easier. \ud83d\udc96 Would you use this in your kitchen prep area or bathroom storage? Drop a \ud83c\udf4b for kitchen or \ud83d\udec1 for bath! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Under Sink Organizer and Storage  2",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Under Sink Organizer and Storage  2",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Under Sink Organizer and Storage  2",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "has_been_promoted": false,
+      "is_owner": true,
+      "pin_metrics": null,
+      "creative_type": "CAROUSEL",
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "created_at": "2026-10-23T08:52:17",
+      "is_product": false,
+      "product_tags": [],
+      "description": "Maximize the dead space under your sink with this 2-tier sliding organizer. No more cramped shampoo bottles or wobbly trash cans. It fits perfectly in tight cabinets, making cleaning 10x easier. \ud83d\udc96 Would you use this in your kitchen prep area or bathroom storage? Drop a \ud83c\udf4b for kitchen or \ud83d\udec1 for bath! \ud83d\udc47 #AmazonAssociate",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "board_id": "1132444337492933749",
+      "pin_id": "1132444268837417840"
     }
   }
 ]
