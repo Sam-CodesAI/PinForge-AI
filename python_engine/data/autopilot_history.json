@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T17:06:32.534427+00:00",
-    "status": "success",
-    "execution_time_seconds": 1.98,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Sliding Under Sink Organizer",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
-      "bridge_slug": "sliding-under-sink-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Finally Fixed My Cluttered Sink! This $24 Slide-Out Gizm Is a Life Saver \ud83e\uddf4\u2728",
-      "description": "POV: Your under-sink area actually looks clean and organized for once. \ud83d\udcaf This sliding organizer pulls out smoothly so you can grab that specific cleaner without digging through chaos. Perfect for apartments where every inch counts! Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "http://localhost/pin.png"
-      }
-    ],
-    "track_a_lifestyle": null,
-    "carousel": {
-      "slides": [
-        "/tmp/s1.png",
-        "/tmp/s2.png",
-        "/tmp/s3.png",
-        "/tmp/s4.png"
-      ],
-      "composite": "/tmp/comp.png",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T17:40:26.800319+00:00",
     "status": "success",
     "execution_time_seconds": 2.05,
@@ -15031,6 +14979,160 @@
       "created_at": "2026-10-22T20:51:37",
       "parent_pin_id": null,
       "pin_id": "1132444268837374308"
+    }
+  },
+  {
+    "timestamp": "2026-10-23T00:05:45.613947+00:00",
+    "status": "success",
+    "execution_time_seconds": 33.2,
+    "product": {
+      "asin": "B0H454RX56",
+      "title": "Square Storage Ottoman with Lift Top  Charging Station",
+      "price": "$94.99",
+      "rating": 5.0,
+      "affiliate_url": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+      "bridge_slug": "square-storage-ottoman-with-lift-top-charging-station-b0h454rx56"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#2B3440",
+      "accent_hex": "#0EA5E9",
+      "badge_text": "24% Off Today",
+      "visual_hook": "Transform Your Living Room Space",
+      "secondary_hook": "Hidden storage meets built-in charging station",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Grey square storage ottoman with lift-top desk, charging station, and blue LED base lighting in a modern living room.",
+      "cv_features": {
+        "rb_ratio": 0.964,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 1.1,
+        "edge_clutter": 41.6,
+        "dominant_hex": "#a0a5a6",
+        "accent_hex": "#3ae4fe",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.964,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 1.1,
+      "edge_clutter": 41.6,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Living Room Chaos? Fixed: Square Storage Ottoman with Charging Station! \ud83d\udd0b\u2728",
+      "description": "Tired of tangled cables and cluttered coffee tables? This square storage ottoman hides your mess AND powers your devices. Perfect for studio living where every inch counts. The lift-top design is a game changer for keeping your space aesthetic and functional. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#StorageOttoman",
+        "#HomeOrganization",
+        "#AppleDevices",
+        "#StudioApartment",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_767b131146.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7a86dc5564.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_457fb4ee3c.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ce13275ffc.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_89203ac7b0.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_89203ac7b0.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a406b706.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a406b706.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a406b706.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a406b706.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a406b706.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-23T00:05:45",
+      "title": "Living Room Chaos? Fixed: Square Storage Ottoman with Charging Station! \ud83d\udd0b\u2728",
+      "dominant_color": null,
+      "board_section_id": null,
+      "description": "Tired of tangled cables and cluttered coffee tables? This square storage ottoman hides your mess AND powers your devices. Perfect for studio living where every inch counts. The lift-top design is a game changer for keeping your space aesthetic and functional. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "pin_metrics": null,
+      "is_owner": true,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "link": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+      "parent_pin_id": null,
+      "creative_type": "CAROUSEL",
+      "id": "1132444268837386039",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Living Room Chaos? Fixed: Square Storage Ottoman with Charging Station! \ud83d\udd0b\u2728 (Slide 1/4)",
+            "description": "Tired of tangled cables and cluttered coffee tables? This square storage ottoman hides your mess AND powers your devices. Perfect for studio living where every inch counts. The lift-top design is a game changer for keeping your space aesthetic and functional. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Square Storage Ottoman with Lift Top  Charging Station",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Square Storage Ottoman with Lift Top  Charging Station",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Square Storage Ottoman with Lift Top  Charging Station",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0H454RX56?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "is_removable": false,
+      "has_been_promoted": false,
+      "is_product": false,
+      "product_tags": [],
+      "board_id": "1132444337492933752",
+      "is_standard": true,
+      "alt_text": "Grey square storage ottoman with lift-top desk, charging station, and blue LED base lighting in a modern living room.",
+      "pin_id": "1132444268837386039"
     }
   }
 ]
