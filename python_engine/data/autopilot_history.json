@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T17:42:00.870442+00:00",
-    "status": "success",
-    "execution_time_seconds": 1.77,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Sliding Under Sink Organizer",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
-      "bridge_slug": "sliding-under-sink-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Stop the Under-Sink Chaos: This $25 Slide-Out Fix is a Game Changer \ud83c\udfe0\u2728",
-      "description": "Your under-sink area shouldn't be a clutter zone. This beautiful slide-out organizer fits perfectly and makes cleaning a breeze. No more digging through bottles to find the trash bag! \ud83e\uddfc Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "http://localhost/pin.png"
-      }
-    ],
-    "track_a_lifestyle": null,
-    "carousel": {
-      "slides": [
-        "/tmp/s1.png",
-        "/tmp/s2.png",
-        "/tmp/s3.png",
-        "/tmp/s4.png"
-      ],
-      "composite": "/tmp/comp.png",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T18:52:03.349256+00:00",
     "status": "success",
     "execution_time_seconds": 17.0,
@@ -15417,6 +15365,152 @@
       "is_standard": true,
       "board_id": "1132444337492933749",
       "pin_id": "1132444268837417840"
+    }
+  },
+  {
+    "timestamp": "2026-10-23T17:58:03.225727+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.37,
+    "product": {
+      "asin": "B08N5NV448",
+      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Shrink Your Closets! 60% Space Saved with Vacuum Bags \u2728 Smart Spaces",
+      "description": "Say goodbye to overstuffed closets! \ud83d\udeaa Our 12-pack vacuum bags compress bedding & clothes to save up to 60% space. The included hand pump makes it effortless to declutter in minutes. Perfect for small apartments or seasonal storage! \ud83d\udce6\u2728 Would you use these for winter coats or vacation outfits? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceSolutions",
+        "#ClosetOrganization",
+        "#AmazonFinds",
+        "#VacuumStorage",
+        "#Decluttering",
+        "#HomeHacks",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5f1de67357.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_8f44ad44f0.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_5b92ed2d23.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ec8a80c9ba.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9e3b8803e7.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9e3b8803e7.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_667889be.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_667889be.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_667889be.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_667889be.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_667889be.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "dominant_color": "#2b2d2a",
+      "product_tags": [],
+      "description": "Say goodbye to overstuffed closets! \ud83d\udeaa Our 12-pack vacuum bags compress bedding & clothes to save up to 60% space. The included hand pump makes it effortless to declutter in minutes. Perfect for small apartments or seasonal storage! \ud83d\udce6\u2728 Would you use these for winter coats or vacation outfits? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "id": "1132444268837460179",
+      "parent_pin_id": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_product": false,
+      "title": "Shrink Your Closets! 60% Space Saved with Vacuum Bags \u2728 Smart Spaces",
+      "has_been_promoted": false,
+      "pin_metrics": null,
+      "board_section_id": null,
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "is_removable": false,
+      "is_owner": true,
+      "created_at": "2026-10-23T17:58:02",
+      "is_standard": true,
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "creative_type": "REGULAR",
+      "board_id": "1132444337492933750",
+      "pin_id": "1132444268837460179"
     }
   }
 ]
