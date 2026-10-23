@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T17:40:26.800319+00:00",
-    "status": "success",
-    "execution_time_seconds": 2.05,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Sliding Under Sink Organizer",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
-      "bridge_slug": "sliding-under-sink-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#10B981",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find"
-    },
-    "seo_copy": {
-      "title": "Stop Losing Items Under The Sink! Maximize Every Inch With This Sliding Organizer",
-      "description": "Your under-sink area shouldn't be a black hole for lost supplies. \ud83d\udeab This $24.99 sliding cabinet turns chaos into clean, accessible storage. Pull it out to find exactly what you need without the messy digging. Perfect for kitchen or bathrooms!\n\nPOV: You finally found the extra cleaner you thought disappeared. \ud83d\udc40 Would you try this hack in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "http://localhost/pin.png"
-      }
-    ],
-    "track_a_lifestyle": null,
-    "carousel": {
-      "slides": [
-        "/tmp/s1.png",
-        "/tmp/s2.png",
-        "/tmp/s3.png",
-        "/tmp/s4.png"
-      ],
-      "composite": "/tmp/comp.png",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T17:41:39.435082+00:00",
     "status": "success",
     "execution_time_seconds": 46.92,
@@ -15133,6 +15081,152 @@
       "is_standard": true,
       "alt_text": "Grey square storage ottoman with lift-top desk, charging station, and blue LED base lighting in a modern living room.",
       "pin_id": "1132444268837386039"
+    }
+  },
+  {
+    "timestamp": "2026-10-23T06:03:53.454412+00:00",
+    "status": "success",
+    "execution_time_seconds": 55.13,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Drawer Chaos? Fixed: 6-Pack Aesthetic Dividers for Small Spaces! \u2728\ud83d\udce6",
+      "description": "Say goodbye to drawer chaos! \u26d4 This Lifewit 6-Pack Set turns cluttered junk drawers into aesthetic, organized zones instantly. Perfect for keeping cutlery, stationery, or bathroom essentials tidy in tiny apartments or studios. It\u2019s the small hack that makes your home look rented by an interior designer. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 \ud83c\udfe0 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#DrawerOrganizer",
+        "#SmallSpaceHacks",
+        "#HomeOrganization",
+        "#AestheticHome",
+        "#AmazonFinds",
+        "#ClutterFree",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f509071598.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_282cdb8bc6.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_eb08fd8fa3.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_86766d8d18.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8741fc42ac.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8741fc42ac.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_86571d36.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_86571d36.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_86571d36.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_86571d36.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_86571d36.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-23T06:03:53",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "board_section_id": null,
+      "parent_pin_id": null,
+      "is_owner": true,
+      "title": "Drawer Chaos? Fixed: 6-Pack Aesthetic Dividers for Small Spaces! \u2728\ud83d\udce6",
+      "id": "1132444268837408384",
+      "creative_type": "REGULAR",
+      "pin_metrics": null,
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "board_id": "1132444337492930442",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "is_product": false,
+      "has_been_promoted": false,
+      "dominant_color": "#2b2d2a",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "product_tags": [],
+      "is_removable": false,
+      "description": "Say goodbye to drawer chaos! \u26d4 This Lifewit 6-Pack Set turns cluttered junk drawers into aesthetic, organized zones instantly. Perfect for keeping cutlery, stationery, or bathroom essentials tidy in tiny apartments or studios. It\u2019s the small hack that makes your home look rented by an interior designer. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 \ud83c\udfe0 #AmazonAssociate",
+      "pin_id": "1132444268837408384"
     }
   }
 ]
