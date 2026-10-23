@@ -1,73 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T18:52:03.349256+00:00",
-    "status": "success",
-    "execution_time_seconds": 17.0,
-    "product": {
-      "asin": "B0CDQLLP8Z",
-      "title": "Collapsible Laundry Baskets  Tear Proof Pop Up Laundry Hamper with Dual Handles",
-      "price": "$13.98",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0CDQLLP8Z?tag=smartspace07-21",
-      "bridge_slug": "collapsible-laundry-baskets-tear-proof-pop-up-laundry-hamper-with-dual-hand-b0cdqllp8z"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1F2937",
-      "accent_hex": "#3B82F6",
-      "badge_text": "Amazon Best Seller",
-      "visual_hook": "Tear-Proof Pop Up Laundry Hamper",
-      "secondary_hook": "Collapsible design with heavy-duty dual handles",
-      "target_audience": "Apartment Renters",
-      "alt_text": "A person holding a large grey collapsible laundry basket with mesh top and sturdy handles for easy transport."
-    },
-    "seo_copy": {
-      "title": "Genius Collapsible Laundry Hamper \ud83e\uddfa No More Messy Piles! $13.98",
-      "description": "Stop letting clothes clutter your floor! \ud83d\ude4c This tear-proof pop-up hamper is a total lifesaver for small spaces. It collapses flat in seconds when not in use. \u2728 Would you use this in a studio or have space for a permanent rack? Sound off below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#LaundryHacks",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3807340106.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c2c7fe75d7.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_00c80cb22c.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_33cd832699.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_7fef227bdf.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_7fef227bdf.jpg",
-    "carousel": {
-      "slides": [
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_1_da334763.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_2_da334763.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_3_da334763.jpg",
-        "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_slide_4_da334763.jpg"
-      ],
-      "composite": "/workspaces/Personal-Workspace/PinForge-AI/python_engine/static/pins/carousel_composite_da334763.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T18:57:53.469782+00:00",
     "status": "success",
     "execution_time_seconds": 1.73,
@@ -15511,6 +15443,152 @@
       "creative_type": "REGULAR",
       "board_id": "1132444337492933750",
       "pin_id": "1132444268837460179"
+    }
+  },
+  {
+    "timestamp": "2026-10-23T20:42:42.011703+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.01,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Stop Under Sink Chaos! 60-Second Aesthetic Fix for Kitchens & Baths \ud83d\udca7\u2728",
+      "description": "Your under-sink area is screaming for help. \ud83d\ude29 Swap the messy tangle of bottles and boxes for this sleek, space-saving organizer. It fits perfectly in standard cabinets and keeps your cleaning supplies aesthetic and accessible. Perfect for renters or small apartments! \ud83c\udfe0\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#AmazonFinds",
+        "#BathroomDecor",
+        "#RentersHacks",
+        "#AestheticHome",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3c6ee817da.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_b37a101afb.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f9ed9c39fc.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ec918b48d1.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_073af26c7f.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_073af26c7f.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8596c72d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8596c72d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8596c72d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8596c72d.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8596c72d.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "id": "1132444268837475232",
+      "creative_type": "REGULAR",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "pin_metrics": null,
+      "title": "Stop Under Sink Chaos! 60-Second Aesthetic Fix for Kitchens & Baths \ud83d\udca7\u2728",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#2b2d2a",
+      "is_standard": true,
+      "is_product": false,
+      "parent_pin_id": null,
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "board_id": "1132444337492933751",
+      "created_at": "2026-10-23T20:42:41",
+      "is_owner": true,
+      "has_been_promoted": false,
+      "board_section_id": null,
+      "description": "Your under-sink area is screaming for help. \ud83d\ude29 Swap the messy tangle of bottles and boxes for this sleek, space-saving organizer. It fits perfectly in standard cabinets and keeps your cleaning supplies aesthetic and accessible. Perfect for renters or small apartments! \ud83c\udfe0\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "product_tags": [],
+      "is_removable": false,
+      "pin_id": "1132444268837475232"
     }
   }
 ]
