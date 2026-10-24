@@ -1,86 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T19:07:18.739945+00:00",
-    "status": "success",
-    "execution_time_seconds": 1.22,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Sliding Under Sink Organizer",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
-      "bridge_slug": "sliding-under-sink-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Genius Small Space Hack: Sliding Under Sink Organizer That Ends Clutter",
-      "description": "Stop fighting with cluttered sinks! This genius sliding organizer turns your chaotic under-sink space into a sleek, accessible storage system. Perfect for cleaning supplies, toiletries, or snacks. It glides smoothly so you can grab what you need in seconds. \ud83d\udcb8 Only $24.99! Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#AmazonFinds",
-        "#HomeDecor",
-        "#CleaningHacks",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "http://localhost/pin.png"
-      }
-    ],
-    "track_a_lifestyle": null,
-    "carousel": {
-      "slides": [
-        "/tmp/s1.png",
-        "/tmp/s2.png",
-        "/tmp/s3.png",
-        "/tmp/s4.png"
-      ],
-      "composite": "/tmp/comp.png",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T19:09:11.500062+00:00",
     "status": "success",
     "execution_time_seconds": 1.02,
@@ -15857,6 +15776,152 @@
       "id": "1132444268837511399",
       "description": "Your shower wall is begging for this upgrade! This clear acrylic corner shelf maximizes every inch of dead space, keeping your essentials organized and your decor clean. No drills, just pure aesthetic vibes with instant storage. Small space challenge: Could you organize your whole product lineup on this single shelf? \ud83d\udebf Drop your best bath organization hack in the comments! \ud83d\udc47 #AmazonAssociate",
       "pin_id": "1132444268837511399"
+    }
+  },
+  {
+    "timestamp": "2026-10-24T08:25:01.702407+00:00",
+    "status": "success",
+    "execution_time_seconds": 19.14,
+    "product": {
+      "asin": "B09QCC6FZL",
+      "title": "YASONIC Corner Adhesive Shower Caddy  with Soap Holder and 12 Hooks",
+      "price": "$19.99",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B09QCC6FZL?tag=smartspace07-21",
+      "bridge_slug": "yasonic-corner-adhesive-shower-caddy-with-soap-holder-and-12-hooks-b09qcc6fzl"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "23% Off Today",
+      "visual_hook": "No-Drill Bathroom Storage Magic",
+      "secondary_hook": "Instant clutter-free shower organization",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Black corner adhesive shower caddy set mounted on tiled wall holding shampoo bottles, soap, and accessories.",
+      "cv_features": {
+        "rb_ratio": 1.036,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 25.0,
+        "edge_clutter": 65.2,
+        "dominant_hex": "#9e9b99",
+        "accent_hex": "#c98512",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.036,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 25.0,
+      "edge_clutter": 65.2,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Shower Clutter? Gone: YASONic 12-Hook Corner Caddy + Soap Holder! \ud83d\udebf\u2728",
+      "description": "Stop losing your shampoo cap in the drain! \ud83d\udec1 This YASONIC corner caddy maximizes dead space with 12 hooks + soap dish. Perfect for tiny bathrooms. Would you use this in your shower or kitchen trash area? Vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#BathroomOrganization",
+        "#SmallSpaceLiving",
+        "#AmazonMustHaves",
+        "#HomeHacks",
+        "#ShowerEssentials",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3878432af1.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_d96fc51a7f.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_cdaba37c1e.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_d1f6c08888.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_adb9d912d4.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_adb9d912d4.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_d2eb4a4f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_d2eb4a4f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_d2eb4a4f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_d2eb4a4f.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_d2eb4a4f.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B09QCC6FZL?tag=smartspace07-21",
+      "is_product": false,
+      "alt_text": "Black corner adhesive shower caddy set mounted on tiled wall holding shampoo bottles, soap, and accessories.",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/d9/24/a4/d924a402e8bf84aaaa9aef6eb64560c5.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/d9/24/a4/d924a402e8bf84aaaa9aef6eb64560c5.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/d9/24/a4/d924a402e8bf84aaaa9aef6eb64560c5.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/d9/24/a4/d924a402e8bf84aaaa9aef6eb64560c5.jpg"
+          }
+        }
+      },
+      "created_at": "2026-10-24T08:25:01",
+      "parent_pin_id": null,
+      "description": "Stop losing your shampoo cap in the drain! \ud83d\udec1 This YASONIC corner caddy maximizes dead space with 12 hooks + soap dish. Perfect for tiny bathrooms. Would you use this in your shower or kitchen trash area? Vote below! \ud83d\udc47 #AmazonAssociate",
+      "dominant_color": null,
+      "has_been_promoted": false,
+      "pin_metrics": null,
+      "id": "1132444268837521546",
+      "product_tags": [],
+      "board_section_id": null,
+      "board_id": "1132444337492930442",
+      "is_owner": true,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "creative_type": "REGULAR",
+      "is_removable": false,
+      "is_standard": true,
+      "title": "Shower Clutter? Gone: YASONic 12-Hook Corner Caddy + Soap Holder! \ud83d\udebf\u2728",
+      "pin_id": "1132444268837521546"
     }
   }
 ]
