@@ -1,87 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T19:16:08.271463+00:00",
-    "status": "success",
-    "execution_time_seconds": 1.01,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Sliding Under Sink Organizer",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
-      "bridge_slug": "sliding-under-sink-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Finally Stop Under-Sink Chaos! Sliding Cabinet Organizer 2026",
-      "description": "Turn your cluttered under-sink mess into a sleek, accessible storage station. This smart slide-out design reveals every bottle instantly, saving precious vertical space in tight apartments. Perfect for renters and small home owners who value aesthetics and function. Which room would you organize first? Kitchen or bathroom? Drop your vote! \ud83d\udebf\ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#AmazonFinds",
-        "#HomeDecor",
-        "#SlidingOrganizer",
-        "#SmartSpaces",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "http://localhost/pin.png"
-      }
-    ],
-    "track_a_lifestyle": null,
-    "carousel": {
-      "slides": [
-        "/tmp/s1.png",
-        "/tmp/s2.png",
-        "/tmp/s3.png",
-        "/tmp/s4.png"
-      ],
-      "composite": "/tmp/comp.png",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": null
-  },
-  {
     "timestamp": "2026-10-05T21:22:47.973016+00:00",
     "status": "success",
     "execution_time_seconds": 40.26,
@@ -16274,6 +16192,264 @@
       },
       "is_standard": true,
       "pin_id": "1132444268837624134"
+    }
+  },
+  {
+    "timestamp": "2026-10-25T08:44:00.918865+00:00",
+    "status": "success",
+    "execution_time_seconds": 45.15,
+    "product": {
+      "asin": "B08151T931",
+      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
+      "price": "$34.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Small Space Savior: VASAGLE 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Declutter Now",
+      "description": "Stop letting clutter steal your square footage. This VASAGLE Slim Rolling Cart slides out for easy access in tight spots, perfect for under-desk storage, bathrooms, or closets. Gen-Z tip: It\u2019s the aesthetic upgrade your tiny studio needs. \ud83c\udfe0\u2728 Question for you: Would you use this in your pantry or behind the couch? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#SlimStorage",
+        "#StudioApartment",
+        "#Vasagle",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_283653e1c1.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_da30708325.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f43d66643d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_374d03f57d.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6b9c412050.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6b9c412050.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_4ca6488d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_4ca6488d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_4ca6488d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_4ca6488d.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_4ca6488d.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933749",
+      "is_standard": true,
+      "product_tags": [],
+      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
+      "is_removable": false,
+      "title": "Small Space Savior: VASAGLE 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Declutter Now",
+      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#fae9c6",
+      "is_owner": true,
+      "has_been_promoted": false,
+      "description": "Stop letting clutter steal your square footage. This VASAGLE Slim Rolling Cart slides out for easy access in tight spots, perfect for under-desk storage, bathrooms, or closets. Gen-Z tip: It\u2019s the aesthetic upgrade your tiny studio needs. \ud83c\udfe0\u2728 Question for you: Would you use this in your pantry or behind the couch? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/28/d2/df/28d2df08028f3a4fcf197f3b4a5aed53.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/28/d2/df/28d2df08028f3a4fcf197f3b4a5aed53.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/28/d2/df/28d2df08028f3a4fcf197f3b4a5aed53.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/28/d2/df/28d2df08028f3a4fcf197f3b4a5aed53.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/28/d2/df/28d2df08028f3a4fcf197f3b4a5aed53.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Small Space Savior: VASAGLE 4-Tier Slim Rolling Cart! \ud83d\uded2\u2728 Declutter Now (Slide 1/4)",
+            "description": "Stop letting clutter steal your square footage. This VASAGLE Slim Rolling Cart slides out for easy access in tight spots, perfect for under-desk storage, bathrooms, or closets. Gen-Z tip: It\u2019s the aesthetic upgrade your tiny studio needs. \ud83c\udfe0\u2728 Question for you: Would you use this in your pantry or behind the couch? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/1e/32/1b/1e321bc2bf197f5b710ee3e76e3136d5.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/1e/32/1b/1e321bc2bf197f5b710ee3e76e3136d5.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/1e/32/1b/1e321bc2bf197f5b710ee3e76e3136d5.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/1e/32/1b/1e321bc2bf197f5b710ee3e76e3136d5.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/1e/32/1b/1e321bc2bf197f5b710ee3e76e3136d5.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/81/45/f4/8145f4c06b4f628ae742a50773a6b483.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/81/45/f4/8145f4c06b4f628ae742a50773a6b483.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/81/45/f4/8145f4c06b4f628ae742a50773a6b483.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/81/45/f4/8145f4c06b4f628ae742a50773a6b483.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/81/45/f4/8145f4c06b4f628ae742a50773a6b483.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "parent_pin_id": null,
+      "created_at": "2026-10-25T08:44:00",
+      "pin_metrics": null,
+      "is_product": false,
+      "board_section_id": null,
+      "creative_type": "CAROUSEL",
+      "id": "1132444268837634044",
+      "pin_id": "1132444268837634044"
     }
   }
 ]
