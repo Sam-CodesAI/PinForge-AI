@@ -1,158 +1,5 @@
 [
   {
-    "timestamp": "2026-10-06T01:51:30.149864+00:00",
-    "status": "success",
-    "execution_time_seconds": 38.96,
-    "product": {
-      "asin": "B07T7N28LN",
-      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-      "price": "$19.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
-      "description": "Finally, a way to end cabinet chaos! The YouCopia UpSpace adjusts to fit any shelf height, keeping your pantry sleek and accessible. Perfect for small kitchens. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Studio Living Ideas",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#AmazonFinds",
-        "#PanyterOrganizer",
-        "#SmartLiving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_c9618e680b.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_80d4b8719a.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_6a7c270b7a.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_95363feeff.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_bc4582eda9.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_bc4582eda9.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_ae15bee9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_ae15bee9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_ae15bee9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_ae15bee9.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ae15bee9.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728",
-      "board_section_id": null,
-      "has_been_promoted": false,
-      "dominant_color": null,
-      "board_id": "1132444337492933752",
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "id": "1132444268835907887",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "product_tags": [],
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_owner": true,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Stop Losing Bottles! Elevate Kitchen Aesthetics: UpSpace Height Adjustable Organizer \ud83c\udf7e\u2728 (Slide 1/4)",
-            "description": "Finally, a way to end cabinet chaos! The YouCopia UpSpace adjusts to fit any shelf height, keeping your pantry sleek and accessible. Perfect for small kitchens. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "pin_metrics": null,
-      "is_removable": false,
-      "parent_pin_id": null,
-      "creative_type": "CAROUSEL",
-      "description": "Finally, a way to end cabinet chaos! The YouCopia UpSpace adjusts to fit any shelf height, keeping your pantry sleek and accessible. Perfect for small kitchens. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "is_standard": true,
-      "created_at": "2026-10-06T01:51:29",
-      "is_product": false,
-      "pin_id": "1132444268835907887"
-    }
-  },
-  {
     "timestamp": "2026-10-06T07:36:35.926710+00:00",
     "status": "success",
     "execution_time_seconds": 38.61,
@@ -16452,6 +16299,264 @@
       "description": "Turn your messy floor into a chic shoe display with these crystal-clear, stackable gems. Perfect for apartments, dorms, or anywhere you want to declutter without hiding your collection. The X-Large size fits boots and sneakers with ease! \ud83d\udce6 Would you style these under a bed or on open shelving? Drop your layout idea below! \ud83d\udc47 #AmazonAssociate",
       "id": "1132444268837689437",
       "pin_id": "1132444268837689437"
+    }
+  },
+  {
+    "timestamp": "2026-10-25T23:26:54.259068+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.69,
+    "product": {
+      "asin": "B08332N66L",
+      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
+      "price": "$39.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "20% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Tame Cabinet Chaos: 24-Pack Glass Spice Rack Organizer \u2728\ud83c\udf3f Smart Spaces",
+      "description": "Stop scrolling past cluttered cabinets! This SpaceAid organizer turns chaotic spice drawers into an aesthetic dream. Clear glass bottles with labels make finding herbs effortless\u2014perfect for small kitchens. \ud83c\udf3f Would you redesign your whole pantry after seeing this? Drop a \ud83d\udd25 if yes! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SpiceRack",
+        "#SmallKitchenHacks",
+        "#AestheticKitchen",
+        "#HomeDecor",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5214df5c14.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f39103dfc2.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_85d5f1905b.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_391b0521c2.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1db452d146.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1db452d146.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_fb72a69f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_fb72a69f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_fb72a69f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_fb72a69f.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_fb72a69f.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "title": "Tame Cabinet Chaos: 24-Pack Glass Spice Rack Organizer \u2728\ud83c\udf3f Smart Spaces",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Tame Cabinet Chaos: 24-Pack Glass Spice Rack Organizer \u2728\ud83c\udf3f Smart Spaces (Slide 1/4)",
+            "description": "Stop scrolling past cluttered cabinets! This SpaceAid organizer turns chaotic spice drawers into an aesthetic dream. Clear glass bottles with labels make finding herbs effortless\u2014perfect for small kitchens. \ud83c\udf3f Would you redesign your whole pantry after seeing this? Drop a \ud83d\udd25 if yes! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "board_id": "1132444337492933752",
+      "board_section_id": null,
+      "pin_metrics": null,
+      "id": "1132444268837705015",
+      "is_standard": true,
+      "creative_type": "CAROUSEL",
+      "has_been_promoted": false,
+      "description": "Stop scrolling past cluttered cabinets! This SpaceAid organizer turns chaotic spice drawers into an aesthetic dream. Clear glass bottles with labels make finding herbs effortless\u2014perfect for small kitchens. \ud83c\udf3f Would you redesign your whole pantry after seeing this? Drop a \ud83d\udd25 if yes! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "created_at": "2026-10-25T23:26:53",
+      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "product_tags": [],
+      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
+      "dominant_color": "#fae9c6",
+      "is_product": false,
+      "is_owner": true,
+      "parent_pin_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_removable": false,
+      "pin_id": "1132444268837705015"
     }
   }
 ]
