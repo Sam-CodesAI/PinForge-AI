@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T23:24:00.032199+00:00",
-    "status": "success",
-    "execution_time_seconds": 22.42,
-    "product": {
-      "asin": "B0B42B6NZF",
-      "title": "Sturdy Clear Shoe Organizer with Magnetic Door  Stackable Shoe Storage Box",
-      "price": "$35.99",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
-      "bridge_slug": "sturdy-clear-shoe-organizer-with-magnetic-door-stackable-shoe-storage-box-b0b42b6nzf"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1A2332",
-      "accent_hex": "#F59E0B",
-      "badge_text": "28% OFF TODAY",
-      "visual_hook": "Transform Your Sneaker Collection Instantly",
-      "secondary_hook": "Crystal clear stackable display boxes with magnetic doors",
-      "target_audience": "Sneakerheads",
-      "alt_text": "Sturdy clear shoe organizer boxes stacked with sneakers and caps, featured on Pinterest for $35.99.",
-      "cv_features": {
-        "rb_ratio": 1.162,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 44.9,
-        "edge_clutter": 48.7,
-        "dominant_hex": "#d1bdb4",
-        "accent_hex": "#fdfe01",
-        "bounding_box": [
-          0.0,
-          0.113,
-          0.975,
-          0.875
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.162,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 44.9,
-      "edge_clutter": 48.7,
-      "bounding_box": [
-        0.0,
-        0.113,
-        0.975,
-        0.875
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
-      "description": "Stop stepping on shoes in the dark! This stackable clear organizer with a magnetic door keeps your small space ultra-clutter-free and aesthetic. See exactly what you have without opening every container. Perfect for entryways, closets, or under-bed storage. Gen-Z hook: Shoe rack or under-bed storage? Vote your favorite spot below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#ShoeOrganization",
-        "#SmallSpaceLiving",
-        "#AmazonFinds",
-        "#ClosetHack",
-        "#HomeDecor2024",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_7c0410b22a.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_fa104264c3.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_59a4d85351.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_4982c93404.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f10de9bbf7.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f10de9bbf7.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_81f454a9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_81f454a9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_81f454a9.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_81f454a9.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_81f454a9.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "creative_type": "REGULAR",
-      "board_section_id": null,
-      "alt_text": "Sturdy clear shoe organizer boxes stacked with sneakers and caps, featured on Pinterest for $35.99.",
-      "parent_pin_id": null,
-      "description": "Stop stepping on shoes in the dark! This stackable clear organizer with a magnetic door keeps your small space ultra-clutter-free and aesthetic. See exactly what you have without opening every container. Perfect for entryways, closets, or under-bed storage. Gen-Z hook: Shoe rack or under-bed storage? Vote your favorite spot below! \ud83d\udc47 #AmazonAssociate",
-      "product_tags": [],
-      "board_id": "1132444337492933751",
-      "is_product": false,
-      "link": "https://www.amazon.com/dp/B0B42B6NZF?tag=smartspace07-21",
-      "pin_metrics": null,
-      "is_owner": true,
-      "title": "End Shoe Chaos: Sturdy Clear Stackable Organizer with Magnetic Door \ud83d\udc5f\u2728",
-      "dominant_color": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "id": "1132444268835901046",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/76/22/15/762215bda43ab723762598f67ad41f63.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/76/22/15/762215bda43ab723762598f67ad41f63.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/76/22/15/762215bda43ab723762598f67ad41f63.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/76/22/15/762215bda43ab723762598f67ad41f63.jpg"
-          }
-        }
-      },
-      "is_standard": true,
-      "has_been_promoted": false,
-      "created_at": "2026-10-05T23:23:59",
-      "is_removable": false,
-      "pin_id": "1132444268835901046"
-    }
-  },
-  {
     "timestamp": "2026-10-06T01:51:30.149864+00:00",
     "status": "success",
     "execution_time_seconds": 38.96,
@@ -16451,6 +16306,152 @@
       "is_removable": false,
       "link": "https://www.amazon.com/dp/B0BMPV5XQL?tag=smartspace07-21",
       "pin_id": "1132444268837674972"
+    }
+  },
+  {
+    "timestamp": "2026-10-25T20:00:48.802248+00:00",
+    "status": "success",
+    "execution_time_seconds": 36.71,
+    "product": {
+      "asin": "B0D7PFFB1V",
+      "title": "15 Pack X-Large Shoe Storage Boxes, Shoe Organizer Clear Stackable",
+      "price": "$39.99",
+      "rating": 4.3,
+      "affiliate_url": "https://www.amazon.com/dp/B0D7PFFB1V?tag=smartspace07-21",
+      "bridge_slug": "15-pack-x-large-shoe-storage-boxes-shoe-organizer-clear-stackable-b0d7pffb1v"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "33% Off Sale",
+      "visual_hook": "Transform Your Messy Shoe Pile",
+      "secondary_hook": "Stackable clear storage for ultimate organization",
+      "target_audience": "Minimalists",
+      "alt_text": "15 pack extra large clear stackable shoe storage boxes organized in a grid layout on a white background.",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 35.0,
+        "edge_clutter": 33.7,
+        "dominant_hex": "#dddddd",
+        "accent_hex": "#eaeaea",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.975,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 35.0,
+      "edge_clutter": 33.7,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.975,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Shoe Wall? Fixed: 15-Pack Clear X-Large Stackable Boxes! \u2705\u2728 Smart Spaces",
+      "description": "Turn your messy floor into a chic shoe display with these crystal-clear, stackable gems. Perfect for apartments, dorms, or anywhere you want to declutter without hiding your collection. The X-Large size fits boots and sneakers with ease! \ud83d\udce6 Would you style these under a bed or on open shelving? Drop your layout idea below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ShoeOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#ClearBoxes",
+        "#StorageSolutions",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_3c618ccfc6.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_3ad9aa717d.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a40928b36f.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_4c428eafe7.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e3f271cb9b.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e3f271cb9b.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_dfa77cf2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_dfa77cf2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_dfa77cf2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_dfa77cf2.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_dfa77cf2.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933751",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_product": false,
+      "has_been_promoted": false,
+      "alt_text": "15 pack extra large clear stackable shoe storage boxes organized in a grid layout on a white background.",
+      "is_standard": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/df/44/dc/df44dc9f57a7b01ef1daa57eb919b82d.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/df/44/dc/df44dc9f57a7b01ef1daa57eb919b82d.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/df/44/dc/df44dc9f57a7b01ef1daa57eb919b82d.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/df/44/dc/df44dc9f57a7b01ef1daa57eb919b82d.jpg"
+          }
+        }
+      },
+      "title": "Shoe Wall? Fixed: 15-Pack Clear X-Large Stackable Boxes! \u2705\u2728 Smart Spaces",
+      "product_tags": [],
+      "created_at": "2026-10-25T20:00:48",
+      "is_owner": true,
+      "pin_metrics": null,
+      "board_section_id": null,
+      "is_removable": false,
+      "dominant_color": null,
+      "creative_type": "REGULAR",
+      "link": "https://www.amazon.com/dp/B0D7PFFB1V?tag=smartspace07-21",
+      "parent_pin_id": null,
+      "description": "Turn your messy floor into a chic shoe display with these crystal-clear, stackable gems. Perfect for apartments, dorms, or anywhere you want to declutter without hiding your collection. The X-Large size fits boots and sneakers with ease! \ud83d\udce6 Would you style these under a bed or on open shelving? Drop your layout idea below! \ud83d\udc47 #AmazonAssociate",
+      "id": "1132444268837689437",
+      "pin_id": "1132444268837689437"
     }
   }
 ]
