@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T21:22:47.973016+00:00",
-    "status": "success",
-    "execution_time_seconds": 40.26,
-    "product": {
-      "asin": "B08151T931",
-      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-      "price": "$34.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
-      "description": "Transform cluttered countertops into sleek, mobile storage with the VASAGLE 4\u2011tier rolling cart. Its smooth slide\u2011out shelves and sturdy wheels make pantry, bathroom, or desk organization a breeze\u2014no more digging for spices or supplies. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#HomeOrganization",
-        "#SmartHome",
-        "#StorageSolutions",
-        "#ApartmentLiving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a7900033e5.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_e7e3198148.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_c0167f2303.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_55b3a6f9ee.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9dbec8aa6a.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_9dbec8aa6a.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_2b9d5048.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_2b9d5048.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_2b9d5048.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_2b9d5048.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_2b9d5048.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "id": "1132444268835894684",
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "title": "Slim Rolling Storage Cart: 4\u2011Tier Space\u2011Saving Wonder for Tiny Homes",
-      "is_standard": true,
-      "pin_metrics": null,
-      "dominant_color": null,
-      "description": "Transform cluttered countertops into sleek, mobile storage with the VASAGLE 4\u2011tier rolling cart. Its smooth slide\u2011out shelves and sturdy wheels make pantry, bathroom, or desk organization a breeze\u2014no more digging for spices or supplies. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "has_been_promoted": false,
-      "board_id": "1132444337492933751",
-      "created_at": "2026-10-05T21:22:47",
-      "is_product": false,
-      "board_section_id": null,
-      "is_removable": false,
-      "creative_type": "REGULAR",
-      "parent_pin_id": null,
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "is_owner": true,
-      "product_tags": [],
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_id": "1132444268835894684"
-    }
-  },
-  {
     "timestamp": "2026-10-05T23:24:00.032199+00:00",
     "status": "success",
     "execution_time_seconds": 22.42,
@@ -16450,6 +16305,152 @@
       "creative_type": "CAROUSEL",
       "id": "1132444268837634044",
       "pin_id": "1132444268837634044"
+    }
+  },
+  {
+    "timestamp": "2026-10-25T17:11:34.078061+00:00",
+    "status": "success",
+    "execution_time_seconds": 16.32,
+    "product": {
+      "asin": "B0BMPV5XQL",
+      "title": "Magnetic Spice Rack for Refrigerator Black, 4 Pack",
+      "price": "$15.19",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0BMPV5XQL?tag=smartspace07-21",
+      "bridge_slug": "magnetic-spice-rack-for-refrigerator-black-4-pack-b0bmpv5xql"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#F59E0B",
+      "badge_text": "5% Off Today",
+      "visual_hook": "Max Out Your Fridge Storage",
+      "secondary_hook": "Four strong magnetic shelves for instant organization",
+      "target_audience": "Home Cooks",
+      "alt_text": "Black magnetic spice rack 4-pack holding bottles, baby bottles, and cans on a refrigerator side.",
+      "cv_features": {
+        "rb_ratio": 1.054,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 18.4,
+        "edge_clutter": 53.7,
+        "dominant_hex": "#a9a6a0",
+        "accent_hex": "#f54029",
+        "bounding_box": [
+          0.0,
+          0.025,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.054,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 18.4,
+      "edge_clutter": 53.7,
+      "bounding_box": [
+        0.0,
+        0.025,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Kitchen Chaos? Fixed: Black Magnetic Spice Rack for Fridge! \u2705\u2728",
+      "description": "Upgrade your fridge side with this sleek black magnetic spice rack! \ud83d\udda4 No drilling, just pure aesthetic organization for your jars. It\u2019s the ultimate small-space win for keeping spices visible and accessible without cluttering countertops. Would you style these under your cabinet or on the back of the bangs? Drop your layout idea below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceHacks",
+        "#AestheticKitchen",
+        "#Magnetcleaning",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_8ad402ca13.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f4e509bb12.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_dbd922bef8.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_f878a4ef28.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cdac7e5eb5.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cdac7e5eb5.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_e95dbf31.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_e95dbf31.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_e95dbf31.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_e95dbf31.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_e95dbf31.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "pin_metrics": null,
+      "created_at": "2026-10-25T17:11:33",
+      "description": "Upgrade your fridge side with this sleek black magnetic spice rack! \ud83d\udda4 No drilling, just pure aesthetic organization for your jars. It\u2019s the ultimate small-space win for keeping spices visible and accessible without cluttering countertops. Would you style these under your cabinet or on the back of the bangs? Drop your layout idea below! \ud83d\udc47 #AmazonAssociate",
+      "is_owner": true,
+      "has_been_promoted": false,
+      "board_id": "1132444337492933750",
+      "is_product": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/bc/98/ed/bc98edb5e1336540f15c952304d9f574.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/bc/98/ed/bc98edb5e1336540f15c952304d9f574.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/bc/98/ed/bc98edb5e1336540f15c952304d9f574.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/bc/98/ed/bc98edb5e1336540f15c952304d9f574.jpg"
+          }
+        }
+      },
+      "product_tags": [],
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "board_section_id": null,
+      "id": "1132444268837674972",
+      "dominant_color": null,
+      "alt_text": "Black magnetic spice rack 4-pack holding bottles, baby bottles, and cans on a refrigerator side.",
+      "title": "Kitchen Chaos? Fixed: Black Magnetic Spice Rack for Fridge! \u2705\u2728",
+      "parent_pin_id": null,
+      "is_standard": true,
+      "creative_type": "REGULAR",
+      "is_removable": false,
+      "link": "https://www.amazon.com/dp/B0BMPV5XQL?tag=smartspace07-21",
+      "pin_id": "1132444268837674972"
     }
   }
 ]
