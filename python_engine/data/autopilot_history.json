@@ -1,158 +1,5 @@
 [
   {
-    "timestamp": "2026-10-06T10:47:04.593271+00:00",
-    "status": "success",
-    "execution_time_seconds": 17.3,
-    "product": {
-      "asin": "B0GQ43DT9V",
-      "title": "SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
-      "price": "$29.99",
-      "rating": 4.4,
-      "affiliate_url": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "bridge_slug": "sunally-slim-storage-cart-with-wheels-narrow-kitchen-rolling-cart-b0gq43dt9v"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#F4EFE6",
-      "accent_hex": "#E11D48",
-      "badge_text": "Top Rated 2026",
-      "visual_hook": "The Ultimate Small Kitchen Hack",
-      "secondary_hook": "Maximize tight spaces instantly",
-      "target_audience": "Apartment Renters",
-      "alt_text": "SUNALLY Slim Storage Cart with Wheels Narrow Kitchen Rolling Cart neatly organized between kitchen counter and refrigerator.",
-      "cv_features": {
-        "rb_ratio": 1.207,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 3.3,
-        "edge_clutter": 45.4,
-        "dominant_hex": "#cebdab",
-        "accent_hex": "#f6a40f",
-        "bounding_box": [
-          0.0,
-          0.0,
-          0.988,
-          0.988
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.207,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 3.3,
-      "edge_clutter": 45.4,
-      "bounding_box": [
-        0.0,
-        0.0,
-        0.988,
-        0.988
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#RollingCart",
-        "#HomeStorage",
-        "#ApartmentLiving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_164cca75fb.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c4fdbc367c.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_89cb26a12f.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ae87fcf18a.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6a6d977e04.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6a6d977e04.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_03cfdab8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_03cfdab8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_03cfdab8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_03cfdab8.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_03cfdab8.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "is_owner": true,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89 (Slide 1/4)",
-            "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: SUNALLY Slim Storage Cart with Wheels  Narrow Kitchen Rolling Cart",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "id": "1132444268835930137",
-      "is_removable": false,
-      "parent_pin_id": null,
-      "is_product": false,
-      "title": "Turn Tiny Kitchen Gaps Into Mega Storage: SUNALLY Slim Rolling Cart \ud83c\udf89",
-      "dominant_color": null,
-      "product_tags": [],
-      "pin_metrics": null,
-      "created_at": "2026-10-06T10:47:03",
-      "link": "https://www.amazon.com/dp/B0GQ43DT9V?tag=smartspace07-21",
-      "board_id": "1132444337492933749",
-      "has_been_promoted": false,
-      "description": "Say goodbye to countertop chaos! The SUNALLY Slim Storage Cart slides on wheels, fits narrow gaps, and lets you stash spices, mugs, or bathroom basics in style. Perfect for apartments or tiny kitchens where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "creative_type": "CAROUSEL",
-      "board_section_id": null,
-      "is_standard": true,
-      "alt_text": "SUNALLY Slim Storage Cart with Wheels Narrow Kitchen Rolling Cart neatly organized between kitchen counter and refrigerator.",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_id": "1132444268835930137"
-    }
-  },
-  {
     "timestamp": "2026-10-06T19:00:19.785649+00:00",
     "status": "success",
     "execution_time_seconds": 54.68,
@@ -16556,6 +16403,159 @@
       "id": "1132444268837728345",
       "is_product": false,
       "pin_id": "1132444268837728345"
+    }
+  },
+  {
+    "timestamp": "2026-10-26T09:22:39.331492+00:00",
+    "status": "success",
+    "execution_time_seconds": 19.27,
+    "product": {
+      "asin": "B0F9XTJCRF",
+      "title": "Tsinglax 66L 2-Pack,Under Bed Storage with Wheels, 30\" L x 16\" W x",
+      "price": "$27.99",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+      "bridge_slug": "tsinglax-66l-2-packunder-bed-storage-with-wheels-30-l-x-16-w-x-b0f9xtjcrf"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#111827",
+      "accent_hex": "#F97316",
+      "badge_text": "7% Off Deal",
+      "visual_hook": "Double Your Under-Bed Storage Space",
+      "secondary_hook": "Smooth rolling wheels with clear lids",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Tsinglax 2-pack rolling under-bed storage containers filled with clothes and shoes under twenty-eight dollars.",
+      "cv_features": {
+        "rb_ratio": 1.029,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 26.1,
+        "edge_clutter": 60.0,
+        "dominant_hex": "#6f6d6c",
+        "accent_hex": "#dc6a4c",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.029,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 26.1,
+      "edge_clutter": 60.0,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Transform Under\u2011Bed Chaos into Chic Storage: 66L Roll\u2011Away Bins for Small Spaces!",
+      "description": "Say goodbye to cluttered closets and floor piles\u2014these 66\u2011liter under\u2011bed storage bins glide on wheels for effortless access. Perfect for shoes, seasonal clothes, or extra linens, they slide right under any 30\" bed, freeing up floor space instantly. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#UnderBedStorage",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#SpaceSaving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_7107b62631.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a8202886cc.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_de7f935ad5.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_877cbca4d2.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e7d6285b43.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e7d6285b43.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8951d5ed.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8951d5ed.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8951d5ed.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8951d5ed.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8951d5ed.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "is_product": false,
+      "title": "Transform Under\u2011Bed Chaos into Chic Storage: 66L Roll\u2011Away Bins for Small Spaces!",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Transform Under\u2011Bed Chaos into Chic Storage: 66L Roll\u2011Away Bins for Small Spaces! (Slide 1/4)",
+            "description": "Say goodbye to cluttered closets and floor piles\u2014these 66\u2011liter under\u2011bed storage bins glide on wheels for effortless access. Perfect for shoes, seasonal clothes, or extra linens, they slide right under any 30\" bed, freeing up floor space instantly. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Tsinglax 66L 2-Pack,Under Bed Storage with Wheels, 30\" L x 16\" W x",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Tsinglax 66L 2-Pack,Under Bed Storage with Wheels, 30\" L x 16\" W x",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Tsinglax 66L 2-Pack,Under Bed Storage with Wheels, 30\" L x 16\" W x",
+            "description": "Real-world space-saving transformation. TESTED 70 LBS LOAD. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "dominant_color": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "id": "1132444268837739053",
+      "description": "Say goodbye to cluttered closets and floor piles\u2014these 66\u2011liter under\u2011bed storage bins glide on wheels for effortless access. Perfect for shoes, seasonal clothes, or extra linens, they slide right under any 30\" bed, freeing up floor space instantly. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "parent_pin_id": null,
+      "creative_type": "CAROUSEL",
+      "link": "https://www.amazon.com/dp/B0F9XTJCRF?tag=smartspace07-21",
+      "is_owner": true,
+      "created_at": "2026-10-26T09:22:38",
+      "board_id": "1132444337492933749",
+      "is_standard": true,
+      "board_section_id": null,
+      "product_tags": [],
+      "has_been_promoted": false,
+      "alt_text": "Tsinglax 2-pack rolling under-bed storage containers filled with clothes and shoes under twenty-eight dollars.",
+      "is_removable": false,
+      "pin_metrics": null,
+      "pin_id": "1132444268837739053"
     }
   }
 ]
