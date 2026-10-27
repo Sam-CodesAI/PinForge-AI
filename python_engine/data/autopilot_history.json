@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-07T07:15:32.126423+00:00",
-    "status": "success",
-    "execution_time_seconds": 14.21,
-    "product": {
-      "asin": "B0C42YJVCD",
-      "title": "Asayuee 360 Rotating Makeup Organizer for Vanity 2 Tier Large Capacity Skincare Organizers",
-      "price": "$15.98",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
-      "bridge_slug": "asayuee-360-rotating-makeup-organizer-for-vanity-2-tier-large-capacity-skin-b0c42yjvcd"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1B3022",
-      "accent_hex": "#D4AF37",
-      "badge_text": "41% Off Limited Deal",
-      "visual_hook": "De-clutter Your Vanity Instantly",
-      "secondary_hook": "360-degree rotation for effortless daily access",
-      "target_audience": "Beauty Enthusiasts",
-      "alt_text": "Green two-tier rotating makeup organizer filled with skincare bottles and jars on white background",
-      "cv_features": {
-        "rb_ratio": 1.152,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 62.2,
-        "edge_clutter": 52.0,
-        "dominant_hex": "#898976",
-        "accent_hex": "#d2a822",
-        "bounding_box": [
-          0.037,
-          0.237,
-          0.963,
-          0.787
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.152,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 62.2,
-      "edge_clutter": 52.0,
-      "bounding_box": [
-        0.037,
-        0.237,
-        0.963,
-        0.787
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
-      "description": "Finally! A vanity hack that actually works. This 2-tier rotating organizer fits all your skincare & makeup in a tiny footprint. No more digging through drawers! Would you spin this in your bathroom or bedroom? Drop a \ud83d\udc9a if you need it! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#VanityHacks",
-        "#MakeupOrganization",
-        "#SmallSpaceLiving",
-        "#AmazonMustHaves",
-        "#BeautyFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_6f5160a66c.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_09701f8a19.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_5b83164571.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_234fd3a4e4.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be439a0582.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be439a0582.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_c5aff602.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_c5aff602.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_c5aff602.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_c5aff602.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c5aff602.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "board_id": "1132444337492930442",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/ae/60/24/ae60242d064935783783bafb200f4cc4.jpg"
-          }
-        }
-      },
-      "board_section_id": null,
-      "pin_metrics": null,
-      "link": "https://www.amazon.com/dp/B0C42YJVCD?tag=smartspace07-21",
-      "is_removable": false,
-      "creative_type": "REGULAR",
-      "is_product": false,
-      "created_at": "2026-10-07T07:15:31",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_standard": true,
-      "title": "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
-      "parent_pin_id": null,
-      "dominant_color": null,
-      "id": "1132444268836000895",
-      "alt_text": "Green two-tier rotating makeup organizer filled with skincare bottles and jars on white background",
-      "product_tags": [],
-      "has_been_promoted": false,
-      "is_owner": true,
-      "description": "Finally! A vanity hack that actually works. This 2-tier rotating organizer fits all your skincare & makeup in a tiny footprint. No more digging through drawers! Would you spin this in your bathroom or bedroom? Drop a \ud83d\udc9a if you need it! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "pin_id": "1132444268836000895"
-    }
-  },
-  {
     "timestamp": "2026-10-07T10:36:32.269351+00:00",
     "status": "success",
     "execution_time_seconds": 38.72,
@@ -16661,6 +16516,151 @@
       "description": "Stop drowning in extra-large cleaner bottles! This 2-tier stackable cabinet maximizes vertical space with smooth sliding drawers. Perfect for small apartments where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
       "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
       "pin_id": "1132444268837805446"
+    }
+  },
+  {
+    "timestamp": "2026-10-27T06:17:46.449779+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.24,
+    "product": {
+      "asin": "B0CB6WPXC6",
+      "title": "360 Rotating Gold Makeup Organizer 2 Tier Large Capacity Rotating Makeup Organizer",
+      "price": "$13.61",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0CB6WPXC6?tag=smartspace07-21",
+      "bridge_slug": "360-rotating-gold-makeup-organizer-2-tier-large-capacity-rotating-makeup-or-b0cb6wpxc6"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#1F1A17",
+      "accent_hex": "#D4AF37",
+      "badge_text": "48% Off Today",
+      "visual_hook": "Transform Your Vanity In Seconds",
+      "secondary_hook": "360-degree rotation for instant clutter-free access",
+      "target_audience": "Beauty Enthusiasts",
+      "alt_text": "360 Rotating Gold Makeup Organizer 2 Tier Large Capacity Cosmetic Storage Tray for Vanity Countertop",
+      "cv_features": {
+        "rb_ratio": 1.221,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 53.2,
+        "edge_clutter": 56.2,
+        "dominant_hex": "#9a8b7e",
+        "accent_hex": "#e1b425",
+        "bounding_box": [
+          0.013,
+          0.138,
+          0.988,
+          0.85
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.221,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 53.2,
+      "edge_clutter": 56.2,
+      "bounding_box": [
+        0.013,
+        0.138,
+        0.988,
+        0.85
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Stop Makeup Spills: 360 Spin Gold Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "description": "Turns vanity chaos into aesthetic perfection! This 360\u00b0 rotating organizer fits all your essentials in a compact space. The gold finish elevates any desk. Would you use this in your bedroom or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#MakeupOrganization",
+        "#VanityEngineering",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#SmallSpaceLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_14d8f9bbda.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_0ce355016c.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_77c76cbed2.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_c94c449b75.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8af0924356.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_8af0924356.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_8e9e555d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_8e9e555d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_8e9e555d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_8e9e555d.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_8e9e555d.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "product_tags": [],
+      "id": "1132444268837821588",
+      "description": "Turns vanity chaos into aesthetic perfection! This 360\u00b0 rotating organizer fits all your essentials in a compact space. The gold finish elevates any desk. Would you use this in your bedroom or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "title": "Stop Makeup Spills: 360 Spin Gold Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
+      "created_at": "2026-10-27T06:17:46",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "is_standard": true,
+      "alt_text": "360 Rotating Gold Makeup Organizer 2 Tier Large Capacity Cosmetic Storage Tray for Vanity Countertop",
+      "pin_metrics": null,
+      "is_product": false,
+      "board_id": "1132444337492930442",
+      "creative_type": "REGULAR",
+      "parent_pin_id": null,
+      "board_section_id": null,
+      "dominant_color": null,
+      "is_removable": false,
+      "has_been_promoted": false,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/4f/19/f9/4f19f95309607df99a00a54b21c2a230.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/4f/19/f9/4f19f95309607df99a00a54b21c2a230.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/4f/19/f9/4f19f95309607df99a00a54b21c2a230.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/4f/19/f9/4f19f95309607df99a00a54b21c2a230.jpg"
+          }
+        }
+      },
+      "is_owner": true,
+      "link": "https://www.amazon.com/dp/B0CB6WPXC6?tag=smartspace07-21",
+      "pin_id": "1132444268837821588"
     }
   }
 ]
