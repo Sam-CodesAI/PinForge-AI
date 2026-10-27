@@ -1,158 +1,5 @@
 [
   {
-    "timestamp": "2026-10-07T00:55:44.437057+00:00",
-    "status": "success",
-    "execution_time_seconds": 39.17,
-    "product": {
-      "asin": "B07D38J38F",
-      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
-      "price": "$27.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-      "bridge_slug": "stori-audrey-stackable-clear-plastic-storage-drawers-for-vanity-and-pantry-b07d38j38f"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "44% OFF DEAL",
-      "visual_hook": "Genius Small Kitchen Organizer",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728",
-      "description": "Stop letting your vanity look like a disaster zone. These clear drawers show exactly what's inside and stack perfectly in tight spaces. It\u2019s the clean girl aesthetic hack you didn\u2019t know you needed. Do you think this would work better in your bathroom or pantry? Drop your guess below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Studio Living Ideas",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#VanishingChaos",
-        "#ClearStorage",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_c523f969ab.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5cc38432e6.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_c0bb1947c2.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_a99fcf0fcb.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a362c48f56.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a362c48f56.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_d9718216.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_d9718216.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_d9718216.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_d9718216.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_d9718216.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-      "board_id": "1132444337492933752",
-      "creative_type": "CAROUSEL",
-      "pin_metrics": null,
-      "created_at": "2026-10-07T00:55:43",
-      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "parent_pin_id": null,
-      "is_standard": true,
-      "product_tags": [],
-      "is_product": false,
-      "is_removable": false,
-      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
-      "description": "Stop letting your vanity look like a disaster zone. These clear drawers show exactly what's inside and stack perfectly in tight spaces. It\u2019s the clean girl aesthetic hack you didn\u2019t know you needed. Do you think this would work better in your bathroom or pantry? Drop your guess below! \ud83d\udc47 #AmazonAssociate",
-      "id": "1132444268835984000",
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728 (Slide 1/4)",
-            "description": "Stop letting your vanity look like a disaster zone. These clear drawers show exactly what's inside and stack perfectly in tight spaces. It\u2019s the clean girl aesthetic hack you didn\u2019t know you needed. Do you think this would work better in your bathroom or pantry? Drop your guess below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "is_owner": true,
-      "board_section_id": null,
-      "dominant_color": null,
-      "has_been_promoted": false,
-      "pin_id": "1132444268835984000"
-    }
-  },
-  {
     "timestamp": "2026-10-07T07:15:32.126423+00:00",
     "status": "success",
     "execution_time_seconds": 14.21,
@@ -16556,6 +16403,264 @@
       "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
       "pin_metrics": null,
       "pin_id": "1132444268837795241"
+    }
+  },
+  {
+    "timestamp": "2026-10-27T00:42:36.299023+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.15,
+    "product": {
+      "asin": "B01MR1Y5K8",
+      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
+      "price": "$22.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Sink Chaos? Fix: 2-Tier Sliding Under Sink Organizer! \ud83d\udd25\u2728",
+      "description": "Stop drowning in extra-large cleaner bottles! This 2-tier stackable cabinet maximizes vertical space with smooth sliding drawers. Perfect for small apartments where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#UnderSinkStorage",
+        "#HomeHacks",
+        "#InteriorDesign",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_b6a3a38989.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_61ff0e1576.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_be07af4fd9.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b8822b2df9.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_5950a7e0cd.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_5950a7e0cd.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_c268719c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_c268719c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_c268719c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_c268719c.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c268719c.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "id": "1132444268837805446",
+      "is_removable": false,
+      "dominant_color": "#fae9c6",
+      "board_id": "1132444337492933752",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/50/54/28/505428d4fce4ba133cb2b29dde19f51c.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Sink Chaos? Fix: 2-Tier Sliding Under Sink Organizer! \ud83d\udd25\u2728 (Slide 1/4)",
+            "description": "Stop drowning in extra-large cleaner bottles! This 2-tier stackable cabinet maximizes vertical space with smooth sliding drawers. Perfect for small apartments where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/bf/7d/8d/bf7d8d9349101a77456265db79b84b63.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/31/61/fe/3161fe0bf5c897aee195e71dde0c85ff.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "has_been_promoted": false,
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "parent_pin_id": null,
+      "board_section_id": null,
+      "title": "Sink Chaos? Fix: 2-Tier Sliding Under Sink Organizer! \ud83d\udd25\u2728",
+      "created_at": "2026-10-27T00:42:35",
+      "creative_type": "CAROUSEL",
+      "is_owner": true,
+      "is_standard": true,
+      "pin_metrics": null,
+      "product_tags": [],
+      "is_product": false,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "description": "Stop drowning in extra-large cleaner bottles! This 2-tier stackable cabinet maximizes vertical space with smooth sliding drawers. Perfect for small apartments where every inch counts. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "pin_id": "1132444268837805446"
     }
   }
 ]
