@@ -1,184 +1,5 @@
 [
   {
-    "timestamp": "2026-10-08T10:57:46.110260+00:00",
-    "status": "success",
-    "execution_time_seconds": 57.7,
-    "product": {
-      "asin": "B08151T931",
-      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-      "price": "$34.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Turn Tiny Gaps Into Mega Storage: 4\u2011Tier Slim Rolling Cart! \ud83d\ude80",
-      "description": "Say goodbye to clutter with the VASAGLE 4\u2011tier rolling cart\u2014sleek steel, slide\u2011out shelves, and wheels that glide. Perfect for kitchens, bathrooms, or home office nooks. Small space challenge: Could you fit all your essentials in this cart? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#HomeOrganization",
-        "#RollingCart",
-        "#SmartStorage",
-        "#SpaceSaver",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_d83584d0a5.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_29cb9a7043.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_90c89b0ab5.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_da3b4824d0.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1097bf83a5.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1097bf83a5.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_4a60b660.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_4a60b660.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_4a60b660.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_4a60b660.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_4a60b660.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Turn Tiny Gaps Into Mega Storage: 4\u2011Tier Slim Rolling Cart! \ud83d\ude80 (Slide 1/4)",
-            "description": "Say goodbye to clutter with the VASAGLE 4\u2011tier rolling cart\u2014sleek steel, slide\u2011out shelves, and wheels that glide. Perfect for kitchens, bathrooms, or home office nooks. Small space challenge: Could you fit all your essentials in this cart? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Color & Angle Variants: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "board_id": "1132444337492933749",
-      "is_removable": false,
-      "is_standard": true,
-      "is_product": false,
-      "id": "1132444268836096573",
-      "is_owner": true,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "parent_pin_id": null,
-      "dominant_color": null,
-      "created_at": "2026-10-08T10:57:45",
-      "title": "Turn Tiny Gaps Into Mega Storage: 4\u2011Tier Slim Rolling Cart! \ud83d\ude80",
-      "board_section_id": null,
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "has_been_promoted": false,
-      "product_tags": [],
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "creative_type": "CAROUSEL",
-      "description": "Say goodbye to clutter with the VASAGLE 4\u2011tier rolling cart\u2014sleek steel, slide\u2011out shelves, and wheels that glide. Perfect for kitchens, bathrooms, or home office nooks. Small space challenge: Could you fit all your essentials in this cart? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "pin_metrics": null,
-      "pin_id": "1132444268836096573"
-    }
-  },
-  {
     "timestamp": "2026-10-08T19:23:46.339151+00:00",
     "status": "success",
     "execution_time_seconds": 39.9,
@@ -16845,6 +16666,160 @@
       "description": "Transform your pantry into an aesthetic haven! This 24-bottle glass rack makes spices pop. Small space challenge: Could you fit your whole collection here? Drop a \ud83c\udf36\ufe0f if yes! \ud83c\udf4b Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
       "dominant_color": "#f5f5ef",
       "pin_id": "1132444268837910339"
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:01:49.191995+00:00",
+    "status": "success",
+    "execution_time_seconds": 18.68,
+    "product": {
+      "asin": "B0DJ6M63TN",
+      "title": "Yecaye 60 L Under Bed Storage with Wheels  2 Pack Under Bed Storage Containers with Clear Window & Label",
+      "price": "$25.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+      "bridge_slug": "yecaye-60-l-under-bed-storage-with-wheels-2-pack-under-bed-storage-containe-b0dj6m63tn"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#111827",
+      "accent_hex": "#F59E0B",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Dead Under-Bed Space Instantly",
+      "secondary_hook": "60L capacity with smooth rolling wheels",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Yecaye 60L rolling under bed storage containers with clear windows holding clothes and shoes in a 2-pack.",
+      "cv_features": {
+        "rb_ratio": 1.016,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 41.6,
+        "edge_clutter": 66.8,
+        "dominant_hex": "#858483",
+        "accent_hex": "#fa994a",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.016,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 41.6,
+      "edge_clutter": 66.8,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Stop Space Waste: Yecaye Under Bed Storage! \ud83d\udecf\ufe0f\u2728 Smart Spaces",
+      "description": "Transform your under-bed chaos into organized gold! This 2-pack features clear windows for easy finding and sturdy wheels for effortless access. Perfect for seasonal clothing, shoes, or bulky blankets. Maximize your square footage without the clutter! Would you store shoes or blankets here? Drop a 'Shoes' or 'Blankets' below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#ApartmentDecor",
+        "#UnderBedStorage",
+        "#AestheticHome",
+        "#AmazonMustHaves",
+        "#OrganizationGoals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ff94ce795c.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6f36942754.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_c4c1ebf579.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_e84a1e09df.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_141311210e.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_141311210e.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_84e00bd5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_84e00bd5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_84e00bd5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_84e00bd5.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_84e00bd5.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "has_been_promoted": false,
+      "is_standard": true,
+      "product_tags": [],
+      "board_section_id": null,
+      "id": "1132444268837918959",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "parent_pin_id": null,
+      "is_removable": false,
+      "is_product": false,
+      "board_id": "1132444337492933749",
+      "dominant_color": null,
+      "link": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+      "created_at": "2026-10-28T10:01:48",
+      "creative_type": "CAROUSEL",
+      "description": "Transform your under-bed chaos into organized gold! This 2-pack features clear windows for easy finding and sturdy wheels for effortless access. Perfect for seasonal clothing, shoes, or bulky blankets. Maximize your square footage without the clutter! Would you store shoes or blankets here? Drop a 'Shoes' or 'Blankets' below! \ud83d\udc47 #AmazonAssociate",
+      "pin_metrics": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Stop Space Waste: Yecaye Under Bed Storage! \ud83d\udecf\ufe0f\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Transform your under-bed chaos into organized gold! This 2-pack features clear windows for easy finding and sturdy wheels for effortless access. Perfect for seasonal clothing, shoes, or bulky blankets. Maximize your square footage without the clutter! Would you store shoes or blankets here? Drop a 'Shoes' or 'Blankets' below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: Yecaye 60 L Under Bed Storage with Wheels  2 Pack Under Bed Storage",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: Yecaye 60 L Under Bed Storage with Wheels  2 Pack Under Bed Storage",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: Yecaye 60 L Under Bed Storage with Wheels  2 Pack Under Bed Storage",
+            "description": "Real-world space-saving transformation. TOOL-FREE 60S SETUP. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0DJ6M63TN?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "alt_text": "Yecaye 60L rolling under bed storage containers with clear windows holding clothes and shoes in a 2-pack.",
+      "is_owner": true,
+      "title": "Stop Space Waste: Yecaye Under Bed Storage! \ud83d\udecf\ufe0f\u2728 Smart Spaces",
+      "pin_id": "1132444268837918959"
     }
   }
 ]
