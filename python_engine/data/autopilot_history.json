@@ -1,159 +1,5 @@
 [
   {
-    "timestamp": "2026-10-08T01:11:39.627166+00:00",
-    "status": "success",
-    "execution_time_seconds": 59.3,
-    "product": {
-      "asin": "B0H5394LS5",
-      "title": "Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
-      "price": "$166.89",
-      "rating": 5.0,
-      "affiliate_url": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-      "bridge_slug": "wall-mounted-drop-leaf-table-wall-mounted-folding-table-b0h5394ls5"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#F4ECE1",
-      "accent_hex": "#E11D48",
-      "badge_text": "Space Saving Essential",
-      "visual_hook": "Transform Your Tiny Kitchen Space",
-      "secondary_hook": "Folds flat against the wall instantly",
-      "target_audience": "Apartment Renters",
-      "alt_text": "White wall mounted drop leaf folding table in a modern small kitchen setup with wooden cutting board and peppers.",
-      "cv_features": {
-        "rb_ratio": 1.154,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 0.0,
-        "edge_clutter": 30.0,
-        "dominant_hex": "#a2978c",
-        "accent_hex": "#b98c16",
-        "bounding_box": [
-          0.0,
-          0.0,
-          0.988,
-          0.988
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.154,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 0.0,
-      "edge_clutter": 30.0,
-      "bounding_box": [
-        0.0,
-        0.0,
-        0.988,
-        0.988
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
-      "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Studio Living Ideas",
-      "hashtags": [
-        "#SmallApartment",
-        "#DropLeafTable",
-        "#StudioLiving",
-        "#HomeOffice",
-        "#SpaceSaving",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0fd11feb82.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c7b067eda0.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_fed59954b7.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_fbeafb5124.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_82a1786814.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_82a1786814.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_d103e753.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_d103e753.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_d103e753.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_d103e753.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_d103e753.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "id": "1132444268836067497",
-      "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728",
-      "is_standard": true,
-      "has_been_promoted": false,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Genius Tiny Apartment Hack: Wall Drop Leaf Table For Work & Meals \u2728 (Slide 1/4)",
-            "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Wall Mounted Drop Leaf Table Wall Mounted Folding Table",
-            "description": "Real-world space-saving transformation. HEAVY-DUTY STUD MOUNT \u2022 ZERO SAG. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_metrics": null,
-      "creative_type": "CAROUSEL",
-      "alt_text": "White wall mounted drop leaf folding table in a modern small kitchen setup with wooden cutting board and peppers.",
-      "parent_pin_id": null,
-      "board_section_id": null,
-      "is_removable": false,
-      "link": "https://www.amazon.com/dp/B0H5394LS5?tag=smartspace07-21",
-      "dominant_color": null,
-      "description": "Stop fighting for desk space! This high-AES drop leaf table folds away when not in use, giving you back 100% of your floor area. Perfect forWFH, dining, or breakfast. It looks expensive but is a total budget win for studio living. Would you use this as a kitchen island or WFH station? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "created_at": "2026-10-08T01:11:39",
-      "is_owner": true,
-      "is_product": false,
-      "board_id": "1132444337492933752",
-      "product_tags": [],
-      "pin_id": "1132444268836067497"
-    }
-  },
-  {
     "timestamp": "2026-10-08T07:26:15.376120+00:00",
     "status": "success",
     "execution_time_seconds": 39.88,
@@ -16741,6 +16587,263 @@
       },
       "parent_pin_id": null,
       "pin_id": "1132444268837879253"
+    }
+  },
+  {
+    "timestamp": "2026-10-28T00:39:35.346575+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.61,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Sink Chaos? Gone: 2-Tier Under Cabinet Organizer! \u2728\ud83c\udfe0",
+      "description": "Reclaim your cabinet space with this genius 2-tier sliding under-sink organizer. Stop wrestling with stacked bottles and make cleaning a breeze. It\u2019s the small-space hack your kitchen or bathroom desperately needs. \ud83d\udca7\u2728 Would you use this in your primary kitchen or a bathroom vanity? Drop your guess below! \ud83d\udc47 #SmallSpaceHacks #KitchenOrganization #AmazonFinds #UnderCabinet #StorageSolutions #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#AmazonFinds",
+        "#UnderCabinet",
+        "#StorageSolutions",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0dfc5c4e58.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_91156a87be.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_60c09399f2.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_09084b2f5e.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1b3da8100f.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1b3da8100f.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_54b7b120.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_54b7b120.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_54b7b120.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_54b7b120.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_54b7b120.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933752",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": "#fae9c6",
+      "description": "Reclaim your cabinet space with this genius 2-tier sliding under-sink organizer. Stop wrestling with stacked bottles and make cleaning a breeze. It\u2019s the small-space hack your kitchen or bathroom desperately needs. \ud83d\udca7\u2728 Would you use this in your primary kitchen or a bathroom vanity? Drop your guess below! \ud83d\udc47 #SmallSpaceHacks #KitchenOrganization #AmazonFinds #UnderCabinet #StorageSolutions #AmazonAssociate",
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/65/03/cb/6503cbd46293818feaca4549f2deb0a9.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Sink Chaos? Gone: 2-Tier Under Cabinet Organizer! \u2728\ud83c\udfe0 (Slide 1/4)",
+            "description": "Reclaim your cabinet space with this genius 2-tier sliding under-sink organizer. Stop wrestling with stacked bottles and make cleaning a breeze. It\u2019s the small-space hack your kitchen or bathroom desperately needs. \ud83d\udca7\u2728 Would you use this in your primary kitchen or a bathroom vanity? Drop your guess below! \ud83d\udc47 #SmallSpaceHacks #KitchenOrganization #AmazonFinds #UnderCabinet #StorageSolutions #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/16/84/45/168445059af4b0a47df0c3fe47c56b2b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Under Sink Organizer and Storage  2",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Under Sink Organizer and Storage  2",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/ee/26/43/ee26432a787e818ac804964ea4be10ed.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Under Sink Organizer and Storage  2",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "has_been_promoted": false,
+      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "created_at": "2026-10-28T00:39:34",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "parent_pin_id": null,
+      "product_tags": [],
+      "is_product": false,
+      "id": "1132444268837891174",
+      "is_removable": false,
+      "board_section_id": null,
+      "is_owner": true,
+      "title": "Sink Chaos? Gone: 2-Tier Under Cabinet Organizer! \u2728\ud83c\udfe0",
+      "pin_metrics": null,
+      "creative_type": "CAROUSEL",
+      "is_standard": true,
+      "pin_id": "1132444268837891174"
     }
   }
 ]
