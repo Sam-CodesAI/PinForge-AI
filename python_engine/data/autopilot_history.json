@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-09T07:25:14.061404+00:00",
-    "status": "success",
-    "execution_time_seconds": 38.41,
-    "product": {
-      "asin": "B08151T931",
-      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-      "price": "$34.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Finally Fix clutter! 4-Tier Slim Rolling Cart for Tiny Gaps \u2728",
-      "description": "Stop letting random items take over your counters! This VASAGLE slim cart slides into cracks and stacks vertically, turning dead space into organized storage. Perfect for pantry spices, bathroom toiletries, or WFH supplies. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#ApartmentLiving",
-        "#HomeOrganization",
-        "#AmazonFinds",
-        "#StorageSolutions",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ccb06a0319.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ff64a55546.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_21dbfd5960.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_6b05325bf2.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4583d363a6.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4583d363a6.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_69d2a9be.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_69d2a9be.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_69d2a9be.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_69d2a9be.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_69d2a9be.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "is_product": false,
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "pin_metrics": null,
-      "created_at": "2026-10-09T07:25:13",
-      "board_section_id": null,
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "id": "1132444268836172774",
-      "parent_pin_id": null,
-      "dominant_color": "#2b2d2a",
-      "has_been_promoted": false,
-      "creative_type": "REGULAR",
-      "is_removable": false,
-      "title": "Finally Fix clutter! 4-Tier Slim Rolling Cart for Tiny Gaps \u2728",
-      "is_standard": true,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "product_tags": [],
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_owner": true,
-      "board_id": "1132444337492930442",
-      "description": "Stop letting random items take over your counters! This VASAGLE slim cart slides into cracks and stacks vertically, turning dead space into organized storage. Perfect for pantry spices, bathroom toiletries, or WFH supplies. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "pin_id": "1132444268836172774"
-    }
-  },
-  {
     "timestamp": "2026-10-09T10:56:08.803364+00:00",
     "status": "success",
     "execution_time_seconds": 16.08,
@@ -16821,6 +16676,152 @@
       "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
       "title": "Slash Clutter: VASAGLE Slim 4-Tier Rolling Cart! \u2705\u2728 Maximize Tiny Spaces Smart Spaces",
       "pin_id": "1132444268837983891"
+    }
+  },
+  {
+    "timestamp": "2026-10-29T07:06:02.679491+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.04,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Cabinet Chaos Fixed: YouCopia UpSpace Adjustable Bottle Organizer! \u2705\u2728",
+      "description": "Stop straining your back to reach those back-row spices & sauces! \ud83c\udf36\ufe0f This height-adjustable UpSpace organizer reclaims vertical space in seconds, making every corner of your cabinet functional. Perfect for small kitchens or lazy drawers. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#CabinetGoals",
+        "#SmartHomeTech",
+        "#Decluttering",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_1f156fdf83.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7a18cca7f8.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_3e9cad90ac.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_55c44eb31d.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_47b41f87dc.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_47b41f87dc.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_024ddb1c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_024ddb1c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_024ddb1c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_024ddb1c.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_024ddb1c.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "is_removable": false,
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "created_at": "2026-10-29T07:06:02",
+      "is_standard": true,
+      "dominant_color": "#2b2d2a",
+      "description": "Stop straining your back to reach those back-row spices & sauces! \ud83c\udf36\ufe0f This height-adjustable UpSpace organizer reclaims vertical space in seconds, making every corner of your cabinet functional. Perfect for small kitchens or lazy drawers. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "title": "Cabinet Chaos Fixed: YouCopia UpSpace Adjustable Bottle Organizer! \u2705\u2728",
+      "id": "1132444268838002577",
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "pin_metrics": null,
+      "parent_pin_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "creative_type": "REGULAR",
+      "is_product": false,
+      "is_owner": true,
+      "board_id": "1132444337492930442",
+      "board_section_id": null,
+      "has_been_promoted": false,
+      "product_tags": [],
+      "pin_id": "1132444268838002577"
     }
   }
 ]
