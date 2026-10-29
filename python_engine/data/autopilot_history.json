@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-09T18:55:42.218873+00:00",
-    "status": "success",
-    "execution_time_seconds": 11.65,
-    "product": {
-      "asin": "B0C3H9MJQV",
-      "title": "HuggieGems Metal Magnetic Spice Rack for Refrigerator Black, 4 Pack",
-      "price": "$16.98",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0C3H9MJQV?tag=smartspace07-21",
-      "bridge_slug": "huggiegems-metal-magnetic-spice-rack-for-refrigerator-black-4-pack-b0c3h9mjqv"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E222A",
-      "accent_hex": "#10B981",
-      "badge_text": "15% Off Today",
-      "visual_hook": "Transform Your Fridge Into Storage",
-      "secondary_hook": "4 pack magnetic spice racks for instant organization",
-      "target_audience": "Home Cooks",
-      "alt_text": "HuggieGems black metal magnetic spice rack 4 pack attached to a refrigerator holding spices and jars.",
-      "cv_features": {
-        "rb_ratio": 1.102,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 18.2,
-        "edge_clutter": 56.2,
-        "dominant_hex": "#9a968c",
-        "accent_hex": "#c32a27",
-        "bounding_box": [
-          0.0,
-          0.0,
-          0.988,
-          0.988
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.102,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 18.2,
-      "edge_clutter": 56.2,
-      "bounding_box": [
-        0.0,
-        0.0,
-        0.988,
-        0.988
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Kitchen Counter Chaos? Fixed: Magnetic Spice Rack Hacks! \ud83d\udd25\u2728",
-      "description": "Say goodbye to counter clutter! The HuggieGems Magnetic Spice Rack (4-pack) turns your fridge side into a sleek, visible spice zone. Perfect for small apartments and studio living! Tiny tidying win. \u2705 Would you put this on your fridge or cabinet door? Drop your best idea below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#KitchenOrganization",
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#SpiceRack",
-        "#ApartmentLiving",
-        "#AmazonAssociates",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_fe05f2ce56.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5896b349e1.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_6ae3aca9a0.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_0188c5dc87.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ca8bf38878.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ca8bf38878.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_561192ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_561192ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_561192ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_561192ab.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_561192ab.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": {
-      "alt_text": "HuggieGems black metal magnetic spice rack 4 pack attached to a refrigerator holding spices and jars.",
-      "id": "1132444268836217222",
-      "is_owner": true,
-      "board_section_id": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": null,
-      "parent_pin_id": null,
-      "board_id": "1132444337492933750",
-      "is_standard": true,
-      "pin_metrics": null,
-      "description": "Say goodbye to counter clutter! The HuggieGems Magnetic Spice Rack (4-pack) turns your fridge side into a sleek, visible spice zone. Perfect for small apartments and studio living! Tiny tidying win. \u2705 Would you put this on your fridge or cabinet door? Drop your best idea below! \ud83d\udc47 #AmazonAssociate",
-      "has_been_promoted": false,
-      "created_at": "2026-10-09T18:55:41",
-      "link": "https://www.amazon.com/dp/B0C3H9MJQV?tag=smartspace07-21",
-      "product_tags": [],
-      "creative_type": "REGULAR",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/1c/4f/94/1c4f94a7c1f3c1cdce8a4f6d5563b548.jpg"
-          }
-        }
-      },
-      "is_product": false,
-      "title": "Kitchen Counter Chaos? Fixed: Magnetic Spice Rack Hacks! \ud83d\udd25\u2728",
-      "is_removable": false,
-      "pin_id": "1132444268836217222"
-    }
-  },
-  {
     "timestamp": "2026-10-09T21:55:48.050163+00:00",
     "status": "success",
     "execution_time_seconds": 37.42,
@@ -16926,6 +16780,152 @@
       "board_section_id": null,
       "is_removable": false,
       "pin_id": "1132444268838012703"
+    }
+  },
+  {
+    "timestamp": "2026-10-29T19:08:02.543462+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.52,
+    "product": {
+      "asin": "B08N5NV448",
+      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Cut Closet Volume by 80%: 12 Pack Compression Bags + Hand Pump! \ud83c\udf2c\ufe0f\u2728 Smart Spaces",
+      "description": "Stop fighting with overstuffed closets in small apartments! \ud83d\udcb8 This 12-pack with a built-in hand pump flattens bulky sleepers and winter coats into ultra-thin packs, instantly reclaiming vital vertical space. It\u2019s the ultimate hack for studio dwellers who need more room without shopping for a bigger place. \ud83c\udfe0\n\nSmall space challenge: Do you have a mattress topper that fits your 3rd closet shelf? Drop a \ud83d\udc18 if you\u2019re saving space too! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#SmallSpaceLiving",
+        "#ClosetOrganization",
+        "#AmazonFinds",
+        "#SpaceSaver",
+        "#ApartmentHacks",
+        "#VacuumStorage",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_aa8e51e72d.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_53822fe8a9.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_74409ffc5c.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_f44886b95c.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e95c6ccaee.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e95c6ccaee.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a7766be0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a7766be0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a7766be0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a7766be0.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a7766be0.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "board_id": "1132444337492933750",
+      "is_owner": true,
+      "title": "Cut Closet Volume by 80%: 12 Pack Compression Bags + Hand Pump! \ud83c\udf2c\ufe0f\u2728 Smart Spaces",
+      "pin_metrics": null,
+      "product_tags": [],
+      "parent_pin_id": null,
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "board_section_id": null,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "has_been_promoted": false,
+      "is_removable": false,
+      "creative_type": "REGULAR",
+      "is_product": false,
+      "description": "Stop fighting with overstuffed closets in small apartments! \ud83d\udcb8 This 12-pack with a built-in hand pump flattens bulky sleepers and winter coats into ultra-thin packs, instantly reclaiming vital vertical space. It\u2019s the ultimate hack for studio dwellers who need more room without shopping for a bigger place. \ud83c\udfe0\n\nSmall space challenge: Do you have a mattress topper that fits your 3rd closet shelf? Drop a \ud83d\udc18 if you\u2019re saving space too! \ud83d\udc47 #AmazonAssociate",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "id": "1132444268838050240",
+      "created_at": "2026-10-29T19:08:02",
+      "is_standard": true,
+      "dominant_color": "#2b2d2a",
+      "pin_id": "1132444268838050240"
     }
   }
 ]
