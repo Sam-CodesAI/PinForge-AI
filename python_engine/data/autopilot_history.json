@@ -1,184 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10T01:07:28.733710+00:00",
-    "status": "success",
-    "execution_time_seconds": 41.47,
-    "product": {
-      "asin": "B0964GLS2J",
-      "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
-      "price": "$21.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-      "bridge_slug": "adhesive-corner-shower-caddy-tension-basket-2-pack-stainless-steel-b0964gls2j"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f",
-      "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Studio Living Ideas",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#HomeOrganization",
-        "#BathroomDecor",
-        "#NoDrillHomeImprovement",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_fb45ac9628.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_45ea85ca8d.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_404ac12468.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_26df2a6ba6.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_91a93ff47b.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_91a93ff47b.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_81be50a0.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_81be50a0.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_81be50a0.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_81be50a0.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_81be50a0.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "parent_pin_id": null,
-      "product_tags": [],
-      "is_owner": true,
-      "is_standard": true,
-      "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board_id": "1132444337492933752",
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f (Slide 1/4)",
-            "description": "Stop drilling holes and stressing over rented spaces! This 2-pack of no-drill, stainless steel corner caddies instantly organizes your shampoo and soap with zero residue. It\u2019s the aesthetic upgrade your tiny shower has been begging for without the hassle. Small space challenge: Could you fit all your essentials in these two? \ud83d\udec1 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Color & Angle Variants: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
-            "description": "Real-world space-saving transformation. DAMAGE-FREE TENSION MOUNT. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "has_been_promoted": false,
-      "pin_metrics": null,
-      "is_removable": false,
-      "is_product": false,
-      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
-      "created_at": "2026-10-10T01:07:28",
-      "title": "Shower Wall Chaos? Fixed: Rust-Proof Adhesive Corner Caddy! \u2728\ud83d\udee0\ufe0f",
-      "id": "1132444268836239264",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": null,
-      "creative_type": "CAROUSEL",
-      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-      "board_section_id": null,
-      "pin_id": "1132444268836239264"
-    }
-  },
-  {
     "timestamp": "2026-10-10T07:08:12.943275+00:00",
     "status": "success",
     "execution_time_seconds": 13.82,
@@ -16925,6 +16746,264 @@
       "product_tags": [],
       "title": "Vacuum Storage Bags + Electric Pump: Collapse Clutter in 1 Click! \u2728",
       "pin_id": "1132444268838061735"
+    }
+  },
+  {
+    "timestamp": "2026-10-30T01:15:56.883789+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.41,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Never Search the Back Again: YouCopia UpSpace Cabinet Lift! \u2705\u2728",
+      "description": "Stop digging through messy cabinets! The YouCopia UpSpace lifts your items a full 4 inches, making every drink and jar visible and grabbable. It fits most standard cabinets and is a game-changer for small kitchens. \ud83c\udfe5\n\nSmall space challenge: Could you fit everything in this setup? \ud83c\udfe0\n\nTap to shop smart finds! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#KitchenHacks",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#CabinetOrganization",
+        "#HomeOrganization",
+        "#AmazonMustHaves",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_49f255aa91.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_b687714709.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_eaa80cfbdc.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_fe1d13214b.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_545ee8119c.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_545ee8119c.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_e0fbb57b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_e0fbb57b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_e0fbb57b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_e0fbb57b.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_e0fbb57b.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "created_at": "2026-10-30T01:15:56",
+      "is_owner": true,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/45/a9/4a/45a94a27cd1391f4f1f3d35f6c41e002.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/45/a9/4a/45a94a27cd1391f4f1f3d35f6c41e002.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/45/a9/4a/45a94a27cd1391f4f1f3d35f6c41e002.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/45/a9/4a/45a94a27cd1391f4f1f3d35f6c41e002.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/45/a9/4a/45a94a27cd1391f4f1f3d35f6c41e002.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Never Search the Back Again: YouCopia UpSpace Cabinet Lift! \u2705\u2728 (Slide 1/4)",
+            "description": "Stop digging through messy cabinets! The YouCopia UpSpace lifts your items a full 4 inches, making every drink and jar visible and grabbable. It fits most standard cabinets and is a game-changer for small kitchens. \ud83c\udfe5\n\nSmall space challenge: Could you fit everything in this setup? \ud83c\udfe0\n\nTap to shop smart finds! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/88/be/76/88be76ac02fda732679644a6ab62af93.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/88/be/76/88be76ac02fda732679644a6ab62af93.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/88/be/76/88be76ac02fda732679644a6ab62af93.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/88/be/76/88be76ac02fda732679644a6ab62af93.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/88/be/76/88be76ac02fda732679644a6ab62af93.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "parent_pin_id": null,
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "board_section_id": null,
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "creative_type": "CAROUSEL",
+      "description": "Stop digging through messy cabinets! The YouCopia UpSpace lifts your items a full 4 inches, making every drink and jar visible and grabbable. It fits most standard cabinets and is a game-changer for small kitchens. \ud83c\udfe5\n\nSmall space challenge: Could you fit everything in this setup? \ud83c\udfe0\n\nTap to shop smart finds! Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "title": "Never Search the Back Again: YouCopia UpSpace Cabinet Lift! \u2705\u2728",
+      "is_removable": false,
+      "pin_metrics": null,
+      "dominant_color": "#fae9c6",
+      "has_been_promoted": false,
+      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "is_product": false,
+      "is_standard": true,
+      "id": "1132444268838072261",
+      "product_tags": [],
+      "board_id": "1132444337492933752",
+      "pin_id": "1132444268838072261"
     }
   }
 ]
