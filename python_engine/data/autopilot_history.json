@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10T20:45:01.518363+00:00",
-    "status": "success",
-    "execution_time_seconds": 42.62,
-    "product": {
-      "asin": "B08N5NV448",
-      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
-      "price": "$24.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
-      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Closet Chaos? Fixed: 12-Pack Vacuum Bags for Massive Space Savings! \u2728",
-      "description": "Reclaim 50% more closet space with these 12 vacuum bags! Perfect for bulky winter coats and bedding. The included hand pump makes sealing effortless. Small space challenge: Could you fit your entire wardrobe in one bag today? Drop a \ud83d\udc80 if this is your holy grail! \ud83d\udce6\u2728 Which room needs this most? Drop your vote below! \u2728 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#ClosetOrganization",
-        "#SpaceSavingHacks",
-        "#VacuumBags",
-        "#SmallApartment",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_7da70647a3.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a314073586.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_86050e8d42.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_a0e167b4c9.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_170b3dd2cd.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_170b3dd2cd.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a381110a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a381110a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a381110a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a381110a.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a381110a.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "creative_type": "REGULAR",
-      "pin_metrics": null,
-      "parent_pin_id": null,
-      "board_id": "1132444337492933751",
-      "dominant_color": "#2b2d2a",
-      "created_at": "2026-10-10T20:45:01",
-      "description": "Reclaim 50% more closet space with these 12 vacuum bags! Perfect for bulky winter coats and bedding. The included hand pump makes sealing effortless. Small space challenge: Could you fit your entire wardrobe in one bag today? Drop a \ud83d\udc80 if this is your holy grail! \ud83d\udce6\u2728 Which room needs this most? Drop your vote below! \u2728 #AmazonAssociate",
-      "title": "Closet Chaos? Fixed: 12-Pack Vacuum Bags for Massive Space Savings! \u2728",
-      "has_been_promoted": false,
-      "board_section_id": null,
-      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
-      "id": "1132444268836311925",
-      "is_removable": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
-      "is_owner": true,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "is_product": false,
-      "product_tags": [],
-      "is_standard": true,
-      "pin_id": "1132444268836311925"
-    }
-  },
-  {
     "timestamp": "2026-10-11T00:22:03.475939+00:00",
     "status": "success",
     "execution_time_seconds": 13.56,
@@ -17028,6 +16883,151 @@
       "creative_type": "REGULAR",
       "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
       "pin_id": "1132444268838132309"
+    }
+  },
+  {
+    "timestamp": "2026-10-30T21:44:35.164902+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.47,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Tame Drawer Chaos: 6Pct Lifewit Dividers for Max Small-Space Tidiness! \ud83d\udce6\u2728",
+      "description": "Turn your messy junk drawer into a curated mini-closet with these 6-pack Lifewit plastic dividers. \ud83c\udfe0\u2728 Perfect for snagging small essentials without the dig. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#DrawerOrganization",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_d7a758b42e.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_5a80fe208b.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_5ac865975a.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_72711f350d.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ee9639450a.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ee9639450a.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_be68a7df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_be68a7df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_be68a7df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_be68a7df.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_be68a7df.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "title": "Tame Drawer Chaos: 6Pct Lifewit Dividers for Max Small-Space Tidiness! \ud83d\udce6\u2728",
+      "board_section_id": null,
+      "is_owner": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "dominant_color": "#2b2d2a",
+      "creative_type": "REGULAR",
+      "is_product": false,
+      "id": "1132444268838145711",
+      "description": "Turn your messy junk drawer into a curated mini-closet with these 6-pack Lifewit plastic dividers. \ud83c\udfe0\u2728 Perfect for snagging small essentials without the dig. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "created_at": "2026-10-30T21:44:34",
+      "pin_metrics": null,
+      "is_removable": false,
+      "product_tags": [],
+      "is_standard": true,
+      "board_id": "1132444337492933751",
+      "has_been_promoted": false,
+      "parent_pin_id": null,
+      "pin_id": "1132444268838145711"
     }
   }
 ]
