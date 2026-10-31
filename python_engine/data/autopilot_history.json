@@ -1,155 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11T10:20:17.186896+00:00",
-    "status": "success",
-    "execution_time_seconds": 10.76,
-    "product": {
-      "asin": "B09ZKYQMVD",
-      "title": "Vtopmart 4 Pack Small Clear Stackable Storage Drawers  Fits Narrow Spaces",
-      "price": "$24.69",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-      "bridge_slug": "vtopmart-4-pack-small-clear-stackable-storage-drawers-fits-narrow-spaces-b09zkyqmvd"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E293B",
-      "accent_hex": "#06B6D4",
-      "badge_text": "51% Off Today",
-      "visual_hook": "Declutter Tiny Spaces Instantly",
-      "secondary_hook": "Modular stackable clear storage drawers",
-      "target_audience": "Apartment Renters",
-      "alt_text": "Vtopmart 4 Pack Small Clear Stackable Storage Drawers shown stacked with one drawer open on a white background.",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 84.8,
-        "edge_clutter": 30.7,
-        "dominant_hex": "#d6d6d6",
-        "accent_hex": "#f0f0f0",
-        "bounding_box": [
-          0.225,
-          0.113,
-          0.725,
-          0.95
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 84.8,
-      "edge_clutter": 30.7,
-      "bounding_box": [
-        0.225,
-        0.113,
-        0.725,
-        0.95
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Tiny Drawer Chaos? Fixed: 4-Pack Clear Stackable Organizers! \u2705\u2728 Maximize Narrow Spots",
-      "description": "Stop letting your small drawers turn into a mystery box! \ud83d\udce6\u2728 This Vtopmart 4-pack fits perfectly in narrow gaps, giving you aesthetic, clear visibility for all your essentials. No more digging through clutter! Would you use this in your desk side or bathroom vanity? Drop your location below! \ud83d\udc47 #SmartSpaces #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#MustHaves",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e7bf396d50.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_23098a8a69.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_7e5b584a84.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_3c8a9a1a54.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e240c39e87.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e240c39e87.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_98aa1780.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_98aa1780.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_98aa1780.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_98aa1780.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_98aa1780.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "product_tags": [],
-      "is_removable": false,
-      "id": "1132444268836357342",
-      "description": "Stop letting your small drawers turn into a mystery box! \ud83d\udce6\u2728 This Vtopmart 4-pack fits perfectly in narrow gaps, giving you aesthetic, clear visibility for all your essentials. No more digging through clutter! Would you use this in your desk side or bathroom vanity? Drop your location below! \ud83d\udc47 #SmartSpaces #AmazonAssociate",
-      "created_at": "2026-10-11T10:20:16",
-      "pin_metrics": null,
-      "parent_pin_id": null,
-      "is_product": false,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Tiny Drawer Chaos? Fixed: 4-Pack Clear Stackable Organizers! \u2705\u2728 Maximize Narrow Spots (Slide 1/4)",
-            "description": "Stop letting your small drawers turn into a mystery box! \ud83d\udce6\u2728 This Vtopmart 4-pack fits perfectly in narrow gaps, giving you aesthetic, clear visibility for all your essentials. No more digging through clutter! Would you use this in your desk side or bathroom vanity? Drop your location below! \ud83d\udc47 #SmartSpaces #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Vtopmart 4 Pack Small Clear Stackable Storage Drawers  Fits Narrow Spaces",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: Vtopmart 4 Pack Small Clear Stackable Storage Drawers  Fits Narrow Spaces",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Vtopmart 4 Pack Small Clear Stackable Storage Drawers  Fits Narrow Spaces",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "link": "https://www.amazon.com/dp/B09ZKYQMVD?tag=smartspace07-21",
-      "alt_text": "Vtopmart 4 Pack Small Clear Stackable Storage Drawers shown stacked with one drawer open on a white background.",
-      "board_section_id": null,
-      "board_id": "1132444337492933749",
-      "creative_type": "CAROUSEL",
-      "title": "Tiny Drawer Chaos? Fixed: 4-Pack Clear Stackable Organizers! \u2705\u2728 Maximize Narrow Spots",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": null,
-      "has_been_promoted": false,
-      "is_standard": true,
-      "is_owner": true,
-      "pin_id": "1132444268836357342"
-    }
-  },
-  {
     "timestamp": "2026-10-11T18:18:39.050025+00:00",
     "status": "success",
     "execution_time_seconds": 38.05,
@@ -17080,6 +16930,159 @@
       "id": "1132444268838172653",
       "board_section_id": null,
       "pin_id": "1132444268838172653"
+    }
+  },
+  {
+    "timestamp": "2026-10-31T09:58:37.808852+00:00",
+    "status": "success",
+    "execution_time_seconds": 16.68,
+    "product": {
+      "asin": "B0F5DB76BC",
+      "title": "CleverMade Collapsible Plastic Laundry Basket, 39L 1 Pack, 45 lb",
+      "price": "$31.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+      "bridge_slug": "clevermade-collapsible-plastic-laundry-basket-39l-1-pack-45-lb-b0f5db76bc"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#121212",
+      "accent_hex": "#06B6D4",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Your Tiny Laundry Space",
+      "secondary_hook": "Collapses flat when not in use",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Black CleverMade collapsible plastic laundry basket shown expanded and collapsed flat against a white background.",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 52.4,
+        "edge_clutter": 49.5,
+        "dominant_hex": "#474747",
+        "accent_hex": "#eaeaea",
+        "bounding_box": [
+          0.125,
+          0.025,
+          0.912,
+          0.975
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 52.4,
+      "edge_clutter": 49.5,
+      "bounding_box": [
+        0.125,
+        0.025,
+        0.912,
+        0.975
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Laundry Pile Chaos? Fixed: Collapsible 39L Basket! \ud83e\uddfa\u2728",
+      "description": "Stop letting laundry take over your small space. This 39L CleverMade basket folds flat when empty to save zero footprint! \ud83d\udcb8\ud83d\udc99 Tag a friend with the biggest laundry mess below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#LaundryHacks",
+        "#AmazonFinds",
+        "#RoomOrganization",
+        "#ApartmentLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_8afe1d3c9b.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7578504a66.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_57953272c3.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_64c173254b.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_fa859ce14d.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_fa859ce14d.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_62e4040d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_62e4040d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_62e4040d.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_62e4040d.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_62e4040d.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "description": "Stop letting laundry take over your small space. This 39L CleverMade basket folds flat when empty to save zero footprint! \ud83d\udcb8\ud83d\udc99 Tag a friend with the biggest laundry mess below! \ud83d\udc47 #AmazonAssociate",
+      "is_removable": false,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {},
+            "title": "Laundry Pile Chaos? Fixed: Collapsible 39L Basket! \ud83e\uddfa\u2728 (Slide 1/4)",
+            "description": "Stop letting laundry take over your small space. This 39L CleverMade basket folds flat when empty to save zero footprint! \ud83d\udcb8\ud83d\udc99 Tag a friend with the biggest laundry mess below! \ud83d\udc47 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Dimensions & Build Specs: CleverMade Collapsible Plastic Laundry Basket, 39L 1 Pack, 45 lb",
+            "description": "Full space-saving specifications, dimensions, and folds flat in seconds \u2022 space saver. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Color & Angle Variants: CleverMade Collapsible Plastic Laundry Basket, 39L 1 Pack, 45 lb",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {},
+            "title": "Transform Your Space: CleverMade Collapsible Plastic Laundry Basket, 39L 1 Pack, 45 lb",
+            "description": "Real-world space-saving transformation. FOLDS FLAT IN SECONDS \u2022 SPACE SAVER. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "board_id": "1132444337492933749",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "dominant_color": null,
+      "link": "https://www.amazon.com/dp/B0F5DB76BC?tag=smartspace07-21",
+      "is_owner": true,
+      "is_standard": true,
+      "created_at": "2026-10-31T09:58:37",
+      "product_tags": [],
+      "parent_pin_id": null,
+      "has_been_promoted": false,
+      "board_section_id": null,
+      "alt_text": "Black CleverMade collapsible plastic laundry basket shown expanded and collapsed flat against a white background.",
+      "pin_metrics": null,
+      "id": "1132444268838180843",
+      "creative_type": "CAROUSEL",
+      "title": "Laundry Pile Chaos? Fixed: Collapsible 39L Basket! \ud83e\uddfa\u2728",
+      "is_product": false,
+      "pin_id": "1132444268838180843"
     }
   }
 ]
