@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12T21:50:09.878962+00:00",
-    "status": "success",
-    "execution_time_seconds": 45.54,
-    "product": {
-      "asin": "B07T7N28LN",
-      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-      "price": "$19.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Ditch Cabinet Clutter: YouCopia UpSpace 3-Tier Spinning Organizer \u2728\ud83c\udf4b",
-      "description": "Stop playing hide-and-seek with your spices! \ud83c\udf3f This genius spinning organizer floats up in your cabinet so you use 90% less vertical space. It\u2019s the ultimate aesthetic upgrade for your pantry lines. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#KitchenOrganization",
-        "#SmallApartmentHacks",
-        "#PantryMustHaves",
-        "#AmazonHomeFinds",
-        "#SpaceSaving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_cfd6502ba4.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_073f39a8b3.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_145f8e8319.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_7621e09795.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_660a399760.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_660a399760.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_19902b55.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_19902b55.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_19902b55.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_19902b55.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_19902b55.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "board_section_id": null,
-      "pin_metrics": null,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "id": "1132444268836493166",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "title": "Ditch Cabinet Clutter: YouCopia UpSpace 3-Tier Spinning Organizer \u2728\ud83c\udf4b",
-      "is_standard": true,
-      "product_tags": [],
-      "creative_type": "REGULAR",
-      "description": "Stop playing hide-and-seek with your spices! \ud83c\udf3f This genius spinning organizer floats up in your cabinet so you use 90% less vertical space. It\u2019s the ultimate aesthetic upgrade for your pantry lines. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "parent_pin_id": null,
-      "created_at": "2026-10-12T21:50:09",
-      "board_id": "1132444337492933751",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "dominant_color": "#2b2d2a",
-      "is_owner": true,
-      "has_been_promoted": false,
-      "is_product": false,
-      "is_removable": false,
-      "pin_id": "1132444268836493166"
-    }
-  },
-  {
     "timestamp": "2026-10-12T23:48:14.503000+00:00",
     "status": "success",
     "execution_time_seconds": 41.71,
@@ -17057,6 +16912,151 @@
       "is_standard": true,
       "created_at": "2026-11-01T10:48:44",
       "pin_id": "1132444268838268326"
+    }
+  },
+  {
+    "timestamp": "2026-11-01T18:30:52.190677+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.18,
+    "product": {
+      "asin": "B0H252N57K",
+      "title": "Expandable Under Sink Organizer  2 Tier Under Sink Shelf",
+      "price": "$30.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B0H252N57K?tag=smartspace07-21",
+      "bridge_slug": "expandable-under-sink-organizer-2-tier-under-sink-shelf-b0h252n57k"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#10B981",
+      "badge_text": "23% Off Today",
+      "visual_hook": "Transform Your Messy Under-Sink Space",
+      "secondary_hook": "Expandable 2-tier organizer for ultimate storage",
+      "target_audience": "Home Cooks",
+      "alt_text": "Expandable 2-tier under sink organizer with black frame, holding pots, pans, and groceries in a clean kitchen cabinet.",
+      "cv_features": {
+        "rb_ratio": 1.252,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 4.2,
+        "edge_clutter": 59.0,
+        "dominant_hex": "#827768",
+        "accent_hex": "#d5892c",
+        "bounding_box": [
+          0.037,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.252,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 4.2,
+      "edge_clutter": 59.0,
+      "bounding_box": [
+        0.037,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Sink Chaos? Solved: Expandable 2-Tier Under Sink Organizer! \u2705\u2728 Smart Spaces",
+      "description": "Stop wrestling with spray cans under your sink! This 2-tier expandable organizer transforms messy cabinet corners into sleek, accessible storage. Perfect for small apartments and budget finds. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#UnderSinkOrganizer",
+        "#KitchenHacks",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_25d73a3922.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6db43c8fd5.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a413a698d6.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_13767ee93b.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2cc9c5fc71.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_2cc9c5fc71.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_2f9a4fdf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_2f9a4fdf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_2f9a4fdf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_2f9a4fdf.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_2f9a4fdf.jpg",
+      "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "id": "1132444268838304622",
+      "pin_metrics": null,
+      "is_owner": true,
+      "product_tags": [],
+      "creative_type": "REGULAR",
+      "has_been_promoted": false,
+      "is_removable": false,
+      "alt_text": "Expandable 2-tier under sink organizer with black frame, holding pots, pans, and groceries in a clean kitchen cabinet.",
+      "title": "Sink Chaos? Solved: Expandable 2-Tier Under Sink Organizer! \u2705\u2728 Smart Spaces",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "parent_pin_id": null,
+      "is_product": false,
+      "board_section_id": null,
+      "dominant_color": null,
+      "link": "https://www.amazon.com/dp/B0H252N57K?tag=smartspace07-21",
+      "description": "Stop wrestling with spray cans under your sink! This 2-tier expandable organizer transforms messy cabinet corners into sleek, accessible storage. Perfect for small apartments and budget finds. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board_id": "1132444337492933750",
+      "is_standard": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/7a/02/d1/7a02d1541e6d890d57620f1b24f0308e.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/7a/02/d1/7a02d1541e6d890d57620f1b24f0308e.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/7a/02/d1/7a02d1541e6d890d57620f1b24f0308e.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/7a/02/d1/7a02d1541e6d890d57620f1b24f0308e.jpg"
+          }
+        }
+      },
+      "created_at": "2026-11-01T18:30:51",
+      "pin_id": "1132444268838304622"
     }
   }
 ]
