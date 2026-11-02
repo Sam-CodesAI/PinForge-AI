@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13T02:41:48.153311+00:00",
-    "status": "success",
-    "execution_time_seconds": 44.06,
-    "product": {
-      "asin": "B01MR1Y5K8",
-      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
-      "price": "$22.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
-      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
-      "description": "Tired of a chaotic under\u2011sink mess? This 2\u2011tier stackable organizer slides out smoothly, giving you instant access to sponges, cleaners, and even small appliances while keeping water damage at bay. Small\u2011space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#UnderSink",
-        "#HomeStorage",
-        "#SmartSpaces",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_cd17542670.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_bfba833a96.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f234a6e8e1.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b1aba26d8e.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_572a13ab60.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_572a13ab60.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_0bae55ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_0bae55ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_0bae55ab.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_0bae55ab.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_0bae55ab.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "created_at": "2026-10-13T02:41:47",
-      "creative_type": "REGULAR",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "description": "Tired of a chaotic under\u2011sink mess? This 2\u2011tier stackable organizer slides out smoothly, giving you instant access to sponges, cleaners, and even small appliances while keeping water damage at bay. Small\u2011space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "is_owner": true,
-      "board_section_id": null,
-      "parent_pin_id": null,
-      "board_id": "1132444337492930442",
-      "title": "Maximize Your Sink: 2\u2011Tier Sliding Under\u2011Cabinet Organizer! \ud83d\udd25\u2728",
-      "is_product": false,
-      "is_standard": true,
-      "pin_metrics": null,
-      "product_tags": [],
-      "id": "1132444268836510649",
-      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
-      "is_removable": false,
-      "dominant_color": "#2b2d2a",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
-      "has_been_promoted": false,
-      "pin_id": "1132444268836510649"
-    }
-  },
-  {
     "timestamp": "2026-10-13T07:44:43.755573+00:00",
     "status": "success",
     "execution_time_seconds": 40.05,
@@ -16943,6 +16797,263 @@
         "username": "Smart_Spaces"
       },
       "pin_id": "1132444268838317994"
+    }
+  },
+  {
+    "timestamp": "2026-11-02T00:58:58.333979+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.97,
+    "product": {
+      "asin": "B08N5NV448",
+      "title": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "bridge_slug": "space-saver-vacuum-storage-bags-12-pack-with-hand-pump-for-clothes-bedding-b08n5nv448"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Crown Your Closet: 12-Pack Vacuum Bags with Pump! \ud83e\uddf3\u2728 Smart Spaces",
+      "description": "Reclaim your closet space instantly! These 12 space-saver vacuum bags pack down bulky coats, comforters, and plushies to tiny, neat rectangles. Perfect for small apartments and seasonal transitions. The included hand pump makes it a breeze.\n\nSmall space challenge: How much could you fit in this setup? \ud83c\udfe0\ud83d\udce6 Drop a number below! Which room needs this most? Drop your vote below! \u2728 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#ClosetOrganization",
+        "#PackingTips",
+        "#StorageSolutions",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_be5b8c3a8f.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_594b6a7f35.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_ffc6c0c2a0.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_d3c020c948.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_65982ee76b.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_65982ee76b.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_08d099ad.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_08d099ad.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_08d099ad.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_08d099ad.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_08d099ad.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "is_removable": false,
+      "dominant_color": "#fae9c6",
+      "board_id": "1132444337492933752",
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "product_tags": [],
+      "title": "Crown Your Closet: 12-Pack Vacuum Bags with Pump! \ud83e\uddf3\u2728 Smart Spaces",
+      "is_owner": true,
+      "parent_pin_id": null,
+      "is_standard": true,
+      "pin_metrics": null,
+      "media": {
+        "media_type": "multiple_images",
+        "items": [
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/16/c1/1a/16c11ab2c86f22d98e69e8f5607e7c20.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/16/c1/1a/16c11ab2c86f22d98e69e8f5607e7c20.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/16/c1/1a/16c11ab2c86f22d98e69e8f5607e7c20.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/16/c1/1a/16c11ab2c86f22d98e69e8f5607e7c20.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/16/c1/1a/16c11ab2c86f22d98e69e8f5607e7c20.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Crown Your Closet: 12-Pack Vacuum Bags with Pump! \ud83e\uddf3\u2728 Smart Spaces (Slide 1/4)",
+            "description": "Reclaim your closet space instantly! These 12 space-saver vacuum bags pack down bulky coats, comforters, and plushies to tiny, neat rectangles. Perfect for small apartments and seasonal transitions. The included hand pump makes it a breeze.\n\nSmall space challenge: How much could you fit in this setup? \ud83c\udfe0\ud83d\udce6 Drop a number below! Which room needs this most? Drop your vote below! \u2728 #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/fc/c5/ac/fcc5ac89536aebe95d40a7288702019d.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/fc/c5/ac/fcc5ac89536aebe95d40a7288702019d.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/fc/c5/ac/fcc5ac89536aebe95d40a7288702019d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/fc/c5/ac/fcc5ac89536aebe95d40a7288702019d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/fc/c5/ac/fcc5ac89536aebe95d40a7288702019d.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Dimensions & Build Specs: Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Color & Angle Variants: Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+            "item_type": "image"
+          },
+          {
+            "images": {
+              "150x150": {
+                "url": "https://i.pinimg.com/150x150/bb/13/22/bb1322d36e3235bec54a091e0b2a6d0d.jpg",
+                "width": 150,
+                "height": 150
+              },
+              "400x300": {
+                "url": "https://i.pinimg.com/400x300/bb/13/22/bb1322d36e3235bec54a091e0b2a6d0d.jpg",
+                "width": 400,
+                "height": 300
+              },
+              "600x": {
+                "url": "https://i.pinimg.com/564x/bb/13/22/bb1322d36e3235bec54a091e0b2a6d0d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "564x": {
+                "url": "https://i.pinimg.com/564x/bb/13/22/bb1322d36e3235bec54a091e0b2a6d0d.jpg",
+                "width": 564,
+                "height": 846
+              },
+              "1200x": {
+                "url": "https://i.pinimg.com/1200x/bb/13/22/bb1322d36e3235bec54a091e0b2a6d0d.jpg",
+                "width": 1000,
+                "height": 1500
+              }
+            },
+            "title": "Transform Your Space: Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding",
+            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
+            "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+            "item_type": "image"
+          }
+        ]
+      },
+      "creative_type": "CAROUSEL",
+      "created_at": "2026-11-02T00:58:57",
+      "link": "https://www.amazon.com/dp/B08N5NV448?tag=smartspace07-21",
+      "has_been_promoted": false,
+      "is_product": false,
+      "description": "Reclaim your closet space instantly! These 12 space-saver vacuum bags pack down bulky coats, comforters, and plushies to tiny, neat rectangles. Perfect for small apartments and seasonal transitions. The included hand pump makes it a breeze.\n\nSmall space challenge: How much could you fit in this setup? \ud83c\udfe0\ud83d\udce6 Drop a number below! Which room needs this most? Drop your vote below! \u2728 #AmazonAssociate",
+      "alt_text": "Space Saver Vacuum Storage Bags 12 Pack with Hand Pump for Clothes Bedding - Smart Spaces Amazon find",
+      "id": "1132444268838331324",
+      "board_section_id": null,
+      "pin_id": "1132444268838331324"
     }
   }
 ]
