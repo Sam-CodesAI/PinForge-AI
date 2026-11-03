@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14T06:09:59.151805+00:00",
-    "status": "success",
-    "execution_time_seconds": 42.07,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Under Sink Organizer and Storage  2",
-      "price": "$23.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Under Sink Chaos: Fixed! 2-Tier Sliding Organizer Aesthetic \ud83d\udca7\u2728",
-      "description": "Turn that hidden mess into a sleek, efficient space! This sliding under sink organizer fits perfectly in tight cabinets, letting you access cleaning supplies effortlessly. Perfect for small apartments and aesthetic home goals. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#KitchenOrganization",
-        "#SmallSpaceStorage",
-        "#AmazonFinds",
-        "#HomeDecor",
-        "#UnderSinkOrganizer",
-        "#SmartSpaces",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f8c107bbbf.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7ba6e68e50.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_9665cce6f7.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_8fbe12405e.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_512d569edd.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_512d569edd.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_909ed92a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_909ed92a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_909ed92a.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_909ed92a.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_909ed92a.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "creative_type": "REGULAR",
-      "product_tags": [],
-      "has_been_promoted": false,
-      "id": "1132444268836604080",
-      "is_product": false,
-      "dominant_color": "#2b2d2a",
-      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
-      "is_removable": false,
-      "pin_metrics": null,
-      "board_section_id": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "title": "Under Sink Chaos: Fixed! 2-Tier Sliding Organizer Aesthetic \ud83d\udca7\u2728",
-      "is_standard": true,
-      "board_id": "1132444337492930442",
-      "description": "Turn that hidden mess into a sleek, efficient space! This sliding under sink organizer fits perfectly in tight cabinets, letting you access cleaning supplies effortlessly. Perfect for small apartments and aesthetic home goals. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "created_at": "2026-10-14T06:09:58",
-      "parent_pin_id": null,
-      "is_owner": true,
-      "pin_id": "1132444268836604080"
-    }
-  },
-  {
     "timestamp": "2026-10-14T09:01:21.293771+00:00",
     "status": "success",
     "execution_time_seconds": 17.69,
@@ -17054,6 +16908,148 @@
       "description": "Stop letting clutter win! \ud83d\uded1 This VASAGLE slim cart fits in tiny gaps, slides out for easy access, and looks aesthetic AF on wheels. Your studio apartment will thank you. Small space challenge: Could you fit everything in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
       "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
       "pin_id": "1132444268838425168"
+    }
+  },
+  {
+    "timestamp": "2026-11-03T07:56:25.260269+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.0,
+    "product": {
+      "asin": "B0915B37G6",
+      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+      "price": "$11.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Hallway Chaos? Fixed: 24 Pocket Over-Door Shoe Organizer! \ud83d\udeaa\u2728",
+      "description": "Stop letting sneakers pile up on the floor! \ud83d\uded1 This clear 24-pocket organizer hides your shoes and maximizes dead space in any small apartment. Perfect for that *clean girl* aesthetic without the bulk. \u2728\ud83d\udcb8 Would you use this for sneakers or slippers? Drop your vote below! \ud83d\udc47 #SmallSpaceHacks #ShoeStorage #ApartmentMustHaves #OrganizationGoals #SmartSpaces #AmazonFinds #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#MustHaves",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_9180e1ca31.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a02041b875.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_144416ef3d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_99fd98f398.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_932ed404ce.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_932ed404ce.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_afec5caf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_afec5caf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_afec5caf.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_afec5caf.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_afec5caf.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "board_owner": {
+        "username": "Smart_Spaces"
+      },
+      "created_at": "2026-11-03T07:56:24",
+      "is_standard": true,
+      "media": {
+        "media_type": "image",
+        "images": {
+          "150x150": {
+            "width": 150,
+            "height": 150,
+            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "400x300": {
+            "width": 400,
+            "height": 300,
+            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "600x": {
+            "width": 564,
+            "height": 846,
+            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          },
+          "1200x": {
+            "width": 1000,
+            "height": 1500,
+            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
+          }
+        }
+      },
+      "title": "Hallway Chaos? Fixed: 24 Pocket Over-Door Shoe Organizer! \ud83d\udeaa\u2728",
+      "description": "Stop letting sneakers pile up on the floor! \ud83d\uded1 This clear 24-pocket organizer hides your shoes and maximizes dead space in any small apartment. Perfect for that *clean girl* aesthetic without the bulk. \u2728\ud83d\udcb8 Would you use this for sneakers or slippers? Drop your vote below! \ud83d\udc47 #SmallSpaceHacks #ShoeStorage #ApartmentMustHaves #OrganizationGoals #SmartSpaces #AmazonFinds #AmazonAssociate",
+      "product_tags": [],
+      "id": "1132444268838439475",
+      "is_product": false,
+      "board_id": "1132444337492930442",
+      "creative_type": "REGULAR",
+      "is_owner": true,
+      "dominant_color": "#2b2d2a",
+      "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "has_been_promoted": false,
+      "board_section_id": null,
+      "pin_metrics": null,
+      "parent_pin_id": null,
+      "is_removable": false,
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
+      "pin_id": "1132444268838439475"
     }
   }
 ]
