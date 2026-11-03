@@ -1,0 +1,62 @@
+{
+  "Room Organization": {
+    "board_id": "1132444337492930442",
+    "pin_count": 45,
+    "avg_aes": 0.67,
+    "impressions": 110,
+    "pin_clicks": 8,
+    "outbound_clicks": 4,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 7.27,
+    "outbound_ctr": 3.64
+  },
+  "Studio Living Ideas": {
+    "board_id": "1132444337492933752",
+    "pin_count": 27,
+    "avg_aes": 0.35,
+    "impressions": 22,
+    "pin_clicks": 3,
+    "outbound_clicks": 1,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 13.64,
+    "outbound_ctr": 4.55
+  },
+  "Closet & Wardrobe Organization": {
+    "board_id": "1132444337492933751",
+    "pin_count": 32,
+    "avg_aes": 0.05,
+    "impressions": 26,
+    "pin_clicks": 1,
+    "outbound_clicks": 0,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 3.85,
+    "outbound_ctr": 0.0
+  },
+  "Small Apartment Hacks": {
+    "board_id": "1132444337492933749",
+    "pin_count": 24,
+    "avg_aes": 0.33,
+    "impressions": 25,
+    "pin_clicks": 2,
+    "outbound_clicks": 1,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 8.0,
+    "outbound_ctr": 4.0
+  },
+  "Space Saving Kitchens": {
+    "board_id": "1132444337492933750",
+    "pin_count": 25,
+    "avg_aes": 0.0,
+    "impressions": 14,
+    "pin_clicks": 0,
+    "outbound_clicks": 0,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 0.0,
+    "outbound_ctr": 0.0
+  }
+}

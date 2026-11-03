@@ -364,10 +364,73 @@ def get_pinterest_analytics(days: int = 30):
 
     try:
         client = PinterestClient()
-        return client.get_account_analytics(days=days)
+        return client.get_deep_account_overview()
     except Exception as e:
         logger.error(f"Failed to fetch analytics: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/analytics/overview")
+def get_analytics_overview():
+    """Fetch stored account overview and summary stats."""
+    from python_engine.analytics_feedback_loop import ACCOUNT_OVERVIEW_FILE, AnalyticsFeedbackLoop
+    if not ACCOUNT_OVERVIEW_FILE.exists():
+        loop = AnalyticsFeedbackLoop()
+        loop.run_analytics_loop()
+    try:
+        return json.loads(ACCOUNT_OVERVIEW_FILE.read_text())
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to read overview: {e}")
+
+
+@app.get("/api/analytics/ledger")
+def get_analytics_ledger():
+    """Fetch complete ranked performance ledger."""
+    from python_engine.analytics_feedback_loop import PERFORMANCE_LEDGER_FILE, AnalyticsFeedbackLoop
+    if not PERFORMANCE_LEDGER_FILE.exists():
+        loop = AnalyticsFeedbackLoop()
+        loop.run_analytics_loop()
+    try:
+        return json.loads(PERFORMANCE_LEDGER_FILE.read_text())
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to read ledger: {e}")
+
+
+@app.post("/api/analytics/sync")
+def trigger_analytics_sync():
+    """Trigger live closed-loop sync with Pinterest API v5."""
+    from python_engine.analytics_feedback_loop import AnalyticsFeedbackLoop
+    try:
+        loop = AnalyticsFeedbackLoop()
+        result = loop.run_analytics_loop()
+        return {
+            "status": "success",
+            "message": "Live Pinterest analytics synchronized successfully",
+            "overview": result.get("overview"),
+            "boards": result.get("boards"),
+        }
+    except Exception as e:
+        logger.error(f"Sync failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Sync failed: {e}")
+
+
+@app.get("/api/analytics/export")
+def export_analytics_csv():
+    """Export analytics as CSV download."""
+    from python_engine.analytics_feedback_loop import DATA_DIR
+    export_file = DATA_DIR / "pinforge_analytics_export.csv"
+    if not export_file.exists():
+        from python_engine.production_analytics import cmd_export
+        import argparse
+        cmd_export(argparse.Namespace(output=str(export_file)))
+    if export_file.exists():
+        content = export_file.read_text(encoding="utf-8")
+        return Response(
+            content=content,
+            media_type="text/csv",
+            headers={"Content-Disposition": 'attachment; filename="pinforge_pinterest_analytics.csv"'},
+        )
+    raise HTTPException(status_code=404, detail="Export file not found")
 
 
 @app.post("/api/autonomous/run")

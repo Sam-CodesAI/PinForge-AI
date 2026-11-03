@@ -444,6 +444,143 @@ class PinterestClient:
             )
         return {**result, "pin_id": result.get("id", "")}
 
+    def get_all_pins(self, include_metrics: bool = True, max_pins: int = 500) -> List[Dict[str, Any]]:
+        """Fetch all account pins with pagination bookmark traversal and embedded pin_metrics."""
+        all_pins: List[Dict[str, Any]] = []
+        bookmark: Optional[str] = None
+        metrics_param = "&pin_metrics=true" if include_metrics else ""
+
+        while len(all_pins) < max_pins:
+            endpoint = f"pins?page_size=100{metrics_param}"
+            if bookmark:
+                endpoint += f"&bookmark={urllib.parse.quote(bookmark)}"
+
+            try:
+                res = self._request(endpoint)
+                items = res.get("items", [])
+                if not items:
+                    break
+                all_pins.extend(items)
+                bookmark = res.get("bookmark")
+                if not bookmark:
+                    break
+            except Exception as e:
+                print(f"[Warning] Error fetching pins batch: {e}")
+                break
+
+        return all_pins
+
+    def get_deep_account_overview(self) -> Dict[str, Any]:
+        """Fetch complete production account overview, boards, and all pins with live metrics."""
+        account = self.get_user_account()
+        raw_boards = self.get_boards(force_refresh=True)
+        board_map = {b["id"]: b["name"] for b in raw_boards}
+        pins = self.get_all_pins(include_metrics=True)
+
+        total_impressions = 0
+        total_pin_clicks = 0
+        total_outbound = 0
+        total_saves = 0
+        total_comments = 0
+
+        board_stats: Dict[str, Dict[str, Any]] = {
+            b["name"]: {
+                "id": b["id"],
+                "name": b["name"],
+                "pin_count": b.get("pin_count", 0),
+                "impressions": 0,
+                "pin_clicks": 0,
+                "outbound_clicks": 0,
+                "saves": 0,
+                "comments": 0,
+                "pin_ctr": 0.0,
+                "outbound_ctr": 0.0,
+            }
+            for b in raw_boards
+        }
+
+        active_pins_list: List[Dict[str, Any]] = []
+
+        for p in pins:
+            m = (
+                p.get("pin_metrics", {}).get("lifetime_metrics")
+                or p.get("pin_metrics", {}).get("90d")
+                or {}
+            )
+            imp = int(m.get("impression") or m.get("impressions") or 0)
+            save = int(m.get("save") or m.get("saves") or 0)
+            p_click = int(m.get("pin_click") or m.get("pin_clicks") or 0)
+            out_click = int(m.get("outbound_click") or m.get("outbound_clicks") or 0)
+            comment = int(m.get("comment") or m.get("comments") or 0)
+
+            total_impressions += imp
+            total_pin_clicks += p_click
+            total_outbound += out_click
+            total_saves += save
+            total_comments += comment
+
+            b_id = str(p.get("board_id") or "")
+            b_name = board_map.get(b_id, "Unknown Board")
+
+            if b_name in board_stats:
+                bs = board_stats[b_name]
+                bs["impressions"] += imp
+                bs["pin_clicks"] += p_click
+                bs["outbound_clicks"] += out_click
+                bs["saves"] += save
+                bs["comments"] += comment
+
+            if imp > 0 or p_click > 0 or out_click > 0 or save > 0:
+                p_ctr = round((p_click / imp * 100), 2) if imp > 0 else 0.0
+                out_ctr = round((out_click / imp * 100), 2) if imp > 0 else 0.0
+                active_pins_list.append({
+                    "id": p.get("id"),
+                    "title": p.get("title") or "Smart Spaces Pin",
+                    "board_id": b_id,
+                    "board_name": b_name,
+                    "link": p.get("link") or "",
+                    "created_at": p.get("created_at"),
+                    "creative_type": p.get("creative_type") or "REGULAR",
+                    "impressions": imp,
+                    "pin_clicks": p_click,
+                    "outbound_clicks": out_click,
+                    "saves": save,
+                    "comments": comment,
+                    "pin_ctr": p_ctr,
+                    "outbound_ctr": out_ctr,
+                })
+
+        # Calculate CTRs for boards
+        for b_name, bs in board_stats.items():
+            b_imp = bs["impressions"]
+            bs["pin_ctr"] = round((bs["pin_clicks"] / b_imp * 100), 2) if b_imp > 0 else 0.0
+            bs["outbound_ctr"] = round((bs["outbound_clicks"] / b_imp * 100), 2) if b_imp > 0 else 0.0
+
+        overall_pin_ctr = round((total_pin_clicks / total_impressions * 100), 2) if total_impressions > 0 else 0.0
+        overall_outbound_ctr = round((total_outbound / total_impressions * 100), 2) if total_impressions > 0 else 0.0
+        save_rate = round((total_saves / total_impressions * 100), 2) if total_impressions > 0 else 0.0
+
+        return {
+            "account": account,
+            "summary": {
+                "total_pins": len(pins),
+                "total_boards": len(raw_boards),
+                "monthly_views": account.get("monthly_views", total_impressions),
+                "total_impressions": total_impressions,
+                "total_pin_clicks": total_pin_clicks,
+                "total_outbound_clicks": total_outbound,
+                "total_saves": total_saves,
+                "total_comments": total_comments,
+                "pin_ctr": overall_pin_ctr,
+                "outbound_ctr": overall_outbound_ctr,
+                "save_rate": save_rate,
+                "active_pins_count": len(active_pins_list),
+                "indexing_pins_count": len(pins) - len(active_pins_list),
+            },
+            "board_stats": board_stats,
+            "active_pins": active_pins_list,
+        }
+
     def get_account_analytics(
         self, days: int = 30, metrics: Optional[List[str]] = None
     ) -> Dict[str, Any]:

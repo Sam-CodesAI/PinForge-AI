@@ -1,0 +1,32 @@
+{
+  "account_name": "Smart Spaces",
+  "username": "Smart_Spaces",
+  "account_id": "1132444406210096905",
+  "last_synced": "2026-11-03T07:13:46.623161+00:00",
+  "summary": {
+    "total_pins": 153,
+    "total_boards": 5,
+    "monthly_views": 197,
+    "total_impressions": 197,
+    "total_pin_clicks": 14,
+    "total_outbound_clicks": 6,
+    "total_saves": 0,
+    "total_comments": 0,
+    "pin_ctr": 7.11,
+    "outbound_ctr": 3.05,
+    "save_rate": 0.0,
+    "active_pins_count": 83,
+    "indexing_pins_count": 70,
+    "outbound_winners_count": 5
+  },
+  "save_multiplier_diagnosis": {
+    "current_saves": 0,
+    "bottleneck": "High commercial click intent without save-trigger prompts.",
+    "pixie_graph_impact": "Lack of saves prevents Pixie random walk graph clustering from broadcasting pins to adjacent users.",
+    "action_plan": [
+      "Inject '\ud83d\udccc SAVE THIS PIN for later' prompt overlays in all future 2:3 graphics.",
+      "Switch 40% of future publishing to 4-slide native carousels (demonstrated 100% CTR on Small Apartment Hacks).",
+      "Route all links through Next.js Bridge Gateway (/p/[slug]) to ensure domain trust and eliminate spam throttle risk."
+    ]
+  }
+}

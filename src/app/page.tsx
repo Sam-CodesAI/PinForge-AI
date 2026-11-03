@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
+  Activity,
   ArrowRight,
   Check,
   CheckCircle2,
@@ -349,6 +350,17 @@ export default function PinForgeApp() {
                 title="Amazon Associate Tracking ID"
               />
             </div>
+
+            <Link
+              href="/analytics"
+              className="flex items-center gap-1.5 rounded-xl border border-rose-500/40 bg-gradient-to-r from-rose-500/20 to-pink-500/10 px-3 py-1.5 text-xs font-semibold text-rose-300 hover:text-white hover:border-rose-500 transition-colors shadow-sm"
+            >
+              <Activity className="h-3.5 w-3.5 text-rose-400" />
+              <span>Analytics Suite</span>
+              <span className="rounded-full bg-rose-500/20 px-1.5 py-0.5 text-[9px] font-bold text-rose-300">
+                153 Pins
+              </span>
+            </Link>
 
             <a
               href="https://github.com/Sam-CodesAI/PinForge-AI"

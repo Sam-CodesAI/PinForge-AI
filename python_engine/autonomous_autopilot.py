@@ -77,6 +77,7 @@ class AutonomousAutopilot:
         publish_as_carousel: bool = False,
         track_a: bool = False,
         template_style: Optional[str] = None,
+        use_bridge_gateway: bool = True,
     ) -> Dict[str, Any]:
         """Runs 1 complete autonomous cycle."""
         cycle_start = time.perf_counter()
@@ -152,6 +153,7 @@ class AutonomousAutopilot:
             category=product.category,
             board_name=effective_board,
             template="bento_dark",
+            cta_text="📌 SAVE PIN • TAP FOR BEST DEAL ->",
         )
         variants = generate_all_pin_variants(pin_req)
 
@@ -193,30 +195,36 @@ class AutonomousAutopilot:
                     )
                     rental_callout = product.friction_badge or "100% RENTER FRIENDLY • NO DRILL"
 
+                    target_destination = (
+                        f"https://pinforge.vercel.app/p/{product.bridge_slug}?tag={self.affiliate_tag}"
+                        if (use_bridge_gateway and product.bridge_slug)
+                        else product.affiliate_url
+                    )
+
                     carousel_slides = [
                         {
                             "image_path": carousel_suite["slide_paths"][0],
                             "title": f"{copy_res.pin_title[:88]} (Slide 1/4)",
                             "description": copy_res.pin_description,
-                            "link": product.affiliate_url,
+                            "link": target_destination,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][1],
                             "title": _build_slide_title("Dimensions & Build Specs", product.title),
-                            "description": f"Full space-saving specifications, dimensions, and {spec_callout.lower()}. Check today's price! #AmazonAssociate",
-                            "link": product.affiliate_url,
+                            "description": f"Full space-saving specifications, dimensions, and {spec_callout.lower()}. 📌 Save this pin for later! #AmazonAssociate",
+                            "link": target_destination,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][2],
                             "title": _build_slide_title("Color & Angle Variants", product.title),
-                            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-                            "link": product.affiliate_url,
+                            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. 📌 Pin for later! #AmazonAssociate",
+                            "link": target_destination,
                         },
                         {
                             "image_path": carousel_suite["slide_paths"][3],
                             "title": _build_slide_title("Transform Your Space", product.title),
-                            "description": f"Real-world space-saving transformation. {rental_callout}. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-                            "link": product.affiliate_url,
+                            "description": f"Real-world space-saving transformation. {rental_callout}. 📌 Save this pin so you don't lose the link! #AmazonAssociate",
+                            "link": target_destination,
                         },
                     ]
                     live_pin_data = self.pinterest.publish_pin(
@@ -224,7 +232,7 @@ class AutonomousAutopilot:
                         description=copy_res.pin_description,
                         board_name=effective_board,
                         slides=carousel_slides,
-                        link=product.affiliate_url,
+                        link=target_destination,
                         alt_text=vision_meta.get("alt_text"),
                     )
                     logger.info(f"✅ Published live Carousel Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
@@ -250,12 +258,18 @@ class AutonomousAutopilot:
                                         chosen_variant = v
                                         break
 
+                    target_destination = (
+                        f"https://pinforge.vercel.app/p/{product.bridge_slug}?tag={self.affiliate_tag}"
+                        if (use_bridge_gateway and product.bridge_slug)
+                        else product.affiliate_url
+                    )
+
                     live_pin_data = self.pinterest.publish_pin(
                         title=copy_res.pin_title,
                         description=copy_res.pin_description,
                         board_name=effective_board,
                         image_path_or_url=chosen_variant.image_path,
-                        link=product.affiliate_url,
+                        link=target_destination,
                         alt_text=vision_meta.get("alt_text"),
                     )
                     logger.info(f"✅ Published live Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")

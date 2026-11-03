@@ -61,12 +61,11 @@ def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
         ]
 
 GENZ_COMMENT_HOOKS = [
-    "Would you use this in your kitchen or bathroom? Drop your vote below! 👇",
-    "Small space challenge: Could you fit everything in this setup? 🏠",
-    "Be honest: is your space organized or chaotic right now? Tell me below! 😂👇",
-    "Which room needs this most? Drop your vote below! ✨",
-    "Renter friendly or permanent upgrade? What do you think? 👇",
-    "Could this solve your storage clutter? Let us know below! 💬",
+    "📌 Save this pin for your next apartment move or weekend declutter! Tap for today's deal.",
+    "📌 Save this idea so you don't lose the link! Would you use this in your kitchen or bedroom? Drop your vote below! 👇",
+    "📌 Pin this to your home organization board before measuring your space! ✨",
+    "📌 Save this renter-friendly hack for later! Small space challenge: could this fix your clutter? 🏠",
+    "📌 Save this pin! Which room needs this upgrade most? Tell me below! ✨",
 ]
 
 
@@ -153,7 +152,7 @@ Key Features: {', '.join(req.features[:3]) if req.features else 'Top rated, high
 
 REQUIREMENTS:
 1. pin_title: MUST BE STRICTLY UNDER 100 CHARACTERS. Include high-intent search keywords and an emotional hook.
-2. pin_description: MUST BE STRICTLY UNDER 500 CHARACTERS. Explain why this product is a space-saving essential, include keywords naturally, inject an engaging Gen-Z conversational comment hook to drive high viral algorithmic engagement (e.g., 'Would you use this in your kitchen or bathroom? Drop your vote below! 👇' or 'Small space challenge: Could you fit everything in this setup? 🏠'), and end with the mandatory FTC disclosure hashtag: #AmazonAssociate
+2. pin_description: MUST BE STRICTLY UNDER 500 CHARACTERS. Explain why this product is a space-saving essential, include keywords naturally, inject a viral Save-Trigger hook to maximize Pinterest Pixie graph distribution (e.g., '📌 Save this pin for your next apartment move or weekend declutter! Tap to check today's deal.'), and end with the mandatory FTC disclosure hashtag: #AmazonAssociate
 3. hashtags: 5-7 popular Pinterest search tags (e.g. #SmallSpaceLiving, #OrganizationHacks, #AmazonFinds, #AmazonAssociate)
 4. board_recommendation: MUST BE EXACTLY ONE OF THESE 5 OFFICIAL BOARDS:
    - 'Small Apartment Hacks'
