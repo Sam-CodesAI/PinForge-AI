@@ -86,19 +86,33 @@ class TestV2StorageAndSecurity(unittest.TestCase):
         )
         self.assertTrue(gateway.is_configured)
 
-        # Test saving pin over HTTP/REST
-        test_pin = {
-            "id": "sb_101",
-            "asin": "B087F5K713",
-            "title": "Supabase Backed Pin",
-            "link": "https://amzn.to/test",
-            "board_id": "b_101",
-            "board_name": "Space Saving Kitchens",
-        }
-        gateway.save_published_pin(test_pin)
-        self.assertTrue(mock_post.called)
-        call_url = mock_post.call_args[0][0]
-        self.assertIn("/rest/v1/pinforge_pins", call_url)
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            tmp_path = Path(tmp_dir)
+            with patch("python_engine.storage.PUBLISHED_PINS_FILE", tmp_path / "published_pins.json"):
+                # Test saving pin over HTTP/REST
+                test_pin = {
+                    "id": "sb_101",
+                    "asin": "B087F5K713",
+                    "title": "Supabase Backed Pin",
+                    "link": "https://amzn.to/test",
+                    "board_id": "b_101",
+                    "board_name": "Space Saving Kitchens",
+                }
+                gateway.save_published_pin(test_pin)
+                self.assertTrue(mock_post.called)
+                call_url = mock_post.call_args[0][0]
+                self.assertIn("/rest/v1/pinforge_pins", call_url)
+                self.assertIn("on_conflict=pin_id", call_url)
+
+    def test_production_fails_closed_without_api_key(self):
+        """Verify endpoints fail closed with HTTP 500 when ENVIRONMENT=production and no API key configured."""
+        with patch.dict(os.environ, {"ENVIRONMENT": "production", "PINFORGE_API_KEY": "", "API_KEY": ""}):
+            res = self.client.post("/api/extract", json={"url_or_asin": "B087F5K713"})
+            self.assertEqual(res.status_code, 500)
+            self.assertIn("Production security invariant violated", res.json()["detail"])
 
     def test_api_key_security_enforcement(self):
         """Verify API key dependency protects endpoints when PINFORGE_API_KEY is configured."""

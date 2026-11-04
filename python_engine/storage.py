@@ -142,7 +142,7 @@ class SupabaseStorageGateway:
                     "affiliate_url": link,
                     "created_at": created_at,
                 }
-                endpoint = f"{self.supabase_url}/rest/v1/pinforge_pins"
+                endpoint = f"{self.supabase_url}/rest/v1/pinforge_pins?on_conflict=pin_id"
                 with httpx.Client(timeout=5.0) as client:
                     resp = client.post(endpoint, headers=self._headers, json=[row])
                     if resp.status_code >= 400:
@@ -256,7 +256,7 @@ class SupabaseStorageGateway:
             with httpx.Client(timeout=8.0) as client:
                 if pins_to_upsert:
                     client.post(
-                        f"{self.supabase_url}/rest/v1/pinforge_pins",
+                        f"{self.supabase_url}/rest/v1/pinforge_pins?on_conflict=pin_id",
                         headers=self._headers,
                         json=pins_to_upsert,
                     )

@@ -100,6 +100,11 @@ def verify_api_key(
     """Validate incoming API key against PINFORGE_API_KEY / API_KEY env vars."""
     expected_key = os.getenv("PINFORGE_API_KEY", os.getenv("API_KEY", "")).strip()
     if not expected_key:
+        if os.getenv("ENVIRONMENT") == "production" or os.getenv("NODE_ENV") == "production":
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Production security invariant violated: PINFORGE_API_KEY is not configured.",
+            )
         return True
     provided_key = api_key_header or (auth_bearer.credentials if auth_bearer else None)
     if not provided_key or provided_key != expected_key:
