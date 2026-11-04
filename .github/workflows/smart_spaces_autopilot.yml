@@ -140,8 +140,8 @@ jobs:
       - name: Commit & Push Autopilot History & Ledgers
         if: success()
         run: |
-          git config --local user.email "bot@smartspaces.internal"
-          git config --local user.name "Smart Spaces Autopilot"
+          git config --local user.email "samarthknimangre@gmail.com"
+          git config --local user.name "SAMARTH KALLAPPA NIMANGRE"
           git add python_engine/data/seen_products.json \
                   python_engine/data/autopilot_history.json \
                   python_engine/data/published_pins.json \
@@ -150,6 +150,8 @@ jobs:
             echo "No new history changes to commit."
           else
             git commit -m "chore(autopilot): update deduplication, performance ledger, and execution logs [skip ci]"
-            git pull --rebase origin main
+            git stash --include-untracked || true
+            git pull --rebase origin main || true
+            git stash pop || true
             git push origin main
           fi
