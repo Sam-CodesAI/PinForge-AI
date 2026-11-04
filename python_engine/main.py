@@ -10,12 +10,14 @@ import base64
 import io
 import json
 import logging
+import os
 import time
-from typing import List
+from typing import List, Optional
 import uuid
 
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import Depends, FastAPI, HTTPException, Response, Security, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import APIKeyHeader, HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.staticfiles import StaticFiles
 
 from python_engine.config import (
@@ -47,7 +49,7 @@ from python_engine.models import (
 from python_engine.ai_vision_curator import AIVisionCurator
 from python_engine.pin_generator import generate_pin_graphic
 from python_engine.rss_generator import generate_pinterest_rss
-from python_engine.scraper import fetch_product
+from python_engine.scraper import fetch_product, async_fetch_product
 from python_engine.seo_engine import generate_pin_copy
 from python_engine.visual_engine import (
     generate_visual_with_waterfall,
@@ -64,14 +66,50 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# Enable CORS for Next.js frontend
+# Allowed CORS origins
+CORS_ALLOWED_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:8000,https://pinforge.vercel.app,https://sam-codes.com,https://www.sam-codes.com",
+    ).split(",")
+    if origin.strip()
+]
+CANVA_APP_ORIGIN = os.getenv("CANVA_APP_ORIGIN", "").strip()
+if CANVA_APP_ORIGIN and CANVA_APP_ORIGIN not in CORS_ALLOWED_ORIGINS:
+    CORS_ALLOWED_ORIGINS.append(CANVA_APP_ORIGIN)
+
+# Enable CORS for Next.js frontend and authorized integrations
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=CORS_ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# API Key Security Dependency
+api_key_header_scheme = APIKeyHeader(name="X-API-Key", auto_error=False)
+bearer_scheme = HTTPBearer(auto_error=False)
+
+
+def verify_api_key(
+    api_key_header: Optional[str] = Security(api_key_header_scheme),
+    auth_bearer: Optional[HTTPAuthorizationCredentials] = Security(bearer_scheme),
+) -> bool:
+    """Validate incoming API key against PINFORGE_API_KEY / API_KEY env vars."""
+    expected_key = os.getenv("PINFORGE_API_KEY", os.getenv("API_KEY", "")).strip()
+    if not expected_key:
+        return True
+    provided_key = api_key_header or (auth_bearer.credentials if auth_bearer else None)
+    if not provided_key or provided_key != expected_key:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Unauthorized: Missing or invalid API key",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    return True
+
 
 # Mount static directory for rendered pins and assets
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
@@ -181,11 +219,11 @@ def generate_visual_endpoint(req: VisualGenerateRequest):
         raise HTTPException(status_code=500, detail=f"Visual generation failed: {str(err)}")
 
 
-@app.post("/api/extract", response_model=ProductData)
-def extract_product_endpoint(req: ExtractRequest):
+@app.post("/api/extract", response_model=ProductData, dependencies=[Depends(verify_api_key)])
+async def extract_product_endpoint(req: ExtractRequest):
     """Extract product data from Amazon URL, shortlink (amzn.to), or ASIN."""
     try:
-        product = fetch_product(req.url_or_asin, req.affiliate_tag)
+        product = await async_fetch_product(req.url_or_asin, req.affiliate_tag)
         return product
     except ValueError as val_err:
         raise HTTPException(status_code=400, detail=str(val_err))
@@ -194,7 +232,7 @@ def extract_product_endpoint(req: ExtractRequest):
         raise HTTPException(status_code=500, detail=f"Failed to extract Amazon product: {str(err)}")
 
 
-@app.post("/api/generate-pin", response_model=PinGenerateResponse)
+@app.post("/api/generate-pin", response_model=PinGenerateResponse, dependencies=[Depends(verify_api_key)])
 def generate_pin_endpoint(req: PinGenerateRequest):
     """Generate high-resolution 1000x1500 2:3 Pinterest Pin graphic."""
     try:
@@ -205,7 +243,7 @@ def generate_pin_endpoint(req: PinGenerateRequest):
         raise HTTPException(status_code=500, detail=f"Graphic generation failed: {str(err)}")
 
 
-@app.post("/api/generate-copy", response_model=PinCopyResponse)
+@app.post("/api/generate-copy", response_model=PinCopyResponse, dependencies=[Depends(verify_api_key)])
 def generate_copy_endpoint(req: CopyGenerationRequest):
     """Generate high-CTR title, SEO description, hashtags, board recommendation, and bridge review."""
     try:
@@ -216,7 +254,7 @@ def generate_copy_endpoint(req: CopyGenerationRequest):
         raise HTTPException(status_code=500, detail=f"Copy generation failed: {str(err)}")
 
 
-@app.post("/api/curate-vision")
+@app.post("/api/curate-vision", dependencies=[Depends(verify_api_key)])
 def curate_vision_endpoint(req: CurateVisionRequest):
     """Inspect product image with native Pillow CV extraction (<14ms) and multimodal AI."""
     import re
@@ -311,7 +349,7 @@ def get_pinterest_boards():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.post("/api/pinterest/publish")
+@app.post("/api/pinterest/publish", dependencies=[Depends(verify_api_key)])
 def publish_pinterest_pin(req: PinterestPublishRequest):
     """Programmatic Pin Creation via Pinterest API v5 (supports single pins and multi-slide carousels)."""
     try:
@@ -396,8 +434,8 @@ def get_analytics_ledger():
         raise HTTPException(status_code=500, detail=f"Failed to read ledger: {e}")
 
 
-@app.post("/api/analytics/sync")
-def trigger_analytics_sync():
+@app.post("/api/analytics/sync", dependencies=[Depends(verify_api_key)])
+async def trigger_analytics_sync():
     """Trigger live closed-loop sync with Pinterest API v5."""
     from python_engine.analytics_feedback_loop import AnalyticsFeedbackLoop
     try:
@@ -433,7 +471,7 @@ def export_analytics_csv():
     raise HTTPException(status_code=404, detail="Export file not found")
 
 
-@app.post("/api/autonomous/run")
+@app.post("/api/autonomous/run", dependencies=[Depends(verify_api_key)])
 def run_autonomous_cycle(req: AutonomousCycleRequest):
     """Run full Antigravity agentic cycle: Scrape -> Copy -> 2:3 Graphic -> Bridge -> Pinterest."""
     try:
@@ -468,7 +506,7 @@ def get_canva_app_status():
     return client.get_app_info()
 
 
-@app.post("/api/canva/autofill")
+@app.post("/api/canva/autofill", dependencies=[Depends(verify_api_key)])
 def autofill_canva_template(template_id: str, data: dict):
     """Trigger Canva Brand Template autofill with Amazon product data."""
     try:
@@ -483,7 +521,7 @@ def autofill_canva_template(template_id: str, data: dict):
     return result
 
 
-@app.post("/api/ai/hunt-and-publish")
+@app.post("/api/ai/hunt-and-publish", dependencies=[Depends(verify_api_key)])
 def ai_hunt_and_publish(publish_live: bool = True, track_a: bool = False):
     """Autonomously hunt a viral space-saving Amazon product, curate with vision, and publish live."""
     try:

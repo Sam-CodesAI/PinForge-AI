@@ -165,6 +165,18 @@ def resolve_shortlink(url: str) -> str:
     return url
 
 
+async def async_resolve_shortlink(url: str) -> str:
+    """Asynchronously follow HTTP 301/302 redirects using httpx.AsyncClient."""
+    if "amzn.to" in url or "a.co" in url or "bit.ly" in url:
+        try:
+            async with httpx.AsyncClient(follow_redirects=True, timeout=10.0) as client:
+                resp = await client.get(url, headers={"User-Agent": "Mozilla/5.0"})
+                return str(resp.url)
+        except Exception as err:
+            logger.warning(f"Failed to follow shortlink {url}: {err}")
+    return url
+
+
 def build_affiliate_url(asin: str, affiliate_tag: Optional[str] = None, domain: str = "amazon.com") -> str:
     """Build a clean Amazon affiliate destination link with the tag injected."""
     tag = affiliate_tag.strip() if affiliate_tag and affiliate_tag.strip() else DEFAULT_AFFILIATE_TAG
@@ -565,6 +577,175 @@ def scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict
         return None
 
 
+async def async_scrape_amazon_direct(asin: str, domain: str = "amazon.com") -> Optional[Dict]:
+    """Attempt direct stealth scrape using curl_cffi.AsyncSession with Chrome 124 TLS impersonation."""
+    url = f"https://www.{domain}/gp/aw/d/{asin}"
+    headers = {
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "cache-control": "no-cache",
+        "pragma": "no-cache",
+        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"macOS"',
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "none",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "user-agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+    }
+
+    try:
+        async with cffi_requests.AsyncSession(impersonate="chrome124") as session:
+            r = await session.get(url, headers=headers, timeout=12)
+            if r.status_code != 200 or "Robot Check" in r.text or "To discuss automated access" in r.text:
+                return None
+
+            soup = BeautifulSoup(r.text, "html.parser")
+            title_el = (
+                soup.select_one("#productTitle") or
+                soup.select_one("#title") or
+                soup.select_one(".product-title-word-break") or
+                soup.select_one("h1")
+            )
+            if not title_el:
+                return None
+
+            title = title_el.get_text(strip=True)
+            brand = None
+            brand_el = soup.select_one("#bylineInfo") or soup.select_one(".po-brand .po-break-word")
+            if brand_el:
+                brand = brand_el.get_text(strip=True).replace("Brand: ", "").replace("Visit the ", "").replace(" Store", "")
+
+            price = "$29.99"
+            orig_price = None
+            price_el = (
+                soup.select_one("#apex-pricetopay-accessibility-label") or
+                soup.select_one(".a-price .a-offscreen") or
+                soup.select_one("#corePriceDisplay_desktop_feature_div .a-price-whole") or
+                soup.select_one("#corePrice_desktop .a-offscreen") or
+                soup.select_one(".priceToPay .a-offscreen")
+            )
+            if price_el:
+                price = format_usd_price(price_el.get_text(strip=True))
+
+            list_price_el = (
+                soup.select_one(".basisPrice .a-offscreen") or
+                soup.select_one("span.a-text-price .a-offscreen") or
+                soup.select_one("#corePriceDisplay_desktop_feature_div .a-text-price .a-offscreen")
+            )
+            if list_price_el:
+                orig_price = format_usd_price(list_price_el.get_text(strip=True))
+
+            discount_percent = calculate_discount_percent(price, orig_price)
+
+            coupon_text = None
+            coupon_el = soup.select_one("span.couponBadge, label[for*='coupon'], .couponBadge, span[id*='coupon']")
+            if coupon_el:
+                coupon_text = coupon_el.get_text(strip=True)
+
+            bought_past_month = None
+            bought_el = soup.select_one("#social-proofing-faceout-title-tk_bought, .social-proofing-faceout-title-tk_bought")
+            if bought_el:
+                bought_past_month = bought_el.get_text(strip=True)
+
+            deal_badge = None
+            deal_el = soup.select_one("span.dealBadge, .dealBadge, #dealBadgeSupportingText, .badge-deal")
+            if deal_el:
+                deal_badge = deal_el.get_text(strip=True)
+
+            specs_dict = {}
+            for row in soup.select("#productOverview_feature_div tr, #productDetails_techSpec_section_1 tr"):
+                tds = row.select("td, th")
+                if len(tds) >= 2:
+                    k = tds[0].get_text(strip=True)
+                    v = tds[1].get_text(strip=True)
+                    if k and v:
+                        specs_dict[k] = v
+
+            for row in soup.select("#productOverview_feature_div .po-row"):
+                k_el = row.select_one(".po-col-left, .po-expander-label")
+                v_el = row.select_one(".po-col-right, .po-break-word")
+                if k_el and v_el:
+                    k = k_el.get_text(strip=True)
+                    v = v_el.get_text(strip=True)
+                    if k and v:
+                        specs_dict[k] = v
+
+            image_url = ""
+            add_images = []
+            img_el = soup.select_one("#landingImage") or soup.select_one("#imgBlkFront") or soup.select_one("#main-image")
+            if img_el:
+                dyn_data = img_el.get("data-a-dynamic-image")
+                if dyn_data:
+                    try:
+                        dyn_dict = json.loads(dyn_data)
+                        sorted_imgs = sorted(dyn_dict.items(), key=lambda x: x[1][0] * x[1][1], reverse=True)
+                        if sorted_imgs:
+                            image_url = resolve_master_image_url(sorted_imgs[0][0])
+                            add_images = [resolve_master_image_url(img[0]) for img in sorted_imgs[1:5]]
+                    except Exception:
+                        pass
+                if not image_url:
+                    image_url = resolve_master_image_url(img_el.get("src", ""))
+
+            rating = 4.7
+            rating_el = soup.select_one('#acrPopover [title*="out of 5"]') or soup.select_one(".a-icon-alt")
+            if rating_el:
+                match = re.search(r"([0-9.]+)\s+out of", rating_el.get_text())
+                if match:
+                    rating = float(match.group(1))
+
+            review_count = "1,000+ reviews"
+            rev_el = soup.select_one("#acrCustomerReviewText") or soup.select_one('[data-hook="total-review-count"]')
+            if rev_el:
+                review_count = rev_el.get_text(strip=True)
+
+            features = []
+            for li in soup.select("#feature-bullets li, #featurebullets_feature_div li"):
+                txt = li.get_text(strip=True)
+                if txt and not any(skip in txt.lower() for skip in ["make sure this fits", "see more product details"]):
+                    features.append(txt)
+
+            friction_highlights, friction_badge = mine_friction_highlights(
+                title=title,
+                bullets=features,
+                raw_text=" ".join(features),
+                specs=specs_dict,
+            )
+            mounting_type, is_renter_safe, _ = classify_mounting_and_safety(
+                specs=specs_dict,
+            )
+
+            return {
+                "title": title,
+                "brand": brand,
+                "price": price,
+                "original_price": orig_price,
+                "discount_percent": discount_percent,
+                "rating": rating,
+                "review_count": review_count,
+                "image_url": image_url,
+                "additional_images": add_images,
+                "features": features[:4],
+                "specs": specs_dict,
+                "mounting_type": mounting_type,
+                "is_renter_safe": is_renter_safe,
+                "deal_badge": deal_badge,
+                "coupon_text": coupon_text,
+                "bought_past_month": bought_past_month,
+                "friction_highlights": friction_highlights,
+                "friction_badge": friction_badge,
+            }
+    except Exception as err:
+        logger.warning(f"Async Amazon scrape failed for {asin}: {err}")
+        return None
+
+
 def mine_friction_highlights(
     title: str,
     bullets: Optional[List[str]] = None,
@@ -690,6 +871,212 @@ def search_duckduckgo_title(asin: str) -> Optional[str]:
     except Exception as err:
         logger.warning(f"DuckDuckGo fallback search failed for {asin}: {err}")
     return None
+
+
+async def async_search_duckduckgo_title(asin: str) -> Optional[str]:
+    """Query DuckDuckGo asynchronously via curl_cffi.AsyncSession."""
+    try:
+        query = f"{asin} amazon"
+        url = f"https://html.duckduckgo.com/html/?q={urllib.parse.quote(query)}"
+        async with cffi_requests.AsyncSession(impersonate="chrome124") as session:
+            r = await session.get(url, timeout=8)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, "html.parser")
+                results = soup.select(".result__title")
+                for res in results[:8]:
+                    text = res.get_text(strip=True)
+                    if re.search(r"\bAmazon(?:\.[a-z]+)?\b", text, flags=re.IGNORECASE):
+                        cleaned = re.sub(r"^Amazon(?:\.[a-z]+)?\s*:\s*", "", text, flags=re.IGNORECASE).strip()
+                        cleaned = re.sub(r"\s*[-|:]\s*Amazon(?:\.[a-z]+)?.*$", "", cleaned, flags=re.IGNORECASE).strip()
+                        cleaned = re.sub(r"\.\.\.$", "", cleaned).strip()
+                        if (
+                            cleaned.lower() not in ["homepage", "amazon", "amazon.com", "online shopping", "sign in", "cart", ""]
+                            and len(cleaned) >= 8
+                        ):
+                            return cleaned
+    except Exception as err:
+        logger.warning(f"Async DuckDuckGo fallback search failed for {asin}: {err}")
+    return None
+
+
+async def async_fetch_product(
+    url_or_input: str,
+    affiliate_tag: Optional[str] = None,
+    known_image_url: Optional[str] = None,
+    known_title: Optional[str] = None,
+    known_price: Optional[str] = None,
+) -> ProductData:
+    """Asynchronous unified entry point to extract and resolve Amazon product details via AsyncSession/httpx."""
+    resolved_url = await async_resolve_shortlink(url_or_input)
+    asin = extract_asin(resolved_url)
+
+    if not asin:
+        raise ValueError(f"Could not extract a valid 10-character Amazon ASIN from input: '{url_or_input}'")
+
+    affiliate_url = build_affiliate_url(asin, affiliate_tag)
+
+    def _to_high_res(img_url: Optional[str]) -> str:
+        return resolve_master_image_url(img_url)
+
+    clean_known_image = _to_high_res(known_image_url)
+
+    # Tier 1: Check verified premier catalog
+    if asin in VERIFIED_CATALOG:
+        cat_data = VERIFIED_CATALOG[asin]
+        clean_title = clean_amazon_title(cat_data["title"])
+        slug = f"{slugify(clean_title)}-{asin.lower()}"
+        m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=cat_data.get("features", []))
+        f_highlights, f_badge = mine_friction_highlights(
+            title=cat_data["title"],
+            bullets=cat_data.get("features", []),
+        )
+        cat_price = format_usd_price(cat_data.get("price", "$29.99"))
+        cat_orig = cat_data.get("original_price")
+        cat_discount = cat_data.get("discount_percent") or calculate_discount_percent(cat_price, cat_orig)
+
+        return ProductData(
+            asin=asin,
+            title=clean_title,
+            brand=cat_data.get("brand"),
+            category=cat_data.get("category", "Home Organization"),
+            price=cat_price,
+            original_price=cat_orig,
+            discount_percent=cat_discount,
+            rating=cat_data.get("rating", 4.8),
+            review_count=cat_data.get("review_count", "1,500+ ratings"),
+            image_url=_to_high_res(cat_data.get("image_url")) or clean_known_image,
+            additional_images=[_to_high_res(img) for img in cat_data.get("additional_images", [])],
+            features=cat_data.get("features", []),
+            friction_highlights=f_highlights,
+            friction_badge=f_badge,
+            mounting_type=m_type,
+            is_renter_safe=r_safe,
+            deal_badge="Amazon's Choice" if cat_discount and cat_discount > 10 else None,
+            coupon_text=None,
+            bought_past_month="10K+ bought in past month",
+            affiliate_url=affiliate_url,
+            bridge_slug=slug,
+            raw_source="verified_catalog",
+        )
+
+    # Tier 2: Async stealth scrape
+    scraped = await async_scrape_amazon_direct(asin)
+    if scraped and scraped.get("title"):
+        clean_title = clean_amazon_title(scraped["title"])
+        slug = f"{slugify(clean_title)}-{asin.lower()}"
+        resolved_img = _to_high_res(scraped["image_url"]) or clean_known_image
+        price_str = format_usd_price(scraped.get("price") or known_price)
+        orig_price_str = scraped.get("original_price")
+        discount_pct = scraped.get("discount_percent") or calculate_discount_percent(price_str, orig_price_str)
+        return ProductData(
+            asin=asin,
+            title=clean_title,
+            brand=scraped.get("brand"),
+            category="Amazon Bestsellers",
+            price=price_str,
+            original_price=orig_price_str,
+            discount_percent=discount_pct,
+            rating=scraped.get("rating", 4.7),
+            review_count=scraped.get("review_count", "1,200+ ratings"),
+            image_url=resolved_img,
+            additional_images=[_to_high_res(img) for img in scraped.get("additional_images", [])],
+            features=scraped.get("features", []),
+            friction_highlights=scraped.get("friction_highlights", []),
+            friction_badge=scraped.get("friction_badge"),
+            mounting_type=scraped.get("mounting_type"),
+            is_renter_safe=scraped.get("is_renter_safe", True),
+            deal_badge=scraped.get("deal_badge"),
+            coupon_text=scraped.get("coupon_text"),
+            bought_past_month=scraped.get("bought_past_month"),
+            affiliate_url=affiliate_url,
+            bridge_slug=slug,
+            raw_source="async_stealth_scraper",
+        )
+
+    # Tier 3: Search DuckDuckGo snippet fallback
+    valid_known_title = (
+        known_title
+        if (known_title and known_title.strip().lower() not in ["homepage", "amazon", "amazon.com", ""] and len(known_title.strip()) >= 5)
+        else None
+    )
+    ddg_title = valid_known_title or await async_search_duckduckgo_title(asin) or known_title
+    if ddg_title:
+        clean_title = clean_amazon_title(ddg_title)
+        slug = f"{slugify(clean_title)}-{asin.lower()}"
+        fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01.jpg"
+        ddg_features = [
+            "Top-rated Amazon customer favorite with verified reviews",
+            "High quality build and materials engineered for everyday reliability",
+            "Eligible for fast Prime delivery and hassle-free 30-day returns",
+        ]
+        m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=ddg_features)
+        f_highlights, f_badge = mine_friction_highlights(title=clean_title, bullets=ddg_features)
+        price_str = format_usd_price(known_price or "$39.99")
+        orig_price_str = "$49.99"
+        return ProductData(
+            asin=asin,
+            title=clean_title,
+            brand="Amazon Choice",
+            category="Smart Home & Tech",
+            price=price_str,
+            original_price=orig_price_str,
+            discount_percent=calculate_discount_percent(price_str, orig_price_str) or 20,
+            rating=4.7,
+            review_count="2,400+ ratings",
+            image_url=_to_high_res(fallback_image),
+            additional_images=[],
+            features=ddg_features,
+            friction_highlights=f_highlights,
+            friction_badge=f_badge,
+            mounting_type=m_type,
+            is_renter_safe=r_safe,
+            deal_badge=None,
+            coupon_text=None,
+            bought_past_month=None,
+            affiliate_url=affiliate_url,
+            bridge_slug=slug,
+            raw_source="async_ddg_fallback",
+        )
+
+    # Tier 4: Fallback for any standard ASIN with verified image
+    fallback_title = known_title or f"Curated Amazon Selection ({asin})"
+    fallback_image = clean_known_image or f"https://m.media-amazon.com/images/P/{asin}.01.jpg"
+    slug = f"amazon-find-{asin.lower()}"
+    cdn_features = [
+        "High-demand viral product trending across social channels",
+        "Rated 4+ stars with thousands of positive customer reviews",
+        "Prime 2-day shipping and standard Amazon return protection",
+    ]
+    m_type, r_safe, _ = classify_mounting_and_safety(specs={}, bullets=cdn_features)
+    f_highlights, f_badge = mine_friction_highlights(title=fallback_title, bullets=cdn_features)
+    price_str = format_usd_price(known_price or "$29.99")
+    orig_price_str = "$39.99"
+
+    return ProductData(
+        asin=asin,
+        title=clean_amazon_title(fallback_title),
+        brand="Amazon Find",
+        category="Trending Finds",
+        price=price_str,
+        original_price=orig_price_str,
+        discount_percent=calculate_discount_percent(price_str, orig_price_str) or 25,
+        rating=4.8,
+        review_count="1,500+ ratings",
+        image_url=_to_high_res(fallback_image),
+        additional_images=[],
+        features=cdn_features,
+        friction_highlights=f_highlights,
+        friction_badge=f_badge,
+        mounting_type=m_type,
+        is_renter_safe=r_safe,
+        deal_badge=None,
+        coupon_text=None,
+        bought_past_month=None,
+        affiliate_url=affiliate_url,
+        bridge_slug=slug,
+        raw_source="async_cdn_fallback",
+    )
+
 
 
 def fetch_product(

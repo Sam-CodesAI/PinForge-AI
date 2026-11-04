@@ -42,6 +42,15 @@ PINTEREST_API_BASE = "https://api.pinterest.com/v5"
 
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
+try:
+    from python_engine.storage import default_storage
+except ImportError:
+    try:
+        from storage import default_storage
+    except ImportError:
+        default_storage = None
+
+
 class PinterestClient:
     """Production client for Pinterest API v5 with self-healing token checks and sandbox auto-detection."""
 
@@ -763,7 +772,10 @@ class PinterestClient:
             else:
                 pins.append(pin_record)
 
-            ledger_path.write_text(json.dumps(pins, indent=2))
+            if default_storage is not None:
+                default_storage.save_published_pin(pin_record)
+            else:
+                ledger_path.write_text(json.dumps(pins, indent=2))
         except Exception as e:
             print(f"[Warning] Failed to record published pin: {e}")
 

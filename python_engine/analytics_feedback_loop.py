@@ -26,9 +26,14 @@ from typing import Any, Dict, List, Optional
 try:
     from python_engine.pinterest_client import PinterestClient
     from python_engine.config import DATA_DIR
+    from python_engine.storage import default_storage
 except ImportError:
     from pinterest_client import PinterestClient
     from config import DATA_DIR
+    try:
+        from storage import default_storage
+    except ImportError:
+        default_storage = None
 
 logger = logging.getLogger("PinForge.AnalyticsLoop")
 
@@ -139,7 +144,12 @@ class AnalyticsFeedbackLoop:
             except Exception as e:
                 logger.warning(f"Live Pinterest pin query failed: {e}")
 
-        # Fallback to local published pins
+        # Fallback to durable Supabase / local published pins
+        if default_storage is not None:
+            stored = default_storage.load_published_pins()
+            if stored:
+                return stored
+
         if PUBLISHED_PINS_FILE.exists():
             try:
                 local_data = json.loads(PUBLISHED_PINS_FILE.read_text())
@@ -443,15 +453,23 @@ class AnalyticsFeedbackLoop:
             "all_ranked_pins": ranked_pins,
         }
 
-        # Save all files atomically
-        try:
-            PERFORMANCE_LEDGER_FILE.write_text(json.dumps(ledger_payload, indent=2))
-            ACCOUNT_OVERVIEW_FILE.write_text(json.dumps(account_overview, indent=2))
-            BOARD_ANALYTICS_FILE.write_text(json.dumps(board_summary, indent=2))
-            PUBLISHED_PINS_FILE.write_text(json.dumps(sync_published_list, indent=2))
-            logger.info("💾 All production analytics files successfully written to data/ directory.")
-        except Exception as e:
-            logger.error(f"Failed to write analytics files: {e}")
+        # Save all files atomically and sync with Supabase pinforge_pins & pinforge_analytics
+        if default_storage is not None:
+            default_storage.sync_analytics_cycle(
+                ranked_pins=ranked_pins,
+                account_overview=account_overview,
+                board_summary=board_summary,
+                sync_published_list=sync_published_list,
+            )
+        else:
+            try:
+                PERFORMANCE_LEDGER_FILE.write_text(json.dumps(ledger_payload, indent=2))
+                ACCOUNT_OVERVIEW_FILE.write_text(json.dumps(account_overview, indent=2))
+                BOARD_ANALYTICS_FILE.write_text(json.dumps(board_summary, indent=2))
+                PUBLISHED_PINS_FILE.write_text(json.dumps(sync_published_list, indent=2))
+                logger.info("💾 All production analytics files successfully written to data/ directory.")
+            except Exception as e:
+                logger.error(f"Failed to write analytics files: {e}")
 
         return {
             "overview": account_overview,
