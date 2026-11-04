@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15T08:36:26.569695+00:00",
-    "status": "success",
-    "execution_time_seconds": 42.04,
-    "product": {
-      "asin": "B07T7N28LN",
-      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-      "price": "$19.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Cabinet Chaos? Fixed: YouCopia UpSpace Height Adjustable Bottle Organizer! \ud83d\udd25\u2728",
-      "description": "Your deep cabinets are eating up space? The YouCopia UpSpace height-adjustable organizer turns random clutter into a sleek, accessible setup. Perfect for sauces, spices, or skincare. It\u2019s the small-space hack that actually works. Which room is your biggest headache? Kitchen or bath? \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#CabinetStorage",
-        "#AmazonFinds",
-        "#HomeHacks",
-        "#SmartSpaces",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_fa73cc4c5e.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c48d9523c2.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_eb7d27225d.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_2096b8649d.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_0df7c0f99a.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_0df7c0f99a.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_3e2cf62b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_3e2cf62b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_3e2cf62b.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_3e2cf62b.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_3e2cf62b.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "title": "Cabinet Chaos? Fixed: YouCopia UpSpace Height Adjustable Bottle Organizer! \ud83d\udd25\u2728",
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "created_at": "2026-10-15T08:36:26",
-      "is_removable": false,
-      "is_owner": true,
-      "board_section_id": null,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "parent_pin_id": null,
-      "has_been_promoted": false,
-      "id": "1132444268836691176",
-      "board_id": "1132444337492930442",
-      "dominant_color": "#2b2d2a",
-      "pin_metrics": null,
-      "is_product": false,
-      "description": "Your deep cabinets are eating up space? The YouCopia UpSpace height-adjustable organizer turns random clutter into a sleek, accessible setup. Perfect for sauces, spices, or skincare. It\u2019s the small-space hack that actually works. Which room is your biggest headache? Kitchen or bath? \ud83d\udc47 #AmazonAssociate",
-      "is_standard": true,
-      "creative_type": "REGULAR",
-      "product_tags": [],
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "pin_id": "1132444268836691176"
-    }
-  },
-  {
     "timestamp": "2026-10-15T17:52:28.918020+00:00",
     "status": "success",
     "execution_time_seconds": 40.64,
@@ -16635,6 +16489,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_7d480d0f.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-04T20:31:15.419989+00:00",
+    "status": "success",
+    "execution_time_seconds": 16.18,
+    "product": {
+      "asin": "B0833YRXKT",
+      "title": "Foldable Underwear Drawer Organizer  Closet Dividers",
+      "price": "$16.98",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0833YRXKT?tag=smartspace07-21",
+      "bridge_slug": "foldable-underwear-drawer-organizer-closet-dividers-b0833yrxkt"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#1F2937",
+      "accent_hex": "#06B6D4",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Your Messy Drawer Today",
+      "secondary_hook": "Foldable fabric organizers for instant closet glow-up",
+      "target_audience": "Minimalists",
+      "alt_text": "Set of 6 gray fabric foldable underwear drawer organizers and closet dividers shown in various sizes.",
+      "cv_features": {
+        "rb_ratio": 1.003,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 35.0,
+        "edge_clutter": 38.5,
+        "dominant_hex": "#7a7979",
+        "accent_hex": "#eec076",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.003,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 35.0,
+      "edge_clutter": 38.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Ban Underwear Chaos: Foldable Drawer Dividers! \ud83e\udde6\u2728 Smart Spaces",
+      "description": "Turn messy drawers into aesthetic vaults with these foldable dividers! Perfect for small spaces that need maximum organization without the bulk. Would you use this for socks, makeup, or stationery? Drop your pick below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#DrawerOrganization",
+        "#ClosetHacks",
+        "#SmallSpaceLiving",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#OrganizationGoals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_87ad5bf8fb.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_b9e19e1445.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_6c5787965f.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ba09b1ded8.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb346943b3.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_cb346943b3.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_98a9236c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_98a9236c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_98a9236c.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_98a9236c.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_98a9236c.jpg",
+      "style": "story"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
