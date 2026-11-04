@@ -11,6 +11,18 @@
     "pin_ctr": 7.27,
     "outbound_ctr": 3.64
   },
+  "Small Apartment Hacks": {
+    "board_id": "1132444337492933749",
+    "pin_count": 24,
+    "avg_aes": 0.33,
+    "impressions": 25,
+    "pin_clicks": 2,
+    "outbound_clicks": 1,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 8.0,
+    "outbound_ctr": 4.0
+  },
   "Studio Living Ideas": {
     "board_id": "1132444337492933752",
     "pin_count": 27,
@@ -34,18 +46,6 @@
     "comments": 0,
     "pin_ctr": 3.85,
     "outbound_ctr": 0.0
-  },
-  "Small Apartment Hacks": {
-    "board_id": "1132444337492933749",
-    "pin_count": 24,
-    "avg_aes": 0.33,
-    "impressions": 25,
-    "pin_clicks": 2,
-    "outbound_clicks": 1,
-    "saves": 0,
-    "comments": 0,
-    "pin_ctr": 8.0,
-    "outbound_ctr": 4.0
   },
   "Space Saving Kitchens": {
     "board_id": "1132444337492933750",

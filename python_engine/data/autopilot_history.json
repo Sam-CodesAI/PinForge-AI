@@ -1,296 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14T18:08:49.018845+00:00",
-    "status": "success",
-    "execution_time_seconds": 41.55,
-    "product": {
-      "asin": "B08GLQ4M19",
-      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
-      "price": "$17.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Fix Messy Drawers? 6-Pack Dividers Fix It! \u2705 Small Space Hack",
-      "description": "Say goodbye to drawer chaos! These 6-pack Lifewit dividers transform your cluttered junk drawer into an organized aesthetic zone. Perfect for utensils, socks, or gadgets. Small space challenge: Can you fit everything in one drawer? Drop your setup below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#DrawerOrganization",
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#KitchenHacks",
-        "#AmazonDeals",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e031e71034.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_931f022e10.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_1aa7421f78.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_7a088e29f6.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a85e74943d.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a85e74943d.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_13cadef2.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_13cadef2.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_13cadef2.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_13cadef2.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_13cadef2.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": {
-      "product_tags": [],
-      "is_owner": true,
-      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
-      "creative_type": "REGULAR",
-      "pin_metrics": null,
-      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "board_section_id": null,
-      "is_product": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "description": "Say goodbye to drawer chaos! These 6-pack Lifewit dividers transform your cluttered junk drawer into an organized aesthetic zone. Perfect for utensils, socks, or gadgets. Small space challenge: Can you fit everything in one drawer? Drop your setup below! \ud83d\udc47 #AmazonAssociate",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "created_at": "2026-10-14T18:08:48",
-      "is_standard": true,
-      "board_id": "1132444337492933750",
-      "id": "1132444268836644629",
-      "parent_pin_id": null,
-      "title": "Fix Messy Drawers? 6-Pack Dividers Fix It! \u2705 Small Space Hack",
-      "is_removable": false,
-      "dominant_color": "#2b2d2a",
-      "has_been_promoted": false,
-      "pin_id": "1132444268836644629"
-    }
-  },
-  {
-    "timestamp": "2026-10-14T21:00:25.834675+00:00",
-    "status": "success",
-    "execution_time_seconds": 49.62,
-    "product": {
-      "asin": "B08151T931",
-      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
-      "price": "$34.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Small Space Savior: VASAGLE 4-Tier Slim Rolling Cart! \u2705\u2728 @Smart_Spaces",
-      "description": "Ditch the clutter chaos! \ud83d\udeab This slim VASAGLE cart slides under desks or bed frames to reclaim wasted space. Perfect for snacks, tech cables, or bathroom essentials. Smart Spaces approved! \ud83d\udca1 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#SmallSpaceLiving",
-        "#HomeOrganization",
-        "#AmazonFinds",
-        "#RentersLife",
-        "#StorageSolutions",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f279bf1e27.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c604657dc9.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_ac9358580b.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_870b15f0e1.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6d2928f34b.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6d2928f34b.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_ba410a5d.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_ba410a5d.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_ba410a5d.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_ba410a5d.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ba410a5d.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "creative_type": "REGULAR",
-      "pin_metrics": null,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "description": "Ditch the clutter chaos! \ud83d\udeab This slim VASAGLE cart slides under desks or bed frames to reclaim wasted space. Perfect for snacks, tech cables, or bathroom essentials. Smart Spaces approved! \ud83d\udca1 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board_section_id": null,
-      "is_standard": true,
-      "title": "Small Space Savior: VASAGLE 4-Tier Slim Rolling Cart! \u2705\u2728 @Smart_Spaces",
-      "is_product": false,
-      "product_tags": [],
-      "has_been_promoted": false,
-      "parent_pin_id": null,
-      "is_removable": false,
-      "id": "1132444268836656913",
-      "created_at": "2026-10-14T21:00:25",
-      "dominant_color": "#2b2d2a",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "link": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
-      "is_owner": true,
-      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
-      "board_id": "1132444337492933751",
-      "pin_id": "1132444268836656913"
-    }
-  },
-  {
     "timestamp": "2026-10-15T00:02:37.961917+00:00",
     "status": "success",
     "execution_time_seconds": 43.22,
@@ -16972,5 +16681,169 @@
     "live_pinterest": {
       "error": "Pinterest API Error (401) on GET boards?page_size=100: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
     }
+  },
+  {
+    "timestamp": "2026-11-04T02:43:21.451251+00:00",
+    "status": "success",
+    "execution_time_seconds": 1.33,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Sliding Under Sink Organizer",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
+      "bridge_slug": "sliding-under-sink-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Reclaim Your Space: Gliding Under Sink Organizer! \u2728\ud83c\udfaf",
+      "description": "Swiftly banish sink clutter with this slick sliding organizer. Maximize every inch of your cabinet without bending or battling crammed bottles. Perfect for both kitchen and bath. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#UnderSinkOrganizer",
+        "#KitchenStorage",
+        "#BathroomDecor",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#CleaningHacks",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "http://localhost/pin.png"
+      }
+    ],
+    "track_a_lifestyle": null,
+    "carousel": {
+      "slides": [
+        "/tmp/s1.png",
+        "/tmp/s2.png",
+        "/tmp/s3.png",
+        "/tmp/s4.png"
+      ],
+      "composite": "/tmp/comp.png",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-11-04T03:01:24.486718+00:00",
+    "status": "success",
+    "execution_time_seconds": 1.14,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Sliding Under Sink Organizer",
+      "price": "$24.99",
+      "rating": 4.7,
+      "affiliate_url": "https://amazon.com/dp/B093GKKQ65?tag=pinforge",
+      "bridge_slug": "sliding-under-sink-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Sliding Under Sink Organizer - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Under Sink Chaos? Fixed: Aesthetic 2-Tier Sliding Organizer! \ud83d\udd25\u2728",
+      "description": "Stop drowning in spray bottles! This 2-tier sliding cabinet transforms cramped under-sink zones into ultra-organized displays. It\u2019s the perfect small space hack for renters and kitchen lovers who hate digging for sponges. Clean, minimalist aesthetic included. \u2728 Would you put this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#UnderSinkStorage",
+        "#HomeMakeover",
+        "#AmazonDeals",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "http://localhost/pin.png"
+      }
+    ],
+    "track_a_lifestyle": null,
+    "carousel": {
+      "slides": [
+        "/tmp/s1.png",
+        "/tmp/s2.png",
+        "/tmp/s3.png",
+        "/tmp/s4.png"
+      ],
+      "composite": "/tmp/comp.png",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
   }
 ]

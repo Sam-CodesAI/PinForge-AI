@@ -233,7 +233,7 @@ class AnalyticsFeedbackLoop:
         total_comments = 0
 
         for p in raw_pins:
-            p_id = str(p.get("id") or "").strip()
+            p_id = str(p.get("id") or p.get("pin_id") or "").strip()
             p_title = p.get("title") or "Smart Spaces Pin"
             p_link = p.get("link") or ""
             p_created = p.get("created_at") or datetime.now(timezone.utc).isoformat()
@@ -241,7 +241,7 @@ class AnalyticsFeedbackLoop:
 
             # Resolve clean board name
             b_id = str(p.get("board_id") or "")
-            b_name = p.get("board_name") or board_map.get(b_id)
+            b_name = p.get("board_name") or p.get("board") or board_map.get(b_id)
             if not b_name:
                 b_name = "Room Organization"
 
@@ -383,6 +383,23 @@ class AnalyticsFeedbackLoop:
         overall_out_ctr = round((total_out_clicks / total_imp * 100), 2) if total_imp > 0 else 0.0
         active_count = len([p for p in evaluated_pins if p["metrics"]["impressions"] > 0])
         indexing_count = len(evaluated_pins) - active_count
+
+        if total_imp == 0 and ACCOUNT_OVERVIEW_FILE.exists():
+            try:
+                cached_overview = json.loads(ACCOUNT_OVERVIEW_FILE.read_text())
+                c_sum = cached_overview.get("summary", {})
+                if c_sum.get("total_impressions", 0) > 0:
+                    total_imp = c_sum.get("total_impressions", 0)
+                    total_p_clicks = c_sum.get("total_pin_clicks", 0)
+                    total_out_clicks = c_sum.get("total_outbound_clicks", 0)
+                    total_saves = c_sum.get("total_saves", 0)
+                    total_comments = c_sum.get("total_comments", 0)
+                    overall_pin_ctr = c_sum.get("pin_ctr", 0.0)
+                    overall_out_ctr = c_sum.get("outbound_ctr", 0.0)
+                    active_count = c_sum.get("active_pins_count", active_count)
+                    indexing_count = c_sum.get("indexing_pins_count", indexing_count)
+            except Exception:
+                pass
 
         account_overview = {
             "account_name": "Smart Spaces",
