@@ -271,5 +271,38 @@ class SupabaseStorageGateway:
             logger.warning(f"Supabase analytics batch sync skipped: {e}")
 
 
-# Global storage gateway singleton
+class SutraDBCatalogMatcher:
+    """Connects PinForge product catalog to SutraDB for hybrid vector deduplication."""
+
+    def __init__(self, base_url: Optional[str] = None, api_key: Optional[str] = None):
+        raw_url = base_url or os.getenv("SUTRADB_URL") or "http://127.0.0.1:8000"
+        self.base_url = raw_url.rstrip("/")
+        self.api_key = api_key or os.getenv("SUTRADB_API_KEY")
+
+    def check_duplicate(self, title: str, threshold: float = 0.85) -> Optional[Dict[str, Any]]:
+        """Queries SutraDB product collection. Returns match dict if similarity >= threshold."""
+        if not title:
+            return None
+        try:
+            headers = {"Accept": "application/json"}
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+            with httpx.Client(timeout=2.0) as client:
+                res = client.post(
+                    f"{self.base_url}/collections/pinforge_catalog/query",
+                    headers=headers,
+                    json={"text": title, "top_k": 1, "hybrid": True},
+                )
+                if res.status_code == 200:
+                    data = res.json()
+                    results = data.get("results", [])
+                    if results and results[0].get("score", 0) >= threshold:
+                        return results[0]
+        except Exception:
+            pass
+        return None
+
+
+# Global storage gateway and matcher singletons
 default_storage = SupabaseStorageGateway()
+default_catalog_matcher = SutraDBCatalogMatcher()

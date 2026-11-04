@@ -167,5 +167,41 @@ class TestV2StorageAndSecurity(unittest.TestCase):
         self.assertIn("http://localhost:3000", CORS_ALLOWED_ORIGINS)
 
 
+    def test_sutradb_catalog_matcher(self):
+        """Verify SutraDB catalog matcher detects duplicates and handles graceful network failure."""
+        from python_engine.storage import SutraDBCatalogMatcher
+
+        matcher = SutraDBCatalogMatcher(base_url="http://mock-sutradb:8000", api_key="test-key")
+
+        # 1. Graceful fallback on network unreachable
+        match = matcher.check_duplicate("Ergonomic Desk Chair", threshold=0.85)
+        self.assertIsNone(match)
+
+        # 2. Simulated successful duplicate match from SutraDB
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = {
+            "count": 1,
+            "results": [
+                {
+                    "id": "prod_123",
+                    "score": 0.92,
+                    "text": "Ergonomic Office Desk Chair with Lumbar Support",
+                    "metadata": {"asin": "B087F5K713"},
+                }
+            ],
+        }
+
+        with patch("httpx.Client.post", return_value=mock_response):
+            found_duplicate = matcher.check_duplicate("Ergonomic Office Chair", threshold=0.85)
+            self.assertIsNotNone(found_duplicate)
+            self.assertEqual(found_duplicate["id"], "prod_123")
+            self.assertGreaterEqual(found_duplicate["score"], 0.85)
+
+            # Below threshold check
+            sub_threshold = matcher.check_duplicate("Completely Different Item", threshold=0.95)
+            self.assertIsNone(sub_threshold)
+
+
 if __name__ == "__main__":
     unittest.main()
