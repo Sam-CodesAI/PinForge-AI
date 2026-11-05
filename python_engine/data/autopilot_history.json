@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16T05:53:44.662461+00:00",
-    "status": "success",
-    "execution_time_seconds": 41.65,
-    "product": {
-      "asin": "B07T7N28LN",
-      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
-      "price": "$19.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Say Bye to Bottle Chaos! Adjustable UpSpace Organizer for Tiny Cabinets \u2728",
-      "description": "Tired of bottles toppling in your cramped cabinet? The YouCopia UpSpace Height Adjustable Bottle Organizer slides in, expands to fit any bottle size, and keeps every drop tidy. No more digging, no more mess\u2014perfect for kitchens, bathrooms, or dorms. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#BottleOrganizer",
-        "#HomeStorage",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_03b116a069.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_4978813010.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_b523dae05f.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_a19115c087.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b5d26453c9.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b5d26453c9.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_c01e46ae.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_c01e46ae.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_c01e46ae.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_c01e46ae.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c01e46ae.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "pin_metrics": null,
-      "id": "1132444268836772798",
-      "has_been_promoted": false,
-      "is_removable": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_standard": true,
-      "description": "Tired of bottles toppling in your cramped cabinet? The YouCopia UpSpace Height Adjustable Bottle Organizer slides in, expands to fit any bottle size, and keeps every drop tidy. No more digging, no more mess\u2014perfect for kitchens, bathrooms, or dorms. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "parent_pin_id": null,
-      "product_tags": [],
-      "creative_type": "REGULAR",
-      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "created_at": "2026-10-16T05:53:44",
-      "is_product": false,
-      "board_section_id": null,
-      "title": "Say Bye to Bottle Chaos! Adjustable UpSpace Organizer for Tiny Cabinets \u2728",
-      "board_id": "1132444337492930442",
-      "dominant_color": "#2b2d2a",
-      "is_owner": true,
-      "link": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
-      "pin_id": "1132444268836772798"
-    }
-  },
-  {
     "timestamp": "2026-10-16T08:30:36.150433+00:00",
     "status": "success",
     "execution_time_seconds": 25.26,
@@ -16337,6 +16192,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_84a27b9d.jpg",
       "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-05T11:30:08.032362+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.03,
+    "product": {
+      "asin": "B0BVZ4CM28",
+      "title": "Hydream Stove Top for Silicone Shelf 30 Inch Magnetic Shelf Over the Stove Spice Rack",
+      "price": "$13.99",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B0BVZ4CM28?tag=smartspace07-21",
+      "bridge_slug": "hydream-stove-top-for-silicone-shelf-30-inch-magnetic-shelf-over-the-stove--b0bvz4cm28"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1A2332",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Instant Spice Storage",
+      "visual_hook": "Transform Your Stove Top Space",
+      "secondary_hook": "Strong magnetic hold for secure kitchen organization",
+      "target_audience": "Home Cooks",
+      "alt_text": "Hydream 30 inch magnetic silicone stove top shelf holding various spice jars and oil bottles on a kitchen stove.",
+      "cv_features": {
+        "rb_ratio": 0.995,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 26.2,
+        "edge_clutter": 63.7,
+        "dominant_hex": "#7f8280",
+        "accent_hex": "#e86456",
+        "bounding_box": [
+          0.013,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.995,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 26.2,
+      "edge_clutter": 63.7,
+      "bounding_box": [
+        0.013,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Kitchen Chaos? Fixed: Magnetic Over Stove Spice Rack! \ud83d\udd25\u2728 Smart Spaces",
+      "description": "Finally reclaim your counter space! This magnetic Hydream shelf sticks securely to stoves, keeping spices within reach and clutter off surfaces. Perfect for small galley kitchens or apartments. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#KitchenHacks",
+        "#SmallSpaceLiving",
+        "#SpiceRack",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#ApartmentLife",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0f376524bd.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f21a3e7328.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8f05b6ab4d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_aa1c3ffd34.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_aa261b58b5.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_aa261b58b5.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a353a8e2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a353a8e2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a353a8e2.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a353a8e2.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a353a8e2.jpg",
+      "style": "anime"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
