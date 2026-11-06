@@ -1,149 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17T08:03:12.323959+00:00",
-    "status": "success",
-    "execution_time_seconds": 18.45,
-    "product": {
-      "asin": "B0D2W1XMCH",
-      "title": "360 Rotating Makeup Organizer  2 Tier Lazy Susan Bathroom Counter Organizer",
-      "price": "$12.98",
-      "rating": 4.8,
-      "affiliate_url": "https://www.amazon.com/dp/B0D2W1XMCH?tag=smartspace07-21",
-      "bridge_slug": "360-rotating-makeup-organizer-2-tier-lazy-susan-bathroom-counter-organizer-b0d2w1xmch"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1A1A1A",
-      "accent_hex": "#E11D48",
-      "badge_text": "7% Off Today",
-      "visual_hook": "Transform Your Cluttered Vanity Instantly",
-      "secondary_hook": "360 degree rotation for easy access",
-      "target_audience": "Beauty Enthusiasts",
-      "alt_text": "A 360 rotating 2-tier makeup organizer on a white background filled with cosmetics and skincare products.",
-      "cv_features": {
-        "rb_ratio": 1.104,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 52.2,
-        "edge_clutter": 59.9,
-        "dominant_hex": "#ada79d",
-        "accent_hex": "#d6a841",
-        "bounding_box": [
-          0.0,
-          0.113,
-          0.975,
-          0.825
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.104,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 52.2,
-      "edge_clutter": 59.9,
-      "bounding_box": [
-        0.0,
-        0.113,
-        0.975,
-        0.825
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Ditch Vanity Clutter: 360\u00b0 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
-      "description": "Say goodbye to chaotic counters! This 2\u2011tier lazy Susan spins 360\u00b0, letting you grab brushes, palettes, or skincare in one smooth motion. Perfect for tiny bathrooms or vanity tops, it maximizes space without sacrificing style. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#MakeupOrganization",
-        "#HomeDecor",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_c61b23a87f.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_59db546e51.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8b2edf85c9.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_434ec7ceb6.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9dbae2e33.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9dbae2e33.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_cee1e78e.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_cee1e78e.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_cee1e78e.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_cee1e78e.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_cee1e78e.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "is_removable": false,
-      "is_product": false,
-      "id": "1132444268836867291",
-      "description": "Say goodbye to chaotic counters! This 2\u2011tier lazy Susan spins 360\u00b0, letting you grab brushes, palettes, or skincare in one smooth motion. Perfect for tiny bathrooms or vanity tops, it maximizes space without sacrificing style. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board_id": "1132444337492930442",
-      "dominant_color": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_standard": true,
-      "pin_metrics": null,
-      "parent_pin_id": null,
-      "created_at": "2026-10-17T08:03:12",
-      "product_tags": [],
-      "creative_type": "REGULAR",
-      "title": "Ditch Vanity Clutter: 360\u00b0 Spin Makeup Organizer Aesthetic \ud83d\udc84\u2728 Smart Spaces",
-      "board_section_id": null,
-      "has_been_promoted": false,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/27/6d/20/276d20ba205f68beb316afd54303ac8e.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/27/6d/20/276d20ba205f68beb316afd54303ac8e.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/27/6d/20/276d20ba205f68beb316afd54303ac8e.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/27/6d/20/276d20ba205f68beb316afd54303ac8e.jpg"
-          }
-        }
-      },
-      "link": "https://www.amazon.com/dp/B0D2W1XMCH?tag=smartspace07-21",
-      "alt_text": "A 360 rotating 2-tier makeup organizer on a white background filled with cosmetics and skincare products.",
-      "is_owner": true,
-      "pin_id": "1132444268836867291"
-    }
-  },
-  {
     "timestamp": "2026-10-17T16:36:44.503626+00:00",
     "status": "success",
     "execution_time_seconds": 43.2,
@@ -16028,6 +15884,105 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c3b6e9d7.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-06T20:03:57.448838+00:00",
+    "status": "success",
+    "execution_time_seconds": 37.95,
+    "product": {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets",
+      "price": "$19.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07T7N28LN?tag=smartspace07-21",
+      "bridge_slug": "youcopia-upspace-height-adjustable-bottle-organizer-for-cabinets-b07t7n28ln"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "YouCopia UpSpace Height Adjustable Bottle Organizer for Cabinets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Stop Kitchen Clutter: UpSpace Height Adjustable Bottle Organizer! \ud83e\uddf4\u2728 Smart Spaces",
+      "description": "Say goodbye to chaotic upper cabinets \ud83d\udc4b This UpSpace organizer maximizes every inch with height-adjustable slots, keeping bottles and spices vertical and visible. No more digging through shelves or losing track of what you own. Perfect for renters and small kitchen remodels who hate wasted space. Would you use this for spices or bathroom toiletries? Drop your pick below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#KitchenOrganization",
+        "#SmallKitchenHacks",
+        "#AmazonHomeFinds",
+        "#StorageSolution",
+        "#OrganizedHome",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_507e3f03db.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ba1f2736af.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8992a6771a.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_dfa880f635.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6c675f9df4.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_6c675f9df4.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_ff24b115.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_ff24b115.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_ff24b115.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_ff24b115.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ff24b115.jpg",
+      "style": "story"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
