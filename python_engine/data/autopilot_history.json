@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17T16:36:44.503626+00:00",
-    "status": "success",
-    "execution_time_seconds": 43.2,
-    "product": {
-      "asin": "B08332N66L",
-      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "20% OFF DEAL",
-      "visual_hook": "Genius Small Kitchen Organizer",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Transform Tiny Kitchens: 24\u2011Bottle Glass Spice Rack Organizer \u2728",
-      "description": "Say goodbye to chaotic countertops\u2014this 24\u2011bottle glass rack keeps every spice visible, labeled, and within arm\u2019s reach, perfect for small\u2011space living. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#SpiceRack",
-        "#HomeStorage",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5bb5c3f722.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ab232650c3.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8a1680d58d.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_9f13509bbd.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9c464c902.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9c464c902.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_2112cf91.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_2112cf91.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_2112cf91.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_2112cf91.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_2112cf91.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": {
-      "is_owner": true,
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          }
-        }
-      },
-      "id": "1132444268836903495",
-      "board_id": "1132444337492933750",
-      "board_section_id": null,
-      "title": "Transform Tiny Kitchens: 24\u2011Bottle Glass Spice Rack Organizer \u2728",
-      "has_been_promoted": false,
-      "pin_metrics": null,
-      "is_removable": false,
-      "is_product": false,
-      "product_tags": [],
-      "created_at": "2026-10-17T16:36:44",
-      "creative_type": "REGULAR",
-      "is_standard": true,
-      "parent_pin_id": null,
-      "dominant_color": "#f5f5ef",
-      "description": "Say goodbye to chaotic countertops\u2014this 24\u2011bottle glass rack keeps every spice visible, labeled, and within arm\u2019s reach, perfect for small\u2011space living. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "pin_id": "1132444268836903495"
-    }
-  },
-  {
     "timestamp": "2026-10-17T19:44:51.390262+00:00",
     "status": "success",
     "execution_time_seconds": 42.86,
@@ -15982,6 +15837,105 @@
         "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_ff24b115.jpg"
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ff24b115.jpg",
+      "style": "story"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-06T22:26:18.041338+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.39,
+    "product": {
+      "asin": "B08GLQ4M19",
+      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
+      "price": "$17.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
+      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Tame Drawer Chaos: 6PC Lifewit Dividers for Aesthetic Organization! \u2728",
+      "description": "Stop letting junk stress you out! \ud83d\udc85 These 6 versatile dividers turn any drawer into a tidy, aesthetic haven. Perfect for cutlery, makeup, or office supplies. Small space challenge: Could you fit your whole kitchen drawer setup in these? \ud83c\udfe0 Drop your vote: Kitchen or Vanity? \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#DrawerOrganization",
+        "#SmallSpaceHacks",
+        "#OrganicHome",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f0206e587f.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6d8370dcaa.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_cbf1e108df.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_5fe83e15b6.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_478497394b.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_478497394b.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_824f9811.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_824f9811.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_824f9811.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_824f9811.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_824f9811.jpg",
       "style": "story"
     },
     "live_pinterest": {
