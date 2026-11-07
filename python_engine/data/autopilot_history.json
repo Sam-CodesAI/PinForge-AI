@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18T16:43:16.456223+00:00",
-    "status": "success",
-    "execution_time_seconds": 47.62,
-    "product": {
-      "asin": "B01MR1Y5K8",
-      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
-      "price": "$22.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
-      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Cabinet Organizer! \u2705\u2728 Smart Spaces",
-      "description": "Stop letting cleaning supplies take over your cabinet! This 28-inch tall sliding organizer turns messy under-sink space into a sleek, accessible storage zone. No more digging for that one bottle! \ud83d\udebf\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#UnderSinkOrganizer",
-        "#SmallSpaceHacks",
-        "#KitchenStorage",
-        "#AmazonFinds",
-        "#OrganizationGoals",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_17796d20ec.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7522ebe49e.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_d5c35bf3fa.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_3f9a04f64d.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_dc1d2a7c24.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_dc1d2a7c24.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_5f4c9d1c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_5f4c9d1c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_5f4c9d1c.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_5f4c9d1c.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_5f4c9d1c.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": {
-      "description": "Stop letting cleaning supplies take over your cabinet! This 28-inch tall sliding organizer turns messy under-sink space into a sleek, accessible storage zone. No more digging for that one bottle! \ud83d\udebf\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "is_removable": false,
-      "parent_pin_id": null,
-      "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Cabinet Organizer! \u2705\u2728 Smart Spaces",
-      "board_id": "1132444337492933750",
-      "is_standard": true,
-      "is_owner": true,
-      "id": "1132444268836998160",
-      "has_been_promoted": false,
-      "pin_metrics": null,
-      "created_at": "2026-10-18T16:43:16",
-      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
-      "is_product": false,
-      "board_section_id": null,
-      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
-      "product_tags": [],
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "dominant_color": "#2b2d2a",
-      "creative_type": "REGULAR",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_id": "1132444268836998160"
-    }
-  },
-  {
     "timestamp": "2026-10-18T19:43:33.337569+00:00",
     "status": "success",
     "execution_time_seconds": 43.73,
@@ -15754,6 +15609,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_afebac44.jpg",
       "style": "luxury_editorial"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-07T21:07:50.134788+00:00",
+    "status": "success",
+    "execution_time_seconds": 58.14,
+    "product": {
+      "asin": "B0GY3R92FG",
+      "title": "12 Pack Large Stackable Clear Plastic Shoe Storage Boxes Organizer  White",
+      "price": "$26.99",
+      "rating": 4.3,
+      "affiliate_url": "https://www.amazon.com/dp/B0GY3R92FG?tag=smartspace07-21",
+      "bridge_slug": "12-pack-large-stackable-clear-plastic-shoe-storage-boxes-organizer-white-b0gy3r92fg"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#1E293B",
+      "accent_hex": "#3B82F6",
+      "badge_text": "10% Off Today",
+      "visual_hook": "Transform Your Cluttered Closet",
+      "secondary_hook": "Crystal clear stackable shoe organizer boxes",
+      "target_audience": "Sneakerheads & Closet Organizers",
+      "alt_text": "12 pack of clear stackable plastic shoe storage boxes organized neatly with various shoes displayed inside.",
+      "cv_features": {
+        "rb_ratio": 1.049,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 22.2,
+        "edge_clutter": 52.4,
+        "dominant_hex": "#b9b6b0",
+        "accent_hex": "#dcc406",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.049,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 22.2,
+      "edge_clutter": 52.4,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Shoe Closet Chaos? Fixed: 12pc Clear Stackable Organizers! \u2705\u2728 Smart Spaces",
+      "description": "Stop tripping over shoes! \ud83d\udeab\ud83d\udc5f These 12 large clear boxes turn tiny entryways and under-bed spaces into aesthetic storage. See everything at a glance, stack them high, and keep your floor clean. Perfect for sneakerheads & small apartments. Would you use this in your closet or under the bed? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#ShoeOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#ClearBins",
+        "#HomeOrganization",
+        "#StudioLiving",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_a44d2c79ab.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_0dec64abb5.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_86ff1a9c22.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_cc976a3df3.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_27d78521ed.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_27d78521ed.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_28573f7b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_28573f7b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_28573f7b.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_28573f7b.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_28573f7b.jpg",
+      "style": "story"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
