@@ -1,158 +1,5 @@
 [
   {
-    "timestamp": "2026-10-19T09:18:25.154929+00:00",
-    "status": "success",
-    "execution_time_seconds": 18.41,
-    "product": {
-      "asin": "B00KXB032Q",
-      "title": "Handy Laundry Pop Up Laundry Hamper 71L Sturdy Collapsible Mesh",
-      "price": "$8.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-      "bridge_slug": "handy-laundry-pop-up-laundry-hamper-71l-sturdy-collapsible-mesh-b00kxb032q"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1E293B",
-      "accent_hex": "#E11D48",
-      "badge_text": "67% Off Sale",
-      "visual_hook": "Tame Laundry Chaos Instantly",
-      "secondary_hook": "Collapsible 71L pop-up hamper for small spaces",
-      "target_audience": "College Dorms",
-      "alt_text": "White pop-up mesh laundry hamper with 71L capacity and multiple color options on the side.",
-      "cv_features": {
-        "rb_ratio": 1.012,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 30.2,
-        "edge_clutter": 37.4,
-        "dominant_hex": "#dddada",
-        "accent_hex": "#eb6f2b",
-        "bounding_box": [
-          0.013,
-          0.05,
-          0.963,
-          0.963
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.012,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 30.2,
-      "edge_clutter": 37.4,
-      "bounding_box": [
-        0.013,
-        0.05,
-        0.963,
-        0.963
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Pop\u2011Up Laundry Hamper 71L: Collapse Chaos, Save Space! \u2728",
-      "description": "Tired of laundry piles taking over your tiny apartment? This 71\u2011liter mesh hamper folds flat when empty and pops up to hold a mountain of clothes\u2014perfect for dorms, studios, or bathroom corners. Easy\u2011carry handles & sturdy base keep it steady. Would you stash yours in the kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#LaundrySolutions",
-        "#HomeOrganization",
-        "#MeshHamper",
-        "#AmazonFinds",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_cdecbd8fe1.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_0a2a8527e7.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_823d22b08a.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_c6520d6828.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e8ffa524b4.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e8ffa524b4.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_b466361f.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_b466361f.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_b466361f.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_b466361f.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_b466361f.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "id": "1132444268837058298",
-      "description": "Tired of laundry piles taking over your tiny apartment? This 71\u2011liter mesh hamper folds flat when empty and pops up to hold a mountain of clothes\u2014perfect for dorms, studios, or bathroom corners. Easy\u2011carry handles & sturdy base keep it steady. Would you stash yours in the kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "pin_metrics": null,
-      "alt_text": "White pop-up mesh laundry hamper with 71L capacity and multiple color options on the side.",
-      "title": "Pop\u2011Up Laundry Hamper 71L: Collapse Chaos, Save Space! \u2728",
-      "board_section_id": null,
-      "is_owner": true,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Pop\u2011Up Laundry Hamper 71L: Collapse Chaos, Save Space! \u2728 (Slide 1/4)",
-            "description": "Tired of laundry piles taking over your tiny apartment? This 71\u2011liter mesh hamper folds flat when empty and pops up to hold a mountain of clothes\u2014perfect for dorms, studios, or bathroom corners. Easy\u2011carry handles & sturdy base keep it steady. Would you stash yours in the kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Handy Laundry Pop Up Laundry Hamper 71L Sturdy Collapsible Mesh",
-            "description": "Full space-saving specifications, dimensions, and folds flat in seconds \u2022 space saver. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: Handy Laundry Pop Up Laundry Hamper 71L Sturdy Collapsible Mesh",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Handy Laundry Pop Up Laundry Hamper 71L Sturdy Collapsible Mesh",
-            "description": "Real-world space-saving transformation. FOLDS FLAT IN SECONDS \u2022 SPACE SAVER. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "board_id": "1132444337492933749",
-      "is_standard": true,
-      "is_product": false,
-      "product_tags": [],
-      "dominant_color": null,
-      "link": "https://www.amazon.com/dp/B00KXB032Q?tag=smartspace07-21",
-      "creative_type": "CAROUSEL",
-      "has_been_promoted": false,
-      "is_removable": false,
-      "created_at": "2026-10-19T09:18:24",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "parent_pin_id": null,
-      "pin_id": "1132444268837058298"
-    }
-  },
-  {
     "timestamp": "2026-10-19T19:28:00.373430+00:00",
     "status": "success",
     "execution_time_seconds": 54.68,
@@ -15457,6 +15304,105 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_c0175b06.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-08T18:26:53.656761+00:00",
+    "status": "success",
+    "execution_time_seconds": 38.52,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Under Sink Chaos? Fixed: 2-Tier Sliding Storage System! \ud83d\udeb0\u2728",
+      "description": "Your under-sink storage doesn't have to be a black hole. This 2-tier sliding organizer maximizes vertical space and makes grabbing cleaning supplies effortless. It\u2019s the aesthetic upgrade your bathroom or kitchen needs. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Space Saving Kitchens",
+      "hashtags": [
+        "#UnderSinkOrganizer",
+        "#KitchenStorage",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#HomeOrganization",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_1abccff00a.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_7b400e3a30.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_5be5a5570d.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b6e783ba9e.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ced16405c5.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_ced16405c5.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_e533c1a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_e533c1a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_e533c1a0.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_e533c1a0.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_e533c1a0.jpg",
+      "style": "luxury_editorial"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
