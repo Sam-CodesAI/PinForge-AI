@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18T19:43:33.337569+00:00",
-    "status": "success",
-    "execution_time_seconds": 43.73,
-    "product": {
-      "asin": "B093GKKQ65",
-      "title": "Under Sink Organizer and Storage  2",
-      "price": "$23.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Under Sink Chaos? Fixed: 2-Tier Storage Solution! \u2705\u2728 Smart Spaces",
-      "description": "Transform your cramped sink area into a pro-organized space! This 2-tier under sink organizer turns hidden clutter into accessible storage. Perfect for cleaning supplies, groceries, or beauty basics. No more digging through mysteries cabinets! \ud83e\uddfc\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#KitchenOrganization",
-        "#UnderSinkStorage",
-        "#SmallSpaceSolutions",
-        "#AmazonFinds",
-        "#HomeHacks",
-        "#SmartSpaces",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_d509103928.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_83692aaed0.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_76f5a619df.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_10d9b04178.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9abd283f6.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_a9abd283f6.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_a3d97be1.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_a3d97be1.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_a3d97be1.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_a3d97be1.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_a3d97be1.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "is_removable": false,
-      "creative_type": "REGULAR",
-      "created_at": "2026-10-18T19:43:33",
-      "is_product": false,
-      "id": "1132444268837014137",
-      "board_section_id": null,
-      "link": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
-      "has_been_promoted": false,
-      "board_id": "1132444337492933751",
-      "is_owner": true,
-      "is_standard": true,
-      "product_tags": [],
-      "pin_metrics": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "title": "Under Sink Chaos? Fixed: 2-Tier Storage Solution! \u2705\u2728 Smart Spaces",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "dominant_color": "#2b2d2a",
-      "description": "Transform your cramped sink area into a pro-organized space! This 2-tier under sink organizer turns hidden clutter into accessible storage. Perfect for cleaning supplies, groceries, or beauty basics. No more digging through mysteries cabinets! \ud83e\uddfc\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
-      "parent_pin_id": null,
-      "pin_id": "1132444268837014137"
-    }
-  },
-  {
     "timestamp": "2026-10-18T23:29:54.863961+00:00",
     "status": "success",
     "execution_time_seconds": 39.08,
@@ -15709,6 +15563,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_28573f7b.jpg",
       "style": "story"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-08T00:51:25.291591+00:00",
+    "status": "success",
+    "execution_time_seconds": 15.97,
+    "product": {
+      "asin": "B07JGJQN67",
+      "title": "FDW | 4 Panel Folding Room Divider with Shelves | 5.9ft, Brown",
+      "price": "$64.99",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B07JGJQN67?tag=smartspace07-21",
+      "bridge_slug": "fdw-4-panel-folding-room-divider-with-shelves-59ft-brown-b07jgjqn67"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#3D2E2B",
+      "accent_hex": "#D97706",
+      "badge_text": "Space Saving Essential",
+      "visual_hook": "Divide Your Space in Style",
+      "secondary_hook": "Built-in shelves for easy decor",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Brown 4 panel folding room divider with shelves and decor displayed against a white background",
+      "cv_features": {
+        "rb_ratio": 1.298,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 35.8,
+        "edge_clutter": 48.0,
+        "dominant_hex": "#695951",
+        "accent_hex": "#d4ad5c",
+        "bounding_box": [
+          0.037,
+          0.05,
+          0.95,
+          0.95
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.298,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 35.8,
+      "edge_clutter": 48.0,
+      "bounding_box": [
+        0.037,
+        0.05,
+        0.95,
+        0.95
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "No Walls? No Problem: 4-Panel Folding Room Divider with Shelves! \ud83c\udfe0\u2728",
+      "description": "Instantly create cozy zones without construction! \ud83d\udee0\ufe0f This 5.9ft brown divider fits shelves for max storage, perfect for studios or small apartments. Say goodbye to cluttered chaos. \ud83d\udc4b Small space challenge: Could you fit your workspace in this setup? \ud83c\udfe0 Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#RoomDivider",
+        "#StudioLiving",
+        "#SmallSpaceHacks",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#InteriorDesign",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ed33517047.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_f5255ef99d.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_0d064367d9.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_178ca1d354.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be8d78e436.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_be8d78e436.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_bfca0459.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_bfca0459.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_bfca0459.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_bfca0459.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_bfca0459.jpg",
+      "style": "anime"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
