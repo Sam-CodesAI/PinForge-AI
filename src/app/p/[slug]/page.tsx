@@ -22,6 +22,27 @@ interface Props {
   searchParams: Promise<{ tag?: string }>;
 }
 
+interface AutopilotHistoryEntry {
+  timestamp?: string;
+  product?: {
+    asin?: string;
+    title?: string;
+    price?: string;
+    rating?: number;
+    bridge_slug?: string;
+  };
+  seo_copy?: {
+    title?: string;
+    description?: string;
+    board?: string;
+    hashtags?: string[];
+  };
+  ai_vision?: {
+    target_audience?: string;
+    badge_text?: string;
+  };
+}
+
 function resolveProduct(slug: string): CatalogProduct {
   // 1. Check verified seed catalog
   const verified = getProductBySlug(slug);
@@ -32,9 +53,9 @@ function resolveProduct(slug: string): CatalogProduct {
     const historyPath = path.join(process.cwd(), "python_engine", "data", "autopilot_history.json");
     if (fs.existsSync(historyPath)) {
       const historyRaw = fs.readFileSync(historyPath, "utf-8");
-      const historyData = JSON.parse(historyRaw);
+      const historyData = JSON.parse(historyRaw) as AutopilotHistoryEntry[];
       if (Array.isArray(historyData)) {
-        const entry = historyData.find((item: any) => {
+        const entry = historyData.find((item: AutopilotHistoryEntry) => {
           const p = item.product;
           if (!p) return false;
           if (p.bridge_slug === slug) return true;
@@ -140,20 +161,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = resolveProduct(slug);
 
   const numericPrice = product.price.replace(/[^0-9.]/g, "") || "29.99";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://pinforge.vercel.app";
+  const pageUrl = `${baseUrl}/p/${slug}`;
 
   return {
     title: `${product.shortTitle} — Full Review & Today's Deal | PinForge`,
     description: `${product.verdict} Rated ${product.rating} stars with ${product.reviewCount}. Check live Amazon price and availability.`,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: `${product.shortTitle} Review & Price Alert`,
       description: product.verdict,
+      url: pageUrl,
+      siteName: "PinForge AI",
       images: [{ url: product.imageUrl, width: 1000, height: 1500, alt: product.title }],
+      type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title: `${product.shortTitle} Review & Price Alert`,
       description: product.verdict,
       images: [product.imageUrl],
+      creator: "@Smart_Spaces",
     },
     other: {
       "og:type": "product",
@@ -246,7 +276,7 @@ export default async function BridgeProductPage({ params, searchParams }: Props)
         {/* Breadcrumb & Meta Bar */}
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm text-slate-400">
           <div className="flex items-center gap-2">
-            <Link href="/demos/pinforge" className="hover:text-sky-400 transition-colors">
+            <Link href="/" className="hover:text-sky-400 transition-colors">
               PinForge
             </Link>
             <span>/</span>
@@ -457,7 +487,7 @@ export default async function BridgeProductPage({ params, searchParams }: Props)
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-lg font-bold text-white">More Viral & Curated Amazon Finds</h3>
-            <Link href="/demos/pinforge" className="text-xs text-sky-400 hover:underline">
+            <Link href="/" className="text-xs text-sky-400 hover:underline">
               Open PinForge Studio ➔
             </Link>
           </div>
@@ -470,9 +500,12 @@ export default async function BridgeProductPage({ params, searchParams }: Props)
                 className="group rounded-2xl border border-slate-800/80 bg-slate-900/40 p-4 transition-all hover:border-sky-500/40 hover:bg-slate-900/80"
               >
                 <div className="relative aspect-square w-full rounded-xl bg-slate-950 p-4 flex items-center justify-center mb-3">
-                  <img
+                  <Image
                     src={other.imageUrl}
                     alt={other.shortTitle}
+                    width={240}
+                    height={240}
+                    sizes="(max-width: 640px) 100vw, 240px"
                     className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                   />
                 </div>

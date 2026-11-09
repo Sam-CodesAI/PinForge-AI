@@ -42,7 +42,8 @@ from python_engine.seo_engine import generate_pin_copy, format_pin_description_w
 from python_engine.pin_generator import generate_all_pin_variants, CANVAS_WIDTH, CANVAS_HEIGHT
 from python_engine.carousel_engine import generate_carousel_pin_suite
 from python_engine.scraper import fetch_product
-from python_engine.models import CopyGenerationRequest, PinGenerateRequest
+from python_engine.rss_generator import generate_pinterest_rss
+from python_engine.models import CopyGenerationRequest, PinGenerateRequest, ScheduleItem
 
 
 class TestPinterestLiveIntegration(unittest.TestCase):
@@ -291,6 +292,39 @@ class TestScraperAndModels(unittest.TestCase):
         self.assertIn("smartspace07-21", product.affiliate_url)
         self.assertGreater(len(product.title), 5)
         self.assertGreater(len(product.bridge_slug), 3)
+
+    def test_15_generate_pinterest_media_rss(self):
+        items = [
+            ScheduleItem(
+                board_name="Small Apartment Hacks",
+                title="Space-Saving Rolling Utility Cart",
+                description="Reclaim kitchen floor space instantly with this slim sliding cart. #AmazonAssociate",
+                link="https://pinforge.vercel.app/p/sliding-cart-b08151t931",
+                image_url="https://pinforge.vercel.app/pins/sample_pin.jpg",
+                published_at="2026-11-09T01:00:00Z",
+            )
+        ]
+        xml_feed = generate_pinterest_rss(items, feed_title="Smart Spaces Automated RSS")
+        self.assertIn("<rss version=\"2.0\"", xml_feed)
+        self.assertIn("xmlns:media=\"http://search.yahoo.com/mrss/\"", xml_feed)
+        self.assertIn("<enclosure url=\"https://pinforge.vercel.app/pins/sample_pin.jpg\"", xml_feed)
+        self.assertIn("<category>Small Apartment Hacks</category>", xml_feed)
+        self.assertIn("<guid isPermaLink=\"true\">https://pinforge.vercel.app/p/sliding-cart-b08151t931</guid>", xml_feed)
+
+    def test_16_sitemap_and_autopilot_ledger_integrity(self):
+        history_path = ROOT_DIR / "python_engine" / "data" / "autopilot_history.json"
+        self.assertTrue(history_path.exists())
+        data = json.loads(history_path.read_text(encoding="utf-8"))
+        self.assertIsInstance(data, list)
+        self.assertGreaterEqual(len(data), 50)
+        # Ensure every product entry has valid structure
+        valid_slugs = 0
+        for entry in data:
+            if "product" in entry and entry["product"]:
+                p = entry["product"]
+                if "asin" in p or "bridge_slug" in p:
+                    valid_slugs += 1
+        self.assertGreaterEqual(valid_slugs, 30)
 
 
 if __name__ == "__main__":
