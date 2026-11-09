@@ -1,184 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20T08:52:51.979325+00:00",
-    "status": "success",
-    "execution_time_seconds": 18.71,
-    "product": {
-      "asin": "B0DNTQ2YNT",
-      "title": "2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
-      "price": "$19.99",
-      "rating": 4.6,
-      "affiliate_url": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-      "bridge_slug": "2-packs-under-sink-pull-out-storage-organizers-128-inches-black-b0dntq2ynt"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#1A222D",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Amazon Best Seller",
-      "visual_hook": "Never Lose Your Under-Sink Items Again",
-      "secondary_hook": "Smooth sliding trays maximize every inch",
-      "target_audience": "Home Organizers",
-      "alt_text": "Two black sliding under-sink organizers packed with cleaning supplies inside a wooden cabinet.",
-      "cv_features": {
-        "rb_ratio": 1.313,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "problem_solver",
-        "whitespace_pct": 0.0,
-        "edge_clutter": 51.5,
-        "dominant_hex": "#7f6f60",
-        "accent_hex": "#d6028b",
-        "bounding_box": [
-          0.0,
-          0.0,
-          0.988,
-          0.988
-        ],
-        "badge_placement": "floating_badge"
-      },
-      "rb_ratio": 1.313,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 0.0,
-      "edge_clutter": 51.5,
-      "bounding_box": [
-        0.0,
-        0.0,
-        0.988,
-        0.988
-      ],
-      "badge_placement": "floating_badge"
-    },
-    "seo_copy": {
-      "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728",
-      "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#BathroomStorage",
-        "#UnderSink",
-        "#HomeImprovement",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e4f222c987.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_64f741a123.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_96123e5317.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_2eb9e04bf7.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b57d04a615.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_b57d04a615.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_098d9268.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_098d9268.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_098d9268.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_098d9268.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_098d9268.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "board_id": "1132444337492933749",
-      "is_product": false,
-      "creative_type": "CAROUSEL",
-      "board_section_id": null,
-      "dominant_color": null,
-      "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "is_standard": true,
-      "id": "1132444268837144902",
-      "created_at": "2026-10-20T08:52:51",
-      "product_tags": [],
-      "is_removable": false,
-      "alt_text": "Two black sliding under-sink organizers packed with cleaning supplies inside a wooden cabinet.",
-      "is_owner": true,
-      "pin_metrics": null,
-      "has_been_promoted": false,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-      "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728",
-      "parent_pin_id": null,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Maximize Under\u2011Sink Space: 2\u2011Pack Pull\u2011Out Organizers $19.99 \ud83d\udd25\u2728 (Slide 1/4)",
-            "description": "Tired of a chaotic cabinet? These 12.8\u2033 pull\u2011out organizers slide out smoothly, giving you instant access to sponges, cleaners, and pantry goodies\u2014perfect for tiny kitchens or bathrooms. Say goodbye to mess and hello to sleek, functional storage. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Color & Angle Variants: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/1c/01/49/1c0149d271647a8baf9e8d34d8819212.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Transform Your Space: 2 Packs Under Sink Pull-Out Storage Organizers, 12.8 Inches, Black",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0DNTQ2YNT?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "pin_id": "1132444268837144902"
-    }
-  },
-  {
     "timestamp": "2026-10-20T18:05:30.670897+00:00",
     "status": "success",
     "execution_time_seconds": 40.85,
@@ -15187,6 +15008,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_84fff4a1.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-09T23:07:14.303774+00:00",
+    "status": "success",
+    "execution_time_seconds": 39.59,
+    "product": {
+      "asin": "B093GKKQ65",
+      "title": "Under Sink Organizer and Storage  2",
+      "price": "$23.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B093GKKQ65?tag=smartspace07-21",
+      "bridge_slug": "under-sink-organizer-and-storage-2-b093gkkq65"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Under Sink Organizer and Storage  2 - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Tiny Kitchen? Fixed: 2-Tier Under Sink Organizer Maxes Space! \ud83d\udebf\u2728 Smart Spaces",
+      "description": "Stop wrestling with messy pipes! This 2-tier under-sink organizer is the small-space hero you didn't know you needed. It swipes right to reveal hidden storage, keeping your cleaning supplies tucked away and looking chic. Perfect for turnkey apartments or studio living where every inch counts. \ud83d\udc96 Small space challenge: Could you fit all your essentials in this setup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#KitchenOrganization",
+        "#UnderSinkStorage",
+        "#ApartmentLiving",
+        "#HomeDecor",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_2fba1c8a52.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_077dd4a5f1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_29567a0ff4.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ef9cda1620.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_12189b9c8e.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_12189b9c8e.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_fbc30930.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_fbc30930.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_fbc30930.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_fbc30930.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_fbc30930.jpg",
+      "style": "story"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
