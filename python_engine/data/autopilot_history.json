@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21T06:03:08.463649+00:00",
-    "status": "success",
-    "execution_time_seconds": 40.52,
-    "product": {
-      "asin": "B08GLQ4M19",
-      "title": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins",
-      "price": "$17.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "bridge_slug": "lifewit-6-pack-drawer-organizer-dividers-set-plastic-storage-bins-b08glq4m19"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Goodbye Drawer Chaos! \ud83d\uddc2\ufe0f\u2728 6-Pack Dividers for Perfectly Tidy Homes #AmazonAssociate",
-      "description": "Stop letting your junk drawer rule your life. \ud83d\uded1 This 6-pack set turns chaos into a calm, aesthetic haven. Perfect for forks, office supplies, or bathroom essentials. It\u2019s the small-space upgrade you didn\u2019t know you needed. Would you use these for cutlery or makeup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Room Organization",
-      "hashtags": [
-        "#DrawerOrganization",
-        "#SmallSpaceHacks",
-        "#AmazonFinds",
-        "#HomeOrganization",
-        "#TidyUp",
-        "#RoomOrganization",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ebc75d1ada.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_d2dfc55638.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_4a4a1ac5ad.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_b7c83aa00f.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_944de7b6f3.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_944de7b6f3.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_6412ba14.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_6412ba14.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_6412ba14.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_6412ba14.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_6412ba14.jpg",
-      "style": "cyber_bento"
-    },
-    "live_pinterest": {
-      "is_owner": true,
-      "pin_metrics": null,
-      "board_section_id": null,
-      "is_removable": false,
-      "description": "Stop letting your junk drawer rule your life. \ud83d\uded1 This 6-pack set turns chaos into a calm, aesthetic haven. Perfect for forks, office supplies, or bathroom essentials. It\u2019s the small-space upgrade you didn\u2019t know you needed. Would you use these for cutlery or makeup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "created_at": "2026-10-21T06:03:08",
-      "product_tags": [],
-      "is_standard": true,
-      "id": "1132444268837225104",
-      "has_been_promoted": false,
-      "title": "Goodbye Drawer Chaos! \ud83d\uddc2\ufe0f\u2728 6-Pack Dividers for Perfectly Tidy Homes #AmazonAssociate",
-      "is_product": false,
-      "board_id": "1132444337492930442",
-      "parent_pin_id": null,
-      "alt_text": "Lifewit 6 Pack Drawer Organizer Dividers Set Plastic Storage Bins - Smart Spaces Amazon find",
-      "creative_type": "REGULAR",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": "#2b2d2a",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "link": "https://www.amazon.com/dp/B08GLQ4M19?tag=smartspace07-21",
-      "pin_id": "1132444268837225104"
-    }
-  },
-  {
     "timestamp": "2026-10-21T08:53:24.088625+00:00",
     "status": "success",
     "execution_time_seconds": 58.28,
@@ -14857,6 +14711,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_64befb5e.jpg",
       "style": "cyber_bento"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-10T11:45:24.499787+00:00",
+    "status": "success",
+    "execution_time_seconds": 30.49,
+    "product": {
+      "asin": "B0CYZVG4Q4",
+      "title": "4-Tier Slim Rolling Storage Cart for Kitchen, Laundry Room, Bathroom",
+      "price": "$36.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0CYZVG4Q4?tag=smartspace07-21",
+      "bridge_slug": "4-tier-slim-rolling-storage-cart-for-kitchen-laundry-room-bathroom-b0cyzvg4q4"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#2D241E",
+      "accent_hex": "#D97706",
+      "badge_text": "26% Off Today",
+      "visual_hook": "Max Out Your Tiny Bathroom Space",
+      "secondary_hook": "Slim rolling cart fits narrow gaps easily",
+      "target_audience": "Apartment Renters",
+      "alt_text": "A 4-tier slim rolling storage cart packed with bathroom essentials placed in a tight gap beside a vanity and bathtub.",
+      "cv_features": {
+        "rb_ratio": 1.101,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 1.2,
+        "edge_clutter": 46.6,
+        "dominant_hex": "#99928b",
+        "accent_hex": "#b8ab30",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.101,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 1.2,
+      "edge_clutter": 46.6,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Tiny Space Savior: 4-Tier Slim Rolling Cart! \ud83c\udff0\u2728",
+      "description": "Banish the clutter pitfall! This slim 4-tier cart fits perfectly in tight gaps, giving your kitchen, laundry, or bathroom an instant aesthetic upgrade. \ud83d\udcb8 Slide it behind doors or fit it into awkward corners. Would you use this for bath essentials or pantry snacks? Let us know! \ud83d\uded2\u2728 Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Small Apartment Hacks",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#StorageSolutions",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#KitchenStorage",
+        "#LaundryRoomIdeas",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_489dce0061.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6f58121e19.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_b49bd1a628.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ab9965fb32.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f8215f4281.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f8215f4281.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_26bd356e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_26bd356e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_26bd356e.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_26bd356e.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_26bd356e.jpg",
+      "style": "anime"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
