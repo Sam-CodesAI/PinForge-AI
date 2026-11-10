@@ -1,262 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21T08:53:24.088625+00:00",
-    "status": "success",
-    "execution_time_seconds": 58.28,
-    "product": {
-      "asin": "B08332N66L",
-      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "20% OFF DEAL",
-      "visual_hook": "Genius Small Kitchen Organizer",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Spice Rack Chaos? Fixed: SpaceAid 24\u2011Bottle Glass Organizer! \u2728\ud83d\udd25",
-      "description": "Tired of spice jars spilling everywhere? The SpaceAid Spice Rack Organizer packs 24 sleek square glass bottles with labels, turning any cramped countertop into a tidy, Instagram\u2011ready display. Perfect for tiny kitchens, dorms, or studio apartments. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Small Apartment Hacks",
-      "hashtags": [
-        "#SmallSpaceHacks",
-        "#KitchenOrganization",
-        "#SpiceRack",
-        "#HomeDecor",
-        "#SmartLiving",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0acaae387b.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c6de847024.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_abf124896d.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_efe5e2e032.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d72c8b810a.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_d72c8b810a.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_97d7cfec.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_97d7cfec.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_97d7cfec.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_97d7cfec.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_97d7cfec.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "created_at": "2026-10-21T08:53:23",
-      "is_owner": true,
-      "dominant_color": "#fae9c6",
-      "title": "Spice Rack Chaos? Fixed: SpaceAid 24\u2011Bottle Glass Organizer! \u2728\ud83d\udd25",
-      "pin_metrics": null,
-      "parent_pin_id": null,
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "creative_type": "CAROUSEL",
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/48/05/8a/48058a6a2b3e1bcccd4c70a3506884aa.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Spice Rack Chaos? Fixed: SpaceAid 24\u2011Bottle Glass Organizer! \u2728\ud83d\udd25 (Slide 1/4)",
-            "description": "Tired of spice jars spilling everywhere? The SpaceAid Spice Rack Organizer packs 24 sleek square glass bottles with labels, turning any cramped countertop into a tidy, Instagram\u2011ready display. Perfect for tiny kitchens, dorms, or studio apartments. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/57/e1/4e/57e14e92ac45a029c705cb1de4bafb27.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Dimensions & Build Specs: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/a8/0d/79/a80d790558c70ee0616b7382fd068c55.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Color & Angle Variants: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/89/50/71/895071512209689b2e87c4c06f1d7d81.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Transform Your Space: SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "is_removable": false,
-      "board_id": "1132444337492933749",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "description": "Tired of spice jars spilling everywhere? The SpaceAid Spice Rack Organizer packs 24 sleek square glass bottles with labels, turning any cramped countertop into a tidy, Instagram\u2011ready display. Perfect for tiny kitchens, dorms, or studio apartments. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "product_tags": [],
-      "has_been_promoted": false,
-      "is_standard": true,
-      "id": "1132444268837232942",
-      "board_section_id": null,
-      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "is_product": false,
-      "pin_id": "1132444268837232942"
-    }
-  },
-  {
     "timestamp": "2026-10-21T18:12:31.563804+00:00",
     "status": "success",
     "execution_time_seconds": 55.55,
@@ -14811,6 +14554,105 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_26bd356e.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-10T20:34:37.412037+00:00",
+    "status": "success",
+    "execution_time_seconds": 40.6,
+    "product": {
+      "asin": "B08151T931",
+      "title": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels",
+      "price": "$34.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B08151T931?tag=smartspace07-21",
+      "bridge_slug": "vasagle-slim-rolling-storage-cart-4-tier-slide-out-storage-cart-with-wheels-b08151t931"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "VASAGLE Slim Rolling Storage Cart 4 Tier Slide Out Storage Cart with Wheels - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Slam Door Clutter: 4-Tier Slide Out Storage Cart on Wheels! \ud83d\uded2\u2728",
+      "description": "Stop letting messy corners ruin your vibe. This VASAGLE slim rolling cart is the ultimate small-space hero, sliding smoothly into tight gaps to hold your essentials. It\u2019s the secret to instant organization in any room. Which zone needs this rescue squad: bathroom or office? Drop your answer below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Closet & Wardrobe Organization",
+      "hashtags": [
+        "#StorageSolutions",
+        "#HomeOrganization",
+        "#SmallSpaceHacks",
+        "#AmazonFinds",
+        "#CartStorage",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_113bd44fdf.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_ce68519756.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_51559e6d09.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_6b817344b4.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_55248b2706.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_55248b2706.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_bb561611.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_bb561611.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_bb561611.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_bb561611.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_bb561611.jpg",
+      "style": "story"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
