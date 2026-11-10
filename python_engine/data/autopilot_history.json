@@ -1,151 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20T18:05:30.670897+00:00",
-    "status": "success",
-    "execution_time_seconds": 40.85,
-    "product": {
-      "asin": "B0964GLS2J",
-      "title": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel",
-      "price": "$21.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-      "bridge_slug": "adhesive-corner-shower-caddy-tension-basket-2-pack-stainless-steel-b0964gls2j"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "No-Drill Shower Organization: 2-Pk Stainless Steel Tension Caddy! \ud83d\udebf\u2728 Smart Spaces",
-      "description": "Turn your cramped shower into a luxury spa zone! This no-drill tension caddy fits perfectly in tight corners, holding up to 50 lbs without damaging walls. Perfect for renting or small bathrooms. \ud83c\udfe0\n\nQuick poll: Do you hate popping up bottles in your shower? Yes or No? \ud83d\udc47\n\n#SmallApartmentHacks #ShowerOrganization #AmazonFinds #BathroomHacks #NoDrill #SmartHome #AmazonAssociate",
-      "board": "Space Saving Kitchens",
-      "hashtags": [
-        "#SmallApartmentHacks",
-        "#ShowerOrganization",
-        "#AmazonFinds",
-        "#BathroomHacks",
-        "#NoDrill",
-        "#SmartHome",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_0ded4d9f3c.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_02f8c0385a.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_e5e50e4f55.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_1b8c1ea033.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e076bcae25.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_e076bcae25.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_b9546c97.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_b9546c97.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_b9546c97.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_b9546c97.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_b9546c97.jpg",
-      "style": "luxury_editorial"
-    },
-    "live_pinterest": {
-      "is_owner": true,
-      "pin_metrics": null,
-      "board_section_id": null,
-      "is_removable": false,
-      "description": "Turn your cramped shower into a luxury spa zone! This no-drill tension caddy fits perfectly in tight corners, holding up to 50 lbs without damaging walls. Perfect for renting or small bathrooms. \ud83c\udfe0\n\nQuick poll: Do you hate popping up bottles in your shower? Yes or No? \ud83d\udc47\n\n#SmallApartmentHacks #ShowerOrganization #AmazonFinds #BathroomHacks #NoDrill #SmartHome #AmazonAssociate",
-      "created_at": "2026-10-20T18:05:30",
-      "product_tags": [],
-      "is_standard": true,
-      "id": "1132444268837180108",
-      "has_been_promoted": false,
-      "title": "No-Drill Shower Organization: 2-Pk Stainless Steel Tension Caddy! \ud83d\udebf\u2728 Smart Spaces",
-      "is_product": false,
-      "board_id": "1132444337492933750",
-      "parent_pin_id": null,
-      "alt_text": "Adhesive Corner Shower Caddy Tension Basket 2-Pack Stainless Steel - Smart Spaces Amazon find",
-      "creative_type": "REGULAR",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "dominant_color": "#2b2d2a",
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/de/bf/9c/debf9cc674c7e1563ede2ec12cea3456.jpg"
-          }
-        }
-      },
-      "link": "https://www.amazon.com/dp/B0964GLS2J?tag=smartspace07-21",
-      "pin_id": "1132444268837180108"
-    }
-  },
-  {
     "timestamp": "2026-10-20T20:56:17.472046+00:00",
     "status": "success",
     "execution_time_seconds": 44.59,
@@ -15108,6 +14962,106 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_fbc30930.jpg",
       "style": "story"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-10T00:53:56.363426+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.37,
+    "product": {
+      "asin": "B07D38J38F",
+      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry",
+      "price": "$27.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B07D38J38F?tag=smartspace07-21",
+      "bridge_slug": "stori-audrey-stackable-clear-plastic-storage-drawers-for-vanity-and-pantry-b07d38j38f"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "44% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Stori Audrey Stackable Clear Plastic Storage Drawers for Vanity and Pantry - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! \u2705\u2728",
+      "description": "Stop letting your sink or pantry get buried in clutter! \ud83d\uded1 These Stori Audrey stackable drawers are the aesthetic upgrade your small space needs. The transparent design means no more digging for lost items\u2014just slide, stack, and organize. Perfect for skincare essentials or pantry staples. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#HomeOrganization",
+        "#AmazonFinds",
+        "#VanityOrganization",
+        "#PantryStorage",
+        "#SmartSpaces",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_933715a663.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_906eb58cd8.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_f4ec5e9fd7.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_3640d7cfa7.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_68d01c9f6d.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_68d01c9f6d.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_9c220a3f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_9c220a3f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_9c220a3f.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_9c220a3f.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_9c220a3f.jpg",
+      "style": "anime"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
