@@ -1,150 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21T20:56:55.343260+00:00",
-    "status": "success",
-    "execution_time_seconds": 41.68,
-    "product": {
-      "asin": "B08332N66L",
-      "title": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Labels",
-      "price": "$39.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "bridge_slug": "spaceaid-spice-rack-organizer-with-24-empty-square-glass-spice-bottles-and--b08332n66l"
-    },
-    "ai_vision": {
-      "dominant_theme": "warm_editorial",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "20% OFF DEAL",
-      "visual_hook": "Genius Small Kitchen Organizer",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Kitchen Clutter? Fixed: Aesthetic 24-Step Glass Spice Drawer! \u2705\u2728 Smart Spaces",
-      "description": "Say goodbye to scattered spices! This SpaceAid Rack holds 24 labeled glass jars, keeping your small kitchen shelf-ready and Insta-worthy. The compact 2-cup design fits perfectly in drawers or under cabinets. Small space challenge: Could you fit your whole spice collection here? Drop a \ud83c\udf36\ufe0f if yes! Don't forget to tap the link for the best price. Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "board": "Closet & Wardrobe Organization",
-      "hashtags": [
-        "#SmallSpaceKitchen",
-        "#SpiceOrganization",
-        "#KitchenAesthetic",
-        "#AmazonFinds",
-        "#SmartSpaces",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_9c49aabaea.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_0e707e8194.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_e7d07b5e98.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_ce7115614e.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1d1edf5044.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_1d1edf5044.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_93eac8a8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_93eac8a8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_93eac8a8.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_93eac8a8.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_93eac8a8.jpg",
-      "style": "story"
-    },
-    "live_pinterest": {
-      "media": {
-        "media_type": "image",
-        "images": {
-          "150x150": {
-            "width": 150,
-            "height": 150,
-            "url": "https://i.pinimg.com/150x150/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "400x300": {
-            "width": 400,
-            "height": 300,
-            "url": "https://i.pinimg.com/400x300/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "600x": {
-            "width": 564,
-            "height": 846,
-            "url": "https://i.pinimg.com/564x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          },
-          "1200x": {
-            "width": 1000,
-            "height": 1500,
-            "url": "https://i.pinimg.com/1200x/19/cb/2e/19cb2e7e1b455ca59970e437ead19c03.jpg"
-          }
-        }
-      },
-      "is_standard": true,
-      "has_been_promoted": false,
-      "link": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
-      "id": "1132444268837282588",
-      "dominant_color": "#f5f5ef",
-      "board_id": "1132444337492933751",
-      "pin_metrics": null,
-      "description": "Say goodbye to scattered spices! This SpaceAid Rack holds 24 labeled glass jars, keeping your small kitchen shelf-ready and Insta-worthy. The compact 2-cup design fits perfectly in drawers or under cabinets. Small space challenge: Could you fit your whole spice collection here? Drop a \ud83c\udf36\ufe0f if yes! Don't forget to tap the link for the best price. Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
-      "parent_pin_id": null,
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "is_owner": true,
-      "alt_text": "SpaceAid Spice Rack Organizer with 24 Empty Square Glass Spice Bottles and Label - Smart Spaces Amazon find",
-      "creative_type": "REGULAR",
-      "board_section_id": null,
-      "product_tags": [],
-      "is_removable": false,
-      "is_product": false,
-      "created_at": "2026-10-21T20:56:55",
-      "title": "Kitchen Clutter? Fixed: Aesthetic 24-Step Glass Spice Drawer! \u2705\u2728 Smart Spaces",
-      "pin_id": "1132444268837282588"
-    }
-  },
-  {
     "timestamp": "2026-10-22T00:07:02.021981+00:00",
     "status": "success",
     "execution_time_seconds": 40.3,
@@ -14607,6 +14462,105 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_2bb805f4.jpg",
       "style": "story"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-11T01:23:33.606525+00:00",
+    "status": "success",
+    "execution_time_seconds": 42.15,
+    "product": {
+      "asin": "B0915B37G6",
+      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
+      "price": "$11.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
+      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Shoe Wall Chaos? Fixed: 24-Pocket Over Door Organizer! \ud83d\udc5f\u2728 Smart Spaces",
+      "description": "Stop stepping over shoes! This 24-pocket clear organizer hangs ANYWHERE to free up floor space. Perfect for tiny apartments or large collections. \ud83d\udcb8 $11.99 steal. Which room needs this fix: Entryway or Bedroom? Drop your guess below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#ShoeOrganization",
+        "#SmallApartmentMustHaves",
+        "#AmazonHomeFinds",
+        "#ClosetHacks",
+        "#RentersTips",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_25fb7e9de7.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_6cb7dfa083.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_760c899974.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_cfdad8b49b.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_623267c8e0.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_623267c8e0.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_ea5caa84.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_ea5caa84.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_ea5caa84.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_ea5caa84.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ea5caa84.jpg",
+      "style": "anime"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
