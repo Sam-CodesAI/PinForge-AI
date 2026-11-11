@@ -1,184 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22T00:07:02.021981+00:00",
-    "status": "success",
-    "execution_time_seconds": 40.3,
-    "product": {
-      "asin": "B0915B37G6",
-      "title": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
-      "price": "$11.99",
-      "rating": 4.7,
-      "affiliate_url": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-      "bridge_slug": "simple-houseware-over-the-door-24-pocket-shoe-organizer-clear-pockets-b0915b37g6"
-    },
-    "ai_vision": {
-      "dominant_theme": "problem_solver",
-      "primary_hex": "#0F172A",
-      "accent_hex": "#06B6D4",
-      "badge_text": "Space-Saving Genius",
-      "visual_hook": "Maximize Your Small Space",
-      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
-      "target_audience": "Small Space Enthusiasts",
-      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
-      "cv_features": {
-        "rb_ratio": 1.0,
-        "lighting_type": "neutral_packshot",
-        "dominant_theme": "bento_dark",
-        "whitespace_pct": 50.0,
-        "edge_clutter": 15.0,
-        "dominant_hex": "#0F172A",
-        "accent_hex": "#06B6D4",
-        "bounding_box": [
-          0.2,
-          0.2,
-          0.8,
-          0.8
-        ],
-        "badge_placement": "top_pill"
-      },
-      "rb_ratio": 1.0,
-      "lighting_type": "neutral_packshot",
-      "whitespace_pct": 50.0,
-      "edge_clutter": 15.0,
-      "bounding_box": [
-        0.2,
-        0.2,
-        0.8,
-        0.8
-      ],
-      "badge_placement": "top_pill"
-    },
-    "seo_copy": {
-      "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces",
-      "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "board": "Studio Living Ideas",
-      "hashtags": [
-        "#ShoeOrganizer",
-        "#SmallApartmentLiving",
-        "#AmazonMustHaves",
-        "#OverDoorStorage",
-        "#RoomRefresh",
-        "#AmazonAssociate"
-      ]
-    },
-    "creative_variants": [
-      {
-        "template": "bento_dark",
-        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_ddd9bb9281.jpg"
-      },
-      {
-        "template": "warm_editorial",
-        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_2ba4ad5080.jpg"
-      },
-      {
-        "template": "problem_solver",
-        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_eb830431de.jpg"
-      },
-      {
-        "template": "pollinations_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_1f1558560f.jpg"
-      },
-      {
-        "template": "aspirational_lifestyle",
-        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_558fbe2f09.jpg"
-      }
-    ],
-    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_558fbe2f09.jpg",
-    "carousel": {
-      "slides": [
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_59f48bc4.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_59f48bc4.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_59f48bc4.jpg",
-        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_59f48bc4.jpg"
-      ],
-      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_59f48bc4.jpg",
-      "style": "anime"
-    },
-    "live_pinterest": {
-      "created_at": "2026-10-22T00:07:01",
-      "is_removable": false,
-      "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces",
-      "has_been_promoted": false,
-      "board_id": "1132444337492933752",
-      "creative_type": "CAROUSEL",
-      "pin_metrics": null,
-      "board_section_id": null,
-      "is_product": false,
-      "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-      "dominant_color": null,
-      "media": {
-        "media_type": "multiple_images",
-        "items": [
-          {
-            "images": {},
-            "title": "Shoe Clutter Gone: 24 Pocket Over-Door Organizer! \u2705\u2728 Smart Spaces (Slide 1/4)",
-            "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Dimensions & Build Specs: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
-            "description": "Full space-saving specifications, dimensions, and tool-free 60s setup. Check today's price! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {
-              "150x150": {
-                "url": "https://i.pinimg.com/150x150/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 150,
-                "height": 150
-              },
-              "400x300": {
-                "url": "https://i.pinimg.com/400x300/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 400,
-                "height": 300
-              },
-              "600x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "564x": {
-                "url": "https://i.pinimg.com/564x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 564,
-                "height": 846
-              },
-              "1200x": {
-                "url": "https://i.pinimg.com/1200x/8c/6b/3e/8c6b3e05de330465996e6c124f0aa82b.jpg",
-                "width": 1000,
-                "height": 1500
-              }
-            },
-            "title": "Color & Angle Variants: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
-            "description": "Multi-angle inspection, finish options, and aesthetic variants for modern compact homes. Tap to view on Amazon! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-            "item_type": "image"
-          },
-          {
-            "images": {},
-            "title": "Transform Your Space: Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets",
-            "description": "Real-world space-saving transformation. 100% RENTER FRIENDLY \u2022 NO DRILL. Practical uses for compact living. Tap for today's deal! #AmazonAssociate",
-            "link": "https://www.amazon.com/dp/B0915B37G6?tag=smartspace07-21",
-            "item_type": "image"
-          }
-        ]
-      },
-      "product_tags": [],
-      "parent_pin_id": null,
-      "is_owner": true,
-      "alt_text": "Simple Houseware Over the Door 24 Pocket Shoe Organizer Clear Pockets - Smart Spaces Amazon find",
-      "description": "Tired of tripping over shoes? This clear over-door organizer holds 24 pairs, freeing up floor space instantly! Perfect for apartments, dorms, or anyone who loves a tidy aesthetic. \ud83c\udfe0\u2728 Small space challenge: Could you fit your whole collection here? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
-      "is_standard": true,
-      "id": "1132444268837293850",
-      "board_owner": {
-        "username": "Smart_Spaces"
-      },
-      "pin_id": "1132444268837293850"
-    }
-  },
-  {
     "timestamp": "2026-10-22T06:09:10.235052+00:00",
     "status": "success",
     "execution_time_seconds": 18.0,
@@ -14561,6 +14382,105 @@
       ],
       "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_ea5caa84.jpg",
       "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
+  },
+  {
+    "timestamp": "2026-11-11T07:46:14.650723+00:00",
+    "status": "success",
+    "execution_time_seconds": 17.6,
+    "product": {
+      "asin": "B0DRHT8JSN",
+      "title": "Cable Hider Raceway Kit  Magnetic Cable Management Under Desk with Upgraded Aesthetic Large Hole",
+      "price": "$19.99",
+      "rating": 4.5,
+      "affiliate_url": "https://www.amazon.com/dp/B0DRHT8JSN?tag=smartspace07-21",
+      "bridge_slug": "cable-hider-raceway-kit-magnetic-cable-management-under-desk-with-upgraded--b0drht8jsn"
+    },
+    "ai_vision": {
+      "dominant_theme": "bento_dark",
+      "primary_hex": "#111827",
+      "accent_hex": "#3B82F6",
+      "badge_text": "Clean Desk Essential",
+      "visual_hook": "Hide Ugly Desk Cords Instantly",
+      "secondary_hook": "Magnetic and self-adhesive installation options included",
+      "target_audience": "Remote Workers",
+      "alt_text": "Black cable hider raceway kit with magnetic tape, screws, and cable clips for under desk cord management.",
+      "cv_features": {
+        "rb_ratio": 0.993,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 54.5,
+        "edge_clutter": 52.4,
+        "dominant_hex": "#535454",
+        "accent_hex": "#f90203",
+        "bounding_box": [
+          0.05,
+          0.013,
+          0.975,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 0.993,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 54.5,
+      "edge_clutter": 52.4,
+      "bounding_box": [
+        0.05,
+        0.013,
+        0.975,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Ditch Desk Clutter: Magnetic Cable Hider Under Desk! \ud83d\udd25\u2728 Smart Spaces",
+      "description": "Tired of cables ruining your aesthetic? This magnetic raceway kit tucks wires under your desk for a clean, hotel-style look. Perfect for small studios! \ud83d\udcbb\u2728 Would you use this in your home office or gaming setup? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#DeskSetup",
+        "#CableManagement",
+        "#SmallSpaceHacks",
+        "#HomeOffice",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_dd1bfafe2e.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_50290e79c1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_1f8d164aeb.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_89bb284d3c.jpg"
+      },
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_3865e67bf1.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_3865e67bf1.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_66bf52df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_66bf52df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_66bf52df.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_66bf52df.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_66bf52df.jpg",
+      "style": "cyber_bento"
     },
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST pins: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
