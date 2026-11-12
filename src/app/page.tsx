@@ -55,21 +55,23 @@ export default function PinForgeApp() {
   const [renderLatency, setRenderLatency] = useState<number>(38.4);
 
   // Active Product & Campaign State
-  const [currentProduct, setCurrentProduct] = useState<CatalogProduct>(VERIFIED_PRODUCTS["sony-wh-1000xm5"]);
-  const [pinTitle, setPinTitle] = useState<string>("Block Out The World: Sony WH-1000XM5 Headphones Review");
-  const [pinDescription, setPinDescription] = useState<string>(
-    "Upgrade your daily focus and commute with the Sony WH-1000XM5. Industry-leading noise cancellation, 30-hour battery life, and plush all-day comfort make these the ultimate work headphones. Tap to check today's best deal! #AmazonAssociate"
+  const [currentProduct, setCurrentProduct] = useState<CatalogProduct>(
+    VERIFIED_PRODUCTS["under-sink-sliding-organizer"] || Object.values(VERIFIED_PRODUCTS)[0]
   );
-  const [boardName, setBoardName] = useState<string>("Must-Have Tech Gadgets");
+  const [pinTitle, setPinTitle] = useState<string>("Small Kitchen Hack: 2-Tier Under Sink Sliding Organizer");
+  const [pinDescription, setPinDescription] = useState<string>(
+    "Double your cabinet storage instantly! This 2-tier under sink sliding organizer glides smoothly around plumbing pipes without any drilling. 100% renter friendly. Tap to view today's Amazon deal! #AmazonAssociate"
+  );
+  const [boardName, setBoardName] = useState<string>("Space Saving Kitchens");
   const [hashtags, setHashtags] = useState<string[]>([
-    "#SonyWH1000XM5",
-    "#TechGadgets",
-    "#WorkFromHome",
-    "#AestheticDesk",
+    "#SmallKitchenHacks",
+    "#UnderSinkStorage",
+    "#ApartmentOrganization",
+    "#RenterFriendly",
     "#AmazonAssociate",
   ]);
   const [previewImage, setPreviewImage] = useState<string>(
-    "https://m.media-amazon.com/images/P/B09XS7JWHH.01._SCLZZZZZZZ_SX900_.jpg"
+    "https://m.media-amazon.com/images/I/71Y8+gS7JTL.jpg"
   );
   const [base64Pin, setBase64Pin] = useState<string | null>(null);
 
@@ -84,36 +86,36 @@ export default function PinForgeApp() {
     const initialQueue: QueueItem[] = [
       {
         id: "q-1",
-        board_name: "Must-Have Tech Gadgets",
-        title: "Block Out The World: Sony WH-1000XM5 Headphones Review",
-        description: "Experience industry-leading ANC and 30h battery life. Tap to check today's deal! #AmazonAssociate",
-        link: `/p/sony-wh-1000xm5?tag=${affiliateTag}`,
-        image_url: "https://m.media-amazon.com/images/P/B09XS7JWHH.01._SCLZZZZZZZ_SX900_.jpg",
+        board_name: "Space Saving Kitchens",
+        title: "Small Kitchen Hack: 2-Tier Under Sink Sliding Organizer",
+        description: "Double your cabinet storage instantly without any tools or drilling. Tap to check today's deal! #AmazonAssociate",
+        link: `/p/under-sink-sliding-organizer?tag=${affiliateTag}`,
+        image_url: "https://m.media-amazon.com/images/I/71Y8+gS7JTL.jpg",
         published_at: new Date(Date.now() + 4 * 3600 * 1000).toISOString(),
-        price: "$348.00",
-        slug: "sony-wh-1000xm5",
+        price: "$24.99",
+        slug: "under-sink-sliding-organizer",
       },
       {
         id: "q-2",
-        board_name: "Booktok & Cozy Reading",
-        title: "Why The Kindle Paperwhite Is The Ultimate E-Reader",
-        description: "Glare-free 6.8\" screen, 10 weeks battery, and waterproof design for cozy reading. #AmazonAssociate",
-        link: `/p/kindle-paperwhite?tag=${affiliateTag}`,
-        image_url: "https://m.media-amazon.com/images/P/B09SWW583J.01._SCLZZZZZZZ_SX900_.jpg",
+        board_name: "Closet & Wardrobe Organization",
+        title: "Turn Dead Space Under Your Bed Into Hidden Rolling Wardrobes",
+        description: "Heavy-duty carbon steel frame with 360° caster wheels and clear dust cover. #AmazonAssociate",
+        link: `/p/under-bed-storage-with-wheels?tag=${affiliateTag}`,
+        image_url: "https://m.media-amazon.com/images/I/71qZ7eF9KqL.jpg",
         published_at: new Date(Date.now() + 8 * 3600 * 1000).toISOString(),
-        price: "$149.99",
-        slug: "kindle-paperwhite",
+        price: "$39.99",
+        slug: "under-bed-storage-with-wheels",
       },
       {
         id: "q-3",
-        board_name: "Everyday Aesthetic Essentials",
-        title: "The Viral Stanley 40oz Tumbler: Does It Live Up To The Hype?",
-        description: "Keeps drinks ice-cold for 48 hours and fits standard car cup holders. Tap to see colors! #AmazonAssociate",
-        link: `/p/stanley-quencher-40oz?tag=${affiliateTag}`,
-        image_url: "https://m.media-amazon.com/images/P/B0BYP6DZ53.01._SCLZZZZZZZ_SX900_.jpg",
+        board_name: "Space Saving Kitchens",
+        title: "Reclaim Your Kitchen Countertops with Magnetic Fridge Racks",
+        description: "Holds up to 11 lbs each without sliding. Slaps onto fridge sides instantly! #AmazonAssociate",
+        link: `/p/magnetic-refrigerator-spice-rack?tag=${affiliateTag}`,
+        image_url: "https://m.media-amazon.com/images/I/81xU21vGZSL.jpg",
         published_at: new Date(Date.now() + 12 * 3600 * 1000).toISOString(),
-        price: "$45.00",
-        slug: "stanley-quencher-40oz",
+        price: "$29.99",
+        slug: "magnetic-refrigerator-spice-rack",
       },
     ];
     setQueue(initialQueue);
