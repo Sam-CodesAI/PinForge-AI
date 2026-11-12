@@ -83,7 +83,7 @@ class PinGenerateRequest(BaseModel):
         "pollinations_lifestyle",
         "aspirational_lifestyle",
         "track_a_lifestyle",
-    ] = Field(default="bento_dark", description="Visual graphic layout")
+    ] = Field(default="aspirational_lifestyle", description="Visual graphic layout")
     brand: Optional[str] = None
     category: Optional[str] = Field(default="Smart Home & Space Saving")
     board_name: Optional[str] = Field(default="Smart Spaces")

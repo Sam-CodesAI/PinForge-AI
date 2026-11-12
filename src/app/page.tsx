@@ -46,7 +46,7 @@ export default function PinForgeApp() {
   // Input State
   const [urlInput, setUrlInput] = useState<string>("B09XS7JWHH");
   const [affiliateTag, setAffiliateTag] = useState<string>("smartspace07-21");
-  const [selectedTemplate, setSelectedTemplate] = useState<"bento_dark" | "warm_editorial" | "problem_solver">("bento_dark");
+  const [selectedTemplate, setSelectedTemplate] = useState<"bento_dark" | "warm_editorial" | "problem_solver">("warm_editorial");
   
   // Loading & Execution States
   const [isExtracting, setIsExtracting] = useState<boolean>(false);

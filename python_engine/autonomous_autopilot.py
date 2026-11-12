@@ -152,7 +152,7 @@ class AutonomousAutopilot:
             features=product.features,
             category=product.category,
             board_name=effective_board,
-            template="bento_dark",
+            template="aspirational_lifestyle",
             cta_text="📌 SAVE PIN • TAP FOR BEST DEAL ->",
         )
         variants = generate_all_pin_variants(pin_req)
@@ -237,26 +237,12 @@ class AutonomousAutopilot:
                     )
                     logger.info(f"✅ Published live Carousel Pin ID: {live_pin_data.get('pin_id')} to Board: '{effective_board}'")
                 else:
-                    # Dynamic single-pin template routing based on Track A, AI vision theme, and board intent
-                    if track_a or template_style in ("aspirational_lifestyle", "track_a_lifestyle"):
-                        chosen_variant = next(
-                            (v for v in variants if "aspirational_lifestyle" in v.image_path),
-                            variants[0],
-                        )
-                    else:
-                        v_theme = vision_meta.get("dominant_theme") or vision_meta.get("theme", "bento_dark")
-                        chosen_variant = variants[0]
-                        for v in variants:
-                            if v_theme in v.image_path:
-                                chosen_variant = v
-                                break
-                        else:
-                            # If specific theme not found, rotate lifestyle for apartment/studio boards
-                            if any(k in effective_board.lower() for k in ["apartment", "studio"]):
-                                for v in variants:
-                                    if "aspirational_lifestyle" in v.image_path or "pollinations_lifestyle" in v.image_path:
-                                        chosen_variant = v
-                                        break
+                    # Prioritize high-aesthetic photorealistic AI lifestyle scene (Track A)
+                    # to maximize Pinterest saves and organic viral distribution
+                    chosen_variant = next(
+                        (v for v in variants if "aspirational_lifestyle" in v.image_path or "pollinations_lifestyle" in v.image_path),
+                        variants[0],
+                    )
 
                     target_destination = (
                         f"https://pinforge.vercel.app/p/{product.bridge_slug}?tag={self.affiliate_tag}"

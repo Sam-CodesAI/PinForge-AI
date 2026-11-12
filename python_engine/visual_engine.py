@@ -31,6 +31,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 from python_engine.config import (
     FONTS_DIR,
+    GEMINI_API_KEY,
     IDEOGRAM_API_KEY,
     FAL_KEY,
     POLLINATIONS_API_KEY,
@@ -474,7 +475,7 @@ class VisualGenerationResult:
 
     @property
     def is_ai_generated(self) -> bool:
-        return self.provider in ("ideogram", "fal_flux", "pollinations")
+        return self.provider in ("google_imagen", "ideogram", "fal_flux", "pollinations")
 
     @property
     def is_fallback(self) -> bool:
@@ -482,7 +483,62 @@ class VisualGenerationResult:
 
 
 # ============================================================================
-# TIER 1: IDEOGRAM 2.0 / 3.0 API ENGINE
+# TIER 1: GOOGLE IMAGEN 3 (imagen-3.0-generate-002) ENGINE
+# ============================================================================
+
+def generate_google_imagen_image(
+    prompt: str,
+    api_key: Optional[str] = None,
+    timeout: float = 30.0,
+    aspect_ratio: str = "9:16",
+) -> Optional[Image.Image]:
+    """Generates an ultra-high aesthetic photorealistic interior scene via Google Imagen 3 (imagen-3.0-generate-002).
+
+    Uses generativelanguage.googleapis.com REST endpoint with GEMINI_API_KEY.
+    Returns 1000x1500 (2:3) RGBA Image.
+    """
+    import base64
+    import os
+    effective_key = (api_key or GEMINI_API_KEY or os.getenv("GEMINI_API_KEY") or "").strip()
+    if not effective_key:
+        logger.debug("Tier 1 (Google Imagen 3): Skipped (GEMINI_API_KEY unset).")
+        return None
+
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key={effective_key}"
+    payload = {
+        "instances": [{"prompt": prompt.strip()}],
+        "parameters": {
+            "sampleCount": 1,
+            "aspectRatio": aspect_ratio,
+            "outputMimeType": "image/jpeg",
+        },
+    }
+    headers = {"Content-Type": "application/json"}
+
+    logger.info("🎨 [Tier 1] Invoking Google Imagen 3 (imagen-3.0-generate-002) for photorealistic interior...")
+    try:
+        with httpx.Client(timeout=timeout) as client:
+            resp = client.post(endpoint, json=payload, headers=headers)
+            if resp.status_code == 200:
+                data = resp.json()
+                predictions = data.get("predictions", [])
+                if predictions and "bytesBase64Encoded" in predictions[0]:
+                    b64_bytes = base64.b64decode(predictions[0]["bytesBase64Encoded"])
+                    img = Image.open(io.BytesIO(b64_bytes)).convert("RGBA")
+                    resized = ImageOps.fit(img, (CANVAS_WIDTH, CANVAS_HEIGHT), method=Image.Resampling.LANCZOS)
+                    logger.info("✓ [Tier 1] Google Imagen 3 generated photorealistic 1000x1500 scene successfully.")
+                    return resized
+                else:
+                    logger.warning(f"Tier 1 (Google Imagen 3): No prediction bytes in response: {str(data)[:200]}")
+            else:
+                logger.warning(f"Tier 1 (Google Imagen 3): HTTP {resp.status_code} - {resp.text[:200]}")
+    except Exception as e:
+        logger.warning(f"Tier 1 (Google Imagen 3) request failed: {e}")
+    return None
+
+
+# ============================================================================
+# TIER 2: IDEOGRAM 2.0 / 3.0 API ENGINE
 # ============================================================================
 
 def generate_ideogram_image(
@@ -822,12 +878,45 @@ def generate_visual_with_waterfall(
         style=style,
     )
 
+    effective_gemini_key = (GEMINI_API_KEY if GEMINI_API_KEY is not None else (os.getenv("GEMINI_API_KEY") or "")).strip()
     effective_ideogram_key = (IDEOGRAM_API_KEY if IDEOGRAM_API_KEY is not None else (os.getenv("IDEOGRAM_API_KEY") or "")).strip()
     effective_fal_key = (FAL_KEY if FAL_KEY is not None else (os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "")).strip()
     effective_pollinations_key = (POLLINATIONS_API_KEY if POLLINATIONS_API_KEY is not None else (os.getenv("POLLINATIONS_API_KEY") or "")).strip()
 
     # ----------------------------------------------------
-    # TIER 1: IDEOGRAM 2.0 / 3.0 API
+    # TIER 1: GOOGLE IMAGEN 3 (imagen-3.0-generate-002)
+    # ----------------------------------------------------
+    if preferred_tier in (None, 1) and effective_gemini_key:
+        try:
+            tier1_prompt = build_visual_prompt(
+                product_title=product_title,
+                board_name=board_name,
+                category=category,
+                style=style,
+                tier=1,
+            )
+            img = generate_google_imagen_image(tier1_prompt, api_key=effective_gemini_key, timeout=28.0)
+            if img:
+                elapsed = (time.perf_counter() - start_time) * 1000.0
+                return VisualGenerationResult(
+                    image=img,
+                    provider="google_imagen",
+                    tier=1,
+                    prompt_used=tier1_prompt,
+                    elapsed_ms=round(elapsed, 2),
+                    seed=seed,
+                    success=True,
+                    error_trail=error_trail,
+                )
+            error_trail.append("Tier 1 (Google Imagen 3): Returned None or invalid response")
+        except Exception as e:
+            error_trail.append(f"Tier 1 (Google Imagen 3): Exception {e}")
+    else:
+        if not effective_gemini_key:
+            error_trail.append("Tier 1 (Google Imagen 3): Skipped (GEMINI_API_KEY unset)")
+
+    # ----------------------------------------------------
+    # TIER 2: IDEOGRAM 2.0 / 3.0 API
     # ----------------------------------------------------
     if preferred_tier in (None, 1) and effective_ideogram_key:
         try:

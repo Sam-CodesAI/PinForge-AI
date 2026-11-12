@@ -822,11 +822,11 @@ def generate_pin_graphic(req: PinGenerateRequest) -> PinGenerateResponse:
 def generate_all_pin_variants(req: PinGenerateRequest) -> List[PinGenerateResponse]:
     """Generates all 5 high-converting pin variants (bento_dark, warm_editorial, problem_solver, pollinations_lifestyle, aspirational_lifestyle)."""
     templates = [
-        "bento_dark",
+        "aspirational_lifestyle",
+        "pollinations_lifestyle",
         "warm_editorial",
         "problem_solver",
-        "pollinations_lifestyle",
-        "aspirational_lifestyle",
+        "bento_dark",
     ]
     variants = []
     product_img = download_image(req.image_url)
