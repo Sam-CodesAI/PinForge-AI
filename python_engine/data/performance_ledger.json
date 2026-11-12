@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T02:23:43.947649+00:00",
+  "last_updated": "2026-11-12T08:19:59.612102+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
   "total_pins_evaluated": 153,
   "top_performing_pins": [
@@ -29,7 +29,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946512+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611218+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -57,7 +57,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946541+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611248+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -85,7 +85,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946553+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611259+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -113,7 +113,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946563+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611267+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -141,7 +141,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946572+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611274+00:00"
     },
     {
       "pin_id": "1132444268836867291",
@@ -169,7 +169,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946580+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611281+00:00"
     },
     {
       "pin_id": "1132444268836754394",
@@ -197,7 +197,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946587+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611286+00:00"
     },
     {
       "pin_id": "1132444268836588638",
@@ -225,7 +225,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946593+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611291+00:00"
     },
     {
       "pin_id": "1132444268836581194",
@@ -253,7 +253,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946599+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611296+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -281,7 +281,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946606+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611301+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -309,7 +309,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946613+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611307+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -337,7 +337,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946622+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611313+00:00"
     },
     {
       "pin_id": "1132444268835796753",
@@ -365,7 +365,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946629+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611319+00:00"
     },
     {
       "pin_id": "1132444268838425168",
@@ -393,7 +393,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946637+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611326+00:00"
     },
     {
       "pin_id": "1132444268838415626",
@@ -421,7 +421,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946643+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611330+00:00"
     },
     {
       "pin_id": "1132444268838409928",
@@ -449,7 +449,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946648+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611335+00:00"
     },
     {
       "pin_id": "1132444268838364362",
@@ -477,7 +477,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946653+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611339+00:00"
     },
     {
       "pin_id": "1132444268838352985",
@@ -505,7 +505,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946660+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611344+00:00"
     },
     {
       "pin_id": "1132444268838317994",
@@ -533,7 +533,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946665+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611348+00:00"
     },
     {
       "pin_id": "1132444268838304622",
@@ -561,7 +561,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946671+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611352+00:00"
     },
     {
       "pin_id": "1132444268838268326",
@@ -589,7 +589,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946676+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611356+00:00"
     },
     {
       "pin_id": "1132444268838238775",
@@ -617,7 +617,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946683+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611362+00:00"
     },
     {
       "pin_id": "1132444268838227314",
@@ -645,7 +645,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946688+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611366+00:00"
     },
     {
       "pin_id": "1132444268838213595",
@@ -673,7 +673,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946693+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611370+00:00"
     },
     {
       "pin_id": "1132444268838180843",
@@ -701,7 +701,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946698+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611374+00:00"
     }
   ],
   "board_performance_summary": {
@@ -793,7 +793,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946512+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611218+00:00"
     },
     {
       "pin_id": "1132444268836010341",
@@ -821,7 +821,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946541+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611248+00:00"
     },
     {
       "pin_id": "1132444268836000895",
@@ -849,7 +849,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946553+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611259+00:00"
     },
     {
       "pin_id": "1132444268835984000",
@@ -877,7 +877,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946563+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611267+00:00"
     },
     {
       "pin_id": "1132444268835842341",
@@ -905,7 +905,7 @@
         "label": "High Conversion",
         "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946572+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611274+00:00"
     },
     {
       "pin_id": "1132444268836867291",
@@ -933,7 +933,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946580+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611281+00:00"
     },
     {
       "pin_id": "1132444268836754394",
@@ -961,7 +961,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946587+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611286+00:00"
     },
     {
       "pin_id": "1132444268836588638",
@@ -989,7 +989,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946593+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611291+00:00"
     },
     {
       "pin_id": "1132444268836581194",
@@ -1017,7 +1017,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946599+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611296+00:00"
     },
     {
       "pin_id": "1132444268835846222",
@@ -1045,7 +1045,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946606+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611301+00:00"
     },
     {
       "pin_id": "1132444268835831954",
@@ -1073,7 +1073,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946613+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611307+00:00"
     },
     {
       "pin_id": "1132444268835821570",
@@ -1101,7 +1101,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946622+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611313+00:00"
     },
     {
       "pin_id": "1132444268835796753",
@@ -1129,7 +1129,7 @@
         "label": "High Engagement",
         "recommendation": "Strong visual hook driving pin clicks. Elevate destination link visibility with glowing price badges to convert clicks into outbound buyers."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946629+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611319+00:00"
     },
     {
       "pin_id": "1132444268838425168",
@@ -1157,7 +1157,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946637+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611326+00:00"
     },
     {
       "pin_id": "1132444268838415626",
@@ -1185,7 +1185,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946643+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611330+00:00"
     },
     {
       "pin_id": "1132444268838409928",
@@ -1213,7 +1213,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946648+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611335+00:00"
     },
     {
       "pin_id": "1132444268838364362",
@@ -1241,7 +1241,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946653+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611339+00:00"
     },
     {
       "pin_id": "1132444268838352985",
@@ -1269,7 +1269,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946660+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611344+00:00"
     },
     {
       "pin_id": "1132444268838317994",
@@ -1297,7 +1297,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946665+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611348+00:00"
     },
     {
       "pin_id": "1132444268838304622",
@@ -1325,7 +1325,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946671+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611352+00:00"
     },
     {
       "pin_id": "1132444268838268326",
@@ -1353,7 +1353,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946676+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611356+00:00"
     },
     {
       "pin_id": "1132444268838238775",
@@ -1381,7 +1381,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946683+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611362+00:00"
     },
     {
       "pin_id": "1132444268838227314",
@@ -1409,7 +1409,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946688+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611366+00:00"
     },
     {
       "pin_id": "1132444268838213595",
@@ -1437,7 +1437,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946693+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611370+00:00"
     },
     {
       "pin_id": "1132444268838180843",
@@ -1465,7 +1465,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946698+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611374+00:00"
     },
     {
       "pin_id": "1132444268838172653",
@@ -1493,7 +1493,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946704+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611378+00:00"
     },
     {
       "pin_id": "1132444268838156336",
@@ -1521,7 +1521,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946709+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611383+00:00"
     },
     {
       "pin_id": "1132444268838145711",
@@ -1549,7 +1549,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946714+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611387+00:00"
     },
     {
       "pin_id": "1132444268838132309",
@@ -1577,7 +1577,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946763+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611429+00:00"
     },
     {
       "pin_id": "1132444268838087948",
@@ -1605,7 +1605,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946773+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611436+00:00"
     },
     {
       "pin_id": "1132444268838072261",
@@ -1633,7 +1633,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946779+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611441+00:00"
     },
     {
       "pin_id": "1132444268838061735",
@@ -1661,7 +1661,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946788+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611448+00:00"
     },
     {
       "pin_id": "1132444268838050240",
@@ -1689,7 +1689,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946794+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611453+00:00"
     },
     {
       "pin_id": "1132444268838012703",
@@ -1717,7 +1717,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946800+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611457+00:00"
     },
     {
       "pin_id": "1132444268838002577",
@@ -1745,7 +1745,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946806+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611462+00:00"
     },
     {
       "pin_id": "1132444268837983891",
@@ -1773,7 +1773,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946812+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611466+00:00"
     },
     {
       "pin_id": "1132444268837970442",
@@ -1801,7 +1801,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946818+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611471+00:00"
     },
     {
       "pin_id": "1132444268837958670",
@@ -1829,7 +1829,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946823+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611475+00:00"
     },
     {
       "pin_id": "1132444268837918959",
@@ -1857,7 +1857,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946829+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611480+00:00"
     },
     {
       "pin_id": "1132444268837910339",
@@ -1885,7 +1885,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946834+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611484+00:00"
     },
     {
       "pin_id": "1132444268837891174",
@@ -1913,7 +1913,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946840+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611489+00:00"
     },
     {
       "pin_id": "1132444268837879253",
@@ -1941,7 +1941,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946848+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611495+00:00"
     },
     {
       "pin_id": "1132444268837867338",
@@ -1969,7 +1969,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946855+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611501+00:00"
     },
     {
       "pin_id": "1132444268837829230",
@@ -1997,7 +1997,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946860+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611505+00:00"
     },
     {
       "pin_id": "1132444268837821588",
@@ -2025,7 +2025,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946866+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611509+00:00"
     },
     {
       "pin_id": "1132444268837805446",
@@ -2053,7 +2053,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946872+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611514+00:00"
     },
     {
       "pin_id": "1132444268837795241",
@@ -2081,7 +2081,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946877+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611518+00:00"
     },
     {
       "pin_id": "1132444268837784904",
@@ -2109,7 +2109,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946882+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611522+00:00"
     },
     {
       "pin_id": "1132444268837739053",
@@ -2137,7 +2137,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946887+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611526+00:00"
     },
     {
       "pin_id": "1132444268837728345",
@@ -2165,7 +2165,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946893+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611530+00:00"
     },
     {
       "pin_id": "1132444268837705015",
@@ -2193,7 +2193,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946898+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611534+00:00"
     },
     {
       "pin_id": "1132444268837689437",
@@ -2221,7 +2221,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946908+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611541+00:00"
     },
     {
       "pin_id": "1132444268837674972",
@@ -2249,7 +2249,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946913+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611545+00:00"
     },
     {
       "pin_id": "1132444268837634044",
@@ -2277,7 +2277,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946918+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611549+00:00"
     },
     {
       "pin_id": "1132444268837624134",
@@ -2305,7 +2305,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946928+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611554+00:00"
     },
     {
       "pin_id": "1132444268837597314",
@@ -2333,7 +2333,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946935+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611560+00:00"
     },
     {
       "pin_id": "1132444268837577908",
@@ -2361,7 +2361,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946941+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611564+00:00"
     },
     {
       "pin_id": "1132444268837561828",
@@ -2389,7 +2389,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946946+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611568+00:00"
     },
     {
       "pin_id": "1132444268837521546",
@@ -2417,7 +2417,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946951+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611572+00:00"
     },
     {
       "pin_id": "1132444268837511399",
@@ -2445,7 +2445,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946959+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611577+00:00"
     },
     {
       "pin_id": "1132444268837488643",
@@ -2473,7 +2473,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946965+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611581+00:00"
     },
     {
       "pin_id": "1132444268837475232",
@@ -2501,7 +2501,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946974+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611588+00:00"
     },
     {
       "pin_id": "1132444268837460179",
@@ -2529,7 +2529,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946979+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611592+00:00"
     },
     {
       "pin_id": "1132444268837417840",
@@ -2557,7 +2557,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946984+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611596+00:00"
     },
     {
       "pin_id": "1132444268837408384",
@@ -2585,7 +2585,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946989+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611600+00:00"
     },
     {
       "pin_id": "1132444268837386039",
@@ -2613,7 +2613,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946994+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611604+00:00"
     },
     {
       "pin_id": "1132444268837374308",
@@ -2641,7 +2641,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.946999+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611608+00:00"
     },
     {
       "pin_id": "1132444268837360598",
@@ -2669,7 +2669,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947004+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611612+00:00"
     },
     {
       "pin_id": "1132444268837319462",
@@ -2697,7 +2697,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947011+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611617+00:00"
     },
     {
       "pin_id": "1132444268837312033",
@@ -2725,7 +2725,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947017+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611621+00:00"
     },
     {
       "pin_id": "1132444268837293850",
@@ -2753,7 +2753,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947023+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611630+00:00"
     },
     {
       "pin_id": "1132444268837282588",
@@ -2781,7 +2781,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947030+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611635+00:00"
     },
     {
       "pin_id": "1132444268837269590",
@@ -2809,7 +2809,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947036+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611639+00:00"
     },
     {
       "pin_id": "1132444268837232942",
@@ -2837,7 +2837,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947041+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611643+00:00"
     },
     {
       "pin_id": "1132444268837225104",
@@ -2865,7 +2865,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947046+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611647+00:00"
     },
     {
       "pin_id": "1132444268837205179",
@@ -2893,7 +2893,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947051+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611650+00:00"
     },
     {
       "pin_id": "1132444268837193890",
@@ -2921,7 +2921,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947058+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611656+00:00"
     },
     {
       "pin_id": "1132444268837180108",
@@ -2949,7 +2949,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947063+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611660+00:00"
     },
     {
       "pin_id": "1132444268837144902",
@@ -2977,7 +2977,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947068+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611664+00:00"
     },
     {
       "pin_id": "1132444268837137343",
@@ -3005,7 +3005,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947074+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611668+00:00"
     },
     {
       "pin_id": "1132444268837119334",
@@ -3033,7 +3033,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947079+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611674+00:00"
     },
     {
       "pin_id": "1132444268837109039",
@@ -3061,7 +3061,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947087+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611679+00:00"
     },
     {
       "pin_id": "1132444268837099898",
@@ -3089,7 +3089,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947092+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611683+00:00"
     },
     {
       "pin_id": "1132444268837058298",
@@ -3117,7 +3117,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947097+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611687+00:00"
     },
     {
       "pin_id": "1132444268837049325",
@@ -3145,7 +3145,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947103+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611691+00:00"
     },
     {
       "pin_id": "1132444268837028646",
@@ -3173,7 +3173,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947108+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611695+00:00"
     },
     {
       "pin_id": "1132444268837014137",
@@ -3201,7 +3201,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947113+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611699+00:00"
     },
     {
       "pin_id": "1132444268836998160",
@@ -3229,7 +3229,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947118+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611702+00:00"
     },
     {
       "pin_id": "1132444268836961754",
@@ -3257,7 +3257,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947123+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611706+00:00"
     },
     {
       "pin_id": "1132444268836954267",
@@ -3285,7 +3285,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947128+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611710+00:00"
     },
     {
       "pin_id": "1132444268836933311",
@@ -3313,7 +3313,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947135+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611715+00:00"
     },
     {
       "pin_id": "1132444268836919076",
@@ -3341,7 +3341,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947142+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611721+00:00"
     },
     {
       "pin_id": "1132444268836903495",
@@ -3369,7 +3369,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947149+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611726+00:00"
     },
     {
       "pin_id": "1132444268836859505",
@@ -3397,7 +3397,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947157+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611733+00:00"
     },
     {
       "pin_id": "1132444268836839792",
@@ -3425,7 +3425,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947163+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611737+00:00"
     },
     {
       "pin_id": "1132444268836826567",
@@ -3453,7 +3453,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947168+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611742+00:00"
     },
     {
       "pin_id": "1132444268836815434",
@@ -3481,7 +3481,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947174+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611746+00:00"
     },
     {
       "pin_id": "1132444268836779331",
@@ -3509,7 +3509,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947180+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611751+00:00"
     },
     {
       "pin_id": "1132444268836772798",
@@ -3537,7 +3537,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947185+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611755+00:00"
     },
     {
       "pin_id": "1132444268836741737",
@@ -3565,7 +3565,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947191+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611759+00:00"
     },
     {
       "pin_id": "1132444268836729072",
@@ -3593,7 +3593,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947196+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611764+00:00"
     },
     {
       "pin_id": "1132444268836691176",
@@ -3621,7 +3621,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947204+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611770+00:00"
     },
     {
       "pin_id": "1132444268836683461",
@@ -3649,7 +3649,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947209+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611774+00:00"
     },
     {
       "pin_id": "1132444268836666910",
@@ -3677,7 +3677,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947233+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611779+00:00"
     },
     {
       "pin_id": "1132444268836656913",
@@ -3705,7 +3705,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947243+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611783+00:00"
     },
     {
       "pin_id": "1132444268836644629",
@@ -3733,7 +3733,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947251+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611789+00:00"
     },
     {
       "pin_id": "1132444268836610175",
@@ -3761,7 +3761,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947258+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611795+00:00"
     },
     {
       "pin_id": "1132444268836604080",
@@ -3789,7 +3789,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947266+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611801+00:00"
     },
     {
       "pin_id": "1132444268836572779",
@@ -3817,7 +3817,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947274+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611807+00:00"
     },
     {
       "pin_id": "1132444268836537181",
@@ -3845,7 +3845,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947282+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611814+00:00"
     },
     {
       "pin_id": "1132444268836526763",
@@ -3873,7 +3873,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947288+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611819+00:00"
     },
     {
       "pin_id": "1132444268836510649",
@@ -3901,7 +3901,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947295+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611825+00:00"
     },
     {
       "pin_id": "1132444268836499130",
@@ -3929,7 +3929,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947301+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611829+00:00"
     },
     {
       "pin_id": "1132444268836493166",
@@ -3957,7 +3957,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947307+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611833+00:00"
     },
     {
       "pin_id": "1132444268836447584",
@@ -3985,7 +3985,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947312+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611838+00:00"
     },
     {
       "pin_id": "1132444268836436638",
@@ -4013,7 +4013,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947318+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611842+00:00"
     },
     {
       "pin_id": "1132444268836416223",
@@ -4041,7 +4041,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947324+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611846+00:00"
     },
     {
       "pin_id": "1132444268836404193",
@@ -4069,7 +4069,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947330+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611851+00:00"
     },
     {
       "pin_id": "1132444268836390896",
@@ -4097,7 +4097,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947335+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611855+00:00"
     },
     {
       "pin_id": "1132444268836357342",
@@ -4125,7 +4125,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947343+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611861+00:00"
     },
     {
       "pin_id": "1132444268836347738",
@@ -4153,7 +4153,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947349+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611865+00:00"
     },
     {
       "pin_id": "1132444268836324115",
@@ -4181,7 +4181,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947356+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611871+00:00"
     },
     {
       "pin_id": "1132444268836311925",
@@ -4209,7 +4209,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947362+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611875+00:00"
     },
     {
       "pin_id": "1132444268836300504",
@@ -4237,7 +4237,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947367+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611880+00:00"
     },
     {
       "pin_id": "1132444268836267066",
@@ -4265,7 +4265,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947375+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611886+00:00"
     },
     {
       "pin_id": "1132444268836257117",
@@ -4293,7 +4293,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947380+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611890+00:00"
     },
     {
       "pin_id": "1132444268836239264",
@@ -4321,7 +4321,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947386+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611894+00:00"
     },
     {
       "pin_id": "1132444268836229620",
@@ -4349,7 +4349,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947392+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611899+00:00"
     },
     {
       "pin_id": "1132444268836217222",
@@ -4377,7 +4377,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947398+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611903+00:00"
     },
     {
       "pin_id": "1132444268836182366",
@@ -4405,7 +4405,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947406+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611909+00:00"
     },
     {
       "pin_id": "1132444268836172774",
@@ -4433,7 +4433,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947411+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611914+00:00"
     },
     {
       "pin_id": "1132444268836155433",
@@ -4461,7 +4461,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947418+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611920+00:00"
     },
     {
       "pin_id": "1132444268836146521",
@@ -4489,7 +4489,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947426+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611926+00:00"
     },
     {
       "pin_id": "1132444268836134919",
@@ -4517,7 +4517,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947432+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611930+00:00"
     },
     {
       "pin_id": "1132444268836096573",
@@ -4545,7 +4545,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947437+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611935+00:00"
     },
     {
       "pin_id": "1132444268836085542",
@@ -4573,7 +4573,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947443+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611939+00:00"
     },
     {
       "pin_id": "1132444268836067497",
@@ -4601,7 +4601,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947448+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611943+00:00"
     },
     {
       "pin_id": "1132444268836058909",
@@ -4629,7 +4629,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947453+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611947+00:00"
     },
     {
       "pin_id": "1132444268836048964",
@@ -4657,7 +4657,7 @@
         "label": "Fresh Ingestion",
         "recommendation": "Recently published pin pending Pinterest search clustering and image vector generation."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947458+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611951+00:00"
     },
     {
       "pin_id": "1132444268835974824",
@@ -4685,7 +4685,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947464+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611955+00:00"
     },
     {
       "pin_id": "1132444268835962931",
@@ -4713,7 +4713,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947471+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611961+00:00"
     },
     {
       "pin_id": "1132444268835930137",
@@ -4741,7 +4741,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947481+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611969+00:00"
     },
     {
       "pin_id": "1132444268835922973",
@@ -4769,7 +4769,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947487+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611974+00:00"
     },
     {
       "pin_id": "1132444268835907887",
@@ -4797,7 +4797,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947492+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611978+00:00"
     },
     {
       "pin_id": "1132444268835901046",
@@ -4825,7 +4825,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947502+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611984+00:00"
     },
     {
       "pin_id": "1132444268835894684",
@@ -4853,7 +4853,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947508+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611988+00:00"
     },
     {
       "pin_id": "1132444268835851879",
@@ -4881,7 +4881,7 @@
         "label": "Cohort Testing",
         "recommendation": "Active in Pinterest cohort sandbox. Allow 48-72h search indexing to assemble taste graph clusters."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947514+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611992+00:00"
     },
     {
       "pin_id": "1132444268835775000",
@@ -4909,7 +4909,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947520+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.611997+00:00"
     },
     {
       "pin_id": "1132444268835773045",
@@ -4937,7 +4937,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947527+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.612003+00:00"
     },
     {
       "pin_id": "1132444268835770261",
@@ -4965,7 +4965,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947534+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.612008+00:00"
     },
     {
       "pin_id": "1132444268835762602",
@@ -4993,7 +4993,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947539+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.612012+00:00"
     },
     {
       "pin_id": "1132444268835762503",
@@ -5021,7 +5021,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947547+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.612018+00:00"
     },
     {
       "pin_id": "1132444268835762446",
@@ -5049,7 +5049,7 @@
         "label": "Expanding Reach",
         "recommendation": "Healthy algorithmic reach. Add a '\ud83d\udccc Save this pin for later' prompt to trigger Pixie bipartite graph distribution."
       },
-      "evaluated_at": "2026-11-12T02:23:43.947553+00:00"
+      "evaluated_at": "2026-11-12T08:19:59.612023+00:00"
     }
   ]
 }
