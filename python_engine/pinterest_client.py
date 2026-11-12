@@ -172,6 +172,117 @@ class PinterestClient:
             logger.warning(f"Could not delete pin {clean_id} from live API: {e}")
             return False
 
+    def delete_all_pins(self) -> Dict[str, Any]:
+        """Delete all pins from Pinterest API v5 and purge all local ledgers and generated assets."""
+        print("🗑️ Initializing complete purge of all Pinterest pins and local ledgers...")
+
+        # 1. Gather all unique pin IDs to delete
+        pin_ids_to_delete = set()
+
+        # Try gathering from live Pinterest API first
+        try:
+            live_pins = self.get_all_pins(include_metrics=False, max_pins=1000)
+            for p in live_pins:
+                pid = str(p.get("id") or p.get("pin_id") or "").strip()
+                if pid:
+                    pin_ids_to_delete.add(pid)
+            print(f"Discovered {len(live_pins)} pins via Pinterest API.")
+        except Exception as e:
+            print(f"Note: Could not query live pins via API: {e}")
+
+        # Supplement with all locally recorded pin IDs
+        for filename in ["published_pins.json", "all_pins_analysis.json", "performance_ledger.json", "autonomous_ledger.json"]:
+            filepath = DATA_DIR / filename
+            if filepath.exists():
+                try:
+                    data = json.loads(filepath.read_text())
+                    if isinstance(data, list):
+                        for item in data:
+                            pid = str(item.get("id") or item.get("pin_id") or item.get("pinterest_pin_id") or "").strip()
+                            if pid:
+                                pin_ids_to_delete.add(pid)
+                    elif isinstance(data, dict):
+                        for item in data.get("all_ranked_pins", []) + data.get("top_performing_pins", []):
+                            pid = str(item.get("pin_id") or item.get("id") or "").strip()
+                            if pid:
+                                pin_ids_to_delete.add(pid)
+                except Exception:
+                    pass
+
+        print(f"Total unique pins identified for deletion: {len(pin_ids_to_delete)}")
+
+        deleted_live = []
+        failed_live = []
+        for pid in sorted(pin_ids_to_delete):
+            success = self.delete_pin(pid)
+            if success:
+                deleted_live.append(pid)
+            else:
+                failed_live.append(pid)
+
+        print(f"Pinterest API Deletion Results: {len(deleted_live)} deleted, {len(failed_live)} failed/offline.")
+
+        # 2. Reset all local data ledgers
+        (DATA_DIR / "published_pins.json").write_text("[]\n")
+        (DATA_DIR / "all_pins_analysis.json").write_text("[]\n")
+        (DATA_DIR / "autonomous_ledger.json").write_text("[]\n")
+        (DATA_DIR / "autopilot_history.json").write_text("[]\n")
+
+        performance_reset = {
+            "last_updated": datetime.now().isoformat(),
+            "formula": "0.4 * Pin_CTR + 0.5 * Outbound_CTR + 0.1 * Saves_Rate",
+            "total_pins_evaluated": 0,
+            "top_performing_pins": [],
+            "board_performance_summary": {},
+            "all_ranked_pins": [],
+        }
+        (DATA_DIR / "performance_ledger.json").write_text(json.dumps(performance_reset, indent=2) + "\n")
+
+        csv_header = "id,title,board,pin_type,destination_url,created_at,impressions,pin_clicks,pin_ctr,outbound_clicks,outbound_ctr,saves,comments,score,tier\n"
+        (DATA_DIR / "pinforge_analytics_export.csv").write_text(csv_header)
+
+        ao_path = DATA_DIR / "account_overview.json"
+        if ao_path.exists():
+            try:
+                ao = json.loads(ao_path.read_text())
+                ao["summary"] = {
+                    "total_pins": 0,
+                    "total_boards": ao.get("summary", {}).get("total_boards", 5),
+                    "monthly_views": 0,
+                    "total_impressions": 0,
+                    "total_pin_clicks": 0,
+                    "total_outbound_clicks": 0,
+                    "total_saves": 0,
+                    "total_comments": 0,
+                    "pin_ctr": 0.0,
+                    "outbound_ctr": 0.0,
+                    "save_rate": 0.0,
+                    "active_pins_count": 0,
+                    "indexing_pins_count": 0,
+                    "outbound_winners_count": 0,
+                }
+                ao_path.write_text(json.dumps(ao, indent=2) + "\n")
+            except Exception:
+                pass
+
+        # 3. Clean generated image files from static/pins
+        pins_dir = Path(__file__).resolve().parent / "static" / "pins"
+        if pins_dir.exists():
+            for img_file in pins_dir.glob("*.*"):
+                if img_file.name != ".gitkeep":
+                    try:
+                        img_file.unlink()
+                    except Exception:
+                        pass
+
+        print("✅ Local data ledgers, indices, and static assets successfully reset to zero.")
+        return {
+            "total_identified": len(pin_ids_to_delete),
+            "deleted_live": len(deleted_live),
+            "failed_live": len(failed_live),
+            "local_ledgers_cleared": True,
+        }
+
     def get_boards(self, force_refresh: bool = False) -> List[Dict[str, Any]]:
         """Fetch all boards on the authenticated account and cache name->id mappings."""
         if self._board_cache and not force_refresh:
@@ -865,6 +976,7 @@ if __name__ == "__main__":
     parser.add_argument("--oauth-init", action="store_true", help="Generate OAuth 2.0 URL to obtain initial tokens")
     parser.add_argument("--refresh-token", action="store_true", help="Refresh OAuth 2.0 access token via refresh token")
     parser.add_argument("--delete-pin", type=str, help="Delete a specific pin by ID")
+    parser.add_argument("--delete-all-pins", action="store_true", help="Delete all pins from Pinterest API and purge local ledgers")
     parser.add_argument("--app-id", type=str, help="Pinterest App ID for OAuth")
     parser.add_argument("--app-secret", type=str, help="Pinterest App Secret for OAuth")
     parser.add_argument("--redirect-uri", type=str, default="https://localhost", help="OAuth Redirect URI")
@@ -903,6 +1015,9 @@ if __name__ == "__main__":
             print(f"✅ Pin {pin_id} successfully deleted from Pinterest API.")
         else:
             print(f"⚠️ Could not delete pin {pin_id} from live API (logged for local cleanup).")
+    elif args.delete_all_pins:
+        res = client.delete_all_pins()
+        print(f"Purge complete: {res}")
     else:
         print("--- Pinterest Client Verification ---")
         try:

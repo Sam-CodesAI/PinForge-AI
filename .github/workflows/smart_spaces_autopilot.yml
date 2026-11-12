@@ -32,6 +32,7 @@ on:
           - '5'
           - 'all'
           - 'bootstrap'
+          - 'delete_all'
       dry_run:
         description: 'Dry Run (Test without posting live to Pinterest)'
         required: false
@@ -110,21 +111,26 @@ jobs:
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
           AMAZON_AFFILIATE_TAG: 'smartspace07-21'
         run: |
-          SLOT_ARG=""
-          if [ "${{ github.event.inputs.slot }}" = "all" ]; then
-            SLOT_ARG="--all"
-          elif [ "${{ github.event.inputs.slot }}" = "1" ] || [ "${{ github.event.inputs.slot }}" = "2" ] || [ "${{ github.event.inputs.slot }}" = "3" ] || [ "${{ github.event.inputs.slot }}" = "4" ] || [ "${{ github.event.inputs.slot }}" = "5" ]; then
-            SLOT_ARG="--slot ${{ github.event.inputs.slot }}"
+          if [ "${{ github.event.inputs.slot }}" = "delete_all" ]; then
+            echo "🗑️ Triggering complete deletion of all Pinterest pins and ledgers..."
+            python -m python_engine.pinterest_client --delete-all-pins
           else
-            SLOT_ARG="--auto"
-          fi
+            SLOT_ARG=""
+            if [ "${{ github.event.inputs.slot }}" = "all" ]; then
+              SLOT_ARG="--all"
+            elif [ "${{ github.event.inputs.slot }}" = "1" ] || [ "${{ github.event.inputs.slot }}" = "2" ] || [ "${{ github.event.inputs.slot }}" = "3" ] || [ "${{ github.event.inputs.slot }}" = "4" ] || [ "${{ github.event.inputs.slot }}" = "5" ]; then
+              SLOT_ARG="--slot ${{ github.event.inputs.slot }}"
+            else
+              SLOT_ARG="--auto"
+            fi
 
-          DRY_ARG=""
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            DRY_ARG="--dry-run"
-          fi
+            DRY_ARG=""
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              DRY_ARG="--dry-run"
+            fi
 
-          python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG
+            python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG
+          fi
 
       - name: Execute Closed-Loop Performance Analytics
         continue-on-error: true
