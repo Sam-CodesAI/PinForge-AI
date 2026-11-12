@@ -44,6 +44,28 @@ SEEN_PRODUCTS_FILE = DATA_DIR / "seen_products.json"
 
 VERIFIED_SMART_SPACES_POOL: List[Dict[str, Any]] = [
     {
+        "asin": "B0DHGM5XT4",
+        "title": "Lifewit Adjustable Drawer Dividers 4-Pack Clear Plastic Storage Organizers",
+        "price": 19.99,
+        "rating": 4.8,
+        "review_count": 18400,
+        "image_url": "https://m.media-amazon.com/images/I/71P4q+4oWNL.jpg",
+        "product_url": "https://www.amazon.com/dp/B0DHGM5XT4",
+        "query_source": "curated_fallback",
+        "viral_score": 98.5,
+    },
+    {
+        "asin": "B0C42YJVCD",
+        "title": "360 Rotating Makeup Organizer 7-Layer Adjustable Spinning Vanity Storage Carousel",
+        "price": 23.99,
+        "rating": 4.7,
+        "review_count": 12600,
+        "image_url": "https://m.media-amazon.com/images/I/71+2Z-1mK7L.jpg",
+        "product_url": "https://www.amazon.com/dp/B0C42YJVCD",
+        "query_source": "curated_fallback",
+        "viral_score": 97.2,
+    },
+    {
         "asin": "B093GKKQ65",
         "title": "Under Sink Organizer and Storage, 2-Tier Multi-Purpose Sliding Drawer Rack",
         "price": 23.99,

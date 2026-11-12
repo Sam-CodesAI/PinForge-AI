@@ -486,7 +486,7 @@ export default async function BridgeProductPage({ params, searchParams }: Props)
         {/* Explore More Curated Recommendations */}
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg font-bold text-white">More Viral & Curated Amazon Finds</h3>
+            <h3 className="text-lg font-bold text-white">More Curated Smart Spaces Essentials</h3>
             <Link href="/" className="text-xs text-sky-400 hover:underline">
               Open PinForge Studio ➔
             </Link>

@@ -29,7 +29,7 @@ try:
     from python_engine.carousel_engine import generate_carousel_pin_suite
     from python_engine.pinterest_client import PinterestClient
     from python_engine.config import DATA_DIR, DEFAULT_AFFILIATE_TAG
-    from python_engine.models import CopyGenerationRequest, PinGenerateRequest
+    from python_engine.models import CopyGenerationRequest, PinGenerateRequest, SMART_SPACES_BRAND
 except ImportError:
     from ai_trend_hunter import AITrendHunter
     from ai_vision_curator import AIVisionCurator
@@ -39,7 +39,7 @@ except ImportError:
     from carousel_engine import generate_carousel_pin_suite
     from pinterest_client import PinterestClient
     from config import DATA_DIR, DEFAULT_AFFILIATE_TAG
-    from models import CopyGenerationRequest, PinGenerateRequest
+    from models import CopyGenerationRequest, PinGenerateRequest, SMART_SPACES_BRAND
 
 logger = logging.getLogger("PinForge.Autopilot")
 
@@ -152,8 +152,11 @@ class AutonomousAutopilot:
             features=product.features,
             category=product.category,
             board_name=effective_board,
+            brand=SMART_SPACES_BRAND.name,
             template="aspirational_lifestyle",
-            cta_text="📌 SAVE THIS PIN to your board • Tap for room upgrade details",
+            cta_text=SMART_SPACES_BRAND.default_cta,
+            primary_hex=SMART_SPACES_BRAND.primary_hex,
+            accent_hex=SMART_SPACES_BRAND.accent_hex,
         )
         variants = generate_all_pin_variants(pin_req)
 

@@ -9,11 +9,47 @@ from typing import List, Optional, Literal, Dict, Any
 from pydantic import BaseModel, Field
 
 
+class BrandIdentity(BaseModel):
+    name: str = Field(default="Smart Spaces", description="Official brand name")
+    handle: str = Field(default="@Smart_Spaces", description="Pinterest profile handle")
+    tagline: str = Field(default="Curated Minimalist Living Essentials", description="Official brand tagline")
+    watermark_text: str = Field(default="SMART SPACES • Modern Functional Living", description="Watermark text on visuals")
+    affiliate_tag: str = Field(default="smartspace07-21", description="Amazon Associate tag")
+    gateway_url: str = Field(default="https://pinforge.vercel.app", description="Next.js Bridge domain")
+    primary_hex: str = Field(default="#F9F6F0", description="Alabaster Linen canvas")
+    card_hex: str = Field(default="#EAE5DC", description="Travertine neutral")
+    text_hex: str = Field(default="#1C1917", description="Deep slate high-contrast header")
+    muted_hex: str = Field(default="#78716C", description="Muted pebble caption")
+    accent_hex: str = Field(default="#D97706", description="2700K warm amber glow")
+    green_hex: str = Field(default="#059669", description="Botanical sage trust checks")
+    approved_badges: List[str] = Field(
+        default_factory=lambda: [
+            "✓ 100% RENTER FRIENDLY • NO DRILL",
+            "✓ TOOL-FREE SETUP IN 60 SECONDS",
+            "✓ VERIFIED 4.5+ STAR HOME UTILITY",
+            "✓ FAST PRIME 2-DAY DELIVERY",
+        ]
+    )
+    official_boards: List[str] = Field(
+        default_factory=lambda: [
+            "Room Organization",
+            "Studio Living Ideas",
+            "Small Apartment Hacks",
+            "Space Saving Kitchens",
+            "Closet & Wardrobe Organization",
+        ]
+    )
+    default_cta: str = Field(default="📌 SAVE THIS PIN to your home organization board ✨")
+
+
+SMART_SPACES_BRAND = BrandIdentity()
+
+
 class ProductData(BaseModel):
     asin: str = Field(..., description="Amazon 10-character ASIN")
     title: str = Field(..., description="Cleaned product title")
     brand: Optional[str] = Field(None, description="Product brand name")
-    category: str = Field(default="Lifestyle & Gadgets", description="Recommended category")
+    category: str = Field(default="Smart Home & Space Saving", description="Recommended category")
     price: str = Field(default="$29.99", description="Formatted current price")
     original_price: Optional[str] = Field(None, description="List/strike-through price")
     discount_percent: Optional[int] = Field(None, description="Discount percentage if on sale")
@@ -49,8 +85,8 @@ class BridgeReview(BaseModel):
 class CopyGenerationRequest(BaseModel):
     product_title: str
     brand: Optional[str] = None
-    category: str = "Lifestyle & Tech"
-    price: str = "$49.99"
+    category: str = "Smart Home & Space Saving"
+    price: str = "$29.99"
     features: List[str] = Field(default_factory=list)
     rating: float = 4.7
     affiliate_tag: Optional[str] = None

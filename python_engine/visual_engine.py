@@ -1136,9 +1136,9 @@ def render_track_a_lifestyle_pin(
         draw.text((lx, cur_y), line, fill=(255, 255, 255, 255), font=title_font)
         cur_y += title_font_size + 12
 
-    # Subtle bottom aesthetic tag (e.g. "PIN FOR INSPIRATION • KINFOLK LIVING")
+    # Subtle bottom aesthetic tag (e.g. "📌 SAVE THIS PIN • SMART SPACES EDITORIAL")
     bottom_font = get_canvas_font(REGULAR_FONT_PATH, 18)
-    bottom_text = "PIN FOR LATER  •  SMART SPACES EDITORIAL"
+    bottom_text = "📌 SAVE THIS PIN  •  SMART SPACES EDITORIAL"
     bb_box = bottom_font.getbbox(bottom_text)
     bb_w = bb_box[2] - bb_box[0]
     draw.text(((CANVAS_WIDTH - bb_w) // 2 + 1, CANVAS_HEIGHT - 65 + 1), bottom_text, fill=(0, 0, 0, 140), font=bottom_font)

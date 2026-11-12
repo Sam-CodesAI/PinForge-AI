@@ -28,13 +28,14 @@ OFFICIAL_BOARDS = [
 def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
     """Ingests high-AES winning titles from performance_ledger.json as few-shot exemplars."""
     ledger_path = DATA_DIR / "performance_ledger.json"
+    fallback_exemplars = [
+        "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+        "Maximize Your Sink: 2-Tier Sliding Under Cabinet Organizer! 🔥✨",
+        "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! ✅✨",
+        "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic 💄✨",
+    ]
     if not ledger_path.exists():
-        return [
-            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
-            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-        ]
+        return fallback_exemplars
     try:
         data = json.loads(ledger_path.read_text(encoding="utf-8"))
         top_pins = data.get("top_performing_pins", [])
@@ -45,20 +46,10 @@ def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
                 titles.append(t)
             if len(titles) >= limit:
                 break
-        return titles or [
-            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
-            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-        ]
+        return titles or fallback_exemplars
     except Exception as e:
         logger.debug(f"Could not load winning titles from performance ledger: {e}")
-        return [
-            "Viral 5-in-1 Space-Saving Desk Organizer 2026",
-            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
-            "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand",
-            "Genius Small Space Hack: Privacy Room Divider & Shoe Storage",
-        ]
+        return fallback_exemplars
 
 GENZ_COMMENT_HOOKS = [
     "📌 Save this pin for your next apartment move or weekend declutter! Tap to see full room styling ideas.",

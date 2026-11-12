@@ -58,7 +58,7 @@ SCHEDULE_PILLARS = {
         "peak_utc_minute": 45,
         "audience_intent": "Midday decluttering: high-intent desk, drawer & room organization",
         "niche_queries": [
-            "desk cable management box aesthetic",
+            "drawer divider organizer adjustable",
             "pegboard wall organizer modular",
             "acrylic drawer divider adjustable",
             "spinning vanity organizer aesthetic",
@@ -101,7 +101,7 @@ SCHEDULE_PILLARS = {
         "audience_intent": "Late-night bedtime browsing: impulse room makeovers & aesthetic organizers",
         "niche_queries": [
             "rotating makeup vanity organizer",
-            "magnetic cable management desk",
+            "under sink organizer sliding drawer",
             "corner floating bathroom shelf suction",
             "entryway wall mounted key and mail organizer",
         ],

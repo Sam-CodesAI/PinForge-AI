@@ -1,1 +1,194 @@
-[]
+[
+  {
+    "timestamp": "2026-11-12T15:40:46.166127+00:00",
+    "status": "success",
+    "execution_time_seconds": 44.06,
+    "product": {
+      "asin": "B01MR1Y5K8",
+      "title": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer",
+      "price": "$22.99",
+      "rating": 4.7,
+      "affiliate_url": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "bridge_slug": "simple-trending-2-tier-stackable-under-sink-cabinet-organizer-with-sliding--b01mr1y5k8"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "Space-Saving Genius",
+      "visual_hook": "Maximize Your Small Space",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Stora - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Why Everyone Is Obsessed With The Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer",
+      "description": "Looking for the ultimate smart home & tech space-saving upgrade? The Simple Trending 2 Tier Stackable Under Sink Cabinet Organizer with Sliding Storage Drawer delivers outstanding reliability, smart storage efficiency, and verified customer ratings. Renter friendly or permanent upgrade? What do you think? \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#SpaceSaving",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f2a8ea77ca.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_feb973c88a.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_c441a7dd8a.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_2fbabb2072.jpg"
+      },
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_e7c3f5ceea.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_f2a8ea77ca.jpg",
+    "carousel": {
+      "slides": [
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_1_fc61c88f.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_2_fc61c88f.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_3_fc61c88f.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_4_fc61c88f.jpg"
+      ],
+      "composite": "/tmp/PinForge-AI/python_engine/static/pins/carousel_composite_fc61c88f.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-11-12T15:56:26.494714+00:00",
+    "status": "success",
+    "execution_time_seconds": 41.04,
+    "product": {
+      "asin": "B08332N66L",
+      "title": "SpaceAid 4-Pack Heavy Duty Magnetic Spice Rack Organizer for",
+      "price": "$29.99",
+      "rating": 4.8,
+      "affiliate_url": "https://www.amazon.com/dp/B08332N66L?tag=smartspace07-21",
+      "bridge_slug": "spaceaid-4-pack-heavy-duty-magnetic-spice-rack-organizer-for-b08332n66l"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#0F172A",
+      "accent_hex": "#06B6D4",
+      "badge_text": "25% OFF DEAL",
+      "visual_hook": "Genius Small Kitchen Organizer",
+      "secondary_hook": "Rated \u2b50 4.6+ by Amazon Shoppers",
+      "target_audience": "Small Space Enthusiasts",
+      "alt_text": "SpaceAid 4-Pack Heavy Duty Magnetic Spice Rack Organizer for - Smart Spaces Amazon find",
+      "cv_features": {
+        "rb_ratio": 1.0,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "bento_dark",
+        "whitespace_pct": 50.0,
+        "edge_clutter": 15.0,
+        "dominant_hex": "#0F172A",
+        "accent_hex": "#06B6D4",
+        "bounding_box": [
+          0.2,
+          0.2,
+          0.8,
+          0.8
+        ],
+        "badge_placement": "top_pill"
+      },
+      "rb_ratio": 1.0,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 50.0,
+      "edge_clutter": 15.0,
+      "bounding_box": [
+        0.2,
+        0.2,
+        0.8,
+        0.8
+      ],
+      "badge_placement": "top_pill"
+    },
+    "seo_copy": {
+      "title": "Why Everyone Is Obsessed With The SpaceAid 4-Pack Heavy Duty Magnetic Spice Rack Organizer for",
+      "description": "Looking for the ultimate space saving kitchens space-saving upgrade? The SpaceAid 4-Pack Heavy Duty Magnetic Spice Rack Organizer for delivers outstanding reliability, smart storage efficiency, and verified customer ratings. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 #AmazonAssociate",
+      "board": "Room Organization",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#SpaceSaving",
+        "#AmazonFinds",
+        "#HomeDecor",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_344a4cac51.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_e7bacefcb8.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_06b0fbb791.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_10a97a3c1b.jpg"
+      },
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_f5caac8009.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_344a4cac51.jpg",
+    "carousel": {
+      "slides": [
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_1_1ecb4e2d.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_2_1ecb4e2d.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_3_1ecb4e2d.jpg",
+        "/tmp/PinForge-AI/python_engine/static/pins/carousel_slide_4_1ecb4e2d.jpg"
+      ],
+      "composite": "/tmp/PinForge-AI/python_engine/static/pins/carousel_composite_1ecb4e2d.jpg",
+      "style": "cyber_bento"
+    },
+    "live_pinterest": null
+  }
+]

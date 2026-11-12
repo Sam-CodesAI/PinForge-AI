@@ -1,8 +1,203 @@
 {
-  "last_updated": "2026-11-12T12:56:38.906303+00:00",
+  "last_updated": "2026-11-12T15:56:27.202207+00:00",
   "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
-  "total_pins_evaluated": 0,
-  "top_performing_pins": [],
-  "board_performance_summary": {},
-  "all_ranked_pins": []
+  "total_pins_evaluated": 3,
+  "top_performing_pins": [
+    {
+      "pin_id": "dry_run_pin_001",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "board_id": "1132444337492930442",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954673+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 9,
+        "saves": 0,
+        "outbound_clicks": 2,
+        "pin_clicks": 2,
+        "comments": 0
+      },
+      "pin_ctr": 22.22,
+      "outbound_ctr": 22.22,
+      "aes_score": 11.93,
+      "raw_aes_score": 130.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.201972+00:00"
+    },
+    {
+      "pin_id": "dry_run_pin_003",
+      "title": "Maximize Your Sink: 2-Tier Sliding Under Cabinet Organizer! \ud83d\udd25\u2728",
+      "board_id": "1132444337492933749",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954719+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0,
+      "aes_score": 6.37,
+      "raw_aes_score": 65.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.202030+00:00"
+    },
+    {
+      "pin_id": "dry_run_pin_002",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
+      "board_id": "1132444337492930442",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954691+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 6,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "pin_ctr": 16.67,
+      "outbound_ctr": 16.67,
+      "aes_score": 6.13,
+      "raw_aes_score": 65.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.202057+00:00"
+    }
+  ],
+  "board_performance_summary": {
+    "Room Organization": {
+      "board_id": "1132444337492930442",
+      "pin_count": 2,
+      "avg_aes": 9.03,
+      "impressions": 15,
+      "pin_clicks": 3,
+      "outbound_clicks": 3,
+      "saves": 0,
+      "comments": 0,
+      "pin_ctr": 20.0,
+      "outbound_ctr": 20.0
+    },
+    "Small Apartment Hacks": {
+      "board_id": "1132444337492933749",
+      "pin_count": 1,
+      "avg_aes": 6.37,
+      "impressions": 2,
+      "pin_clicks": 1,
+      "outbound_clicks": 1,
+      "saves": 0,
+      "comments": 0,
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0
+    }
+  },
+  "all_ranked_pins": [
+    {
+      "pin_id": "dry_run_pin_001",
+      "title": "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+      "board_id": "1132444337492930442",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954673+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 9,
+        "saves": 0,
+        "outbound_clicks": 2,
+        "pin_clicks": 2,
+        "comments": 0
+      },
+      "pin_ctr": 22.22,
+      "outbound_ctr": 22.22,
+      "aes_score": 11.93,
+      "raw_aes_score": 130.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.201972+00:00"
+    },
+    {
+      "pin_id": "dry_run_pin_003",
+      "title": "Maximize Your Sink: 2-Tier Sliding Under Cabinet Organizer! \ud83d\udd25\u2728",
+      "board_id": "1132444337492933749",
+      "board": "Small Apartment Hacks",
+      "link": "https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954719+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 2,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0,
+      "aes_score": 6.37,
+      "raw_aes_score": 65.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.202030+00:00"
+    },
+    {
+      "pin_id": "dry_run_pin_002",
+      "title": "Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand \ud83d\udcbb\u2728",
+      "board_id": "1132444337492930442",
+      "board": "Room Organization",
+      "link": "https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21",
+      "created_at": "2026-11-12T15:40:46.954691+00:00",
+      "creative_type": "REGULAR",
+      "thumbnail_url": "",
+      "metrics": {
+        "impressions": 6,
+        "saves": 0,
+        "outbound_clicks": 1,
+        "pin_clicks": 1,
+        "comments": 0
+      },
+      "pin_ctr": 16.67,
+      "outbound_ctr": 16.67,
+      "aes_score": 6.13,
+      "raw_aes_score": 65.0,
+      "diagnosis": {
+        "status": "OUTBOUND_WINNER",
+        "badge_color": "emerald",
+        "label": "High Conversion",
+        "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards."
+      },
+      "evaluated_at": "2026-11-12T15:56:27.202057+00:00"
+    }
+  ]
 }
