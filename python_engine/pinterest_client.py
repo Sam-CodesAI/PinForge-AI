@@ -10,12 +10,15 @@ Handles authenticated API interactions for @Smart_Spaces:
 import os
 import json
 import base64
+import logging
 import urllib.request
 import urllib.error
 import urllib.parse
 from typing import Dict, List, Optional, Any, Union
 from datetime import datetime, timedelta
 from pathlib import Path
+
+logger = logging.getLogger("pinforge.pinterest_client")
 
 # Load configuration
 try:
@@ -118,6 +121,10 @@ class PinterestClient:
                     f"Pinterest Token Scope Error: {err_json.get('message', err_body)}"
                 )
             
+            # Handle 404 on DELETE as already deleted
+            if method == "DELETE" and e.code == 404:
+                return {"deleted": True, "status": "already_deleted"}
+
             raise RuntimeError(f"Pinterest API Error ({e.code}) on {method} {endpoint}: {err_json}")
         except Exception as e:
             raise RuntimeError(f"Pinterest Request Failed ({method} {endpoint}): {e}")
@@ -152,6 +159,18 @@ class PinterestClient:
         if pin_metrics:
             endpoint += "?pin_metrics=true"
         return self._request(endpoint)
+
+    def delete_pin(self, pin_id: str) -> bool:
+        """Delete a pin from Pinterest API v5 by ID."""
+        clean_id = str(pin_id).strip()
+        endpoint = f"pins/{clean_id}"
+        try:
+            res = self._request(endpoint, method="DELETE")
+            logger.info(f"🗑️ Successfully deleted Pinterest Pin {clean_id}: {res}")
+            return True
+        except Exception as e:
+            logger.warning(f"Could not delete pin {clean_id} from live API: {e}")
+            return False
 
     def get_boards(self, force_refresh: bool = False) -> List[Dict[str, Any]]:
         """Fetch all boards on the authenticated account and cache name->id mappings."""
@@ -845,6 +864,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="PinForge Pinterest Client & OAuth Helper")
     parser.add_argument("--oauth-init", action="store_true", help="Generate OAuth 2.0 URL to obtain initial tokens")
     parser.add_argument("--refresh-token", action="store_true", help="Refresh OAuth 2.0 access token via refresh token")
+    parser.add_argument("--delete-pin", type=str, help="Delete a specific pin by ID")
     parser.add_argument("--app-id", type=str, help="Pinterest App ID for OAuth")
     parser.add_argument("--app-secret", type=str, help="Pinterest App Secret for OAuth")
     parser.add_argument("--redirect-uri", type=str, default="https://localhost", help="OAuth Redirect URI")
@@ -875,6 +895,14 @@ if __name__ == "__main__":
             print("Token refresh successful:", res)
         except Exception as e:
             print(f"Token refresh failed: {e}")
+    elif args.delete_pin:
+        pin_id = args.delete_pin.strip()
+        print(f"Deleting pin {pin_id}...")
+        success = client.delete_pin(pin_id)
+        if success:
+            print(f"✅ Pin {pin_id} successfully deleted from Pinterest API.")
+        else:
+            print(f"⚠️ Could not delete pin {pin_id} from live API (logged for local cleanup).")
     else:
         print("--- Pinterest Client Verification ---")
         try:

@@ -465,7 +465,7 @@ def build_visual_prompt(
 class VisualGenerationResult:
     """Result returned by the visual engine."""
     image: Image.Image
-    provider: Literal["ideogram", "fal_flux", "pollinations", "local_aesthetic"]
+    provider: Literal["google_imagen", "ideogram", "fal_flux", "pollinations", "local_aesthetic"]
     tier: int
     prompt_used: str
     elapsed_ms: float

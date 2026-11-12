@@ -485,7 +485,7 @@ def render_warm_editorial(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rounded_rectangle([btn_x0, btn_y0, btn_x0 + btn_w, btn_y0 + btn_h], radius=16, fill=(28, 25, 23, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 28)
-    btn_text = sanitize_canvas_text(req.cta_text or "READ REVIEW & SHOP ON AMAZON ->").upper()
+    btn_text = sanitize_canvas_text(req.cta_text or "📌 SAVE PIN TO BOARD • READ REVIEW ->").upper()
     btn_bbox = btn_font.getbbox(btn_text)
     btn_w_actual = btn_bbox[2] - btn_bbox[0]
     draw.text((btn_x0 + (btn_w - btn_w_actual) // 2, btn_y0 + 28), btn_text, fill=(255, 255, 255, 255), font=btn_font)
@@ -597,7 +597,7 @@ def render_problem_solver(req: PinGenerateRequest, product_img: Optional[Image.I
     draw.rounded_rectangle([80, btn_y0, CANVAS_WIDTH - 80, btn_y0 + 95], radius=24, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 34)
-    action_text = sanitize_canvas_text(req.cta_text or f"CHECK TODAY'S DEAL ({req.price}) ->").upper()
+    action_text = sanitize_canvas_text(req.cta_text or f"📌 SAVE THIS PIN ({req.price}) • TAP FOR DETAILS ->").upper()
     a_bbox = btn_font.getbbox(action_text)
     draw.text(((CANVAS_WIDTH - (a_bbox[2] - a_bbox[0])) // 2, btn_y0 + 26), action_text, fill=(15, 23, 42, 255), font=btn_font)
 
@@ -739,7 +739,7 @@ def render_pollinations_lifestyle(req: PinGenerateRequest, product_img: Optional
     draw.rounded_rectangle([btn_x0, btn_y0, btn_x1, btn_y1], radius=28, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 32)
-    btn_text = sanitize_canvas_text(req.cta_text).upper() or "VIEW DEAL ON AMAZON ->"
+    btn_text = sanitize_canvas_text(req.cta_text).upper() or "📌 SAVE TO BOARD • TAP FOR DETAILS ->"
     btn_bbox = btn_font.getbbox(btn_text)
     btn_w_actual = btn_bbox[2] - btn_bbox[0]
     draw.text((btn_x0 + (btn_w - btn_w_actual) // 2, btn_y0 + 30), btn_text, fill=(15, 23, 42, 255), font=btn_font)

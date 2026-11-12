@@ -88,7 +88,7 @@ class PinGenerateRequest(BaseModel):
     category: Optional[str] = Field(default="Smart Home & Space Saving")
     board_name: Optional[str] = Field(default="Smart Spaces")
     features: List[str] = Field(default_factory=list)
-    cta_text: str = Field(default="TAP TO VIEW ON AMAZON ->")
+    cta_text: str = Field(default="📌 SAVE THIS PIN to your home organization board ✨")
     primary_hex: Optional[str] = Field(None, description="Dominant primary background/card hex color")
     accent_hex: Optional[str] = Field(None, description="Vibrant accent hex color for glows and badges")
 

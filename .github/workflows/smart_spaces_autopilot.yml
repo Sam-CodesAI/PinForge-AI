@@ -5,15 +5,15 @@ on:
     # Bootstrap run every Monday at 09:00 UTC
     - cron: '0 9 * * 1'
     # 5 Strategic Daily Peak Windows (UTC converted from EST)
-    # Slot 1: 08:30 AM EST (13:30 UTC) - Small Apartment Hacks
+    # Slot 1: 08:30 AM EST (13:30 UTC) - Small Apartment Hacks (Carousel)
     - cron: '30 13 * * *'
-    # Slot 2: 12:45 PM EST (17:45 UTC) - Space Saving Kitchens
+    # Slot 2: 12:45 PM EST (17:45 UTC) - Room Organization (High-Intent Decluttering)
     - cron: '45 17 * * *'
-    # Slot 3: 04:30 PM EST (21:30 UTC) - Closet & Wardrobe Organization
+    # Slot 3: 04:30 PM EST (21:30 UTC) - Studio Living Ideas (Compact Studio Hacks)
     - cron: '30 21 * * *'
-    # Slot 4: 08:15 PM EST (01:15 UTC) - Studio Living Ideas
+    # Slot 4: 08:15 PM EST (01:15 UTC) - Studio Living Ideas (Aesthetic Decor & Zoning Carousel)
     - cron: '15 1 * * *'
-    # Slot 5: 10:45 PM EST (03:45 UTC) - Room Organization
+    # Slot 5: 10:45 PM EST (03:45 UTC) - Room Organization (Bedtime Impulse Room Makeovers)
     - cron: '45 3 * * *'
 
   workflow_dispatch:

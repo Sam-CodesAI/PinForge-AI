@@ -60,7 +60,7 @@ export default function PinForgeApp() {
   );
   const [pinTitle, setPinTitle] = useState<string>("Small Kitchen Hack: 2-Tier Under Sink Sliding Organizer");
   const [pinDescription, setPinDescription] = useState<string>(
-    "Double your cabinet storage instantly! This 2-tier under sink sliding organizer glides smoothly around plumbing pipes without any drilling. 100% renter friendly. Tap to view today's Amazon deal! #AmazonAssociate"
+    "Double your cabinet storage instantly! This 2-tier under sink sliding organizer glides smoothly around plumbing pipes without any drilling. 100% renter friendly. 📌 Save this pin to your kitchen board! Tap for full setup details. #AmazonAssociate"
   );
   const [boardName, setBoardName] = useState<string>("Space Saving Kitchens");
   const [hashtags, setHashtags] = useState<string[]>([
@@ -88,7 +88,7 @@ export default function PinForgeApp() {
         id: "q-1",
         board_name: "Space Saving Kitchens",
         title: "Small Kitchen Hack: 2-Tier Under Sink Sliding Organizer",
-        description: "Double your cabinet storage instantly without any tools or drilling. Tap to check today's deal! #AmazonAssociate",
+        description: "Double your cabinet storage instantly without any tools or drilling. 📌 Save this pin for your next kitchen refresh! #AmazonAssociate",
         link: `/p/under-sink-sliding-organizer?tag=${affiliateTag}`,
         image_url: "https://m.media-amazon.com/images/I/71Y8+gS7JTL.jpg",
         published_at: new Date(Date.now() + 4 * 3600 * 1000).toISOString(),
@@ -240,7 +240,7 @@ export default function PinForgeApp() {
           badge_text: template === "warm_editorial" ? "EDITORIAL PICK" : template === "problem_solver" ? "VIRAL DEAL" : "TOP RATED 2026",
           template: template,
           features: prod.features,
-          cta_text: template === "warm_editorial" ? "READ FULL REVIEW ➔" : "TAP TO VIEW ON AMAZON ➔",
+          cta_text: template === "warm_editorial" ? "📌 SAVE PIN • READ REVIEW ➔" : "📌 SAVE TO BOARD • TAP FOR DETAILS ➔",
         }),
       });
 

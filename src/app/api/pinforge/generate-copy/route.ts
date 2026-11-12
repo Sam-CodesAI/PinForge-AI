@@ -275,14 +275,14 @@ Return ONLY valid JSON matching this schema:
     // 4. Deterministic Rule Fallback
     const board = matchOfficialBoard(category, contextStr);
     const title = `Why Everyone Is Obsessed With The ${product_title}`.slice(0, 95);
-    const desc = `Looking for the best compact apartment upgrade? The ${product_title} delivers verified customer ratings, outstanding build quality, and sleek space-saving utility. Tap to check today's live deal! #SmallApartmentHacks #SmartSpaces #AmazonAssociate`.slice(0, 495);
+    const desc = `Looking for the best compact apartment upgrade? The ${product_title} delivers verified customer ratings, outstanding build quality, and sleek space-saving utility. 📌 Save this pin to your apartment board for your next room refresh! Tap for details. #SmallApartmentHacks #SmartSpaces #AmazonAssociate`.slice(0, 495);
 
     return NextResponse.json({
       pin_title: title,
       pin_description: desc,
       hashtags: ["#SmallApartmentHacks", "#SmartSpaces", "#AmazonFinds", "#AmazonAssociate"],
       board_recommendation: board,
-      call_to_action: "Tap to check today's deal on Amazon ➔",
+      call_to_action: "📌 Save this pin to your board & tap for details ➔",
       hook: "Space-Saving Apartment Genius",
       bridge_review: {
         verdict: "One of the most requested and highly rated finds for compact apartment living.",

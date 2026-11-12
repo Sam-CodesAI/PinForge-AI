@@ -61,7 +61,7 @@ def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
         ]
 
 GENZ_COMMENT_HOOKS = [
-    "📌 Save this pin for your next apartment move or weekend declutter! Tap for today's deal.",
+    "📌 Save this pin for your next apartment move or weekend declutter! Tap to see full room styling ideas.",
     "📌 Save this idea so you don't lose the link! Would you use this in your kitchen or bedroom? Drop your vote below! 👇",
     "📌 Pin this to your home organization board before measuring your space! ✨",
     "📌 Save this renter-friendly hack for later! Small space challenge: could this fix your clutter? 🏠",
@@ -152,7 +152,7 @@ Key Features: {', '.join(req.features[:3]) if req.features else 'Top rated, high
 
 REQUIREMENTS:
 1. pin_title: MUST BE STRICTLY UNDER 100 CHARACTERS. Include high-intent search keywords and an emotional hook.
-2. pin_description: MUST BE STRICTLY UNDER 500 CHARACTERS. Explain why this product is a space-saving essential, include keywords naturally, inject a viral Save-Trigger hook to maximize Pinterest Pixie graph distribution (e.g., '📌 Save this pin for your next apartment move or weekend declutter! Tap to check today's deal.'), and end with the mandatory FTC disclosure hashtag: #AmazonAssociate
+2. pin_description: MUST BE STRICTLY UNDER 500 CHARACTERS. Explain why this product is a space-saving essential, include keywords naturally, inject a viral Save-Trigger hook to maximize Pinterest Pixie graph distribution (e.g., '📌 Save this pin to your home organization board for your next room makeover! Tap for layout details.'), and end with the mandatory FTC disclosure hashtag: #AmazonAssociate
 3. hashtags: 5-7 popular Pinterest search tags (e.g. #SmallSpaceLiving, #OrganizationHacks, #AmazonFinds, #AmazonAssociate)
 4. board_recommendation: MUST BE EXACTLY ONE OF THESE 5 OFFICIAL BOARDS:
    - 'Small Apartment Hacks'
@@ -160,7 +160,7 @@ REQUIREMENTS:
    - 'Closet & Wardrobe Organization'
    - 'Studio Living Ideas'
    - 'Room Organization'
-5. call_to_action: Short high-converting CTA (e.g. "Tap to check today's price & read full review")
+5. call_to_action: Short high-converting Save & Explore CTA (e.g. "📌 Save this pin to your board and tap for full setup details")
 6. hook: 4-7 word punchy visual hook
 7. bridge_review: An objective, trustworthy review:
    - verdict: 1 punchy sentence summarizing why this product stands out
@@ -269,7 +269,7 @@ REQUIREMENTS:
    - 'Studio Living Ideas'
    - 'Room Organization'
 4. hashtags: 5-7 popular Pinterest search tags ending with #AmazonAssociate
-5. call_to_action: Short high-converting CTA (e.g. 'Tap here to check today's deal on Amazon')
+5. call_to_action: Short high-converting Save & Explore CTA (e.g. '📌 Save this pin to your board and tap here to see the complete setup guide.')
 6. hook: 4-7 word punchy visual hook
 7. bridge_review: An objective, trustworthy review:
    - verdict: 1 punchy sentence summarizing why this product stands out
@@ -356,7 +356,7 @@ def generate_fallback_rules(req: CopyGenerationRequest) -> PinCopyResponse:
         pin_description=desc,
         hashtags=["#SmallSpaceHacks", "#SpaceSaving", "#AmazonFinds", "#HomeDecor", "#AmazonAssociate"],
         board_recommendation=board_rec,
-        call_to_action="Tap to check today's deal on Amazon ➔",
+        call_to_action="📌 Save this pin to your board & tap to explore setup guide ➔",
         hook="The Space-Saving Find You Need",
         bridge_review=BridgeReview(
             verdict=f"One of the highest-rated solutions in {req.category}, combining durability and compact space optimization.",

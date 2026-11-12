@@ -546,7 +546,7 @@ def render_slide4_uses(
     draw.rounded_rectangle([70, btn_y0, CANVAS_WIDTH - 70, btn_y0 + btn_h], radius=28, fill=(245, 158, 11, 255))
 
     btn_font = get_font(BOLD_FONT_PATH, 34)
-    btn_text = f"CHECK TODAY'S DEAL ({sanitize_canvas_text(price)}) ->"
+    btn_text = f"📌 SAVE TO BOARD ({sanitize_canvas_text(price)}) • TAP FOR DETAILS ->"
     b_bbox = btn_font.getbbox(btn_text)
     draw.text(((CANVAS_WIDTH - (b_bbox[2] - b_bbox[0])) // 2, btn_y0 + 30), btn_text, fill=(15, 23, 42, 255), font=btn_font)
 

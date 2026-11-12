@@ -103,10 +103,10 @@ class AntigravityOrchestrator:
                 "pollinations_lifestyle",
                 "aspirational_lifestyle",
                 "track_a_lifestyle",
-            ] else "bento_dark",  # type: ignore
+            ] else "aspirational_lifestyle",  # type: ignore
             brand=product_dict.get("brand"),
             features=product_dict.get("features", []),
-            cta_text="CHECK PRICE ON AMAZON ->",
+            cta_text="📌 SAVE PIN • TAP FOR DETAILS ->",
         )
         pin_res = generate_pin_graphic(req)
         logger.info(f"✓ Rendered Pin: {pin_res.image_url} in {pin_res.render_time_ms:.1f}ms")

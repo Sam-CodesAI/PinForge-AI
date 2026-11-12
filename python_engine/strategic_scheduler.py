@@ -1,16 +1,16 @@
 """PinForge AI — Strategic AI Publishing Scheduler.
 
 Architected specifically for the @Smart_Spaces Pinterest account:
-1. 5 Pillars across 5 Dedicated Boards:
-   - Slot 1: Small Apartment Hacks (08:30 AM EST / 13:30 UTC) - Morning Commute Intent
-   - Slot 2: Space Saving Kitchens (12:45 PM EST / 17:45 UTC) - Lunchtime Kitchen Hacks
-   - Slot 3: Closet & Wardrobe Organization (04:30 PM EST / 21:30 UTC) - Afternoon Decluttering
-   - Slot 4: Studio Living Ideas (08:15 PM EST / 01:15 UTC) - Prime Evening Decor Inspiration
-   - Slot 5: Room Organization (10:45 PM EST / 03:45 UTC) - Bedtime Impulse Amazon Shopping
+1. Scaled 5-Slot Matrix Prioritizing Winning High-CTR Boards:
+   - Slot 1: Small Apartment Hacks (08:30 AM EST / 13:30 UTC) - Morning Commute & Weekend Planning (Carousel)
+   - Slot 2: Room Organization (12:45 PM EST / 17:45 UTC) - High-Intent Midday Decluttering & Workstations
+   - Slot 3: Studio Living Ideas (04:30 PM EST / 21:30 UTC) - Compact Studio Hacks & Multi-functional Furniture
+   - Slot 4: Studio Living Ideas (08:15 PM EST / 01:15 UTC) - Prime Evening Decor, Zoning & Room Dividers (Carousel)
+   - Slot 5: Room Organization (10:45 PM EST / 03:45 UTC) - Bedtime Impulse Makeovers & Aesthetic Essentials
 
 2. Anti-Spam Humanization:
    - Jittered execution (randomized ±12 min offsets) preventing robotic pattern detection.
-   - Strict 1-pin-per-board daily cadence (5 total pins/day), completely safe from Pinterest rate limits.
+   - 80% posting allocation concentrated on the 2 highest-performing boards with proven outbound click intent.
 """
 
 from __future__ import annotations
@@ -52,30 +52,30 @@ SCHEDULE_PILLARS = {
     },
     2: {
         "slot_id": 2,
-        "board_name": "Space Saving Kitchens",
+        "board_name": "Room Organization",
         "peak_time_est": "12:45 PM EST",
         "peak_utc_hour": 17,
         "peak_utc_minute": 45,
-        "audience_intent": "Lunchtime recipe & kitchen decluttering intent",
+        "audience_intent": "Midday decluttering: high-intent desk, drawer & room organization",
         "niche_queries": [
-            "foldable magnetic spice rack",
-            "over the door pantry organizer",
-            "under sink expandable organizer kitchen",
-            "refrigerator side magnetic shelf",
+            "desk cable management box aesthetic",
+            "pegboard wall organizer modular",
+            "acrylic drawer divider adjustable",
+            "spinning vanity organizer aesthetic",
         ],
     },
     3: {
         "slot_id": 3,
-        "board_name": "Closet & Wardrobe Organization",
+        "board_name": "Studio Living Ideas",
         "peak_time_est": "04:30 PM EST",
         "peak_utc_hour": 21,
         "peak_utc_minute": 30,
-        "audience_intent": "Afternoon home refresh & closet optimization",
+        "audience_intent": "Afternoon studio refresh: compact multi-functional furniture",
         "niche_queries": [
-            "space saving closet hanger cascade",
-            "vacuum storage bags space saver",
-            "stackable shoe organizer clear bins",
-            "foldable drawer clothes organizers",
+            "studio apartment divider ideas with storage",
+            "vertical hanging shoe and clothes rack",
+            "convertible folding coffee desk table",
+            "narrow entryway shoe bench storage",
         ],
     },
     4: {
@@ -84,7 +84,7 @@ SCHEDULE_PILLARS = {
         "peak_time_est": "08:15 PM EST",
         "peak_utc_hour": 1,
         "peak_utc_minute": 15,
-        "audience_intent": "Prime evening peak browsing: furniture & interior aesthetics",
+        "audience_intent": "Prime evening peak browsing: furniture, zoning & interior aesthetics",
         "niche_queries": [
             "minimalist floating desk shelf",
             "folding wall mounted dining table",
@@ -98,7 +98,7 @@ SCHEDULE_PILLARS = {
         "peak_time_est": "10:45 PM EST",
         "peak_utc_hour": 3,
         "peak_utc_minute": 45,
-        "audience_intent": "Late-night bedtime browsing: impulse gadgets & organizers",
+        "audience_intent": "Late-night bedtime browsing: impulse room makeovers & aesthetic organizers",
         "niche_queries": [
             "rotating makeup vanity organizer",
             "magnetic cable management desk",

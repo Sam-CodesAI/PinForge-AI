@@ -66,7 +66,7 @@
 
 ### D. Quad-Channel Publishing & Auto-Scheduling
 1. **Channel 1 — Direct Pinterest API v5 Integration:** Real-time programmatic Pin publishing to `@Smart_Spaces` (Account ID: `1132444406210096905`) with Base64 binary image uploads, dynamic board auto-creation, and sandbox/production auto-fallback.
-   * **Live Verified Pin:** `ID: 1132444268835762602` (*"Game-Changing Portable Camping Shower! 🏕️ Best Amazon Tech Find"*).
+   * **Live Verified Pin:** `ID: 1132444268835809911` (*"Finally Fix Messy Drawers! 🗄️ Reclaim Your Space"* — 33.3% Outbound CTR in Room Organization).
 2. **Channel 2 — Zero-Approval Media RSS (`/feed.xml`):** Pinterest Business accounts can connect this feed directly to auto-publish pins 24/7 without API approvals.
 3. **Channel 3 — Official Bulk Upload CSV:** Conforms strictly to Pinterest's lowercase snake_case schema (`board_name,title,description,link,image_url,published_at`) with automated viral scheduling.
 4. **Channel 4 — Canva Design Editor App (`canva_app/`):** Official Canva App (`smart-spaces`, App ID: `AAHOGH31K5Q`) providing 1-click in-editor asset import and brand template autofill.
@@ -78,7 +78,7 @@
 | Metric | PinForge AI | Traditional Headless SaaS |
 | :--- | :--- | :--- |
 | **Compute Cost** | **$0.0015 / Pin** (~$0.75 for 500 pins/mo) | $49 – $79 / month |
-| **Render Latency** | **35ms – 50ms** (Pillow local CPU) | 2,500ms – 4,000ms (Puppeteer/Chromium) |
+| **Visual Architecture** | **Generative AI Waterfall** (Google Imagen 3 / FLUX / Ideogram) | 2,500ms – 4,000ms (Puppeteer/Chromium) |
 | **Affiliate Tag** | **`smartspace07-21`** (Permanent, 100% Attribution) | Fragile / manual entry |
 | **Shadowban Risk** | **0% Risk** (Intermediary bridge landing pages) | High (Direct shortlinks flagged by spam filters) |
 | **Publishing Channels**| Quad Channel (API v5 + Canva App + Bulk CSV + Media RSS) | Single channel or API-locked |

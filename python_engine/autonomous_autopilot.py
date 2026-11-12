@@ -153,7 +153,7 @@ class AutonomousAutopilot:
             category=product.category,
             board_name=effective_board,
             template="aspirational_lifestyle",
-            cta_text="📌 SAVE PIN • TAP FOR BEST DEAL ->",
+            cta_text="📌 SAVE THIS PIN to your board • Tap for room upgrade details",
         )
         variants = generate_all_pin_variants(pin_req)
 
