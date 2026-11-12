@@ -190,5 +190,105 @@
       "style": "cyber_bento"
     },
     "live_pinterest": null
+  },
+  {
+    "timestamp": "2026-11-12T21:01:23.358857+00:00",
+    "status": "success",
+    "execution_time_seconds": 19.85,
+    "product": {
+      "asin": "B0H8C3BV7S",
+      "title": "Tribesigns 70.9\" Tall Wall Room Divider  Freestanding Room Divider Screen with 5",
+      "price": "$195.99",
+      "rating": 5.0,
+      "affiliate_url": "https://www.amazon.com/dp/B0H8C3BV7S?tag=smartspace07-21",
+      "bridge_slug": "tribesigns-709-tall-wall-room-divider-freestanding-room-divider-screen-with-b0h8c3bv7s"
+    },
+    "ai_vision": {
+      "dominant_theme": "warm_editorial",
+      "primary_hex": "#D4A373",
+      "accent_hex": "#283618",
+      "badge_text": "Top Rated 2026",
+      "visual_hook": "Zone Any Open Space Instantly",
+      "secondary_hook": "Stunning geometric divider with ample display storage",
+      "target_audience": "Apartment Renters",
+      "alt_text": "Tribesigns 70.9 tall freestanding wood and metal room divider with open shelving in a warm styled living room",
+      "cv_features": {
+        "rb_ratio": 1.384,
+        "lighting_type": "2700K_warm",
+        "dominant_theme": "warm_editorial",
+        "whitespace_pct": 2.4,
+        "edge_clutter": 73.5,
+        "dominant_hex": "#9e8572",
+        "accent_hex": "#d49763",
+        "bounding_box": [
+          0.0,
+          0.0,
+          0.988,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.384,
+      "lighting_type": "2700K_warm",
+      "whitespace_pct": 2.4,
+      "edge_clutter": 73.5,
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.988,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Instant Luxury: 5-Panel Room Divider for Studio Living! \u2728",
+      "description": "Turn any open space into a cozy nook! This aesthetic screen creates privacy without blocking light. Perfect for small apartments. Small space challenge: Could you fit this next to your desk or bed? Drop a 'YAS' if you need privacy! \ud83c\udfe0\ud83d\udc47 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#RoomDivider",
+        "#StudioApartment",
+        "#SmallSpaceHacks",
+        "#AmazonHome",
+        "#InteriorDesign",
+        "#AmazonFinds",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_5d0f71bea7.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_f75b915824.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_9a9369abc1.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_a7b1749116.jpg"
+      },
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_761d14fcd0.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_5d0f71bea7.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_59d73257.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_59d73257.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_59d73257.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_59d73257.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_59d73257.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST boards: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
   }
 ]
