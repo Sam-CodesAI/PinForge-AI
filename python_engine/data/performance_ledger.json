@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-12T12:54:27.771527",
-  "formula": "0.4 * Pin_CTR + 0.5 * Outbound_CTR + 0.1 * Saves_Rate",
+  "last_updated": "2026-11-12T12:56:38.906303+00:00",
+  "formula": "AES = (5 * outbound_click + 3 * save + 1.5 * pin_click + 2 * comment) / max(impressions, 10) * 100",
   "total_pins_evaluated": 0,
   "top_performing_pins": [],
   "board_performance_summary": {},
