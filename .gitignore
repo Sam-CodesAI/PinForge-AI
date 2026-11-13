@@ -28,3 +28,4 @@ python_engine/static/pins/*.png
 .DS_Store
 *.pem
 *.tsbuildinfo
+.canva_pkce_verifier.txt
