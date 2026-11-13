@@ -35,6 +35,10 @@ from python_engine.config import (
     IDEOGRAM_API_KEY,
     FAL_KEY,
     POLLINATIONS_API_KEY,
+    ADOBE_FIREFLY_API_KEY,
+    ADOBE_CLIENT_ID,
+    ADOBE_CLIENT_SECRET,
+    ADOBE_ACCESS_TOKEN,
 )
 
 logger = logging.getLogger("pinforge.visual_engine")
@@ -475,7 +479,7 @@ class VisualGenerationResult:
 
     @property
     def is_ai_generated(self) -> bool:
-        return self.provider in ("google_imagen", "ideogram", "fal_flux", "pollinations")
+        return self.provider in ("adobe_firefly", "google_imagen", "ideogram", "fal_flux", "pollinations")
 
     @property
     def is_fallback(self) -> bool:
@@ -483,7 +487,136 @@ class VisualGenerationResult:
 
 
 # ============================================================================
-# TIER 1: GOOGLE IMAGEN 3 (imagen-3.0-generate-002) ENGINE
+# TIER 1: ADOBE FIREFLY SERVICES API (Image 3 / v3)
+# ============================================================================
+
+_ADOBE_TOKEN_CACHE: Dict[str, Any] = {"access_token": None, "expires_at": 0.0}
+
+def get_adobe_access_token(
+    client_id: Optional[str] = None,
+    client_secret: Optional[str] = None,
+    api_key: Optional[str] = None,
+    access_token: Optional[str] = None,
+) -> Optional[str]:
+    """Retrieves or exchanges Adobe IMS OAuth 2.0 access token for Adobe Firefly Services."""
+    global _ADOBE_TOKEN_CACHE
+    import os
+
+    direct_token = (access_token or ADOBE_ACCESS_TOKEN or os.getenv("ADOBE_ACCESS_TOKEN") or "").strip()
+    if direct_token:
+        return direct_token
+
+    now = time.time()
+    if _ADOBE_TOKEN_CACHE.get("access_token") and _ADOBE_TOKEN_CACHE.get("expires_at", 0) > now + 60:
+        return _ADOBE_TOKEN_CACHE["access_token"]
+
+    eff_client_id = (client_id or api_key or ADOBE_CLIENT_ID or ADOBE_FIREFLY_API_KEY or os.getenv("ADOBE_CLIENT_ID") or os.getenv("ADOBE_FIREFLY_API_KEY") or "").strip()
+    eff_secret = (client_secret or ADOBE_CLIENT_SECRET or os.getenv("ADOBE_CLIENT_SECRET") or "").strip()
+
+    if not eff_client_id:
+        return None
+
+    if eff_secret:
+        token_url = "https://ims-na1.adobelogin.com/ims/token/v3"
+        data = {
+            "grant_type": "client_credentials",
+            "client_id": eff_client_id,
+            "client_secret": eff_secret,
+            "scope": "openid,AdobeID,firefly_enterprise,firefly_api,ff_apis",
+        }
+        try:
+            with httpx.Client(timeout=15.0) as client:
+                resp = client.post(token_url, data=data)
+                if resp.status_code == 200:
+                    token_data = resp.json()
+                    tok = token_data.get("access_token")
+                    expires_in = token_data.get("expires_in", 86400)
+                    _ADOBE_TOKEN_CACHE["access_token"] = tok
+                    _ADOBE_TOKEN_CACHE["expires_at"] = now + float(expires_in)
+                    logger.info("✓ Adobe IMS OAuth 2.0 access token obtained successfully.")
+                    return tok
+                else:
+                    logger.warning(f"Adobe IMS Token Exchange Failed: HTTP {resp.status_code} - {resp.text[:150]}")
+        except Exception as e:
+            logger.warning(f"Adobe IMS Token Exchange Exception: {e}")
+
+    return eff_client_id
+
+
+def generate_adobe_firefly_image(
+    prompt: str,
+    api_key: Optional[str] = None,
+    client_id: Optional[str] = None,
+    client_secret: Optional[str] = None,
+    access_token: Optional[str] = None,
+    timeout: float = 35.0,
+) -> Optional[Image.Image]:
+    """Generates an ultra-high aesthetic photorealistic scene via Adobe Firefly Services API (Image 3 / v3).
+
+    Targets POST https://firefly-api.adobe.io/v3/images/generate
+    Requires x-api-key (Client ID) and Authorization: Bearer {token}.
+    Automatically handles OAuth token acquisition from Adobe IMS if client_id + client_secret are provided.
+    Returns 1000x1500 (2:3 Pinterest standard) RGBA Image.
+    """
+    import os
+    eff_client_id = (client_id or api_key or ADOBE_CLIENT_ID or ADOBE_FIREFLY_API_KEY or os.getenv("ADOBE_CLIENT_ID") or os.getenv("ADOBE_FIREFLY_API_KEY") or "").strip()
+    bearer_token = get_adobe_access_token(
+        client_id=eff_client_id,
+        client_secret=client_secret,
+        api_key=api_key,
+        access_token=access_token,
+    )
+
+    if not eff_client_id or not bearer_token:
+        logger.debug("Adobe Firefly: Missing credentials (Client ID or Bearer token).")
+        return None
+
+    endpoint = "https://firefly-api.adobe.io/v3/images/generate"
+    headers = {
+        "x-api-key": eff_client_id,
+        "Authorization": f"Bearer {bearer_token}",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+
+    payload = {
+        "prompt": prompt.strip(),
+        "numVariations": 1,
+        "size": {
+            "width": 1792,
+            "height": 2304
+        }
+    }
+
+    logger.info("🎨 [Tier 1 Adobe Firefly] Invoking Adobe Firefly Services API (v3/images/generate)...")
+    try:
+        with httpx.Client(timeout=timeout) as client:
+            resp = client.post(endpoint, json=payload, headers=headers)
+            if resp.status_code == 200:
+                data = resp.json()
+                outputs = data.get("outputs", [])
+                image_url = None
+                if outputs:
+                    image_obj = outputs[0].get("image", {})
+                    image_url = image_obj.get("url")
+
+                if image_url:
+                    img_resp = client.get(image_url, timeout=20.0)
+                    if img_resp.status_code == 200 and len(img_resp.content) > 1000:
+                        img = Image.open(io.BytesIO(img_resp.content)).convert("RGBA")
+                        fitted = ImageOps.fit(img, (CANVAS_WIDTH, CANVAS_HEIGHT), method=Image.Resampling.LANCZOS)
+                        logger.info("✓ [Adobe Firefly] Image generated and formatted to 1000x1500 successfully.")
+                        return fitted
+                logger.warning(f"Adobe Firefly: No image URL in response: {str(data)[:200]}")
+            else:
+                logger.warning(f"Adobe Firefly: HTTP {resp.status_code} - {resp.text[:200]}")
+    except Exception as e:
+        logger.warning(f"Adobe Firefly generation request failed: {e}")
+    return None
+
+
+# ============================================================================
+# TIER 1b: GOOGLE IMAGEN 3 (imagen-3.0-generate-002) ENGINE
 # ============================================================================
 
 def generate_google_imagen_image(
@@ -878,13 +1011,57 @@ def generate_visual_with_waterfall(
         style=style,
     )
 
+    effective_adobe_key = (ADOBE_FIREFLY_API_KEY if ADOBE_FIREFLY_API_KEY is not None else (os.getenv("ADOBE_FIREFLY_API_KEY") or os.getenv("ADOBE_API_KEY") or "")).strip()
+    effective_adobe_client_id = (ADOBE_CLIENT_ID if ADOBE_CLIENT_ID is not None else (os.getenv("ADOBE_CLIENT_ID") or "")).strip()
+    effective_adobe_secret = (ADOBE_CLIENT_SECRET if ADOBE_CLIENT_SECRET is not None else (os.getenv("ADOBE_CLIENT_SECRET") or "")).strip()
+    effective_adobe_token = (ADOBE_ACCESS_TOKEN if ADOBE_ACCESS_TOKEN is not None else (os.getenv("ADOBE_ACCESS_TOKEN") or "")).strip()
+
     effective_gemini_key = (GEMINI_API_KEY if GEMINI_API_KEY is not None else (os.getenv("GEMINI_API_KEY") or "")).strip()
     effective_ideogram_key = (IDEOGRAM_API_KEY if IDEOGRAM_API_KEY is not None else (os.getenv("IDEOGRAM_API_KEY") or "")).strip()
     effective_fal_key = (FAL_KEY if FAL_KEY is not None else (os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "")).strip()
     effective_pollinations_key = (POLLINATIONS_API_KEY if POLLINATIONS_API_KEY is not None else (os.getenv("POLLINATIONS_API_KEY") or "")).strip()
 
     # ----------------------------------------------------
-    # TIER 1: GOOGLE IMAGEN 3 (imagen-3.0-generate-002)
+    # TIER 1a: ADOBE FIREFLY SERVICES API (Image 3 / v3)
+    # ----------------------------------------------------
+    if preferred_tier in (None, 1) and (effective_adobe_key or effective_adobe_client_id or effective_adobe_token):
+        try:
+            tier1_prompt = build_visual_prompt(
+                product_title=product_title,
+                board_name=board_name,
+                category=category,
+                style=style,
+                tier=1,
+            )
+            img = generate_adobe_firefly_image(
+                prompt=tier1_prompt,
+                api_key=effective_adobe_key,
+                client_id=effective_adobe_client_id,
+                client_secret=effective_adobe_secret,
+                access_token=effective_adobe_token,
+                timeout=30.0,
+            )
+            if img:
+                elapsed = (time.perf_counter() - start_time) * 1000.0
+                return VisualGenerationResult(
+                    image=img,
+                    provider="adobe_firefly",
+                    tier=1,
+                    prompt_used=tier1_prompt,
+                    elapsed_ms=round(elapsed, 2),
+                    seed=seed,
+                    success=True,
+                    error_trail=error_trail,
+                )
+            error_trail.append("Tier 1 (Adobe Firefly): Returned None or invalid response")
+        except Exception as e:
+            error_trail.append(f"Tier 1 (Adobe Firefly): Exception {e}")
+    else:
+        if not (effective_adobe_key or effective_adobe_client_id or effective_adobe_token):
+            error_trail.append("Tier 1 (Adobe Firefly): Skipped (ADOBE credentials unset)")
+
+    # ----------------------------------------------------
+    # TIER 1b: GOOGLE IMAGEN 3 (imagen-3.0-generate-002)
     # ----------------------------------------------------
     if preferred_tier in (None, 1) and effective_gemini_key:
         try:
@@ -1152,3 +1329,24 @@ def render_track_a_lifestyle_pin(
     draw.text((bt_x, bt_y), bottom_text, fill=(255, 255, 255, 250), font=bottom_font)
 
     return canvas
+
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="PinForge Visual Generation Engine")
+    parser.add_argument("--test-adobe", action="store_true", help="Test Adobe Firefly Services API connection")
+    parser.add_argument("--test-waterfall", action="store_true", help="Test full visual waterfall generation")
+    args = parser.parse_args()
+
+    if args.test_adobe:
+        print("Testing Adobe Firefly Image Generation...")
+        res = generate_adobe_firefly_image("Aesthetic modern room organization with clear acrylic drawer dividers, Japandi style, 8k")
+        if res:
+            res.save("python_engine/static/pins/adobe_firefly_test.png")
+            print("✅ Adobe Firefly generated successfully! Saved to python_engine/static/pins/adobe_firefly_test.png")
+        else:
+            print("⚠️ Adobe Firefly returned None (Check ADOBE_CLIENT_ID / ADOBE_CLIENT_SECRET or ADOBE_FIREFLY_API_KEY).")
+    elif args.test_waterfall:
+        print("Testing Visual Generation Waterfall...")
+        res = generate_visual_with_waterfall(product_title="Lifewit Clear Acrylic Drawer Dividers 4-Pack", board_name="Room Organization")
+        print(f"✅ Waterfall completed via {res.provider} (Tier {res.tier}) in {res.elapsed_ms}ms!")

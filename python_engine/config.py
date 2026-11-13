@@ -24,6 +24,12 @@ POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY", "")
 IDEOGRAM_API_KEY = os.getenv("IDEOGRAM_API_KEY", "")
 FAL_KEY = os.getenv("FAL_KEY", os.getenv("FAL_API_KEY", ""))
 
+# Adobe Firefly Services API Settings
+ADOBE_FIREFLY_API_KEY = os.getenv("ADOBE_FIREFLY_API_KEY", os.getenv("ADOBE_API_KEY", ""))
+ADOBE_CLIENT_ID = os.getenv("ADOBE_CLIENT_ID", os.getenv("ADOBE_API_KEY", ""))
+ADOBE_CLIENT_SECRET = os.getenv("ADOBE_CLIENT_SECRET", "")
+ADOBE_ACCESS_TOKEN = os.getenv("ADOBE_ACCESS_TOKEN", "")
+
 # Pinterest API v5 Settings
 PINTEREST_APP_ID = os.getenv("PINTEREST_APP_ID", "")
 PINTEREST_APP_SECRET = os.getenv("PINTEREST_APP_SECRET", "")
