@@ -38,6 +38,11 @@ on:
         required: false
         default: false
         type: boolean
+      agentic:
+        description: 'Use 6-Agent Autonomous Swarm (Scout, Creative, Copywriter, Critic, Publisher, Analyst)'
+        required: false
+        default: true
+        type: boolean
 
 concurrency:
   group: smart-spaces-autopilot
@@ -129,7 +134,12 @@ jobs:
               DRY_ARG="--dry-run"
             fi
 
-            python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG
+            AGENTIC_ARG="--agentic"
+            if [ "${{ github.event.inputs.agentic }}" = "false" ]; then
+              AGENTIC_ARG=""
+            fi
+
+            python -m python_engine.strategic_scheduler $SLOT_ARG $DRY_ARG $AGENTIC_ARG
           fi
 
       - name: Execute Closed-Loop Performance Analytics

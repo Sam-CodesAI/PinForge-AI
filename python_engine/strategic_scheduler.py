@@ -223,6 +223,7 @@ class StrategicScheduler:
         dry_run: bool = False,
         publish_as_carousel: Optional[bool] = None,
         track_a: bool = False,
+        agentic: bool = False,
     ) -> List[Dict[str, Any]]:
         """Executes all 5 boards in sequence (useful for testing or initial warmup)."""
         logger.info("⚡ Executing Full 5-Board Circuit (1 pin for each pillar)...")
@@ -236,6 +237,7 @@ class StrategicScheduler:
                 dry_run=dry_run,
                 publish_as_carousel=slot_carousel,
                 track_a=track_a,
+                agentic=agentic,
             )
             results.append(res)
             if slot_id < 5 and delay_between_boards_sec > 0:
@@ -285,6 +287,7 @@ def main():
             dry_run=args.dry_run,
             publish_as_carousel=carousel_mode,
             track_a=args.track_a,
+            agentic=args.agentic,
         )
     elif args.slot:
         scheduler.execute_slot(
