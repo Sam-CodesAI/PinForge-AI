@@ -24,12 +24,6 @@ except ImportError:
 logger = logging.getLogger("pinforge.agentic.publisher")
 
 
-KNOWN_BOARD_IDS: Dict[str, str] = {
-    "Room Organization": "1132444337492930442",
-    "Small Apartment Hacks": "1132444337492933749",
-}
-
-
 class PublisherAgent:
     """Agent 5: Dispatches approved pins to Pinterest with anti-bot timing and bridge page links."""
 
@@ -93,7 +87,7 @@ class PublisherAgent:
         # 4. Live Pinterest API v5 Dispatch Path
         logger.info(f"🚀 Dispatching LIVE Pin to Pinterest API v5 on board '{state.target_board}'...")
         try:
-            board_id = KNOWN_BOARD_IDS.get(state.target_board) or self.pinterest.get_or_create_board(state.target_board)
+            board_id = self.pinterest.find_board_id(state.target_board) or self.pinterest.get_or_create_board(state.target_board)
             result = self.pinterest.create_pin(
                 board_id=board_id,
                 title=state.copy.pin_title,

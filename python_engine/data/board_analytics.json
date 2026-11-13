@@ -1,6 +1,6 @@
 {
   "Room Organization": {
-    "board_id": "1132444337492930442",
+    "board_id": "1132444337493083916",
     "pin_count": 2,
     "avg_aes": 9.03,
     "impressions": 15,
@@ -12,7 +12,7 @@
     "outbound_ctr": 20.0
   },
   "Small Apartment Hacks": {
-    "board_id": "1132444337492933749",
+    "board_id": "1132444337493083917",
     "pin_count": 1,
     "avg_aes": 6.37,
     "impressions": 2,
@@ -22,5 +22,41 @@
     "comments": 0,
     "pin_ctr": 50.0,
     "outbound_ctr": 50.0
+  },
+  "Studio Living Ideas": {
+    "board_id": "1132444337493083918",
+    "pin_count": 0,
+    "avg_aes": 0.0,
+    "impressions": 0,
+    "pin_clicks": 0,
+    "outbound_clicks": 0,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 0.0,
+    "outbound_ctr": 0.0
+  },
+  "Space Saving Kitchens": {
+    "board_id": "1132444337493083919",
+    "pin_count": 0,
+    "avg_aes": 0.0,
+    "impressions": 0,
+    "pin_clicks": 0,
+    "outbound_clicks": 0,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 0.0,
+    "outbound_ctr": 0.0
+  },
+  "Closet & Wardrobe Organization": {
+    "board_id": "1132444337493083920",
+    "pin_count": 0,
+    "avg_aes": 0.0,
+    "impressions": 0,
+    "pin_clicks": 0,
+    "outbound_clicks": 0,
+    "saves": 0,
+    "comments": 0,
+    "pin_ctr": 0.0,
+    "outbound_ctr": 0.0
   }
 }
