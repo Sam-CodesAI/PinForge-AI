@@ -109,6 +109,104 @@ class CanvaClient:
             logger.exception("Error uploading asset to Canva: %s", e)
             return {"success": False, "error": str(e)}
 
+    def create_design(
+        self,
+        title: str = "Smart Spaces Pinterest Pin",
+        asset_id: Optional[str] = None,
+        width: int = 1000,
+        height: int = 1500,
+    ) -> Dict[str, Any]:
+        """Creates a custom 1000x1500 pin design in Canva, optionally attaching an uploaded asset."""
+        if not self.access_token:
+            return {"success": False, "error": "CANVA_ACCESS_TOKEN_MISSING"}
+
+        payload = {
+            "title": title.strip()[:100],
+            "design_type": {
+                "type": "custom",
+                "width": width,
+                "height": height,
+            },
+        }
+        if asset_id:
+            payload["asset_id"] = asset_id
+
+        try:
+            res = requests.post(
+                f"{CANVA_API_BASE}/designs",
+                headers={
+                    "Authorization": f"Bearer {self.access_token}",
+                    "Content-Type": "application/json",
+                },
+                json=payload,
+                timeout=15,
+            )
+            if res.status_code in (200, 201):
+                design = res.json().get("design", {})
+                logger.info("✓ Created Canva design '%s' (ID: %s)", title, design.get("id"))
+                return {"success": True, "design": design}
+            else:
+                logger.error("Canva create design failed (%s): %s", res.status_code, res.text)
+                return {"success": False, "status_code": res.status_code, "error": res.text}
+        except Exception as e:
+            logger.exception("Error creating Canva design: %s", e)
+            return {"success": False, "error": str(e)}
+
+    def export_design(
+        self,
+        design_id: str,
+        format_type: str = "png",
+        timeout: float = 30.0,
+    ) -> Dict[str, Any]:
+        """Exports a Canva design to a downloadable file (PNG/JPG) with async job polling."""
+        if not self.access_token:
+            return {"success": False, "error": "CANVA_ACCESS_TOKEN_MISSING"}
+
+        import time
+
+        headers = {
+            "Authorization": f"Bearer {self.access_token}",
+            "Content-Type": "application/json",
+        }
+        payload = {
+            "design_id": design_id.strip(),
+            "format": {"type": format_type.lower()},
+        }
+
+        try:
+            res = requests.post(
+                f"{CANVA_API_BASE}/exports",
+                headers=headers,
+                json=payload,
+                timeout=15,
+            )
+            if res.status_code not in (200, 201):
+                logger.error("Canva export job creation failed (%s): %s", res.status_code, res.text)
+                return {"success": False, "status_code": res.status_code, "error": res.text}
+
+            job = res.json().get("job", {})
+            job_id = job.get("id")
+            if not job_id:
+                return {"success": False, "error": "Missing export job ID"}
+
+            # Poll for completion
+            start_time = time.time()
+            while time.time() - start_time < timeout:
+                poll_res = requests.get(f"{CANVA_API_BASE}/exports/{job_id}", headers=headers, timeout=10)
+                if poll_res.status_code == 200:
+                    poll_data = poll_res.json().get("job", {})
+                    if poll_data.get("status") == "success":
+                        urls = poll_data.get("urls", [])
+                        logger.info("✓ Successfully exported Canva design %s", design_id)
+                        return {"success": True, "urls": urls, "download_url": urls[0] if urls else None}
+                    elif poll_data.get("status") in ("failed", "error"):
+                        return {"success": False, "error": poll_data.get("error", "Export job failed")}
+                time.sleep(1.0)
+            return {"success": False, "error": f"Canva export timed out after {timeout}s"}
+        except Exception as e:
+            logger.exception("Error exporting Canva design: %s", e)
+            return {"success": False, "error": str(e)}
+
     def create_autofill_job(
         self,
         template_id: Optional[str] = None,

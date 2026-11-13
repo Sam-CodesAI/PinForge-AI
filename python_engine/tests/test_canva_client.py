@@ -64,6 +64,48 @@ class TestCanvaClientImageGeneration(unittest.TestCase):
         result = client.generate_image(prompt="Aesthetic small space room")
         self.assertIsNone(result)
 
+    @patch("requests.post")
+    def test_create_design_success(self, mock_post):
+        client = CanvaClient(access_token="canva_test_token_123")
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "design": {
+                "id": "design_123",
+                "title": "Smart Spaces Pin",
+                "urls": {"edit_url": "https://canva.com/edit", "view_url": "https://canva.com/view"},
+            }
+        }
+        mock_post.return_value = mock_resp
+
+        result = client.create_design(title="Smart Spaces Pin", asset_id="asset_456")
+        self.assertTrue(result["success"])
+        self.assertEqual(result["design"]["id"], "design_123")
+
+    @patch("requests.get")
+    @patch("requests.post")
+    def test_export_design_success(self, mock_post, mock_get):
+        client = CanvaClient(access_token="canva_test_token_123")
+        mock_post_resp = MagicMock()
+        mock_post_resp.status_code = 200
+        mock_post_resp.json.return_value = {"job": {"id": "export_job_789", "status": "in_progress"}}
+        mock_post.return_value = mock_post_resp
+
+        mock_get_resp = MagicMock()
+        mock_get_resp.status_code = 200
+        mock_get_resp.json.return_value = {
+            "job": {
+                "id": "export_job_789",
+                "status": "success",
+                "urls": ["https://export-download.canva.com/pin.png"],
+            }
+        }
+        mock_get.return_value = mock_get_resp
+
+        result = client.export_design("design_123", format_type="png")
+        self.assertTrue(result["success"])
+        self.assertEqual(result["download_url"], "https://export-download.canva.com/pin.png")
+
 
 if __name__ == "__main__":
     unittest.main()
