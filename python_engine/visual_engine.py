@@ -1043,24 +1043,26 @@ def render_track_a_lifestyle_pin(
     brand_tag: str = "SMART SPACES",
     preferred_tier: Optional[int] = None,
     base_image: Optional[Image.Image] = None,
+    product_title: Optional[str] = None,
 ) -> Image.Image:
     """Generates Track A (Aspirational Lifestyle Pins).
 
     Requirements:
-    - 100% full-bleed, high-aesthetic interior design imagery.
+    - 100% full-bleed, high-aesthetic interior design imagery (Maximum Product Showcase).
     - ZERO promotional boxes (no white rectangles, cards, or borders).
     - ZERO giant buttons (no CTA buttons or shopping badges).
     - ZERO prices (no $xx.xx price stickers).
-    - Optional subtle, elegant serif editorial title overlay with soft shadow.
+    - Minimal, elegant editorial typography with high contrast and safe zones.
     """
     logger.info("🌿 Rendering Track A (Aspirational Lifestyle Pin) — Full Bleed, Zero Promo Boxes...")
 
     if base_image is not None:
         canvas = base_image.copy()
     else:
-        # 1. Generate full-bleed visual via waterfall fallback
+        # 1. Generate full-bleed visual via waterfall fallback using product_title for photorealism
+        effective_product = (product_title or title).strip()
         result = generate_visual_with_waterfall(
-            product_title=title,
+            product_title=effective_product,
             board_name=board_name,
             category=category,
             style=style,
@@ -1086,24 +1088,27 @@ def render_track_a_lifestyle_pin(
     # Subtle top vignette for legibility of light text over light or dark walls
     vignette = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (0, 0, 0, 0))
     v_draw = ImageDraw.Draw(vignette)
-    for y in range(320):
-        alpha = int(140 * (1.0 - (y / 320.0)))
+    for y in range(280):
+        alpha = int(130 * (1.0 - (y / 280.0)))
         v_draw.line([(0, y), (CANVAS_WIDTH, y)], fill=(0, 0, 0, alpha))
-    for y in range(1280, CANVAS_HEIGHT):
-        alpha = int(120 * ((y - 1280) / 220.0))
+    for y in range(CANVAS_HEIGHT - 120, CANVAS_HEIGHT):
+        alpha = int(110 * ((y - (CANVAS_HEIGHT - 120)) / 120.0))
         v_draw.line([(0, y), (CANVAS_WIDTH, y)], fill=(0, 0, 0, alpha))
     canvas = Image.alpha_composite(canvas, vignette)
     draw = ImageDraw.Draw(canvas)
 
-    # Top Brand Kicker (Delicate letter-spaced aesthetic serif)
-    brand_font = get_canvas_font(BOLD_FONT_PATH, 20)
-    b_bbox = brand_font.getbbox(clean_brand)
+    # Top Brand Kicker (Delicate floating pill badge)
+    board_label = f"✦ {clean_brand} • {(board_name or 'HOME ESSENTIALS').upper()} ✦"
+    brand_font = get_canvas_font(BOLD_FONT_PATH, 18)
+    b_bbox = brand_font.getbbox(board_label)
     b_w = b_bbox[2] - b_bbox[0]
-    draw.text(((CANVAS_WIDTH - b_w) // 2 + 1, 65 + 1), clean_brand, fill=(0, 0, 0, 160), font=brand_font)
-    draw.text(((CANVAS_WIDTH - b_w) // 2, 65), clean_brand, fill=(255, 255, 255, 230), font=brand_font)
+    bx = (CANVAS_WIDTH - b_w) // 2
+    by = 50
+    draw.rounded_rectangle([bx - 14, by - 6, bx + b_w + 14, by + 24], radius=14, fill=(0, 0, 0, 110))
+    draw.text((bx, by), board_label, fill=(255, 255, 255, 240), font=brand_font)
 
-    # Delicate Main Editorial Title (Clean Serif, elegant wrap)
-    title_font_size = 46 if len(clean_title) < 55 else 38
+    # Delicate Main Editorial Title (Clean Serif, elegant wrap, max 2 lines)
+    title_font_size = 52 if len(clean_title) < 40 else 42
     title_font = get_canvas_font(SERIF_FONT_PATH, title_font_size)
 
     # Wrap title within 840px max width
@@ -1124,9 +1129,9 @@ def render_track_a_lifestyle_pin(
                 cur_line = []
     if cur_line:
         lines.append(" ".join(cur_line))
-    lines = lines[:3]
+    lines = lines[:2]  # Limit to 2 punchy lines for minimal text
 
-    cur_y = 110
+    cur_y = 100
     for line in lines:
         line_bbox = title_font.getbbox(line)
         lw = line_bbox[2] - line_bbox[0]
@@ -1134,14 +1139,16 @@ def render_track_a_lifestyle_pin(
         # Soft dark text shadow
         draw.text((lx + 2, cur_y + 2), line, fill=(0, 0, 0, 180), font=title_font)
         draw.text((lx, cur_y), line, fill=(255, 255, 255, 255), font=title_font)
-        cur_y += title_font_size + 12
+        cur_y += title_font_size + 10
 
-    # Subtle bottom aesthetic tag (e.g. "📌 SAVE THIS PIN • SMART SPACES EDITORIAL")
-    bottom_font = get_canvas_font(REGULAR_FONT_PATH, 18)
-    bottom_text = "📌 SAVE THIS PIN  •  SMART SPACES EDITORIAL"
+    # Minimal bottom aesthetic pill (e.g. "📌 SAVE THIS PIN")
+    bottom_font = get_canvas_font(BOLD_FONT_PATH, 18)
+    bottom_text = "📌 SAVE THIS PIN"
     bb_box = bottom_font.getbbox(bottom_text)
     bb_w = bb_box[2] - bb_box[0]
-    draw.text(((CANVAS_WIDTH - bb_w) // 2 + 1, CANVAS_HEIGHT - 65 + 1), bottom_text, fill=(0, 0, 0, 140), font=bottom_font)
-    draw.text(((CANVAS_WIDTH - bb_w) // 2, CANVAS_HEIGHT - 65), bottom_text, fill=(245, 245, 240, 200), font=bottom_font)
+    bt_x = (CANVAS_WIDTH - bb_w) // 2
+    bt_y = CANVAS_HEIGHT - 65
+    draw.rounded_rectangle([bt_x - 16, bt_y - 6, bt_x + bb_w + 16, bt_y + 26], radius=16, fill=(0, 0, 0, 120))
+    draw.text((bt_x, bt_y), bottom_text, fill=(255, 255, 255, 250), font=bottom_font)
 
     return canvas

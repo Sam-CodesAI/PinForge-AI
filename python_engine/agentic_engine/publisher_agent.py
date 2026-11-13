@@ -45,17 +45,24 @@ class PublisherAgent:
         if not state.product or not state.copy or not state.rendered_image_path:
             raise ValueError("Incomplete SwarmState: Product, copy, and image must all be populated.")
 
-        # 1. Construct Next.js Bridge Gateway URL
-        bridge_url = f"{BASE_URL}/p/{state.copy.bridge_slug}?tag={self.affiliate_tag}"
+        # 1. Construct Destination URL
+        # By default or if bridge domain is unverified/404, link directly to the live Amazon product page
+        # with affiliate tracking (smartspace07-21) to guarantee 100% uptime, zero 404s, and direct commissions.
+        import os
+        use_direct = os.getenv("USE_DIRECT_AMAZON_LINKS", "true").lower() == "true" or "pinforge.vercel.app" in BASE_URL
+        if use_direct and state.product.asin:
+            destination_url = f"https://www.amazon.com/dp/{state.product.asin}?tag={self.affiliate_tag}"
+        else:
+            destination_url = f"{BASE_URL}/p/{state.copy.bridge_slug}?tag={self.affiliate_tag}"
 
         state.log(
             agent_name="PublisherAgent",
             action="prepare_publication",
             thought=(
                 f"Preparing dispatch for board '{state.target_board}'. "
-                f"Destination link: {bridge_url}. Live={publish_live}."
+                f"Destination link: {destination_url}. Live={publish_live}."
             ),
-            result_summary=f"Destination: {bridge_url}"
+            result_summary=f"Destination: {destination_url}"
         )
 
         # 2. Anti-Detection Jitter Offset (if enabled)
@@ -80,7 +87,7 @@ class PublisherAgent:
                 "id": mock_id,
                 "title": state.copy.pin_title,
                 "board_name": state.target_board,
-                "link": bridge_url,
+                "link": destination_url,
                 "status": "dry_run_success",
             }
 
@@ -92,7 +99,7 @@ class PublisherAgent:
                 board_id=board_id,
                 title=state.copy.pin_title,
                 description=state.copy.pin_description,
-                link=bridge_url,
+                link=destination_url,
                 image_path=state.rendered_image_path,
                 base64_image=state.rendered_base64,
             )

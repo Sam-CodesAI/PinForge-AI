@@ -38,14 +38,11 @@ class CreativeDirectorAgent:
         recommended_format = slot_info.get("recommended_format")
 
         title_lower = prod.title.lower()
-        if recommended_format:
+        # Default to Track A Lifestyle (Minimal text, maximum product showcase)
+        if recommended_format and recommended_format in ["track_a_lifestyle", "aspirational_lifestyle", "carousel_suite"]:
             template = recommended_format
-        elif "table" in title_lower or "divider" in title_lower or "cart" in title_lower:
-            template = "track_a_lifestyle"
-        elif "organizer" in title_lower or "divider" in title_lower:
-            template = "warm_editorial"
         else:
-            template = self.memory.get_preferred_template_for_board(state.target_board)
+            template = "track_a_lifestyle"
 
         # Formulate lighting and staging prompt using Brand PRD standards
         lighting = (

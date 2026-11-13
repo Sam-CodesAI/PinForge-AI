@@ -164,26 +164,30 @@ class SwarmCoordinator:
         creative: CreativeStrategy,
         copy: PinCopyDraft
     ) -> tuple[str, Optional[str]]:
-        """Renders 1000x1500 canvas using the selected template variant."""
+        """Renders 1000x1500 canvas enforcing Minimal Text & Maximum Product Showcase."""
         template_name = creative.template_variant
 
-        # 1. Track A Lifestyle Hero
-        if template_name in ["track_a_lifestyle", "aspirational_lifestyle"]:
+        # 1. Track A Lifestyle Hero (Full-bleed product showcase, minimal typography)
+        if template_name in ["track_a_lifestyle", "aspirational_lifestyle", "warm_editorial"]:
             try:
+                # Extract clean, punchy minimal headline (max 35-40 chars)
+                raw_head = copy.pin_title.split("!")[0].split(":")[0].strip()
+                clean_head = raw_head if len(raw_head) <= 42 else raw_head[:39] + "..."
+
                 img = render_track_a_lifestyle_pin(
-                    title=candidate.title,
+                    title=clean_head or copy.pin_title,
                     board_name=candidate.board_name,
                     category=candidate.category,
+                    product_title=candidate.title,
                 )
                 PINS_DIR.mkdir(parents=True, exist_ok=True)
                 out_path = PINS_DIR / f"agentic_{candidate.asin}_{uuid.uuid4().hex[:6]}.png"
                 img.save(str(out_path), "PNG")
                 return str(out_path), None
             except Exception as e:
-                logger.warning(f"Track A lifestyle render fallback to warm_editorial: {e}")
-                template_name = "warm_editorial"
+                logger.warning(f"Track A lifestyle render fallback: {e}")
 
-        # 2. Warm Editorial or Problem Solver
+        # 2. Standard Graphic Fallback (Problem Solver / Bento)
         req = PinGenerateRequest(
             title=copy.pin_title,
             image_url=candidate.image_url,
