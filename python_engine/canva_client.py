@@ -121,3 +121,83 @@ class CanvaClient:
         except Exception as e:
             logger.exception("Error creating Canva autofill job: %s", e)
             return {"success": False, "error": str(e)}
+
+    def generate_image(
+        self,
+        prompt: str,
+        model: str = "craft_v1_2k",
+        aspect_ratio: str = "portrait",
+        timeout: float = 30.0,
+    ) -> Optional[Any]:
+        """Generates an image via Canva Connect Image Generation API.
+
+        Uses model 'craft_v1_2k' (Canva Craft) or 'z_image_turbo' with async job polling.
+        Returns a Pillow Image formatted to 1000x1500 (2:3 aspect ratio).
+        """
+        if not self.access_token:
+            logger.debug("Canva access token not configured, skipping Canva AI image generation.")
+            return None
+
+        import io
+        import time
+        import uuid
+        from PIL import Image, ImageOps
+
+        headers = {
+            "Authorization": f"Bearer {self.access_token}",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        }
+        payload = {
+            "prompt": prompt.strip(),
+            "model": model,
+            "aspect_ratio": aspect_ratio,
+            "idempotency_key": str(uuid.uuid4()),
+        }
+
+        try:
+            logger.info("🎨 [Canva AI] Invoking Canva Connect Image Generation (%s)...", model)
+            # 1. Create Generation Job
+            res = requests.post(
+                f"{CANVA_API_BASE}/image-generations",
+                headers=headers,
+                json=payload,
+                timeout=15,
+            )
+            if res.status_code not in (200, 201, 202):
+                logger.warning("Canva image generation job creation failed (%s): %s", res.status_code, res.text)
+                return None
+
+            job_data = res.json().get("job", {})
+            job_id = job_data.get("id")
+            if not job_id:
+                logger.warning("Canva image generation response missing job ID: %s", res.json())
+                return None
+
+            # 2. Poll for Completion (up to timeout)
+            start_time = time.time()
+            while time.time() - start_time < timeout:
+                poll_res = requests.get(
+                    f"{CANVA_API_BASE}/image-generations/{job_id}",
+                    headers=headers,
+                    timeout=10,
+                )
+                if poll_res.status_code == 200:
+                    status_data = poll_res.json().get("job", {})
+                    status = status_data.get("status")
+                    if status == "success":
+                        result = status_data.get("result", {})
+                        image_url = result.get("url") or (result.get("image", {}).get("url"))
+                        if image_url:
+                            img_data = requests.get(image_url, timeout=15).content
+                            img = Image.open(io.BytesIO(img_data)).convert("RGBA")
+                            logger.info("✓ [Canva AI] Image generated and formatted to 1000x1500 successfully.")
+                            return ImageOps.fit(img, (1000, 1500), method=Image.Resampling.LANCZOS)
+                    elif status in ("failed", "error"):
+                        logger.warning("Canva image generation job failed: %s", status_data)
+                        return None
+                time.sleep(2.0)
+            logger.warning("Canva image generation timed out after %ss", timeout)
+        except Exception as e:
+            logger.warning("Error generating image via Canva: %s", e)
+        return None

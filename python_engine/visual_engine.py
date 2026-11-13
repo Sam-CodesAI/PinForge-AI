@@ -475,7 +475,7 @@ class VisualGenerationResult:
 
     @property
     def is_ai_generated(self) -> bool:
-        return self.provider in ("google_imagen", "ideogram", "fal_flux", "pollinations")
+        return self.provider in ("canva_craft", "google_imagen", "ideogram", "fal_flux", "pollinations")
 
     @property
     def is_fallback(self) -> bool:
@@ -878,13 +878,51 @@ def generate_visual_with_waterfall(
         style=style,
     )
 
+    effective_canva_token = (os.getenv("CANVA_ACCESS_TOKEN") or "").strip()
     effective_gemini_key = (GEMINI_API_KEY if GEMINI_API_KEY is not None else (os.getenv("GEMINI_API_KEY") or "")).strip()
     effective_ideogram_key = (IDEOGRAM_API_KEY if IDEOGRAM_API_KEY is not None else (os.getenv("IDEOGRAM_API_KEY") or "")).strip()
     effective_fal_key = (FAL_KEY if FAL_KEY is not None else (os.getenv("FAL_KEY") or os.getenv("FAL_API_KEY") or "")).strip()
     effective_pollinations_key = (POLLINATIONS_API_KEY if POLLINATIONS_API_KEY is not None else (os.getenv("POLLINATIONS_API_KEY") or "")).strip()
 
     # ----------------------------------------------------
-    # TIER 1: GOOGLE IMAGEN 3 (imagen-3.0-generate-002)
+    # TIER 1: CANVA CONNECT AI (Canva Craft craft_v1_2k)
+    # ----------------------------------------------------
+    if preferred_tier in (None, 1) and effective_canva_token:
+        try:
+            try:
+                from python_engine.canva_client import CanvaClient
+            except ImportError:
+                from canva_client import CanvaClient
+            canva = CanvaClient(access_token=effective_canva_token)
+            canva_prompt = build_visual_prompt(
+                product_title=product_title,
+                board_name=board_name,
+                category=category,
+                style=style,
+                tier=1,
+            )
+            img = canva.generate_image(prompt=canva_prompt, model="craft_v1_2k", aspect_ratio="portrait")
+            if img:
+                elapsed = (time.perf_counter() - start_time) * 1000.0
+                return VisualGenerationResult(
+                    image=img,
+                    provider="canva_craft",
+                    tier=1,
+                    prompt_used=canva_prompt,
+                    elapsed_ms=round(elapsed, 2),
+                    seed=seed,
+                    success=True,
+                    error_trail=error_trail,
+                )
+            error_trail.append("Tier 1 (Canva Craft): Returned None or failed")
+        except Exception as e:
+            error_trail.append(f"Tier 1 (Canva Craft): Exception {e}")
+    else:
+        if not effective_canva_token:
+            error_trail.append("Tier 1 (Canva Craft): Skipped (CANVA_ACCESS_TOKEN unset)")
+
+    # ----------------------------------------------------
+    # TIER 1b: GOOGLE IMAGEN 3 (imagen-3.0-generate-002)
     # ----------------------------------------------------
     if preferred_tier in (None, 1) and effective_gemini_key:
         try:
