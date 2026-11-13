@@ -30,6 +30,14 @@ class BrandIdentity(BaseModel):
             "✓ FAST PRIME 2-DAY DELIVERY",
         ]
     )
+    friction_badges: List[str] = Field(
+        default_factory=lambda: [
+            "100% RENTER FRIENDLY • NO DRILL",
+            "ZERO WALL HOLES",
+            "TOOL-FREE POP-UP READY",
+            "FITS ANY CABINET • NO TOOLS NEEDED",
+        ]
+    )
     official_boards: List[str] = Field(
         default_factory=lambda: [
             "Room Organization",

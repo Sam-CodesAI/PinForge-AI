@@ -141,11 +141,39 @@ class StrategicScheduler:
         dry_run: bool = False,
         publish_as_carousel: Optional[bool] = None,
         track_a: bool = False,
+        agentic: bool = False,
     ) -> Dict[str, Any]:
         """Executes a single slot targeting its dedicated board and niche queries."""
         slot = SCHEDULE_PILLARS.get(slot_id)
         if not slot:
             raise ValueError(f"Invalid slot ID: {slot_id}. Must be between 1 and 5.")
+
+        board_name = slot["board_name"]
+
+        # Delegate to 6-agent autonomous swarm if --agentic is requested
+        if agentic:
+            logger.info(f"🤖 [Agentic Swarm Mode] Executing Slot {slot_id} via 6-Agent SwarmCoordinator...")
+            try:
+                from python_engine.agentic_engine import SwarmCoordinator
+            except ImportError:
+                from agentic_engine import SwarmCoordinator
+
+            coordinator = SwarmCoordinator()
+            state = coordinator.run_autonomous_swarm_cycle(
+                board_name=board_name,
+                slot_id=slot_id,
+                publish_live=not dry_run,
+                apply_jitter=apply_jitter,
+            )
+            return {
+                "status": "agentic_swarm_success",
+                "session_id": state.session_id,
+                "product": state.product.model_dump() if state.product else {},
+                "copy": state.copy.model_dump() if state.copy else {},
+                "critic_audit": state.critic_audit.model_dump() if state.critic_audit else {},
+                "published_pin_id": state.published_pin_id,
+                "execution_log": [log.model_dump() for log in state.execution_log],
+            }
 
         # Automated format alternator: carousels on prime visual slots (1 & 4), single pins on other slots (2, 3, 5)
         if publish_as_carousel is None:
@@ -228,6 +256,7 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument("--carousel", dest="carousel", action="store_true", default=None, help="Force publish 4-slide native base64 carousel pin")
     parser.add_argument("--single", dest="single", action="store_true", help="Force publish single image pin")
     parser.add_argument("--track-a", action="store_true", help="Publish Track A Aspirational Lifestyle Pin (zero promo boxes, zero buttons, zero prices)")
+    parser.add_argument("--agentic", action="store_true", help="Execute cycle using Autonomous Multi-Agent Swarm (Scout, Creative, Copywriter, VisionCritic, Publisher, Analyst)")
     parser.add_argument("--bootstrap", action="store_true", help="Only bootstrap boards, do not publish")
     return parser
 
@@ -264,6 +293,7 @@ def main():
             dry_run=args.dry_run,
             publish_as_carousel=carousel_mode,
             track_a=args.track_a,
+            agentic=args.agentic,
         )
     elif args.auto:
         matched_slot = scheduler.get_slot_for_current_time()
@@ -274,6 +304,7 @@ def main():
             dry_run=args.dry_run,
             publish_as_carousel=carousel_mode,
             track_a=args.track_a,
+            agentic=args.agentic,
         )
     else:
         print("Smart Spaces 5-Pillar Schedule Matrix:")
