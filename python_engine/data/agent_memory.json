@@ -1,27 +1,169 @@
 {
+  "total_pins_published": 150,
+  "historical_avg_score": 93.4,
   "top_performing_templates": [
-    "track_a_lifestyle",
+    "carousel_suite",
     "warm_editorial",
-    "carousel_suite"
+    "track_a_lifestyle"
   ],
-  "winning_hook_prefixes": [
-    "Why Everyone In Small Apartments Is Obsessed With",
-    "The Space-Saving Hack That Completely Solved",
-    "Small Apartment Rule #1: Stop Buying Bulky"
+  "template_benchmarks": {
+    "carousel_suite": {
+      "avg_ctr": 11.36,
+      "avg_outbound_ctr": 4.55,
+      "conversion_rate": 40.0,
+      "progressive_disclosure": "Slide 1 (Hook) -> Slide 2 (Feature) -> Slide 3 (Specs) -> Slide 4 (Trust & Save CTA)"
+    },
+    "warm_editorial": {
+      "avg_ctr": 8.5,
+      "avg_outbound_ctr": 3.8,
+      "conversion_rate": 44.7,
+      "styling": "Alabaster linen canvas, frosted travertine card, serif headers, 2700K amber glow"
+    },
+    "track_a_lifestyle": {
+      "avg_ctr": 6.06,
+      "avg_outbound_ctr": 3.03,
+      "conversion_rate": 50.0,
+      "styling": "Full-bleed photorealistic Kinfolk interior, minimal editorial kicker, zero promo boxes"
+    }
+  },
+  "winning_asins": [
+    {
+      "asin": "B0DHGM5XT4",
+      "title": "Lifewit Adjustable Acrylic Drawer Dividers 4-Pack",
+      "price": 19.99,
+      "pin_ctr": 22.22,
+      "outbound_ctr": 22.22,
+      "click_to_outbound_rate": 100.0,
+      "board": "Room Organization"
+    },
+    {
+      "asin": "B01MR1Y5K8",
+      "title": "Simple Trending 2-Tier Sliding Under Cabinet Organizer",
+      "price": 22.99,
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0,
+      "click_to_outbound_rate": 100.0,
+      "board": "Small Apartment Hacks"
+    },
+    {
+      "asin": "B0C42YJVCD",
+      "title": "360 Rotating Makeup Organizer Vanity Storage Carousel",
+      "price": 23.99,
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0,
+      "click_to_outbound_rate": 100.0,
+      "board": "Room Organization"
+    },
+    {
+      "asin": "B07D38J38F",
+      "title": "Stori Audrey Stackable Clear Plastic Storage Drawers",
+      "price": 27.99,
+      "pin_ctr": 50.0,
+      "outbound_ctr": 50.0,
+      "click_to_outbound_rate": 100.0,
+      "board": "Studio Living Ideas"
+    },
+    {
+      "asin": "B093GKKQ65",
+      "title": "2-Tier Under Sink Sliding Drawer Storage Rack",
+      "price": 24.99,
+      "pin_ctr": 100.0,
+      "outbound_ctr": 0.0,
+      "click_to_outbound_rate": 0.0,
+      "board": "Studio Living Ideas"
+    },
+    {
+      "asin": "B07T7N28LN",
+      "title": "YouCopia UpSpace Height Adjustable Bottle Organizer",
+      "price": 19.99,
+      "pin_ctr": 50.0,
+      "outbound_ctr": 0.0,
+      "click_to_outbound_rate": 0.0,
+      "board": "Studio Living Ideas"
+    },
+    {
+      "asin": "B0HJGVV6P5",
+      "title": "7-Tier Narrow Slim Rolling Storage Cart with Wheels",
+      "price": 34.99,
+      "pin_ctr": 25.0,
+      "outbound_ctr": 0.0,
+      "click_to_outbound_rate": 0.0,
+      "board": "Small Apartment Hacks"
+    }
   ],
-  "optimal_price_floor": 14.99,
-  "optimal_price_ceiling": 49.99,
+  "hook_architecture_metrics": {
+    "problem_solver": {
+      "description": "Direct emotional pain-point trigger (drives 66.7% of all outbound purchases)",
+      "conversion_efficiency": 57.1,
+      "top_formulas": [
+        "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+        "Vanity Chaos? Fixed: [Product]",
+        "Ditch Vanity Clutter: 360 Spin [Product] Aesthetic"
+      ]
+    },
+    "action_transformation": {
+      "description": "Imperative room transformation trigger (highest Pin CTR at 14.3%)",
+      "conversion_efficiency": 33.3,
+      "top_formulas": [
+        "Maximize Your Sink: [Product]",
+        "Reclaim Your Countertop: [Product]",
+        "Turn Tiny Gaps Into Mega Storage: [Product]"
+      ]
+    },
+    "curiosity_social_proof": {
+      "description": "High impression generation but 0% commercial conversion (use sparingly)",
+      "conversion_efficiency": 0.0,
+      "top_formulas": [
+        "Why Everyone In Small Apartments Is Obsessed With The [Product]"
+      ]
+    }
+  },
+  "optimal_price_floor": 18.00,
+  "optimal_price_ceiling": 35.00,
   "high_converting_boards": [
     "Room Organization",
     "Small Apartment Hacks",
-    "Studio Living Ideas"
+    "Studio Living Ideas",
+    "Space Saving Kitchens",
+    "Closet & Wardrobe Organization"
   ],
   "approved_friction_badges": [
     "100% RENTER FRIENDLY • NO DRILL",
     "ZERO WALL HOLES",
     "TOOL-FREE POP-UP READY",
-    "FITS ANY CABINET • NO TOOLS NEEDED"
+    "FITS ANY CABINET • NO TOOLS NEEDED",
+    "EXPANDABLE & DAMAGE FREE"
   ],
-  "total_pins_published": 1,
-  "historical_avg_score": 92.0
+  "peak_schedule_matrix": {
+    "slot_1": {
+      "time": "08:30 AM EST (13:30 UTC)",
+      "board": "Small Apartment Hacks",
+      "recommended_format": "carousel_suite",
+      "intent": "Morning commute & weekend planning"
+    },
+    "slot_2": {
+      "time": "12:45 PM EST (17:45 UTC)",
+      "board": "Room Organization",
+      "recommended_format": "warm_editorial",
+      "intent": "Midday decluttering & high-intent desks"
+    },
+    "slot_3": {
+      "time": "04:30 PM EST (21:30 UTC)",
+      "board": "Studio Living Ideas",
+      "recommended_format": "track_a_lifestyle",
+      "intent": "Afternoon studio refresh & zoning"
+    },
+    "slot_4": {
+      "time": "08:15 PM EST (01:15 UTC)",
+      "board": "Studio Living Ideas",
+      "recommended_format": "carousel_suite",
+      "intent": "Prime evening decor & furniture browsing"
+    },
+    "slot_5": {
+      "time": "10:45 PM EST (03:45 UTC)",
+      "board": "Room Organization",
+      "recommended_format": "warm_editorial",
+      "intent": "Bedtime impulse room makeovers"
+    }
+  }
 }

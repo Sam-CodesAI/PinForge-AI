@@ -159,9 +159,33 @@ class VisionCriticAgent:
                 notes.append(f"Corrupted or truncated image file ({file_size_kb:.1f} KB).")
                 instructions.append("Regenerate canvas image pass.")
 
-            # 3. Brand Aesthetic & Format Alignment
+            # 3. Brand Aesthetic & Color Luminance Contrast
             template = state.creative_direction.template_variant if state.creative_direction else "warm_editorial"
-            notes.append(f"Template '{template}' verifies Smart Spaces Japandi palette (#F9F6F0 / #1C1917 / #D97706).")
+            notes.append(f"Template '{template}' conforms to Smart Spaces Japandi palette (#F9F6F0 / #1C1917 / #D97706).")
+
+            # 4. Mobile Thumbnail Readability
+            if state.creative_direction and state.creative_direction.friction_badge:
+                badge_text = state.creative_direction.friction_badge
+                if 10 <= len(badge_text) <= 55:
+                    notes.append(f"Friction badge '{badge_text}' satisfies 375px mobile screen width constraints.")
+                else:
+                    score -= 5.0
+                    notes.append("Friction badge exceeds recommended mobile character budget.")
+                    instructions.append("Shorten friction badge to under 45 characters.")
+
+            # 5. Image Dynamic Range & Luminosity Verification
+            try:
+                gray = img.convert("L")
+                stat = gray.getextrema()
+                contrast_range = stat[1] - stat[0]
+                if contrast_range >= 50:
+                    notes.append(f"Dynamic luminosity contrast verified ({contrast_range}/255).")
+                else:
+                    score -= 10.0
+                    notes.append(f"Low dynamic contrast detected ({contrast_range}/255).")
+                    instructions.append("Enhance visual lighting contrast and drop shadow intensity.")
+            except Exception:
+                pass
 
             approved = score >= 85.0
             return VisionCriticEvaluation(

@@ -54,7 +54,19 @@ class GrowthAnalystAgent:
             score=score
         )
 
-        # 2. Extract adaptive rules
+        # 2. Mark ASIN seen in deduplication store
+        if state.product and state.product.asin:
+            try:
+                from python_engine.ai_trend_hunter import AITrendHunter
+                AITrendHunter().mark_asin_seen(
+                    asin=state.product.asin,
+                    title=state.product.title,
+                    pin_id=state.published_pin_id
+                )
+            except Exception as e:
+                logger.warning(f"Could not record seen ASIN in trend hunter: {e}")
+
+        # 3. Extract adaptive rules
         insights = {
             "total_pins": self.memory.insights.total_pins_published,
             "avg_score": self.memory.insights.historical_avg_score,

@@ -95,21 +95,29 @@ class AgentLogEntry(BaseModel):
 
 
 class MemoryInsights(BaseModel):
-    """Persistent insights accumulated across publishing cycles."""
+    """Persistent insights accumulated across publishing cycles and 150-pin audit."""
     top_performing_templates: List[str] = Field(
-        default_factory=lambda: ["track_a_lifestyle", "warm_editorial", "carousel_suite"]
+        default_factory=lambda: ["carousel_suite", "warm_editorial", "track_a_lifestyle"]
     )
     winning_hook_prefixes: List[str] = Field(
         default_factory=lambda: [
+            "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
+            "Vanity Chaos? Fixed:",
+            "Maximize Your Sink:",
+            "Turn Tiny Gaps Into Mega Storage:",
             "Why Everyone In Small Apartments Is Obsessed With",
-            "The Space-Saving Hack That Completely Solved",
-            "Small Apartment Rule #1: Stop Buying Bulky",
         ]
     )
-    optimal_price_floor: float = 14.99
-    optimal_price_ceiling: float = 49.99
+    optimal_price_floor: float = 18.00
+    optimal_price_ceiling: float = 35.00
     high_converting_boards: List[str] = Field(
-        default_factory=lambda: ["Room Organization", "Small Apartment Hacks", "Studio Living Ideas"]
+        default_factory=lambda: [
+            "Room Organization",
+            "Small Apartment Hacks",
+            "Studio Living Ideas",
+            "Space Saving Kitchens",
+            "Closet & Wardrobe Organization",
+        ]
     )
     approved_friction_badges: List[str] = Field(
         default_factory=lambda: [
@@ -117,10 +125,22 @@ class MemoryInsights(BaseModel):
             "ZERO WALL HOLES",
             "TOOL-FREE POP-UP READY",
             "FITS ANY CABINET • NO TOOLS NEEDED",
+            "EXPANDABLE & DAMAGE FREE",
         ]
     )
-    total_pins_published: int = 0
-    historical_avg_score: float = 91.5
+    total_pins_published: int = 150
+    historical_avg_score: float = 93.4
+    template_benchmarks: Dict[str, Any] = Field(default_factory=dict)
+    winning_asins: List[Dict[str, Any]] = Field(default_factory=list)
+    hook_architecture_metrics: Dict[str, Any] = Field(default_factory=dict)
+    peak_schedule_matrix: Dict[str, Any] = Field(default_factory=dict)
+
+    def get_top_asin_for_board(self, board_name: str) -> Optional[str]:
+        """Returns the proven highest-converting ASIN for a given board if present."""
+        for item in self.winning_asins:
+            if item.get("board", "").lower() == board_name.lower():
+                return item.get("asin")
+        return None
 
 
 class SwarmState(BaseModel):
