@@ -957,6 +957,47 @@ class PinterestClient:
             print(f"[Error] Failed to refresh Pinterest access token: HTTP {e.code} - {err_msg}")
             raise RuntimeError(f"Pinterest token refresh failed ({e.code}): {err_msg}")
 
+    def exchange_code_for_token(
+        self,
+        code: str,
+        redirect_uri: str = "https://localhost",
+        app_id: Optional[str] = None,
+        app_secret: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Exchanges OAuth 2.0 authorization code for access_token and refresh_token."""
+        effective_app_id = (app_id or self.app_id or os.getenv("PINTEREST_APP_ID") or "").strip()
+        effective_app_secret = (app_secret or self.app_secret or os.getenv("PINTEREST_APP_SECRET") or "").strip()
+
+        if not effective_app_id or not effective_app_secret:
+            raise ValueError("PINTEREST_APP_ID and PINTEREST_APP_SECRET are required to exchange code.")
+
+        auth_header = base64.b64encode(f"{effective_app_id}:{effective_app_secret}".encode("utf-8")).decode("utf-8")
+        url = "https://api.pinterest.com/v5/oauth/token"
+        headers = {
+            "Authorization": f"Basic {auth_header}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+        body_data = urllib.parse.urlencode({
+            "grant_type": "authorization_code",
+            "code": code.strip(),
+            "redirect_uri": redirect_uri.strip(),
+        }).encode("utf-8")
+
+        req = urllib.request.Request(url, data=body_data, headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                resp_body = resp.read().decode("utf-8")
+                token_data = json.loads(resp_body) if resp_body else {}
+                new_token = token_data.get("access_token")
+                if new_token:
+                    self.access_token = new_token
+                    print(f"✓ Pinterest access token successfully obtained! Expires in: {token_data.get('expires_in')}s")
+                return token_data
+        except urllib.error.HTTPError as e:
+            err_msg = e.read().decode("utf-8")
+            print(f"[Error] Failed to exchange code for token: HTTP {e.code} - {err_msg}")
+            raise RuntimeError(f"Pinterest code exchange failed ({e.code}): {err_msg}")
+
 
 def generate_oauth_init_url(app_id: str, redirect_uri: str = "https://localhost", state: str = "pinforge_oauth") -> str:
     """Generates Pinterest OAuth 2.0 Authorization URL for initial connection."""
@@ -976,6 +1017,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="PinForge Pinterest Client & OAuth Helper")
     parser.add_argument("--oauth-init", action="store_true", help="Generate OAuth 2.0 URL to obtain initial tokens")
+    parser.add_argument("--exchange-code", type=str, help="Exchange OAuth 2.0 authorization code for access and refresh tokens")
     parser.add_argument("--refresh-token", action="store_true", help="Refresh OAuth 2.0 access token via refresh token")
     parser.add_argument("--delete-pin", type=str, help="Delete a specific pin by ID")
     parser.add_argument("--delete-all-pins", action="store_true", help="Delete all pins from Pinterest API and purge local ledgers")
@@ -1002,6 +1044,21 @@ if __name__ == "__main__":
             print("3. Pinterest will redirect to your redirect URI with a ?code= parameter.")
             print("4. Exchange that code for your initial access_token and refresh_token.")
             print("=" * 70 + "\n")
+    elif args.exchange_code:
+        print("Exchanging OAuth code for Pinterest access and refresh tokens...")
+        try:
+            res = client.exchange_code_for_token(
+                code=args.exchange_code,
+                redirect_uri=args.redirect_uri,
+                app_id=args.app_id,
+                app_secret=args.app_secret,
+            )
+            print("✅ Code exchange successful!")
+            print(f"Access Token: {res.get('access_token')[:15]}... (expires in {res.get('expires_in')}s)")
+            if res.get('refresh_token'):
+                print(f"Refresh Token: {res.get('refresh_token')[:15]}...")
+        except Exception as e:
+            print(f"Code exchange failed: {e}")
     elif args.refresh_token:
         print("Refreshing Pinterest access token...")
         try:
