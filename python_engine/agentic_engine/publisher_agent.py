@@ -107,6 +107,23 @@ class PublisherAgent:
             state.published_pin_id = pin_id
             state.is_successful = True
 
+            # Sync rendered pin asset to Canva Media Library if configured
+            try:
+                try:
+                    from python_engine.canva_client import CanvaClient
+                except ImportError:
+                    from canva_client import CanvaClient
+                canva = CanvaClient()
+                if canva.is_configured and state.rendered_image_path:
+                    canva_res = canva.upload_asset(
+                        file_path=state.rendered_image_path,
+                        name=f"Smart_Spaces_{state.copy.pin_title[:25]}"
+                    )
+                    if canva_res.get("success"):
+                        logger.info("✓ Synced rendered pin to Canva library: %s", canva_res.get("asset", {}).get("id"))
+            except Exception as ce:
+                logger.debug("Canva background sync skipped: %s", ce)
+
             state.log(
                 agent_name="PublisherAgent",
                 action="live_dispatch_success",
