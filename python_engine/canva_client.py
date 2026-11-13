@@ -14,17 +14,9 @@ from typing import Dict, Any, Optional
 
 import requests
 try:
-    from python_engine.config import (
-        CANVA_CLIENT_ID,
-        CANVA_CLIENT_SECRET,
-        CANVA_BRAND_TEMPLATE_ID,
-    )
+    from python_engine.config import CANVA_BRAND_TEMPLATE_ID
 except ImportError:
-    from config import (
-        CANVA_CLIENT_ID,
-        CANVA_CLIENT_SECRET,
-        CANVA_BRAND_TEMPLATE_ID,
-    )
+    from config import CANVA_BRAND_TEMPLATE_ID
 
 logger = logging.getLogger("PinForge.Canva")
 

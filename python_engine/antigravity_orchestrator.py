@@ -8,12 +8,11 @@ Orchestrates the autonomous multi-agent pipeline for @Smart_Spaces:
 5. Self-Learning Tool: Evaluates Pinterest analytics and updates prompt weights.
 """
 
-import os
 import sys
 import json
 import logging
 from pathlib import Path
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional
 from datetime import datetime
 
 # Path setup
@@ -23,18 +22,14 @@ if str(CURRENT_DIR) not in sys.path:
 if str(CURRENT_DIR.parent) not in sys.path:
     sys.path.insert(0, str(CURRENT_DIR.parent))
 
-from config import DEFAULT_AFFILIATE_TAG, BASE_URL, DATA_DIR, STATIC_DIR, PINS_DIR
+from config import DEFAULT_AFFILIATE_TAG, BASE_URL, DATA_DIR
 from scraper import fetch_product
 from seo_engine import generate_pin_copy
 from pin_generator import generate_pin_graphic
 from pinterest_client import PinterestClient
 from models import (
-    ExtractRequest,
     CopyGenerationRequest,
     PinGenerateRequest,
-    ProductData,
-    PinCopyResponse,
-    PinGenerateResponse,
 )
 
 logger = logging.getLogger("pinforge.antigravity")

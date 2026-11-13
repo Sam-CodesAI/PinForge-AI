@@ -11,7 +11,7 @@ import logging
 from datetime import datetime, timedelta, timezone
 from typing import List, Optional
 
-from python_engine.models import CsvExportRequest, ScheduleItem
+from python_engine.models import CsvExportRequest
 
 logger = logging.getLogger("pinforge.csv")
 

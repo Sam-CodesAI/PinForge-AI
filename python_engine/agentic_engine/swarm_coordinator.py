@@ -10,7 +10,7 @@ from __future__ import annotations
 import logging
 import uuid
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Optional
 
 from .models import SwarmState, PinCopyDraft, CreativeStrategy, ProductCandidate
 from .memory import SwarmMemory
@@ -146,7 +146,8 @@ class SwarmCoordinator:
         # AGENT 6: GROWTH ANALYST (Closed-Loop Analytics & Memory Evolution)
         # ====================================================================
         insights = self.analyst.process_cycle_completion(state)
-        logger.info(f"✓ GrowthAnalystAgent updated memory. Cumulative avg score: {self.memory.insights.historical_avg_score}/100")
+        total_p = insights.get("total_pins", self.memory.insights.total_pins_published)
+        logger.info(f"✓ GrowthAnalystAgent updated memory: {total_p} pins evaluated. Cumulative avg score: {self.memory.insights.historical_avg_score}/100")
 
         state.log(
             agent_name="SwarmCoordinator",

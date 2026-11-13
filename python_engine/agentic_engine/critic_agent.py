@@ -12,7 +12,6 @@ import logging
 import os
 import json
 from pathlib import Path
-from typing import Optional, Tuple
 from PIL import Image
 
 from .models import VisionCriticEvaluation, SwarmState

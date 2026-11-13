@@ -10,15 +10,8 @@ import logging
 import re
 from typing import List
 
-from .models import PinCopyDraft, SwarmState
+from .models import PinCopyDraft, ProductCandidate, SwarmState
 from .memory import SwarmMemory
-
-try:
-    from python_engine.seo_engine import generate_pin_copy
-    from python_engine.models import CopyGenerationRequest
-except ImportError:
-    from seo_engine import generate_pin_copy
-    from models import CopyGenerationRequest
 
 logger = logging.getLogger("pinforge.agentic.copywriter")
 

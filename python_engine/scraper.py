@@ -1111,7 +1111,6 @@ def fetch_product(
         raise ValueError(f"Could not extract a valid 10-character Amazon ASIN from input: '{url_or_input}'")
 
     affiliate_url = build_affiliate_url(asin, affiliate_tag)
-    tag = affiliate_tag or DEFAULT_AFFILIATE_TAG
 
     # Helper to upgrade thumbnail URLs to master CDN uncompressed resolution
     def _to_high_res(img_url: Optional[str]) -> str:

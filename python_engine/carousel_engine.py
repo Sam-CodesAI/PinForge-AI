@@ -16,18 +16,14 @@ Supports creative aesthetic styles:
 
 from __future__ import annotations
 
-import io
 import logging
 import math
 import uuid
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
-import httpx
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter
 
-from python_engine.config import BASE_URL, FONTS_DIR, PINS_DIR
-from python_engine.models import PinGenerateRequest, PinGenerateResponse
+from python_engine.config import FONTS_DIR, PINS_DIR
 from python_engine.pin_generator import (
     CANVAS_HEIGHT,
     CANVAS_WIDTH,

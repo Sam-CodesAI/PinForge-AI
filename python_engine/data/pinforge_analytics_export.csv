@@ -1,1 +1,4 @@
-id,title,board,pin_type,destination_url,created_at,impressions,pin_clicks,pin_ctr,outbound_clicks,outbound_ctr,saves,comments,score,tier
+pin_id,title,board,creative_type,link,created_at,impressions,pin_clicks,pin_ctr,outbound_clicks,outbound_ctr,saves,comments,aes_score,diagnosis_status
+dry_run_pin_001,Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy,Room Organization,REGULAR,https://www.amazon.com/dp/B0DHGM5XT4?tag=smartspace07-21,2026-11-12T15:40:46.954673+00:00,9,2,22.22%,2,22.22%,0,0,11.93,OUTBOUND_WINNER
+dry_run_pin_003,Maximize Your Sink: 2-Tier Sliding Under Cabinet Organizer! 🔥✨,Small Apartment Hacks,REGULAR,https://www.amazon.com/dp/B01MR1Y5K8?tag=smartspace07-21,2026-11-12T15:40:46.954719+00:00,2,1,50.0%,1,50.0%,0,0,6.37,OUTBOUND_WINNER
+dry_run_pin_002,Elevate Your WFH Setup: Aesthetic Minimalist Desk Organizer & Monitor Stand 💻✨,Room Organization,REGULAR,https://www.amazon.com/dp/B087F5K713?tag=smartspace07-21,2026-11-12T15:40:46.954691+00:00,6,1,16.67%,1,16.67%,0,0,6.13,OUTBOUND_WINNER

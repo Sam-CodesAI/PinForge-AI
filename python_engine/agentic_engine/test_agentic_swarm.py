@@ -10,7 +10,6 @@ Verifies the complete 6-agent lifecycle:
 7. SwarmCoordinator end-to-end autonomous dry run
 """
 
-import os
 import sys
 import unittest
 import tempfile
@@ -26,10 +25,7 @@ if str(PYTHON_ENGINE_DIR) not in sys.path:
 from agentic_engine.models import (
     SwarmState,
     ProductCandidate,
-    CreativeStrategy,
-    PinCopyDraft,
     VisionCriticEvaluation,
-    MemoryInsights,
 )
 from agentic_engine.memory import SwarmMemory
 from agentic_engine.scout_agent import ScoutAgent

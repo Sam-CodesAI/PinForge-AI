@@ -8,7 +8,7 @@ Uses multi-LLM resiliency: Google Gemini -> Groq -> Deterministic Rules.
 import json
 import logging
 import re
-from typing import Dict, List, Optional
+from typing import List, Optional
 
 from python_engine.config import GEMINI_API_KEY, GROQ_API_KEY, DATA_DIR
 from python_engine.models import BridgeReview, CopyGenerationRequest, PinCopyResponse
@@ -370,7 +370,7 @@ def generate_fallback_rules(req: CopyGenerationRequest) -> PinCopyResponse:
                 "Backed by fast Prime delivery and 30-day hassle-free returns",
             ],
             cons=["Popular color variants frequently experience temporary stock shortages"],
-            who_is_it_for=f"Anyone seeking a dependable, space-efficient upgrade for compact living.",
+            who_is_it_for="Anyone seeking a dependable, space-efficient upgrade for compact living.",
         )
     )
 

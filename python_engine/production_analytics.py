@@ -13,30 +13,20 @@ import argparse
 import csv
 import json
 import logging
-import sys
-from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Dict
 
 try:
     from python_engine.analytics_feedback_loop import (
         AnalyticsFeedbackLoop,
         PERFORMANCE_LEDGER_FILE,
-        ACCOUNT_OVERVIEW_FILE,
-        BOARD_ANALYTICS_FILE,
-        PUBLISHED_PINS_FILE,
     )
-    from python_engine.pinterest_client import PinterestClient
     from python_engine.config import DATA_DIR
 except ImportError:
     from analytics_feedback_loop import (
         AnalyticsFeedbackLoop,
         PERFORMANCE_LEDGER_FILE,
-        ACCOUNT_OVERVIEW_FILE,
-        BOARD_ANALYTICS_FILE,
-        PUBLISHED_PINS_FILE,
     )
-    from pinterest_client import PinterestClient
     from config import DATA_DIR
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -80,7 +70,6 @@ def cmd_audit(args) -> None:
     total_pins = len(pins)
     bridge_links = 0
     direct_amazon_links = 0
-    missing_disclosures = 0
     zero_saves = 0
     carousels = 0
     singles = 0
@@ -179,7 +168,7 @@ def cmd_diagnose(args) -> None:
         m = p["metrics"]
         print(f"  {idx}. \"{p['title']}\"")
         print(f"     Board: {p['board']} | Pin Clicks: {m['pin_clicks']} | Impressions: {m['impressions']}")
-        print(f"     Remedy: Add clearer visual destination CTA (e.g. 'View on Amazon ->') to bridge the click-to-outbound drop-off.")
+        print("     Remedy: Add clearer visual destination CTA (e.g. 'View on Amazon ->') to bridge the click-to-outbound drop-off.")
         print("     " + "-" * 68)
 
     print("═" * 76 + "\n")

@@ -12,7 +12,6 @@ import logging
 import random
 import re
 import urllib.parse
-from pathlib import Path
 from typing import Dict, Any, List, Optional
 
 from bs4 import BeautifulSoup

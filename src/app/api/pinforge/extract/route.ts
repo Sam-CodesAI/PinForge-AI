@@ -3,7 +3,7 @@ import { VERIFIED_PRODUCTS } from "@/data/pinforge-catalog";
 
 const PYTHON_ENGINE_URL = process.env.PINFORGE_ENGINE_URL || "http://127.0.0.1:8000";
 
-const ASIN_REGEX = /(?:\/dp\/|\/gp\/product\/|\/gp\/aw\/d\/|\/d\/|\/product\/)([A-Z0-9]{10})(?:[/?#]|$)/i;
+const ASIN_REGEX = /(?:\/dp\/|\/gp\/product\/|\/gp\/aw\/d\/|\/d\/|\/product\/|\/asin\/)([A-Z0-9]{10})(?:[/?#]|$)/i;
 const RAW_ASIN_REGEX = /^[A-Z0-9]{10}$/i;
 
 function extractAsin(input: string): string | null {

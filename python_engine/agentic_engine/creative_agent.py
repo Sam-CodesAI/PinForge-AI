@@ -7,7 +7,7 @@ Executes self-healing adjustments when receiving feedback from VisionCriticAgent
 from __future__ import annotations
 
 import logging
-from typing import Optional, List
+from typing import List
 
 from .models import CreativeStrategy, SwarmState, VisionCriticEvaluation
 from .memory import SwarmMemory

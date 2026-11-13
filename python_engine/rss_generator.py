@@ -5,7 +5,6 @@ Pinterest Business accounts can connect this feed directly to auto-publish
 Pins without developer API reviews or token expirations.
 """
 
-import html
 from datetime import datetime, timezone
 from typing import List
 from xml.etree import ElementTree as ET
@@ -39,7 +38,7 @@ def generate_pinterest_rss(items: List[ScheduleItem], feed_title: str = "PinForg
     pub_date_el = ET.SubElement(channel, "pubDate")
     pub_date_el.text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
 
-    atom_link = ET.SubElement(channel, "atom:link", {
+    ET.SubElement(channel, "atom:link", {
         "href": f"{BASE_URL}/feed.xml",
         "rel": "self",
         "type": "application/rss+xml",

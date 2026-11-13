@@ -9,7 +9,7 @@ from __future__ import annotations
 import logging
 import random
 import time
-from typing import Optional, Dict, Any
+from typing import Dict, Any
 
 from .models import SwarmState
 from .memory import SwarmMemory

@@ -9,7 +9,7 @@ Verifies:
 import sys
 import unittest
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
 # Add project root to sys.path
 CURRENT_DIR = Path(__file__).resolve().parent

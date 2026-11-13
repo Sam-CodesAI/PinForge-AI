@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import logging
 import random
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict
 
 from .models import ProductCandidate, SwarmState
 from .memory import SwarmMemory

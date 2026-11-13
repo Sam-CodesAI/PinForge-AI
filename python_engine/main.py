@@ -49,12 +49,11 @@ from python_engine.models import (
 from python_engine.ai_vision_curator import AIVisionCurator
 from python_engine.pin_generator import generate_pin_graphic
 from python_engine.rss_generator import generate_pinterest_rss
-from python_engine.scraper import fetch_product, async_fetch_product
+from python_engine.scraper import async_fetch_product
 from python_engine.seo_engine import generate_pin_copy
 from python_engine.visual_engine import (
     generate_visual_with_waterfall,
     render_track_a_lifestyle_pin,
-    sanitize_canvas_text,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
@@ -542,6 +541,45 @@ def ai_hunt_and_publish(publish_live: bool = True, track_a: bool = False):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/api/agentic/swarm", dependencies=[Depends(verify_api_key)])
+def run_agentic_swarm(
+    board_name: str = "Room Organization",
+    slot_id: int = 2,
+    preferred_asin: Optional[str] = None,
+    publish_live: bool = False,
+    apply_jitter: bool = False,
+):
+    """Executes the 6-agent collaborative swarm loop: Scout -> Creative -> Copywriter -> Critic -> Publisher -> Analyst."""
+    try:
+        from python_engine.agentic_engine.swarm_coordinator import SwarmCoordinator
+    except ImportError:
+        from agentic_engine.swarm_coordinator import SwarmCoordinator
+
+    try:
+        coordinator = SwarmCoordinator()
+        state = coordinator.run_autonomous_swarm_cycle(
+            board_name=board_name,
+            slot_id=slot_id,
+            preferred_asin=preferred_asin,
+            publish_live=publish_live,
+            apply_jitter=apply_jitter,
+        )
+        return {
+            "status": "success",
+            "session_id": state.session_id,
+            "product": state.product.model_dump() if state.product else None,
+            "creative_strategy": state.creative_strategy.model_dump() if state.creative_strategy else None,
+            "copy": state.pin_copy.model_dump() if state.pin_copy else None,
+            "critic": state.critic_evaluation.model_dump() if state.critic_evaluation else None,
+            "published_pin_id": state.published_pin_id,
+            "rendered_image_path": state.rendered_image_path,
+            "execution_log": [log.model_dump() for log in state.execution_log],
+        }
+    except Exception as e:
+        logger.error(f"Agentic swarm execution failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.get("/api/ai/autopilot/history")
 def get_autopilot_history():
     """Retrieve execution log of autonomous AI runs."""
@@ -556,6 +594,32 @@ def get_autopilot_history():
 
 
 if __name__ == "__main__":
+    import argparse
     import uvicorn
-    uvicorn.run("python_engine.main:app", host=HOST, port=PORT, reload=True)
+
+    parser = argparse.ArgumentParser(description="PinForge AI FastAPI Engine & CLI")
+    parser.add_argument("--swarm", action="store_true", help="Run 1 autonomous cycle with the 6-agent swarm")
+    parser.add_argument("--board", type=str, default="Room Organization", help="Target board for swarm cycle")
+    parser.add_argument("--asin", type=str, default=None, help="Target Amazon ASIN")
+    parser.add_argument("--publish-live", action="store_true", help="Publish live to Pinterest API v5")
+    args, unknown = parser.parse_known_args()
+
+    if args.swarm:
+        from python_engine.agentic_engine.swarm_coordinator import SwarmCoordinator
+        coord = SwarmCoordinator()
+        state = coord.run_autonomous_swarm_cycle(
+            board_name=args.board,
+            preferred_asin=args.asin,
+            publish_live=args.publish_live,
+        )
+        print(f"\n✨ Swarm execution complete! Session: {state.session_id}")
+        if state.product:
+            print(f"📦 Product: {state.product.title} (ASIN: {state.product.asin})")
+        if state.pin_copy:
+            print(f"📌 Title: {state.pin_copy.pin_title}")
+        if state.critic_evaluation:
+            print(f"👁️ Critic Score: {state.critic_evaluation.rubric_score}/100")
+        print(f"🚀 Published ID: {state.published_pin_id}")
+    else:
+        uvicorn.run("python_engine.main:app", host=HOST, port=PORT, reload=True)
 

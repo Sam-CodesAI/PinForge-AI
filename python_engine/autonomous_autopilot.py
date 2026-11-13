@@ -17,7 +17,6 @@ import json
 import logging
 import time
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Dict, Any, Optional, List
 
 try:
@@ -282,6 +281,7 @@ class AutonomousAutopilot:
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "status": "success",
             "execution_time_seconds": total_elapsed,
+            "query_used": query_used,
             "product": {
                 "asin": product.asin,
                 "title": product.title,

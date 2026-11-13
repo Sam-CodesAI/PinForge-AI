@@ -161,6 +161,9 @@ Return ONLY valid JSON matching this schema:
             const parsed = JSON.parse(rawContent);
 
             let pin_desc = parsed.pin_description || "";
+            if (!pin_desc.toLowerCase().includes("save this pin")) {
+              pin_desc = `📌 SAVE THIS PIN to your home board! ${pin_desc}`.trim();
+            }
             if (!pin_desc.includes("#AmazonAssociate")) {
               pin_desc = (pin_desc.slice(0, 480) + " #AmazonAssociate").slice(0, 500);
             }
@@ -246,6 +249,9 @@ Return ONLY valid JSON matching this schema:
           const parsed = JSON.parse(cleanJson);
 
           let pin_desc = parsed.pin_description || "";
+          if (!pin_desc.toLowerCase().includes("save this pin")) {
+            pin_desc = `📌 SAVE THIS PIN to your home board! ${pin_desc}`.trim();
+          }
           if (!pin_desc.includes("#AmazonAssociate")) {
             pin_desc = (pin_desc.slice(0, 480) + " #AmazonAssociate").slice(0, 500);
           }

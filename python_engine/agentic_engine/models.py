@@ -82,6 +82,10 @@ class VisionCriticEvaluation(BaseModel):
     )
     auditor_model: str = Field(default="gemini-2.5-flash / heuristic-vision")
 
+    @property
+    def rubric_score(self) -> float:
+        return self.score
+
 
 class AgentLogEntry(BaseModel):
     """Individual entry in the swarm's transparent thought & action log."""
@@ -177,3 +181,19 @@ class SwarmState(BaseModel):
     @copy.setter
     def copy(self, val: Optional[PinCopyDraft]) -> None:
         self.pin_copy = val
+
+    @property
+    def creative_strategy(self) -> Optional[CreativeStrategy]:
+        return self.creative_direction
+
+    @creative_strategy.setter
+    def creative_strategy(self, val: Optional[CreativeStrategy]) -> None:
+        self.creative_direction = val
+
+    @property
+    def critic_evaluation(self) -> Optional[VisionCriticEvaluation]:
+        return self.critic_audit
+
+    @critic_evaluation.setter
+    def critic_evaluation(self, val: Optional[VisionCriticEvaluation]) -> None:
+        self.critic_audit = val

@@ -6,9 +6,6 @@ delegating to the unified multi-provider visual engine (Ideogram -> Fal.ai -> Po
 
 from __future__ import annotations
 
-from typing import Optional
-from PIL import Image
-
 from python_engine.visual_engine import (
     BOARD_AESTHETICS,
     STYLE_PROMPTS,

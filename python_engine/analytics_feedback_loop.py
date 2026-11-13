@@ -16,11 +16,9 @@ Persists outputs to:
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import logging
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 try:
@@ -96,6 +94,13 @@ def diagnose_pin(metrics: Dict[str, int]) -> Dict[str, str]:
             "badge_color": "emerald",
             "label": "High Conversion",
             "recommendation": "High outbound purchase intent! Replicate this hook into a 4-slide carousel pin and cross-post to adjacent boards.",
+        }
+    elif saves >= 1:
+        return {
+            "status": "SAVE_MAGNET",
+            "badge_color": "purple",
+            "label": "Save Magnet",
+            "recommendation": "High Pixie graph distribution score! Save-First trigger successfully clustering pin in home decor graphs.",
         }
     elif p_clicks >= 1 or p_ctr >= 15.0:
         return {
