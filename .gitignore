@@ -29,3 +29,5 @@ python_engine/static/pins/*.png
 *.pem
 *.tsbuildinfo
 .canva_pkce_verifier.txt
+.canva_tokens.json
+.canva_*
