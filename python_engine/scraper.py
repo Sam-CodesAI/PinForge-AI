@@ -30,7 +30,7 @@ except ImportError:
 logger = logging.getLogger("pinforge.scraper")
 
 # ASIN regex matching all Amazon URL variants
-ASIN_REGEX = re.compile(r"(?:/dp/|/gp/product/|/gp/aw/d/|/d/|/product/)([A-Z0-9]{10})(?:[/?#]|$)", re.IGNORECASE)
+ASIN_REGEX = re.compile(r"(?:/dp/|/gp/product/|/gp/aw/d/|/d/|/product/|/asin/|/ASIN/)([A-Z0-9]{10})(?:[/?#]|$)", re.IGNORECASE)
 RAW_ASIN_REGEX = re.compile(r"^[A-Z0-9]{10}$", re.IGNORECASE)
 
 # Verified instant catalog for premier products to guarantee 100% demo uptime

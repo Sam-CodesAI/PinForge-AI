@@ -25,31 +25,39 @@ OFFICIAL_BOARDS = [
 ]
 
 
-def load_high_aes_winning_titles(limit: int = 4) -> List[str]:
-    """Ingests high-AES winning titles from performance_ledger.json as few-shot exemplars."""
+def load_high_aes_winning_titles(limit: int = 10) -> List[str]:
+    """Ingests high-AES winning titles from performance_ledger.json and curated winners as few-shot exemplars."""
     ledger_path = DATA_DIR / "performance_ledger.json"
-    fallback_exemplars = [
+    curated_exemplars = [
         "Finally Fix Messy Drawers! Aesthetic Closet Organization Made Easy",
         "Maximize Your Sink: 2-Tier Sliding Under Cabinet Organizer! 🔥✨",
         "Vanity Chaos? Fixed: Stori Clear Stackable Drawers! ✅✨",
         "Ditch Vanity Clutter: 360 Spin Makeup Organizer Aesthetic 💄✨",
+        "Reclaim Your Countertop: 2-Tier Sliding Under Sink Rack 🏠✨",
+        "Turn Tiny Gaps Into Mega Storage: 7-Tier Slim Rolling Cart 🛒✨",
+        "Small Closet Transformation: Space-Saving Clear Stackable Boxes 👗✨",
+        "Under-Sink Chaos Solved: Height-Adjustable Expanding Pull-Out Tray 🧼✨",
     ]
-    if not ledger_path.exists():
-        return fallback_exemplars
-    try:
-        data = json.loads(ledger_path.read_text(encoding="utf-8"))
-        top_pins = data.get("top_performing_pins", [])
-        titles = []
-        for pin in top_pins:
-            t = (pin.get("title") or "").strip()
-            if t and not any(k in t.lower() for k in ["test", "base64", "untitled"]) and len(t) > 15:
-                titles.append(t)
-            if len(titles) >= limit:
-                break
-        return titles or fallback_exemplars
-    except Exception as e:
-        logger.debug(f"Could not load winning titles from performance ledger: {e}")
-        return fallback_exemplars
+    titles = []
+    if ledger_path.exists():
+        try:
+            data = json.loads(ledger_path.read_text(encoding="utf-8"))
+            top_pins = data.get("top_performing_pins", [])
+            for pin in top_pins:
+                t = (pin.get("title") or "").strip()
+                if t and not any(k in t.lower() for k in ["test", "base64", "untitled"]) and len(t) > 15:
+                    if t not in titles:
+                        titles.append(t)
+        except Exception as e:
+            logger.debug(f"Could not load winning titles from performance ledger: {e}")
+
+    for ex in curated_exemplars:
+        if ex not in titles:
+            titles.append(ex)
+        if len(titles) >= limit:
+            break
+
+    return titles[:limit]
 
 GENZ_COMMENT_HOOKS = [
     "📌 Save this pin for your next apartment move or weekend declutter! Tap to see full room styling ideas.",
@@ -62,11 +70,12 @@ GENZ_COMMENT_HOOKS = [
 
 def select_official_board(category: str, title: str, candidate_board: Optional[str] = None) -> str:
     """Ensure board selection strictly routes into one of the 5 official Smart Spaces pillars."""
-    if candidate_board:
-        clean = candidate_board.strip()
-        for b in OFFICIAL_BOARDS:
-            if clean.lower() == b.lower() or clean.lower() == b.lower().rstrip("s"):
-                return b
+    for cand in [candidate_board, category]:
+        if cand:
+            clean = cand.strip()
+            for b in OFFICIAL_BOARDS:
+                if clean.lower() == b.lower() or clean.lower() == b.lower().rstrip("s"):
+                    return b
 
     # Map intelligently based on candidate_board, category, and title keywords
     combined = f"{candidate_board or ''} {category} {title}".lower()
@@ -83,12 +92,16 @@ def select_official_board(category: str, title: str, candidate_board: Optional[s
 
 
 def format_pin_description_with_hook(raw_desc: str, title: str, category: str) -> str:
-    """Injects Gen-Z conversational comment hooks and guarantees FTC compliance within 500 chars ending with #AmazonAssociate."""
+    """Injects Gen-Z conversational comment hooks and guarantees Save-First trigger and FTC compliance within 500 chars ending with #AmazonAssociate."""
     disclosure = "#AmazonAssociate"
     clean_desc = raw_desc.strip()
 
     # Strip any existing #AmazonAssociate (case-insensitive) to prevent duplication or placement in the middle
     clean_desc = re.sub(r"#AmazonAssociate\b", "", clean_desc, flags=re.IGNORECASE).strip()
+
+    # Enforce Save-First contract: Must include 'SAVE THIS PIN' trigger
+    if "save this pin" not in clean_desc.lower():
+        clean_desc = f"📌 SAVE THIS PIN to your home board! {clean_desc}".strip()
 
     # Check if a conversational comment hook / CTA is already present
     has_hook = any(q in clean_desc.lower() for q in [
@@ -337,7 +350,7 @@ def generate_fallback_rules(req: CopyGenerationRequest) -> PinCopyResponse:
     board_rec = select_official_board(req.category, req.product_title)
 
     raw_desc = (
-        f"Looking for the ultimate {req.category.lower()} space-saving upgrade? "
+        f"📌 SAVE THIS PIN to your home board! Looking for the ultimate {req.category.lower()} space-saving upgrade? "
         f"The {req.product_title} delivers outstanding reliability, smart storage efficiency, and verified customer ratings."
     )
     desc = format_pin_description_with_hook(raw_desc, req.product_title, req.category)
