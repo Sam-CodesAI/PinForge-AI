@@ -308,6 +308,8 @@ class PinterestClient:
                     pass
             raise e
 
+    get_all_boards = get_boards
+
     def find_board_id(self, board_name_or_keyword: str) -> Optional[str]:
         """Find matching board ID by exact name in board cache (case-insensitive).
         
