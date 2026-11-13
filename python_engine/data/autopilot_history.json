@@ -389,5 +389,104 @@
     "live_pinterest": {
       "error": "Pinterest API Error (401) on POST boards: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
     }
+  },
+  {
+    "timestamp": "2026-11-13T02:01:25.000296+00:00",
+    "status": "success",
+    "execution_time_seconds": 15.06,
+    "product": {
+      "asin": "B0GR95QN3F",
+      "title": "Folding Shelf Wall Mounted, 16.5inches Floating Desk for Small Space",
+      "price": "$27.99",
+      "rating": 4.6,
+      "affiliate_url": "https://www.amazon.com/dp/B0GR95QN3F?tag=smartspace07-21",
+      "bridge_slug": "folding-shelf-wall-mounted-165inches-floating-desk-for-small-space-b0gr95qn3f"
+    },
+    "ai_vision": {
+      "dominant_theme": "problem_solver",
+      "primary_hex": "#F4F5F7",
+      "accent_hex": "#3B82F6",
+      "badge_text": "94% Space Saved",
+      "visual_hook": "Transform Your Tiny Space",
+      "secondary_hook": "Foldable wall-mounted desk for laptops",
+      "target_audience": "Apartment Renters",
+      "alt_text": "White wall-mounted folding shelf holding a laptop and mouse with a space-saving mechanism.",
+      "cv_features": {
+        "rb_ratio": 1.012,
+        "lighting_type": "neutral_packshot",
+        "dominant_theme": "problem_solver",
+        "whitespace_pct": 51.9,
+        "edge_clutter": 42.8,
+        "dominant_hex": "#a8a6a6",
+        "accent_hex": "#c5473a",
+        "bounding_box": [
+          0.037,
+          0.013,
+          0.975,
+          0.988
+        ],
+        "badge_placement": "floating_badge"
+      },
+      "rb_ratio": 1.012,
+      "lighting_type": "neutral_packshot",
+      "whitespace_pct": 51.9,
+      "edge_clutter": 42.8,
+      "bounding_box": [
+        0.037,
+        0.013,
+        0.975,
+        0.988
+      ],
+      "badge_placement": "floating_badge"
+    },
+    "seo_copy": {
+      "title": "Small Desk? Fixed: 16.5in Folding Wall Shelf for Tiny Spaces! \u2705\u2728",
+      "description": "\ud83d\udccc SAVE THIS PIN to your home board! Stop fighting for surface area! This 16.5in folding shelf is the perfect WFH hack, offering a full desk when needed and folding away to zero when you're done. Perfect for studios, dorms, or narrow nooks. Would you use this in your kitchen or bathroom? Drop your vote below! \ud83d\udc47 \ud83c\udfe0 #AmazonAssociate",
+      "board": "Studio Living Ideas",
+      "hashtags": [
+        "#SmallSpaceHacks",
+        "#StudioLiving",
+        "#WorkspaceInspo",
+        "#AmazonFinds",
+        "#AmazonBestsellers",
+        "#AmazonAssociate"
+      ]
+    },
+    "creative_variants": [
+      {
+        "template": "aspirational_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4882547303.jpg"
+      },
+      {
+        "template": "pollinations_lifestyle",
+        "url": "https://pinforge.vercel.app/pins/pin_pollinations_lifestyle_1b79fb7eb8.jpg"
+      },
+      {
+        "template": "warm_editorial",
+        "url": "https://pinforge.vercel.app/pins/pin_warm_editorial_a63d48c40c.jpg"
+      },
+      {
+        "template": "problem_solver",
+        "url": "https://pinforge.vercel.app/pins/pin_problem_solver_8fdee3f1a7.jpg"
+      },
+      {
+        "template": "bento_dark",
+        "url": "https://pinforge.vercel.app/pins/pin_bento_dark_5e0de41ca8.jpg"
+      }
+    ],
+    "track_a_lifestyle": "https://pinforge.vercel.app/pins/pin_aspirational_lifestyle_4882547303.jpg",
+    "carousel": {
+      "slides": [
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_1_5a162cc5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_2_5a162cc5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_3_5a162cc5.jpg",
+        "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_slide_4_5a162cc5.jpg"
+      ],
+      "composite": "/home/runner/work/PinForge-AI/PinForge-AI/python_engine/static/pins/carousel_composite_5a162cc5.jpg",
+      "style": "anime"
+    },
+    "live_pinterest": {
+      "error": "Pinterest API Error (401) on POST boards: {'code': 2, 'message': 'Authentication failed.', 'status': 'failure'}"
+    }
   }
 ]
