@@ -49,8 +49,8 @@ class CanvaClient:
             "local_dev_url": "http://localhost:8080",
         }
 
-    def upload_asset(self, file_path: str, name: Optional[str] = None) -> Dict[str, Any]:
-        """Uploads an image asset to Canva library via Connect API."""
+    def upload_asset(self, file_path: str, name: Optional[str] = None, timeout: float = 30.0) -> Dict[str, Any]:
+        """Uploads an image asset to Canva library via Connect API and waits for completion."""
         if not self.access_token:
             logger.warning("Canva access token not configured, skipping Connect API upload.")
             return {"success": False, "error": "CANVA_ACCESS_TOKEN_MISSING"}
@@ -59,9 +59,16 @@ class CanvaClient:
         if not path.exists():
             return {"success": False, "error": f"File not found: {file_path}"}
 
+        import base64
+        import time
+
+        clean_name = name or path.stem
+        name_b64 = base64.b64encode(clean_name.encode("utf-8")).decode("utf-8")
+
         headers = {
             "Authorization": f"Bearer {self.access_token}",
-            "Asset-Upload-Metadata": json.dumps({"name_base64": name or path.stem}),
+            "Asset-Upload-Metadata": json.dumps({"name_base64": name_b64}),
+            "Content-Type": "application/octet-stream",
         }
 
         try:
@@ -73,13 +80,31 @@ class CanvaClient:
                     timeout=30,
                 )
 
-            if res.status_code in (200, 201):
-                data = res.json()
-                logger.info("Successfully uploaded asset to Canva: %s", data.get("asset", {}).get("id"))
-                return {"success": True, "asset": data.get("asset")}
-            else:
+            if res.status_code not in (200, 201):
                 logger.error("Canva asset upload failed (%s): %s", res.status_code, res.text)
                 return {"success": False, "status_code": res.status_code, "error": res.text}
+
+            data = res.json()
+            job = data.get("job", {})
+            job_id = job.get("id")
+            if not job_id:
+                return {"success": True, "asset": data.get("asset")}
+
+            # Poll for completion
+            poll_headers = {"Authorization": f"Bearer {self.access_token}"}
+            start_time = time.time()
+            while time.time() - start_time < timeout:
+                poll_res = requests.get(f"{CANVA_API_BASE}/asset-uploads/{job_id}", headers=poll_headers, timeout=10)
+                if poll_res.status_code == 200:
+                    poll_data = poll_res.json().get("job", {})
+                    if poll_data.get("status") == "success":
+                        asset = poll_data.get("asset", {})
+                        logger.info("Successfully uploaded and processed asset in Canva: %s", asset.get("id"))
+                        return {"success": True, "asset": asset}
+                    elif poll_data.get("status") in ("failed", "error"):
+                        return {"success": False, "error": poll_data.get("error", "Asset upload processing failed")}
+                time.sleep(1.0)
+            return {"success": False, "error": f"Canva asset upload timed out after {timeout}s"}
         except Exception as e:
             logger.exception("Error uploading asset to Canva: %s", e)
             return {"success": False, "error": str(e)}
