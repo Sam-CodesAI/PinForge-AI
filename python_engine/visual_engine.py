@@ -492,48 +492,57 @@ def generate_google_imagen_image(
     timeout: float = 30.0,
     aspect_ratio: str = "9:16",
 ) -> Optional[Image.Image]:
-    """Generates an ultra-high aesthetic photorealistic interior scene via Google Imagen 3 (imagen-3.0-generate-002).
+    """Generates a scene via Google Gemini Image API (gemini-2.5-flash-image / gemini-3.1-flash-image).
 
-    Uses generativelanguage.googleapis.com REST endpoint with GEMINI_API_KEY.
-    Returns 1000x1500 (2:3) RGBA Image.
+    Tries gemini-2.5-flash-image with responseModalities=['IMAGE'].
+    Requires GEMINI_API_KEY. Gracefully falls back to Pollinations upon failure.
     """
     import base64
     import os
     effective_key = (api_key or GEMINI_API_KEY or os.getenv("GEMINI_API_KEY") or "").strip()
     if not effective_key:
-        logger.debug("Tier 1 (Google Imagen 3): Skipped (GEMINI_API_KEY unset).")
+        logger.debug("Tier 1 (Google Gemini/Imagen): Skipped (GEMINI_API_KEY unset).")
         return None
 
-    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key={effective_key}"
-    payload = {
-        "instances": [{"prompt": prompt.strip()}],
-        "parameters": {
-            "sampleCount": 1,
-            "aspectRatio": aspect_ratio,
-            "outputMimeType": "image/jpeg",
-        },
-    }
     headers = {"Content-Type": "application/json"}
 
-    logger.info("🎨 [Tier 1] Invoking Google Imagen 3 (imagen-3.0-generate-002) for photorealistic interior...")
-    try:
-        with httpx.Client(timeout=timeout) as client:
-            resp = client.post(endpoint, json=payload, headers=headers)
-            if resp.status_code == 200:
-                data = resp.json()
-                predictions = data.get("predictions", [])
-                if predictions and "bytesBase64Encoded" in predictions[0]:
-                    b64_bytes = base64.b64decode(predictions[0]["bytesBase64Encoded"])
-                    img = Image.open(io.BytesIO(b64_bytes)).convert("RGBA")
-                    resized = ImageOps.fit(img, (CANVAS_WIDTH, CANVAS_HEIGHT), method=Image.Resampling.LANCZOS)
-                    logger.info("✓ [Tier 1] Google Imagen 3 generated photorealistic 1000x1500 scene successfully.")
-                    return resized
+    # Try Gemini 2.5 Flash Image / 3.1 Flash Image
+    image_models = ["gemini-2.5-flash-image", "gemini-3.1-flash-image", "gemini-3-pro-image"]
+    for m in image_models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={effective_key}"
+        payload = {
+            "contents": [{"parts": [{"text": prompt.strip()}]}],
+            "generationConfig": {
+                "responseModalities": ["IMAGE"],
+                "imageConfig": {"aspectRatio": "2:3"},
+            },
+        }
+        logger.info(f"🎨 [Tier 1] Invoking Google Gemini Image API ({m})...")
+        try:
+            with httpx.Client(timeout=timeout) as client:
+                resp = client.post(url, json=payload, headers=headers)
+                if resp.status_code == 200:
+                    data = resp.json()
+                    candidates = data.get("candidates", [])
+                    if candidates:
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        for p in parts:
+                            if "inlineData" in p:
+                                b64 = p["inlineData"].get("data")
+                                if b64:
+                                    b64_bytes = base64.b64decode(b64)
+                                    img = Image.open(io.BytesIO(b64_bytes)).convert("RGBA")
+                                    resized = ImageOps.fit(img, (CANVAS_WIDTH, CANVAS_HEIGHT), method=Image.Resampling.LANCZOS)
+                                    logger.info(f"✓ [Tier 1] Google Gemini ({m}) generated 1000x1500 scene successfully.")
+                                    return resized
+                elif resp.status_code == 429:
+                    logger.warning(f"Tier 1 (Google Gemini {m}): Free tier quota limit is 0 (billing required on Google AI Studio).")
+                    break
                 else:
-                    logger.warning(f"Tier 1 (Google Imagen 3): No prediction bytes in response: {str(data)[:200]}")
-            else:
-                logger.warning(f"Tier 1 (Google Imagen 3): HTTP {resp.status_code} - {resp.text[:200]}")
-    except Exception as e:
-        logger.warning(f"Tier 1 (Google Imagen 3) request failed: {e}")
+                    logger.warning(f"Tier 1 (Google Gemini {m}): HTTP {resp.status_code} - {resp.text[:150]}")
+        except Exception as e:
+            logger.warning(f"Tier 1 (Google Gemini {m}) request failed: {e}")
+
     return None
 
 
